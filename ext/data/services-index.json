@@ -6814,5 +6814,16 @@
       "targetId": "SVC-0048",
       "approved": true
     }
+  ],
+  "searchOverrides": [
+    {
+      "queries": [
+        "سونار عام",
+        "السونار العام"
+      ],
+      "targetId": "SVC-0063",
+      "targetName": "السونار العام وسونار الحمل",
+      "response": "approved-availability"
+    }
   ]
 }

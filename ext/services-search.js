@@ -227,6 +227,21 @@
     });
     if (blocked || blockedQuery) { result.type = 'none'; return result; }
 
+    // OWNER: exact, explicitly approved query overrides are evaluated before
+    // filler removal can collapse them into a generic one-word query.
+    var override = ((data && data.searchOverrides) || []).find(function (entry) {
+      return entry.response === 'approved-availability' && Array.isArray(entry.queries) && entry.queries.some(function (q) { return norm(q) === rawNorm; });
+    });
+    if (override) {
+      var overriddenItem = items.find(function (item) {
+        return !item.searchOnly && item.id === override.targetId && item.name === override.targetName;
+      });
+      result.type = overriddenItem ? 'strong' : 'none';
+      result.best = overriddenItem || null;
+      if (overriddenItem) result.approvedAvailability = true;
+      return result;
+    }
+
     // OWNER: exact approved search wording, not a claim of medical equivalence.
     if (rawNorm === norm('فحص دم عام') || rawNorm === norm('تحليل دم عام')) {
       var bloodTest = items.find(function (item) {
@@ -388,9 +403,9 @@
       out.lines.push(fill(responses.emergency.text, { whatsappDisplay: display }));
     }
 
-    if (result.type === 'strong' && result.best && result.approvedBloodQuery && result.best.id === 'SVC-0048') {
+    if (result.type === 'strong' && result.best && ((result.approvedBloodQuery && result.best.id === 'SVC-0048') || result.approvedAvailability)) {
       out.title = 'نعم، الخدمة متوفرة لدينا';
-      out.lines.push('يتوفر لدينا فحص الدم الشامل CBC في مستشفى الأنهار التخصصي. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا.');
+      out.lines.push('يتوفر لدينا ' + result.best.name + ' في مستشفى الأنهار التخصصي. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا.');
       out.whatsappLabel = 'تواصل عبر واتساب';
       out.whatsappText = 'السلام عليكم، أرغب في الحجز أو الاستفسار عن: ' + result.best.name;
     } else if (result.type === 'strong' && result.best) {
@@ -442,7 +457,7 @@
   var scriptTag = document.currentScript || document.querySelector('script[src*="services-search.js"]');
   var scriptBase = scriptTag && scriptTag.src ? new URL('.', scriptTag.src).href : new URL('ext/', document.baseURI).href;
   var DATA_URLS = {
-    index: new URL('data/services-index.json', scriptBase).href,
+    index: new URL('data/services-index.json?v=7', scriptBase).href,
     responses: new URL('data/search-responses.json', scriptBase).href,
     contact: new URL('data/contact.json', scriptBase).href,
     guide: new URL('../services/', scriptBase).href,
@@ -451,7 +466,7 @@
   var pending = null;
   function fromBundle(bundle) {
     if (!bundle || !bundle.index || !Array.isArray(bundle.index.items) || !bundle.responses || !bundle.contact) throw new Error('بيانات بحث غير صالحة');
-    return { items: bundle.index.items, synonyms: bundle.index.synonyms || [], excludedTerms: bundle.index.excludedTerms || [], blockedQueries: bundle.index.blockedQueries || [], searchOnlyMatch: bundle.index.searchOnlyMatch, yesMatch: bundle.index.yesMatch, categoryHints: bundle.index.categoryHints, responses: bundle.responses, contact: bundle.contact };
+    return { items: bundle.index.items, synonyms: bundle.index.synonyms || [], excludedTerms: bundle.index.excludedTerms || [], blockedQueries: bundle.index.blockedQueries || [], searchOnlyMatch: bundle.index.searchOnlyMatch, yesMatch: bundle.index.yesMatch, categoryHints: bundle.index.categoryHints, searchOverrides: bundle.index.searchOverrides || [], responses: bundle.responses, contact: bundle.contact };
   }
   function loadJSON(url) {
     return fetch(url, { credentials: 'same-origin' }).then(function (r) {

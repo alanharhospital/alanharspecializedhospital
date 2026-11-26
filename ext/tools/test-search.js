@@ -19,7 +19,7 @@ const responses = JSON.parse(fs.readFileSync(path.join(DATA, 'search-responses.j
 const contact = JSON.parse(fs.readFileSync(path.join(DATA, 'contact.json'), 'utf8'));
 
 const catalog = JSON.parse(fs.readFileSync(path.join(DATA, 'services-catalog.json'), 'utf8'));
-const data = { items: index.items, synonyms: index.synonyms, excludedTerms: index.excludedTerms, blockedQueries: index.blockedQueries, searchOnlyMatch: index.searchOnlyMatch, yesMatch: index.yesMatch, categoryHints: index.categoryHints, responses, contact };
+const data = { items: index.items, synonyms: index.synonyms, excludedTerms: index.excludedTerms, blockedQueries: index.blockedQueries, searchOnlyMatch: index.searchOnlyMatch, yesMatch: index.yesMatch, categoryHints: index.categoryHints, searchOverrides: index.searchOverrides, responses, contact };
 
 const results = [];
 function check(n, desc, fn) {
@@ -299,8 +299,9 @@ check(58, 'الكلمات العامة وحدها بلا نعم أو روابط 
   const words=['تحليل','فحص','اشعة','عملية','عمليات'];
   const valid=words.every(q=>{const r=run(q), p=engine.buildReply(r,data); return ['none','weak'].includes(r.type) && !r.best && !p.categoryHint && r.options.length<=5 && !!p.whatsappUrl && (r.type==='none' ? p.lines[0]===engine.fill(responses.notFound.text,{whatsappDisplay:contact.whatsappDisplay}) : r.options.length>0 && p.lines.includes(responses.weakMatch.text));});
   const fillers=['عام','عامة','تخصصي','مركز','عيادة'].every(q=>run(q).type==='none');
-  const sonar=run('سونار عام'), blood=run('فحص دم عام');
-  const examples=sonar.type==='weak' && sonar.options.some(x=>x.id==='SVC-0063') && blood.type==='strong' && blood.best.id==='SVC-0048' && !blood.options.length && ['الإدارة العامة','وحدة العناية'].every(q=>run(q).type==='none');
+  const sonar=['سونار عام','السونار العام'].every(q=>{const r=run(q);return r.type==='strong' && r.best.id==='SVC-0063' && !r.options.length;});
+  const genericSonar=run('سونار'), blood=run('فحص دم عام');
+  const examples=sonar && genericSonar.type==='weak' && ['SVC-0063','SVC-0331','SVC-0332'].every(id=>genericSonar.options.some(x=>x.id===id)) && blood.type==='strong' && blood.best.id==='SVC-0048' && !blood.options.length && ['الإدارة العامة','وحدة العناية'].every(q=>run(q).type==='none');
   return {ok:valid && fillers && examples,note:words.map(describe).join('؛ ')};
 });
 check(59, 'عتبة تغطية الاسم قابلة للضبط دون تجاوز حماية الكلمة الواحدة', () => {const name='الف باء جيم دال',items=[{id:'T',name}];const high=engine.wholeWordMatch('الف',name,0.3),low=engine.wholeWordMatch('الف',name,0.2),single=engine.search('الف',{items,yesMatch:{coverageMin:0.2}});return {ok:index.yesMatch.coverageMin===0.6&&!high&&low&&single.type==='weak',note:`0.3=${high}, 0.2=${low}, single=${single.type}`};});
@@ -323,6 +324,16 @@ check(67, 'المفردات العامة لا تعطي نعم حتى مع اسم
 check(68, 'تغطية السؤال كلمات كاملة فقط، والرقم والواو الأصلية محفوظان', () => {const item={id:'T',name:'تفاح موز عنب رمان خوخ مشمش'}, d={items:[item]};const exact=engine.search('تفاح موز',d),extra=engine.search('تفاح موز غريب',d),fuzzy=engine.search('تفاحه موز',d),num=engine.search('تفاح موز 12',d),w=engine.search('ولادة تفاح',{items:[{id:'W',name:'لادة تفاح'}]});return {ok:exact.type==='strong'&&extra.type!=='strong'&&fuzzy.type!=='strong'&&num.type!=='strong'&&w.type!=='strong',note:`exact=${exact.type}, extra=${extra.type}, fuzzy=${fuzzy.type}, number=${num.type}, waw=${w.type}`};});
 check(69, 'تغطية السؤال لا تتجاوز قيود searchOnly أو الكلمات العامة', () => {const hidden={id:'H',name:'تفاح موز عنب رمان خوخ',searchOnly:true},d={items:[hidden],searchOnlyMatch:{minCoverage:0.75,minWords:3}};const r=engine.search('تفاح موز عنب',d),generic=engine.search('فحص عين',{items:[{id:'G',name:'فحص عين'}]});return {ok:!foundItems(r).some(x=>x.id==='H')&&generic.type!=='strong',note:`searchOnly=${r.type}, فحص عين=${generic.type}`};});
 check(70, 'أولوية نعم السابقة محفوظة عند سونار حمل', () => {const r=run('سونار حمل');return {ok:r.type==='strong'&&r.best.id==='SVC-0332',note:describe(r.query)};});
+check(71, 'العبارتان المعتمدتان للسونار ← 0063 فقط وبصيغة واتساب المعتمدة', () => {
+  const name='السونار العام وسونار الحمل', text='يتوفر لدينا '+name+' في مستشفى الأنهار التخصصي. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا.';
+  const ok=['سونار عام','السونار العام'].every(q=>{const r=run(q),p=engine.buildReply(r,data);return r.type==='strong' && r.best.id==='SVC-0063' && r.best.name===name && !r.options.length && p.title==='نعم، الخدمة متوفرة لدينا' && p.lines.length===1 && p.lines[0]===text && p.whatsappLabel==='تواصل عبر واتساب' && new URL(p.whatsappUrl).pathname==='/'+contact.whatsappNumber && new URL(p.whatsappUrl).searchParams.get('text')==='السلام عليكم، أرغب في الحجز أو الاستفسار عن: '+name;});
+  return {ok,note:['سونار عام','السونار العام'].map(describe).join('؛ ')};
+});
+check(72, 'الاستثناء محدد بالعبارتين؛ سونار وحدها ونتائج 0331 و0332 تبقى خيارات', () => {
+  const generic=run('سونار'), extra=run('سونار عام إضافي');
+  const wrongTarget=engine.search('سونار عام',{...data,items:index.items.filter(i=>i.id!=='SVC-0063')});
+  return {ok:generic.type==='weak' && ['SVC-0063','SVC-0331','SVC-0332'].every(id=>generic.options.some(i=>i.id===id)) && !extra.approvedAvailability && wrongTarget.type==='none',note:describe('سونار')};
+});
 
 /* -------------------------------- التقرير -------------------------------- */
 

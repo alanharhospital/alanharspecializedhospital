@@ -1,0 +1,4 @@
+/services                   HTTP 308 Location=http://127.0.0.1:8789/services/
+/services/                  HTTP 200 Location=
+/services/diagnostics       HTTP 301 Location=http://127.0.0.1:8789/services/
+/services/surgery           HTTP 301 Location=http://127.0.0.1:8789/services/

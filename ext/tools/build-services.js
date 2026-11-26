@@ -24,6 +24,11 @@ const ranks = [
   ['عيادات ومعاينات', 'إدارات مساندة', 'خدمات إدارية وتقارير']
 ];
 const published = catalog.items.filter(i => i.publish === true);
+const searchOverrides = decisions.searchOverrides || [];
+for (const override of searchOverrides) {
+  const target = published.find(i => i.id === override.targetId && i.name === override.targetName);
+  if (!target || target.searchOnly || !Array.isArray(override.queries) || !override.queries.length || override.queries.some(q => typeof q !== 'string' || !q.trim()) || override.response !== 'approved-availability') throw Error('Invalid search override: ' + override.targetId);
+}
 const index = {
   meta: { generatedBy:'ext/tools/build-services.js', generatedAt:decisions.generatedAt, hospital:'مستشفى الأنهار التخصصي', site:'https://alanharhospital.com', note:'فهرس بحث ثابت. كل الأسماء من ext/data/services-catalog.json (publish=true فقط).' },
   items: published.map(i => {
@@ -35,7 +40,8 @@ const index = {
   }),
   excludedTerms:decisions.excludeRules, blockedQueries:decisions.blockedQueries || [],
   searchOnlyMatch:{...decisions.searchOnlyMatch}, yesMatch:{...decisions.yesMatch},
-  categoryHints:{...decisions.categoryHints}, synonyms:(decisions.approvedAliases || []).map(s => ({...s}))
+  categoryHints:{...decisions.categoryHints}, synonyms:(decisions.approvedAliases || []).map(s => ({...s})),
+  searchOverrides:searchOverrides.map(o => ({...o, queries:[...o.queries]}))
 };
 const html = `<!DOCTYPE html>
 <html lang="ar" dir="rtl">
@@ -43,7 +49,7 @@ const html = `<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0a2a5e">
-    ${page.introStatus === 'draft' ? '<meta name="robots" content="noindex,follow">' : ''}
+    <meta name="robots" content="noindex,follow">
     <title>البحث عن خدمة | مستشفى الأنهار التخصصي</title>
     <meta name="description" content="${esc(page.intro)}">
     <link rel="canonical" href="https://alanharhospital.com/services/">
@@ -80,8 +86,8 @@ ${page.introTitle ? '        <h2>' + esc(page.introTitle) + '</h2>\n' : ''}     
         </div>
     </main>
     <!-- ENH:START services-search-scripts -->
-    <script src="../ext/data/services-index.js?v=6"></script>
-    <script src="../ext/services-search.js?v=6" defer></script>
+    <script src="../ext/data/services-index.js?v=7"></script>
+    <script src="../ext/services-search.js?v=7" defer></script>
     <!-- ENH:END services-search-scripts -->
 </body>
 </html>
