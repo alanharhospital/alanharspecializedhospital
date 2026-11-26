@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * test-search.js — 37 حالة اختبار لمحرّك بحث دليل الخدمات
+ * test-search.js — 45 حالة اختبار لمحرّك بحث دليل الخدمات
  * التشغيل: node ext/tools/test-search.js
  * يعتمد على: ext/tools/build-services.js (لازم تشغيله أولًا)
  */
@@ -220,9 +220,9 @@ const describe = q => { const r=run(q); return `${r.type}: ${foundItems(r).map(i
 check(28, '«سرير» ← لا searchOnly', () => ({ok:noOnly('سرير'),note:describe('سرير')}));
 check(29, '«جهاز» و«أجهزة» ← لا searchOnly', () => ({ok:['جهاز','أجهزة'].every(noOnly),note:['جهاز','أجهزة'].map(describe).join('؛ ')}));
 check(30, '«حاضنة» ← لا searchOnly', () => ({ok:noOnly('حاضنة'),note:describe('حاضنة')}));
-check(31, '«عناية مركزة» ← 0356 و0357 وخدمات عادية فقط، بلا 0001 أو 0002', () => {
+check(31, '«عناية مركزة» ← 0356 و0357 و0367 فقط', () => {
   const r=run('عناية مركزة'), ids=foundItems(r).map(i=>i.id).sort();
-  return {ok:ids.includes('SVC-0356')&&ids.includes('SVC-0357')&&foundItems(r).every(i=>!i.searchOnly),note:describe('عناية مركزة')};
+  return {ok:ids.join(',')==='SVC-0356,SVC-0357,SVC-0367'&&foundItems(r).every(i=>!i.searchOnly),note:describe('عناية مركزة')};
 });
 check(32, 'الاسم الكامل مع ICU ← 0001 وlisted', () => {
   const r=run('أكثر من 13 سرير عناية مركزة للكبار (ICU)'), rep=engine.buildReply(r,data);
@@ -244,20 +244,41 @@ check(36, '«أكثر من 12 جهاز تنفس صناعي» و«أكثر من 3
   return {ok:config.minCoverage===0.75&&config.minWords===3&&r1.type==='strong'&&r1.best.id==='SVC-0007'&&r2.type==='strong'&&r2.best.id==='SVC-0008'&&!r2.options.length&&!foundItems(restrictedResult).some(x=>x.searchOnly)&&tie.best?.id==='TEST-A'&&!tie.options.length&&boundary('تفاح موز عنب').best?.id==='BOUNDARY'&&!boundary('تفاح موز').best&&!stricter.best&&!foundItems(alias).some(x=>x.searchOnly),note:q1+' ← '+describe(q1)+'؛ '+q2+' ← '+describe(q2)};
 });
 
-check(37, 'التجهيزات: استعلامات عامة لا تظهرها، و«16 حاضنة أطفال» تطابق 0003', () => {
+check(37, '«سرير» ← خيارات لا نعم للتقييم السريري', () => {const r=run('سرير');return {ok:r.type!=='strong'&&(!r.best||r.best.id!=='SVC-0263'),note:describe('سرير')};});
+check(38, '«سريري» ← لا نعم لخدمة بلا مطابقة كلمة كاملة', () => {const r=run('سريري');return {ok:r.type!=='strong'||engine.wholeWordMatch('سريري',r.best.name),note:describe('سريري')};});
+check(39, '«قلع ضرس»، «CBC»، «ايكو للقلب» لا تتأثر', () => {
+  const expected=[['قلع ضرس','SVC-0070',['SVC-0071','SVC-0072','SVC-0074']],['CBC','SVC-0048',[]],['ايكو للقلب','SVC-0246',['SVC-0247','SVC-0065']]];
+  const specific=['CBC','فحص الدم الشامل','تحليل الدم الشامل','صورة الدم الكاملة','صورة الدم الكامل'];
+  const generic=['فحص دم','تحليل دم','صورة الدم'];
+  const aliasesOk=specific.every(q=>{const r=run(q);return r.type==='strong'&&r.best.id==='SVC-0048'}) && generic.every(q=>{const r=run(q);return r.type==='weak'&&r.options.some(x=>x.id==='SVC-0048')});
+  return {ok:aliasesOk&&expected.every(([q,id,options])=>{const r=run(q), rep=engine.buildReply(r,data);return r.type==='strong'&&r.best.id===id&&JSON.stringify(r.options.map(x=>x.id))===JSON.stringify(options)&&(!options.length||rep.lines.some(x=>x.includes('هل تقصد')))}),note:expected.map(([q])=>q+' ← '+describe(q)).join('؛ ')};
+});
+check(40, '«أكثر من 12 جهاز تنفس صناعي» ← 0007', () => {const r=run('أكثر من 12 جهاز تنفس صناعي');return {ok:r.type==='strong'&&r.best.id==='SVC-0007',note:describe(r.query)};});
+check(41, '«12 جهاز تنفس صناعي» ← 0007', () => {const r=run('12 جهاز تنفس صناعي');return {ok:r.type==='strong'&&r.best.id==='SVC-0007',note:describe(r.query)};});
+check(42, '«جهاز تنفس صناعي» ← لا 0007', () => ({ok:noOnly('جهاز تنفس صناعي'),note:describe('جهاز تنفس صناعي')}));
+check(43, '«١٦ حاضنة أطفال في وحدة العناية بحديثي الولادة ورعاية الخدج» ← 0003', () => {const q='١٦ حاضنة أطفال في وحدة العناية بحديثي الولادة ورعاية الخدج',r=run(q);return {ok:r.type==='strong'&&r.best.id==='SVC-0003',note:describe(q)};});
+check(44, '«حاضنة أطفال في وحدة العناية بحديثي الولادة ورعاية الخدج» بلا رقم ← لا 0003', () => {const q='حاضنة أطفال في وحدة العناية بحديثي الولادة ورعاية الخدج';return {ok:noOnly(q),note:describe(q)};});
+
+check(45, 'التجهيزات: استعلامات عامة لا تظهرها، و«16 حاضنة أطفال» تطابق 0003', () => {
   const decisions=JSON.parse(fs.readFileSync(path.join(DATA,'catalog-decisions.json'),'utf8'));
   const only=index.items.filter(x=>x.searchOnly);
   const r=run('16 حاضنة أطفال');
-  const flags=only.length===8&&only.every(i=>i.exactMatchOnly&&i.directoryHidden&&decisions.decisions.some(d=>d.id===i.id&&d.exactMatchOnly&&d.directoryHidden));
+  const numberIds=['SVC-0001','SVC-0002','SVC-0003','SVC-0004','SVC-0007','SVC-0008'];
+  const flags=only.length===8&&only.every(i=>i.exactMatchOnly&&i.directoryHidden&&i.numberRequired===numberIds.includes(i.id)&&i.matchName===(i.id==='SVC-0007'?'أكثر من 12 جهاز تنفس صناعي':'')&&decisions.decisions.some(d=>d.id===i.id&&d.exactMatchOnly&&d.directoryHidden&&d.matchName===i.matchName&&d.numberRequired===i.numberRequired));
   const broad=['سرير','جهاز','أجهزة','حواضن','رقود'].every(noOnly);
   const reverse=noOnly('أطفال حاضنة 16');
   const incomplete=noOnly('16 أطفال حاضنة');
-  return {ok:flags&&broad&&reverse&&incomplete&&r.type==='strong'&&r.best.id==='SVC-0003'&&!r.options.length,note:`flags=${flags}, broad=${broad}, reversed=${reverse}, 16 حاضنة أطفال=${r.best?.id}`};
+  const wrongNumbers=['14 سرير عناية مركزة للكبار','9 أسرة عناية مركزة للأطفال','17 حاضنة أطفال','41 سرير رقود خاص','13 جهاز تنفس صناعي','36 جهاز مراقبة للعلامات الحيوية'].every(noOnly);
+  const persian=run('۱۲ جهاز تنفس صناعي');
+  const exactItem={id:'EXACT-TEST',name:'تفاح موز عنب رمان',searchOnly:true,exactMatchOnly:true};
+  const threshold=q=>engine.search(q,{items:[exactItem],searchOnlyMatch:index.searchOnlyMatch});
+  const tooStrict=engine.search('تفاح موز عنب',{items:[exactItem],searchOnlyMatch:{...index.searchOnlyMatch,minCoverage:0.8}});
+  return {ok:flags&&broad&&reverse&&incomplete&&wrongNumbers&&persian.best?.id==='SVC-0007'&&r.type==='strong'&&r.best.id==='SVC-0003'&&!r.options.length&&threshold('تفاح موز عنب').best?.id==='EXACT-TEST'&&!tooStrict.best,note:`flags=${flags}, broad=${broad}, reversed=${reverse}, 16 حاضنة أطفال=${r.best?.id}`};
 });
 
 /* -------------------------------- التقرير -------------------------------- */
 
-console.log('\n  اختبار محرّك البحث — 37 حالة');
+console.log('\n  اختبار محرّك البحث — 45 حالة');
 console.log('  ' + '-'.repeat(76));
 let pass = 0;
 for (const r of results) {

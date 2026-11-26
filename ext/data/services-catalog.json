@@ -69,10 +69,12 @@
       "linkOnly": false,
       "publish": true,
       "exactMatchMinWords": 4,
+      "matchName": "",
       "hasNumber": true,
       "searchOnly": true,
       "exactMatchOnly": true,
-      "directoryHidden": true
+      "directoryHidden": true,
+      "numberRequired": true
     },
     {
       "id": "SVC-0002",
@@ -84,10 +86,12 @@
       "status": "active",
       "linkOnly": false,
       "publish": true,
+      "matchName": "",
       "hasNumber": true,
       "searchOnly": true,
       "exactMatchOnly": true,
-      "directoryHidden": true
+      "directoryHidden": true,
+      "numberRequired": true
     },
     {
       "id": "SVC-0003",
@@ -99,10 +103,15 @@
       "status": "active",
       "linkOnly": false,
       "publish": true,
+      "matchName": "",
+      "exactPhrases": [
+        "16 حاضنة أطفال"
+      ],
       "hasNumber": true,
       "searchOnly": true,
       "exactMatchOnly": true,
-      "directoryHidden": true
+      "directoryHidden": true,
+      "numberRequired": true
     },
     {
       "id": "SVC-0004",
@@ -114,10 +123,12 @@
       "status": "active",
       "linkOnly": false,
       "publish": true,
+      "matchName": "",
       "hasNumber": true,
       "searchOnly": true,
       "exactMatchOnly": true,
-      "directoryHidden": true
+      "directoryHidden": true,
+      "numberRequired": true
     },
     {
       "id": "SVC-0005",
@@ -129,6 +140,7 @@
       "status": "active",
       "linkOnly": false,
       "publish": true,
+      "matchName": "",
       "searchOnly": true,
       "exactMatchOnly": true,
       "directoryHidden": true
@@ -143,6 +155,7 @@
       "status": "active",
       "linkOnly": false,
       "publish": true,
+      "matchName": "",
       "searchOnly": true,
       "exactMatchOnly": true,
       "directoryHidden": true
@@ -157,10 +170,12 @@
       "status": "active",
       "linkOnly": false,
       "publish": true,
+      "matchName": "أكثر من 12 جهاز تنفس صناعي",
       "hasNumber": true,
       "searchOnly": true,
       "exactMatchOnly": true,
-      "directoryHidden": true
+      "directoryHidden": true,
+      "numberRequired": true
     },
     {
       "id": "SVC-0008",
@@ -172,10 +187,12 @@
       "status": "active",
       "linkOnly": false,
       "publish": true,
+      "matchName": "",
       "hasNumber": true,
       "searchOnly": true,
       "exactMatchOnly": true,
-      "directoryHidden": true
+      "directoryHidden": true,
+      "numberRequired": true
     },
     {
       "id": "SVC-0009",

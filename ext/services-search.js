@@ -29,6 +29,8 @@
       .replace(/ى/g, 'ي')
       .replace(/ة/g, 'ه')
       .replace(/[\u200e\u200f]/g, '')
+      .replace(/[٠-٩]/g, function (c) { return String(c.charCodeAt(0) - 0x660); })
+      .replace(/[۰-۹]/g, function (c) { return String(c.charCodeAt(0) - 0x6f0); })
       .toLowerCase()
       .replace(/[^\p{L}\p{N}\s]+/gu, ' ')
       .replace(/\s+/g, ' ')
@@ -55,13 +57,12 @@
     return norm(name).split(' ').map(stripPrefix).filter(Boolean);
   }
 
-  function tokenizeQuery(q) {
-    return norm(q)
-      .split(' ')
-      .map(stripPrefix)
-      .filter(function (t) {
-        return t.length >= 2 && !STOPWORDS.has(t);
-      });
+  function tokenizeQuery(q, allowStandalone) {
+    var words = norm(q).split(' ').map(stripPrefix).filter(Boolean);
+    var meaningful = words.filter(function (t) { return (t.length >= 2 || /^\d+$/.test(t)) && !STOPWORDS.has(t); });
+    // اسم نوع الخدمة وحده استعلام حقيقي؛ لا يطبق ذلك على بقايا المرادفات.
+    if (allowStandalone !== false && !meaningful.length && words.length === 1 && ['فحص', 'تحليل', 'اشعه', 'عمليه'].indexOf(words[0]) !== -1) return words;
+    return meaningful;
   }
 
   /* لعناصر البحث فقط: كلمات مميزة فريدة، دون أدوات أو نص لاتيني. */
@@ -91,17 +92,26 @@
     var querySet = new Set(query), best = null, bestCoverage = -1;
     items.forEach(function (item) {
       if (!item.searchOnly) return;
+      var original = phraseTokens(item.name), phrase = phraseTokens(raw);
+      var numbers = original.filter(function (word) { return /^\d+$/.test(word); });
+      if (item.numberRequired && (!numbers.length || !numbers.every(function (number) { return phrase.indexOf(number) !== -1; }))) return;
       if (item.exactMatchOnly) {
-        var phrase = phraseTokens(raw), name = phraseTokens(item.name);
-        if (phrase.length < Math.max(3, config.minWords, item.exactMatchMinWords || 0) || phrase.length > name.length) return;
-        var numbers = name.filter(function (word) { return /^\d+$/.test(word); });
-        if (numbers.length && !numbers.every(function (number) { return phrase.indexOf(number) !== -1; })) return;
-        var contiguous = false;
-        for (var start = 0; start <= name.length - phrase.length; start++) {
-          if (phrase.every(function (word, n) { return word === name[start + n]; })) { contiguous = true; break; }
-        }
-        var phraseCoverage = phrase.length / name.length;
-        if (contiguous && phraseCoverage > bestCoverage) { best = item; bestCoverage = phraseCoverage; }
+        if (phrase.length < Math.max(3, config.minWords, item.exactMatchMinWords || 0)) return;
+        var approved = (item.exactPhrases || []).some(function (text) {
+          var permitted = phraseTokens(text);
+          return permitted.length === phrase.length && permitted.every(function (word, n) { return word === phrase[n]; });
+        });
+        var names = [original];
+        if (item.matchName) names.push(phraseTokens(item.matchName));
+        names.forEach(function (name) {
+          if (phrase.length > name.length) return;
+          var contiguous = false;
+          for (var start = 0; start <= name.length - phrase.length; start++) {
+            if (phrase.every(function (word, n) { return word === name[start + n]; })) { contiguous = true; break; }
+          }
+          var phraseCoverage = phrase.length / name.length;
+          if (contiguous && (approved || phraseCoverage >= config.minCoverage) && phraseCoverage > bestCoverage) { best = item; bestCoverage = phraseCoverage; }
+        });
         return;
       }
       var words = searchOnlyTokens(item.name);
@@ -114,6 +124,29 @@
       }
     });
     return best;
+  }
+
+  // مطابقة «نعم» تتحقق من كلمات الاسم، لا من مساواة ناتجة عن حذف واو أصلية.
+  function wholeWordTokens(text, isQuery) {
+    var rawWords = norm(text).split(' ').filter(Boolean);
+    var usable = rawWords.filter(function (word) {
+      var token = stripPrefix(word);
+      return (token.length >= 2 || /^\d+$/.test(token)) && !STOPWORDS.has(token);
+    });
+    if (isQuery && !usable.length && rawWords.length === 1 && ['فحص', 'تحليل', 'اشعه', 'عمليه'].indexOf(rawWords[0]) !== -1) usable = rawWords;
+    if (!isQuery) usable = rawWords;
+    return usable.map(function (word) {
+      // نحفظ حرف العطف أو الجر عند وجوده، ونزيل «ال» وحدها.
+      if (/^(وال|بال|كال|فال)/.test(word) && word.length > 5) return word[0] + word.slice(3);
+      if (/^لل/.test(word) && word.length > 3) return word.slice(2);
+      if (/^ال/.test(word) && word.length > 3) return word.slice(2);
+      return word;
+    });
+  }
+
+  function wholeWordMatch(query, name) {
+    var q = wholeWordTokens(query, true), words = wholeWordTokens(name, false);
+    return q.length > 0 && q.every(function (word) { return words.indexOf(word) !== -1; });
   }
 
   function levenshtein(a, b) {
@@ -168,6 +201,9 @@
       return result;
     }
 
+    // صياغة شبيهة بالوسوم ليست استعلام خدمة؛ لا تطابق أرقامها خدمات أخرى.
+    if (/[<>]/.test(raw)) { result.type = 'none'; return result; }
+
     /* قواعد استبعاد الاستعلامات: لا نُظهر تطابقات جزئية مضللة لعبارة مستبعدة.
        الاستثناء اليدوي يعمل إذا أصبح عنصر يحمل العبارة منشورًا. */
     var blocked = ((data && data.excludedTerms) || []).some(function (term) {
@@ -204,7 +240,7 @@
 
     if (bestSyn) {
       var remainder = padded.replace(' ' + norm(bestSyn.phrase) + ' ', ' ');
-      var restTokens = tokenizeQuery(remainder);
+      var restTokens = tokenizeQuery(remainder, false);
       var target = items.filter(function (it) { return !it.searchOnly && it.id === bestSyn.targetId; })[0] || null;
       if (target && bestSyn.tier === 'specific' && restTokens.length === 0) {
         result.type = 'strong';
@@ -228,11 +264,13 @@
       return result;
     }
 
-    var full = matches.filter(function (m) { return m.matchedAll; });
+    // البادئة والتهجئة التقريبية تصلح للاقتراح فقط، ولا تكفي لإثبات التوفر.
+    var full = matches.filter(function (m) { return wholeWordMatch(raw, m.item.name); });
     if (full.length && (tokens.length >= 2 || full.length <= 2)) {
       result.type = 'strong';
       result.best = full[0].item;
-      result.options = result.best.searchOnly ? [] : full.slice(1).filter(function (m) { return !m.item.searchOnly; }).slice(0, 3).map(function (m) { return m.item; });
+      // المطابقات التقريبية الأخرى تبقى خيارات لا تأكيدًا للتوفر.
+      result.options = matches.filter(function (m) { return m.matchedAll && m.item.id !== result.best.id; }).slice(0, 3).map(function (m) { return m.item; });
       return result;
     }
 
@@ -309,6 +347,7 @@
       var group = (responses.groups || {})[result.best.group] || (responses.groups || {}).general || {};
       out.lines.push(fill(group.text, { name: result.best.name, category: result.best.category, whatsappDisplay: display }));
       out.options = result.options || [];
+      if (out.options.length && responses.weakMatch && responses.weakMatch.text) out.lines.push(responses.weakMatch.text);
       out.whatsappText = fill(btn.messageWithService, { name: result.best.name });
     } else if (result.type === 'weak') {
       out.lines.push((responses.weakMatch || {}).text || '');
@@ -335,6 +374,7 @@
     norm: norm,
     tokenizeQuery: tokenizeQuery,
     tokenizeName: tokenizeName,
+    wholeWordMatch: wholeWordMatch,
     search: search,
     buildReply: buildReply,
     fill: fill,

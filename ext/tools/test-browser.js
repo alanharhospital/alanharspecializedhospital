@@ -78,7 +78,7 @@ async function main() {
       }
 
       const responses = [];
-      for (const q of ['CBC','قلع ضرس','16 حاضنة','سرير','أكثر من 40 سرير رقود خاص']) {
+      for (const q of ['CBC','قلع ضرس','16 حاضنة','سرير','أكثر من 40 سرير رقود خاص','نقل الدم']) {
         await input.evaluate((el,v) => {
           el.focus(); el.value = v;
           el.dispatchEvent(new CompositionEvent('compositionstart',{bubbles:true,data:''}));
@@ -92,7 +92,8 @@ async function main() {
         const text = await page.$eval('[data-services-search-panel]', el => el.textContent);
         if (q === 'CBC' || q === 'قلع ضرس' || q === 'أكثر من 40 سرير رقود خاص') assert(text.includes(q), route + ' لم يستجب للاستعلام ' + q + ': ' + text);
         if (q === '16 حاضنة') assert(text.includes('نعتذر') && !text.includes('مذكور في قائمة خدماتنا'), 'يجب الاعتذار عن حاضنة مختصرة');
-        if (q === 'سرير') assert(!text.includes('أكثر من 13 سرير') && !text.includes('أكثر من 40 سرير'), 'ظهرت عناصر searchOnly للفظ سرير');
+        if (q === 'سرير') assert(text.includes('هل تقصد') && !text.includes('يتوفر لدينا') && !text.includes('أكثر من 13 سرير') && !text.includes('أكثر من 40 سرير'), 'رد غير صحيح للفظ سرير');
+        if (q === 'نقل الدم') assert(text.includes('نعتذر') && !text.includes('يتوفر لدينا'), 'نقل الدم يجب أن يعطي اعتذارًا');
         if (q === 'أكثر من 40 سرير رقود خاص') assert(text.includes('مذكور في قائمة خدماتنا') && !text.includes('يتوفر لدينا'), 'رد searchOnly غير صحيح');
 
         if (q === 'CBC') {
@@ -105,7 +106,7 @@ async function main() {
           const a = await page.$$eval('[data-services-search-panel] a', nodes => nodes.map(n=>n.href));
           assert(a.every(u=>u.startsWith('https://wa.me/')), 'بحث فقط: رابط غير واتساب');
         }
-        responses.push(q + ': ' + ((q === 'سرير' || q === 'أكثر من 40 سرير رقود خاص') ? text : text.slice(0,90)));
+        responses.push(q + ': ' + text);
       }
       const view = await page.evaluate(() => {
         const panel = document.querySelector('[data-services-search-panel]');

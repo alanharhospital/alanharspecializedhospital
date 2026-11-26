@@ -493,6 +493,9 @@ const searchIndex = {
       exactMatchOnly: !!i.exactMatchOnly,
       exactMatchMinWords: i.exactMatchMinWords || null,
       directoryHidden: !!i.directoryHidden,
+      matchName: i.matchName || "",
+      numberRequired: !!i.numberRequired,
+      exactPhrases: i.exactPhrases || [],
     };
   }),
   excludedTerms: decisions.excludeRules,

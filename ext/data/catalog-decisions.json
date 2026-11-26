@@ -30,7 +30,9 @@
       "searchOnly": true,
       "exactMatchOnly": true,
       "directoryHidden": true,
-      "exactMatchMinWords": 4
+      "exactMatchMinWords": 4,
+      "matchName": "",
+      "numberRequired": true
     },
     {
       "id": "SVC-0002",
@@ -47,7 +49,9 @@
       "reason": "يظهر في البحث القوي فقط بقرار المالك",
       "searchOnly": true,
       "exactMatchOnly": true,
-      "directoryHidden": true
+      "directoryHidden": true,
+      "matchName": "",
+      "numberRequired": true
     },
     {
       "id": "SVC-0003",
@@ -64,7 +68,12 @@
       "reason": "يظهر في البحث القوي فقط بقرار المالك",
       "searchOnly": true,
       "exactMatchOnly": true,
-      "directoryHidden": true
+      "directoryHidden": true,
+      "matchName": "",
+      "numberRequired": true,
+      "exactPhrases": [
+        "16 حاضنة أطفال"
+      ]
     },
     {
       "id": "SVC-0004",
@@ -81,7 +90,9 @@
       "reason": "يظهر في البحث القوي فقط بقرار المالك",
       "searchOnly": true,
       "exactMatchOnly": true,
-      "directoryHidden": true
+      "directoryHidden": true,
+      "matchName": "",
+      "numberRequired": true
     },
     {
       "id": "SVC-0007",
@@ -98,7 +109,9 @@
       "reason": "يظهر في البحث القوي فقط بقرار المالك",
       "searchOnly": true,
       "exactMatchOnly": true,
-      "directoryHidden": true
+      "directoryHidden": true,
+      "matchName": "أكثر من 12 جهاز تنفس صناعي",
+      "numberRequired": true
     },
     {
       "id": "SVC-0008",
@@ -115,7 +128,9 @@
       "reason": "يظهر في البحث القوي فقط بقرار المالك",
       "searchOnly": true,
       "exactMatchOnly": true,
-      "directoryHidden": true
+      "directoryHidden": true,
+      "matchName": "",
+      "numberRequired": true
     },
     {
       "id": "SVC-0047",
@@ -1197,7 +1212,9 @@
       "reason": "يظهر في البحث القوي فقط بقرار المالك",
       "searchOnly": true,
       "exactMatchOnly": true,
-      "directoryHidden": true
+      "directoryHidden": true,
+      "matchName": "",
+      "numberRequired": false
     },
     {
       "id": "SVC-0006",
@@ -1214,7 +1231,9 @@
       "reason": "يظهر في البحث القوي فقط بقرار المالك",
       "searchOnly": true,
       "exactMatchOnly": true,
-      "directoryHidden": true
+      "directoryHidden": true,
+      "matchName": "",
+      "numberRequired": false
     },
     {
       "id": "SVC-0067",
