@@ -19,7 +19,11 @@ const ROOT=path.resolve(__dirname,'../..'), puppeteer=require('puppeteer-core'),
       await page.waitForSelector('.clinical-trigger'); await page.click('.clinical-trigger');
       assert(await page.$eval('.clinical-dialog',el=>el.open),route+' dialog');
       await page.$eval('.clinical-dialog input',el=>{el.value='16 حاضنة أطفال';el.dispatchEvent(new Event('input',{bubbles:true}));});
-      await page.waitForFunction(()=>document.querySelector('.clinical-dialog .ss-panel')?.textContent.includes('16 حاضنة أطفال'),{timeout:5000});
+      await page.waitForFunction(()=>document.querySelector('.clinical-dialog .ss-panel')?.textContent.trim(),{timeout:5000});
+      let short=await page.$eval('.clinical-dialog .ss-panel',el=>el.textContent);
+      assert(!short.includes('16 حاضنة أطفال في وحدة العناية') && !(await page.$('.clinical-dialog .ss-option[data-id="SVC-0003"]')),route+' عبارة مختصرة لا تعرض 0003');
+      await page.$eval('.clinical-dialog input',el=>{el.value='16 حاضنة أطفال في وحدة العناية بحديثي الولادة ورعاية الخدج (NICU)';el.dispatchEvent(new Event('input',{bubbles:true}));});
+      await page.waitForFunction(()=>document.querySelector('.clinical-dialog .ss-panel')?.textContent.includes('16 حاضنة أطفال في وحدة العناية'),{timeout:5000});
       let text=await page.$eval('.clinical-dialog .ss-panel',el=>el.textContent);
       assert(text.includes('مذكور في قائمة خدماتنا')&&!text.includes('يتوفر لدينا'),route+' listed');
       assert.equal(await page.$eval('.clinical-dialog .ss-panel a',a=>new URL(a.href).hostname),'wa.me');

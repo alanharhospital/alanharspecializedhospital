@@ -104,9 +104,6 @@
       "linkOnly": false,
       "publish": true,
       "matchName": "",
-      "exactPhrases": [
-        "16 حاضنة أطفال"
-      ],
       "hasNumber": true,
       "searchOnly": true,
       "exactMatchOnly": true,

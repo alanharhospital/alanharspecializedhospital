@@ -95,25 +95,6 @@
       var original = phraseTokens(item.name), phrase = phraseTokens(raw);
       var numbers = original.filter(function (word) { return /^\d+$/.test(word); });
       if (item.numberRequired && (!numbers.length || !numbers.every(function (number) { return phrase.indexOf(number) !== -1; }))) return;
-      if (item.exactMatchOnly) {
-        if (phrase.length < Math.max(3, config.minWords, item.exactMatchMinWords || 0)) return;
-        var approved = (item.exactPhrases || []).some(function (text) {
-          var permitted = phraseTokens(text);
-          return permitted.length === phrase.length && permitted.every(function (word, n) { return word === phrase[n]; });
-        });
-        var names = [original];
-        if (item.matchName) names.push(phraseTokens(item.matchName));
-        names.forEach(function (name) {
-          if (phrase.length > name.length) return;
-          var contiguous = false;
-          for (var start = 0; start <= name.length - phrase.length; start++) {
-            if (phrase.every(function (word, n) { return word === name[start + n]; })) { contiguous = true; break; }
-          }
-          var phraseCoverage = phrase.length / name.length;
-          if (contiguous && (approved || phraseCoverage >= config.minCoverage) && phraseCoverage > bestCoverage) { best = item; bestCoverage = phraseCoverage; }
-        });
-        return;
-      }
       var words = searchOnlyTokens(item.name);
       if (!words.length) return;
       var matched = words.filter(function (word) { return querySet.has(word); }).length;
@@ -126,27 +107,31 @@
     return best;
   }
 
-  // مطابقة «نعم» تتحقق من كلمات الاسم، لا من مساواة ناتجة عن حذف واو أصلية.
-  function wholeWordTokens(text, isQuery) {
-    var rawWords = norm(text).split(' ').filter(Boolean);
-    var usable = rawWords.filter(function (word) {
-      var token = stripPrefix(word);
-      return (token.length >= 2 || /^\d+$/.test(token)) && !STOPWORDS.has(token);
-    });
-    if (isQuery && !usable.length && rawWords.length === 1 && ['فحص', 'تحليل', 'اشعه', 'عمليه'].indexOf(rawWords[0]) !== -1) usable = rawWords;
-    if (!isQuery) usable = rawWords;
-    return usable.map(function (word) {
-      // نحفظ حرف العطف أو الجر عند وجوده، ونزيل «ال» وحدها.
-      if (/^(وال|بال|كال|فال)/.test(word) && word.length > 5) return word[0] + word.slice(3);
+  // المقارنة لا تقتطع واوًا أصلية مثل «ولادة»؛ أدوات التعريف والجر المعرفة فقط.
+  var YES_CONNECTORS = new Set(['من','في','مع','و','او','الي','على','عن'].map(norm));
+  var YES_FILLERS = new Set(['هل','يوجد','عندكم','لديكم','متوفر','توفر','لكم','عندك','لو','اريد','ابحث','هو','هي'].map(norm));
+  function wholeWordTokens(text, isQuery, keepParentheses) {
+    var source = keepParentheses ? String(text || '') : String(text || '').replace(/\([^)]*\)|\[[^\]]*\]/g, ' ');
+    // الواو قبل همزة القطع كما في «وإيكو» أداة عطف؛ لا نحذفها من «ولادة».
+    source = source.replace(/(^|[\s(])و(?=[أإآ])/g, '$1');
+    return norm(source).split(' ').filter(Boolean).filter(function (word) {
+      return !YES_CONNECTORS.has(word) && !(isQuery && YES_FILLERS.has(word)) && !/^\d+$/.test(word) && !/^[a-z]$/.test(word);
+    }).map(function (word) {
+      if (/^(وال|بال|كال|فال)/.test(word) && word.length > 5) return word.slice(3);
       if (/^لل/.test(word) && word.length > 3) return word.slice(2);
       if (/^ال/.test(word) && word.length > 3) return word.slice(2);
       return word;
-    });
+    }).filter(function (word) {return word && !YES_CONNECTORS.has(word);});
   }
-
-  function wholeWordMatch(query, name) {
+  function wholeWordMatch(query, name, minCoverage) {
     var q = wholeWordTokens(query, true), words = wholeWordTokens(name, false);
-    return q.length > 0 && q.every(function (word) { return words.indexOf(word) !== -1; });
+    var queryNumbers = norm(query).split(' ').filter(function (word) { return /^\d+$/.test(word); });
+    var nameNumbers = norm(name).split(' ').filter(function (word) { return /^\d+$/.test(word); });
+    if (!queryNumbers.every(function (number) { return nameNumbers.indexOf(number) !== -1; })) return false;
+    if (!q.length || !words.length) return false;
+    var distinct = Array.from(new Set(words)), qset = new Set(q);
+    var matches = distinct.filter(function (word) { return qset.has(word); }).length;
+    return q.every(function (word) { return distinct.indexOf(word) !== -1; }) && matches / distinct.length >= (Number.isFinite(minCoverage) ? minCoverage : 0.6);
   }
 
   function levenshtein(a, b) {
@@ -169,8 +154,8 @@
   /** درجة مطابقة كلمة استعلام بكلمة اسم: 2 تام، 1.5 بادئة، 1 تقريبي، 0 لا */
   function tokenScore(qt, nt) {
     if (qt === nt) return 2;
-    if (qt.length >= 3 && nt.length >= 3 && (nt.indexOf(qt) === 0 || qt.indexOf(nt) === 0)) return 1.5;
-    if (qt.length >= 4 && nt.length >= 4 && Math.abs(qt.length - nt.length) <= 1 && levenshtein(qt, nt) <= 1) return 1;
+    if (qt.length >= 5 && nt.length >= 5 && (nt.indexOf(qt) === 0 || qt.indexOf(nt) === 0)) return 1.5;
+    if (qt.length >= 5 && nt.length >= 5 && Math.abs(qt.length - nt.length) <= 1 && levenshtein(qt, nt) <= 1) return 1;
     return 0;
   }
 
@@ -194,7 +179,14 @@
       return qNorm.indexOf(norm(kw)) !== -1;
     });
 
-    var tokens = tokenizeQuery(raw);
+    var hints = (data && data.categoryHints) || {};
+    var hintKey = Object.keys(hints).find(function (key) { return norm(key) === qNorm; });
+    if (hintKey && ['diagnostics', 'surgery'].indexOf(hints[hintKey]) !== -1) {
+      result.type = 'category';
+      result.categoryHint = hints[hintKey];
+      return result;
+    }
+    var tokens = wholeWordTokens(raw, true).filter(function (t) { return !STOPWORDS.has(t); });
     if (qNorm.length < 2 || tokens.length === 0) {
       if (!result.emergency) return result;
       result.type = 'none';
@@ -219,7 +211,7 @@
     if (blocked || blockedQuery) { result.type = 'none'; return result; }
 
     var onlyMatch = searchOnlyBest(raw, items, data && data.searchOnlyMatch);
-    if (onlyMatch) {
+    if (onlyMatch && wholeWordMatch(raw, onlyMatch.name, data && data.yesMatch && data.yesMatch.coverageMin)) {
       result.type = 'strong';
       result.best = onlyMatch;
       return result;
@@ -248,8 +240,8 @@
         return result;
       }
       /* مرادف عام أو بقي كلام: نتائج كخيارات، والهدف أولًا */
-      var others = target ? [target] : [];
-      findMatches(restTokens.length ? restTokens : tokens, items).forEach(function (m) {
+      var others = [];
+      findMatches(tokens, items).forEach(function (m) {
         if (!m.item.searchOnly && !others.some(function (o) { return o.id === m.item.id; })) others.push(m.item);
       });
       result.type = others.length ? 'weak' : 'none';
@@ -265,8 +257,9 @@
     }
 
     // البادئة والتهجئة التقريبية تصلح للاقتراح فقط، ولا تكفي لإثبات التوفر.
-    var full = matches.filter(function (m) { return wholeWordMatch(raw, m.item.name); });
-    if (full.length && (tokens.length >= 2 || full.length <= 2)) {
+    if (matches.some(function (m) { return m.matchedAll; })) matches = matches.filter(function (m) { return m.matchedAll; });
+    var full = matches.filter(function (m) { return wholeWordMatch(raw, m.item.name, data && data.yesMatch && data.yesMatch.coverageMin); });
+    if (full.length) {
       result.type = 'strong';
       result.best = full[0].item;
       // المطابقات التقريبية الأخرى تبقى خيارات لا تأكيدًا للتوفر.
@@ -284,8 +277,8 @@
     var scored = [];
     for (var i = 0; i < items.length; i++) {
       var it = items[i];
-      var nts = it._tokens || (it._tokens = tokenizeName(it.name));
-      var total = 0, matchedCount = 0;
+      var nts = wholeWordTokens(it.name, true, true);
+      var total = 0, matchedCount = 0, allWhole = true;
       for (var t = 0; t < tokens.length; t++) {
         var best = 0;
         for (var n = 0; n < nts.length; n++) {
@@ -293,7 +286,7 @@
           if (sc > best) best = sc;
           if (best === 2) break;
         }
-        if (best > 0) { matchedCount++; total += best; }
+        if (best > 0) { matchedCount++; total += best; if (best < 2) allWhole = false; }
       }
       if (matchedCount === 0) continue;
       scored.push({
@@ -301,9 +294,11 @@
         score: total,
         matchedAll: matchedCount === tokens.length,
         matchedCount: matchedCount,
+        allWhole: allWhole,
       });
     }
     scored.sort(function (a, b) {
+      if (a.allWhole !== b.allWhole) return a.allWhole ? -1 : 1;
       if (a.matchedAll !== b.matchedAll) return a.matchedAll ? -1 : 1;
       if (b.score !== a.score) return b.score - a.score;
       if (a.matchedAll && tokens.length >= 2 && !!a.item.searchOnly !== !!b.item.searchOnly) return a.item.searchOnly ? -1 : 1;
@@ -349,6 +344,9 @@
       out.options = result.options || [];
       if (out.options.length && responses.weakMatch && responses.weakMatch.text) out.lines.push(responses.weakMatch.text);
       out.whatsappText = fill(btn.messageWithService, { name: result.best.name });
+    } else if (result.type === 'category') {
+      var labels = {diagnostics:'فحوصات تشخيصية', surgery:'عمليات وجراحة'};
+      out.categoryHint = {slug:result.categoryHint, text:'تصفّح قسم ' + labels[result.categoryHint] + ' في دليل الخدمات'};
     } else if (result.type === 'weak') {
       out.lines.push((responses.weakMatch || {}).text || '');
       out.options = result.options || [];
@@ -401,7 +399,7 @@
   var pending = null;
   function fromBundle(bundle) {
     if (!bundle || !bundle.index || !Array.isArray(bundle.index.items) || !bundle.responses || !bundle.contact) throw new Error('بيانات بحث غير صالحة');
-    return { items: bundle.index.items, synonyms: bundle.index.synonyms || [], excludedTerms: bundle.index.excludedTerms || [], blockedQueries: bundle.index.blockedQueries || [], searchOnlyMatch: bundle.index.searchOnlyMatch, responses: bundle.responses, contact: bundle.contact };
+    return { items: bundle.index.items, synonyms: bundle.index.synonyms || [], excludedTerms: bundle.index.excludedTerms || [], blockedQueries: bundle.index.blockedQueries || [], searchOnlyMatch: bundle.index.searchOnlyMatch, yesMatch: bundle.index.yesMatch, categoryHints: bundle.index.categoryHints, responses: bundle.responses, contact: bundle.contact };
   }
   function loadJSON(url) {
     return fetch(url, { credentials: 'same-origin' }).then(function (r) {
@@ -545,6 +543,11 @@
         });
         panel.appendChild(p);
       }
+      if (reply.categoryHint) {
+        var categoryLink = el('a', 'ss-result-link', reply.categoryHint.text);
+        categoryLink.href = new URL('services/' + reply.categoryHint.slug, new URL('../', scriptBase)).href;
+        panel.appendChild(categoryLink);
+      }
       var bestLink = resultLink(reply.best);
       if (bestLink) {
         panel.appendChild(bestLink);
@@ -563,7 +566,9 @@
           var btn = el('button', 'ss-option');
           btn.type = 'button';
           btn.setAttribute('data-id', opt.id);
-          btn.appendChild(highlight(opt.name, tokenizeQuery(input.value)));
+          var optionName = el('span', 'ss-option-name');
+          optionName.appendChild(highlight(opt.name, tokenizeQuery(input.value)));
+          btn.appendChild(optionName);
           btn.appendChild(el('span', 'ss-option-cat', opt.category));
           btn.addEventListener('click', function () {
             var r = search(opt.name, data);
@@ -587,7 +592,7 @@
 
       if (status) {
         var n = (reply.options.length || 0) + (reply.best ? 1 : 0);
-        status.textContent = result.type === 'idle' ? '' : n ? 'نتائج: ' + n : 'لا نتائج';
+        status.textContent = result.type === 'idle' ? '' : result.type === 'category' ? 'قسم في دليل الخدمات' : n ? 'نتائج: ' + n : 'لا نتائج';
       }
       activeIndex = -1;
     }

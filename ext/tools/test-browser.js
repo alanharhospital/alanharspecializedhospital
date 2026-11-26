@@ -78,7 +78,7 @@ async function main() {
       }
 
       const responses = [];
-      for (const q of ['CBC','قلع ضرس','16 حاضنة','سرير','أكثر من 40 سرير رقود خاص','نقل الدم']) {
+      for (const q of ['عين','كبد','تحليل','سرير','قلع ضرس','CBC','أكثر من 40 سرير رقود خاص','نقل الدم','16 حاضنة']) {
         await input.evaluate((el,v) => {
           el.focus(); el.value = v;
           el.dispatchEvent(new CompositionEvent('compositionstart',{bubbles:true,data:''}));
@@ -92,7 +92,9 @@ async function main() {
         const text = await page.$eval('[data-services-search-panel]', el => el.textContent);
         if (q === 'CBC' || q === 'قلع ضرس' || q === 'أكثر من 40 سرير رقود خاص') assert(text.includes(q), route + ' لم يستجب للاستعلام ' + q + ': ' + text);
         if (q === '16 حاضنة') assert(text.includes('نعتذر') && !text.includes('مذكور في قائمة خدماتنا'), 'يجب الاعتذار عن حاضنة مختصرة');
-        if (q === 'سرير') assert(text.includes('هل تقصد') && !text.includes('يتوفر لدينا') && !text.includes('أكثر من 13 سرير') && !text.includes('أكثر من 40 سرير'), 'رد غير صحيح للفظ سرير');
+        if (q === 'سرير') assert(text.includes('نعتذر') && !text.includes('التقييم السريري') && !text.includes('أكثر من 13 سرير') && !text.includes('أكثر من 40 سرير'), 'رد غير صحيح للفظ سرير');
+        if (q === 'عين' || q === 'كبد') assert(text.includes('هل تقصد') && !text.includes('نعم،') && !text.includes('أخذ عينة'), 'رد خيارات غير صحيح: '+q);
+        if (q === 'تحليل') { const hint = await page.$eval('[data-services-search-panel] a', a=>({text:a.textContent,href:a.href})); assert(hint.text.includes('تصفّح قسم فحوصات تشخيصية في دليل الخدمات') && new URL(hint.href).pathname === prefix+'/services/diagnostics', 'رابط القسم غير صحيح'); }
         if (q === 'نقل الدم') assert(text.includes('نعتذر') && !text.includes('يتوفر لدينا'), 'نقل الدم يجب أن يعطي اعتذارًا');
         if (q === 'أكثر من 40 سرير رقود خاص') assert(text.includes('مذكور في قائمة خدماتنا') && !text.includes('يتوفر لدينا'), 'رد searchOnly غير صحيح');
 

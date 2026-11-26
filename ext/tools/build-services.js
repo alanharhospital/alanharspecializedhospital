@@ -462,6 +462,10 @@ const CBC_TARGET = catalog.items.find((i) => /CBC/.test(i.name));
 if (!CBC_TARGET) throw new Error('لم أجد عنصر فحص الدم الشامل CBC');
 
 const SYNONYM_PHRASES = decisions.approvedAliases || [];
+const yesMatch = decisions.yesMatch;
+if (!yesMatch || !Number.isFinite(yesMatch.coverageMin) || yesMatch.coverageMin <= 0 || yesMatch.coverageMin > 1) throw new Error('إعداد yesMatch غير صالح');
+const expectedHints = {تحليل:'diagnostics', فحص:'diagnostics', اشعة:'diagnostics', عملية:'surgery', عمليات:'surgery'};
+if (JSON.stringify(decisions.categoryHints) !== JSON.stringify(expectedHints)) throw new Error('إعداد categoryHints غير صالح');
 const searchOnlyMatch = decisions.searchOnlyMatch;
 if (!searchOnlyMatch || !Number.isFinite(searchOnlyMatch.minCoverage) || searchOnlyMatch.minCoverage <= 0 || searchOnlyMatch.minCoverage > 1 || !Number.isInteger(searchOnlyMatch.minWords) || searchOnlyMatch.minWords < 1) {
   throw new Error('إعداد searchOnlyMatch غير صالح');
@@ -501,6 +505,8 @@ const searchIndex = {
   excludedTerms: decisions.excludeRules,
   blockedQueries: decisions.blockedQueries || [],
   searchOnlyMatch: { ...searchOnlyMatch },
+  yesMatch: { ...decisions.yesMatch },
+  categoryHints: { ...decisions.categoryHints },
   synonyms: SYNONYM_PHRASES.map(s => ({ ...s })),
 };
 

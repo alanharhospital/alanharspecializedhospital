@@ -19,7 +19,7 @@ const responses = JSON.parse(fs.readFileSync(path.join(DATA, 'search-responses.j
 const contact = JSON.parse(fs.readFileSync(path.join(DATA, 'contact.json'), 'utf8'));
 
 const catalog = JSON.parse(fs.readFileSync(path.join(DATA, 'services-catalog.json'), 'utf8'));
-const data = { items: index.items, synonyms: index.synonyms, excludedTerms: index.excludedTerms, blockedQueries: index.blockedQueries, searchOnlyMatch: index.searchOnlyMatch, responses, contact };
+const data = { items: index.items, synonyms: index.synonyms, excludedTerms: index.excludedTerms, blockedQueries: index.blockedQueries, searchOnlyMatch: index.searchOnlyMatch, yesMatch: index.yesMatch, categoryHints: index.categoryHints, responses, contact };
 
 const results = [];
 function check(n, desc, fn) {
@@ -69,10 +69,10 @@ check(5, '«cbc» ← نفس النتيجة', () => {
   return { ok: r.type === 'strong' && /CBC/.test(r.best.name), note: `${r.type} → ${r.best && r.best.name}` };
 });
 
-check(6, '«عملية جراحة مخ واعصاب» ← نعم بنص surgery', () => {
+check(6, '«عملية جراحة مخ واعصاب» ← خيارات لا نعم (قاعدة التغطية)', () => {
   const r = run('عملية جراحة مخ واعصاب');
   const rep = engine.buildReply(r, data);
-  const ok = r.type === 'strong' && r.best.group === 'surgery' && rep.lines.some((l) => l.indexOf('عملياتنا مجهزة') !== -1);
+  const ok = r.type === 'weak' && r.options.some(x => x.id === 'SVC-0009') && rep.lines.some(l => l.includes('هل تقصد'));
   return { ok, note: `${r.type} → ${r.best && r.best.name}` };
 });
 
@@ -127,9 +127,9 @@ check(13, '«هل عندكم قلع ضرس» ← dental', () => {
   return { ok: r.type === 'strong' && r.best.group === 'dental', note: `${r.type} → ${r.best && r.best.name}` };
 });
 
-check(14, '«هل يوجد أشعة مقطعية» ← radiology', () => {
+check(14, '«هل يوجد أشعة مقطعية» ← خيارات radiology (قاعدة التغطية)', () => {
   const r = run('هل يوجد أشعة مقطعية');
-  return { ok: r.type === 'strong' && r.best.group === 'radiology', note: `${r.type} → ${r.best && r.best.name}` };
+  return { ok: r.type === 'weak' && r.options.some(x=>x.group === 'radiology'), note: `${r.type} → ${r.options.map(x=>x.name).join(' | ')}` };
 });
 
 check(15, '«ايكو للقلب» ← radiology', () => {
@@ -241,10 +241,10 @@ check(36, '«أكثر من 12 جهاز تنفس صناعي» و«أكثر من 3
   const boundary = q => engine.search(q,{items:boundaryItems,searchOnlyMatch:config});
   const stricter=engine.search('تفاح موز عنب',{items:boundaryItems,searchOnlyMatch:{...config,minCoverage:0.8}});
   const alias=engine.search('خفي',{items:boundaryItems,searchOnlyMatch:config,synonyms:[{phrase:'خفي',tier:'specific',approved:true,targetId:'BOUNDARY'}]});
-  return {ok:config.minCoverage===0.75&&config.minWords===3&&r1.type==='strong'&&r1.best.id==='SVC-0007'&&r2.type==='strong'&&r2.best.id==='SVC-0008'&&!r2.options.length&&!foundItems(restrictedResult).some(x=>x.searchOnly)&&tie.best?.id==='TEST-A'&&!tie.options.length&&boundary('تفاح موز عنب').best?.id==='BOUNDARY'&&!boundary('تفاح موز').best&&!stricter.best&&!foundItems(alias).some(x=>x.searchOnly),note:q1+' ← '+describe(q1)+'؛ '+q2+' ← '+describe(q2)};
+  return {ok:config.minCoverage===0.75&&config.minWords===3&&!foundItems(r1).some(x=>x.id==='SVC-0007')&&r2.type==='strong'&&r2.best.id==='SVC-0008'&&!r2.options.length&&!foundItems(restrictedResult).some(x=>x.searchOnly)&&tie.best?.id==='TEST-A'&&!tie.options.length&&boundary('تفاح موز عنب').best?.id==='BOUNDARY'&&!boundary('تفاح موز').best&&!stricter.best&&!foundItems(alias).some(x=>x.searchOnly),note:q1+' ← '+describe(q1)+'؛ '+q2+' ← '+describe(q2)};
 });
 
-check(37, '«سرير» ← خيارات لا نعم للتقييم السريري', () => {const r=run('سرير');return {ok:r.type!=='strong'&&(!r.best||r.best.id!=='SVC-0263'),note:describe('سرير')};});
+check(37, '«سرير» ← لا نعم للتقييم السريري', () => {const r=run('سرير');return {ok:r.type!=='strong'&&(!r.best||r.best.id!=='SVC-0263'),note:describe('سرير')};});
 check(38, '«سريري» ← لا نعم لخدمة بلا مطابقة كلمة كاملة', () => {const r=run('سريري');return {ok:r.type!=='strong'||engine.wholeWordMatch('سريري',r.best.name),note:describe('سريري')};});
 check(39, '«قلع ضرس»، «CBC»، «ايكو للقلب» لا تتأثر', () => {
   const expected=[['قلع ضرس','SVC-0070',['SVC-0071','SVC-0072','SVC-0074']],['CBC','SVC-0048',[]],['ايكو للقلب','SVC-0246',['SVC-0247','SVC-0065']]];
@@ -253,13 +253,13 @@ check(39, '«قلع ضرس»، «CBC»، «ايكو للقلب» لا تتأثر
   const aliasesOk=specific.every(q=>{const r=run(q);return r.type==='strong'&&r.best.id==='SVC-0048'}) && generic.every(q=>{const r=run(q);return r.type==='weak'&&r.options.some(x=>x.id==='SVC-0048')});
   return {ok:aliasesOk&&expected.every(([q,id,options])=>{const r=run(q), rep=engine.buildReply(r,data);return r.type==='strong'&&r.best.id===id&&JSON.stringify(r.options.map(x=>x.id))===JSON.stringify(options)&&(!options.length||rep.lines.some(x=>x.includes('هل تقصد')))}),note:expected.map(([q])=>q+' ← '+describe(q)).join('؛ ')};
 });
-check(40, '«أكثر من 12 جهاز تنفس صناعي» ← 0007', () => {const r=run('أكثر من 12 جهاز تنفس صناعي');return {ok:r.type==='strong'&&r.best.id==='SVC-0007',note:describe(r.query)};});
-check(41, '«12 جهاز تنفس صناعي» ← 0007', () => {const r=run('12 جهاز تنفس صناعي');return {ok:r.type==='strong'&&r.best.id==='SVC-0007',note:describe(r.query)};});
+check(40, '«أكثر من 12 جهاز تنفس صناعي» ← لا 0007 دون تغطية 75%', () => {const r=run('أكثر من 12 جهاز تنفس صناعي');return {ok:!foundItems(r).some(x=>x.id==='SVC-0007'),note:describe(r.query)};});
+check(41, '«12 جهاز تنفس صناعي» ← لا 0007 دون تغطية 75%', () => {const r=run('12 جهاز تنفس صناعي');return {ok:!foundItems(r).some(x=>x.id==='SVC-0007'),note:describe(r.query)};});
 check(42, '«جهاز تنفس صناعي» ← لا 0007', () => ({ok:noOnly('جهاز تنفس صناعي'),note:describe('جهاز تنفس صناعي')}));
 check(43, '«١٦ حاضنة أطفال في وحدة العناية بحديثي الولادة ورعاية الخدج» ← 0003', () => {const q='١٦ حاضنة أطفال في وحدة العناية بحديثي الولادة ورعاية الخدج',r=run(q);return {ok:r.type==='strong'&&r.best.id==='SVC-0003',note:describe(q)};});
 check(44, '«حاضنة أطفال في وحدة العناية بحديثي الولادة ورعاية الخدج» بلا رقم ← لا 0003', () => {const q='حاضنة أطفال في وحدة العناية بحديثي الولادة ورعاية الخدج';return {ok:noOnly(q),note:describe(q)};});
 
-check(45, 'التجهيزات: استعلامات عامة لا تظهرها، و«16 حاضنة أطفال» تطابق 0003', () => {
+check(45, 'التجهيزات: العمومي والعبارة المختصرة لا تظهر searchOnly', () => {
   const decisions=JSON.parse(fs.readFileSync(path.join(DATA,'catalog-decisions.json'),'utf8'));
   const only=index.items.filter(x=>x.searchOnly);
   const r=run('16 حاضنة أطفال');
@@ -273,12 +273,33 @@ check(45, 'التجهيزات: استعلامات عامة لا تظهرها، �
   const exactItem={id:'EXACT-TEST',name:'تفاح موز عنب رمان',searchOnly:true,exactMatchOnly:true};
   const threshold=q=>engine.search(q,{items:[exactItem],searchOnlyMatch:index.searchOnlyMatch});
   const tooStrict=engine.search('تفاح موز عنب',{items:[exactItem],searchOnlyMatch:{...index.searchOnlyMatch,minCoverage:0.8}});
-  return {ok:flags&&broad&&reverse&&incomplete&&wrongNumbers&&persian.best?.id==='SVC-0007'&&r.type==='strong'&&r.best.id==='SVC-0003'&&!r.options.length&&threshold('تفاح موز عنب').best?.id==='EXACT-TEST'&&!tooStrict.best,note:`flags=${flags}, broad=${broad}, reversed=${reverse}, 16 حاضنة أطفال=${r.best?.id}`};
+  return {ok:flags&&broad&&reverse&&incomplete&&wrongNumbers&&!foundItems(persian).some(x=>x.id==='SVC-0007')&&!foundItems(r).some(x=>x.id==='SVC-0003')&&threshold('تفاح موز عنب').best?.id==='EXACT-TEST'&&!tooStrict.best,note:`flags=${flags}, broad=${broad}, reversed=${reverse}, 16 حاضنة أطفال=${r.best?.id}`};
 });
+
+check(46, 'عين خيارات بلا عينة', () => {const r=run('عين');return {ok:r.type==='weak' && r.options.some(x=>x.id==='SVC-0434') && !r.options.some(x=>x.name.includes('عينة')),note:describe('عين')};});
+check(47, 'كبد خيارات', () => ({ok:run('كبد').type==='weak',note:describe('كبد')}));
+check(48, 'ولادة خيارات بلا هولتر', () => {const r=run('ولادة');return {ok:r.type==='weak' && !r.options.some(x=>x.name.includes('هولتر')),note:describe('ولادة')};});
+check(49, 'غسيل العين نعم', () => {const r=run('غسيل العين');return {ok:r.type==='strong'&&r.best.id==='SVC-0434',note:describe('غسيل العين')};});
+check(50, 'خزعة من الكبد نعم', () => {const r=run('خزعة من الكبد');return {ok:r.type==='strong'&&r.best.id==='SVC-0191',note:describe('خزعة من الكبد')};});
+check(51, 'تحليل رابط diagnostics', () => {const r=run('تحليل'),p=engine.buildReply(r,data);return {ok:r.type==='category'&&p.categoryHint?.slug==='diagnostics'&&p.categoryHint.text==='تصفّح قسم فحوصات تشخيصية في دليل الخدمات',note:JSON.stringify(p.categoryHint)};});
+check(52, 'عملية رابط surgery', () => {const r=run('عملية'),p=engine.buildReply(r,data);return {ok:r.type==='category'&&p.categoryHint?.slug==='surgery',note:JSON.stringify(p.categoryHint)};});
+check(53, 'قلب خيارات', () => ({ok:run('قلب').type==='weak',note:describe('قلب')}));
+check(54, 'رقود غرفة خاصة نعم 0352', () => {const r=run('رقود غرفة خاصة');return {ok:r.type==='strong'&&r.best.id==='SVC-0352',note:describe(r.query)};});
+check(55, '16 حاضنة أطفال لا يظهر 0003', () => {const r=run('16 حاضنة أطفال');return {ok:!foundItems(r).some(x=>x.id==='SVC-0003'),note:describe(r.query)};});
+check(56, 'الاسم الكامل لـ0003 يظهر', () => {const item=index.items.find(x=>x.id==='SVC-0003'),r=run(item.name);return {ok:r.type==='strong'&&r.best.id===item.id,note:describe(item.name)};});
+check(57, 'سن خيارات، قلع ضرس وCBC وتخطيط القلب وايكو نعم', () => {const cases=[['سن','weak'],['قلع ضرس','strong'],['CBC','strong'],['تخطيط القلب ECG','strong'],['ايكو للقلب','strong']];return {ok:cases.every(([q,t])=>run(q).type===t),note:cases.map(([q])=>describe(q)).join('؛ ')};});
+check(58, 'الكلمات العامة الخمس وحدها وروابطها', () => {const q={تحليل:'diagnostics',فحص:'diagnostics',اشعة:'diagnostics',عملية:'surgery',عمليات:'surgery'};return {ok:JSON.stringify(Object.keys(index.categoryHints).sort())===JSON.stringify(Object.keys(q).sort())&&Object.entries(q).every(([x,slug])=>engine.buildReply(run(x),data).categoryHint?.slug===slug),note:JSON.stringify(index.categoryHints)};});
+check(59, 'اختبار عتبة تغطية الاسم وهي قابلة للضبط', () => {const items=[{id:'T',name:'الف باء جيم دال'}];const high=engine.search('الف باء جيم',{items,yesMatch:{coverageMin:0.8}}),low=engine.search('الف باء جيم',{items,yesMatch:{coverageMin:0.6}});return {ok:index.yesMatch.coverageMin===0.6&&high.type==='weak'&&low.type==='strong',note:`0.8=${high.type}, 0.6=${low.type}`};});
+check(60, 'الأقواس والأرقام والحروف المفردة لا تدخل تغطية الاسم', () => {const items=[{id:'T',name:'قلع ضرس A 123 (كبير وصغير)'}],r=engine.search('قلع ضرس',{items});return {ok:r.type==='strong'&&r.best.id==='T',note:r.type};});
+check(61, 'قصير لا بادئة أو تقريب واسم الفئة لا يولد خيارًا', () => {const d={items:[{id:'P',name:'عينة من عنق الرحم',category:'عين'},{id:'F',name:'التقييم السريري للتوازن',category:'سرير'},{id:'C',name:'جهاز لمدة طويلة',category:'ولادة'}]};return {ok:['عين','سرير','ولادة'].every(q=>!foundItems(engine.search(q,d)).length),note:'أسماء اصطناعية'};});
+check(62, 'الكامل قبل التقريبي', () => {const d={items:[{id:'FUZZ',name:'مختبر التحاليل الخاصة'}, {id:'EXACT',name:'التحاليل'}, {id:'FULL',name:'التحاليل الطبية'}]},r=engine.search('تحاليل',{...d,yesMatch:{coverageMin:1}});const all=foundItems(r);return {ok:all[0]?.id==='EXACT',note:all.map(x=>x.id).join(',')};});
+check(63, 'المرادفات غير المعتمدة لا تعمل', () => {const d={items:[{id:'T',name:'تفاح موز عنب'}],synonyms:[{phrase:'رمزسري',targetId:'T',approved:false,tier:'specific'}]};const r=engine.search('رمزسري',d);return {ok:r.type==='none',note:r.type};});
+check(64, 'الاسم الكامل للجهاز 0007 ورقمه الخاطئ', () => {const item=index.items.find(x=>x.id==='SVC-0007'),a=run(item.name),b=run(item.name.replace('12','13'));return {ok:a.best?.id===item.id&&!foundItems(b).some(x=>x.id===item.id),note:describe(item.name)};});
+check(65, 'عبارة زائدة لا تعطى نعم دون تطابق كل الكلمات', () => {const r=engine.search('تفاح موز عنب غريب',{items:[{id:'T',name:'تفاح موز عنب'}]});return {ok:r.type!=='strong',note:r.type};});
 
 /* -------------------------------- التقرير -------------------------------- */
 
-console.log('\n  اختبار محرّك البحث — 45 حالة');
+console.log('\n  اختبار محرّك البحث — الحالات كاملة');
 console.log('  ' + '-'.repeat(76));
 let pass = 0;
 for (const r of results) {

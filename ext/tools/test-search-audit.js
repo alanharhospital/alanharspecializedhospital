@@ -19,20 +19,20 @@ console.log('\nفحص الاستعلامات المفردة:');
 for (const query of queries) {
   const result = engine.search(query, data);
   const options = (result.best ? [result.best] : []).concat(result.options || []).slice(0,3);
-  assert(['strong','weak','none'].includes(result.type), query + ': لا رد');
+  assert(['strong','weak','none','category'].includes(result.type), query + ': لا رد');
   if (result.type === 'strong') {
     assert(wholeSingle(query, result.best.name), query + ': نعم دون كلمة كاملة — ' + result.best.name);
   }
-  console.log(query + ' | ' + ({strong:'نعم',weak:'خيارات',none:'اعتذار'})[result.type] + ' | ' + (options.map(x=>x.name).join(' ؛ ') || '—'));
+  console.log(query + ' | ' + ({strong:'نعم',weak:'خيارات',none:'اعتذار',category:'رابط قسم'})[result.type] + ' | ' + (options.map(x=>x.name).join(' ؛ ') || '—'));
 }
 const item={id:'TEST',name:'التقييم السريري للتوازن',group:'general'};
-for (const [query,type] of [['سرير','weak'],['سريري','strong'],['سرير توازن','weak'],['سريري توازن','strong']]) {
+for (const [query,type] of [['سرير','none'],['سريري','weak'],['سرير توازن','weak'],['سريري توازن','strong']]) {
   const result=engine.search(query,{items:[item]});
   assert.equal(result.type,type,query+' نوع غير صحيح');
 }
 const wordItem={id:'TEST-WORD',name:'قسم الولادة',group:'general'};
-assert.equal(engine.search('لادة',{items:[wordItem]}).type,'weak', 'لا تُحذف واو أصلية فتتحول المطابقة الجزئية إلى نعم');
-assert.equal(engine.search('ولادة',{items:[wordItem]}).type,'strong', 'مطابقة الولادة كلمة كاملة');
+assert.equal(engine.search('لادة',{items:[wordItem]}).type,'none', 'لا تُحذف واو أصلية فتتحول المطابقة الجزئية إلى نعم');
+assert.equal(engine.search('ولادة',{items:[wordItem]}).type,'weak', 'مطابقة الولادة وحدها لا تغطي 60% من اسم الخدمة');
 assert.equal(engine.search('1 فتق',{items:[{id:'TEST-NUMBER',name:'عملية فتق'}]}).type,'weak', 'الرقم المميز لا يسقط من التحقق');
 const cbc = engine.search('فحص صورة الدم الكامل', data);
 assert(cbc.type === 'strong' && cbc.best.id === 'SVC-0048', 'المرادف المعتمد تغير');

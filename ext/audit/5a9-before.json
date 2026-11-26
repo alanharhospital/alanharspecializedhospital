@@ -1,0 +1,2537 @@
+[
+  {
+    "query": "سرير",
+    "type": "weak",
+    "best": null,
+    "options": [
+      {
+        "id": "SVC-0263",
+        "name": "التقييم السريري للتوازن"
+      }
+    ],
+    "reply": {
+      "lines": [
+        "هل تقصد أحد هذه الخدمات؟"
+      ],
+      "options": [
+        {
+          "id": "SVC-0263",
+          "name": "التقييم السريري للتوازن",
+          "category": "أنف وأذن وحنجرة",
+          "group": "general",
+          "slug": "ent",
+          "rank": 4,
+          "url": "services/ent#svc-0263",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "تقييم",
+            "سريري",
+            "توازن"
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%A7%D9%84%D8%AA%D9%82%D9%8A%D9%8A%D9%85%20%D8%A7%D9%84%D8%B3%D8%B1%D9%8A%D8%B1%D9%8A%20%D9%84%D9%84%D8%AA%D9%88%D8%A7%D8%B2%D9%86",
+      "whatsappText": "السلام عليكم، أستفسر عن: التقييم السريري للتوازن",
+      "best": null
+    }
+  },
+  {
+    "query": "جهاز",
+    "type": "weak",
+    "best": null,
+    "options": [
+      {
+        "id": "SVC-0251",
+        "name": "جهاز مراقبة الضغط لمدة 24 ساعة (هولتر)"
+      },
+      {
+        "id": "SVC-0234",
+        "name": "جلسة جهاز شمع البرافين"
+      },
+      {
+        "id": "SVC-0220",
+        "name": "جلسة جهاز الكمادات باردة"
+      },
+      {
+        "id": "SVC-0219",
+        "name": "جلسة جهاز الكمادات الساخنة"
+      },
+      {
+        "id": "SVC-0236",
+        "name": "جلسة جهاز الموجات فوق الصوتية"
+      }
+    ],
+    "reply": {
+      "lines": [
+        "هل تقصد أحد هذه الخدمات؟"
+      ],
+      "options": [
+        {
+          "id": "SVC-0251",
+          "name": "جهاز مراقبة الضغط لمدة 24 ساعة (هولتر)",
+          "category": "قلب",
+          "group": "general",
+          "slug": "diagnostics",
+          "rank": 0,
+          "url": "services/diagnostics#svc-0251",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "جهاز",
+            "مراقبه",
+            "ضغط",
+            "لمده",
+            "24",
+            "ساعه",
+            "هولتر"
+          ]
+        },
+        {
+          "id": "SVC-0234",
+          "name": "جلسة جهاز شمع البرافين",
+          "category": "علاج طبيعي",
+          "group": "general",
+          "slug": "physio",
+          "rank": 5,
+          "url": "services/physio#svc-0234",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "جلسه",
+            "جهاز",
+            "شمع",
+            "برافين"
+          ]
+        },
+        {
+          "id": "SVC-0220",
+          "name": "جلسة جهاز الكمادات باردة",
+          "category": "علاج طبيعي",
+          "group": "general",
+          "slug": "physio",
+          "rank": 5,
+          "url": "services/physio#svc-0220",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "جلسه",
+            "جهاز",
+            "كمادات",
+            "بارده"
+          ]
+        },
+        {
+          "id": "SVC-0219",
+          "name": "جلسة جهاز الكمادات الساخنة",
+          "category": "علاج طبيعي",
+          "group": "general",
+          "slug": "physio",
+          "rank": 5,
+          "url": "services/physio#svc-0219",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "جلسه",
+            "جهاز",
+            "كمادات",
+            "ساخنه"
+          ]
+        },
+        {
+          "id": "SVC-0236",
+          "name": "جلسة جهاز الموجات فوق الصوتية",
+          "category": "علاج طبيعي",
+          "group": "general",
+          "slug": "physio",
+          "rank": 5,
+          "url": "services/physio#svc-0236",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "جلسه",
+            "جهاز",
+            "موجات",
+            "فوق",
+            "صوتيه"
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%AC%D9%87%D8%A7%D8%B2%20%D9%85%D8%B1%D8%A7%D9%82%D8%A8%D8%A9%20%D8%A7%D9%84%D8%B6%D8%BA%D8%B7%20%D9%84%D9%85%D8%AF%D8%A9%2024%20%D8%B3%D8%A7%D8%B9%D8%A9%20(%D9%87%D9%88%D9%84%D8%AA%D8%B1)",
+      "whatsappText": "السلام عليكم، أستفسر عن: جهاز مراقبة الضغط لمدة 24 ساعة (هولتر)",
+      "best": null
+    }
+  },
+  {
+    "query": "دم",
+    "type": "weak",
+    "best": null,
+    "options": [
+      {
+        "id": "SVC-0048",
+        "name": "فحص الدم الشامل CBC"
+      },
+      {
+        "id": "SVC-0047",
+        "name": "المختبر الطبي المركزي وبنك الدم (03226277)"
+      },
+      {
+        "id": "SVC-0453",
+        "name": "المختبر وبنك الدم"
+      },
+      {
+        "id": "SVC-0412",
+        "name": "قياس ضغط الدم (طوارئ)"
+      }
+    ],
+    "reply": {
+      "lines": [
+        "هل تقصد أحد هذه الخدمات؟"
+      ],
+      "options": [
+        {
+          "id": "SVC-0048",
+          "name": "فحص الدم الشامل CBC",
+          "category": "مختبر",
+          "group": "lab",
+          "slug": "diagnostics",
+          "rank": 0,
+          "url": "services/diagnostics#svc-0048",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "فحص",
+            "دم",
+            "شامل",
+            "cbc"
+          ]
+        },
+        {
+          "id": "SVC-0047",
+          "name": "المختبر الطبي المركزي وبنك الدم (03226277)",
+          "category": "مختبر",
+          "group": "lab",
+          "slug": "diagnostics",
+          "rank": 0,
+          "url": "services/diagnostics#svc-0047",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "مختبر",
+            "طبي",
+            "مركزي",
+            "بنك",
+            "دم",
+            "03226277"
+          ]
+        },
+        {
+          "id": "SVC-0453",
+          "name": "المختبر وبنك الدم",
+          "category": "وحدات وأقسام",
+          "group": "listed",
+          "slug": "emergency",
+          "rank": 6,
+          "url": "services/emergency#svc-0453",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "مختبر",
+            "بنك",
+            "دم"
+          ]
+        },
+        {
+          "id": "SVC-0412",
+          "name": "قياس ضغط الدم (طوارئ)",
+          "category": "طوارئ وإسعاف",
+          "group": "general",
+          "slug": "emergency",
+          "rank": 6,
+          "url": "services/emergency#svc-0412",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "قياس",
+            "ضغط",
+            "دم",
+            "طواري"
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D9%81%D8%AD%D8%B5%20%D8%A7%D9%84%D8%AF%D9%85%20%D8%A7%D9%84%D8%B4%D8%A7%D9%85%D9%84%20CBC",
+      "whatsappText": "السلام عليكم، أستفسر عن: فحص الدم الشامل CBC",
+      "best": null
+    }
+  },
+  {
+    "query": "قلب",
+    "type": "weak",
+    "best": null,
+    "options": [
+      {
+        "id": "SVC-0246",
+        "name": "إيكو للقلب"
+      },
+      {
+        "id": "SVC-0243",
+        "name": "فحص منظم القلب"
+      },
+      {
+        "id": "SVC-0248",
+        "name": "تخطيط القلب ECG"
+      },
+      {
+        "id": "SVC-0054",
+        "name": "إنزيمات القلب Troponin"
+      },
+      {
+        "id": "SVC-0241",
+        "name": "تلفزيون للقلب عن طريق المريء"
+      }
+    ],
+    "reply": {
+      "lines": [
+        "هل تقصد أحد هذه الخدمات؟"
+      ],
+      "options": [
+        {
+          "id": "SVC-0246",
+          "name": "إيكو للقلب",
+          "category": "قلب",
+          "group": "radiology",
+          "slug": "diagnostics",
+          "rank": 0,
+          "url": "services/diagnostics#svc-0246",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "ايكو",
+            "قلب"
+          ]
+        },
+        {
+          "id": "SVC-0243",
+          "name": "فحص منظم القلب",
+          "category": "قلب",
+          "group": "general",
+          "slug": "diagnostics",
+          "rank": 0,
+          "url": "services/diagnostics#svc-0243",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "فحص",
+            "منظم",
+            "قلب"
+          ]
+        },
+        {
+          "id": "SVC-0248",
+          "name": "تخطيط القلب ECG",
+          "category": "قلب",
+          "group": "general",
+          "slug": "diagnostics",
+          "rank": 0,
+          "url": "services/diagnostics#svc-0248",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "تخطيط",
+            "قلب",
+            "ecg"
+          ]
+        },
+        {
+          "id": "SVC-0054",
+          "name": "إنزيمات القلب Troponin",
+          "category": "مختبر",
+          "group": "lab",
+          "slug": "diagnostics",
+          "rank": 0,
+          "url": "services/diagnostics#svc-0054",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "انزيمات",
+            "قلب",
+            "troponin"
+          ]
+        },
+        {
+          "id": "SVC-0241",
+          "name": "تلفزيون للقلب عن طريق المريء",
+          "category": "قلب",
+          "group": "general",
+          "slug": "diagnostics",
+          "rank": 0,
+          "url": "services/diagnostics#svc-0241",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "تلفزيون",
+            "قلب",
+            "عن",
+            "طريق",
+            "مريء"
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%A5%D9%8A%D9%83%D9%88%20%D9%84%D9%84%D9%82%D9%84%D8%A8",
+      "whatsappText": "السلام عليكم، أستفسر عن: إيكو للقلب",
+      "best": null
+    }
+  },
+  {
+    "query": "عين",
+    "type": "strong",
+    "best": {
+      "id": "SVC-0434",
+      "name": "غسيل العين (طوارئ)"
+    },
+    "options": [
+      {
+        "id": "SVC-0321",
+        "name": "أخذ عينة من عنق الرحم (بدون تخدير)"
+      },
+      {
+        "id": "SVC-0259",
+        "name": "أخذ عينة من الحشية الأنفية"
+      },
+      {
+        "id": "SVC-0266",
+        "name": "أخذ عينة من الأنف أو الأذن أو الحلق بالمنظار"
+      }
+    ],
+    "reply": {
+      "lines": [
+        "نعم، يتوفر لدينا غسيل العين (طوارئ) ضمن طوارئ وإسعاف. يسعدنا خدمتكم ونتمنى لكم دوام الصحة والعافية.",
+        "هل تقصد أحد هذه الخدمات؟"
+      ],
+      "options": [
+        {
+          "id": "SVC-0321",
+          "name": "أخذ عينة من عنق الرحم (بدون تخدير)",
+          "category": "نساء وولادة",
+          "group": "general",
+          "slug": "women",
+          "rank": 3,
+          "url": "services/women#svc-0321",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "اخذ",
+            "عينه",
+            "من",
+            "عنق",
+            "رحم",
+            "بدون",
+            "تخدير"
+          ]
+        },
+        {
+          "id": "SVC-0259",
+          "name": "أخذ عينة من الحشية الأنفية",
+          "category": "أنف وأذن وحنجرة",
+          "group": "general",
+          "slug": "ent",
+          "rank": 4,
+          "url": "services/ent#svc-0259",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "اخذ",
+            "عينه",
+            "من",
+            "حشيه",
+            "انفيه"
+          ]
+        },
+        {
+          "id": "SVC-0266",
+          "name": "أخذ عينة من الأنف أو الأذن أو الحلق بالمنظار",
+          "category": "أنف وأذن وحنجرة",
+          "group": "general",
+          "slug": "ent",
+          "rank": 4,
+          "url": "services/ent#svc-0266",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "اخذ",
+            "عينه",
+            "من",
+            "انف",
+            "او",
+            "اذن",
+            "او",
+            "حلق",
+            "منظار"
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%BA%D8%B3%D9%8A%D9%84%20%D8%A7%D9%84%D8%B9%D9%8A%D9%86%20(%D8%B7%D9%88%D8%A7%D8%B1%D8%A6)",
+      "whatsappText": "السلام عليكم، أستفسر عن: غسيل العين (طوارئ)",
+      "best": {
+        "id": "SVC-0434",
+        "name": "غسيل العين (طوارئ)",
+        "category": "طوارئ وإسعاف",
+        "group": "general",
+        "slug": "emergency",
+        "rank": 6,
+        "url": "services/emergency#svc-0434",
+        "searchOnly": false,
+        "exactMatchOnly": false,
+        "exactMatchMinWords": null,
+        "directoryHidden": false,
+        "matchName": "",
+        "numberRequired": false,
+        "exactPhrases": [],
+        "_tokens": [
+          "غسيل",
+          "عين",
+          "طواري"
+        ]
+      }
+    }
+  },
+  {
+    "query": "سن",
+    "type": "weak",
+    "best": null,
+    "options": [
+      {
+        "id": "SVC-0156",
+        "name": "زراعة سن"
+      },
+      {
+        "id": "SVC-0128",
+        "name": "تركيب سن صب"
+      },
+      {
+        "id": "SVC-0073",
+        "name": "قلع سن أمامي"
+      },
+      {
+        "id": "SVC-0123",
+        "name": "تركيب سن مؤقت"
+      },
+      {
+        "id": "SVC-0118",
+        "name": "تثبيت تركيب سن"
+      }
+    ],
+    "reply": {
+      "lines": [
+        "هل تقصد أحد هذه الخدمات؟"
+      ],
+      "options": [
+        {
+          "id": "SVC-0156",
+          "name": "زراعة سن",
+          "category": "أسنان",
+          "group": "dental",
+          "slug": "dental",
+          "rank": 2,
+          "url": "services/dental#svc-0156",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "زراعه",
+            "سن"
+          ]
+        },
+        {
+          "id": "SVC-0128",
+          "name": "تركيب سن صب",
+          "category": "أسنان",
+          "group": "dental",
+          "slug": "dental",
+          "rank": 2,
+          "url": "services/dental#svc-0128",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "تركيب",
+            "سن",
+            "صب"
+          ]
+        },
+        {
+          "id": "SVC-0073",
+          "name": "قلع سن أمامي",
+          "category": "أسنان",
+          "group": "dental",
+          "slug": "dental",
+          "rank": 2,
+          "url": "services/dental#svc-0073",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "قلع",
+            "سن",
+            "امامي"
+          ]
+        },
+        {
+          "id": "SVC-0123",
+          "name": "تركيب سن مؤقت",
+          "category": "أسنان",
+          "group": "dental",
+          "slug": "dental",
+          "rank": 2,
+          "url": "services/dental#svc-0123",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "تركيب",
+            "سن",
+            "موقت"
+          ]
+        },
+        {
+          "id": "SVC-0118",
+          "name": "تثبيت تركيب سن",
+          "category": "أسنان",
+          "group": "dental",
+          "slug": "dental",
+          "rank": 2,
+          "url": "services/dental#svc-0118",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "تثبيت",
+            "تركيب",
+            "سن"
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%B2%D8%B1%D8%A7%D8%B9%D8%A9%20%D8%B3%D9%86",
+      "whatsappText": "السلام عليكم، أستفسر عن: زراعة سن",
+      "best": null
+    }
+  },
+  {
+    "query": "ضرس",
+    "type": "weak",
+    "best": null,
+    "options": [
+      {
+        "id": "SVC-0070",
+        "name": "قلع ضرس A"
+      },
+      {
+        "id": "SVC-0071",
+        "name": "قلع ضرس B"
+      },
+      {
+        "id": "SVC-0072",
+        "name": "قلع ضرس C"
+      },
+      {
+        "id": "SVC-0074",
+        "name": "قلع ضرس خلفي"
+      },
+      {
+        "id": "SVC-0078",
+        "name": "قلع ضرس جراحياً"
+      }
+    ],
+    "reply": {
+      "lines": [
+        "هل تقصد أحد هذه الخدمات؟"
+      ],
+      "options": [
+        {
+          "id": "SVC-0070",
+          "name": "قلع ضرس A",
+          "category": "أسنان",
+          "group": "dental",
+          "slug": "dental",
+          "rank": 2,
+          "url": "services/dental#svc-0070",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "قلع",
+            "ضرس",
+            "a"
+          ]
+        },
+        {
+          "id": "SVC-0071",
+          "name": "قلع ضرس B",
+          "category": "أسنان",
+          "group": "dental",
+          "slug": "dental",
+          "rank": 2,
+          "url": "services/dental#svc-0071",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "قلع",
+            "ضرس",
+            "b"
+          ]
+        },
+        {
+          "id": "SVC-0072",
+          "name": "قلع ضرس C",
+          "category": "أسنان",
+          "group": "dental",
+          "slug": "dental",
+          "rank": 2,
+          "url": "services/dental#svc-0072",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "قلع",
+            "ضرس",
+            "c"
+          ]
+        },
+        {
+          "id": "SVC-0074",
+          "name": "قلع ضرس خلفي",
+          "category": "أسنان",
+          "group": "dental",
+          "slug": "dental",
+          "rank": 2,
+          "url": "services/dental#svc-0074",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "قلع",
+            "ضرس",
+            "خلفي"
+          ]
+        },
+        {
+          "id": "SVC-0078",
+          "name": "قلع ضرس جراحياً",
+          "category": "أسنان",
+          "group": "dental",
+          "slug": "dental",
+          "rank": 2,
+          "url": "services/dental#svc-0078",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "قلع",
+            "ضرس",
+            "جراحيا"
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D9%82%D9%84%D8%B9%20%D8%B6%D8%B1%D8%B3%20A",
+      "whatsappText": "السلام عليكم، أستفسر عن: قلع ضرس A",
+      "best": null
+    }
+  },
+  {
+    "query": "كبد",
+    "type": "strong",
+    "best": {
+      "id": "SVC-0191",
+      "name": "خزعة من الكبد"
+    },
+    "options": [
+      {
+        "id": "SVC-0051",
+        "name": "وظائف الكلى والكبد"
+      },
+      {
+        "id": "SVC-0171",
+        "name": "معاينة عيادة الباطنة العامة والكبد"
+      }
+    ],
+    "reply": {
+      "lines": [
+        "نعم، يتوفر لدينا خزعة من الكبد ضمن إجراءات وعمليات صغرى. يسعدنا خدمتكم ونتمنى لكم دوام الصحة والعافية.",
+        "هل تقصد أحد هذه الخدمات؟"
+      ],
+      "options": [
+        {
+          "id": "SVC-0051",
+          "name": "وظائف الكلى والكبد",
+          "category": "مختبر",
+          "group": "lab",
+          "slug": "diagnostics",
+          "rank": 0,
+          "url": "services/diagnostics#svc-0051",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "ظايف",
+            "كلي",
+            "كبد"
+          ]
+        },
+        {
+          "id": "SVC-0171",
+          "name": "معاينة عيادة الباطنة العامة والكبد",
+          "category": "عيادات ومعاينات",
+          "group": "general",
+          "slug": "clinics-admin",
+          "rank": 7,
+          "url": "services/clinics-admin#svc-0171",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "معاينه",
+            "عياده",
+            "باطنه",
+            "عامه",
+            "كبد"
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B2%D8%B9%D8%A9%20%D9%85%D9%86%20%D8%A7%D9%84%D9%83%D8%A8%D8%AF",
+      "whatsappText": "السلام عليكم، أستفسر عن: خزعة من الكبد",
+      "best": {
+        "id": "SVC-0191",
+        "name": "خزعة من الكبد",
+        "category": "إجراءات وعمليات صغرى",
+        "group": "general",
+        "slug": "surgery",
+        "rank": 1,
+        "url": "services/surgery#svc-0191",
+        "searchOnly": false,
+        "exactMatchOnly": false,
+        "exactMatchMinWords": null,
+        "directoryHidden": false,
+        "matchName": "",
+        "numberRequired": false,
+        "exactPhrases": [],
+        "_tokens": [
+          "خزعه",
+          "من",
+          "كبد"
+        ]
+      }
+    }
+  },
+  {
+    "query": "كلى",
+    "type": "weak",
+    "best": null,
+    "options": [
+      {
+        "id": "SVC-0051",
+        "name": "وظائف الكلى والكبد"
+      },
+      {
+        "id": "SVC-0041",
+        "name": "جراحة الكلى والمسالك البولية"
+      },
+      {
+        "id": "SVC-0042",
+        "name": "استخراج حصوات الكلى والحالب والمثانة"
+      },
+      {
+        "id": "SVC-0182",
+        "name": "إزالة القسطرة الوريدية الدائمة لغسيل الكلى"
+      },
+      {
+        "id": "SVC-0187",
+        "name": "تركيب القسطرة الوريدية الدائمة والمؤقتة لغسيل الكلى"
+      }
+    ],
+    "reply": {
+      "lines": [
+        "هل تقصد أحد هذه الخدمات؟"
+      ],
+      "options": [
+        {
+          "id": "SVC-0051",
+          "name": "وظائف الكلى والكبد",
+          "category": "مختبر",
+          "group": "lab",
+          "slug": "diagnostics",
+          "rank": 0,
+          "url": "services/diagnostics#svc-0051",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "ظايف",
+            "كلي",
+            "كبد"
+          ]
+        },
+        {
+          "id": "SVC-0041",
+          "name": "جراحة الكلى والمسالك البولية",
+          "category": "تخصصات جراحية",
+          "group": "surgery",
+          "slug": "surgery",
+          "rank": 1,
+          "url": "services/surgery#svc-0041",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "جراحه",
+            "كلي",
+            "مسالك",
+            "بوليه"
+          ]
+        },
+        {
+          "id": "SVC-0042",
+          "name": "استخراج حصوات الكلى والحالب والمثانة",
+          "category": "عمليات جراحية",
+          "group": "surgery",
+          "slug": "surgery",
+          "rank": 1,
+          "url": "services/surgery#svc-0042",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "استخراج",
+            "حصوات",
+            "كلي",
+            "حالب",
+            "مثانه"
+          ]
+        },
+        {
+          "id": "SVC-0182",
+          "name": "إزالة القسطرة الوريدية الدائمة لغسيل الكلى",
+          "category": "إجراءات وعمليات صغرى",
+          "group": "general",
+          "slug": "surgery",
+          "rank": 1,
+          "url": "services/surgery#svc-0182",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "ازاله",
+            "قسطره",
+            "وريديه",
+            "دايمه",
+            "لغسيل",
+            "كلي"
+          ]
+        },
+        {
+          "id": "SVC-0187",
+          "name": "تركيب القسطرة الوريدية الدائمة والمؤقتة لغسيل الكلى",
+          "category": "إجراءات وعمليات صغرى",
+          "group": "general",
+          "slug": "surgery",
+          "rank": 1,
+          "url": "services/surgery#svc-0187",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "تركيب",
+            "قسطره",
+            "وريديه",
+            "دايمه",
+            "موقته",
+            "لغسيل",
+            "كلي"
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%A7%D9%84%D9%83%D9%84%D9%89%20%D9%88%D8%A7%D9%84%D9%83%D8%A8%D8%AF",
+      "whatsappText": "السلام عليكم، أستفسر عن: وظائف الكلى والكبد",
+      "best": null
+    }
+  },
+  {
+    "query": "عظام",
+    "type": "weak",
+    "best": null,
+    "options": [
+      {
+        "id": "SVC-0021",
+        "name": "جراحة العظام والمفاصل مع الدكتور لبيب المقطري"
+      },
+      {
+        "id": "SVC-0443",
+        "name": "عيادة جراحة العظام والمفاصل"
+      },
+      {
+        "id": "SVC-0301",
+        "name": "معاينة عيادة جراحة العظام والمفاصل"
+      }
+    ],
+    "reply": {
+      "lines": [
+        "هل تقصد أحد هذه الخدمات؟"
+      ],
+      "options": [
+        {
+          "id": "SVC-0021",
+          "name": "جراحة العظام والمفاصل مع الدكتور لبيب المقطري",
+          "category": "تخصصات جراحية",
+          "group": "surgery",
+          "slug": "surgery",
+          "rank": 1,
+          "url": "services/surgery#svc-0021",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "جراحه",
+            "عظام",
+            "مفاصل",
+            "مع",
+            "دكتور",
+            "لبيب",
+            "مقطري"
+          ]
+        },
+        {
+          "id": "SVC-0443",
+          "name": "عيادة جراحة العظام والمفاصل",
+          "category": "عيادات ومعاينات",
+          "group": "general",
+          "slug": "clinics-admin",
+          "rank": 7,
+          "url": "services/clinics-admin#svc-0443",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "عياده",
+            "جراحه",
+            "عظام",
+            "مفاصل"
+          ]
+        },
+        {
+          "id": "SVC-0301",
+          "name": "معاينة عيادة جراحة العظام والمفاصل",
+          "category": "عيادات ومعاينات",
+          "group": "general",
+          "slug": "clinics-admin",
+          "rank": 7,
+          "url": "services/clinics-admin#svc-0301",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "معاينه",
+            "عياده",
+            "جراحه",
+            "عظام",
+            "مفاصل"
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%AC%D8%B1%D8%A7%D8%AD%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B8%D8%A7%D9%85%20%D9%88%D8%A7%D9%84%D9%85%D9%81%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%20%D8%A7%D9%84%D8%AF%D9%83%D8%AA%D9%88%D8%B1%20%D9%84%D8%A8%D9%8A%D8%A8%20%D8%A7%D9%84%D9%85%D9%82%D8%B7%D8%B1%D9%8A",
+      "whatsappText": "السلام عليكم، أستفسر عن: جراحة العظام والمفاصل مع الدكتور لبيب المقطري",
+      "best": null
+    }
+  },
+  {
+    "query": "ولادة",
+    "type": "strong",
+    "best": {
+      "id": "SVC-0068",
+      "name": "أجور التخدير للولادة بدون ألم"
+    },
+    "options": [
+      {
+        "id": "SVC-0249",
+        "name": "تخطيط القلب لمدة 24 ساعة (هولتر)"
+      },
+      {
+        "id": "SVC-0251",
+        "name": "جهاز مراقبة الضغط لمدة 24 ساعة (هولتر)"
+      },
+      {
+        "id": "SVC-0405",
+        "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة"
+      }
+    ],
+    "reply": {
+      "lines": [
+        "نعم، مذكور في قائمة خدماتنا: أجور التخدير للولادة بدون ألم. للتأكد من التفاصيل يمكنكم مراسلتنا على واتساب المستشفى (771422070). نسعد بخدمتكم ونتمنى لكم دوام الصحة والعافية.",
+        "هل تقصد أحد هذه الخدمات؟"
+      ],
+      "options": [
+        {
+          "id": "SVC-0249",
+          "name": "تخطيط القلب لمدة 24 ساعة (هولتر)",
+          "category": "قلب",
+          "group": "general",
+          "slug": "diagnostics",
+          "rank": 0,
+          "url": "services/diagnostics#svc-0249",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "تخطيط",
+            "قلب",
+            "لمده",
+            "24",
+            "ساعه",
+            "هولتر"
+          ]
+        },
+        {
+          "id": "SVC-0251",
+          "name": "جهاز مراقبة الضغط لمدة 24 ساعة (هولتر)",
+          "category": "قلب",
+          "group": "general",
+          "slug": "diagnostics",
+          "rank": 0,
+          "url": "services/diagnostics#svc-0251",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "جهاز",
+            "مراقبه",
+            "ضغط",
+            "لمده",
+            "24",
+            "ساعه",
+            "هولتر"
+          ]
+        },
+        {
+          "id": "SVC-0405",
+          "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+          "category": "طوارئ وإسعاف",
+          "group": "general",
+          "slug": "emergency",
+          "rank": 6,
+          "url": "services/emergency#svc-0405",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "خروج",
+            "جهاز",
+            "تنفس",
+            "صناعي",
+            "لمده",
+            "ساعه",
+            "داخل",
+            "مدينه"
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%A3%D8%AC%D9%88%D8%B1%20%D8%A7%D9%84%D8%AA%D8%AE%D8%AF%D9%8A%D8%B1%20%D9%84%D9%84%D9%88%D9%84%D8%A7%D8%AF%D8%A9%20%D8%A8%D8%AF%D9%88%D9%86%20%D8%A3%D9%84%D9%85",
+      "whatsappText": "السلام عليكم، أستفسر عن: أجور التخدير للولادة بدون ألم",
+      "best": {
+        "id": "SVC-0068",
+        "name": "أجور التخدير للولادة بدون ألم",
+        "category": "تخدير",
+        "group": "listed",
+        "slug": "surgery",
+        "rank": 1,
+        "url": "services/surgery#svc-0068",
+        "searchOnly": false,
+        "exactMatchOnly": false,
+        "exactMatchMinWords": null,
+        "directoryHidden": false,
+        "matchName": "",
+        "numberRequired": false,
+        "exactPhrases": [],
+        "_tokens": [
+          "اجور",
+          "تخدير",
+          "ولاده",
+          "بدون",
+          "الم"
+        ]
+      }
+    }
+  },
+  {
+    "query": "تحليل",
+    "type": "none",
+    "best": null,
+    "options": [],
+    "reply": {
+      "lines": [
+        "نعتذر منكم، ربما لم نتمكن من فهم طلبكم بدقة، وقد تكون الخدمة التي تبحثون عنها متاحة لدينا لكننا لم نستطع التأكد منها. يمكنكم مراسلتنا على واتساب المستشفى (771422070) وسنوافيكم بالجواب في أقرب وقت. شاكرين لكم تفهمكم."
+      ],
+      "options": [],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%A8%D8%AD%D8%AB%20%D8%B9%D9%86%3A%20%D8%AA%D8%AD%D9%84%D9%8A%D9%84",
+      "whatsappText": "السلام عليكم، أبحث عن: تحليل",
+      "best": null
+    }
+  },
+  {
+    "query": "اشعة",
+    "type": "weak",
+    "best": null,
+    "options": [
+      {
+        "id": "SVC-0060",
+        "name": "مركز الأشعة التشخيصية"
+      },
+      {
+        "id": "SVC-0062",
+        "name": "الأشعة الرقمية الكشافة DR"
+      },
+      {
+        "id": "SVC-0061",
+        "name": "الأشعة المقطعية CT Scan للرأس والدماغ والجيوب الأنفية والرقبة والصدر والبطن والحوض والفقرات"
+      }
+    ],
+    "reply": {
+      "lines": [
+        "هل تقصد أحد هذه الخدمات؟"
+      ],
+      "options": [
+        {
+          "id": "SVC-0060",
+          "name": "مركز الأشعة التشخيصية",
+          "category": "أشعة",
+          "group": "radiology",
+          "slug": "diagnostics",
+          "rank": 0,
+          "url": "services/diagnostics#svc-0060",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "مركز",
+            "اشعه",
+            "تشخيصيه"
+          ]
+        },
+        {
+          "id": "SVC-0062",
+          "name": "الأشعة الرقمية الكشافة DR",
+          "category": "أشعة",
+          "group": "radiology",
+          "slug": "diagnostics",
+          "rank": 0,
+          "url": "services/diagnostics#svc-0062",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "اشعه",
+            "رقميه",
+            "كشافه",
+            "dr"
+          ]
+        },
+        {
+          "id": "SVC-0061",
+          "name": "الأشعة المقطعية CT Scan للرأس والدماغ والجيوب الأنفية والرقبة والصدر والبطن والحوض والفقرات",
+          "category": "أشعة",
+          "group": "radiology",
+          "slug": "diagnostics",
+          "rank": 0,
+          "url": "services/diagnostics#svc-0061",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "اشعه",
+            "مقطعيه",
+            "ct",
+            "scan",
+            "راس",
+            "دماغ",
+            "جيوب",
+            "انفيه",
+            "رقبه",
+            "صدر",
+            "بطن",
+            "حوض",
+            "فقرات"
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D9%85%D8%B1%D9%83%D8%B2%20%D8%A7%D9%84%D8%A3%D8%B4%D8%B9%D8%A9%20%D8%A7%D9%84%D8%AA%D8%B4%D8%AE%D9%8A%D8%B5%D9%8A%D8%A9",
+      "whatsappText": "السلام عليكم، أستفسر عن: مركز الأشعة التشخيصية",
+      "best": null
+    }
+  },
+  {
+    "query": "عملية",
+    "type": "weak",
+    "best": null,
+    "options": [
+      {
+        "id": "SVC-0066",
+        "name": "أجور إجراء التخدير (10% من سعر العملية الجراحية)"
+      },
+      {
+        "id": "SVC-0141",
+        "name": "عملية قطع لثة"
+      },
+      {
+        "id": "SVC-0140",
+        "name": "عملية لثوية ناتئة"
+      },
+      {
+        "id": "SVC-0143",
+        "name": "عملية قطع ذروة السن"
+      },
+      {
+        "id": "SVC-0165",
+        "name": "عملية فتح كيس متقيح (صغير، متوسط، كبير) داخل الفم"
+      }
+    ],
+    "reply": {
+      "lines": [
+        "هل تقصد أحد هذه الخدمات؟"
+      ],
+      "options": [
+        {
+          "id": "SVC-0066",
+          "name": "أجور إجراء التخدير (10% من سعر العملية الجراحية)",
+          "category": "تخدير",
+          "group": "listed",
+          "slug": "surgery",
+          "rank": 1,
+          "url": "services/surgery#svc-0066",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "اجور",
+            "اجراء",
+            "تخدير",
+            "10",
+            "من",
+            "سعر",
+            "عمليه",
+            "جراحيه"
+          ]
+        },
+        {
+          "id": "SVC-0141",
+          "name": "عملية قطع لثة",
+          "category": "أسنان",
+          "group": "dental",
+          "slug": "dental",
+          "rank": 2,
+          "url": "services/dental#svc-0141",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "عمليه",
+            "قطع",
+            "لثه"
+          ]
+        },
+        {
+          "id": "SVC-0140",
+          "name": "عملية لثوية ناتئة",
+          "category": "أسنان",
+          "group": "dental",
+          "slug": "dental",
+          "rank": 2,
+          "url": "services/dental#svc-0140",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "عمليه",
+            "لثويه",
+            "ناتيه"
+          ]
+        },
+        {
+          "id": "SVC-0143",
+          "name": "عملية قطع ذروة السن",
+          "category": "أسنان",
+          "group": "dental",
+          "slug": "dental",
+          "rank": 2,
+          "url": "services/dental#svc-0143",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "عمليه",
+            "قطع",
+            "ذروه",
+            "سن"
+          ]
+        },
+        {
+          "id": "SVC-0165",
+          "name": "عملية فتح كيس متقيح (صغير، متوسط، كبير) داخل الفم",
+          "category": "أسنان",
+          "group": "dental",
+          "slug": "dental",
+          "rank": 2,
+          "url": "services/dental#svc-0165",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "عمليه",
+            "فتح",
+            "كيس",
+            "متقيح",
+            "صغير",
+            "متوسط",
+            "كبير",
+            "داخل",
+            "فم"
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%A3%D8%AC%D9%88%D8%B1%20%D8%A5%D8%AC%D8%B1%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AA%D8%AE%D8%AF%D9%8A%D8%B1%20(10%25%20%D9%85%D9%86%20%D8%B3%D8%B9%D8%B1%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D8%B1%D8%A7%D8%AD%D9%8A%D8%A9)",
+      "whatsappText": "السلام عليكم، أستفسر عن: أجور إجراء التخدير (10% من سعر العملية الجراحية)",
+      "best": null
+    }
+  },
+  {
+    "query": "ممرض",
+    "type": "weak",
+    "best": null,
+    "options": [
+      {
+        "id": "SVC-0401",
+        "name": "استدعاء فني أو ممرض"
+      },
+      {
+        "id": "SVC-0403",
+        "name": "خروج ممرض مع سيارة إسعاف إلى صنعاء"
+      },
+      {
+        "id": "SVC-0402",
+        "name": "خروج ممرض مع سيارة إسعاف داخل مدينة الحديدة"
+      },
+      {
+        "id": "SVC-0400",
+        "name": "خروج ومرافقة لمريض مع ممرض وحارس أمني مع باص الإسعاف"
+      }
+    ],
+    "reply": {
+      "lines": [
+        "هل تقصد أحد هذه الخدمات؟"
+      ],
+      "options": [
+        {
+          "id": "SVC-0401",
+          "name": "استدعاء فني أو ممرض",
+          "category": "طوارئ وإسعاف",
+          "group": "general",
+          "slug": "emergency",
+          "rank": 6,
+          "url": "services/emergency#svc-0401",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "استدعاء",
+            "فني",
+            "او",
+            "ممرض"
+          ]
+        },
+        {
+          "id": "SVC-0403",
+          "name": "خروج ممرض مع سيارة إسعاف إلى صنعاء",
+          "category": "طوارئ وإسعاف",
+          "group": "general",
+          "slug": "emergency",
+          "rank": 6,
+          "url": "services/emergency#svc-0403",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "خروج",
+            "ممرض",
+            "مع",
+            "سياره",
+            "اسعاف",
+            "الي",
+            "صنعاء"
+          ]
+        },
+        {
+          "id": "SVC-0402",
+          "name": "خروج ممرض مع سيارة إسعاف داخل مدينة الحديدة",
+          "category": "طوارئ وإسعاف",
+          "group": "general",
+          "slug": "emergency",
+          "rank": 6,
+          "url": "services/emergency#svc-0402",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "خروج",
+            "ممرض",
+            "مع",
+            "سياره",
+            "اسعاف",
+            "داخل",
+            "مدينه",
+            "حديده"
+          ]
+        },
+        {
+          "id": "SVC-0400",
+          "name": "خروج ومرافقة لمريض مع ممرض وحارس أمني مع باص الإسعاف",
+          "category": "طوارئ وإسعاف",
+          "group": "general",
+          "slug": "emergency",
+          "rank": 6,
+          "url": "services/emergency#svc-0400",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "خروج",
+            "مرافقه",
+            "لمريض",
+            "مع",
+            "ممرض",
+            "حارس",
+            "امني",
+            "مع",
+            "باص",
+            "اسعاف"
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%A7%D8%B3%D8%AA%D8%AF%D8%B9%D8%A7%D8%A1%20%D9%81%D9%86%D9%8A%20%D8%A3%D9%88%20%D9%85%D9%85%D8%B1%D8%B6",
+      "whatsappText": "السلام عليكم، أستفسر عن: استدعاء فني أو ممرض",
+      "best": null
+    }
+  },
+  {
+    "query": "طوارئ",
+    "type": "weak",
+    "best": null,
+    "options": [
+      {
+        "id": "SVC-0451",
+        "name": "أقسام الطوارئ"
+      },
+      {
+        "id": "SVC-0434",
+        "name": "غسيل العين (طوارئ)"
+      },
+      {
+        "id": "SVC-0431",
+        "name": "غسيل المعدة (طوارئ)"
+      },
+      {
+        "id": "SVC-0407",
+        "name": "ضرب إبرة عضل (طوارئ)"
+      },
+      {
+        "id": "SVC-0432",
+        "name": "غسيل المثانة (طوارئ)"
+      }
+    ],
+    "reply": {
+      "lines": [
+        "في الحالات الطارئة يُرجى التواصل معنا فورًا عبر واتساب المستشفى (771422070) أو الحضور إلى قسم الطوارئ.",
+        "هل تقصد أحد هذه الخدمات؟"
+      ],
+      "options": [
+        {
+          "id": "SVC-0451",
+          "name": "أقسام الطوارئ",
+          "category": "وحدات وأقسام",
+          "group": "listed",
+          "slug": "emergency",
+          "rank": 6,
+          "url": "services/emergency#svc-0451",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "اقسام",
+            "طواري"
+          ]
+        },
+        {
+          "id": "SVC-0434",
+          "name": "غسيل العين (طوارئ)",
+          "category": "طوارئ وإسعاف",
+          "group": "general",
+          "slug": "emergency",
+          "rank": 6,
+          "url": "services/emergency#svc-0434",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "غسيل",
+            "عين",
+            "طواري"
+          ]
+        },
+        {
+          "id": "SVC-0431",
+          "name": "غسيل المعدة (طوارئ)",
+          "category": "طوارئ وإسعاف",
+          "group": "general",
+          "slug": "emergency",
+          "rank": 6,
+          "url": "services/emergency#svc-0431",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "غسيل",
+            "معده",
+            "طواري"
+          ]
+        },
+        {
+          "id": "SVC-0407",
+          "name": "ضرب إبرة عضل (طوارئ)",
+          "category": "طوارئ وإسعاف",
+          "group": "general",
+          "slug": "emergency",
+          "rank": 6,
+          "url": "services/emergency#svc-0407",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "ضرب",
+            "ابره",
+            "عضل",
+            "طواري"
+          ]
+        },
+        {
+          "id": "SVC-0432",
+          "name": "غسيل المثانة (طوارئ)",
+          "category": "طوارئ وإسعاف",
+          "group": "general",
+          "slug": "emergency",
+          "rank": 6,
+          "url": "services/emergency#svc-0432",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "غسيل",
+            "مثانه",
+            "طواري"
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%A3%D9%82%D8%B3%D8%A7%D9%85%20%D8%A7%D9%84%D8%B7%D9%88%D8%A7%D8%B1%D8%A6",
+      "whatsappText": "السلام عليكم، أستفسر عن: أقسام الطوارئ",
+      "best": null
+    }
+  },
+  {
+    "query": "فحص",
+    "type": "weak",
+    "best": null,
+    "options": [
+      {
+        "id": "SVC-0243",
+        "name": "فحص منظم القلب"
+      },
+      {
+        "id": "SVC-0048",
+        "name": "فحص الدم الشامل CBC"
+      },
+      {
+        "id": "SVC-0242",
+        "name": "فحص القلب عبر المريء (تخدير موضعي)"
+      },
+      {
+        "id": "SVC-0245",
+        "name": "فحص القلب بالموجات فوق الصوتية (أطفال وعيوب قلب خلقية)"
+      },
+      {
+        "id": "SVC-0180",
+        "name": "فحص الأوعية الدموية"
+      }
+    ],
+    "reply": {
+      "lines": [
+        "هل تقصد أحد هذه الخدمات؟"
+      ],
+      "options": [
+        {
+          "id": "SVC-0243",
+          "name": "فحص منظم القلب",
+          "category": "قلب",
+          "group": "general",
+          "slug": "diagnostics",
+          "rank": 0,
+          "url": "services/diagnostics#svc-0243",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "فحص",
+            "منظم",
+            "قلب"
+          ]
+        },
+        {
+          "id": "SVC-0048",
+          "name": "فحص الدم الشامل CBC",
+          "category": "مختبر",
+          "group": "lab",
+          "slug": "diagnostics",
+          "rank": 0,
+          "url": "services/diagnostics#svc-0048",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "فحص",
+            "دم",
+            "شامل",
+            "cbc"
+          ]
+        },
+        {
+          "id": "SVC-0242",
+          "name": "فحص القلب عبر المريء (تخدير موضعي)",
+          "category": "قلب",
+          "group": "general",
+          "slug": "diagnostics",
+          "rank": 0,
+          "url": "services/diagnostics#svc-0242",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "فحص",
+            "قلب",
+            "عبر",
+            "مريء",
+            "تخدير",
+            "موضعي"
+          ]
+        },
+        {
+          "id": "SVC-0245",
+          "name": "فحص القلب بالموجات فوق الصوتية (أطفال وعيوب قلب خلقية)",
+          "category": "قلب",
+          "group": "radiology",
+          "slug": "diagnostics",
+          "rank": 0,
+          "url": "services/diagnostics#svc-0245",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "فحص",
+            "قلب",
+            "موجات",
+            "فوق",
+            "صوتيه",
+            "اطفال",
+            "عيوب",
+            "قلب",
+            "خلقيه"
+          ]
+        },
+        {
+          "id": "SVC-0180",
+          "name": "فحص الأوعية الدموية",
+          "category": "إجراءات وعمليات صغرى",
+          "group": "general",
+          "slug": "surgery",
+          "rank": 1,
+          "url": "services/surgery#svc-0180",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "فحص",
+            "اوعيه",
+            "دمويه"
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D9%81%D8%AD%D8%B5%20%D9%85%D9%86%D8%B8%D9%85%20%D8%A7%D9%84%D9%82%D9%84%D8%A8",
+      "whatsappText": "السلام عليكم، أستفسر عن: فحص منظم القلب",
+      "best": null
+    }
+  },
+  {
+    "query": "غسيل العين",
+    "type": "strong",
+    "best": {
+      "id": "SVC-0434",
+      "name": "غسيل العين (طوارئ)"
+    },
+    "options": [],
+    "reply": {
+      "lines": [
+        "نعم، يتوفر لدينا غسيل العين (طوارئ) ضمن طوارئ وإسعاف. يسعدنا خدمتكم ونتمنى لكم دوام الصحة والعافية."
+      ],
+      "options": [],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%BA%D8%B3%D9%8A%D9%84%20%D8%A7%D9%84%D8%B9%D9%8A%D9%86%20(%D8%B7%D9%88%D8%A7%D8%B1%D8%A6)",
+      "whatsappText": "السلام عليكم، أستفسر عن: غسيل العين (طوارئ)",
+      "best": {
+        "id": "SVC-0434",
+        "name": "غسيل العين (طوارئ)",
+        "category": "طوارئ وإسعاف",
+        "group": "general",
+        "slug": "emergency",
+        "rank": 6,
+        "url": "services/emergency#svc-0434",
+        "searchOnly": false,
+        "exactMatchOnly": false,
+        "exactMatchMinWords": null,
+        "directoryHidden": false,
+        "matchName": "",
+        "numberRequired": false,
+        "exactPhrases": [],
+        "_tokens": [
+          "غسيل",
+          "عين",
+          "طواري"
+        ]
+      }
+    }
+  },
+  {
+    "query": "خزعة من الكبد",
+    "type": "strong",
+    "best": {
+      "id": "SVC-0191",
+      "name": "خزعة من الكبد"
+    },
+    "options": [],
+    "reply": {
+      "lines": [
+        "نعم، يتوفر لدينا خزعة من الكبد ضمن إجراءات وعمليات صغرى. يسعدنا خدمتكم ونتمنى لكم دوام الصحة والعافية."
+      ],
+      "options": [],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B2%D8%B9%D8%A9%20%D9%85%D9%86%20%D8%A7%D9%84%D9%83%D8%A8%D8%AF",
+      "whatsappText": "السلام عليكم، أستفسر عن: خزعة من الكبد",
+      "best": {
+        "id": "SVC-0191",
+        "name": "خزعة من الكبد",
+        "category": "إجراءات وعمليات صغرى",
+        "group": "general",
+        "slug": "surgery",
+        "rank": 1,
+        "url": "services/surgery#svc-0191",
+        "searchOnly": false,
+        "exactMatchOnly": false,
+        "exactMatchMinWords": null,
+        "directoryHidden": false,
+        "matchName": "",
+        "numberRequired": false,
+        "exactPhrases": [],
+        "_tokens": [
+          "خزعه",
+          "من",
+          "كبد"
+        ]
+      }
+    }
+  },
+  {
+    "query": "رقود غرفة خاصة",
+    "type": "strong",
+    "best": {
+      "id": "SVC-0352",
+      "name": "رقود غرفة خاصة"
+    },
+    "options": [
+      {
+        "id": "SVC-0354",
+        "name": "رقود غرفة خاصة عزل"
+      }
+    ],
+    "reply": {
+      "lines": [
+        "نعم، يتوفر لدينا رقود غرفة خاصة ضمن رقود وخدمات تمريضية. يسعدنا خدمتكم ونتمنى لكم دوام الصحة والعافية.",
+        "هل تقصد أحد هذه الخدمات؟"
+      ],
+      "options": [
+        {
+          "id": "SVC-0354",
+          "name": "رقود غرفة خاصة عزل",
+          "category": "رقود وخدمات تمريضية",
+          "group": "general",
+          "slug": "emergency",
+          "rank": 6,
+          "url": "services/emergency#svc-0354",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "رقود",
+            "غرفه",
+            "خاصه",
+            "عزل"
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%B1%D9%82%D9%88%D8%AF%20%D8%BA%D8%B1%D9%81%D8%A9%20%D8%AE%D8%A7%D8%B5%D8%A9",
+      "whatsappText": "السلام عليكم، أستفسر عن: رقود غرفة خاصة",
+      "best": {
+        "id": "SVC-0352",
+        "name": "رقود غرفة خاصة",
+        "category": "رقود وخدمات تمريضية",
+        "group": "general",
+        "slug": "emergency",
+        "rank": 6,
+        "url": "services/emergency#svc-0352",
+        "searchOnly": false,
+        "exactMatchOnly": false,
+        "exactMatchMinWords": null,
+        "directoryHidden": false,
+        "matchName": "",
+        "numberRequired": false,
+        "exactPhrases": [],
+        "_tokens": [
+          "رقود",
+          "غرفه",
+          "خاصه"
+        ]
+      }
+    }
+  },
+  {
+    "query": "هل عندكم رقود",
+    "type": "weak",
+    "best": null,
+    "options": [
+      {
+        "id": "SVC-0360",
+        "name": "ملف رقود"
+      },
+      {
+        "id": "SVC-0353",
+        "name": "رقود جناح"
+      },
+      {
+        "id": "SVC-0358",
+        "name": "رقود حضانة"
+      },
+      {
+        "id": "SVC-0450",
+        "name": "أقسام الرقود"
+      },
+      {
+        "id": "SVC-0352",
+        "name": "رقود غرفة خاصة"
+      }
+    ],
+    "reply": {
+      "lines": [
+        "هل تقصد أحد هذه الخدمات؟"
+      ],
+      "options": [
+        {
+          "id": "SVC-0360",
+          "name": "ملف رقود",
+          "category": "رقود وخدمات تمريضية",
+          "group": "general",
+          "slug": "emergency",
+          "rank": 6,
+          "url": "services/emergency#svc-0360",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "ملف",
+            "رقود"
+          ]
+        },
+        {
+          "id": "SVC-0353",
+          "name": "رقود جناح",
+          "category": "رقود وخدمات تمريضية",
+          "group": "general",
+          "slug": "emergency",
+          "rank": 6,
+          "url": "services/emergency#svc-0353",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "رقود",
+            "جناح"
+          ]
+        },
+        {
+          "id": "SVC-0358",
+          "name": "رقود حضانة",
+          "category": "رقود وخدمات تمريضية",
+          "group": "general",
+          "slug": "emergency",
+          "rank": 6,
+          "url": "services/emergency#svc-0358",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "رقود",
+            "حضانه"
+          ]
+        },
+        {
+          "id": "SVC-0450",
+          "name": "أقسام الرقود",
+          "category": "وحدات وأقسام",
+          "group": "listed",
+          "slug": "emergency",
+          "rank": 6,
+          "url": "services/emergency#svc-0450",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "اقسام",
+            "رقود"
+          ]
+        },
+        {
+          "id": "SVC-0352",
+          "name": "رقود غرفة خاصة",
+          "category": "رقود وخدمات تمريضية",
+          "group": "general",
+          "slug": "emergency",
+          "rank": 6,
+          "url": "services/emergency#svc-0352",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "رقود",
+            "غرفه",
+            "خاصه"
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D9%85%D9%84%D9%81%20%D8%B1%D9%82%D9%88%D8%AF",
+      "whatsappText": "السلام عليكم، أستفسر عن: ملف رقود",
+      "best": null
+    }
+  },
+  {
+    "query": "ايكو للقلب",
+    "type": "strong",
+    "best": {
+      "id": "SVC-0246",
+      "name": "إيكو للقلب"
+    },
+    "options": [
+      {
+        "id": "SVC-0247",
+        "name": "إيكو للقلب تحت التخدير العام"
+      },
+      {
+        "id": "SVC-0065",
+        "name": "وإيكو القلب ECHO للكبار والأطفال"
+      }
+    ],
+    "reply": {
+      "lines": [
+        "نعم، يتوفر لدينا إيكو للقلب. لدينا مركز تشخيصي متكامل يضم الأشعة المقطعية والأشعة الرقمية الكشافة (DR) والسونار (الموجات فوق الصوتية) وإيكو القلب، بأحدث أجهزة الأشعة المقطعية وأجهزة السونار والإيكو الحديثة، ويقدّم القسم خدماته على مدار الساعة. نسعد بخدمتكم ونتمنى لكم دوام الصحة والعافية.",
+        "هل تقصد أحد هذه الخدمات؟"
+      ],
+      "options": [
+        {
+          "id": "SVC-0247",
+          "name": "إيكو للقلب تحت التخدير العام",
+          "category": "قلب",
+          "group": "radiology",
+          "slug": "diagnostics",
+          "rank": 0,
+          "url": "services/diagnostics#svc-0247",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "ايكو",
+            "قلب",
+            "تحت",
+            "تخدير",
+            "عام"
+          ]
+        },
+        {
+          "id": "SVC-0065",
+          "name": "وإيكو القلب ECHO للكبار والأطفال",
+          "category": "أشعة",
+          "group": "radiology",
+          "slug": "diagnostics",
+          "rank": 0,
+          "url": "services/diagnostics#svc-0065",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "ايكو",
+            "قلب",
+            "echo",
+            "كبار",
+            "اطفال"
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%A5%D9%8A%D9%83%D9%88%20%D9%84%D9%84%D9%82%D9%84%D8%A8",
+      "whatsappText": "السلام عليكم، أستفسر عن: إيكو للقلب",
+      "best": {
+        "id": "SVC-0246",
+        "name": "إيكو للقلب",
+        "category": "قلب",
+        "group": "radiology",
+        "slug": "diagnostics",
+        "rank": 0,
+        "url": "services/diagnostics#svc-0246",
+        "searchOnly": false,
+        "exactMatchOnly": false,
+        "exactMatchMinWords": null,
+        "directoryHidden": false,
+        "matchName": "",
+        "numberRequired": false,
+        "exactPhrases": [],
+        "_tokens": [
+          "ايكو",
+          "قلب"
+        ]
+      }
+    }
+  },
+  {
+    "query": "قلع ضرس",
+    "type": "strong",
+    "best": {
+      "id": "SVC-0070",
+      "name": "قلع ضرس A"
+    },
+    "options": [
+      {
+        "id": "SVC-0071",
+        "name": "قلع ضرس B"
+      },
+      {
+        "id": "SVC-0072",
+        "name": "قلع ضرس C"
+      },
+      {
+        "id": "SVC-0074",
+        "name": "قلع ضرس خلفي"
+      }
+    ],
+    "reply": {
+      "lines": [
+        "نعم، يتوفر لدينا قلع ضرس A. لدينا مركز جراحة الوجه والفكين وعيادة الأسنان والتقويم، بأحدث التجهيزات الطبية وأعلى معايير السلامة في الجراحة، ورعاية سليمة تحافظ على ابتسامتك وتجعلها الفارق. نسعد بخدمتكم ونتمنى لكم دوام الصحة والعافية.",
+        "هل تقصد أحد هذه الخدمات؟"
+      ],
+      "options": [
+        {
+          "id": "SVC-0071",
+          "name": "قلع ضرس B",
+          "category": "أسنان",
+          "group": "dental",
+          "slug": "dental",
+          "rank": 2,
+          "url": "services/dental#svc-0071",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "قلع",
+            "ضرس",
+            "b"
+          ]
+        },
+        {
+          "id": "SVC-0072",
+          "name": "قلع ضرس C",
+          "category": "أسنان",
+          "group": "dental",
+          "slug": "dental",
+          "rank": 2,
+          "url": "services/dental#svc-0072",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "قلع",
+            "ضرس",
+            "c"
+          ]
+        },
+        {
+          "id": "SVC-0074",
+          "name": "قلع ضرس خلفي",
+          "category": "أسنان",
+          "group": "dental",
+          "slug": "dental",
+          "rank": 2,
+          "url": "services/dental#svc-0074",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": [],
+          "_tokens": [
+            "قلع",
+            "ضرس",
+            "خلفي"
+          ]
+        }
+      ],
+      "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D9%82%D9%84%D8%B9%20%D8%B6%D8%B1%D8%B3%20A",
+      "whatsappText": "السلام عليكم، أستفسر عن: قلع ضرس A",
+      "best": {
+        "id": "SVC-0070",
+        "name": "قلع ضرس A",
+        "category": "أسنان",
+        "group": "dental",
+        "slug": "dental",
+        "rank": 2,
+        "url": "services/dental#svc-0070",
+        "searchOnly": false,
+        "exactMatchOnly": false,
+        "exactMatchMinWords": null,
+        "directoryHidden": false,
+        "matchName": "",
+        "numberRequired": false,
+        "exactPhrases": [],
+        "_tokens": [
+          "قلع",
+          "ضرس",
+          "a"
+        ]
+      }
+    }
+  }
+]

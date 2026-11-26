@@ -1,0 +1,37 @@
+diff --git a/services/dental.html b/services/dental.html
+index 288922a..107cecf 100644
+--- a/services/dental.html
++++ b/services/dental.html
+@@ -23 +23 @@
+-
++    <link rel="stylesheet" href="../ext/services-search.css?v=3">
+@@ -98 +98 @@
+-                <li><a href="/services/" class="nav-active">دليل الخدمات</a></li>
++                <li><a href="./" class="nav-active">دليل الخدمات</a></li>
+@@ -107 +107 @@
+-            <nav aria-label="مسار التصفح" class="sg-crumbs"><a href="../index.html">الرئيسية</a> ← <a href="/services/">دليل الخدمات</a> ← <span>أسنان</span></nav>
++            <nav aria-label="مسار التصفح" class="sg-crumbs"><a href="../index.html">الرئيسية</a> ← <a href="./">دليل الخدمات</a> ← <span>أسنان</span></nav>
+@@ -110,0 +111,17 @@
++            <div class="ss" data-services-search>
++                <label class="ss-label" for="ss-input">ابحث في دليل الخدمات</label>
++                <form class="ss-form" role="search" onsubmit="return false;">
++                    <input class="ss-input" id="ss-input" type="search" autocomplete="off"
++                           placeholder="ابحث عن فحص أو أشعة أو عملية"
++                           aria-describedby="ss-hint" data-services-search-input>
++                    <button class="ss-button" type="button" data-services-search-button>بحث</button>
++                </form>
++                <p class="ss-hint" id="ss-hint">اكتب حرفين على الأقل</p>
++                <p class="ss-status" role="status" aria-live="polite" data-services-search-status></p>
++                <div class="ss-panel" data-services-search-panel></div>
++                <noscript>
++                    <p class="sg-noscript">البحث الفوري يحتاج JavaScript. يمكنك تصفح الدليل كاملًا من الروابط أدناه.</p>
++                </noscript>
++            </div>
++
++
+@@ -228 +245 @@
+-            <p class="sg-back"><a href="/services/">العودة إلى دليل الخدمات</a></p>
++            <p class="sg-back"><a href="./">العودة إلى دليل الخدمات</a></p>
+@@ -250,0 +268,2 @@
++    <script src="../ext/data/services-index.js?v=3"></script>
++    <script src="../ext/services-search.js?v=3" defer></script>

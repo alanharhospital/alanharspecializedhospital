@@ -53,9 +53,7 @@
       "directoryHidden": true,
       "matchName": "",
       "numberRequired": true,
-      "exactPhrases": [
-        "16 حاضنة أطفال"
-      ]
+      "exactPhrases": []
     },
     {
       "id": "SVC-0004",
@@ -6756,6 +6754,16 @@
   "searchOnlyMatch": {
     "minCoverage": 0.75,
     "minWords": 3
+  },
+  "yesMatch": {
+    "coverageMin": 0.6
+  },
+  "categoryHints": {
+    "تحليل": "diagnostics",
+    "فحص": "diagnostics",
+    "اشعة": "diagnostics",
+    "عملية": "surgery",
+    "عمليات": "surgery"
   },
   "synonyms": [
     {
