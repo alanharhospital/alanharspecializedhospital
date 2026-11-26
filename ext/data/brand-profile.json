@@ -1,0 +1,2171 @@
+{
+  "source": "style.css literal declarations and local images; computed browser colors in site-audit.json",
+  "rootVariables": {
+    "--primary-navy": "#0a2a5e",
+    "--secondary-blue": "#1e4a8a",
+    "--accent-green": "#2ecc71",
+    "--bg-light": "#f8f9fa",
+    "--text-main": "#333333",
+    "--white": "#ffffff",
+    "--border-color": "#e2e8f0",
+    "--shadow-sm": "0 2px 6px rgba(0, 0, 0, 0.05)",
+    "--shadow-md": "0 8px 20px rgba(10, 42, 94, 0.08)",
+    "--shadow-lg": "0 12px 28px rgba(10, 42, 94, 0.15)",
+    "--radius-sm": "8px",
+    "--radius-md": "12px",
+    "--radius-lg": "18px",
+    "--transition-fast": "0.25s ease",
+    "--font-main": "'Tajawal', -apple-system, BlinkMacSystemFont, sans-serif"
+  },
+  "hexColorOccurrences": {
+    "#666": 3,
+    "#0a2a5e": 2,
+    "#1e4a8a": 2,
+    "#2ecc71": 1,
+    "#f8f9fa": 1,
+    "#333333": 1,
+    "#ffffff": 1,
+    "#e2e8f0": 1,
+    "#27ae60": 1,
+    "#666666": 1,
+    "#e74c3c": 1,
+    "#25d366": 1,
+    "#1ebd56": 1,
+    "#555": 1
+  },
+  "rgbColorOccurrences": {
+    "rgba(10, 42, 94, 0.05)": 3,
+    "rgba(255, 255, 255, 0.85)": 2,
+    "rgba(255, 255, 255, 0.1)": 2,
+    "rgba(46, 204, 113, 0.7)": 2,
+    "rgba(46, 204, 113, 0)": 2,
+    "rgba(255, 255, 255, 0.12)": 2,
+    "rgba(0, 0, 0, 0.05)": 1,
+    "rgba(10, 42, 94, 0.08)": 1,
+    "rgba(10, 42, 94, 0.15)": 1,
+    "rgba(10, 42, 94, 0.06)": 1,
+    "rgba(46, 204, 113, 0.2)": 1,
+    "rgba(46, 204, 113, 0.3)": 1,
+    "rgba(255, 255, 255, 0.06)": 1,
+    "rgba(30, 74, 138, 0.1)": 1,
+    "rgba(10, 42, 94, 0.02)": 1,
+    "rgba(46, 204, 113, 0.08)": 1
+  },
+  "fontFamilyDeclarations": {
+    "inherit": 2,
+    "var(--font-main)": 1
+  },
+  "fontSizes": {
+    "0.95rem": 7,
+    "1.05rem": 3,
+    "1.25rem": 2,
+    "0.85rem": 2,
+    "0.92rem": 2,
+    "2rem": 2,
+    "1.2rem": 2,
+    "0.88rem": 2,
+    "16px": 1,
+    "0.68rem": 1,
+    "0.9rem": 1,
+    "2.5rem": 1,
+    "1.15rem": 1,
+    "1rem": 1,
+    "1.5rem": 1,
+    "1.35rem": 1,
+    "0.98rem": 1,
+    "1.5rem !important": 1,
+    "0.95rem !important": 1
+  },
+  "spacing": {
+    "1rem": 6,
+    "1.5rem": 6,
+    "2rem": 5,
+    "1.25rem": 4,
+    "0.85rem": 3,
+    "0.5rem": 3,
+    "0": 2,
+    "2rem 1.5rem": 2,
+    "0 auto 1.25rem": 2,
+    "0 auto": 1,
+    "0 1.25rem": 1,
+    "4rem 0": 1,
+    "0.75rem": 1,
+    "0.5rem 0.65rem": 1,
+    "0.15rem 0.4rem": 1,
+    "5rem 0": 1,
+    "0.4rem 1rem": 1,
+    "0.85rem 1.75rem": 1,
+    "0.35rem 0.9rem": 1,
+    "2.5rem": 1,
+    "0.4rem": 1,
+    "0.75rem 1rem": 1,
+    "1.75rem": 1,
+    "0.85rem 1.25rem": 1,
+    "3rem 0 1.5rem": 1,
+    "4px": 1,
+    "0 10px": 1,
+    "1.5rem !important": 1,
+    "1rem !important": 1
+  },
+  "shadows": {
+    "var(--shadow-sm)": 5,
+    "var(--shadow-md)": 4,
+    "0 4px 12px rgba(46, 204, 113, 0.3)": 1,
+    "0 0 0 rgba(46, 204, 113, 0.7)": 1,
+    "0 0 0 0 rgba(46, 204, 113, 0.7)": 1,
+    "0 0 0 10px rgba(46, 204, 113, 0)": 1,
+    "0 0 0 0 rgba(46, 204, 113, 0)": 1,
+    "0 0 0 3px rgba(30, 74, 138, 0.1)": 1
+  },
+  "radii": {
+    "var(--radius-sm)": 6,
+    "var(--radius-md)": 6,
+    "20px": 2,
+    "50%": 2,
+    "10px": 1,
+    "var(--radius-sm) !important": 1,
+    "2px": 1,
+    "var(--radius-lg)": 1,
+    "8px": 1
+  },
+  "buttons": [
+    ".btn ",
+    ".btn-email-submit ",
+    ".btn-email-submit:hover ",
+    ".btn-nav-highlight ",
+    ".btn-nav-highlight:hover ",
+    ".btn-outline ",
+    ".btn-outline:hover ",
+    ".btn-primary ",
+    ".btn-primary:hover ",
+    ".btn-whatsapp-submit ",
+    ".btn-whatsapp-submit:hover ",
+    ".hero-buttons "
+  ],
+  "cards": [
+    ".card-247 ",
+    ".card-247 h3 ",
+    ".card-247 p ",
+    ".card-247:hover ",
+    ".card-icon-247 "
+  ],
+  "logo": "شعار دائري عربي وإنجليزي، أزرق وأحمر وأخضر، يتضمن شكل أسرة ويدًا ونبضًا طبيًا على أرضية بيضاء.",
+  "hero": "صورة فوتوغرافية لواجهة المستشفى؛ خلفية الرئيسية تعتمد صورة أصلية مع بدائل WebP وتدرج لوني فوقها.",
+  "caveat": "الألوان المحسوبة وفحوص التباين عيّنات المتصفح المحلي، ولا تشمل الألوان على الصور والتدرجات غير القابلة للحساب.",
+  "measuredContrastPairs": [
+    {
+      "foreground": "#0a2a5e",
+      "background": "#0a2a5e",
+      "minimum": 4.5,
+      "ratio": 1,
+      "instances": 24,
+      "pages": [
+        "/clinics.html",
+        "/units.html",
+        "/ancillary.html",
+        "/news.html"
+      ],
+      "examples": [
+        "دليل الفحوصات والعمليات والأشعة",
+        "المعلومات للتوعية ولا تغني عن استشارة الطبيب، وفي الطوارئ تواصل مع الطوارئ فورًا."
+      ]
+    },
+    {
+      "foreground": "#0a2a5e",
+      "background": "#132650",
+      "minimum": 4.5,
+      "ratio": 1.06,
+      "instances": 6,
+      "pages": [
+        "/",
+        "/offers.html"
+      ],
+      "examples": [
+        "المعلومات للتوعية ولا تغني عن استشارة الطبيب، وفي الطوارئ تواصل مع الطوارئ فورًا."
+      ]
+    },
+    {
+      "foreground": "#0a2a5e",
+      "background": "#14264f",
+      "minimum": 4.5,
+      "ratio": 1.06,
+      "instances": 6,
+      "pages": [
+        "/",
+        "/offers.html"
+      ],
+      "examples": [
+        "دليل الفحوصات والعمليات والأشعة"
+      ]
+    },
+    {
+      "foreground": "#0a2a5e",
+      "background": "#132248",
+      "minimum": 4.5,
+      "ratio": 1.11,
+      "instances": 3,
+      "pages": [
+        "/doctors.html"
+      ],
+      "examples": [
+        "المعلومات للتوعية ولا تغني عن استشارة الطبيب، وفي الطوارئ تواصل مع الطوارئ فورًا."
+      ]
+    },
+    {
+      "foreground": "#0a2a5e",
+      "background": "#142247",
+      "minimum": 4.5,
+      "ratio": 1.12,
+      "instances": 3,
+      "pages": [
+        "/doctors.html"
+      ],
+      "examples": [
+        "دليل الفحوصات والعمليات والأشعة"
+      ]
+    },
+    {
+      "foreground": "#2ecc71",
+      "background": "#d5f5e3",
+      "minimum": 4.5,
+      "ratio": 1.8,
+      "instances": 3,
+      "pages": [
+        "/news.html"
+      ],
+      "examples": [
+        "إنجاز طبي نوعي"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#25d366",
+      "minimum": 4.5,
+      "ratio": 1.98,
+      "instances": 15,
+      "pages": [
+        "/",
+        "/offers.html",
+        "/ancillary.html"
+      ],
+      "examples": [
+        "💬 إرسال عبر واتساب",
+        "💬 احجز عبر واتساب",
+        "💬 واتساب الحجوزات"
+      ]
+    },
+    {
+      "foreground": "#2ecc71",
+      "background": "#f8fafc",
+      "minimum": 3,
+      "ratio": 2.01,
+      "instances": 12,
+      "pages": [
+        "/ancillary.html"
+      ],
+      "examples": [
+        "🏥",
+        "🛡️",
+        "📚"
+      ]
+    },
+    {
+      "foreground": "#2ecc71",
+      "background": "#ffffff",
+      "minimum": 3,
+      "ratio": 2.1,
+      "instances": 12,
+      "pages": [
+        "/offers.html"
+      ],
+      "examples": [
+        "0",
+        "151",
+        "483",
+        "84"
+      ]
+    },
+    {
+      "foreground": "#2ecc71",
+      "background": "#ffffff",
+      "minimum": 4.5,
+      "ratio": 2.1,
+      "instances": 42,
+      "pages": [
+        "/ancillary.html",
+        "/news.html"
+      ],
+      "examples": [
+        "عرض التفاصيل",
+        "مستشفى الأنهار التخصصي - صحتكم مسؤوليتنا ❤️"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#2ecc71",
+      "minimum": 4.5,
+      "ratio": 2.1,
+      "instances": 59,
+      "pages": [
+        "/",
+        "/offers.html",
+        "/clinics.html",
+        "/units.html",
+        "/ancillary.html",
+        "/pr.html",
+        "/news.html",
+        "/404.html"
+      ],
+      "examples": [
+        "📅 احجز موعدك الآن",
+        "👁️ اضغط هنا لزيارة ومشاهدة صفحة العروض الحالية ←",
+        "👁️ شاهد العروض",
+        "خصم 50%"
+      ]
+    },
+    {
+      "foreground": "#40c057",
+      "background": "#ffffff",
+      "minimum": 4.5,
+      "ratio": 2.36,
+      "instances": 5,
+      "pages": [
+        "/doctors.html"
+      ],
+      "examples": [
+        "التخصصي",
+        "الاستشاريين والطواقم",
+        "اتصل بنا"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#40c057",
+      "minimum": 4.5,
+      "ratio": 2.36,
+      "instances": 26,
+      "pages": [
+        "/doctors.html"
+      ],
+      "examples": [
+        "حجز موعد",
+        "خاص"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#ee7d55",
+      "minimum": 4.5,
+      "ratio": 2.73,
+      "instances": 16,
+      "pages": [
+        "/",
+        "/offers.html",
+        "/pr.html"
+      ],
+      "examples": [
+        "⏳ إعلانات ومخيمات طبية لفترة محدودة",
+        "مجاناً",
+        "صباحي ومسائي",
+        "جديد"
+      ]
+    },
+    {
+      "foreground": "#2f9e44",
+      "background": "#e8f7eb",
+      "minimum": 4.5,
+      "ratio": 3.12,
+      "instances": 24,
+      "pages": [
+        "/doctors.html"
+      ],
+      "examples": [
+        "استشاري جراحة الفم والوجه والفكين",
+        "استشاري جراحة المخ والأعصاب والعمود الفقري",
+        "استشاري جراحة العظام والمفاصل"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#4c8cda",
+      "minimum": 4.5,
+      "ratio": 3.47,
+      "instances": 3,
+      "pages": [
+        "/"
+      ],
+      "examples": [
+        "🚑"
+      ]
+    },
+    {
+      "foreground": "#1e8e4e",
+      "background": "#e0f7ea",
+      "minimum": 4.5,
+      "ratio": 3.71,
+      "instances": 9,
+      "pages": [
+        "/offers.html"
+      ],
+      "examples": [
+        "ساري حتى 30 ديسمبر 2026",
+        "ساري حتى نهاية 2026"
+      ]
+    },
+    {
+      "foreground": "#1a8f4d",
+      "background": "#e9f9f0",
+      "minimum": 4.5,
+      "ratio": 3.79,
+      "instances": 3,
+      "pages": [
+        "/pr.html"
+      ],
+      "examples": [
+        "تواصل مباشر"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#1877f2",
+      "minimum": 4.5,
+      "ratio": 4.23,
+      "instances": 3,
+      "pages": [
+        "/news.html"
+      ],
+      "examples": [
+        "للمزيد من التفاصيل اضغط لمشاهدة الخبر على فيسبوك ↗"
+      ]
+    },
+    {
+      "foreground": "#1f6fd1",
+      "background": "#e9f1fa",
+      "minimum": 4.5,
+      "ratio": 4.32,
+      "instances": 9,
+      "pages": [
+        "/offers.html"
+      ],
+      "examples": [
+        "🩺 الجراحة العامة",
+        "🤰 النساء والولادة",
+        "🦷 طب الأسنان"
+      ]
+    },
+    {
+      "foreground": "#dc2626",
+      "background": "#f0f8fc",
+      "minimum": 4.5,
+      "ratio": 4.49,
+      "instances": 3,
+      "pages": [
+        "/"
+      ],
+      "examples": [
+        "*"
+      ]
+    },
+    {
+      "foreground": "#64748b",
+      "background": "#f8fafc",
+      "minimum": 4.5,
+      "ratio": 4.55,
+      "instances": 24,
+      "pages": [
+        "/doctors.html"
+      ],
+      "examples": [
+        "متخصص في كسور الوجه والفكين، جراحات الأورام والأكياس المرضية، والعيوب الخلقية والترميم.",
+        "تشخيص ومتابعة أمراض المخ والأعصاب، آلام الظهر والرقبة، الانزلاق الغضروفي وضغط الأعصاب.",
+        "كبير استشاريي جراحة العظام والمفاصل بالحديدة - متخصص في الكسور المعقدة وعظام الأطفال والمف"
+      ]
+    },
+    {
+      "foreground": "#1f6fd1",
+      "background": "#f3f7fc",
+      "minimum": 4.5,
+      "ratio": 4.59,
+      "instances": 51,
+      "pages": [
+        "/",
+        "/offers.html",
+        "/pr.html"
+      ],
+      "examples": [
+        "زيارة صفحة العيادات ←",
+        "زيارة صفحة الوحدات ←",
+        "زيارة الوحدات الملحقة ←",
+        "الرئيسية"
+      ]
+    },
+    {
+      "foreground": "#d32f2f",
+      "background": "#f3f7fc",
+      "minimum": 4.5,
+      "ratio": 4.63,
+      "instances": 3,
+      "pages": [
+        "/"
+      ],
+      "examples": [
+        "إستشاري جراحة العظام والمفاصل"
+      ]
+    },
+    {
+      "foreground": "#1f6fd1",
+      "background": "#f8fafc",
+      "minimum": 4.5,
+      "ratio": 4.72,
+      "instances": 3,
+      "pages": [
+        "/"
+      ],
+      "examples": [
+        "📍 فتح الموقع في خرائط جوجل ↗"
+      ]
+    },
+    {
+      "foreground": "#64748b",
+      "background": "#ffffff",
+      "minimum": 4.5,
+      "ratio": 4.76,
+      "instances": 1233,
+      "pages": [
+        "/doctors.html",
+        "/services/diagnostics",
+        "/services/surgery",
+        "/services/dental",
+        "/services/women",
+        "/services/ent",
+        "/services/physio",
+        "/services/emergency",
+        "/services/clinics-admin"
+      ],
+      "examples": [
+        "عرض 8 أطباء",
+        "SVC-0052",
+        "SVC-0050",
+        "SVC-0056"
+      ]
+    },
+    {
+      "foreground": "#dc2626",
+      "background": "#ffffff",
+      "minimum": 4.5,
+      "ratio": 4.83,
+      "instances": 12,
+      "pages": [
+        "/"
+      ],
+      "examples": [
+        "*"
+      ]
+    },
+    {
+      "foreground": "#1f6fd1",
+      "background": "#ffffff",
+      "minimum": 4.5,
+      "ratio": 4.94,
+      "instances": 111,
+      "pages": [
+        "/",
+        "/offers.html",
+        "/pr.html"
+      ],
+      "examples": [
+        "أكبر صرح طبي في محافظة الحديدة",
+        "03 235270",
+        "235271",
+        "د. منير الوصابي - استشاري الجراحة العامة والأوعية الدموية"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#1f6fd1",
+      "minimum": 3,
+      "ratio": 4.94,
+      "instances": 6,
+      "pages": [
+        "/",
+        "/offers.html"
+      ],
+      "examples": [
+        "03 235270",
+        "🚑"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#1f6fd1",
+      "minimum": 4.5,
+      "ratio": 4.94,
+      "instances": 20,
+      "pages": [
+        "/",
+        "/offers.html"
+      ],
+      "examples": [
+        "📅 حجز موعد في العيادة",
+        "✉️ إرسال بالإيميل",
+        "حجز موعد",
+        "03 235270"
+      ]
+    },
+    {
+      "foreground": "#d32f2f",
+      "background": "#ffffff",
+      "minimum": 4.5,
+      "ratio": 4.98,
+      "instances": 24,
+      "pages": [
+        "/pr.html"
+      ],
+      "examples": [
+        "*"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#d32f2f",
+      "minimum": 4.5,
+      "ratio": 4.98,
+      "instances": 2,
+      "pages": [
+        "/",
+        "/offers.html"
+      ],
+      "examples": [
+        "جديد"
+      ]
+    },
+    {
+      "foreground": "#5b6577",
+      "background": "#e9f9f0",
+      "minimum": 4.5,
+      "ratio": 5.39,
+      "instances": 3,
+      "pages": [
+        "/pr.html"
+      ],
+      "examples": [
+        "771 422 070"
+      ]
+    },
+    {
+      "foreground": "#5b6577",
+      "background": "#f3f7fc",
+      "minimum": 4.5,
+      "ratio": 5.46,
+      "instances": 66,
+      "pages": [
+        "/",
+        "/offers.html",
+        "/pr.html"
+      ],
+      "examples": [
+        "استعرض جميع العيادات الاستشارية والتخصصية ومواعيد الدوام الصباحية والمسائية.",
+        "تعرف على وحدات الرعاية المركزة والحرجة، غرف العمليات الكبرى والمناظير، وأقسام الطوارئ والر",
+        "مركز الأشعة التشخيصية (CT Scan & DR)، المختبر المركزي وبنك الدم، العلاج الطبيعي، والصيدلية",
+        "اختر العرض المناسب، ثم احجز مباشرة عبر واتساب. يمكنك أيضاً مشاركة أي عرض مع من يحتاجه."
+      ]
+    },
+    {
+      "foreground": "#666666",
+      "background": "#f8fafc",
+      "minimum": 4.5,
+      "ratio": 5.49,
+      "instances": 18,
+      "pages": [
+        "/units.html"
+      ],
+      "examples": [
+        "الوحدات الحرجة",
+        "أقسام الرقود",
+        "أقسام الطوارئ"
+      ]
+    },
+    {
+      "foreground": "#5b6577",
+      "background": "#f8fafc",
+      "minimum": 4.5,
+      "ratio": 5.62,
+      "instances": 18,
+      "pages": [
+        "/",
+        "/offers.html",
+        "/pr.html"
+      ],
+      "examples": [
+        "نحن هنا لخدمتكم والإجابة على كافة استفساراتكم على مدار الساعة",
+        "موقع المستشفى في قلب مدينة الحديدة، على شارع صنعاء",
+        "تنسيق طبي منظم بين الطبيب المحوّل والمستشفى",
+        "للإحالات والاستفسارات والتعاون مع الشركات والمؤسسات"
+      ]
+    },
+    {
+      "foreground": "#666666",
+      "background": "#ffffff",
+      "minimum": 4.5,
+      "ratio": 5.74,
+      "instances": 60,
+      "pages": [
+        "/clinics.html",
+        "/ancillary.html"
+      ],
+      "examples": [
+        "متابعة نمو الطفل، الفحوصات الدورية، وتوفير الرعاية الشاملة لحديثي الولادة والأطفال.",
+        "تشخيص وعلاج أمراض الأعصاب، الانزلاقات الغضروفية، وآلام العمود الفقري بكفاءة عالية.",
+        "معالجة الكسور، إصابات الملعب، خشونة المفاصل، وعمليات تبديل المفاصل المتقدمة.",
+        "الإدارة المسؤولة عن تنظيم وتطوير الخدمات التمريضية في جميع أقسام المستشفى."
+      ]
+    },
+    {
+      "foreground": "#94a3b8",
+      "background": "#14264f",
+      "minimum": 4.5,
+      "ratio": 5.77,
+      "instances": 18,
+      "pages": [
+        "/",
+        "/offers.html"
+      ],
+      "examples": [
+        "© 2026 مستشفى الأنهار التخصصي - جميع الحقوق محفوظة.",
+        "تصميم:",
+        "د. عمار القحوي (Dr. Ammar Al-Qahwi)"
+      ]
+    },
+    {
+      "foreground": "#5b6577",
+      "background": "#ffffff",
+      "minimum": 4.5,
+      "ratio": 5.88,
+      "instances": 207,
+      "pages": [
+        "/",
+        "/offers.html",
+        "/pr.html"
+      ],
+      "examples": [
+        "تصفح صفحاتنا المتخصصة للتعرف على التفاصيل الكاملة للعيادات، الوحدات الطبية، الوحدات التشخي",
+        "استعراض تخصصي لأبرز الإمكانات والتجهيزات الحديثة المتاحة لخدمتكم على مدار 24 ساعة",
+        "استقبال جميع الحوادث والإصابات الحرجة والطوارئ العامة والتوليدية على مدار الساعة بسيارات إ",
+        "شارك:"
+      ]
+    },
+    {
+      "foreground": "#94a3b8",
+      "background": "#142247",
+      "minimum": 4.5,
+      "ratio": 6.07,
+      "instances": 3,
+      "pages": [
+        "/doctors.html"
+      ],
+      "examples": [
+        "© 2026 مستشفى الأنهار التخصصي - جميع الحقوق محفوظة."
+      ]
+    },
+    {
+      "foreground": "#40c057",
+      "background": "#142247",
+      "minimum": 4.5,
+      "ratio": 6.59,
+      "instances": 3,
+      "pages": [
+        "/doctors.html"
+      ],
+      "examples": [
+        "Dr. Ammar Al-Qahwi (د. عمار القحوي)"
+      ]
+    },
+    {
+      "foreground": "#0a2a5e",
+      "background": "#2ecc71",
+      "minimum": 4.5,
+      "ratio": 6.64,
+      "instances": 3,
+      "pages": [
+        "/404.html"
+      ],
+      "examples": [
+        "دليل الفحوصات والعمليات والأشعة"
+      ]
+    },
+    {
+      "foreground": "#9a3412",
+      "background": "#fff7ed",
+      "minimum": 4.5,
+      "ratio": 6.88,
+      "instances": 3,
+      "pages": [
+        "/offers.html"
+      ],
+      "examples": [
+        "⚠️ الأدوية غير مشمولة في الباقة."
+      ]
+    },
+    {
+      "foreground": "#4a5568",
+      "background": "#f4f7fb",
+      "minimum": 4.5,
+      "ratio": 7,
+      "instances": 27,
+      "pages": [
+        "/",
+        "/services/diagnostics",
+        "/services/surgery",
+        "/services/dental",
+        "/services/women",
+        "/services/ent",
+        "/services/physio",
+        "/services/emergency",
+        "/services/clinics-admin"
+      ],
+      "examples": [
+        "اكتب حرفين على الأقل، وستنتقل إلى دليل الخدمات.",
+        "فهرس الحروف:"
+      ]
+    },
+    {
+      "foreground": "#2ecc71",
+      "background": "#14264f",
+      "minimum": 4.5,
+      "ratio": 7.04,
+      "instances": 6,
+      "pages": [
+        "/",
+        "/offers.html"
+      ],
+      "examples": [
+        "العودة للأعلى ↑"
+      ]
+    },
+    {
+      "foreground": "#4a5568",
+      "background": "#f8fafc",
+      "minimum": 4.5,
+      "ratio": 7.19,
+      "instances": 27,
+      "pages": [
+        "/services/",
+        "/services/diagnostics",
+        "/services/surgery",
+        "/services/dental",
+        "/services/women",
+        "/services/ent",
+        "/services/physio",
+        "/services/emergency",
+        "/services/clinics-admin"
+      ],
+      "examples": [
+        "اكتب حرفين على الأقل"
+      ]
+    },
+    {
+      "foreground": "#4a5568",
+      "background": "#ffffff",
+      "minimum": 4.5,
+      "ratio": 7.53,
+      "instances": 24,
+      "pages": [
+        "/services/"
+      ],
+      "examples": [
+        "30 خدمة",
+        "84 خدمة",
+        "96 خدمة"
+      ]
+    },
+    {
+      "foreground": "#1e4a8a",
+      "background": "#f3f7fc",
+      "minimum": 4.5,
+      "ratio": 8.13,
+      "instances": 9,
+      "pages": [
+        "/pr.html"
+      ],
+      "examples": [
+        "اتصال"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#12547a",
+      "minimum": 4.5,
+      "ratio": 8.16,
+      "instances": 48,
+      "pages": [
+        "/",
+        "/doctors.html",
+        "/offers.html",
+        "/clinics.html",
+        "/units.html",
+        "/ancillary.html",
+        "/pr.html",
+        "/news.html",
+        "/services/",
+        "/services/diagnostics",
+        "/services/surgery",
+        "/services/dental",
+        "/services/women",
+        "/services/ent",
+        "/services/physio",
+        "/services/emergency",
+        "/services/clinics-admin"
+      ],
+      "examples": [
+        "🔍 ابحث عن فحص، عملية، أو عيادة | ⌘K"
+      ]
+    },
+    {
+      "foreground": "#1e4a8a",
+      "background": "#ffffff",
+      "minimum": 4.5,
+      "ratio": 8.74,
+      "instances": 39,
+      "pages": [
+        "/clinics.html",
+        "/units.html",
+        "/ancillary.html",
+        "/news.html",
+        "/services/",
+        "/services/diagnostics",
+        "/services/surgery",
+        "/services/dental",
+        "/services/women",
+        "/services/ent",
+        "/services/physio",
+        "/services/emergency",
+        "/services/clinics-admin"
+      ],
+      "examples": [
+        "التخصصي"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#1e4a8a",
+      "minimum": 4.5,
+      "ratio": 8.74,
+      "instances": 3,
+      "pages": [
+        "/ancillary.html"
+      ],
+      "examples": [
+        "🔬 المختبر المركزي"
+      ]
+    },
+    {
+      "foreground": "#0000ee",
+      "background": "#f8fafc",
+      "minimum": 4.5,
+      "ratio": 8.98,
+      "instances": 75,
+      "pages": [
+        "/services/",
+        "/services/diagnostics",
+        "/services/surgery",
+        "/services/dental",
+        "/services/women",
+        "/services/ent",
+        "/services/physio",
+        "/services/emergency",
+        "/services/clinics-admin"
+      ],
+      "examples": [
+        "الرئيسية",
+        "دليل الخدمات",
+        "العودة إلى دليل الخدمات"
+      ]
+    },
+    {
+      "foreground": "#c3cde2",
+      "background": "#14264f",
+      "minimum": 4.5,
+      "ratio": 9.26,
+      "instances": 72,
+      "pages": [
+        "/",
+        "/offers.html"
+      ],
+      "examples": [
+        "أكبر صرح طبي في محافظة الحديدة — صحتكم مسؤوليتنا ❤️",
+        "العيادات والتخصصات",
+        "الوحدات الطبية",
+        "الرئيسية"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#264371",
+      "minimum": 4.5,
+      "ratio": 9.93,
+      "instances": 9,
+      "pages": [
+        "/offers.html"
+      ],
+      "examples": [
+        "🔍 اضغط للتكبير"
+      ]
+    },
+    {
+      "foreground": "#2c3e50",
+      "background": "#f3f7fc",
+      "minimum": 4.5,
+      "ratio": 10.21,
+      "instances": 48,
+      "pages": [
+        "/"
+      ],
+      "examples": [
+        "إنزلاقات العمود الفقري",
+        "اعتلال الأعصاب",
+        "أورام المخ والأعصاب"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#104365",
+      "minimum": 4.5,
+      "ratio": 10.43,
+      "instances": 1,
+      "pages": [
+        "/"
+      ],
+      "examples": [
+        "🔍 ابحث عن فحص، عملية، أو عيادة | ⌘K"
+      ]
+    },
+    {
+      "foreground": "#cbd5e1",
+      "background": "#142247",
+      "minimum": 4.5,
+      "ratio": 10.48,
+      "instances": 6,
+      "pages": [
+        "/doctors.html"
+      ],
+      "examples": [
+        "صحتكم مسؤوليتنا ❤️",
+        "Designed by"
+      ]
+    },
+    {
+      "foreground": "#0f3d5e",
+      "background": "#f8fafc",
+      "minimum": 3,
+      "ratio": 10.85,
+      "instances": 6,
+      "pages": [
+        "/"
+      ],
+      "examples": [
+        "اعثر على العيادة المناسبة",
+        "الأسئلة الشائعة"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#2c3c61",
+      "minimum": 4.5,
+      "ratio": 10.96,
+      "instances": 6,
+      "pages": [
+        "/"
+      ],
+      "examples": [
+        "فيسبوك",
+        "اتصال طوارئ"
+      ]
+    },
+    {
+      "foreground": "#2c3e50",
+      "background": "#ffffff",
+      "minimum": 4.5,
+      "ratio": 10.98,
+      "instances": 7,
+      "pages": [
+        "/pr.html"
+      ],
+      "examples": [
+        "الرئيسية",
+        "العيادات والتخصصات",
+        "الوحدات"
+      ]
+    },
+    {
+      "foreground": "#0f3d5e",
+      "background": "#ffffff",
+      "minimum": 4.5,
+      "ratio": 11.35,
+      "instances": 1266,
+      "pages": [
+        "/",
+        "/services/diagnostics",
+        "/services/surgery",
+        "/services/dental",
+        "/services/women",
+        "/services/ent",
+        "/services/physio",
+        "/services/emergency",
+        "/services/clinics-admin"
+      ],
+      "examples": [
+        "جراحة المخ والأعصاب والعمود الفقري",
+        "العظام والمفاصل",
+        "النساء والولادة",
+        "مشاركة"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#0f3d5e",
+      "minimum": 4.5,
+      "ratio": 11.35,
+      "instances": 5,
+      "pages": [
+        "/",
+        "/offers.html",
+        "/404.html"
+      ],
+      "examples": [
+        "🔍 ابحث عن فحص، عملية، أو عيادة | ⌘K"
+      ]
+    },
+    {
+      "foreground": "#e2e8f0",
+      "background": "#14264f",
+      "minimum": 4.5,
+      "ratio": 12,
+      "instances": 18,
+      "pages": [
+        "/"
+      ],
+      "examples": [
+        "📍 الحديدة - شارع صنعاء - أمام كلية الشفاء",
+        "☎️ استعلامات وطوارئ 24/7:",
+        "03-235270"
+      ]
+    },
+    {
+      "foreground": "#333333",
+      "background": "#f8fafc",
+      "minimum": 4.5,
+      "ratio": 12.08,
+      "instances": 27,
+      "pages": [
+        "/services/",
+        "/services/diagnostics",
+        "/services/surgery",
+        "/services/dental",
+        "/services/women",
+        "/services/ent",
+        "/services/physio",
+        "/services/emergency",
+        "/services/clinics-admin"
+      ],
+      "examples": [
+        "410 خدمة موزعة على 8 صفحات، مرتبة أبجديًا ومصنفة كما وردت في سجل خدمات المستشفى.",
+        "دليل فحوصات تشخيصية في مستشفى الأنهار التخصصي: 30 خدمة مرتبة أبجديًا، مع فهرس حروف أعلى ال",
+        "دليل عمليات وجراحة في مستشفى الأنهار التخصصي: 84 خدمة مرتبة أبجديًا، مع فهرس حروف أعلى الص",
+        "دليل أسنان في مستشفى الأنهار التخصصي: 96 خدمة مرتبة أبجديًا، مع فهرس حروف أعلى الصفحة لتسه"
+      ]
+    },
+    {
+      "foreground": "#0a2a5e",
+      "background": "#f0f2f5",
+      "minimum": 4.5,
+      "ratio": 12.46,
+      "instances": 13,
+      "pages": [
+        "/clinics.html",
+        "/units.html",
+        "/ancillary.html",
+        "/news.html",
+        "/services/",
+        "/services/diagnostics",
+        "/services/surgery",
+        "/services/dental",
+        "/services/women",
+        "/services/ent",
+        "/services/physio",
+        "/services/emergency",
+        "/services/clinics-admin"
+      ],
+      "examples": [
+        "العيادات والتخصصات",
+        "الوحدات",
+        "الوحدات الملحقة",
+        "الأخبار"
+      ]
+    },
+    {
+      "foreground": "#0f3460",
+      "background": "#ffffff",
+      "minimum": 3,
+      "ratio": 12.5,
+      "instances": 5,
+      "pages": [
+        "/doctors.html"
+      ],
+      "examples": [
+        "مستشفى الأنهار",
+        "☰"
+      ]
+    },
+    {
+      "foreground": "#0f3460",
+      "background": "#ffffff",
+      "minimum": 4.5,
+      "ratio": 12.5,
+      "instances": 55,
+      "pages": [
+        "/doctors.html"
+      ],
+      "examples": [
+        "د. محمد الخولاني",
+        "عرض التفاصيل",
+        "د. جمال العنسي",
+        "الرئيسية"
+      ]
+    },
+    {
+      "foreground": "#e2e8f0",
+      "background": "#142247",
+      "minimum": 4.5,
+      "ratio": 12.62,
+      "instances": 3,
+      "pages": [
+        "/doctors.html"
+      ],
+      "examples": [
+        "فيسبوك"
+      ]
+    },
+    {
+      "foreground": "#333333",
+      "background": "#ffffff",
+      "minimum": 4.5,
+      "ratio": 12.63,
+      "instances": 182,
+      "pages": [
+        "/clinics.html",
+        "/units.html",
+        "/ancillary.html",
+        "/news.html",
+        "/services/",
+        "/services/diagnostics",
+        "/services/surgery",
+        "/services/dental",
+        "/services/women",
+        "/services/ent",
+        "/services/physio",
+        "/services/emergency",
+        "/services/clinics-admin"
+      ],
+      "examples": [
+        "الرئيسية",
+        "الوحدات",
+        "الوحدات الملحقة",
+        "العيادات والتخصصات"
+      ]
+    },
+    {
+      "foreground": "#0a2a5e",
+      "background": "#f3f4f7",
+      "minimum": 4.5,
+      "ratio": 12.7,
+      "instances": 21,
+      "pages": [
+        "/clinics.html"
+      ],
+      "examples": [
+        "🧸",
+        "🧠",
+        "🦴"
+      ]
+    },
+    {
+      "foreground": "#0a2a5e",
+      "background": "#e9f9f0",
+      "minimum": 4.5,
+      "ratio": 12.8,
+      "instances": 3,
+      "pages": [
+        "/pr.html"
+      ],
+      "examples": [
+        "💬 واتساب مدير العلاقات"
+      ]
+    },
+    {
+      "foreground": "#0a2a5e",
+      "background": "#f3f6f9",
+      "minimum": 3,
+      "ratio": 12.85,
+      "instances": 9,
+      "pages": [
+        "/clinics.html",
+        "/units.html",
+        "/news.html"
+      ],
+      "examples": [
+        "العيادات الطبية المتخصصة",
+        "الوحدات الطبية والتشخيصية",
+        "الأخبار والإنجازات الطبية"
+      ]
+    },
+    {
+      "foreground": "#0a2a5e",
+      "background": "#f3f7fc",
+      "minimum": 4.5,
+      "ratio": 12.96,
+      "instances": 5,
+      "pages": [
+        "/pr.html"
+      ],
+      "examples": [
+        "☰",
+        "📞 اتصال"
+      ]
+    },
+    {
+      "foreground": "#0a2a5e",
+      "background": "#f3f7fc",
+      "minimum": 3,
+      "ratio": 12.96,
+      "instances": 6,
+      "pages": [
+        "/pr.html"
+      ],
+      "examples": [
+        "كيف تتم الإحالة؟",
+        "أنشطة العلاقات العامة"
+      ]
+    },
+    {
+      "foreground": "#0a2a5e",
+      "background": "#f0f8fc",
+      "minimum": 4.5,
+      "ratio": 12.98,
+      "instances": 3,
+      "pages": [
+        "/"
+      ],
+      "examples": [
+        "الفترة"
+      ]
+    },
+    {
+      "foreground": "#0a2a5e",
+      "background": "#f4f7fb",
+      "minimum": 4.5,
+      "ratio": 12.98,
+      "instances": 9,
+      "pages": [
+        "/",
+        "/services/"
+      ],
+      "examples": [
+        "ابحث عن فحص أو أشعة أو عملية",
+        "ابحث في دليل الخدمات",
+        "العروض والخصومات"
+      ]
+    },
+    {
+      "foreground": "#0a2a5e",
+      "background": "#f8fafc",
+      "minimum": 3,
+      "ratio": 13.33,
+      "instances": 102,
+      "pages": [
+        "/ancillary.html",
+        "/pr.html",
+        "/services/",
+        "/services/diagnostics",
+        "/services/surgery",
+        "/services/dental",
+        "/services/women",
+        "/services/ent",
+        "/services/physio",
+        "/services/emergency",
+        "/services/clinics-admin"
+      ],
+      "examples": [
+        "الإدارات الطبية والسريرية",
+        "إدارات الجودة والسلامة",
+        "إدارات التدريب والخدمات",
+        "لماذا تختار التنسيق معنا؟"
+      ]
+    },
+    {
+      "foreground": "#0a2a5e",
+      "background": "#f8fafc",
+      "minimum": 4.5,
+      "ratio": 13.33,
+      "instances": 27,
+      "pages": [
+        "/services/",
+        "/services/diagnostics",
+        "/services/surgery",
+        "/services/dental",
+        "/services/women",
+        "/services/ent",
+        "/services/physio",
+        "/services/emergency",
+        "/services/clinics-admin"
+      ],
+      "examples": [
+        "ابحث في دليل الخدمات"
+      ]
+    },
+    {
+      "foreground": "#1e293b",
+      "background": "#f1f5f9",
+      "minimum": 4.5,
+      "ratio": 13.35,
+      "instances": 96,
+      "pages": [
+        "/doctors.html"
+      ],
+      "examples": [
+        "كسور الوجه والفكين",
+        "أورام وآفات الفم",
+        "العيوب الخلقية"
+      ]
+    },
+    {
+      "foreground": "#14264f",
+      "background": "#e6f9ee",
+      "minimum": 4.5,
+      "ratio": 13.47,
+      "instances": 9,
+      "pages": [
+        "/offers.html"
+      ],
+      "examples": [
+        "🎁 إضافةً إلى",
+        "خصم 50%",
+        "على الفحوصات والأشعة لجميع المشاركين في المخيم."
+      ]
+    },
+    {
+      "foreground": "#14264f",
+      "background": "#f3f7fc",
+      "minimum": 3,
+      "ratio": 13.75,
+      "instances": 48,
+      "pages": [
+        "/",
+        "/offers.html"
+      ],
+      "examples": [
+        "العيادات والتخصصات",
+        "الوحدات الطبية",
+        "الوحدات الملحقة والتشخيصية",
+        "العروض الحالية"
+      ]
+    },
+    {
+      "foreground": "#14264f",
+      "background": "#f3f7fc",
+      "minimum": 4.5,
+      "ratio": 13.75,
+      "instances": 57,
+      "pages": [
+        "/",
+        "/offers.html"
+      ],
+      "examples": [
+        "معالجة وجراحة الحالات التالية:",
+        "👨‍⚕️ د. جمال العنسي",
+        "معاينات طبية",
+        "استشارات طبية"
+      ]
+    },
+    {
+      "foreground": "#0a2a5e",
+      "background": "#ffffff",
+      "minimum": 4.5,
+      "ratio": 13.95,
+      "instances": 459,
+      "pages": [
+        "/",
+        "/offers.html",
+        "/units.html",
+        "/ancillary.html",
+        "/pr.html",
+        "/services/",
+        "/services/diagnostics",
+        "/services/surgery",
+        "/services/dental",
+        "/services/women",
+        "/services/ent",
+        "/services/physio",
+        "/services/emergency",
+        "/services/clinics-admin"
+      ],
+      "examples": [
+        "مستشفى الأنهار التخصصي",
+        "جراحة المخ والأعصاب وجراحة العمود الفقري",
+        "جراحة العظام والمفاصل",
+        "الجراحة العامة"
+      ]
+    },
+    {
+      "foreground": "#0a2a5e",
+      "background": "#ffffff",
+      "minimum": 3,
+      "ratio": 13.95,
+      "instances": 72,
+      "pages": [
+        "/clinics.html",
+        "/units.html",
+        "/ancillary.html",
+        "/pr.html",
+        "/news.html",
+        "/services/",
+        "/services/diagnostics",
+        "/services/surgery",
+        "/services/dental",
+        "/services/women",
+        "/services/ent",
+        "/services/physio",
+        "/services/emergency",
+        "/services/clinics-admin"
+      ],
+      "examples": [
+        "مستشفى الأنهار",
+        "عيادة طب الأطفال وحديثي الولادة",
+        "عيادة جراحة المخ والأعصاب والعمود الفقري",
+        "💬"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#0a2a5e",
+      "minimum": 4.5,
+      "ratio": 13.95,
+      "instances": 106,
+      "pages": [
+        "/",
+        "/clinics.html",
+        "/units.html",
+        "/ancillary.html",
+        "/news.html",
+        "/services/",
+        "/services/diagnostics",
+        "/services/surgery",
+        "/services/dental",
+        "/services/women",
+        "/services/ent",
+        "/services/physio",
+        "/services/emergency",
+        "/services/clinics-admin"
+      ],
+      "examples": [
+        "بحث",
+        "طوارئ واستقبال 24/7",
+        "جراحة كبرى ومناظير",
+        "صحتكم مسؤوليتنا ❤️"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#0a2a5e",
+      "minimum": 3,
+      "ratio": 13.95,
+      "instances": 42,
+      "pages": [
+        "/clinics.html",
+        "/units.html",
+        "/ancillary.html",
+        "/news.html",
+        "/services/",
+        "/services/diagnostics",
+        "/services/surgery",
+        "/services/dental",
+        "/services/women",
+        "/services/ent",
+        "/services/physio",
+        "/services/emergency",
+        "/services/clinics-admin"
+      ],
+      "examples": [
+        "مستشفى الأنهار التخصصي",
+        "📞"
+      ]
+    },
+    {
+      "foreground": "#14264f",
+      "background": "#f8fafc",
+      "minimum": 3,
+      "ratio": 14.14,
+      "instances": 6,
+      "pages": [
+        "/",
+        "/offers.html"
+      ],
+      "examples": [
+        "اتصل بنا",
+        "كيف تصل إلينا؟"
+      ]
+    },
+    {
+      "foreground": "#14264f",
+      "background": "#ffffff",
+      "minimum": 3,
+      "ratio": 14.79,
+      "instances": 60,
+      "pages": [
+        "/",
+        "/offers.html"
+      ],
+      "examples": [
+        "بوابات وأقسام مستشفى الأنهار التخصصي",
+        "صور لبعض تجهيزات المستشفى",
+        "خدمة الإسعاف الفوري وطوارئ 24 ساعة",
+        "باقة عمليات الزائدة والفتق والبواسير والشرخ الشرجي"
+      ]
+    },
+    {
+      "foreground": "#14264f",
+      "background": "#ffffff",
+      "minimum": 4.5,
+      "ratio": 14.79,
+      "instances": 179,
+      "pages": [
+        "/",
+        "/offers.html"
+      ],
+      "examples": [
+        "الاسم الكامل",
+        "رقم الهاتف",
+        "البريد الإلكتروني",
+        "العيادات والتخصصات"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#14264f",
+      "minimum": 3,
+      "ratio": 14.79,
+      "instances": 24,
+      "pages": [
+        "/",
+        "/offers.html"
+      ],
+      "examples": [
+        "🩺",
+        "🏥",
+        "📋",
+        "📍"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#14264f",
+      "minimum": 4.5,
+      "ratio": 14.79,
+      "instances": 45,
+      "pages": [
+        "/",
+        "/offers.html",
+        "/pr.html"
+      ],
+      "examples": [
+        "العيادات والتخصصات",
+        "الوحدات الطبية",
+        "حجز موعد إلكتروني",
+        "شارع صنعاء - أمام كلية الشفاء"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#142247",
+      "minimum": 3,
+      "ratio": 15.56,
+      "instances": 3,
+      "pages": [
+        "/doctors.html"
+      ],
+      "examples": [
+        "مستشفى الأنهار التخصصي"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#142247",
+      "minimum": 4.5,
+      "ratio": 15.56,
+      "instances": 3,
+      "pages": [
+        "/doctors.html"
+      ],
+      "examples": [
+        "العودة للأعلى ↑"
+      ]
+    },
+    {
+      "foreground": "#16202e",
+      "background": "#ffffff",
+      "minimum": 4.5,
+      "ratio": 16.4,
+      "instances": 1230,
+      "pages": [
+        "/services/diagnostics",
+        "/services/surgery",
+        "/services/dental",
+        "/services/women",
+        "/services/ent",
+        "/services/physio",
+        "/services/emergency",
+        "/services/clinics-admin"
+      ],
+      "examples": [
+        "الدهون",
+        "السكري التراكمي HbA1C",
+        "السيولة والتجلط D-Dimer",
+        "استئصال البروستات"
+      ]
+    },
+    {
+      "foreground": "#0f172a",
+      "background": "#f3f6f9",
+      "minimum": 4.5,
+      "ratio": 16.45,
+      "instances": 9,
+      "pages": [
+        "/clinics.html",
+        "/units.html",
+        "/news.html"
+      ],
+      "examples": [
+        "نستقبلكم في العيادات التخصصية بمستشفى الأنهار لتقديم التشخيص الدقيق والرعاية الصحية الشامل",
+        "منظومة متكاملة من الوحدات الجراحية، الحرجة، والتشخيصية المجهزة بأحدث التقنيات لخدمتكم ورعا",
+        "تابعوا أحدث النجاحات الطبية والعمليات النوعية التي تُجرى بنجاح بأيدي طاقمنا المتخصص."
+      ]
+    },
+    {
+      "foreground": "#0f172a",
+      "background": "#f3f7fc",
+      "minimum": 3,
+      "ratio": 16.6,
+      "instances": 18,
+      "pages": [
+        "/"
+      ],
+      "examples": [
+        "🩺",
+        "🏥",
+        "🔬"
+      ]
+    },
+    {
+      "foreground": "#0f172a",
+      "background": "#f3f7fc",
+      "minimum": 4.5,
+      "ratio": 16.6,
+      "instances": 24,
+      "pages": [
+        "/offers.html"
+      ],
+      "examples": [
+        "المعاينة الطبية",
+        "السونار",
+        "التحاليل"
+      ]
+    },
+    {
+      "foreground": "#0f172a",
+      "background": "#f4f7fb",
+      "minimum": 4.5,
+      "ratio": 16.61,
+      "instances": 3,
+      "pages": [
+        "/services/"
+      ],
+      "examples": [
+        "العروض والخصومات الحالية تُعرض في صفحة العروض:"
+      ]
+    },
+    {
+      "foreground": "#0f172a",
+      "background": "#f8fafc",
+      "minimum": 4.5,
+      "ratio": 17.06,
+      "instances": 81,
+      "pages": [
+        "/",
+        "/services/",
+        "/services/diagnostics",
+        "/services/surgery",
+        "/services/dental",
+        "/services/women",
+        "/services/ent",
+        "/services/physio",
+        "/services/emergency",
+        "/services/clinics-admin"
+      ],
+      "examples": [
+        "اختر تخصصًا للاستفسار عن الحجز والمواعيد.",
+        "←",
+        "دليل الخدمات",
+        "فحوصات تشخيصية"
+      ]
+    },
+    {
+      "foreground": "#0f172a",
+      "background": "#ffffff",
+      "minimum": 3,
+      "ratio": 17.85,
+      "instances": 42,
+      "pages": [
+        "/",
+        "/pr.html"
+      ],
+      "examples": [
+        "🩺",
+        "👨‍⚕️",
+        "⏰",
+        "🏢"
+      ]
+    },
+    {
+      "foreground": "#0f172a",
+      "background": "#ffffff",
+      "minimum": 4.5,
+      "ratio": 17.85,
+      "instances": 144,
+      "pages": [
+        "/",
+        "/offers.html",
+        "/units.html"
+      ],
+      "examples": [
+        "يمكنكم التواصل المباشر مع موظفي الاستقبال والاستعلامات عبر الأرقام الرسمية التالية:",
+        "📞 الهواتف الثابتة:",
+        "–",
+        "إجراء العملية الجراحية"
+      ]
+    }
+  ],
+  "failedContrastPairs": [
+    {
+      "foreground": "#0a2a5e",
+      "background": "#0a2a5e",
+      "minimum": 4.5,
+      "ratio": 1,
+      "instances": 24,
+      "pages": [
+        "/clinics.html",
+        "/units.html",
+        "/ancillary.html",
+        "/news.html"
+      ],
+      "examples": [
+        "دليل الفحوصات والعمليات والأشعة",
+        "المعلومات للتوعية ولا تغني عن استشارة الطبيب، وفي الطوارئ تواصل مع الطوارئ فورًا."
+      ]
+    },
+    {
+      "foreground": "#0a2a5e",
+      "background": "#132650",
+      "minimum": 4.5,
+      "ratio": 1.06,
+      "instances": 6,
+      "pages": [
+        "/",
+        "/offers.html"
+      ],
+      "examples": [
+        "المعلومات للتوعية ولا تغني عن استشارة الطبيب، وفي الطوارئ تواصل مع الطوارئ فورًا."
+      ]
+    },
+    {
+      "foreground": "#0a2a5e",
+      "background": "#14264f",
+      "minimum": 4.5,
+      "ratio": 1.06,
+      "instances": 6,
+      "pages": [
+        "/",
+        "/offers.html"
+      ],
+      "examples": [
+        "دليل الفحوصات والعمليات والأشعة"
+      ]
+    },
+    {
+      "foreground": "#0a2a5e",
+      "background": "#132248",
+      "minimum": 4.5,
+      "ratio": 1.11,
+      "instances": 3,
+      "pages": [
+        "/doctors.html"
+      ],
+      "examples": [
+        "المعلومات للتوعية ولا تغني عن استشارة الطبيب، وفي الطوارئ تواصل مع الطوارئ فورًا."
+      ]
+    },
+    {
+      "foreground": "#0a2a5e",
+      "background": "#142247",
+      "minimum": 4.5,
+      "ratio": 1.12,
+      "instances": 3,
+      "pages": [
+        "/doctors.html"
+      ],
+      "examples": [
+        "دليل الفحوصات والعمليات والأشعة"
+      ]
+    },
+    {
+      "foreground": "#2ecc71",
+      "background": "#d5f5e3",
+      "minimum": 4.5,
+      "ratio": 1.8,
+      "instances": 3,
+      "pages": [
+        "/news.html"
+      ],
+      "examples": [
+        "إنجاز طبي نوعي"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#25d366",
+      "minimum": 4.5,
+      "ratio": 1.98,
+      "instances": 15,
+      "pages": [
+        "/",
+        "/offers.html",
+        "/ancillary.html"
+      ],
+      "examples": [
+        "💬 إرسال عبر واتساب",
+        "💬 احجز عبر واتساب",
+        "💬 واتساب الحجوزات"
+      ]
+    },
+    {
+      "foreground": "#2ecc71",
+      "background": "#f8fafc",
+      "minimum": 3,
+      "ratio": 2.01,
+      "instances": 12,
+      "pages": [
+        "/ancillary.html"
+      ],
+      "examples": [
+        "🏥",
+        "🛡️",
+        "📚"
+      ]
+    },
+    {
+      "foreground": "#2ecc71",
+      "background": "#ffffff",
+      "minimum": 3,
+      "ratio": 2.1,
+      "instances": 12,
+      "pages": [
+        "/offers.html"
+      ],
+      "examples": [
+        "0",
+        "151",
+        "483",
+        "84"
+      ]
+    },
+    {
+      "foreground": "#2ecc71",
+      "background": "#ffffff",
+      "minimum": 4.5,
+      "ratio": 2.1,
+      "instances": 42,
+      "pages": [
+        "/ancillary.html",
+        "/news.html"
+      ],
+      "examples": [
+        "عرض التفاصيل",
+        "مستشفى الأنهار التخصصي - صحتكم مسؤوليتنا ❤️"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#2ecc71",
+      "minimum": 4.5,
+      "ratio": 2.1,
+      "instances": 59,
+      "pages": [
+        "/",
+        "/offers.html",
+        "/clinics.html",
+        "/units.html",
+        "/ancillary.html",
+        "/pr.html",
+        "/news.html",
+        "/404.html"
+      ],
+      "examples": [
+        "📅 احجز موعدك الآن",
+        "👁️ اضغط هنا لزيارة ومشاهدة صفحة العروض الحالية ←",
+        "👁️ شاهد العروض",
+        "خصم 50%"
+      ]
+    },
+    {
+      "foreground": "#40c057",
+      "background": "#ffffff",
+      "minimum": 4.5,
+      "ratio": 2.36,
+      "instances": 5,
+      "pages": [
+        "/doctors.html"
+      ],
+      "examples": [
+        "التخصصي",
+        "الاستشاريين والطواقم",
+        "اتصل بنا"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#40c057",
+      "minimum": 4.5,
+      "ratio": 2.36,
+      "instances": 26,
+      "pages": [
+        "/doctors.html"
+      ],
+      "examples": [
+        "حجز موعد",
+        "خاص"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#ee7d55",
+      "minimum": 4.5,
+      "ratio": 2.73,
+      "instances": 16,
+      "pages": [
+        "/",
+        "/offers.html",
+        "/pr.html"
+      ],
+      "examples": [
+        "⏳ إعلانات ومخيمات طبية لفترة محدودة",
+        "مجاناً",
+        "صباحي ومسائي",
+        "جديد"
+      ]
+    },
+    {
+      "foreground": "#2f9e44",
+      "background": "#e8f7eb",
+      "minimum": 4.5,
+      "ratio": 3.12,
+      "instances": 24,
+      "pages": [
+        "/doctors.html"
+      ],
+      "examples": [
+        "استشاري جراحة الفم والوجه والفكين",
+        "استشاري جراحة المخ والأعصاب والعمود الفقري",
+        "استشاري جراحة العظام والمفاصل"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#4c8cda",
+      "minimum": 4.5,
+      "ratio": 3.47,
+      "instances": 3,
+      "pages": [
+        "/"
+      ],
+      "examples": [
+        "🚑"
+      ]
+    },
+    {
+      "foreground": "#1e8e4e",
+      "background": "#e0f7ea",
+      "minimum": 4.5,
+      "ratio": 3.71,
+      "instances": 9,
+      "pages": [
+        "/offers.html"
+      ],
+      "examples": [
+        "ساري حتى 30 ديسمبر 2026",
+        "ساري حتى نهاية 2026"
+      ]
+    },
+    {
+      "foreground": "#1a8f4d",
+      "background": "#e9f9f0",
+      "minimum": 4.5,
+      "ratio": 3.79,
+      "instances": 3,
+      "pages": [
+        "/pr.html"
+      ],
+      "examples": [
+        "تواصل مباشر"
+      ]
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#1877f2",
+      "minimum": 4.5,
+      "ratio": 4.23,
+      "instances": 3,
+      "pages": [
+        "/news.html"
+      ],
+      "examples": [
+        "للمزيد من التفاصيل اضغط لمشاهدة الخبر على فيسبوك ↗"
+      ]
+    },
+    {
+      "foreground": "#1f6fd1",
+      "background": "#e9f1fa",
+      "minimum": 4.5,
+      "ratio": 4.32,
+      "instances": 9,
+      "pages": [
+        "/offers.html"
+      ],
+      "examples": [
+        "🩺 الجراحة العامة",
+        "🤰 النساء والولادة",
+        "🦷 طب الأسنان"
+      ]
+    },
+    {
+      "foreground": "#dc2626",
+      "background": "#f0f8fc",
+      "minimum": 4.5,
+      "ratio": 4.49,
+      "instances": 3,
+      "pages": [
+        "/"
+      ],
+      "examples": [
+        "*"
+      ]
+    }
+  ]
+}
