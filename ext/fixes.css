@@ -1,4 +1,7 @@
 /* ENH:START fixes-6-b — طبقة إصلاح محافظة، دون تغيير نصوص الصفحات */
+/* ENH:START no-js-booking */
+.no-js .reveal { opacity:1 !important; transform:none !important; }
+/* ENH:END no-js-booking */
 .enh-skip-link { position:fixed; z-index:3000; inset-block-start:.5rem; inset-inline-start:.5rem; transform:translateY(-200%); transition:none !important; padding:.7rem 1rem; background:#fff; color:#0a2a5e; border:2px solid #0a2a5e; border-radius:.4rem; font-weight:700; }
 .enh-skip-link:focus { transform:none; outline:3px solid #1e4a8a; outline-offset:2px; }
 #enh-main:focus { outline:none; }

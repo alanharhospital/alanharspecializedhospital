@@ -277,8 +277,10 @@ function head({ title, description, canonical, ogTitle, ogDesc, eyebrows, crumbs
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css?v=10">
+    <!-- ENH:START 6b2-assets-css -->
 ${extraCss}
-    <link rel="stylesheet" href="../ext/clinical-polish.css?v=1">
+    <link rel="stylesheet" href="../ext/clinical-polish.css?v=2">
+    <!-- ENH:END 6b2-assets-css -->
     <style>
 ${GUIDE_CSS}
     </style>
@@ -286,7 +288,7 @@ ${GUIDE_CSS}
 ${jsonLd(crumbs || [{ name: 'الرئيسية', url: SITE + '/' }, { name: 'دليل الخدمات', url: SITE + '/services/' }])}
     </script>
     <!-- ENH:START fixes-6b -->
-    <link rel="stylesheet" href="../ext/fixes.css?v=1">
+    <link rel="stylesheet" href="../ext/fixes.css?v=2">
     <!-- ENH:END fixes-6b -->
 </head>`;
 }
@@ -336,7 +338,7 @@ ${lis}
     canonical,
     ogTitle: `دليل ${page.h1}`,
     ogDesc: description,
-    extraCss: '    <link rel="stylesheet" href="../ext/services-search.css?v=4">',
+    extraCss: '    <link rel="stylesheet" href="../ext/services-search.css?v=5">',
     crumbs: [
       { name: 'الرئيسية', url: SITE + '/' },
       { name: 'دليل الخدمات', url: SITE + '/services/' },
@@ -369,9 +371,11 @@ ${sections}
     </main>
 
 ${footer()}
-    <script src="../ext/data/services-index.js?v=4"></script>
-    <script src="../ext/services-search.js?v=4" defer></script>
-    <script src="../ext/clinical-enhancements.js?v=1" defer></script>
+    <!-- ENH:START 6b2-assets-scripts -->
+    <script src="../ext/data/services-index.js?v=5"></script>
+    <script src="../ext/services-search.js?v=5" defer></script>
+    <script src="../ext/clinical-enhancements.js?v=2" defer></script>
+    <!-- ENH:END 6b2-assets-scripts -->
 </body>
 </html>
 `;
@@ -421,7 +425,7 @@ function buildIndexPage(stats) {
     canonical,
     ogTitle: 'دليل الخدمات الطبية',
     ogDesc: description,
-    extraCss: '    <link rel="stylesheet" href="../ext/services-search.css?v=4">',
+    extraCss: '    <link rel="stylesheet" href="../ext/services-search.css?v=5">',
   })}
 <body>
     <!-- ENH:START fixes-6b-skip -->
@@ -448,9 +452,11 @@ ${cards}
     </main>
 
 ${footer(true)}
-    <script src="../ext/data/services-index.js?v=4"></script>
-    <script src="../ext/services-search.js?v=4" defer></script>
-    <script src="../ext/clinical-enhancements.js?v=1" defer></script>
+    <!-- ENH:START 6b2-assets-scripts -->
+    <script src="../ext/data/services-index.js?v=5"></script>
+    <script src="../ext/services-search.js?v=5" defer></script>
+    <script src="../ext/clinical-enhancements.js?v=2" defer></script>
+    <!-- ENH:END 6b2-assets-scripts -->
 </body>
 </html>
 `;

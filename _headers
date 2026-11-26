@@ -87,3 +87,18 @@
 
 /_redirects
   Cache-Control: public, max-age=3600
+
+# ENH:START 6b2-cache
+# Cloudflare Pages: remove a prior matching value before setting one value.
+/services
+  ! Cache-Control
+  Cache-Control: public, max-age=0, must-revalidate
+
+/services/*
+  ! Cache-Control
+  Cache-Control: public, max-age=0, must-revalidate
+
+/ext/*
+  ! Cache-Control
+  Cache-Control: public, max-age=300, must-revalidate
+# ENH:END 6b2-cache

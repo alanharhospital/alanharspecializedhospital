@@ -1,0 +1,283 @@
+{
+  "routes": {
+    "/": {
+      "skip": "تخطي إلى المحتوى",
+      "footerGuide": true,
+      "letterAnchors": 0
+    },
+    "/doctors.html": {
+      "skip": "تخطي إلى المحتوى",
+      "footerGuide": true,
+      "letterAnchors": 0
+    },
+    "/offers.html": {
+      "skip": "تخطي إلى المحتوى",
+      "footerGuide": true,
+      "letterAnchors": 0
+    },
+    "/clinics.html": {
+      "skip": "تخطي إلى المحتوى",
+      "footerGuide": true,
+      "letterAnchors": 0
+    },
+    "/units.html": {
+      "skip": "تخطي إلى المحتوى",
+      "footerGuide": true,
+      "letterAnchors": 0
+    },
+    "/ancillary.html": {
+      "skip": "تخطي إلى المحتوى",
+      "footerGuide": true,
+      "letterAnchors": 0
+    },
+    "/pr.html": {
+      "skip": "تخطي إلى المحتوى",
+      "footerGuide": true,
+      "letterAnchors": 0
+    },
+    "/news.html": {
+      "skip": "تخطي إلى المحتوى",
+      "footerGuide": true,
+      "letterAnchors": 0
+    },
+    "/404.html": {
+      "skip": "تخطي إلى المحتوى",
+      "footerGuide": true,
+      "letterAnchors": 0
+    },
+    "/services/": {
+      "skip": "تخطي إلى المحتوى",
+      "footerGuide": true,
+      "letterAnchors": 0
+    },
+    "/services/diagnostics": {
+      "skip": "تخطي إلى المحتوى",
+      "footerGuide": true,
+      "letterAnchors": 8
+    },
+    "/services/surgery": {
+      "skip": "تخطي إلى المحتوى",
+      "footerGuide": true,
+      "letterAnchors": 14
+    },
+    "/services/dental": {
+      "skip": "تخطي إلى المحتوى",
+      "footerGuide": true,
+      "letterAnchors": 13
+    },
+    "/services/women": {
+      "skip": "تخطي إلى المحتوى",
+      "footerGuide": true,
+      "letterAnchors": 10
+    },
+    "/services/ent": {
+      "skip": "تخطي إلى المحتوى",
+      "footerGuide": true,
+      "letterAnchors": 11
+    },
+    "/services/physio": {
+      "skip": "تخطي إلى المحتوى",
+      "footerGuide": true,
+      "letterAnchors": 3
+    },
+    "/services/emergency": {
+      "skip": "تخطي إلى المحتوى",
+      "footerGuide": true,
+      "letterAnchors": 12
+    },
+    "/services/clinics-admin": {
+      "skip": "تخطي إلى المحتوى",
+      "footerGuide": true,
+      "letterAnchors": 5
+    }
+  },
+  "booking": {
+    "rootClass": "no-js",
+    "ruleExists": true,
+    "formVisible": true,
+    "linkVisible": true,
+    "link": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF.",
+    "formControls": 8,
+    "hiddenReveals": 0,
+    "jsButtonsHidden": true
+  },
+  "overlap": {
+    "375": {
+      "floatPosition": "static",
+      "floatRect": {
+        "x": 143.953125,
+        "y": 25057.3125,
+        "w": 215.046875,
+        "h": 51.75
+      },
+      "elements": [
+        {
+          "text": "📅 احجز موعدك الآن",
+          "rect": {
+            "x": 16,
+            "y": 884.5625,
+            "w": 343,
+            "h": 55.1875
+          },
+          "overlaps": false
+        },
+        {
+          "text": "ابحث عن فحص أو أشعة أو عملية",
+          "rect": {
+            "x": 16,
+            "y": 1557.3125,
+            "w": 343,
+            "h": 44.375
+          },
+          "overlaps": false
+        },
+        {
+          "text": "بحث",
+          "rect": {
+            "x": 16,
+            "y": 1609.6875,
+            "w": 343,
+            "h": 48
+          },
+          "overlaps": false
+        },
+        {
+          "text": "00967771422070",
+          "rect": {
+            "x": 178.046875,
+            "y": 22053.609375,
+            "w": 147.953125,
+            "h": 44
+          },
+          "overlaps": false
+        }
+      ],
+      "scrollChecks": [
+        {
+          "selector": "btn btn-primary",
+          "focused": true,
+          "hit": true,
+          "top": 467.5625,
+          "bottom": 522.75
+        },
+        {
+          "selector": "ss-input",
+          "focused": true,
+          "hit": true,
+          "top": 472.3125,
+          "bottom": 516.6875
+        },
+        {
+          "selector": "ss-button",
+          "focused": true,
+          "hit": true,
+          "top": 470.6875,
+          "bottom": 518.6875
+        },
+        {
+          "selector": "A",
+          "focused": true,
+          "hit": true,
+          "top": 473.21875,
+          "bottom": 517.21875
+        },
+        {
+          "selector": "floating-bot-btn",
+          "focused": true,
+          "hit": true,
+          "top": 468.921875,
+          "bottom": 520.671875
+        }
+      ]
+    },
+    "768": {
+      "floatPosition": "static",
+      "floatRect": {
+        "x": 536.953125,
+        "y": 15698.4375,
+        "w": 215.046875,
+        "h": 51.75
+      },
+      "elements": [
+        {
+          "text": "📅 احجز موعدك الآن",
+          "rect": {
+            "x": 456.3125,
+            "y": 682.8125,
+            "w": 214.640625,
+            "h": 59.1875
+          },
+          "overlaps": false
+        },
+        {
+          "text": "ابحث عن فحص أو أشعة أو عملية",
+          "rect": {
+            "x": 141.671875,
+            "y": 1129.046875,
+            "w": 380.96875,
+            "h": 44.375
+          },
+          "overlaps": false
+        },
+        {
+          "text": "بحث",
+          "rect": {
+            "x": 64,
+            "y": 1129.046875,
+            "w": 69.671875,
+            "h": 44.375
+          },
+          "overlaps": false
+        },
+        {
+          "text": "00967771422070",
+          "rect": {
+            "x": 187.046875,
+            "y": 12957.609375,
+            "w": 147.953125,
+            "h": 44
+          },
+          "overlaps": false
+        }
+      ],
+      "scrollChecks": [
+        {
+          "selector": "btn btn-primary",
+          "focused": true,
+          "hit": true,
+          "top": 465.8125,
+          "bottom": 525
+        },
+        {
+          "selector": "ss-input",
+          "focused": true,
+          "hit": true,
+          "top": 473.046875,
+          "bottom": 517.421875
+        },
+        {
+          "selector": "ss-button",
+          "focused": true,
+          "hit": true,
+          "top": 473.046875,
+          "bottom": 517.421875
+        },
+        {
+          "selector": "A",
+          "focused": true,
+          "hit": true,
+          "top": 472.609375,
+          "bottom": 516.609375
+        },
+        {
+          "selector": "floating-bot-btn",
+          "focused": true,
+          "hit": true,
+          "top": 469.4375,
+          "bottom": 521.1875
+        }
+      ]
+    }
+  },
+  "anchors": 76
+}
