@@ -1,0 +1,89 @@
+# =====================================================================
+# _headers — رؤوس أمان وأداء لموقع مستشفى الأنهار التخصصي
+# ENH:security-headers — ملف جديد بالكامل (لا يعدّل أي ملف قائم)
+# ---------------------------------------------------------------------
+# يعمل هذا الملف فقط إذا كان النشر على Cloudflare Pages (أو Netlify).
+# إن كانت الاستضافة خادمًا عاديًا خلف Cloudflare، فالبديل هو:
+#   Cloudflare Dashboard → Rules → Transform Rules → Modify Response Header
+# (انظر تقرير المهمة 9 — القسم 6)
+#
+# ملاحظة: كل الرؤوس هنا "إضافية" لا تغيّر سلوك الصفحات.
+# =====================================================================
+
+# ---------------------------------------------------------------------
+# 1) كل المسارات — رؤوس أمان أساسية + CSP في وضع التقرير فقط
+# ---------------------------------------------------------------------
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()
+  X-Frame-Options: SAMEORIGIN
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
+  X-Permitted-Cross-Domain-Policies: none
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; connect-src 'self'; frame-src 'none'; frame-ancestors 'self'; form-action 'self' mailto: https://wa.me; base-uri 'self'; object-src 'none'; manifest-src 'self'; upgrade-insecure-requests
+
+# ---------------------------------------------------------------------
+# 2) الصور — كاش سنة كاملة (أسماء ثابتة لا تتغير)
+# ---------------------------------------------------------------------
+/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.jpeg
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.png
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.ico
+  Cache-Control: public, max-age=31536000, immutable
+
+# ---------------------------------------------------------------------
+# 3) CSS وJS — شهر واحد (لأن الروابط تحمل ?v=10، يكفي شهر احتياطًا)
+#    عند تعديل style.css أو script.js: ارفع رقم الإصدار في الصفحات
+#    (?v=11) وإلا بقي الزائر على النسخة القديمة حتى انتهاء المدة.
+# ---------------------------------------------------------------------
+/style.css
+  Cache-Control: public, max-age=2592000
+
+/script.js
+  Cache-Control: public, max-age=2592000
+
+# ---------------------------------------------------------------------
+# 4) HTML — قصير جدًا حتى تظهر أي تعديلات فورًا
+# ---------------------------------------------------------------------
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+# ---------------------------------------------------------------------
+# 5) service worker (غير موجود حاليًا، وقاعدة احتياطية للمستقبل)
+# ---------------------------------------------------------------------
+/sw.js
+  Cache-Control: no-cache, must-revalidate
+
+/service-worker.js
+  Cache-Control: no-cache, must-revalidate
+
+# ---------------------------------------------------------------------
+# 6) ملفات الفهرسة والإعدادات — كاش قصير
+# ---------------------------------------------------------------------
+/robots.txt
+  Cache-Control: public, max-age=3600
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+
+/_headers
+  Cache-Control: public, max-age=3600
+
+/_redirects
+  Cache-Control: public, max-age=3600
