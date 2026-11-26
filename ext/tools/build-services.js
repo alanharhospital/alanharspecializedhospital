@@ -459,6 +459,10 @@ const CBC_TARGET = catalog.items.find((i) => /CBC/.test(i.name));
 if (!CBC_TARGET) throw new Error('لم أجد عنصر فحص الدم الشامل CBC');
 
 const SYNONYM_PHRASES = decisions.approvedAliases || [];
+const searchOnlyMatch = decisions.searchOnlyMatch;
+if (!searchOnlyMatch || !Number.isFinite(searchOnlyMatch.minCoverage) || searchOnlyMatch.minCoverage <= 0 || searchOnlyMatch.minCoverage > 1 || !Number.isInteger(searchOnlyMatch.minWords) || searchOnlyMatch.minWords < 1) {
+  throw new Error('إعداد searchOnlyMatch غير صالح');
+}
 
 const slugOfCategory = new Map();
 for (const pg of PAGES) for (const c of pg.cats) slugOfCategory.set(c, pg.slug);
@@ -487,6 +491,7 @@ const searchIndex = {
   }),
   excludedTerms: decisions.excludeRules,
   blockedQueries: decisions.blockedQueries || [],
+  searchOnlyMatch: { ...searchOnlyMatch },
   synonyms: SYNONYM_PHRASES.map(s => ({ ...s })),
 };
 

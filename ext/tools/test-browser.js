@@ -78,7 +78,7 @@ async function main() {
       }
 
       const responses = [];
-      for (const q of ['CBC','قلع ضرس','16 حاضنة']) {
+      for (const q of ['CBC','قلع ضرس','16 حاضنة','سرير','أكثر من 40 سرير رقود خاص']) {
         await input.evaluate((el,v) => {
           el.focus(); el.value = v;
           el.dispatchEvent(new CompositionEvent('compositionstart',{bubbles:true,data:''}));
@@ -90,8 +90,10 @@ async function main() {
         await page.waitForFunction(() => !!document.querySelector('[data-services-search-panel] .ss-reply'), {timeout:5000});
         await sleep(220);
         const text = await page.$eval('[data-services-search-panel]', el => el.textContent);
-        const expected = q === 'CBC' ? 'CBC' : q === 'قلع ضرس' ? 'قلع ضرس' : '16 حاضنة';
-        assert(text.includes(expected), route + ' لم يستجب للاستعلام ' + q + ': ' + text);
+        if (q === 'CBC' || q === 'قلع ضرس' || q === 'أكثر من 40 سرير رقود خاص') assert(text.includes(q), route + ' لم يستجب للاستعلام ' + q + ': ' + text);
+        if (q === '16 حاضنة') assert(text.includes('نعتذر') && !text.includes('مذكور في قائمة خدماتنا'), 'يجب الاعتذار عن حاضنة مختصرة');
+        if (q === 'سرير') assert(!text.includes('أكثر من 13 سرير') && !text.includes('أكثر من 40 سرير'), 'ظهرت عناصر searchOnly للفظ سرير');
+        if (q === 'أكثر من 40 سرير رقود خاص') assert(text.includes('مذكور في قائمة خدماتنا') && !text.includes('يتوفر لدينا'), 'رد searchOnly غير صحيح');
 
         if (q === 'CBC') {
           const detail = await page.$eval('[data-services-search-panel] a.ss-result-link', a => a.href);
@@ -99,12 +101,11 @@ async function main() {
           assert.equal(await page.evaluate(u=>fetch(u).then(r=>r.status), detail.split('#')[0]), 200, 'رابط النتيجة لا يعمل');
         }
 
-        if (q === '16 حاضنة') {
-          assert(text.includes('مذكور في قائمة خدماتنا') && !text.includes('يتوفر لدينا'));
+        if (q === 'أكثر من 40 سرير رقود خاص') {
           const a = await page.$$eval('[data-services-search-panel] a', nodes => nodes.map(n=>n.href));
           assert(a.every(u=>u.startsWith('https://wa.me/')), 'بحث فقط: رابط غير واتساب');
         }
-        responses.push(q + ': ' + text.slice(0,90));
+        responses.push(q + ': ' + ((q === 'سرير' || q === 'أكثر من 40 سرير رقود خاص') ? text : text.slice(0,90)));
       }
       const view = await page.evaluate(() => {
         const panel = document.querySelector('[data-services-search-panel]');

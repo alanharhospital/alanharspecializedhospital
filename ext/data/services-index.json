@@ -4225,6 +4225,10 @@
   "blockedQueries": [
     "نقل الدم"
   ],
+  "searchOnlyMatch": {
+    "minCoverage": 0.75,
+    "minWords": 3
+  },
   "synonyms": [
     {
       "phrase": "CBC",

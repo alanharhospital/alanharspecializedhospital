@@ -64,6 +64,37 @@
       });
   }
 
+  /* لعناصر البحث فقط: كلمات مميزة فريدة، دون أدوات أو نص لاتيني. */
+  var SEARCH_ONLY_STOPWORDS = new Set(['اكثر', 'من', 'في', 'مع', 'و', 'على', 'الي', 'عن', 'هل', 'يوجد', 'عندكم', 'لديكم', 'متوفر', 'توفر', 'فحص', 'تحليل', 'اشعه', 'عمليه', 'لكم', 'عندك', 'لو', 'اريد', 'ابحث', 'هو', 'هي'].map(norm));
+  function searchOnlyTokens(text) {
+    var seen = new Set();
+    norm(text).split(' ').forEach(function (word) {
+      if (!word || SEARCH_ONLY_STOPWORDS.has(word) || /^[a-z]+$/.test(word)) return;
+      var token = stripPrefix(word);
+      if ((token.length >= 2 || /^\d+$/.test(token)) && !SEARCH_ONLY_STOPWORDS.has(token)) seen.add(token);
+    });
+    return Array.from(seen);
+  }
+
+  function searchOnlyBest(raw, items, config) {
+    if (!config || !Number.isFinite(config.minCoverage) || config.minCoverage <= 0 || config.minCoverage > 1 || !Number.isInteger(config.minWords) || config.minWords < 1) return null;
+    var query = searchOnlyTokens(raw);
+    if (query.length < config.minWords) return null;
+    var querySet = new Set(query), best = null, bestCoverage = -1;
+    items.forEach(function (item) {
+      if (!item.searchOnly) return;
+      var words = searchOnlyTokens(item.name);
+      if (!words.length) return;
+      var matched = words.filter(function (word) { return querySet.has(word); }).length;
+      var coverage = matched / words.length;
+      if (coverage >= config.minCoverage && coverage > bestCoverage) {
+        best = item;
+        bestCoverage = coverage;
+      }
+    });
+    return best;
+  }
+
   function levenshtein(a, b) {
     if (a === b) return 0;
     var m = a.length, n = b.length;
@@ -130,6 +161,13 @@
     });
     if (blocked || blockedQuery) { result.type = 'none'; return result; }
 
+    var onlyMatch = searchOnlyBest(raw, items, data && data.searchOnlyMatch);
+    if (onlyMatch) {
+      result.type = 'strong';
+      result.best = onlyMatch;
+      return result;
+    }
+
     /* --- المرادفات المعتمدة (approved) --- */
     var padded = ' ' + qNorm + ' ';
     var bestSyn = null;
@@ -146,7 +184,7 @@
     if (bestSyn) {
       var remainder = padded.replace(' ' + norm(bestSyn.phrase) + ' ', ' ');
       var restTokens = tokenizeQuery(remainder);
-      var target = items.filter(function (it) { return it.id === bestSyn.targetId; })[0] || null;
+      var target = items.filter(function (it) { return !it.searchOnly && it.id === bestSyn.targetId; })[0] || null;
       if (target && bestSyn.tier === 'specific' && restTokens.length === 0) {
         result.type = 'strong';
         result.best = target;
@@ -163,11 +201,7 @@
     }
 
     /* --- مطابقة عادية --- */
-    var matches = findMatches(tokens, items).filter(function (m) {
-      if (!m.item.searchOnly) return true;
-      var nameTokens = tokenizeName(m.item.name);
-      return m.matchedAll && tokens.every(function (token) { return nameTokens.indexOf(token) !== -1; });
-    });
+    var matches = findMatches(tokens, items.filter(function (item) { return !item.searchOnly; }));
     if (!matches.length) {
       result.type = 'none';
       return result;
@@ -305,7 +339,7 @@
   var cache = null;
   function fromBundle(bundle) {
     if (!bundle || !bundle.index || !Array.isArray(bundle.index.items) || !bundle.responses || !bundle.contact) throw new Error('بيانات بحث غير صالحة');
-    return { items: bundle.index.items, synonyms: bundle.index.synonyms || [], excludedTerms: bundle.index.excludedTerms || [], blockedQueries: bundle.index.blockedQueries || [], responses: bundle.responses, contact: bundle.contact };
+    return { items: bundle.index.items, synonyms: bundle.index.synonyms || [], excludedTerms: bundle.index.excludedTerms || [], blockedQueries: bundle.index.blockedQueries || [], searchOnlyMatch: bundle.index.searchOnlyMatch, responses: bundle.responses, contact: bundle.contact };
   }
   function loadJSON(url) {
     return fetch(url, { credentials: 'same-origin' }).then(function (r) {

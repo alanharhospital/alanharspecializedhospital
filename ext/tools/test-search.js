@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * test-search.js — 27 حالة اختبار لمحرّك بحث دليل الخدمات
+ * test-search.js — 36 حالة اختبار لمحرّك بحث دليل الخدمات
  * التشغيل: node ext/tools/test-search.js
  * يعتمد على: ext/tools/build-services.js (لازم تشغيله أولًا)
  */
@@ -19,7 +19,7 @@ const responses = JSON.parse(fs.readFileSync(path.join(DATA, 'search-responses.j
 const contact = JSON.parse(fs.readFileSync(path.join(DATA, 'contact.json'), 'utf8'));
 
 const catalog = JSON.parse(fs.readFileSync(path.join(DATA, 'services-catalog.json'), 'utf8'));
-const data = { items: index.items, synonyms: index.synonyms, excludedTerms: index.excludedTerms, blockedQueries: index.blockedQueries, responses, contact };
+const data = { items: index.items, synonyms: index.synonyms, excludedTerms: index.excludedTerms, blockedQueries: index.blockedQueries, searchOnlyMatch: index.searchOnlyMatch, responses, contact };
 
 const results = [];
 function check(n, desc, fn) {
@@ -162,10 +162,9 @@ check(18, 'رقم واتساب من contact.json فقط لا في كود الب�
   return { ok: usesContact && !offenders.length, note: `offenders=${offenders.length ? offenders.join(',') : 'لا شيء'}` };
 });
 
-check(19, '«16 حاضنة» ← listed دون «يتوفر لدينا»', () => {
-  const r = run('16 حاضنة');
-  const rep = engine.buildReply(r, data);
-  return { ok: r.type === 'strong' && r.best.group === 'listed' && rep.lines.some(l => l.includes('مذكور في قائمة خدماتنا')) && rep.lines.every(l => !l.includes('يتوفر لدينا')) && rep.lines.some(l => l.includes(String(contact.whatsappDisplay))) && !rep.lines.some(l => l.includes('{whatsappDisplay}')), note: `${r.type}, ${r.best && r.best.group}` };
+check(19, '«16 حاضنة» ← اعتذار وواتساب، بلا searchOnly', () => {
+  const r=run('16 حاضنة'), rep=engine.buildReply(r,data);
+  return {ok:r.type==='none' && !r.best && !r.options.length && rep.lines.some(x=>x.includes('نعتذر')) && !!rep.whatsappUrl, note:`${r.type}: ${rep.lines.join(' ')}`};
 });
 
 check(20, '«بدل مخاطر» ← لا نتائج', () => {
@@ -194,19 +193,19 @@ check(23, '«هل يوجد فحص صورة الدم الكامل» ← CBC مع 
   const r=run('هل يوجد فحص صورة الدم الكامل');
   return {ok:pinned&&r.type==='strong'&&r.best.id==='SVC-0048'&&r.best.group==='lab',note:`aliases=${pinned}, ${r.type}`};
 });
-check(24, '«أكثر من 13 سرير عناية» ← listed بلا مرساة', () => {
-  const r=run('أكثر من 13 سرير عناية'), rep=engine.buildReply(r,data);
+check(24, '«أكثر من 13 سرير عناية» ← بلا searchOnly وصفحات الدليل خالية منها', () => {
+  const r=run('أكثر من 13 سرير عناية'), found=(r.best?[r.best]:[]).concat(r.options);
   const pages=fs.readdirSync(path.join(ROOT,'services')).filter(x=>x.endsWith('.html')).map(f=>fs.readFileSync(path.join(ROOT,'services',f),'utf8'));
   const only=index.items.filter(x=>x.searchOnly);
   const allValid=only.length===8 && only.every(item=>{
-    const exact=run(item.name);
-    return item.url===null && item.group==='listed' && pages.every(p=>!p.includes(item.name)&&!p.includes('id="'+item.id.toLowerCase()+'"')) && exact.type==='strong' && exact.best.id===item.id && exact.options.length===0;
+    const exact=run(item.name), rep=engine.buildReply(exact,data);
+    return item.url===null && item.group==='listed' && pages.every(p=>!p.includes(item.name)&&!p.includes('id="'+item.id.toLowerCase()+'"')) && exact.type==='strong' && exact.best.id===item.id && !exact.options.length && rep.lines.some(x=>x.includes('مذكور في قائمة خدماتنا')) && rep.lines.every(x=>!x.includes('يتوفر لدينا')) && !!rep.whatsappUrl;
   });
-  return {ok:allValid&&r.type==='strong'&&r.best.id==='SVC-0001'&&r.best.group==='listed'&&r.best.url===null&&r.options.length===0&&!!rep.whatsappUrl,note:`${r.type} ${r.best && r.best.id}; all eight=${allValid}`};
+  return {ok:allValid && found.every(x=>!x.searchOnly),note:`${r.type}: ${found.map(x=>x.id).join(',')}; full names=${allValid}`};
 });
-check(25, '«جهاز تنفس صناعي» ← listed أو لا شيء، دون رسوم', () => {
+check(25, '«جهاز تنفس صناعي» ← بلا searchOnly أو رسوم جهاز التنفس', () => {
   const r=run('جهاز تنفس صناعي'), found=(r.best?[r.best]:[]).concat(r.options||[]);
-  return {ok:(r.type==='none'||(r.type==='strong'&&r.best.group==='listed'))&&found.every(i=>i.id!=='SVC-0369'),note:`${r.type} ${r.best && r.best.id}`};
+  return {ok:found.every(i=>!i.searchOnly&&i.id!=='SVC-0369'&&!i.name.includes('رسوم جهاز التنفس')),note:`${r.type}: ${found.map(i=>i.id).join(',')}`};
 });
 check(26, '«نقل الدم» ← لا نتائج', () => {
   const r=run('نقل الدم');return {ok:r.type==='none'&&!r.best&&!r.options.length,note:r.type};
@@ -215,16 +214,46 @@ check(27, '«عناية» ← لا تظهر عناصر searchOnly ضمن الخ�
   const r=run('عناية');return {ok:(r.options||[]).every(x=>!x.searchOnly),note:`${r.type}, options=${r.options.length}`};
 });
 
+const foundItems = r => (r.best ? [r.best] : []).concat(r.options || []);
+const noOnly = q => foundItems(run(q)).every(i => !i.searchOnly);
+const describe = q => { const r=run(q); return `${r.type}: ${foundItems(r).map(i=>i.id+' '+i.name).join(' | ') || 'لا نتائج'}`; };
+check(28, '«سرير» ← لا searchOnly', () => ({ok:noOnly('سرير'),note:describe('سرير')}));
+check(29, '«جهاز» و«أجهزة» ← لا searchOnly', () => ({ok:['جهاز','أجهزة'].every(noOnly),note:['جهاز','أجهزة'].map(describe).join('؛ ')}));
+check(30, '«حاضنة» ← لا searchOnly', () => ({ok:noOnly('حاضنة'),note:describe('حاضنة')}));
+check(31, '«عناية مركزة» ← فقط 0356 و0357، بلا 0001 أو 0002', () => {
+  const r=run('عناية مركزة'), ids=foundItems(r).map(i=>i.id).sort();
+  return {ok:ids.join(',')==='SVC-0356,SVC-0357',note:describe('عناية مركزة')};
+});
+check(32, 'الاسم الكامل مع ICU ← 0001 وlisted', () => {
+  const r=run('أكثر من 13 سرير عناية مركزة للكبار (ICU)'), rep=engine.buildReply(r,data);
+  return {ok:r.type==='strong'&&r.best.id==='SVC-0001'&&!r.options.length&&rep.lines.some(x=>x.includes('مذكور في قائمة خدماتنا'))&&rep.lines.every(x=>!x.includes('يتوفر لدينا'))&&!!rep.whatsappUrl,note:describe(r.query)};
+});
+check(33, '«13 سرير عناية مركزة للكبار» ← 0001', () => {const q='13 سرير عناية مركزة للكبار',r=run(q);return {ok:r.type==='strong'&&r.best.id==='SVC-0001'&&!r.options.length,note:describe(q)};});
+check(34, '«16 حاضنة أطفال في وحدة العناية بحديثي الولادة ورعاية الخدج» ← 0003', () => {const q='16 حاضنة أطفال في وحدة العناية بحديثي الولادة ورعاية الخدج',r=run(q);return {ok:r.type==='strong'&&r.best.id==='SVC-0003'&&!r.options.length,note:describe(q)};});
+check(35, '«8 أسرة عناية مركزة للأطفال» ← تحديد ظهور 0002', () => {const q='8 أسرة عناية مركزة للأطفال',r=run(q);return {ok:r.type==='strong'&&r.best.id==='SVC-0002'&&!r.options.length,note:describe(q)};});
+check(36, '«أكثر من 12 جهاز تنفس صناعي» و«أكثر من 35 جهاز مراقبة للعلامات الحيوية»', () => {
+  const q1='أكثر من 12 جهاز تنفس صناعي',q2='أكثر من 35 جهاز مراقبة للعلامات الحيوية',r1=run(q1),r2=run(q2);
+  const config=index.searchOnlyMatch, restricted={...data, searchOnlyMatch:{minCoverage:1,minWords:6}};
+  const restrictedResult=engine.search(q2,restricted);
+  const tieItems=[{id:'TEST-A',name:'الف باء جيم دال',searchOnly:true},{id:'TEST-B',name:'الف باء جيم دال',searchOnly:true}];
+  const tie=engine.search('الف باء جيم دال',{items:tieItems,searchOnlyMatch:config});
+  const boundaryItems=[{id:'BOUNDARY',name:'تفاح موز عنب رمان',searchOnly:true}];
+  const boundary = q => engine.search(q,{items:boundaryItems,searchOnlyMatch:config});
+  const stricter=engine.search('تفاح موز عنب',{items:boundaryItems,searchOnlyMatch:{...config,minCoverage:0.8}});
+  const alias=engine.search('خفي',{items:boundaryItems,searchOnlyMatch:config,synonyms:[{phrase:'خفي',tier:'specific',approved:true,targetId:'BOUNDARY'}]});
+  return {ok:config.minCoverage===0.75&&config.minWords===3&&foundItems(r1).every(x=>!x.searchOnly)&&r2.type==='strong'&&r2.best.id==='SVC-0008'&&!r2.options.length&&!foundItems(restrictedResult).some(x=>x.searchOnly)&&tie.best?.id==='TEST-A'&&!tie.options.length&&boundary('تفاح موز عنب').best?.id==='BOUNDARY'&&!boundary('تفاح موز').best&&!stricter.best&&!foundItems(alias).some(x=>x.searchOnly),note:q1+' ← '+describe(q1)+'؛ '+q2+' ← '+describe(q2)};
+});
+
 /* -------------------------------- التقرير -------------------------------- */
 
-console.log('\n  اختبار محرّك البحث — 27 حالة');
+console.log('\n  اختبار محرّك البحث — 36 حالة');
 console.log('  ' + '-'.repeat(76));
 let pass = 0;
 for (const r of results) {
   const mark = r.ok ? '✅' : '❌';
   if (r.ok) pass++;
   console.log(`  ${mark} ${String(r.n).padStart(2)}. ${r.desc}`);
-  if (!r.ok || process.argv.includes('--verbose')) console.log(`        → ${r.note}`);
+  if (!r.ok || r.n >= 28 || process.argv.includes('--verbose')) console.log(`        → ${r.note}`);
 }
 console.log('  ' + '-'.repeat(76));
 console.log(`  النتيجة: ${pass}/${results.length} ناجحة`);
