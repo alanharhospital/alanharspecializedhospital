@@ -110,6 +110,7 @@
   // المقارنة لا تقتطع واوًا أصلية مثل «ولادة»؛ أدوات التعريف والجر المعرفة فقط.
   var YES_CONNECTORS = new Set(['من','في','مع','و','او','الي','على','عن'].map(norm));
   var YES_FILLERS = new Set(['هل','يوجد','عندكم','لديكم','متوفر','توفر','لكم','عندك','لو','اريد','ابحث','هو','هي'].map(norm));
+  var GENERIC_NO_SINGLE_YES = new Set(['عين','كبد','ولادة','قلب','سن','سرير','جهاز'].map(norm));
   function wholeWordTokens(text, isQuery, keepParentheses) {
     var source = keepParentheses ? String(text || '') : String(text || '').replace(/\([^)]*\)|\[[^\]]*\]/g, ' ');
     // الواو قبل همزة القطع كما في «وإيكو» أداة عطف؛ لا نحذفها من «ولادة».
@@ -123,15 +124,26 @@
       return word;
     }).filter(function (word) {return word && !YES_CONNECTORS.has(word);});
   }
-  function wholeWordMatch(query, name, minCoverage) {
+  function wholeWordMatch(query, name, minCoverage, allowQueryCoverage) {
     var q = wholeWordTokens(query, true), words = wholeWordTokens(name, false);
     var queryNumbers = norm(query).split(' ').filter(function (word) { return /^\d+$/.test(word); });
     var nameNumbers = norm(name).split(' ').filter(function (word) { return /^\d+$/.test(word); });
     if (!queryNumbers.every(function (number) { return nameNumbers.indexOf(number) !== -1; })) return false;
     if (!q.length || !words.length) return false;
-    var distinct = Array.from(new Set(words)), qset = new Set(q);
-    var matches = distinct.filter(function (word) { return qset.has(word); }).length;
-    return q.every(function (word) { return distinct.indexOf(word) !== -1; }) && matches / distinct.length >= (Number.isFinite(minCoverage) ? minCoverage : 0.6);
+    var distinct = Array.from(new Set(words));
+    if (allowQueryCoverage) {
+      // «عملية جراحة» تكرار لنوع الخدمة لا يُسقط الكلمة من الأسئلة الأخرى.
+      if (q.indexOf('عمليه') !== -1 && q.indexOf('جراحه') !== -1 && distinct.indexOf('جراحه') !== -1) q = q.filter(function (word) { return word !== 'عمليه'; });
+      // واو العطف بلا همزة تُقبل فقط عندما يثبت الاسم وجودها متصلة بنفس الكلمة.
+      var joined = norm(name).split(' ').filter(function (word) { return /^وال/.test(word) && word.length > 5; }).map(function (word) { return word.slice(1); });
+      q = q.map(function (word) {
+        if (word[0] === 'و' && word.length > 2 && distinct.indexOf(word) === -1 && joined.indexOf('ال' + word.slice(1)) !== -1 && distinct.indexOf(word.slice(1)) !== -1) return word.slice(1);
+        return word;
+      });
+    }
+    var qset = new Set(q), matches = distinct.filter(function (word) { return qset.has(word); }).length;
+    var allExact = q.every(function (word) { return distinct.indexOf(word) !== -1; });
+    return allExact && (matches / distinct.length >= (Number.isFinite(minCoverage) ? minCoverage : 0.6) || (allowQueryCoverage && qset.size >= 2));
   }
 
   function levenshtein(a, b) {
@@ -234,7 +246,9 @@
       var remainder = padded.replace(' ' + norm(bestSyn.phrase) + ' ', ' ');
       var restTokens = tokenizeQuery(remainder, false);
       var target = items.filter(function (it) { return !it.searchOnly && it.id === bestSyn.targetId; })[0] || null;
-      if (target && bestSyn.tier === 'specific' && restTokens.length === 0) {
+      var specificWords = wholeWordTokens(raw, true).filter(function (word) { return ['فحص','تحليل','عمليه'].indexOf(word) === -1; });
+      var genericSingle = specificWords.length === 1 && GENERIC_NO_SINGLE_YES.has(specificWords[0]);
+      if (target && bestSyn.tier === 'specific' && restTokens.length === 0 && !genericSingle) {
         result.type = 'strong';
         result.best = target;
         return result;
@@ -258,7 +272,14 @@
 
     // البادئة والتهجئة التقريبية تصلح للاقتراح فقط، ولا تكفي لإثبات التوفر.
     if (matches.some(function (m) { return m.matchedAll; })) matches = matches.filter(function (m) { return m.matchedAll; });
-    var full = matches.filter(function (m) { return wholeWordMatch(raw, m.item.name, data && data.yesMatch && data.yesMatch.coverageMin); });
+    // كلمة واحدة عامة لا تكفي للتأكيد، والمرادف المحدد المعتمد مثل CBC سبق معالجته أعلاه.
+    var distinctive = wholeWordTokens(raw, true).filter(function (word) { return ['فحص','تحليل','عمليه'].indexOf(word) === -1; });
+    var full = [];
+    if (new Set(distinctive).size >= 2) {
+      // حافظ على أفضلية النتائج التي كانت تستوفي تغطية الاسم قبل توسيع المطابقة.
+      full = matches.filter(function (m) { return wholeWordMatch(raw, m.item.name, data && data.yesMatch && data.yesMatch.coverageMin); });
+      if (!full.length) full = matches.filter(function (m) { return wholeWordMatch(raw, m.item.name, data && data.yesMatch && data.yesMatch.coverageMin, true); });
+    }
     if (full.length) {
       result.type = 'strong';
       result.best = full[0].item;

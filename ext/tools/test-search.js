@@ -69,10 +69,10 @@ check(5, '«cbc» ← نفس النتيجة', () => {
   return { ok: r.type === 'strong' && /CBC/.test(r.best.name), note: `${r.type} → ${r.best && r.best.name}` };
 });
 
-check(6, '«عملية جراحة مخ واعصاب» ← خيارات لا نعم (قاعدة التغطية)', () => {
+check(6, '«عملية جراحة مخ واعصاب» ← نعم بتغطية السؤال', () => {
   const r = run('عملية جراحة مخ واعصاب');
   const rep = engine.buildReply(r, data);
-  const ok = r.type === 'weak' && r.options.some(x => x.id === 'SVC-0009') && rep.lines.some(l => l.includes('هل تقصد'));
+  const ok = r.type === 'strong' && r.best.id === 'SVC-0009' && r.best.group === 'surgery' && rep.lines.some(l => l.includes('عملياتنا مجهزة'));
   return { ok, note: `${r.type} → ${r.best && r.best.name}` };
 });
 
@@ -127,9 +127,9 @@ check(13, '«هل عندكم قلع ضرس» ← dental', () => {
   return { ok: r.type === 'strong' && r.best.group === 'dental', note: `${r.type} → ${r.best && r.best.name}` };
 });
 
-check(14, '«هل يوجد أشعة مقطعية» ← خيارات radiology (قاعدة التغطية)', () => {
+check(14, '«هل يوجد أشعة مقطعية» ← نعم بتغطية السؤال', () => {
   const r = run('هل يوجد أشعة مقطعية');
-  return { ok: r.type === 'weak' && r.options.some(x=>x.group === 'radiology'), note: `${r.type} → ${r.options.map(x=>x.name).join(' | ')}` };
+  return { ok: r.type === 'strong' && r.best.id === 'SVC-0061' && r.best.group === 'radiology', note: `${r.type} → ${r.best && r.best.name}` };
 });
 
 check(15, '«ايكو للقلب» ← radiology', () => {
@@ -289,13 +289,18 @@ check(55, '16 حاضنة أطفال لا يظهر 0003', () => {const r=run('16 
 check(56, 'الاسم الكامل لـ0003 يظهر', () => {const item=index.items.find(x=>x.id==='SVC-0003'),r=run(item.name);return {ok:r.type==='strong'&&r.best.id===item.id,note:describe(item.name)};});
 check(57, 'سن خيارات، قلع ضرس وCBC وتخطيط القلب وايكو نعم', () => {const cases=[['سن','weak'],['قلع ضرس','strong'],['CBC','strong'],['تخطيط القلب ECG','strong'],['ايكو للقلب','strong']];return {ok:cases.every(([q,t])=>run(q).type===t),note:cases.map(([q])=>describe(q)).join('؛ ')};});
 check(58, 'الكلمات العامة الخمس وحدها وروابطها', () => {const q={تحليل:'diagnostics',فحص:'diagnostics',اشعة:'diagnostics',عملية:'surgery',عمليات:'surgery'};return {ok:JSON.stringify(Object.keys(index.categoryHints).sort())===JSON.stringify(Object.keys(q).sort())&&Object.entries(q).every(([x,slug])=>engine.buildReply(run(x),data).categoryHint?.slug===slug),note:JSON.stringify(index.categoryHints)};});
-check(59, 'اختبار عتبة تغطية الاسم وهي قابلة للضبط', () => {const items=[{id:'T',name:'الف باء جيم دال'}];const high=engine.search('الف باء جيم',{items,yesMatch:{coverageMin:0.8}}),low=engine.search('الف باء جيم',{items,yesMatch:{coverageMin:0.6}});return {ok:index.yesMatch.coverageMin===0.6&&high.type==='weak'&&low.type==='strong',note:`0.8=${high.type}, 0.6=${low.type}`};});
+check(59, 'عتبة تغطية الاسم قابلة للضبط دون تجاوز حماية الكلمة الواحدة', () => {const name='الف باء جيم دال',items=[{id:'T',name}];const high=engine.wholeWordMatch('الف',name,0.3),low=engine.wholeWordMatch('الف',name,0.2),single=engine.search('الف',{items,yesMatch:{coverageMin:0.2}});return {ok:index.yesMatch.coverageMin===0.6&&!high&&low&&single.type==='weak',note:`0.3=${high}, 0.2=${low}, single=${single.type}`};});
 check(60, 'الأقواس والأرقام والحروف المفردة لا تدخل تغطية الاسم', () => {const items=[{id:'T',name:'قلع ضرس A 123 (كبير وصغير)'}],r=engine.search('قلع ضرس',{items});return {ok:r.type==='strong'&&r.best.id==='T',note:r.type};});
 check(61, 'قصير لا بادئة أو تقريب واسم الفئة لا يولد خيارًا', () => {const d={items:[{id:'P',name:'عينة من عنق الرحم',category:'عين'},{id:'F',name:'التقييم السريري للتوازن',category:'سرير'},{id:'C',name:'جهاز لمدة طويلة',category:'ولادة'}]};return {ok:['عين','سرير','ولادة'].every(q=>!foundItems(engine.search(q,d)).length),note:'أسماء اصطناعية'};});
 check(62, 'الكامل قبل التقريبي', () => {const d={items:[{id:'FUZZ',name:'مختبر التحاليل الخاصة'}, {id:'EXACT',name:'التحاليل'}, {id:'FULL',name:'التحاليل الطبية'}]},r=engine.search('تحاليل',{...d,yesMatch:{coverageMin:1}});const all=foundItems(r);return {ok:all[0]?.id==='EXACT',note:all.map(x=>x.id).join(',')};});
 check(63, 'المرادفات غير المعتمدة لا تعمل', () => {const d={items:[{id:'T',name:'تفاح موز عنب'}],synonyms:[{phrase:'رمزسري',targetId:'T',approved:false,tier:'specific'}]};const r=engine.search('رمزسري',d);return {ok:r.type==='none',note:r.type};});
 check(64, 'الاسم الكامل للجهاز 0007 ورقمه الخاطئ', () => {const item=index.items.find(x=>x.id==='SVC-0007'),a=run(item.name),b=run(item.name.replace('12','13'));return {ok:a.best?.id===item.id&&!foundItems(b).some(x=>x.id===item.id),note:describe(item.name)};});
 check(65, 'عبارة زائدة لا تعطى نعم دون تطابق كل الكلمات', () => {const r=engine.search('تفاح موز عنب غريب',{items:[{id:'T',name:'تفاح موز عنب'}]});return {ok:r.type!=='strong',note:r.type};});
+check(66, 'أسئلة متعددة واضحة في الأسماء الطويلة ← نعم', () => {const cases=[['عملية جراحة مخ واعصاب','SVC-0009'],['جراحة المخ والاعصاب','SVC-0009'],['جراحة العظام','SVC-0021'],['اشعة مقطعية','SVC-0061'],['الاشعة المقطعية CT','SVC-0061']];return {ok:cases.every(([q,id])=>{const r=run(q);return r.type==='strong'&&r.best.id===id}),note:cases.map(([q])=>describe(q)).join('؛ ')};});
+check(67, 'المفردات العامة لا تعطي نعم حتى مع اسم مطابق أو مرادف محدد', () => {const words=['عين','كبد','ولادة','قلب','سن','سرير','جهاز'];return {ok:words.every(q=>run(q).type!=='strong'&&engine.search(q,{items:[{id:'T',name:q}]}).type!=='strong'&&engine.search(q,{items:[{id:'T',name:q}],synonyms:[{phrase:q,targetId:'T',approved:true,tier:'specific'}]}).type!=='strong'),note:words.map(describe).join('؛ ')};});
+check(68, 'تغطية السؤال كلمات كاملة فقط، والرقم والواو الأصلية محفوظان', () => {const item={id:'T',name:'تفاح موز عنب رمان خوخ مشمش'}, d={items:[item]};const exact=engine.search('تفاح موز',d),extra=engine.search('تفاح موز غريب',d),fuzzy=engine.search('تفاحه موز',d),num=engine.search('تفاح موز 12',d),w=engine.search('ولادة تفاح',{items:[{id:'W',name:'لادة تفاح'}]});return {ok:exact.type==='strong'&&extra.type!=='strong'&&fuzzy.type!=='strong'&&num.type!=='strong'&&w.type!=='strong',note:`exact=${exact.type}, extra=${extra.type}, fuzzy=${fuzzy.type}, number=${num.type}, waw=${w.type}`};});
+check(69, 'تغطية السؤال لا تتجاوز قيود searchOnly أو الكلمات العامة', () => {const hidden={id:'H',name:'تفاح موز عنب رمان خوخ',searchOnly:true},d={items:[hidden],searchOnlyMatch:{minCoverage:0.75,minWords:3}};const r=engine.search('تفاح موز عنب',d),generic=engine.search('فحص عين',{items:[{id:'G',name:'فحص عين'}]});return {ok:!foundItems(r).some(x=>x.id==='H')&&generic.type!=='strong',note:`searchOnly=${r.type}, فحص عين=${generic.type}`};});
+check(70, 'أولوية نعم السابقة محفوظة عند سونار حمل', () => {const r=run('سونار حمل');return {ok:r.type==='strong'&&r.best.id==='SVC-0332',note:describe(r.query)};});
 
 /* -------------------------------- التقرير -------------------------------- */
 

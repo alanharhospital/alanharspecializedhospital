@@ -1,0 +1,1084 @@
+{
+  "asked": [
+    {
+      "query": "عملية جراحة مخ واعصاب",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0009",
+            "name": "جراحة المخ والأعصاب والعمود الفقري مع الدكتور جمال العنسي"
+          },
+          {
+            "id": "SVC-0442",
+            "name": "عيادة جراحة المخ والأعصاب والعمود الفقري"
+          },
+          {
+            "id": "SVC-0303",
+            "name": "معاينة عيادة جراحة المخ والأعصاب والعمود الفقري"
+          }
+        ]
+      },
+      "after": {
+        "type": "strong",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0009",
+            "name": "جراحة المخ والأعصاب والعمود الفقري مع الدكتور جمال العنسي"
+          },
+          {
+            "id": "SVC-0442",
+            "name": "عيادة جراحة المخ والأعصاب والعمود الفقري"
+          },
+          {
+            "id": "SVC-0303",
+            "name": "معاينة عيادة جراحة المخ والأعصاب والعمود الفقري"
+          }
+        ]
+      }
+    },
+    {
+      "query": "جراحة المخ والاعصاب",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0009",
+            "name": "جراحة المخ والأعصاب والعمود الفقري مع الدكتور جمال العنسي"
+          },
+          {
+            "id": "SVC-0442",
+            "name": "عيادة جراحة المخ والأعصاب والعمود الفقري"
+          },
+          {
+            "id": "SVC-0303",
+            "name": "معاينة عيادة جراحة المخ والأعصاب والعمود الفقري"
+          }
+        ]
+      },
+      "after": {
+        "type": "strong",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0009",
+            "name": "جراحة المخ والأعصاب والعمود الفقري مع الدكتور جمال العنسي"
+          },
+          {
+            "id": "SVC-0442",
+            "name": "عيادة جراحة المخ والأعصاب والعمود الفقري"
+          },
+          {
+            "id": "SVC-0303",
+            "name": "معاينة عيادة جراحة المخ والأعصاب والعمود الفقري"
+          }
+        ]
+      }
+    },
+    {
+      "query": "جراحة العظام",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0021",
+            "name": "جراحة العظام والمفاصل مع الدكتور لبيب المقطري"
+          },
+          {
+            "id": "SVC-0443",
+            "name": "عيادة جراحة العظام والمفاصل"
+          },
+          {
+            "id": "SVC-0301",
+            "name": "معاينة عيادة جراحة العظام والمفاصل"
+          }
+        ]
+      },
+      "after": {
+        "type": "strong",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0021",
+            "name": "جراحة العظام والمفاصل مع الدكتور لبيب المقطري"
+          },
+          {
+            "id": "SVC-0443",
+            "name": "عيادة جراحة العظام والمفاصل"
+          },
+          {
+            "id": "SVC-0301",
+            "name": "معاينة عيادة جراحة العظام والمفاصل"
+          }
+        ]
+      }
+    },
+    {
+      "query": "اشعة مقطعية",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0061",
+            "name": "الأشعة المقطعية CT Scan للرأس والدماغ والجيوب الأنفية والرقبة والصدر والبطن والحوض والفقرات"
+          }
+        ]
+      },
+      "after": {
+        "type": "strong",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0061",
+            "name": "الأشعة المقطعية CT Scan للرأس والدماغ والجيوب الأنفية والرقبة والصدر والبطن والحوض والفقرات"
+          }
+        ]
+      }
+    },
+    {
+      "query": "الاشعة المقطعية CT",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0061",
+            "name": "الأشعة المقطعية CT Scan للرأس والدماغ والجيوب الأنفية والرقبة والصدر والبطن والحوض والفقرات"
+          }
+        ]
+      },
+      "after": {
+        "type": "strong",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0061",
+            "name": "الأشعة المقطعية CT Scan للرأس والدماغ والجيوب الأنفية والرقبة والصدر والبطن والحوض والفقرات"
+          }
+        ]
+      }
+    },
+    {
+      "query": "سونار",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0063",
+            "name": "السونار العام وسونار الحمل"
+          },
+          {
+            "id": "SVC-0332",
+            "name": "سونار للحمل"
+          },
+          {
+            "id": "SVC-0331",
+            "name": "سونار موجات فوق صوتية للنساء في العيادة"
+          }
+        ]
+      },
+      "after": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0063",
+            "name": "السونار العام وسونار الحمل"
+          },
+          {
+            "id": "SVC-0332",
+            "name": "سونار للحمل"
+          },
+          {
+            "id": "SVC-0331",
+            "name": "سونار موجات فوق صوتية للنساء في العيادة"
+          }
+        ]
+      }
+    },
+    {
+      "query": "سونار حمل",
+      "before": {
+        "type": "strong",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0332",
+            "name": "سونار للحمل"
+          },
+          {
+            "id": "SVC-0063",
+            "name": "السونار العام وسونار الحمل"
+          }
+        ]
+      },
+      "after": {
+        "type": "strong",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0332",
+            "name": "سونار للحمل"
+          },
+          {
+            "id": "SVC-0063",
+            "name": "السونار العام وسونار الحمل"
+          }
+        ]
+      }
+    },
+    {
+      "query": "ايكو للقلب",
+      "before": {
+        "type": "strong",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0246",
+            "name": "إيكو للقلب"
+          },
+          {
+            "id": "SVC-0247",
+            "name": "إيكو للقلب تحت التخدير العام"
+          },
+          {
+            "id": "SVC-0065",
+            "name": "وإيكو القلب ECHO للكبار والأطفال"
+          }
+        ]
+      },
+      "after": {
+        "type": "strong",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0246",
+            "name": "إيكو للقلب"
+          },
+          {
+            "id": "SVC-0247",
+            "name": "إيكو للقلب تحت التخدير العام"
+          },
+          {
+            "id": "SVC-0065",
+            "name": "وإيكو القلب ECHO للكبار والأطفال"
+          }
+        ]
+      }
+    },
+    {
+      "query": "قلع ضرس",
+      "before": {
+        "type": "strong",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0070",
+            "name": "قلع ضرس A"
+          },
+          {
+            "id": "SVC-0071",
+            "name": "قلع ضرس B"
+          },
+          {
+            "id": "SVC-0072",
+            "name": "قلع ضرس C"
+          }
+        ]
+      },
+      "after": {
+        "type": "strong",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0070",
+            "name": "قلع ضرس A"
+          },
+          {
+            "id": "SVC-0071",
+            "name": "قلع ضرس B"
+          },
+          {
+            "id": "SVC-0072",
+            "name": "قلع ضرس C"
+          }
+        ]
+      }
+    },
+    {
+      "query": "زراعة سن",
+      "before": {
+        "type": "strong",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0156",
+            "name": "زراعة سن"
+          },
+          {
+            "id": "SVC-0157",
+            "name": "زراعة سن فرنسي أو إيطالي"
+          }
+        ]
+      },
+      "after": {
+        "type": "strong",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0156",
+            "name": "زراعة سن"
+          },
+          {
+            "id": "SVC-0157",
+            "name": "زراعة سن فرنسي أو إيطالي"
+          }
+        ]
+      }
+    },
+    {
+      "query": "جلسة علاج طبيعي",
+      "before": {
+        "type": "strong",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0205",
+            "name": "جلسة علاج طبيعي للمفصل"
+          },
+          {
+            "id": "SVC-0202",
+            "name": "جلسة علاج طبيعي متكاملة"
+          },
+          {
+            "id": "SVC-0225",
+            "name": "جلسة علاج طبيعي مفصل الكفين"
+          }
+        ]
+      },
+      "after": {
+        "type": "strong",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0205",
+            "name": "جلسة علاج طبيعي للمفصل"
+          },
+          {
+            "id": "SVC-0202",
+            "name": "جلسة علاج طبيعي متكاملة"
+          },
+          {
+            "id": "SVC-0225",
+            "name": "جلسة علاج طبيعي مفصل الكفين"
+          }
+        ]
+      }
+    },
+    {
+      "query": "فحص السكر التراكمي",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0050",
+            "name": "السكري التراكمي HbA1C"
+          }
+        ]
+      },
+      "after": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0050",
+            "name": "السكري التراكمي HbA1C"
+          }
+        ]
+      }
+    }
+  ],
+  "singles": [
+    {
+      "query": "سرير",
+      "before": {
+        "type": "none",
+        "categoryHint": null,
+        "firstThree": []
+      },
+      "after": {
+        "type": "none",
+        "categoryHint": null,
+        "firstThree": []
+      }
+    },
+    {
+      "query": "جهاز",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0251",
+            "name": "جهاز مراقبة الضغط لمدة 24 ساعة (هولتر)"
+          },
+          {
+            "id": "SVC-0234",
+            "name": "جلسة جهاز شمع البرافين"
+          },
+          {
+            "id": "SVC-0220",
+            "name": "جلسة جهاز الكمادات باردة"
+          }
+        ]
+      },
+      "after": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0251",
+            "name": "جهاز مراقبة الضغط لمدة 24 ساعة (هولتر)"
+          },
+          {
+            "id": "SVC-0234",
+            "name": "جلسة جهاز شمع البرافين"
+          },
+          {
+            "id": "SVC-0220",
+            "name": "جلسة جهاز الكمادات باردة"
+          }
+        ]
+      }
+    },
+    {
+      "query": "دم",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0048",
+            "name": "فحص الدم الشامل CBC"
+          },
+          {
+            "id": "SVC-0047",
+            "name": "المختبر الطبي المركزي وبنك الدم (03226277)"
+          },
+          {
+            "id": "SVC-0453",
+            "name": "المختبر وبنك الدم"
+          }
+        ]
+      },
+      "after": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0048",
+            "name": "فحص الدم الشامل CBC"
+          },
+          {
+            "id": "SVC-0047",
+            "name": "المختبر الطبي المركزي وبنك الدم (03226277)"
+          },
+          {
+            "id": "SVC-0453",
+            "name": "المختبر وبنك الدم"
+          }
+        ]
+      }
+    },
+    {
+      "query": "قلب",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0246",
+            "name": "إيكو للقلب"
+          },
+          {
+            "id": "SVC-0243",
+            "name": "فحص منظم القلب"
+          },
+          {
+            "id": "SVC-0248",
+            "name": "تخطيط القلب ECG"
+          }
+        ]
+      },
+      "after": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0246",
+            "name": "إيكو للقلب"
+          },
+          {
+            "id": "SVC-0243",
+            "name": "فحص منظم القلب"
+          },
+          {
+            "id": "SVC-0248",
+            "name": "تخطيط القلب ECG"
+          }
+        ]
+      }
+    },
+    {
+      "query": "عين",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0434",
+            "name": "غسيل العين (طوارئ)"
+          }
+        ]
+      },
+      "after": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0434",
+            "name": "غسيل العين (طوارئ)"
+          }
+        ]
+      }
+    },
+    {
+      "query": "سن",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0156",
+            "name": "زراعة سن"
+          },
+          {
+            "id": "SVC-0128",
+            "name": "تركيب سن صب"
+          },
+          {
+            "id": "SVC-0073",
+            "name": "قلع سن أمامي"
+          }
+        ]
+      },
+      "after": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0156",
+            "name": "زراعة سن"
+          },
+          {
+            "id": "SVC-0128",
+            "name": "تركيب سن صب"
+          },
+          {
+            "id": "SVC-0073",
+            "name": "قلع سن أمامي"
+          }
+        ]
+      }
+    },
+    {
+      "query": "ضرس",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0070",
+            "name": "قلع ضرس A"
+          },
+          {
+            "id": "SVC-0071",
+            "name": "قلع ضرس B"
+          },
+          {
+            "id": "SVC-0072",
+            "name": "قلع ضرس C"
+          }
+        ]
+      },
+      "after": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0070",
+            "name": "قلع ضرس A"
+          },
+          {
+            "id": "SVC-0071",
+            "name": "قلع ضرس B"
+          },
+          {
+            "id": "SVC-0072",
+            "name": "قلع ضرس C"
+          }
+        ]
+      }
+    },
+    {
+      "query": "كبد",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0051",
+            "name": "وظائف الكلى والكبد"
+          },
+          {
+            "id": "SVC-0191",
+            "name": "خزعة من الكبد"
+          },
+          {
+            "id": "SVC-0171",
+            "name": "معاينة عيادة الباطنة العامة والكبد"
+          }
+        ]
+      },
+      "after": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0051",
+            "name": "وظائف الكلى والكبد"
+          },
+          {
+            "id": "SVC-0191",
+            "name": "خزعة من الكبد"
+          },
+          {
+            "id": "SVC-0171",
+            "name": "معاينة عيادة الباطنة العامة والكبد"
+          }
+        ]
+      }
+    },
+    {
+      "query": "كلى",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0051",
+            "name": "وظائف الكلى والكبد"
+          },
+          {
+            "id": "SVC-0041",
+            "name": "جراحة الكلى والمسالك البولية"
+          },
+          {
+            "id": "SVC-0042",
+            "name": "استخراج حصوات الكلى والحالب والمثانة"
+          }
+        ]
+      },
+      "after": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0051",
+            "name": "وظائف الكلى والكبد"
+          },
+          {
+            "id": "SVC-0041",
+            "name": "جراحة الكلى والمسالك البولية"
+          },
+          {
+            "id": "SVC-0042",
+            "name": "استخراج حصوات الكلى والحالب والمثانة"
+          }
+        ]
+      }
+    },
+    {
+      "query": "عظام",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0021",
+            "name": "جراحة العظام والمفاصل مع الدكتور لبيب المقطري"
+          },
+          {
+            "id": "SVC-0443",
+            "name": "عيادة جراحة العظام والمفاصل"
+          },
+          {
+            "id": "SVC-0301",
+            "name": "معاينة عيادة جراحة العظام والمفاصل"
+          }
+        ]
+      },
+      "after": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0021",
+            "name": "جراحة العظام والمفاصل مع الدكتور لبيب المقطري"
+          },
+          {
+            "id": "SVC-0443",
+            "name": "عيادة جراحة العظام والمفاصل"
+          },
+          {
+            "id": "SVC-0301",
+            "name": "معاينة عيادة جراحة العظام والمفاصل"
+          }
+        ]
+      }
+    },
+    {
+      "query": "ولادة",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0068",
+            "name": "أجور التخدير للولادة بدون ألم"
+          },
+          {
+            "id": "SVC-0447",
+            "name": "عيادة النساء والولادة"
+          },
+          {
+            "id": "SVC-0441",
+            "name": "عيادة طب الأطفال وحديثي الولادة"
+          }
+        ]
+      },
+      "after": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0068",
+            "name": "أجور التخدير للولادة بدون ألم"
+          },
+          {
+            "id": "SVC-0447",
+            "name": "عيادة النساء والولادة"
+          },
+          {
+            "id": "SVC-0441",
+            "name": "عيادة طب الأطفال وحديثي الولادة"
+          }
+        ]
+      }
+    },
+    {
+      "query": "تحليل",
+      "before": {
+        "type": "category",
+        "categoryHint": "diagnostics",
+        "firstThree": []
+      },
+      "after": {
+        "type": "category",
+        "categoryHint": "diagnostics",
+        "firstThree": []
+      }
+    },
+    {
+      "query": "اشعة",
+      "before": {
+        "type": "category",
+        "categoryHint": "diagnostics",
+        "firstThree": []
+      },
+      "after": {
+        "type": "category",
+        "categoryHint": "diagnostics",
+        "firstThree": []
+      }
+    },
+    {
+      "query": "عملية",
+      "before": {
+        "type": "category",
+        "categoryHint": "surgery",
+        "firstThree": []
+      },
+      "after": {
+        "type": "category",
+        "categoryHint": "surgery",
+        "firstThree": []
+      }
+    },
+    {
+      "query": "ممرض",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0401",
+            "name": "استدعاء فني أو ممرض"
+          },
+          {
+            "id": "SVC-0403",
+            "name": "خروج ممرض مع سيارة إسعاف إلى صنعاء"
+          },
+          {
+            "id": "SVC-0402",
+            "name": "خروج ممرض مع سيارة إسعاف داخل مدينة الحديدة"
+          }
+        ]
+      },
+      "after": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0401",
+            "name": "استدعاء فني أو ممرض"
+          },
+          {
+            "id": "SVC-0403",
+            "name": "خروج ممرض مع سيارة إسعاف إلى صنعاء"
+          },
+          {
+            "id": "SVC-0402",
+            "name": "خروج ممرض مع سيارة إسعاف داخل مدينة الحديدة"
+          }
+        ]
+      }
+    },
+    {
+      "query": "طوارئ",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0451",
+            "name": "أقسام الطوارئ"
+          },
+          {
+            "id": "SVC-0434",
+            "name": "غسيل العين (طوارئ)"
+          },
+          {
+            "id": "SVC-0431",
+            "name": "غسيل المعدة (طوارئ)"
+          }
+        ]
+      },
+      "after": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0451",
+            "name": "أقسام الطوارئ"
+          },
+          {
+            "id": "SVC-0434",
+            "name": "غسيل العين (طوارئ)"
+          },
+          {
+            "id": "SVC-0431",
+            "name": "غسيل المعدة (طوارئ)"
+          }
+        ]
+      }
+    },
+    {
+      "query": "فحص",
+      "before": {
+        "type": "category",
+        "categoryHint": "diagnostics",
+        "firstThree": []
+      },
+      "after": {
+        "type": "category",
+        "categoryHint": "diagnostics",
+        "firstThree": []
+      }
+    }
+  ],
+  "tests": [
+    {
+      "query": "هل يوجد أشعة مقطعية",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0061",
+            "name": "الأشعة المقطعية CT Scan للرأس والدماغ والجيوب الأنفية والرقبة والصدر والبطن والحوض والفقرات"
+          }
+        ]
+      },
+      "after": {
+        "type": "strong",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0061",
+            "name": "الأشعة المقطعية CT Scan للرأس والدماغ والجيوب الأنفية والرقبة والصدر والبطن والحوض والفقرات"
+          }
+        ]
+      }
+    },
+    {
+      "query": "أكثر من 12 جهاز تنفس صناعي",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة"
+          },
+          {
+            "id": "SVC-0406",
+            "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة"
+          },
+          {
+            "id": "SVC-0251",
+            "name": "جهاز مراقبة الضغط لمدة 24 ساعة (هولتر)"
+          }
+        ]
+      },
+      "after": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة"
+          },
+          {
+            "id": "SVC-0406",
+            "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة"
+          },
+          {
+            "id": "SVC-0251",
+            "name": "جهاز مراقبة الضغط لمدة 24 ساعة (هولتر)"
+          }
+        ]
+      }
+    },
+    {
+      "query": "أكثر من 35 جهاز مراقبة للعلامات الحيوية",
+      "before": {
+        "type": "strong",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0008",
+            "name": "أكثر من 35 جهاز مراقبة للعلامات الحيوية (Patient Monitors)"
+          }
+        ]
+      },
+      "after": {
+        "type": "strong",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0008",
+            "name": "أكثر من 35 جهاز مراقبة للعلامات الحيوية (Patient Monitors)"
+          }
+        ]
+      }
+    },
+    {
+      "query": "12 جهاز تنفس صناعي",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة"
+          },
+          {
+            "id": "SVC-0406",
+            "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة"
+          }
+        ]
+      },
+      "after": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة"
+          },
+          {
+            "id": "SVC-0406",
+            "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة"
+          }
+        ]
+      }
+    },
+    {
+      "query": "16 حاضنة أطفال",
+      "before": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0065",
+            "name": "وإيكو القلب ECHO للكبار والأطفال"
+          },
+          {
+            "id": "SVC-0245",
+            "name": "فحص القلب بالموجات فوق الصوتية (أطفال وعيوب قلب خلقية)"
+          },
+          {
+            "id": "SVC-0169",
+            "name": "أخصائي أطفال استقبال المولود"
+          }
+        ]
+      },
+      "after": {
+        "type": "weak",
+        "categoryHint": null,
+        "firstThree": [
+          {
+            "id": "SVC-0065",
+            "name": "وإيكو القلب ECHO للكبار والأطفال"
+          },
+          {
+            "id": "SVC-0245",
+            "name": "فحص القلب بالموجات فوق الصوتية (أطفال وعيوب قلب خلقية)"
+          },
+          {
+            "id": "SVC-0169",
+            "name": "أخصائي أطفال استقبال المولود"
+          }
+        ]
+      }
+    }
+  ]
+}
