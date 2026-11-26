@@ -14,7 +14,8 @@
       "group": "listed",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0001"
+      "url": null,
+      "searchOnly": true
     },
     {
       "id": "SVC-0002",
@@ -23,7 +24,8 @@
       "group": "listed",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0002"
+      "url": null,
+      "searchOnly": true
     },
     {
       "id": "SVC-0003",
@@ -32,7 +34,8 @@
       "group": "listed",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0003"
+      "url": null,
+      "searchOnly": true
     },
     {
       "id": "SVC-0004",
@@ -41,7 +44,8 @@
       "group": "listed",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0004"
+      "url": null,
+      "searchOnly": true
     },
     {
       "id": "SVC-0005",
@@ -50,7 +54,8 @@
       "group": "listed",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0005"
+      "url": null,
+      "searchOnly": true
     },
     {
       "id": "SVC-0006",
@@ -59,7 +64,8 @@
       "group": "listed",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0006"
+      "url": null,
+      "searchOnly": true
     },
     {
       "id": "SVC-0007",
@@ -68,7 +74,8 @@
       "group": "listed",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0007"
+      "url": null,
+      "searchOnly": true
     },
     {
       "id": "SVC-0008",
@@ -77,7 +84,8 @@
       "group": "listed",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0008"
+      "url": null,
+      "searchOnly": true
     },
     {
       "id": "SVC-0009",
@@ -86,7 +94,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0009"
+      "url": "services/surgery#svc-0009",
+      "searchOnly": false
     },
     {
       "id": "SVC-0010",
@@ -95,7 +104,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0010"
+      "url": "services/surgery#svc-0010",
+      "searchOnly": false
     },
     {
       "id": "SVC-0011",
@@ -104,7 +114,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0011"
+      "url": "services/surgery#svc-0011",
+      "searchOnly": false
     },
     {
       "id": "SVC-0012",
@@ -113,7 +124,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0012"
+      "url": "services/surgery#svc-0012",
+      "searchOnly": false
     },
     {
       "id": "SVC-0013",
@@ -122,7 +134,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0013"
+      "url": "services/surgery#svc-0013",
+      "searchOnly": false
     },
     {
       "id": "SVC-0014",
@@ -131,7 +144,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0014"
+      "url": "services/surgery#svc-0014",
+      "searchOnly": false
     },
     {
       "id": "SVC-0015",
@@ -140,7 +154,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0015"
+      "url": "services/surgery#svc-0015",
+      "searchOnly": false
     },
     {
       "id": "SVC-0016",
@@ -149,7 +164,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0016"
+      "url": "services/surgery#svc-0016",
+      "searchOnly": false
     },
     {
       "id": "SVC-0017",
@@ -158,7 +174,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0017"
+      "url": "services/surgery#svc-0017",
+      "searchOnly": false
     },
     {
       "id": "SVC-0018",
@@ -167,7 +184,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0018"
+      "url": "services/surgery#svc-0018",
+      "searchOnly": false
     },
     {
       "id": "SVC-0019",
@@ -176,7 +194,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0019"
+      "url": "services/surgery#svc-0019",
+      "searchOnly": false
     },
     {
       "id": "SVC-0020",
@@ -185,7 +204,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0020"
+      "url": "services/surgery#svc-0020",
+      "searchOnly": false
     },
     {
       "id": "SVC-0021",
@@ -194,7 +214,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0021"
+      "url": "services/surgery#svc-0021",
+      "searchOnly": false
     },
     {
       "id": "SVC-0022",
@@ -203,7 +224,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0022"
+      "url": "services/surgery#svc-0022",
+      "searchOnly": false
     },
     {
       "id": "SVC-0023",
@@ -212,7 +234,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0023"
+      "url": "services/surgery#svc-0023",
+      "searchOnly": false
     },
     {
       "id": "SVC-0024",
@@ -221,7 +244,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0024"
+      "url": "services/surgery#svc-0024",
+      "searchOnly": false
     },
     {
       "id": "SVC-0025",
@@ -230,7 +254,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0025"
+      "url": "services/surgery#svc-0025",
+      "searchOnly": false
     },
     {
       "id": "SVC-0026",
@@ -239,7 +264,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0026"
+      "url": "services/surgery#svc-0026",
+      "searchOnly": false
     },
     {
       "id": "SVC-0027",
@@ -248,7 +274,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0027"
+      "url": "services/surgery#svc-0027",
+      "searchOnly": false
     },
     {
       "id": "SVC-0028",
@@ -257,7 +284,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0028"
+      "url": "services/surgery#svc-0028",
+      "searchOnly": false
     },
     {
       "id": "SVC-0029",
@@ -266,7 +294,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0029"
+      "url": "services/surgery#svc-0029",
+      "searchOnly": false
     },
     {
       "id": "SVC-0030",
@@ -275,7 +304,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0030"
+      "url": "services/surgery#svc-0030",
+      "searchOnly": false
     },
     {
       "id": "SVC-0031",
@@ -284,7 +314,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0031"
+      "url": "services/surgery#svc-0031",
+      "searchOnly": false
     },
     {
       "id": "SVC-0032",
@@ -293,7 +324,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0032"
+      "url": "services/surgery#svc-0032",
+      "searchOnly": false
     },
     {
       "id": "SVC-0033",
@@ -302,7 +334,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0033"
+      "url": "services/surgery#svc-0033",
+      "searchOnly": false
     },
     {
       "id": "SVC-0034",
@@ -311,7 +344,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0034"
+      "url": "services/surgery#svc-0034",
+      "searchOnly": false
     },
     {
       "id": "SVC-0035",
@@ -320,7 +354,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0035"
+      "url": "services/surgery#svc-0035",
+      "searchOnly": false
     },
     {
       "id": "SVC-0036",
@@ -329,7 +364,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0036"
+      "url": "services/surgery#svc-0036",
+      "searchOnly": false
     },
     {
       "id": "SVC-0037",
@@ -338,7 +374,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0037"
+      "url": "services/surgery#svc-0037",
+      "searchOnly": false
     },
     {
       "id": "SVC-0038",
@@ -347,7 +384,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0038"
+      "url": "services/surgery#svc-0038",
+      "searchOnly": false
     },
     {
       "id": "SVC-0039",
@@ -356,7 +394,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0039"
+      "url": "services/surgery#svc-0039",
+      "searchOnly": false
     },
     {
       "id": "SVC-0040",
@@ -365,7 +404,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0040"
+      "url": "services/surgery#svc-0040",
+      "searchOnly": false
     },
     {
       "id": "SVC-0041",
@@ -374,7 +414,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0041"
+      "url": "services/surgery#svc-0041",
+      "searchOnly": false
     },
     {
       "id": "SVC-0042",
@@ -383,7 +424,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0042"
+      "url": "services/surgery#svc-0042",
+      "searchOnly": false
     },
     {
       "id": "SVC-0043",
@@ -392,7 +434,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0043"
+      "url": "services/surgery#svc-0043",
+      "searchOnly": false
     },
     {
       "id": "SVC-0044",
@@ -401,7 +444,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0044"
+      "url": "services/surgery#svc-0044",
+      "searchOnly": false
     },
     {
       "id": "SVC-0045",
@@ -410,7 +454,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0045"
+      "url": "services/surgery#svc-0045",
+      "searchOnly": false
     },
     {
       "id": "SVC-0046",
@@ -419,7 +464,8 @@
       "group": "surgery",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0046"
+      "url": "services/surgery#svc-0046",
+      "searchOnly": false
     },
     {
       "id": "SVC-0047",
@@ -428,7 +474,8 @@
       "group": "lab",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0047"
+      "url": "services/diagnostics#svc-0047",
+      "searchOnly": false
     },
     {
       "id": "SVC-0048",
@@ -437,7 +484,8 @@
       "group": "lab",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0048"
+      "url": "services/diagnostics#svc-0048",
+      "searchOnly": false
     },
     {
       "id": "SVC-0049",
@@ -446,7 +494,8 @@
       "group": "lab",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0049"
+      "url": "services/diagnostics#svc-0049",
+      "searchOnly": false
     },
     {
       "id": "SVC-0050",
@@ -455,7 +504,8 @@
       "group": "lab",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0050"
+      "url": "services/diagnostics#svc-0050",
+      "searchOnly": false
     },
     {
       "id": "SVC-0051",
@@ -464,7 +514,8 @@
       "group": "lab",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0051"
+      "url": "services/diagnostics#svc-0051",
+      "searchOnly": false
     },
     {
       "id": "SVC-0052",
@@ -473,7 +524,8 @@
       "group": "lab",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0052"
+      "url": "services/diagnostics#svc-0052",
+      "searchOnly": false
     },
     {
       "id": "SVC-0053",
@@ -482,7 +534,8 @@
       "group": "lab",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0053"
+      "url": "services/diagnostics#svc-0053",
+      "searchOnly": false
     },
     {
       "id": "SVC-0054",
@@ -491,7 +544,8 @@
       "group": "lab",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0054"
+      "url": "services/diagnostics#svc-0054",
+      "searchOnly": false
     },
     {
       "id": "SVC-0055",
@@ -500,7 +554,8 @@
       "group": "lab",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0055"
+      "url": "services/diagnostics#svc-0055",
+      "searchOnly": false
     },
     {
       "id": "SVC-0056",
@@ -509,7 +564,8 @@
       "group": "lab",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0056"
+      "url": "services/diagnostics#svc-0056",
+      "searchOnly": false
     },
     {
       "id": "SVC-0057",
@@ -518,7 +574,8 @@
       "group": "lab",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0057"
+      "url": "services/diagnostics#svc-0057",
+      "searchOnly": false
     },
     {
       "id": "SVC-0058",
@@ -527,7 +584,8 @@
       "group": "lab",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0058"
+      "url": "services/diagnostics#svc-0058",
+      "searchOnly": false
     },
     {
       "id": "SVC-0059",
@@ -536,7 +594,8 @@
       "group": "lab",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0059"
+      "url": "services/diagnostics#svc-0059",
+      "searchOnly": false
     },
     {
       "id": "SVC-0060",
@@ -545,7 +604,8 @@
       "group": "radiology",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0060"
+      "url": "services/diagnostics#svc-0060",
+      "searchOnly": false
     },
     {
       "id": "SVC-0061",
@@ -554,7 +614,8 @@
       "group": "radiology",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0061"
+      "url": "services/diagnostics#svc-0061",
+      "searchOnly": false
     },
     {
       "id": "SVC-0062",
@@ -563,7 +624,8 @@
       "group": "radiology",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0062"
+      "url": "services/diagnostics#svc-0062",
+      "searchOnly": false
     },
     {
       "id": "SVC-0063",
@@ -572,7 +634,8 @@
       "group": "radiology",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0063"
+      "url": "services/diagnostics#svc-0063",
+      "searchOnly": false
     },
     {
       "id": "SVC-0064",
@@ -581,7 +644,8 @@
       "group": "radiology",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0064"
+      "url": "services/diagnostics#svc-0064",
+      "searchOnly": false
     },
     {
       "id": "SVC-0065",
@@ -590,43 +654,48 @@
       "group": "radiology",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0065"
+      "url": "services/diagnostics#svc-0065",
+      "searchOnly": false
     },
     {
       "id": "SVC-0066",
       "name": "أجور إجراء التخدير (10% من سعر العملية الجراحية)",
       "category": "تخدير",
-      "group": "general",
+      "group": "listed",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0066"
+      "url": "services/surgery#svc-0066",
+      "searchOnly": false
     },
     {
       "id": "SVC-0067",
       "name": "أجور إجراء التخدير خارج العمليات",
       "category": "تخدير",
-      "group": "general",
+      "group": "listed",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0067"
+      "url": "services/surgery#svc-0067",
+      "searchOnly": false
     },
     {
       "id": "SVC-0068",
       "name": "أجور التخدير للولادة بدون ألم",
       "category": "تخدير",
-      "group": "general",
+      "group": "listed",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0068"
+      "url": "services/surgery#svc-0068",
+      "searchOnly": false
     },
     {
       "id": "SVC-0069",
       "name": "أجور التخدير الطرفي أو السفلي",
       "category": "تخدير",
-      "group": "general",
+      "group": "listed",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0069"
+      "url": "services/surgery#svc-0069",
+      "searchOnly": false
     },
     {
       "id": "SVC-0070",
@@ -635,7 +704,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0070"
+      "url": "services/dental#svc-0070",
+      "searchOnly": false
     },
     {
       "id": "SVC-0071",
@@ -644,7 +714,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0071"
+      "url": "services/dental#svc-0071",
+      "searchOnly": false
     },
     {
       "id": "SVC-0072",
@@ -653,7 +724,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0072"
+      "url": "services/dental#svc-0072",
+      "searchOnly": false
     },
     {
       "id": "SVC-0073",
@@ -662,7 +734,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0073"
+      "url": "services/dental#svc-0073",
+      "searchOnly": false
     },
     {
       "id": "SVC-0074",
@@ -671,7 +744,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0074"
+      "url": "services/dental#svc-0074",
+      "searchOnly": false
     },
     {
       "id": "SVC-0075",
@@ -680,7 +754,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0075"
+      "url": "services/dental#svc-0075",
+      "searchOnly": false
     },
     {
       "id": "SVC-0076",
@@ -689,7 +764,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0076"
+      "url": "services/dental#svc-0076",
+      "searchOnly": false
     },
     {
       "id": "SVC-0077",
@@ -698,7 +774,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0077"
+      "url": "services/dental#svc-0077",
+      "searchOnly": false
     },
     {
       "id": "SVC-0078",
@@ -707,7 +784,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0078"
+      "url": "services/dental#svc-0078",
+      "searchOnly": false
     },
     {
       "id": "SVC-0079",
@@ -716,7 +794,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0079"
+      "url": "services/dental#svc-0079",
+      "searchOnly": false
     },
     {
       "id": "SVC-0080",
@@ -725,7 +804,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0080"
+      "url": "services/dental#svc-0080",
+      "searchOnly": false
     },
     {
       "id": "SVC-0081",
@@ -734,7 +814,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0081"
+      "url": "services/dental#svc-0081",
+      "searchOnly": false
     },
     {
       "id": "SVC-0082",
@@ -743,7 +824,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0082"
+      "url": "services/dental#svc-0082",
+      "searchOnly": false
     },
     {
       "id": "SVC-0083",
@@ -752,7 +834,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0083"
+      "url": "services/dental#svc-0083",
+      "searchOnly": false
     },
     {
       "id": "SVC-0084",
@@ -761,7 +844,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0084"
+      "url": "services/dental#svc-0084",
+      "searchOnly": false
     },
     {
       "id": "SVC-0085",
@@ -770,7 +854,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0085"
+      "url": "services/dental#svc-0085",
+      "searchOnly": false
     },
     {
       "id": "SVC-0086",
@@ -779,7 +864,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0086"
+      "url": "services/dental#svc-0086",
+      "searchOnly": false
     },
     {
       "id": "SVC-0087",
@@ -788,7 +874,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0087"
+      "url": "services/dental#svc-0087",
+      "searchOnly": false
     },
     {
       "id": "SVC-0088",
@@ -797,7 +884,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0088"
+      "url": "services/dental#svc-0088",
+      "searchOnly": false
     },
     {
       "id": "SVC-0089",
@@ -806,7 +894,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0089"
+      "url": "services/dental#svc-0089",
+      "searchOnly": false
     },
     {
       "id": "SVC-0090",
@@ -815,7 +904,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0090"
+      "url": "services/dental#svc-0090",
+      "searchOnly": false
     },
     {
       "id": "SVC-0091",
@@ -824,7 +914,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0091"
+      "url": "services/dental#svc-0091",
+      "searchOnly": false
     },
     {
       "id": "SVC-0092",
@@ -833,7 +924,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0092"
+      "url": "services/dental#svc-0092",
+      "searchOnly": false
     },
     {
       "id": "SVC-0093",
@@ -842,7 +934,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0093"
+      "url": "services/dental#svc-0093",
+      "searchOnly": false
     },
     {
       "id": "SVC-0094",
@@ -851,7 +944,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0094"
+      "url": "services/dental#svc-0094",
+      "searchOnly": false
     },
     {
       "id": "SVC-0095",
@@ -860,7 +954,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0095"
+      "url": "services/dental#svc-0095",
+      "searchOnly": false
     },
     {
       "id": "SVC-0096",
@@ -869,7 +964,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0096"
+      "url": "services/dental#svc-0096",
+      "searchOnly": false
     },
     {
       "id": "SVC-0097",
@@ -878,7 +974,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0097"
+      "url": "services/dental#svc-0097",
+      "searchOnly": false
     },
     {
       "id": "SVC-0098",
@@ -887,7 +984,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0098"
+      "url": "services/dental#svc-0098",
+      "searchOnly": false
     },
     {
       "id": "SVC-0099",
@@ -896,7 +994,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0099"
+      "url": "services/dental#svc-0099",
+      "searchOnly": false
     },
     {
       "id": "SVC-0100",
@@ -905,7 +1004,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0100"
+      "url": "services/dental#svc-0100",
+      "searchOnly": false
     },
     {
       "id": "SVC-0101",
@@ -914,7 +1014,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0101"
+      "url": "services/dental#svc-0101",
+      "searchOnly": false
     },
     {
       "id": "SVC-0102",
@@ -923,7 +1024,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0102"
+      "url": "services/dental#svc-0102",
+      "searchOnly": false
     },
     {
       "id": "SVC-0103",
@@ -932,7 +1034,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0103"
+      "url": "services/dental#svc-0103",
+      "searchOnly": false
     },
     {
       "id": "SVC-0104",
@@ -941,7 +1044,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0104"
+      "url": "services/dental#svc-0104",
+      "searchOnly": false
     },
     {
       "id": "SVC-0105",
@@ -950,7 +1054,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0105"
+      "url": "services/dental#svc-0105",
+      "searchOnly": false
     },
     {
       "id": "SVC-0106",
@@ -959,7 +1064,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0106"
+      "url": "services/dental#svc-0106",
+      "searchOnly": false
     },
     {
       "id": "SVC-0107",
@@ -968,7 +1074,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0107"
+      "url": "services/dental#svc-0107",
+      "searchOnly": false
     },
     {
       "id": "SVC-0108",
@@ -977,7 +1084,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0108"
+      "url": "services/dental#svc-0108",
+      "searchOnly": false
     },
     {
       "id": "SVC-0109",
@@ -986,7 +1094,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0109"
+      "url": "services/dental#svc-0109",
+      "searchOnly": false
     },
     {
       "id": "SVC-0110",
@@ -995,7 +1104,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0110"
+      "url": "services/dental#svc-0110",
+      "searchOnly": false
     },
     {
       "id": "SVC-0111",
@@ -1004,7 +1114,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0111"
+      "url": "services/dental#svc-0111",
+      "searchOnly": false
     },
     {
       "id": "SVC-0112",
@@ -1013,7 +1124,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0112"
+      "url": "services/dental#svc-0112",
+      "searchOnly": false
     },
     {
       "id": "SVC-0113",
@@ -1022,7 +1134,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0113"
+      "url": "services/dental#svc-0113",
+      "searchOnly": false
     },
     {
       "id": "SVC-0114",
@@ -1031,7 +1144,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0114"
+      "url": "services/dental#svc-0114",
+      "searchOnly": false
     },
     {
       "id": "SVC-0115",
@@ -1040,7 +1154,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0115"
+      "url": "services/dental#svc-0115",
+      "searchOnly": false
     },
     {
       "id": "SVC-0116",
@@ -1049,7 +1164,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0116"
+      "url": "services/dental#svc-0116",
+      "searchOnly": false
     },
     {
       "id": "SVC-0117",
@@ -1058,7 +1174,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0117"
+      "url": "services/dental#svc-0117",
+      "searchOnly": false
     },
     {
       "id": "SVC-0118",
@@ -1067,7 +1184,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0118"
+      "url": "services/dental#svc-0118",
+      "searchOnly": false
     },
     {
       "id": "SVC-0119",
@@ -1076,7 +1194,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0119"
+      "url": "services/dental#svc-0119",
+      "searchOnly": false
     },
     {
       "id": "SVC-0120",
@@ -1085,7 +1204,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0120"
+      "url": "services/dental#svc-0120",
+      "searchOnly": false
     },
     {
       "id": "SVC-0121",
@@ -1094,7 +1214,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0121"
+      "url": "services/dental#svc-0121",
+      "searchOnly": false
     },
     {
       "id": "SVC-0122",
@@ -1103,7 +1224,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0122"
+      "url": "services/dental#svc-0122",
+      "searchOnly": false
     },
     {
       "id": "SVC-0123",
@@ -1112,7 +1234,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0123"
+      "url": "services/dental#svc-0123",
+      "searchOnly": false
     },
     {
       "id": "SVC-0124",
@@ -1121,7 +1244,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0124"
+      "url": "services/dental#svc-0124",
+      "searchOnly": false
     },
     {
       "id": "SVC-0125",
@@ -1130,7 +1254,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0125"
+      "url": "services/dental#svc-0125",
+      "searchOnly": false
     },
     {
       "id": "SVC-0126",
@@ -1139,7 +1264,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0126"
+      "url": "services/dental#svc-0126",
+      "searchOnly": false
     },
     {
       "id": "SVC-0127",
@@ -1148,7 +1274,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0127"
+      "url": "services/dental#svc-0127",
+      "searchOnly": false
     },
     {
       "id": "SVC-0128",
@@ -1157,7 +1284,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0128"
+      "url": "services/dental#svc-0128",
+      "searchOnly": false
     },
     {
       "id": "SVC-0129",
@@ -1166,7 +1294,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0129"
+      "url": "services/dental#svc-0129",
+      "searchOnly": false
     },
     {
       "id": "SVC-0130",
@@ -1175,7 +1304,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0130"
+      "url": "services/dental#svc-0130",
+      "searchOnly": false
     },
     {
       "id": "SVC-0131",
@@ -1184,7 +1314,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0131"
+      "url": "services/dental#svc-0131",
+      "searchOnly": false
     },
     {
       "id": "SVC-0132",
@@ -1193,7 +1324,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0132"
+      "url": "services/dental#svc-0132",
+      "searchOnly": false
     },
     {
       "id": "SVC-0133",
@@ -1202,7 +1334,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0133"
+      "url": "services/dental#svc-0133",
+      "searchOnly": false
     },
     {
       "id": "SVC-0134",
@@ -1211,7 +1344,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0134"
+      "url": "services/dental#svc-0134",
+      "searchOnly": false
     },
     {
       "id": "SVC-0135",
@@ -1220,7 +1354,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0135"
+      "url": "services/dental#svc-0135",
+      "searchOnly": false
     },
     {
       "id": "SVC-0136",
@@ -1229,7 +1364,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0136"
+      "url": "services/dental#svc-0136",
+      "searchOnly": false
     },
     {
       "id": "SVC-0137",
@@ -1238,7 +1374,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0137"
+      "url": "services/dental#svc-0137",
+      "searchOnly": false
     },
     {
       "id": "SVC-0138",
@@ -1247,7 +1384,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0138"
+      "url": "services/dental#svc-0138",
+      "searchOnly": false
     },
     {
       "id": "SVC-0139",
@@ -1256,7 +1394,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0139"
+      "url": "services/dental#svc-0139",
+      "searchOnly": false
     },
     {
       "id": "SVC-0140",
@@ -1265,7 +1404,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0140"
+      "url": "services/dental#svc-0140",
+      "searchOnly": false
     },
     {
       "id": "SVC-0141",
@@ -1274,7 +1414,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0141"
+      "url": "services/dental#svc-0141",
+      "searchOnly": false
     },
     {
       "id": "SVC-0142",
@@ -1283,7 +1424,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0142"
+      "url": "services/dental#svc-0142",
+      "searchOnly": false
     },
     {
       "id": "SVC-0143",
@@ -1292,7 +1434,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0143"
+      "url": "services/dental#svc-0143",
+      "searchOnly": false
     },
     {
       "id": "SVC-0144",
@@ -1301,7 +1444,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0144"
+      "url": "services/dental#svc-0144",
+      "searchOnly": false
     },
     {
       "id": "SVC-0145",
@@ -1310,7 +1454,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0145"
+      "url": "services/dental#svc-0145",
+      "searchOnly": false
     },
     {
       "id": "SVC-0146",
@@ -1319,7 +1464,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0146"
+      "url": "services/dental#svc-0146",
+      "searchOnly": false
     },
     {
       "id": "SVC-0147",
@@ -1328,7 +1474,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0147"
+      "url": "services/dental#svc-0147",
+      "searchOnly": false
     },
     {
       "id": "SVC-0148",
@@ -1337,7 +1484,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0148"
+      "url": "services/dental#svc-0148",
+      "searchOnly": false
     },
     {
       "id": "SVC-0149",
@@ -1346,7 +1494,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0149"
+      "url": "services/dental#svc-0149",
+      "searchOnly": false
     },
     {
       "id": "SVC-0150",
@@ -1355,7 +1504,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0150"
+      "url": "services/dental#svc-0150",
+      "searchOnly": false
     },
     {
       "id": "SVC-0151",
@@ -1364,7 +1514,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0151"
+      "url": "services/dental#svc-0151",
+      "searchOnly": false
     },
     {
       "id": "SVC-0152",
@@ -1373,7 +1524,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0152"
+      "url": "services/dental#svc-0152",
+      "searchOnly": false
     },
     {
       "id": "SVC-0153",
@@ -1382,7 +1534,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0153"
+      "url": "services/dental#svc-0153",
+      "searchOnly": false
     },
     {
       "id": "SVC-0154",
@@ -1391,7 +1544,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0154"
+      "url": "services/dental#svc-0154",
+      "searchOnly": false
     },
     {
       "id": "SVC-0155",
@@ -1400,7 +1554,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0155"
+      "url": "services/dental#svc-0155",
+      "searchOnly": false
     },
     {
       "id": "SVC-0156",
@@ -1409,7 +1564,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0156"
+      "url": "services/dental#svc-0156",
+      "searchOnly": false
     },
     {
       "id": "SVC-0157",
@@ -1418,7 +1574,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0157"
+      "url": "services/dental#svc-0157",
+      "searchOnly": false
     },
     {
       "id": "SVC-0158",
@@ -1427,7 +1584,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0158"
+      "url": "services/dental#svc-0158",
+      "searchOnly": false
     },
     {
       "id": "SVC-0159",
@@ -1436,7 +1594,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0159"
+      "url": "services/dental#svc-0159",
+      "searchOnly": false
     },
     {
       "id": "SVC-0160",
@@ -1445,7 +1604,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0160"
+      "url": "services/dental#svc-0160",
+      "searchOnly": false
     },
     {
       "id": "SVC-0161",
@@ -1454,7 +1614,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0161"
+      "url": "services/dental#svc-0161",
+      "searchOnly": false
     },
     {
       "id": "SVC-0162",
@@ -1463,7 +1624,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0162"
+      "url": "services/dental#svc-0162",
+      "searchOnly": false
     },
     {
       "id": "SVC-0163",
@@ -1472,7 +1634,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0163"
+      "url": "services/dental#svc-0163",
+      "searchOnly": false
     },
     {
       "id": "SVC-0164",
@@ -1481,7 +1644,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0164"
+      "url": "services/dental#svc-0164",
+      "searchOnly": false
     },
     {
       "id": "SVC-0165",
@@ -1490,7 +1654,8 @@
       "group": "dental",
       "slug": "dental",
       "rank": 2,
-      "url": "/services/dental#svc-0165"
+      "url": "services/dental#svc-0165",
+      "searchOnly": false
     },
     {
       "id": "SVC-0168",
@@ -1499,7 +1664,8 @@
       "group": "dental",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0168"
+      "url": "services/clinics-admin#svc-0168",
+      "searchOnly": false
     },
     {
       "id": "SVC-0169",
@@ -1508,7 +1674,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0169"
+      "url": "services/surgery#svc-0169",
+      "searchOnly": false
     },
     {
       "id": "SVC-0170",
@@ -1517,7 +1684,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0170"
+      "url": "services/clinics-admin#svc-0170",
+      "searchOnly": false
     },
     {
       "id": "SVC-0171",
@@ -1526,7 +1694,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0171"
+      "url": "services/clinics-admin#svc-0171",
+      "searchOnly": false
     },
     {
       "id": "SVC-0172",
@@ -1535,7 +1704,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0172"
+      "url": "services/surgery#svc-0172",
+      "searchOnly": false
     },
     {
       "id": "SVC-0173",
@@ -1544,7 +1714,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0173"
+      "url": "services/surgery#svc-0173",
+      "searchOnly": false
     },
     {
       "id": "SVC-0174",
@@ -1553,7 +1724,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0174"
+      "url": "services/surgery#svc-0174",
+      "searchOnly": false
     },
     {
       "id": "SVC-0175",
@@ -1562,7 +1734,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0175"
+      "url": "services/surgery#svc-0175",
+      "searchOnly": false
     },
     {
       "id": "SVC-0176",
@@ -1571,7 +1744,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0176"
+      "url": "services/surgery#svc-0176",
+      "searchOnly": false
     },
     {
       "id": "SVC-0177",
@@ -1580,7 +1754,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0177"
+      "url": "services/surgery#svc-0177",
+      "searchOnly": false
     },
     {
       "id": "SVC-0178",
@@ -1589,7 +1764,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0178"
+      "url": "services/surgery#svc-0178",
+      "searchOnly": false
     },
     {
       "id": "SVC-0179",
@@ -1598,7 +1774,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0179"
+      "url": "services/surgery#svc-0179",
+      "searchOnly": false
     },
     {
       "id": "SVC-0180",
@@ -1607,7 +1784,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0180"
+      "url": "services/surgery#svc-0180",
+      "searchOnly": false
     },
     {
       "id": "SVC-0181",
@@ -1616,7 +1794,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0181"
+      "url": "services/surgery#svc-0181",
+      "searchOnly": false
     },
     {
       "id": "SVC-0182",
@@ -1625,7 +1804,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0182"
+      "url": "services/surgery#svc-0182",
+      "searchOnly": false
     },
     {
       "id": "SVC-0183",
@@ -1634,7 +1814,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0183"
+      "url": "services/surgery#svc-0183",
+      "searchOnly": false
     },
     {
       "id": "SVC-0184",
@@ -1643,7 +1824,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0184"
+      "url": "services/surgery#svc-0184",
+      "searchOnly": false
     },
     {
       "id": "SVC-0185",
@@ -1652,7 +1834,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0185"
+      "url": "services/surgery#svc-0185",
+      "searchOnly": false
     },
     {
       "id": "SVC-0186",
@@ -1661,7 +1844,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0186"
+      "url": "services/surgery#svc-0186",
+      "searchOnly": false
     },
     {
       "id": "SVC-0187",
@@ -1670,7 +1854,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0187"
+      "url": "services/surgery#svc-0187",
+      "searchOnly": false
     },
     {
       "id": "SVC-0188",
@@ -1679,7 +1864,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0188"
+      "url": "services/surgery#svc-0188",
+      "searchOnly": false
     },
     {
       "id": "SVC-0189",
@@ -1688,7 +1874,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0189"
+      "url": "services/surgery#svc-0189",
+      "searchOnly": false
     },
     {
       "id": "SVC-0190",
@@ -1697,7 +1884,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0190"
+      "url": "services/surgery#svc-0190",
+      "searchOnly": false
     },
     {
       "id": "SVC-0191",
@@ -1706,7 +1894,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0191"
+      "url": "services/surgery#svc-0191",
+      "searchOnly": false
     },
     {
       "id": "SVC-0192",
@@ -1715,7 +1904,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0192"
+      "url": "services/surgery#svc-0192",
+      "searchOnly": false
     },
     {
       "id": "SVC-0193",
@@ -1724,7 +1914,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0193"
+      "url": "services/surgery#svc-0193",
+      "searchOnly": false
     },
     {
       "id": "SVC-0194",
@@ -1733,7 +1924,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0194"
+      "url": "services/surgery#svc-0194",
+      "searchOnly": false
     },
     {
       "id": "SVC-0195",
@@ -1742,7 +1934,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0195"
+      "url": "services/surgery#svc-0195",
+      "searchOnly": false
     },
     {
       "id": "SVC-0196",
@@ -1751,7 +1944,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0196"
+      "url": "services/surgery#svc-0196",
+      "searchOnly": false
     },
     {
       "id": "SVC-0197",
@@ -1760,7 +1954,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0197"
+      "url": "services/surgery#svc-0197",
+      "searchOnly": false
     },
     {
       "id": "SVC-0198",
@@ -1769,7 +1964,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0198"
+      "url": "services/surgery#svc-0198",
+      "searchOnly": false
     },
     {
       "id": "SVC-0199",
@@ -1778,7 +1974,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0199"
+      "url": "services/surgery#svc-0199",
+      "searchOnly": false
     },
     {
       "id": "SVC-0200",
@@ -1787,7 +1984,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0200"
+      "url": "services/clinics-admin#svc-0200",
+      "searchOnly": false
     },
     {
       "id": "SVC-0201",
@@ -1796,7 +1994,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0201"
+      "url": "services/clinics-admin#svc-0201",
+      "searchOnly": false
     },
     {
       "id": "SVC-0202",
@@ -1805,7 +2004,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0202"
+      "url": "services/physio#svc-0202",
+      "searchOnly": false
     },
     {
       "id": "SVC-0203",
@@ -1814,7 +2014,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0203"
+      "url": "services/physio#svc-0203",
+      "searchOnly": false
     },
     {
       "id": "SVC-0204",
@@ -1823,7 +2024,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0204"
+      "url": "services/physio#svc-0204",
+      "searchOnly": false
     },
     {
       "id": "SVC-0205",
@@ -1832,7 +2034,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0205"
+      "url": "services/physio#svc-0205",
+      "searchOnly": false
     },
     {
       "id": "SVC-0206",
@@ -1841,7 +2044,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0206"
+      "url": "services/physio#svc-0206",
+      "searchOnly": false
     },
     {
       "id": "SVC-0207",
@@ -1850,7 +2054,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0207"
+      "url": "services/physio#svc-0207",
+      "searchOnly": false
     },
     {
       "id": "SVC-0208",
@@ -1859,7 +2064,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0208"
+      "url": "services/physio#svc-0208",
+      "searchOnly": false
     },
     {
       "id": "SVC-0209",
@@ -1868,7 +2074,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0209"
+      "url": "services/physio#svc-0209",
+      "searchOnly": false
     },
     {
       "id": "SVC-0210",
@@ -1877,7 +2084,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0210"
+      "url": "services/physio#svc-0210",
+      "searchOnly": false
     },
     {
       "id": "SVC-0211",
@@ -1886,7 +2094,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0211"
+      "url": "services/physio#svc-0211",
+      "searchOnly": false
     },
     {
       "id": "SVC-0212",
@@ -1895,7 +2104,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0212"
+      "url": "services/physio#svc-0212",
+      "searchOnly": false
     },
     {
       "id": "SVC-0213",
@@ -1904,7 +2114,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0213"
+      "url": "services/physio#svc-0213",
+      "searchOnly": false
     },
     {
       "id": "SVC-0214",
@@ -1913,7 +2124,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0214"
+      "url": "services/physio#svc-0214",
+      "searchOnly": false
     },
     {
       "id": "SVC-0215",
@@ -1922,7 +2134,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0215"
+      "url": "services/physio#svc-0215",
+      "searchOnly": false
     },
     {
       "id": "SVC-0216",
@@ -1931,7 +2144,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0216"
+      "url": "services/physio#svc-0216",
+      "searchOnly": false
     },
     {
       "id": "SVC-0217",
@@ -1940,7 +2154,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0217"
+      "url": "services/physio#svc-0217",
+      "searchOnly": false
     },
     {
       "id": "SVC-0218",
@@ -1949,7 +2164,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0218"
+      "url": "services/physio#svc-0218",
+      "searchOnly": false
     },
     {
       "id": "SVC-0219",
@@ -1958,7 +2174,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0219"
+      "url": "services/physio#svc-0219",
+      "searchOnly": false
     },
     {
       "id": "SVC-0220",
@@ -1967,7 +2184,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0220"
+      "url": "services/physio#svc-0220",
+      "searchOnly": false
     },
     {
       "id": "SVC-0221",
@@ -1976,7 +2194,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0221"
+      "url": "services/physio#svc-0221",
+      "searchOnly": false
     },
     {
       "id": "SVC-0222",
@@ -1985,7 +2204,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0222"
+      "url": "services/physio#svc-0222",
+      "searchOnly": false
     },
     {
       "id": "SVC-0223",
@@ -1994,7 +2214,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0223"
+      "url": "services/physio#svc-0223",
+      "searchOnly": false
     },
     {
       "id": "SVC-0224",
@@ -2003,7 +2224,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0224"
+      "url": "services/physio#svc-0224",
+      "searchOnly": false
     },
     {
       "id": "SVC-0225",
@@ -2012,7 +2234,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0225"
+      "url": "services/physio#svc-0225",
+      "searchOnly": false
     },
     {
       "id": "SVC-0226",
@@ -2021,7 +2244,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0226"
+      "url": "services/physio#svc-0226",
+      "searchOnly": false
     },
     {
       "id": "SVC-0227",
@@ -2030,7 +2254,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0227"
+      "url": "services/physio#svc-0227",
+      "searchOnly": false
     },
     {
       "id": "SVC-0228",
@@ -2039,7 +2264,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0228"
+      "url": "services/physio#svc-0228",
+      "searchOnly": false
     },
     {
       "id": "SVC-0229",
@@ -2048,7 +2274,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0229"
+      "url": "services/physio#svc-0229",
+      "searchOnly": false
     },
     {
       "id": "SVC-0230",
@@ -2057,7 +2284,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0230"
+      "url": "services/physio#svc-0230",
+      "searchOnly": false
     },
     {
       "id": "SVC-0231",
@@ -2066,7 +2294,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0231"
+      "url": "services/physio#svc-0231",
+      "searchOnly": false
     },
     {
       "id": "SVC-0232",
@@ -2075,7 +2304,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0232"
+      "url": "services/physio#svc-0232",
+      "searchOnly": false
     },
     {
       "id": "SVC-0233",
@@ -2084,7 +2314,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0233"
+      "url": "services/physio#svc-0233",
+      "searchOnly": false
     },
     {
       "id": "SVC-0234",
@@ -2093,7 +2324,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0234"
+      "url": "services/physio#svc-0234",
+      "searchOnly": false
     },
     {
       "id": "SVC-0235",
@@ -2102,7 +2334,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0235"
+      "url": "services/physio#svc-0235",
+      "searchOnly": false
     },
     {
       "id": "SVC-0236",
@@ -2111,7 +2344,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0236"
+      "url": "services/physio#svc-0236",
+      "searchOnly": false
     },
     {
       "id": "SVC-0237",
@@ -2120,7 +2354,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0237"
+      "url": "services/physio#svc-0237",
+      "searchOnly": false
     },
     {
       "id": "SVC-0239",
@@ -2129,7 +2364,8 @@
       "group": "general",
       "slug": "physio",
       "rank": 5,
-      "url": "/services/physio#svc-0239"
+      "url": "services/physio#svc-0239",
+      "searchOnly": false
     },
     {
       "id": "SVC-0241",
@@ -2138,7 +2374,8 @@
       "group": "general",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0241"
+      "url": "services/diagnostics#svc-0241",
+      "searchOnly": false
     },
     {
       "id": "SVC-0242",
@@ -2147,7 +2384,8 @@
       "group": "general",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0242"
+      "url": "services/diagnostics#svc-0242",
+      "searchOnly": false
     },
     {
       "id": "SVC-0243",
@@ -2156,7 +2394,8 @@
       "group": "general",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0243"
+      "url": "services/diagnostics#svc-0243",
+      "searchOnly": false
     },
     {
       "id": "SVC-0244",
@@ -2165,7 +2404,8 @@
       "group": "general",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0244"
+      "url": "services/diagnostics#svc-0244",
+      "searchOnly": false
     },
     {
       "id": "SVC-0245",
@@ -2174,7 +2414,8 @@
       "group": "radiology",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0245"
+      "url": "services/diagnostics#svc-0245",
+      "searchOnly": false
     },
     {
       "id": "SVC-0246",
@@ -2183,7 +2424,8 @@
       "group": "radiology",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0246"
+      "url": "services/diagnostics#svc-0246",
+      "searchOnly": false
     },
     {
       "id": "SVC-0247",
@@ -2192,7 +2434,8 @@
       "group": "radiology",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0247"
+      "url": "services/diagnostics#svc-0247",
+      "searchOnly": false
     },
     {
       "id": "SVC-0248",
@@ -2201,7 +2444,8 @@
       "group": "general",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0248"
+      "url": "services/diagnostics#svc-0248",
+      "searchOnly": false
     },
     {
       "id": "SVC-0249",
@@ -2210,7 +2454,8 @@
       "group": "general",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0249"
+      "url": "services/diagnostics#svc-0249",
+      "searchOnly": false
     },
     {
       "id": "SVC-0250",
@@ -2219,7 +2464,8 @@
       "group": "general",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0250"
+      "url": "services/diagnostics#svc-0250",
+      "searchOnly": false
     },
     {
       "id": "SVC-0251",
@@ -2228,7 +2474,8 @@
       "group": "general",
       "slug": "diagnostics",
       "rank": 0,
-      "url": "/services/diagnostics#svc-0251"
+      "url": "services/diagnostics#svc-0251",
+      "searchOnly": false
     },
     {
       "id": "SVC-0252",
@@ -2237,7 +2484,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0252"
+      "url": "services/clinics-admin#svc-0252",
+      "searchOnly": false
     },
     {
       "id": "SVC-0253",
@@ -2246,7 +2494,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0253"
+      "url": "services/clinics-admin#svc-0253",
+      "searchOnly": false
     },
     {
       "id": "SVC-0254",
@@ -2255,7 +2504,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0254"
+      "url": "services/clinics-admin#svc-0254",
+      "searchOnly": false
     },
     {
       "id": "SVC-0255",
@@ -2264,7 +2514,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0255"
+      "url": "services/ent#svc-0255",
+      "searchOnly": false
     },
     {
       "id": "SVC-0256",
@@ -2273,7 +2524,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0256"
+      "url": "services/ent#svc-0256",
+      "searchOnly": false
     },
     {
       "id": "SVC-0257",
@@ -2282,7 +2534,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0257"
+      "url": "services/ent#svc-0257",
+      "searchOnly": false
     },
     {
       "id": "SVC-0258",
@@ -2291,7 +2544,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0258"
+      "url": "services/ent#svc-0258",
+      "searchOnly": false
     },
     {
       "id": "SVC-0259",
@@ -2300,7 +2554,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0259"
+      "url": "services/ent#svc-0259",
+      "searchOnly": false
     },
     {
       "id": "SVC-0260",
@@ -2309,7 +2564,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0260"
+      "url": "services/ent#svc-0260",
+      "searchOnly": false
     },
     {
       "id": "SVC-0261",
@@ -2318,7 +2574,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0261"
+      "url": "services/ent#svc-0261",
+      "searchOnly": false
     },
     {
       "id": "SVC-0262",
@@ -2327,7 +2584,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0262"
+      "url": "services/ent#svc-0262",
+      "searchOnly": false
     },
     {
       "id": "SVC-0263",
@@ -2336,7 +2594,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0263"
+      "url": "services/ent#svc-0263",
+      "searchOnly": false
     },
     {
       "id": "SVC-0265",
@@ -2345,7 +2604,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0265"
+      "url": "services/ent#svc-0265",
+      "searchOnly": false
     },
     {
       "id": "SVC-0266",
@@ -2354,7 +2614,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0266"
+      "url": "services/ent#svc-0266",
+      "searchOnly": false
     },
     {
       "id": "SVC-0267",
@@ -2363,7 +2624,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0267"
+      "url": "services/ent#svc-0267",
+      "searchOnly": false
     },
     {
       "id": "SVC-0268",
@@ -2372,7 +2634,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0268"
+      "url": "services/ent#svc-0268",
+      "searchOnly": false
     },
     {
       "id": "SVC-0269",
@@ -2381,7 +2644,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0269"
+      "url": "services/ent#svc-0269",
+      "searchOnly": false
     },
     {
       "id": "SVC-0270",
@@ -2390,7 +2654,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0270"
+      "url": "services/ent#svc-0270",
+      "searchOnly": false
     },
     {
       "id": "SVC-0271",
@@ -2399,7 +2664,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0271"
+      "url": "services/ent#svc-0271",
+      "searchOnly": false
     },
     {
       "id": "SVC-0272",
@@ -2408,7 +2674,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0272"
+      "url": "services/ent#svc-0272",
+      "searchOnly": false
     },
     {
       "id": "SVC-0273",
@@ -2417,7 +2684,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0273"
+      "url": "services/ent#svc-0273",
+      "searchOnly": false
     },
     {
       "id": "SVC-0274",
@@ -2426,7 +2694,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0274"
+      "url": "services/ent#svc-0274",
+      "searchOnly": false
     },
     {
       "id": "SVC-0275",
@@ -2435,7 +2704,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0275"
+      "url": "services/ent#svc-0275",
+      "searchOnly": false
     },
     {
       "id": "SVC-0276",
@@ -2444,7 +2714,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0276"
+      "url": "services/ent#svc-0276",
+      "searchOnly": false
     },
     {
       "id": "SVC-0277",
@@ -2453,7 +2724,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0277"
+      "url": "services/ent#svc-0277",
+      "searchOnly": false
     },
     {
       "id": "SVC-0278",
@@ -2462,7 +2734,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0278"
+      "url": "services/ent#svc-0278",
+      "searchOnly": false
     },
     {
       "id": "SVC-0279",
@@ -2471,7 +2744,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0279"
+      "url": "services/ent#svc-0279",
+      "searchOnly": false
     },
     {
       "id": "SVC-0280",
@@ -2480,7 +2754,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0280"
+      "url": "services/ent#svc-0280",
+      "searchOnly": false
     },
     {
       "id": "SVC-0281",
@@ -2489,7 +2764,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0281"
+      "url": "services/ent#svc-0281",
+      "searchOnly": false
     },
     {
       "id": "SVC-0282",
@@ -2498,7 +2774,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0282"
+      "url": "services/ent#svc-0282",
+      "searchOnly": false
     },
     {
       "id": "SVC-0283",
@@ -2507,7 +2784,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0283"
+      "url": "services/ent#svc-0283",
+      "searchOnly": false
     },
     {
       "id": "SVC-0284",
@@ -2516,7 +2794,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0284"
+      "url": "services/ent#svc-0284",
+      "searchOnly": false
     },
     {
       "id": "SVC-0285",
@@ -2525,7 +2804,8 @@
       "group": "general",
       "slug": "ent",
       "rank": 4,
-      "url": "/services/ent#svc-0285"
+      "url": "services/ent#svc-0285",
+      "searchOnly": false
     },
     {
       "id": "SVC-0286",
@@ -2534,7 +2814,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0286"
+      "url": "services/clinics-admin#svc-0286",
+      "searchOnly": false
     },
     {
       "id": "SVC-0287",
@@ -2543,7 +2824,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0287"
+      "url": "services/clinics-admin#svc-0287",
+      "searchOnly": false
     },
     {
       "id": "SVC-0288",
@@ -2552,7 +2834,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0288"
+      "url": "services/surgery#svc-0288",
+      "searchOnly": false
     },
     {
       "id": "SVC-0289",
@@ -2561,7 +2844,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0289"
+      "url": "services/surgery#svc-0289",
+      "searchOnly": false
     },
     {
       "id": "SVC-0290",
@@ -2570,7 +2854,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0290"
+      "url": "services/surgery#svc-0290",
+      "searchOnly": false
     },
     {
       "id": "SVC-0291",
@@ -2579,7 +2864,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0291"
+      "url": "services/surgery#svc-0291",
+      "searchOnly": false
     },
     {
       "id": "SVC-0292",
@@ -2588,7 +2874,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0292"
+      "url": "services/surgery#svc-0292",
+      "searchOnly": false
     },
     {
       "id": "SVC-0293",
@@ -2597,7 +2884,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0293"
+      "url": "services/surgery#svc-0293",
+      "searchOnly": false
     },
     {
       "id": "SVC-0294",
@@ -2606,7 +2894,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0294"
+      "url": "services/surgery#svc-0294",
+      "searchOnly": false
     },
     {
       "id": "SVC-0295",
@@ -2615,7 +2904,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0295"
+      "url": "services/surgery#svc-0295",
+      "searchOnly": false
     },
     {
       "id": "SVC-0296",
@@ -2624,7 +2914,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0296"
+      "url": "services/surgery#svc-0296",
+      "searchOnly": false
     },
     {
       "id": "SVC-0297",
@@ -2633,7 +2924,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0297"
+      "url": "services/surgery#svc-0297",
+      "searchOnly": false
     },
     {
       "id": "SVC-0298",
@@ -2642,7 +2934,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0298"
+      "url": "services/surgery#svc-0298",
+      "searchOnly": false
     },
     {
       "id": "SVC-0299",
@@ -2651,7 +2944,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0299"
+      "url": "services/surgery#svc-0299",
+      "searchOnly": false
     },
     {
       "id": "SVC-0300",
@@ -2660,7 +2954,8 @@
       "group": "general",
       "slug": "surgery",
       "rank": 1,
-      "url": "/services/surgery#svc-0300"
+      "url": "services/surgery#svc-0300",
+      "searchOnly": false
     },
     {
       "id": "SVC-0301",
@@ -2669,7 +2964,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0301"
+      "url": "services/clinics-admin#svc-0301",
+      "searchOnly": false
     },
     {
       "id": "SVC-0302",
@@ -2678,7 +2974,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0302"
+      "url": "services/clinics-admin#svc-0302",
+      "searchOnly": false
     },
     {
       "id": "SVC-0303",
@@ -2687,7 +2984,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0303"
+      "url": "services/clinics-admin#svc-0303",
+      "searchOnly": false
     },
     {
       "id": "SVC-0304",
@@ -2696,7 +2994,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0304"
+      "url": "services/clinics-admin#svc-0304",
+      "searchOnly": false
     },
     {
       "id": "SVC-0305",
@@ -2705,7 +3004,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0305"
+      "url": "services/women#svc-0305",
+      "searchOnly": false
     },
     {
       "id": "SVC-0306",
@@ -2714,7 +3014,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0306"
+      "url": "services/women#svc-0306",
+      "searchOnly": false
     },
     {
       "id": "SVC-0307",
@@ -2723,7 +3024,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0307"
+      "url": "services/women#svc-0307",
+      "searchOnly": false
     },
     {
       "id": "SVC-0308",
@@ -2732,7 +3034,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0308"
+      "url": "services/women#svc-0308",
+      "searchOnly": false
     },
     {
       "id": "SVC-0309",
@@ -2741,7 +3044,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0309"
+      "url": "services/women#svc-0309",
+      "searchOnly": false
     },
     {
       "id": "SVC-0310",
@@ -2750,7 +3054,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0310"
+      "url": "services/women#svc-0310",
+      "searchOnly": false
     },
     {
       "id": "SVC-0311",
@@ -2759,7 +3064,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0311"
+      "url": "services/women#svc-0311",
+      "searchOnly": false
     },
     {
       "id": "SVC-0312",
@@ -2768,7 +3074,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0312"
+      "url": "services/women#svc-0312",
+      "searchOnly": false
     },
     {
       "id": "SVC-0313",
@@ -2777,7 +3084,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0313"
+      "url": "services/women#svc-0313",
+      "searchOnly": false
     },
     {
       "id": "SVC-0314",
@@ -2786,7 +3094,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0314"
+      "url": "services/women#svc-0314",
+      "searchOnly": false
     },
     {
       "id": "SVC-0315",
@@ -2795,7 +3104,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0315"
+      "url": "services/women#svc-0315",
+      "searchOnly": false
     },
     {
       "id": "SVC-0317",
@@ -2804,7 +3114,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0317"
+      "url": "services/women#svc-0317",
+      "searchOnly": false
     },
     {
       "id": "SVC-0318",
@@ -2813,7 +3124,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0318"
+      "url": "services/women#svc-0318",
+      "searchOnly": false
     },
     {
       "id": "SVC-0319",
@@ -2822,7 +3134,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0319"
+      "url": "services/women#svc-0319",
+      "searchOnly": false
     },
     {
       "id": "SVC-0320",
@@ -2831,7 +3144,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0320"
+      "url": "services/women#svc-0320",
+      "searchOnly": false
     },
     {
       "id": "SVC-0321",
@@ -2840,7 +3154,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0321"
+      "url": "services/women#svc-0321",
+      "searchOnly": false
     },
     {
       "id": "SVC-0322",
@@ -2849,7 +3164,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0322"
+      "url": "services/women#svc-0322",
+      "searchOnly": false
     },
     {
       "id": "SVC-0323",
@@ -2858,7 +3174,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0323"
+      "url": "services/women#svc-0323",
+      "searchOnly": false
     },
     {
       "id": "SVC-0326",
@@ -2867,7 +3184,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0326"
+      "url": "services/women#svc-0326",
+      "searchOnly": false
     },
     {
       "id": "SVC-0327",
@@ -2876,7 +3194,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0327"
+      "url": "services/women#svc-0327",
+      "searchOnly": false
     },
     {
       "id": "SVC-0328",
@@ -2885,7 +3204,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0328"
+      "url": "services/women#svc-0328",
+      "searchOnly": false
     },
     {
       "id": "SVC-0329",
@@ -2894,7 +3214,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0329"
+      "url": "services/women#svc-0329",
+      "searchOnly": false
     },
     {
       "id": "SVC-0330",
@@ -2903,7 +3224,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0330"
+      "url": "services/women#svc-0330",
+      "searchOnly": false
     },
     {
       "id": "SVC-0331",
@@ -2912,7 +3234,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0331"
+      "url": "services/women#svc-0331",
+      "searchOnly": false
     },
     {
       "id": "SVC-0332",
@@ -2921,7 +3244,8 @@
       "group": "general",
       "slug": "women",
       "rank": 3,
-      "url": "/services/women#svc-0332"
+      "url": "services/women#svc-0332",
+      "searchOnly": false
     },
     {
       "id": "SVC-0333",
@@ -2930,7 +3254,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0333"
+      "url": "services/clinics-admin#svc-0333",
+      "searchOnly": false
     },
     {
       "id": "SVC-0334",
@@ -2939,43 +3264,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0334"
-    },
-    {
-      "id": "SVC-0335",
-      "name": "متابعة يومية للمريض من الأخصائي المعالج",
-      "category": "خدمات إدارية وتقارير",
-      "group": "listed",
-      "slug": "clinics-admin",
-      "rank": 7,
-      "url": "/services/clinics-admin#svc-0335"
-    },
-    {
-      "id": "SVC-0336",
-      "name": "سحب السائل الشوكي (C.S.F) تشخيصي",
-      "category": "خدمات إدارية وتقارير",
-      "group": "listed",
-      "slug": "clinics-admin",
-      "rank": 7,
-      "url": "/services/clinics-admin#svc-0336"
-    },
-    {
-      "id": "SVC-0338",
-      "name": "استدعاء أخصائي (جراحة النساء والولادة، الباطنة العامة والكبد، الباطنة العامة والقلب، أخصائي الأطفال، الجراحة العامة، جراحة العظام والمفاصل، جراحة الأنف والأذن والحنجرة، أمراض الكلى، المسالك البولية، جراحة المخ والأعصاب والعمود الفقري، جراحة العيون، طب الأسنان، الجلدية، العلاج الطبيعي والطب الرياضي، الأشعة التشخيصية، التخدير والعناية المركزة)",
-      "category": "خدمات إدارية وتقارير",
-      "group": "listed",
-      "slug": "clinics-admin",
-      "rank": 7,
-      "url": "/services/clinics-admin#svc-0338"
-    },
-    {
-      "id": "SVC-0339",
-      "name": "استدعاء أو استشارة طبية أخصائي خارجي أثناء الدوام أو خارج الدوام",
-      "category": "خدمات إدارية وتقارير",
-      "group": "listed",
-      "slug": "clinics-admin",
-      "rank": 7,
-      "url": "/services/clinics-admin#svc-0339"
+      "url": "services/clinics-admin#svc-0334",
+      "searchOnly": false
     },
     {
       "id": "SVC-0340",
@@ -2984,88 +3274,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0340"
-    },
-    {
-      "id": "SVC-0341",
-      "name": "خروج طبيب مقيم للمنزل",
-      "category": "خدمات إدارية وتقارير",
-      "group": "listed",
-      "slug": "clinics-admin",
-      "rank": 7,
-      "url": "/services/clinics-admin#svc-0341"
-    },
-    {
-      "id": "SVC-0342",
-      "name": "خروج أخصائي للمنازل",
-      "category": "خدمات إدارية وتقارير",
-      "group": "listed",
-      "slug": "clinics-admin",
-      "rank": 7,
-      "url": "/services/clinics-admin#svc-0342"
-    },
-    {
-      "id": "SVC-0343",
-      "name": "تقرير طبي للمريض (عربي وإنجليزي)",
-      "category": "خدمات إدارية وتقارير",
-      "group": "listed",
-      "slug": "clinics-admin",
-      "rank": 7,
-      "url": "/services/clinics-admin#svc-0343"
-    },
-    {
-      "id": "SVC-0344",
-      "name": "تقرير جنائي",
-      "category": "خدمات إدارية وتقارير",
-      "group": "listed",
-      "slug": "clinics-admin",
-      "rank": 7,
-      "url": "/services/clinics-admin#svc-0344"
-    },
-    {
-      "id": "SVC-0345",
-      "name": "إفادة طبية",
-      "category": "خدمات إدارية وتقارير",
-      "group": "listed",
-      "slug": "clinics-admin",
-      "rank": 7,
-      "url": "/services/clinics-admin#svc-0345"
-    },
-    {
-      "id": "SVC-0347",
-      "name": "قراءة تقرير أشعة مقطعية (CT) خارجية",
-      "category": "خدمات إدارية وتقارير",
-      "group": "listed",
-      "slug": "clinics-admin",
-      "rank": 7,
-      "url": "/services/clinics-admin#svc-0347"
-    },
-    {
-      "id": "SVC-0348",
-      "name": "قراءة تقرير أشعة رنين مغناطيسي (MRI) خارجية",
-      "category": "خدمات إدارية وتقارير",
-      "group": "listed",
-      "slug": "clinics-admin",
-      "rank": 7,
-      "url": "/services/clinics-admin#svc-0348"
-    },
-    {
-      "id": "SVC-0349",
-      "name": "تقرير بدل فاقد لتخطيط الدماغ",
-      "category": "خدمات إدارية وتقارير",
-      "group": "listed",
-      "slug": "clinics-admin",
-      "rank": 7,
-      "url": "/services/clinics-admin#svc-0349"
-    },
-    {
-      "id": "SVC-0350",
-      "name": "تقرير كشف حساب تفصيلي",
-      "category": "خدمات إدارية وتقارير",
-      "group": "listed",
-      "slug": "clinics-admin",
-      "rank": 7,
-      "url": "/services/clinics-admin#svc-0350"
+      "url": "services/clinics-admin#svc-0340",
+      "searchOnly": false
     },
     {
       "id": "SVC-0351",
@@ -3074,7 +3284,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0351"
+      "url": "services/emergency#svc-0351",
+      "searchOnly": false
     },
     {
       "id": "SVC-0352",
@@ -3083,7 +3294,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0352"
+      "url": "services/emergency#svc-0352",
+      "searchOnly": false
     },
     {
       "id": "SVC-0353",
@@ -3092,7 +3304,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0353"
+      "url": "services/emergency#svc-0353",
+      "searchOnly": false
     },
     {
       "id": "SVC-0354",
@@ -3101,7 +3314,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0354"
+      "url": "services/emergency#svc-0354",
+      "searchOnly": false
     },
     {
       "id": "SVC-0355",
@@ -3110,7 +3324,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0355"
+      "url": "services/emergency#svc-0355",
+      "searchOnly": false
     },
     {
       "id": "SVC-0356",
@@ -3119,7 +3334,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0356"
+      "url": "services/emergency#svc-0356",
+      "searchOnly": false
     },
     {
       "id": "SVC-0357",
@@ -3128,7 +3344,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0357"
+      "url": "services/emergency#svc-0357",
+      "searchOnly": false
     },
     {
       "id": "SVC-0358",
@@ -3137,16 +3354,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0358"
-    },
-    {
-      "id": "SVC-0359",
-      "name": "ملف دخول الطوارئ العامة",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0359"
+      "url": "services/emergency#svc-0358",
+      "searchOnly": false
     },
     {
       "id": "SVC-0360",
@@ -3155,61 +3364,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0360"
-    },
-    {
-      "id": "SVC-0361",
-      "name": "ملف دخول الطوارئ التوليدية",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0361"
-    },
-    {
-      "id": "SVC-0362",
-      "name": "أجور سرير إضافي",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0362"
-    },
-    {
-      "id": "SVC-0363",
-      "name": "أجور تغسيل الموتى فقط",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0363"
-    },
-    {
-      "id": "SVC-0364",
-      "name": "أجور تكفين الموتى فقط",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0364"
-    },
-    {
-      "id": "SVC-0365",
-      "name": "أجور تغسيل وتكفين ودفن جزء مبتور",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0365"
-    },
-    {
-      "id": "SVC-0366",
-      "name": "أجور ثلاجة الموتى لكل يوم",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0366"
+      "url": "services/emergency#svc-0360",
+      "searchOnly": false
     },
     {
       "id": "SVC-0367",
@@ -3218,70 +3374,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0367"
-    },
-    {
-      "id": "SVC-0368",
-      "name": "مراقبة أخصائي المعالجة التنفسية للحالة في اليوم الواحد",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0368"
-    },
-    {
-      "id": "SVC-0370",
-      "name": "خدمة تركيب جهاز التبخير باليوم",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0370"
-    },
-    {
-      "id": "SVC-0371",
-      "name": "خدمة مراقبة جهاز التبخير باليوم",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0371"
-    },
-    {
-      "id": "SVC-0372",
-      "name": "مجارحة وتغيير قصبة التهوية الحنجرية",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0372"
-    },
-    {
-      "id": "SVC-0373",
-      "name": "خدمة أخذ عينة من إفرازات القصبة الهوائية لغرض زراعتها",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0373"
-    },
-    {
-      "id": "SVC-0374",
-      "name": "خدمة استخدام الفراش الهوائي باليوم",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0374"
-    },
-    {
-      "id": "SVC-0375",
-      "name": "صدمات كهربائية (D/S shock)",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0375"
+      "url": "services/emergency#svc-0367",
+      "searchOnly": false
     },
     {
       "id": "SVC-0376",
@@ -3290,7 +3384,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0376"
+      "url": "services/emergency#svc-0376",
+      "searchOnly": false
     },
     {
       "id": "SVC-0377",
@@ -3299,7 +3394,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0377"
+      "url": "services/emergency#svc-0377",
+      "searchOnly": false
     },
     {
       "id": "SVC-0378",
@@ -3308,16 +3404,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0378"
-    },
-    {
-      "id": "SVC-0379",
-      "name": "نقل الدم الكامل",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0379"
+      "url": "services/emergency#svc-0378",
+      "searchOnly": false
     },
     {
       "id": "SVC-0380",
@@ -3326,34 +3414,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0380"
-    },
-    {
-      "id": "SVC-0381",
-      "name": "مجارحة بعد عملية (صغرى، وسطى، كبرى)",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0381"
-    },
-    {
-      "id": "SVC-0382",
-      "name": "مجارحة تقرحات سريرية (صغرى، وسطى، كبرى)",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0382"
-    },
-    {
-      "id": "SVC-0383",
-      "name": "استخدام جهاز أشعة C-ARM",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0383"
+      "url": "services/emergency#svc-0380",
+      "searchOnly": false
     },
     {
       "id": "SVC-0384",
@@ -3362,7 +3424,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0384"
+      "url": "services/emergency#svc-0384",
+      "searchOnly": false
     },
     {
       "id": "SVC-0385",
@@ -3371,106 +3434,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0385"
-    },
-    {
-      "id": "SVC-0387",
-      "name": "حلاقة موضع العملية",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0387"
-    },
-    {
-      "id": "SVC-0388",
-      "name": "شد كسر على السرير باليوم",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0388"
-    },
-    {
-      "id": "SVC-0389",
-      "name": "فحص السكر عن طريق الإصبع",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0389"
-    },
-    {
-      "id": "SVC-0391",
-      "name": "خيمة منظم أوكسجين",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0391"
-    },
-    {
-      "id": "SVC-0392",
-      "name": "خدمات تمريضية عمليات اليوم الواحد",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0392"
-    },
-    {
-      "id": "SVC-0393",
-      "name": "قياس الربو والتحسس بالجهاز (PFT)",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0393"
-    },
-    {
-      "id": "SVC-0394",
-      "name": "استخدام العلاج الضوئي للمولود الفردي والمزدوج لكل ساعة (فوتوثيرابي)",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0394"
-    },
-    {
-      "id": "SVC-0395",
-      "name": "خدمة استعارة تدفئة حضانات إلى الساعة",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0395"
-    },
-    {
-      "id": "SVC-0396",
-      "name": "ضمان سرير متحرك لمريض",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0396"
-    },
-    {
-      "id": "SVC-0397",
-      "name": "ضمان كرسي متحرك لمريض",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0397"
-    },
-    {
-      "id": "SVC-0398",
-      "name": "ضمان إرجاع قربة دم",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0398"
+      "url": "services/emergency#svc-0385",
+      "searchOnly": false
     },
     {
       "id": "SVC-0400",
@@ -3479,7 +3444,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0400"
+      "url": "services/emergency#svc-0400",
+      "searchOnly": false
     },
     {
       "id": "SVC-0401",
@@ -3488,7 +3454,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0401"
+      "url": "services/emergency#svc-0401",
+      "searchOnly": false
     },
     {
       "id": "SVC-0402",
@@ -3497,7 +3464,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0402"
+      "url": "services/emergency#svc-0402",
+      "searchOnly": false
     },
     {
       "id": "SVC-0403",
@@ -3506,7 +3474,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0403"
+      "url": "services/emergency#svc-0403",
+      "searchOnly": false
     },
     {
       "id": "SVC-0404",
@@ -3515,7 +3484,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0404"
+      "url": "services/emergency#svc-0404",
+      "searchOnly": false
     },
     {
       "id": "SVC-0405",
@@ -3524,7 +3494,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0405"
+      "url": "services/emergency#svc-0405",
+      "searchOnly": false
     },
     {
       "id": "SVC-0406",
@@ -3533,7 +3504,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0406"
+      "url": "services/emergency#svc-0406",
+      "searchOnly": false
     },
     {
       "id": "SVC-0407",
@@ -3542,7 +3514,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0407"
+      "url": "services/emergency#svc-0407",
+      "searchOnly": false
     },
     {
       "id": "SVC-0408",
@@ -3551,7 +3524,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0408"
+      "url": "services/emergency#svc-0408",
+      "searchOnly": false
     },
     {
       "id": "SVC-0409",
@@ -3560,7 +3534,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0409"
+      "url": "services/emergency#svc-0409",
+      "searchOnly": false
     },
     {
       "id": "SVC-0410",
@@ -3569,7 +3544,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0410"
+      "url": "services/emergency#svc-0410",
+      "searchOnly": false
     },
     {
       "id": "SVC-0411",
@@ -3578,7 +3554,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0411"
+      "url": "services/emergency#svc-0411",
+      "searchOnly": false
     },
     {
       "id": "SVC-0412",
@@ -3587,7 +3564,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0412"
+      "url": "services/emergency#svc-0412",
+      "searchOnly": false
     },
     {
       "id": "SVC-0413",
@@ -3596,7 +3574,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0413"
+      "url": "services/emergency#svc-0413",
+      "searchOnly": false
     },
     {
       "id": "SVC-0414",
@@ -3605,7 +3584,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0414"
+      "url": "services/emergency#svc-0414",
+      "searchOnly": false
     },
     {
       "id": "SVC-0415",
@@ -3614,7 +3594,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0415"
+      "url": "services/emergency#svc-0415",
+      "searchOnly": false
     },
     {
       "id": "SVC-0416",
@@ -3623,7 +3604,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0416"
+      "url": "services/emergency#svc-0416",
+      "searchOnly": false
     },
     {
       "id": "SVC-0417",
@@ -3632,7 +3614,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0417"
+      "url": "services/emergency#svc-0417",
+      "searchOnly": false
     },
     {
       "id": "SVC-0418",
@@ -3641,7 +3624,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0418"
+      "url": "services/emergency#svc-0418",
+      "searchOnly": false
     },
     {
       "id": "SVC-0419",
@@ -3650,7 +3634,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0419"
+      "url": "services/emergency#svc-0419",
+      "searchOnly": false
     },
     {
       "id": "SVC-0420",
@@ -3659,7 +3644,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0420"
+      "url": "services/emergency#svc-0420",
+      "searchOnly": false
     },
     {
       "id": "SVC-0421",
@@ -3668,7 +3654,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0421"
+      "url": "services/emergency#svc-0421",
+      "searchOnly": false
     },
     {
       "id": "SVC-0422",
@@ -3677,7 +3664,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0422"
+      "url": "services/emergency#svc-0422",
+      "searchOnly": false
     },
     {
       "id": "SVC-0423",
@@ -3686,7 +3674,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0423"
+      "url": "services/emergency#svc-0423",
+      "searchOnly": false
     },
     {
       "id": "SVC-0424",
@@ -3695,7 +3684,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0424"
+      "url": "services/emergency#svc-0424",
+      "searchOnly": false
     },
     {
       "id": "SVC-0425",
@@ -3704,7 +3694,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0425"
+      "url": "services/emergency#svc-0425",
+      "searchOnly": false
     },
     {
       "id": "SVC-0426",
@@ -3713,7 +3704,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0426"
+      "url": "services/emergency#svc-0426",
+      "searchOnly": false
     },
     {
       "id": "SVC-0427",
@@ -3722,7 +3714,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0427"
+      "url": "services/emergency#svc-0427",
+      "searchOnly": false
     },
     {
       "id": "SVC-0428",
@@ -3731,7 +3724,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0428"
+      "url": "services/emergency#svc-0428",
+      "searchOnly": false
     },
     {
       "id": "SVC-0429",
@@ -3740,7 +3734,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0429"
+      "url": "services/emergency#svc-0429",
+      "searchOnly": false
     },
     {
       "id": "SVC-0430",
@@ -3749,7 +3744,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0430"
+      "url": "services/emergency#svc-0430",
+      "searchOnly": false
     },
     {
       "id": "SVC-0431",
@@ -3758,7 +3754,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0431"
+      "url": "services/emergency#svc-0431",
+      "searchOnly": false
     },
     {
       "id": "SVC-0432",
@@ -3767,7 +3764,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0432"
+      "url": "services/emergency#svc-0432",
+      "searchOnly": false
     },
     {
       "id": "SVC-0433",
@@ -3776,7 +3774,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0433"
+      "url": "services/emergency#svc-0433",
+      "searchOnly": false
     },
     {
       "id": "SVC-0434",
@@ -3785,7 +3784,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0434"
+      "url": "services/emergency#svc-0434",
+      "searchOnly": false
     },
     {
       "id": "SVC-0435",
@@ -3794,7 +3794,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0435"
+      "url": "services/emergency#svc-0435",
+      "searchOnly": false
     },
     {
       "id": "SVC-0436",
@@ -3803,7 +3804,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0436"
+      "url": "services/emergency#svc-0436",
+      "searchOnly": false
     },
     {
       "id": "SVC-0437",
@@ -3812,7 +3814,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0437"
+      "url": "services/emergency#svc-0437",
+      "searchOnly": false
     },
     {
       "id": "SVC-0438",
@@ -3821,7 +3824,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0438"
+      "url": "services/emergency#svc-0438",
+      "searchOnly": false
     },
     {
       "id": "SVC-0439",
@@ -3830,7 +3834,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0439"
+      "url": "services/emergency#svc-0439",
+      "searchOnly": false
     },
     {
       "id": "SVC-0440",
@@ -3839,7 +3844,8 @@
       "group": "general",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0440"
+      "url": "services/emergency#svc-0440",
+      "searchOnly": false
     },
     {
       "id": "SVC-0441",
@@ -3848,7 +3854,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0441"
+      "url": "services/clinics-admin#svc-0441",
+      "searchOnly": false
     },
     {
       "id": "SVC-0442",
@@ -3857,7 +3864,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0442"
+      "url": "services/clinics-admin#svc-0442",
+      "searchOnly": false
     },
     {
       "id": "SVC-0443",
@@ -3866,7 +3874,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0443"
+      "url": "services/clinics-admin#svc-0443",
+      "searchOnly": false
     },
     {
       "id": "SVC-0444",
@@ -3875,7 +3884,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0444"
+      "url": "services/clinics-admin#svc-0444",
+      "searchOnly": false
     },
     {
       "id": "SVC-0445",
@@ -3884,7 +3894,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0445"
+      "url": "services/clinics-admin#svc-0445",
+      "searchOnly": false
     },
     {
       "id": "SVC-0446",
@@ -3893,7 +3904,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0446"
+      "url": "services/clinics-admin#svc-0446",
+      "searchOnly": false
     },
     {
       "id": "SVC-0447",
@@ -3902,7 +3914,8 @@
       "group": "general",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0447"
+      "url": "services/clinics-admin#svc-0447",
+      "searchOnly": false
     },
     {
       "id": "SVC-0448",
@@ -3911,7 +3924,8 @@
       "group": "listed",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0448"
+      "url": "services/emergency#svc-0448",
+      "searchOnly": false
     },
     {
       "id": "SVC-0449",
@@ -3920,7 +3934,8 @@
       "group": "listed",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0449"
+      "url": "services/emergency#svc-0449",
+      "searchOnly": false
     },
     {
       "id": "SVC-0450",
@@ -3929,7 +3944,8 @@
       "group": "listed",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0450"
+      "url": "services/emergency#svc-0450",
+      "searchOnly": false
     },
     {
       "id": "SVC-0451",
@@ -3938,7 +3954,8 @@
       "group": "listed",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0451"
+      "url": "services/emergency#svc-0451",
+      "searchOnly": false
     },
     {
       "id": "SVC-0452",
@@ -3947,7 +3964,8 @@
       "group": "listed",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0452"
+      "url": "services/emergency#svc-0452",
+      "searchOnly": false
     },
     {
       "id": "SVC-0453",
@@ -3956,7 +3974,8 @@
       "group": "listed",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0453"
+      "url": "services/emergency#svc-0453",
+      "searchOnly": false
     },
     {
       "id": "SVC-0454",
@@ -3965,7 +3984,8 @@
       "group": "listed",
       "slug": "emergency",
       "rank": 6,
-      "url": "/services/emergency#svc-0454"
+      "url": "services/emergency#svc-0454",
+      "searchOnly": false
     },
     {
       "id": "SVC-0455",
@@ -3974,7 +3994,8 @@
       "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0455"
+      "url": "services/clinics-admin#svc-0455",
+      "searchOnly": false
     },
     {
       "id": "SVC-0456",
@@ -3983,7 +4004,8 @@
       "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0456"
+      "url": "services/clinics-admin#svc-0456",
+      "searchOnly": false
     },
     {
       "id": "SVC-0457",
@@ -3992,7 +4014,8 @@
       "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0457"
+      "url": "services/clinics-admin#svc-0457",
+      "searchOnly": false
     },
     {
       "id": "SVC-0458",
@@ -4001,7 +4024,8 @@
       "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0458"
+      "url": "services/clinics-admin#svc-0458",
+      "searchOnly": false
     },
     {
       "id": "SVC-0459",
@@ -4010,7 +4034,8 @@
       "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0459"
+      "url": "services/clinics-admin#svc-0459",
+      "searchOnly": false
     },
     {
       "id": "SVC-0460",
@@ -4019,7 +4044,8 @@
       "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0460"
+      "url": "services/clinics-admin#svc-0460",
+      "searchOnly": false
     },
     {
       "id": "SVC-0461",
@@ -4028,7 +4054,8 @@
       "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0461"
+      "url": "services/clinics-admin#svc-0461",
+      "searchOnly": false
     },
     {
       "id": "SVC-0462",
@@ -4037,7 +4064,8 @@
       "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0462"
+      "url": "services/clinics-admin#svc-0462",
+      "searchOnly": false
     },
     {
       "id": "SVC-0463",
@@ -4046,7 +4074,8 @@
       "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0463"
+      "url": "services/clinics-admin#svc-0463",
+      "searchOnly": false
     },
     {
       "id": "SVC-0464",
@@ -4055,7 +4084,8 @@
       "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0464"
+      "url": "services/clinics-admin#svc-0464",
+      "searchOnly": false
     },
     {
       "id": "SVC-0465",
@@ -4064,7 +4094,8 @@
       "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0465"
+      "url": "services/clinics-admin#svc-0465",
+      "searchOnly": false
     },
     {
       "id": "SVC-0466",
@@ -4073,7 +4104,8 @@
       "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0466"
+      "url": "services/clinics-admin#svc-0466",
+      "searchOnly": false
     },
     {
       "id": "SVC-0467",
@@ -4082,7 +4114,8 @@
       "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0467"
+      "url": "services/clinics-admin#svc-0467",
+      "searchOnly": false
     },
     {
       "id": "SVC-0468",
@@ -4091,7 +4124,8 @@
       "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0468"
+      "url": "services/clinics-admin#svc-0468",
+      "searchOnly": false
     },
     {
       "id": "SVC-0469",
@@ -4100,7 +4134,8 @@
       "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0469"
+      "url": "services/clinics-admin#svc-0469",
+      "searchOnly": false
     },
     {
       "id": "SVC-0470",
@@ -4109,7 +4144,8 @@
       "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0470"
+      "url": "services/clinics-admin#svc-0470",
+      "searchOnly": false
     },
     {
       "id": "SVC-0471",
@@ -4118,7 +4154,8 @@
       "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0471"
+      "url": "services/clinics-admin#svc-0471",
+      "searchOnly": false
     },
     {
       "id": "SVC-0472",
@@ -4127,7 +4164,8 @@
       "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0472"
+      "url": "services/clinics-admin#svc-0472",
+      "searchOnly": false
     },
     {
       "id": "SVC-0473",
@@ -4136,7 +4174,8 @@
       "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0473"
+      "url": "services/clinics-admin#svc-0473",
+      "searchOnly": false
     },
     {
       "id": "SVC-0474",
@@ -4145,7 +4184,8 @@
       "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
-      "url": "/services/clinics-admin#svc-0474"
+      "url": "services/clinics-admin#svc-0474",
+      "searchOnly": false
     },
     {
       "id": "SVC-0475",
@@ -4154,7 +4194,8 @@
       "group": "general",
       "slug": "index",
       "rank": 99,
-      "url": "/offers.html"
+      "url": "offers.html",
+      "searchOnly": false
     },
     {
       "id": "SVC-0476",
@@ -4163,7 +4204,8 @@
       "group": "general",
       "slug": "index",
       "rank": 99,
-      "url": "/offers.html"
+      "url": "offers.html",
+      "searchOnly": false
     },
     {
       "id": "SVC-0477",
@@ -4172,61 +4214,65 @@
       "group": "general",
       "slug": "index",
       "rank": 99,
-      "url": "/offers.html"
+      "url": "offers.html",
+      "searchOnly": false
     }
   ],
   "excludedTerms": [
     "بدل مخاطر",
     "رسوم"
   ],
+  "blockedQueries": [
+    "نقل الدم"
+  ],
   "synonyms": [
     {
       "phrase": "CBC",
       "tier": "specific",
       "targetId": "SVC-0048",
-      "approved": false
+      "approved": true
     },
     {
       "phrase": "فحص الدم الشامل",
       "tier": "specific",
       "targetId": "SVC-0048",
-      "approved": false
+      "approved": true
     },
     {
       "phrase": "تحليل الدم الشامل",
       "tier": "specific",
       "targetId": "SVC-0048",
-      "approved": false
+      "approved": true
     },
     {
       "phrase": "صورة الدم الكاملة",
       "tier": "specific",
       "targetId": "SVC-0048",
-      "approved": false
+      "approved": true
     },
     {
       "phrase": "صورة الدم الكامل",
       "tier": "specific",
       "targetId": "SVC-0048",
-      "approved": false
+      "approved": true
     },
     {
       "phrase": "فحص دم",
       "tier": "generic",
       "targetId": "SVC-0048",
-      "approved": false
+      "approved": true
     },
     {
       "phrase": "تحليل دم",
       "tier": "generic",
       "targetId": "SVC-0048",
-      "approved": false
+      "approved": true
     },
     {
       "phrase": "صورة الدم",
       "tier": "generic",
       "targetId": "SVC-0048",
-      "approved": false
+      "approved": true
     }
   ]
 }

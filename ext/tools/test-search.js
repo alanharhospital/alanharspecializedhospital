@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * test-search.js — 21 حالة اختبار لمحرّك بحث دليل الخدمات
+ * test-search.js — 27 حالة اختبار لمحرّك بحث دليل الخدمات
  * التشغيل: node ext/tools/test-search.js
  * يعتمد على: ext/tools/build-services.js (لازم تشغيله أولًا)
  */
@@ -19,7 +19,7 @@ const responses = JSON.parse(fs.readFileSync(path.join(DATA, 'search-responses.j
 const contact = JSON.parse(fs.readFileSync(path.join(DATA, 'contact.json'), 'utf8'));
 
 const catalog = JSON.parse(fs.readFileSync(path.join(DATA, 'services-catalog.json'), 'utf8'));
-const data = { items: index.items, synonyms: index.synonyms, excludedTerms: index.excludedTerms, responses, contact };
+const data = { items: index.items, synonyms: index.synonyms, excludedTerms: index.excludedTerms, blockedQueries: index.blockedQueries, responses, contact };
 
 const results = [];
 function check(n, desc, fn) {
@@ -182,9 +182,42 @@ check(21, 'كل مستبعد لا يظهر عند البحث باسمه', () => 
   return {ok: excluded.length > 0 && failures.length === 0, note: `فُحص=${excluded.length}، إخفاق=${failures.map(i => i.id).join(',') || 'لا شيء'}`};
 });
 
+check(22, '«أجور التخدير» ← listed', () => {
+  const r = run('أجور التخدير'), rep = engine.buildReply(r, data);
+  return {ok:r.type === 'strong' && r.best.group === 'listed' && rep.lines.some(x => x.includes('مذكور في قائمة خدماتنا')) && rep.lines.every(x => !x.includes('يتوفر لدينا')),note:`${r.type} ${r.best && r.best.id}`};
+});
+check(23, '«هل يوجد فحص صورة الدم الكامل» ← CBC مع اعتماد المرادفات الثمانية', () => {
+  const d = JSON.parse(fs.readFileSync(path.join(DATA, 'catalog-decisions.json'), 'utf8'));
+  const required=[['CBC','specific'],['فحص الدم الشامل','specific'],['تحليل الدم الشامل','specific'],['صورة الدم الكاملة','specific'],['صورة الدم الكامل','specific'],['فحص دم','generic'],['تحليل دم','generic'],['صورة الدم','generic']];
+  const target=catalog.items.find(i=>i.id==='SVC-0048');
+  const pinned=required.every(([phrase,tier]) => d.approvedAliases.some(a=>a.phrase===phrase&&a.tier===tier&&a.targetId==='SVC-0048'&&a.approved) && index.synonyms.some(a=>a.phrase===phrase&&a.tier===tier&&a.targetId==='SVC-0048'&&a.approved) && target.aliases.some(a=>a.phrase===phrase&&a.tier===tier&&a.approved));
+  const r=run('هل يوجد فحص صورة الدم الكامل');
+  return {ok:pinned&&r.type==='strong'&&r.best.id==='SVC-0048'&&r.best.group==='lab',note:`aliases=${pinned}, ${r.type}`};
+});
+check(24, '«أكثر من 13 سرير عناية» ← listed بلا مرساة', () => {
+  const r=run('أكثر من 13 سرير عناية'), rep=engine.buildReply(r,data);
+  const pages=fs.readdirSync(path.join(ROOT,'services')).filter(x=>x.endsWith('.html')).map(f=>fs.readFileSync(path.join(ROOT,'services',f),'utf8'));
+  const only=index.items.filter(x=>x.searchOnly);
+  const allValid=only.length===8 && only.every(item=>{
+    const exact=run(item.name);
+    return item.url===null && item.group==='listed' && pages.every(p=>!p.includes(item.name)&&!p.includes('id="'+item.id.toLowerCase()+'"')) && exact.type==='strong' && exact.best.id===item.id && exact.options.length===0;
+  });
+  return {ok:allValid&&r.type==='strong'&&r.best.id==='SVC-0001'&&r.best.group==='listed'&&r.best.url===null&&r.options.length===0&&!!rep.whatsappUrl,note:`${r.type} ${r.best && r.best.id}; all eight=${allValid}`};
+});
+check(25, '«جهاز تنفس صناعي» ← listed أو لا شيء، دون رسوم', () => {
+  const r=run('جهاز تنفس صناعي'), found=(r.best?[r.best]:[]).concat(r.options||[]);
+  return {ok:(r.type==='none'||(r.type==='strong'&&r.best.group==='listed'))&&found.every(i=>i.id!=='SVC-0369'),note:`${r.type} ${r.best && r.best.id}`};
+});
+check(26, '«نقل الدم» ← لا نتائج', () => {
+  const r=run('نقل الدم');return {ok:r.type==='none'&&!r.best&&!r.options.length,note:r.type};
+});
+check(27, '«عناية» ← لا تظهر عناصر searchOnly ضمن الخيارات', () => {
+  const r=run('عناية');return {ok:(r.options||[]).every(x=>!x.searchOnly),note:`${r.type}, options=${r.options.length}`};
+});
+
 /* -------------------------------- التقرير -------------------------------- */
 
-console.log('\n  اختبار محرّك البحث — 21 حالة');
+console.log('\n  اختبار محرّك البحث — 27 حالة');
 console.log('  ' + '-'.repeat(76));
 let pass = 0;
 for (const r of results) {

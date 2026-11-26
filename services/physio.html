@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css?v=10">
-
+    <link rel="stylesheet" href="../ext/services-search.css?v=3">
     <style>
         /* دليل الخدمات — تنسيق خاص بالصفحات المولّدة */
         .sg-main { padding: 2rem 0 3rem; }
@@ -95,7 +95,7 @@
                 <li><a href="../offers.html" class="nav-offer-link">العروض</a></li>
                 <li><a href="../news.html">الأخبار</a></li>
                 <li><a href="../doctors.html">الاستشاريون والطواقم</a></li>
-                <li><a href="/services/" class="nav-active">دليل الخدمات</a></li>
+                <li><a href="./" class="nav-active">دليل الخدمات</a></li>
                 <li><a href="../index.html#appointment" class="btn-nav-highlight">حجز موعد</a></li>
                 <li><a href="../index.html#contact">اتصل بنا</a></li>
             </ul>
@@ -104,9 +104,26 @@
 
     <main class="sg-main">
         <div class="container">
-            <nav aria-label="مسار التصفح" class="sg-crumbs"><a href="../index.html">الرئيسية</a> ← <a href="/services/">دليل الخدمات</a> ← <span>علاج طبيعي</span></nav>
+            <nav aria-label="مسار التصفح" class="sg-crumbs"><a href="../index.html">الرئيسية</a> ← <a href="./">دليل الخدمات</a> ← <span>علاج طبيعي</span></nav>
             <h1 class="sg-h1">دليل علاج طبيعي في مستشفى الأنهار التخصصي</h1>
             <p class="sg-intro">دليل علاج طبيعي في مستشفى الأنهار التخصصي: 37 خدمة مرتبة أبجديًا، مع فهرس حروف أعلى الصفحة لتسهيل الوصول.</p>
+
+            <div class="ss" data-services-search>
+                <label class="ss-label" for="ss-input">ابحث في دليل الخدمات</label>
+                <form class="ss-form" role="search" onsubmit="return false;">
+                    <input class="ss-input" id="ss-input" type="search" autocomplete="off"
+                           placeholder="ابحث عن فحص أو أشعة أو عملية"
+                           aria-describedby="ss-hint" data-services-search-input>
+                    <button class="ss-button" type="button" data-services-search-button>بحث</button>
+                </form>
+                <p class="ss-hint" id="ss-hint">اكتب حرفين على الأقل</p>
+                <p class="ss-status" role="status" aria-live="polite" data-services-search-status></p>
+                <div class="ss-panel" data-services-search-panel></div>
+                <noscript>
+                    <p class="sg-noscript">البحث الفوري يحتاج JavaScript. يمكنك تصفح الدليل كاملًا من الروابط أدناه.</p>
+                </noscript>
+            </div>
+
 
             <nav class="sg-letters" aria-label="فهرس الحروف">
                 <span>فهرس الحروف:</span>
@@ -156,7 +173,7 @@
                     <li id="svc-0229">جلسة مضاعفات الكسور<span class="sg-id" aria-hidden="true">SVC-0229</span></li>
             </ul>
 
-            <p class="sg-back"><a href="/services/">العودة إلى دليل الخدمات</a></p>
+            <p class="sg-back"><a href="./">العودة إلى دليل الخدمات</a></p>
         </div>
     </main>
 
@@ -179,5 +196,7 @@
             </div>
         </div>
     </footer>
+    <script src="../ext/data/services-index.js?v=3"></script>
+    <script src="../ext/services-search.js?v=3" defer></script>
 </body>
 </html>

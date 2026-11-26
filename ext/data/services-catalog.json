@@ -3,7 +3,7 @@
     "generatedBy": "ext/tools/build-services-catalog.js",
     "generatedAt": "2026-11-26T00:00:00.000Z",
     "site": "https://alanharhospital.com",
-    "note": "الأسماء منقولة حرفيًا من محتوى الموقع. لا ترجمة ولا تصحيح طبي. aliases فارغة بانتظار الموافقة.",
+    "note": "الأسماء منقولة حرفيًا من محتوى الموقع. لا ترجمة ولا تصحيح طبي. المرادفات المعتمدة من ملف قرارات المالك فقط.",
     "sources": [
       "index.html (sr-only-seo)",
       "clinics.html",
@@ -18,18 +18,18 @@
       "forReview": 11,
       "duplicateGroups": 1,
       "duplicateItems": 0,
-      "publishFalse": 14,
+      "publishFalse": 56,
       "linkOnly": 3,
-      "excluded": 3,
+      "excluded": 45,
       "internalOnly": 1,
       "hasNumber": 18,
       "responseGroups": {
-        "listed": 50,
+        "listed": 54,
         "surgery": 38,
         "lab": 13,
         "radiology": 9,
-        "general": 270,
-        "dental": 97
+        "dental": 97,
+        "general": 266
       },
       "categories": 21
     },
@@ -68,7 +68,8 @@
       "status": "active",
       "linkOnly": false,
       "publish": true,
-      "hasNumber": true
+      "hasNumber": true,
+      "searchOnly": true
     },
     {
       "id": "SVC-0002",
@@ -80,7 +81,8 @@
       "status": "active",
       "linkOnly": false,
       "publish": true,
-      "hasNumber": true
+      "hasNumber": true,
+      "searchOnly": true
     },
     {
       "id": "SVC-0003",
@@ -92,7 +94,8 @@
       "status": "active",
       "linkOnly": false,
       "publish": true,
-      "hasNumber": true
+      "hasNumber": true,
+      "searchOnly": true
     },
     {
       "id": "SVC-0004",
@@ -104,7 +107,8 @@
       "status": "active",
       "linkOnly": false,
       "publish": true,
-      "hasNumber": true
+      "hasNumber": true,
+      "searchOnly": true
     },
     {
       "id": "SVC-0005",
@@ -115,7 +119,8 @@
       "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": true,
+      "searchOnly": true
     },
     {
       "id": "SVC-0006",
@@ -126,7 +131,8 @@
       "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": true,
+      "searchOnly": true
     },
     {
       "id": "SVC-0007",
@@ -138,7 +144,8 @@
       "status": "active",
       "linkOnly": false,
       "publish": true,
-      "hasNumber": true
+      "hasNumber": true,
+      "searchOnly": true
     },
     {
       "id": "SVC-0008",
@@ -150,7 +157,8 @@
       "status": "active",
       "linkOnly": false,
       "publish": true,
-      "hasNumber": true
+      "hasNumber": true,
+      "searchOnly": true
     },
     {
       "id": "SVC-0009",
@@ -587,7 +595,48 @@
       "name": "فحص الدم الشامل CBC",
       "category": "مختبر",
       "sourcePage": "index.html",
-      "aliases": [],
+      "aliases": [
+        {
+          "phrase": "CBC",
+          "tier": "specific",
+          "approved": true
+        },
+        {
+          "phrase": "فحص الدم الشامل",
+          "tier": "specific",
+          "approved": true
+        },
+        {
+          "phrase": "تحليل الدم الشامل",
+          "tier": "specific",
+          "approved": true
+        },
+        {
+          "phrase": "صورة الدم الكاملة",
+          "tier": "specific",
+          "approved": true
+        },
+        {
+          "phrase": "صورة الدم الكامل",
+          "tier": "specific",
+          "approved": true
+        },
+        {
+          "phrase": "فحص دم",
+          "tier": "generic",
+          "approved": true
+        },
+        {
+          "phrase": "تحليل دم",
+          "tier": "generic",
+          "approved": true
+        },
+        {
+          "phrase": "صورة الدم",
+          "tier": "generic",
+          "approved": true
+        }
+      ],
       "responseGroup": "lab",
       "status": "active",
       "linkOnly": false,
@@ -788,7 +837,7 @@
       "category": "تخدير",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true,
@@ -800,7 +849,7 @@
       "category": "تخدير",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -811,7 +860,7 @@
       "category": "تخدير",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -822,7 +871,7 @@
       "category": "تخدير",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -3818,7 +3867,9 @@
       "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0336",
@@ -3829,7 +3880,9 @@
       "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0337",
@@ -3842,7 +3895,8 @@
       "linkOnly": false,
       "publish": false,
       "internalOnly": true,
-      "excluded": true
+      "excluded": true,
+      "excludedBy": "rule"
     },
     {
       "id": "SVC-0338",
@@ -3853,7 +3907,9 @@
       "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0339",
@@ -3864,7 +3920,9 @@
       "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0340",
@@ -3886,7 +3944,9 @@
       "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0342",
@@ -3897,7 +3957,9 @@
       "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0343",
@@ -3908,7 +3970,9 @@
       "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0344",
@@ -3919,7 +3983,9 @@
       "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0345",
@@ -3930,7 +3996,9 @@
       "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0346",
@@ -3943,7 +4011,8 @@
       "linkOnly": false,
       "publish": false,
       "feeExcluded": true,
-      "excluded": true
+      "excluded": true,
+      "excludedBy": "rule"
     },
     {
       "id": "SVC-0347",
@@ -3954,7 +4023,9 @@
       "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0348",
@@ -3965,7 +4036,9 @@
       "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0349",
@@ -3976,7 +4049,9 @@
       "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0350",
@@ -3987,7 +4062,9 @@
       "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0351",
@@ -4086,7 +4163,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0360",
@@ -4108,7 +4187,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0362",
@@ -4119,7 +4200,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0363",
@@ -4130,7 +4213,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0364",
@@ -4141,7 +4226,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0365",
@@ -4152,7 +4239,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0366",
@@ -4163,7 +4252,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0367",
@@ -4185,7 +4276,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0369",
@@ -4198,7 +4291,8 @@
       "linkOnly": false,
       "publish": false,
       "feeExcluded": true,
-      "excluded": true
+      "excluded": true,
+      "excludedBy": "rule"
     },
     {
       "id": "SVC-0370",
@@ -4209,7 +4303,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0371",
@@ -4220,7 +4316,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0372",
@@ -4231,7 +4329,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0373",
@@ -4242,7 +4342,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0374",
@@ -4253,7 +4355,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0375",
@@ -4264,7 +4368,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0376",
@@ -4308,7 +4414,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0380",
@@ -4330,7 +4438,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0382",
@@ -4341,7 +4451,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0383",
@@ -4352,7 +4464,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0384",
@@ -4403,7 +4517,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0388",
@@ -4414,7 +4530,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0389",
@@ -4425,7 +4543,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0390",
@@ -4454,7 +4574,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0392",
@@ -4465,7 +4587,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0393",
@@ -4476,7 +4600,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0394",
@@ -4487,7 +4613,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0395",
@@ -4498,7 +4626,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0396",
@@ -4509,7 +4639,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0397",
@@ -4520,7 +4652,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0398",
@@ -4531,7 +4665,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "excluded": true,
+      "excludedBy": "owner"
     },
     {
       "id": "SVC-0399",

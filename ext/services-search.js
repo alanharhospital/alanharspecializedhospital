@@ -122,7 +122,13 @@
       var n = norm(term);
       return n && qNorm.indexOf(n) !== -1 && !items.some(function (it) { return norm(it.name).indexOf(n) !== -1; });
     });
-    if (blocked) { result.type = 'none'; return result; }
+    var blockedQuery = ((data && data.blockedQueries) || []).some(function (phrase) {
+      return qNorm === norm(phrase) && !items.some(function (item) {
+        var names = tokenizeName(item.name);
+        return tokens.every(function (token) { return names.indexOf(token) !== -1; });
+      });
+    });
+    if (blocked || blockedQuery) { result.type = 'none'; return result; }
 
     /* --- المرادفات المعتمدة (approved) --- */
     var padded = ' ' + qNorm + ' ';
@@ -149,7 +155,7 @@
       /* مرادف عام أو بقي كلام: نتائج كخيارات، والهدف أولًا */
       var others = target ? [target] : [];
       findMatches(restTokens.length ? restTokens : tokens, items).forEach(function (m) {
-        if (!others.some(function (o) { return o.id === m.item.id; })) others.push(m.item);
+        if (!m.item.searchOnly && !others.some(function (o) { return o.id === m.item.id; })) others.push(m.item);
       });
       result.type = others.length ? 'weak' : 'none';
       result.options = others.slice(0, 5);
@@ -157,7 +163,11 @@
     }
 
     /* --- مطابقة عادية --- */
-    var matches = findMatches(tokens, items);
+    var matches = findMatches(tokens, items).filter(function (m) {
+      if (!m.item.searchOnly) return true;
+      var nameTokens = tokenizeName(m.item.name);
+      return m.matchedAll && tokens.every(function (token) { return nameTokens.indexOf(token) !== -1; });
+    });
     if (!matches.length) {
       result.type = 'none';
       return result;
@@ -167,12 +177,13 @@
     if (full.length && (tokens.length >= 2 || full.length <= 2)) {
       result.type = 'strong';
       result.best = full[0].item;
-      result.options = full.slice(1, 4).map(function (m) { return m.item; });
+      result.options = result.best.searchOnly ? [] : full.slice(1).filter(function (m) { return !m.item.searchOnly; }).slice(0, 3).map(function (m) { return m.item; });
       return result;
     }
 
     result.type = 'weak';
-    result.options = matches.slice(0, 5).map(function (m) { return m.item; });
+    result.options = matches.filter(function (m) { return !m.item.searchOnly; }).slice(0, 5).map(function (m) { return m.item; });
+    if (!result.options.length) result.type = 'none';
     return result;
   }
 
@@ -196,11 +207,13 @@
         item: it,
         score: total,
         matchedAll: matchedCount === tokens.length,
+        matchedCount: matchedCount,
       });
     }
     scored.sort(function (a, b) {
       if (a.matchedAll !== b.matchedAll) return a.matchedAll ? -1 : 1;
       if (b.score !== a.score) return b.score - a.score;
+      if (a.matchedAll && tokens.length >= 2 && !!a.item.searchOnly !== !!b.item.searchOnly) return a.item.searchOnly ? -1 : 1;
       /* الخدمة السريرية أولى من الخدمة الإدارية عند التعادل */
       var ra = typeof a.item.rank === 'number' ? a.item.rank : 50;
       var rb = typeof b.item.rank === 'number' ? b.item.rank : 50;
@@ -280,34 +293,34 @@
 
   if (typeof document === 'undefined') return;
 
+  // document.currentScript is captured synchronously, not when a later event fires.
+  var scriptTag = document.currentScript || document.querySelector('script[src*="services-search.js"]');
+  var scriptBase = scriptTag && scriptTag.src ? new URL('.', scriptTag.src).href : new URL('ext/', document.baseURI).href;
   var DATA_URLS = {
-    index: '/ext/data/services-index.json',
-    responses: '/ext/data/search-responses.json',
-    contact: '/ext/data/contact.json',
+    index: new URL('data/services-index.json', scriptBase).href,
+    responses: new URL('data/search-responses.json', scriptBase).href,
+    contact: new URL('data/contact.json', scriptBase).href,
+    guide: new URL('../services/', scriptBase).href,
   };
-
   var cache = null;
-
+  function fromBundle(bundle) {
+    if (!bundle || !bundle.index || !Array.isArray(bundle.index.items) || !bundle.responses || !bundle.contact) throw new Error('بيانات بحث غير صالحة');
+    return { items: bundle.index.items, synonyms: bundle.index.synonyms || [], excludedTerms: bundle.index.excludedTerms || [], blockedQueries: bundle.index.blockedQueries || [], responses: bundle.responses, contact: bundle.contact };
+  }
   function loadJSON(url) {
     return fetch(url, { credentials: 'same-origin' }).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
     });
   }
-
   function loadData() {
     if (cache) return Promise.resolve(cache);
+    if (global.ServicesSearchData) {
+      try { cache = fromBundle(global.ServicesSearchData); return Promise.resolve(cache); }
+      catch (e) { /* try fetch fallback */ }
+    }
     return Promise.all([loadJSON(DATA_URLS.index), loadJSON(DATA_URLS.responses), loadJSON(DATA_URLS.contact)])
-      .then(function (res) {
-        cache = {
-          items: res[0].items || [],
-          synonyms: res[0].synonyms || [],
-          excludedTerms: res[0].excludedTerms || [],
-          responses: res[1],
-          contact: res[2],
-        };
-        return cache;
-      });
+      .then(function (res) { cache = fromBundle({index:res[0], responses:res[1], contact:res[2]}); return cache; });
   }
 
   function el(tag, cls, text) {
@@ -315,6 +328,15 @@
     if (cls) n.className = cls;
     if (text !== undefined) n.textContent = text;
     return n;
+  }
+
+  // فهرس النتائج يخزن مسارات نسبية إلى جذر نسخة الموقع، لا جذر النطاق.
+  function resultLink(item) {
+    if (!item || item.searchOnly || !item.url || !/^(?:services\/|offers\.html(?:[?#]|$))/.test(item.url)) return null;
+    var link = el('a', 'ss-result-link', 'عرض التفاصيل');
+    link.href = new URL(item.url, new URL('../', scriptBase)).href;
+    link.setAttribute('aria-label', 'عرض تفاصيل ' + item.name);
+    return link;
   }
 
   /** تظليل الكلمة المطابقة دون أي HTML */
@@ -366,13 +388,16 @@
         data = d;
         var q = '';
         if (location.hash.indexOf('#q=') === 0) q = decodeURIComponent(location.hash.slice(3));
-        if (q) {
-          input.value = q;
-          run(q);
-        }
+        if (q) input.value = q;
+        if (input.value) run(input.value);
       })
       .catch(function () {
-        if (status) status.textContent = '';
+        var target = status || panel;
+        if (!target) return;
+        target.textContent = 'تعذر تحميل البحث، ';
+        var link = el('a', null, 'تصفح الدليل');
+        link.href = DATA_URLS.guide;
+        target.appendChild(link);
       });
 
     function clearPanel() {
@@ -422,6 +447,8 @@
         });
         panel.appendChild(p);
       }
+      var bestLink = resultLink(reply.best);
+      if (bestLink) panel.appendChild(bestLink);
 
       if (reply.options.length) {
         var list = el('ul', 'ss-options');
@@ -439,6 +466,8 @@
             input.value = opt.name;
           });
           li.appendChild(btn);
+          var details = resultLink(opt);
+          if (details) li.appendChild(details);
           list.appendChild(li);
           items.push(btn);
         });
@@ -470,19 +499,28 @@
     }
 
     var timer = null;
-    input.addEventListener('input', function () {
+    var composing = false;
+    function queueInput() {
       window.clearTimeout(timer);
-      var v = input.value;
-      timer = window.setTimeout(function () { run(v); }, 120);
-    });
+      timer = window.setTimeout(function () { run(input.value); }, 120);
+    }
+    input.addEventListener('compositionstart', function () { composing = true; window.clearTimeout(timer); });
+    input.addEventListener('compositionend', function () { composing = false; queueInput(); });
+    input.addEventListener('input', function (e) { if (!composing && !e.isComposing) queueInput(); });
 
+    var linkMode = root.getAttribute('data-services-search-mode') === 'link';
+    function goToGuide() {
+      var v = String(input.value || '').trim();
+      location.href = DATA_URLS.guide + (v ? '#q=' + encodeURIComponent(v) : '');
+    }
     input.addEventListener('keydown', function (e) {
       if (e.key === 'ArrowDown') { e.preventDefault(); setActive(activeIndex + 1); }
       else if (e.key === 'ArrowUp') { e.preventDefault(); setActive(activeIndex - 1); }
       else if (e.key === 'Escape') { clearPanel(); input.value = ''; input.focus(); }
-      else if (e.key === 'Enter') {
+      else if (e.key === 'Enter' && !composing && !e.isComposing) {
         e.preventDefault();
         if (activeIndex >= 0 && items[activeIndex]) items[activeIndex].click();
+        else if (linkMode) goToGuide();
         else run(input.value);
       }
     });
@@ -490,20 +528,14 @@
     if (button) {
       button.addEventListener('click', function (e) {
         e.preventDefault();
-        run(input.value);
+        if (linkMode) goToGuide(); else run(input.value);
       });
     }
 
-    /* مربع مصغّر في الصفحة الرئيسية: ينتقل إلى الدليل عبر #hash فقط */
-    if (root.getAttribute('data-services-search-mode') === 'link') {
+    /* مربع الرئيسية ينتقل للدليل دون إرسال الاستعلام إلى الخادم. */
+    if (linkMode) {
       var form = root.querySelector('form');
-      if (form) {
-        form.addEventListener('submit', function (e) {
-          e.preventDefault();
-          var v = String(input.value || '').trim();
-          location.href = '/services/' + (v ? '#q=' + encodeURIComponent(v) : '');
-        });
-      }
+      if (form) form.addEventListener('submit', function (e) { e.preventDefault(); goToGuide(); });
     }
   }
 

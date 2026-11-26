@@ -18,12 +18,23 @@ function apply(items, config) {
     for (const key of ['publish', 'status', 'responseGroup', 'category', 'linkOnly']) {
       if (d[key] !== undefined && d[key] !== null) item[key] = d[key];
     }
-    for (const key of ['internalOnly', 'feeExcluded', 'excluded', 'hasNumber']) {
+    for (const key of ['internalOnly', 'feeExcluded', 'excluded', 'hasNumber', 'searchOnly']) {
       if (d[key] === true) item[key] = true;
       else delete item[key];
     }
+    if (d.excludedBy) item.excludedBy = d.excludedBy;
+    else delete item.excludedBy;
     if (d.duplicateOf) item.duplicateOf = d.duplicateOf;
     else { delete item.duplicateOf; delete item.duplicateNote; }
+  }
+  for (const alias of config.approvedAliases || []) {
+    if (!byId.has(alias.targetId) || alias.approved !== true || !['specific', 'generic'].includes(alias.tier)) {
+      throw new Error(`مرادف غير صالح أو خدمة غير موجودة: ${alias.phrase}`);
+    }
+  }
+  for (const item of items) {
+    item.aliases = (config.approvedAliases || []).filter(a => a.targetId === item.id)
+      .map(a => ({ phrase: a.phrase, tier: a.tier, approved: true }));
   }
   const overrides = new Set(config.overrides.map(o => typeof o === 'string' ? o : o.id));
   for (const id of overrides) if (!byId.has(id)) throw new Error(`معرف استثناء غير موجود: ${id}`);
@@ -36,11 +47,17 @@ function apply(items, config) {
       if (matches.some(x => normalize(x) === normalize('بدل مخاطر'))) item.internalOnly = true;
       if (matches.some(x => normalize(x) === normalize('رسوم'))) item.feeExcluded = true;
       item.publish = false;
+      if (!item.excludedBy) item.excludedBy = 'rule';
+    }
+    if ((config.excludedCategories || []).includes(item.category)) {
+      item.excluded = true; item.publish = false;
+      if (!item.excludedBy) item.excludedBy = 'category-rule';
     }
     if (overrides.has(item.id)) {
-      delete item.excluded; delete item.internalOnly; delete item.feeExcluded;
+      delete item.excluded; delete item.internalOnly; delete item.feeExcluded; delete item.excludedBy;
       item.publish = true;
     }
+    if (!item.excluded && /^(?:اجور|رسوم)(?:\s|$)/.test(n)) item.responseGroup = 'listed';
     if (item.category === 'عروض وباقات') item.linkOnly = true;
     if (config.listedCategories.includes(item.category) ||
         (item.hasNumber && /^(?:[0-9٠-٩]|أكثر\s+من(?:\s|$))/.test(item.name))) {

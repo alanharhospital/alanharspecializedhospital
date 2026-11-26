@@ -454,7 +454,7 @@ const catalog = {
     generatedBy: 'ext/tools/build-services-catalog.js',
     generatedAt: decisions.generatedAt,
     site: 'https://alanharhospital.com',
-    note: 'الأسماء منقولة حرفيًا من محتوى الموقع. لا ترجمة ولا تصحيح طبي. aliases فارغة بانتظار الموافقة.',
+    note: 'الأسماء منقولة حرفيًا من محتوى الموقع. لا ترجمة ولا تصحيح طبي. المرادفات المعتمدة من ملف قرارات المالك فقط.',
     sources: ['index.html (sr-only-seo)', 'clinics.html', 'units.html', 'ancillary.html', 'offers.html'],
     counts: {
       rawExtracted: rawCount,

@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0a2a5e">
     <title>دليل عيادات وإدارات | مستشفى الأنهار التخصصي</title>
-    <meta name="description" content="دليل عيادات وإدارات في مستشفى الأنهار التخصصي: 57 خدمة مرتبة أبجديًا مع فهرس حروف. تصفح القائمة الكاملة أو ابحث عن الخدمة التي تحتاجها.">
+    <meta name="description" content="دليل عيادات وإدارات في مستشفى الأنهار التخصصي: 44 خدمة مرتبة أبجديًا مع فهرس حروف. تصفح القائمة الكاملة أو ابحث عن الخدمة التي تحتاجها.">
     <link rel="canonical" href="https://alanharhospital.com/services/clinics-admin">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="مستشفى الأنهار التخصصي">
     <meta property="og:title" content="دليل عيادات وإدارات">
-    <meta property="og:description" content="دليل عيادات وإدارات في مستشفى الأنهار التخصصي: 57 خدمة مرتبة أبجديًا مع فهرس حروف. تصفح القائمة الكاملة أو ابحث عن الخدمة التي تحتاجها.">
+    <meta property="og:description" content="دليل عيادات وإدارات في مستشفى الأنهار التخصصي: 44 خدمة مرتبة أبجديًا مع فهرس حروف. تصفح القائمة الكاملة أو ابحث عن الخدمة التي تحتاجها.">
     <meta property="og:url" content="https://alanharhospital.com/services/clinics-admin">
     <meta property="og:image" content="https://alanharhospital.com/logo.jpg">
     <meta property="og:locale" content="ar_YE">
@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css?v=10">
-
+    <link rel="stylesheet" href="../ext/services-search.css?v=3">
     <style>
         /* دليل الخدمات — تنسيق خاص بالصفحات المولّدة */
         .sg-main { padding: 2rem 0 3rem; }
@@ -95,7 +95,7 @@
                 <li><a href="../offers.html" class="nav-offer-link">العروض</a></li>
                 <li><a href="../news.html">الأخبار</a></li>
                 <li><a href="../doctors.html">الاستشاريون والطواقم</a></li>
-                <li><a href="/services/" class="nav-active">دليل الخدمات</a></li>
+                <li><a href="./" class="nav-active">دليل الخدمات</a></li>
                 <li><a href="../index.html#appointment" class="btn-nav-highlight">حجز موعد</a></li>
                 <li><a href="../index.html#contact">اتصل بنا</a></li>
             </ul>
@@ -104,18 +104,32 @@
 
     <main class="sg-main">
         <div class="container">
-            <nav aria-label="مسار التصفح" class="sg-crumbs"><a href="../index.html">الرئيسية</a> ← <a href="/services/">دليل الخدمات</a> ← <span>عيادات وإدارات</span></nav>
+            <nav aria-label="مسار التصفح" class="sg-crumbs"><a href="../index.html">الرئيسية</a> ← <a href="./">دليل الخدمات</a> ← <span>عيادات وإدارات</span></nav>
             <h1 class="sg-h1">دليل عيادات وإدارات في مستشفى الأنهار التخصصي</h1>
-            <p class="sg-intro">دليل عيادات وإدارات في مستشفى الأنهار التخصصي: 57 خدمة مرتبة أبجديًا، مع فهرس حروف أعلى الصفحة لتسهيل الوصول.</p>
+            <p class="sg-intro">دليل عيادات وإدارات في مستشفى الأنهار التخصصي: 44 خدمة مرتبة أبجديًا، مع فهرس حروف أعلى الصفحة لتسهيل الوصول.</p>
+
+            <div class="ss" data-services-search>
+                <label class="ss-label" for="ss-input">ابحث في دليل الخدمات</label>
+                <form class="ss-form" role="search" onsubmit="return false;">
+                    <input class="ss-input" id="ss-input" type="search" autocomplete="off"
+                           placeholder="ابحث عن فحص أو أشعة أو عملية"
+                           aria-describedby="ss-hint" data-services-search-input>
+                    <button class="ss-button" type="button" data-services-search-button>بحث</button>
+                </form>
+                <p class="ss-hint" id="ss-hint">اكتب حرفين على الأقل</p>
+                <p class="ss-status" role="status" aria-live="polite" data-services-search-status></p>
+                <div class="ss-panel" data-services-search-panel></div>
+                <noscript>
+                    <p class="sg-noscript">البحث الفوري يحتاج JavaScript. يمكنك تصفح الدليل كاملًا من الروابط أدناه.</p>
+                </noscript>
+            </div>
+
 
             <nav class="sg-letters" aria-label="فهرس الحروف">
                 <span>فهرس الحروف:</span>
                 <a href="#h-ا">ا</a>
-            <a href="#h-ت">ت</a>
             <a href="#h-خ">خ</a>
-            <a href="#h-س">س</a>
             <a href="#h-ع">ع</a>
-            <a href="#h-ق">ق</a>
             <a href="#h-م">م</a>
             <a href="#h-و">و</a>
             </nav>
@@ -170,24 +184,8 @@
                     <li id="svc-0462">مكافحة العدوى<span class="sg-id" aria-hidden="true">SVC-0462</span></li>
                     <li id="svc-0457">وحدة التعقيم المركزي<span class="sg-id" aria-hidden="true">SVC-0457</span></li>
             </ul>
-            <h2 class="sg-cat" id="cat-خدمات-إدارية-وتقارير">خدمات إدارية وتقارير</h2>
-            <ul class="sg-list">
-                    <li id="svc-0338">استدعاء أخصائي (جراحة النساء والولادة، الباطنة العامة والكبد، الباطنة العامة والقلب، أخصائي الأطفال، الجراحة العامة، جراحة العظام والمفاصل، جراحة الأنف والأذن والحنجرة، أمراض الكلى، المسالك البولية، جراحة المخ والأعصاب والعمود الفقري، جراحة العيون، طب الأسنان، الجلدية، العلاج الطبيعي والطب الرياضي، الأشعة التشخيصية، التخدير والعناية المركزة)<span class="sg-id" aria-hidden="true">SVC-0338</span></li>
-                    <li id="svc-0339">استدعاء أو استشارة طبية أخصائي خارجي أثناء الدوام أو خارج الدوام<span class="sg-id" aria-hidden="true">SVC-0339</span></li>
-                    <li id="svc-0345">إفادة طبية<span class="sg-id" aria-hidden="true">SVC-0345</span></li>
-                    <li id="svc-0349">تقرير بدل فاقد لتخطيط الدماغ<span class="sg-id" aria-hidden="true">SVC-0349</span></li>
-                    <li id="svc-0344">تقرير جنائي<span class="sg-id" aria-hidden="true">SVC-0344</span></li>
-                    <li id="svc-0343">تقرير طبي للمريض (عربي وإنجليزي)<span class="sg-id" aria-hidden="true">SVC-0343</span></li>
-                    <li id="svc-0350">تقرير كشف حساب تفصيلي<span class="sg-id" aria-hidden="true">SVC-0350</span></li>
-                    <li id="svc-0342">خروج أخصائي للمنازل<span class="sg-id" aria-hidden="true">SVC-0342</span></li>
-                    <li id="svc-0341">خروج طبيب مقيم للمنزل<span class="sg-id" aria-hidden="true">SVC-0341</span></li>
-                    <li id="svc-0336">سحب السائل الشوكي (C.S.F) تشخيصي<span class="sg-id" aria-hidden="true">SVC-0336</span></li>
-                    <li id="svc-0348">قراءة تقرير أشعة رنين مغناطيسي (MRI) خارجية<span class="sg-id" aria-hidden="true">SVC-0348</span></li>
-                    <li id="svc-0347">قراءة تقرير أشعة مقطعية (CT) خارجية<span class="sg-id" aria-hidden="true">SVC-0347</span></li>
-                    <li id="svc-0335">متابعة يومية للمريض من الأخصائي المعالج<span class="sg-id" aria-hidden="true">SVC-0335</span></li>
-            </ul>
 
-            <p class="sg-back"><a href="/services/">العودة إلى دليل الخدمات</a></p>
+            <p class="sg-back"><a href="./">العودة إلى دليل الخدمات</a></p>
         </div>
     </main>
 
@@ -210,5 +208,7 @@
             </div>
         </div>
     </footer>
+    <script src="../ext/data/services-index.js?v=3"></script>
+    <script src="../ext/services-search.js?v=3" defer></script>
 </body>
 </html>

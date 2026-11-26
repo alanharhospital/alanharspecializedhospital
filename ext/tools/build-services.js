@@ -86,6 +86,7 @@ const PAGES = [
 
 const published = (catalog.items || []).filter((i) => i.publish === true);
 const linkOnlyItems = published.filter((i) => i.linkOnly === true);
+const searchOnlyItems = published.filter((i) => i.searchOnly === true);
 
 /* تحقق: كل فئة منشورة يجب أن تكون في صفحة واحدة */
 const assigned = new Map();
@@ -164,7 +165,7 @@ const NAV_ITEMS = [
   ['../offers.html', 'العروض', 'nav-offer-link'],
   ['../news.html', 'الأخبار'],
   ['../doctors.html', 'الاستشاريون والطواقم'],
-  ['/services/', 'دليل الخدمات', 'nav-active'],
+  ['./', 'دليل الخدمات', 'nav-active'],
 ];
 
 function header(activeSlug) {
@@ -285,7 +286,7 @@ ${jsonLd(crumbs || [{ name: 'الرئيسية', url: SITE + '/' }, { name: 'دل
 /* ------------------------------- صفحة فئة ------------------------------- */
 
 function buildCategoryPage(page) {
-  const items = published.filter((i) => page.cats.includes(i.category));
+  const items = published.filter((i) => !i.searchOnly && page.cats.includes(i.category));
   if (!items.length) throw new Error('صفحة بلا عناصر: ' + page.slug);
 
   const letters = new Set(items.map((i) => firstLetter(i.name)));
@@ -322,6 +323,7 @@ ${lis}
     canonical,
     ogTitle: `دليل ${page.h1}`,
     ogDesc: description,
+    extraCss: '    <link rel="stylesheet" href="../ext/services-search.css?v=3">',
     crumbs: [
       { name: 'الرئيسية', url: SITE + '/' },
       { name: 'دليل الخدمات', url: SITE + '/services/' },
@@ -333,9 +335,11 @@ ${header(page.slug)}
 
     <main class="sg-main">
         <div class="container">
-            <nav aria-label="مسار التصفح" class="sg-crumbs"><a href="../index.html">الرئيسية</a> ← <a href="/services/">دليل الخدمات</a> ← <span>${esc(page.h1)}</span></nav>
+            <nav aria-label="مسار التصفح" class="sg-crumbs"><a href="../index.html">الرئيسية</a> ← <a href="./">دليل الخدمات</a> ← <span>${esc(page.h1)}</span></nav>
             <h1 class="sg-h1">دليل ${esc(page.h1)} في ${HOSPITAL}</h1>
             <p class="sg-intro">دليل ${esc(page.h1)} في ${HOSPITAL}: ${items.length} خدمة مرتبة أبجديًا، مع فهرس حروف أعلى الصفحة لتسهيل الوصول.</p>
+
+${searchWidget()}
 
             <nav class="sg-letters" aria-label="فهرس الحروف">
                 <span>فهرس الحروف:</span>
@@ -344,15 +348,36 @@ ${header(page.slug)}
 
 ${sections}
 
-            <p class="sg-back"><a href="/services/">العودة إلى دليل الخدمات</a></p>
+            <p class="sg-back"><a href="./">العودة إلى دليل الخدمات</a></p>
         </div>
     </main>
 
 ${footer()}
+    <script src="../ext/data/services-index.js?v=3"></script>
+    <script src="../ext/services-search.js?v=3" defer></script>
 </body>
 </html>
 `;
   return { slug: page.slug, html, count: items.length, description };
+}
+
+function searchWidget() {
+  return `            <div class="ss" data-services-search>
+                <label class="ss-label" for="ss-input">${esc(responses.searchBox.inputLabel)}</label>
+                <form class="ss-form" role="search" onsubmit="return false;">
+                    <input class="ss-input" id="ss-input" type="search" autocomplete="off"
+                           placeholder="${esc(responses.searchBox.placeholder)}"
+                           aria-describedby="ss-hint" data-services-search-input>
+                    <button class="ss-button" type="button" data-services-search-button>بحث</button>
+                </form>
+                <p class="ss-hint" id="ss-hint">${esc(responses.searchBox.hint)}</p>
+                <p class="ss-status" role="status" aria-live="polite" data-services-search-status></p>
+                <div class="ss-panel" data-services-search-panel></div>
+                <noscript>
+                    <p class="sg-noscript">البحث الفوري يحتاج JavaScript. يمكنك تصفح الدليل كاملًا من الروابط أدناه.</p>
+                </noscript>
+            </div>
+`;
 }
 
 /* ------------------------------- صفحة الفهرس ------------------------------- */
@@ -369,7 +394,7 @@ function buildIndexPage(stats) {
 
   const cards = stats
     .map(
-      (s) => `                <li><a href="/services/${s.slug}">${esc(s.h1)}<span class="sg-count">${s.count} خدمة</span></a></li>`
+      (s) => `                <li><a href="./${s.slug}">${esc(s.h1)}<span class="sg-count">${s.count} خدمة</span></a></li>`
     )
     .join('\n');
 
@@ -379,7 +404,7 @@ function buildIndexPage(stats) {
     canonical,
     ogTitle: 'دليل الخدمات الطبية',
     ogDesc: description,
-    extraCss: '    <link rel="stylesheet" href="../ext/services-search.css?v=1">',
+    extraCss: '    <link rel="stylesheet" href="../ext/services-search.css?v=3">',
   })}
 <body>
 ${header('index')}
@@ -390,21 +415,7 @@ ${header('index')}
             <h1 class="sg-h1">دليل الخدمات الطبية في ${HOSPITAL}</h1>
             <p class="sg-intro">${total} خدمة موزعة على ${stats.length} صفحات، مرتبة أبجديًا ومصنفة كما وردت في سجل خدمات المستشفى.</p>
 
-            <div class="ss" data-services-search>
-                <label class="ss-label" for="ss-input">${esc(responses.searchBox.inputLabel)}</label>
-                <form class="ss-form" role="search" onsubmit="return false;">
-                    <input class="ss-input" id="ss-input" type="search" autocomplete="off"
-                           placeholder="${esc(responses.searchBox.placeholder)}"
-                           aria-describedby="ss-hint" data-services-search-input>
-                    <button class="ss-button" type="button" data-services-search-button>بحث</button>
-                </form>
-                <p class="ss-hint" id="ss-hint">${esc(responses.searchBox.hint)}</p>
-                <p class="ss-status" role="status" aria-live="polite" data-services-search-status></p>
-                <div class="ss-panel" data-services-search-panel></div>
-                <noscript>
-                    <p class="sg-noscript">البحث الفوري يحتاج JavaScript. يمكنك تصفح الدليل كاملًا من الروابط أدناه.</p>
-                </noscript>
-            </div>
+${searchWidget()}
 
             <ul class="sg-cards">
 ${cards}
@@ -417,7 +428,8 @@ ${cards}
     </main>
 
 ${footer()}
-    <script src="../ext/services-search.js?v=1" defer></script>
+    <script src="../ext/data/services-index.js?v=3"></script>
+    <script src="../ext/services-search.js?v=3" defer></script>
 </body>
 </html>
 `;
@@ -446,16 +458,7 @@ written.unshift({ file: 'services/index.html', count: idx.total, size: Buffer.by
 const CBC_TARGET = catalog.items.find((i) => /CBC/.test(i.name));
 if (!CBC_TARGET) throw new Error('لم أجد عنصر فحص الدم الشامل CBC');
 
-const SYNONYM_PHRASES = [
-  ['CBC', 'specific'],
-  ['فحص الدم الشامل', 'specific'],
-  ['تحليل الدم الشامل', 'specific'],
-  ['صورة الدم الكاملة', 'specific'],
-  ['صورة الدم الكامل', 'specific'],
-  ['فحص دم', 'generic'],
-  ['تحليل دم', 'generic'],
-  ['صورة الدم', 'generic'],
-];
+const SYNONYM_PHRASES = decisions.approvedAliases || [];
 
 const slugOfCategory = new Map();
 for (const pg of PAGES) for (const c of pg.cats) slugOfCategory.set(c, pg.slug);
@@ -478,19 +481,19 @@ const searchIndex = {
       group: i.responseGroup,
       slug,
       rank: rank === -1 ? 99 : rank,
-      url: i.linkOnly ? '/offers.html' : `/services/${slug}#${i.id.toLowerCase()}`,
+      url: i.searchOnly ? null : i.linkOnly ? 'offers.html' : `services/${slug}#${i.id.toLowerCase()}`,
+      searchOnly: !!i.searchOnly,
     };
   }),
   excludedTerms: decisions.excludeRules,
-  synonyms: SYNONYM_PHRASES.map(([phrase, tier]) => ({
-    phrase,
-    tier,
-    targetId: CBC_TARGET.id,
-    approved: false,
-  })),
+  blockedQueries: decisions.blockedQueries || [],
+  synonyms: SYNONYM_PHRASES.map(s => ({ ...s })),
 };
 
 fs.writeFileSync(path.join(DATA, 'services-index.json'), JSON.stringify(searchIndex, null, 2), 'utf8');
+/* حزمة بيانات ثابتة بلا fetch؛ متغيرها مصدره ملفات البيانات نفسها. */
+const bundle = {index: searchIndex, responses, contact};
+fs.writeFileSync(path.join(DATA, 'services-index.js'), 'window.ServicesSearchData = ' + JSON.stringify(bundle).replace(/</g, '\\u003c') + ';\n', 'utf8');
 
 /* ------------------------------- تحقق ------------------------------- */
 
@@ -500,7 +503,7 @@ const linkOnlyCount = linkOnlyItems.length;
 const unpublished = catalog.items.filter((i) => i.publish !== true);
 
 const problems = [];
-if (totalInPages !== totalPublished - linkOnlyCount) {
+if (totalInPages !== totalPublished - linkOnlyCount - searchOnlyItems.length) {
   problems.push(`عدم تطابق: صفحات=${totalInPages} منشور=${totalPublished} linkOnly=${linkOnlyCount}`);
 }
 /* كل عنصر منشور في صفحة واحدة بالضبط */
@@ -513,7 +516,7 @@ for (const file of written.map((w) => w.file)) {
   }
 }
 for (const it of published) {
-  if (it.linkOnly) continue;
+  if (it.linkOnly || it.searchOnly) continue;
   const n = seenIds.get(it.id.toLowerCase()) || 0;
   if (n !== 1) problems.push(`العنصر ${it.id} ظهر ${n} مرة`);
 }
@@ -538,6 +541,7 @@ console.log('  ' + '-'.repeat(72));
 console.log(`  المنشور (publish=true)        : ${totalPublished}`);
 console.log(`  داخل الصفحات                  : ${totalInPages}`);
 console.log(`  روابط فقط (عروض)              : ${linkOnlyCount}`);
+console.log(`  بحث فقط                       : ${searchOnlyItems.length}`);
 console.log(`  غير منشور (publish=false)     : ${unpublished.length}`);
 console.log(`  عناصر البحث                   : ${searchIndex.items.length}`);
 console.log(`  مرادفات مفعّلة                : ${searchIndex.synonyms.filter(s => s.approved).length} → ${CBC_TARGET.name}`);

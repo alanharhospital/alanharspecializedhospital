@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0a2a5e">
     <title>دليل طوارئ ورقود وتجهيزات | مستشفى الأنهار التخصصي</title>
-    <meta name="description" content="دليل طوارئ ورقود وتجهيزات في مستشفى الأنهار التخصصي: 101 خدمة مرتبة أبجديًا مع فهرس حروف. تصفح القائمة الكاملة أو ابحث عن الخدمة التي تحتاجها.">
+    <meta name="description" content="دليل طوارئ ورقود وتجهيزات في مستشفى الأنهار التخصصي: 64 خدمة مرتبة أبجديًا مع فهرس حروف. تصفح القائمة الكاملة أو ابحث عن الخدمة التي تحتاجها.">
     <link rel="canonical" href="https://alanharhospital.com/services/emergency">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="مستشفى الأنهار التخصصي">
     <meta property="og:title" content="دليل طوارئ ورقود وتجهيزات">
-    <meta property="og:description" content="دليل طوارئ ورقود وتجهيزات في مستشفى الأنهار التخصصي: 101 خدمة مرتبة أبجديًا مع فهرس حروف. تصفح القائمة الكاملة أو ابحث عن الخدمة التي تحتاجها.">
+    <meta property="og:description" content="دليل طوارئ ورقود وتجهيزات في مستشفى الأنهار التخصصي: 64 خدمة مرتبة أبجديًا مع فهرس حروف. تصفح القائمة الكاملة أو ابحث عن الخدمة التي تحتاجها.">
     <meta property="og:url" content="https://alanharhospital.com/services/emergency">
     <meta property="og:image" content="https://alanharhospital.com/logo.jpg">
     <meta property="og:locale" content="ar_YE">
@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css?v=10">
-
+    <link rel="stylesheet" href="../ext/services-search.css?v=3">
     <style>
         /* دليل الخدمات — تنسيق خاص بالصفحات المولّدة */
         .sg-main { padding: 2rem 0 3rem; }
@@ -95,7 +95,7 @@
                 <li><a href="../offers.html" class="nav-offer-link">العروض</a></li>
                 <li><a href="../news.html">الأخبار</a></li>
                 <li><a href="../doctors.html">الاستشاريون والطواقم</a></li>
-                <li><a href="/services/" class="nav-active">دليل الخدمات</a></li>
+                <li><a href="./" class="nav-active">دليل الخدمات</a></li>
                 <li><a href="../index.html#appointment" class="btn-nav-highlight">حجز موعد</a></li>
                 <li><a href="../index.html#contact">اتصل بنا</a></li>
             </ul>
@@ -104,19 +104,34 @@
 
     <main class="sg-main">
         <div class="container">
-            <nav aria-label="مسار التصفح" class="sg-crumbs"><a href="../index.html">الرئيسية</a> ← <a href="/services/">دليل الخدمات</a> ← <span>طوارئ ورقود وتجهيزات</span></nav>
+            <nav aria-label="مسار التصفح" class="sg-crumbs"><a href="../index.html">الرئيسية</a> ← <a href="./">دليل الخدمات</a> ← <span>طوارئ ورقود وتجهيزات</span></nav>
             <h1 class="sg-h1">دليل طوارئ ورقود وتجهيزات في مستشفى الأنهار التخصصي</h1>
-            <p class="sg-intro">دليل طوارئ ورقود وتجهيزات في مستشفى الأنهار التخصصي: 101 خدمة مرتبة أبجديًا، مع فهرس حروف أعلى الصفحة لتسهيل الوصول.</p>
+            <p class="sg-intro">دليل طوارئ ورقود وتجهيزات في مستشفى الأنهار التخصصي: 64 خدمة مرتبة أبجديًا، مع فهرس حروف أعلى الصفحة لتسهيل الوصول.</p>
+
+            <div class="ss" data-services-search>
+                <label class="ss-label" for="ss-input">ابحث في دليل الخدمات</label>
+                <form class="ss-form" role="search" onsubmit="return false;">
+                    <input class="ss-input" id="ss-input" type="search" autocomplete="off"
+                           placeholder="ابحث عن فحص أو أشعة أو عملية"
+                           aria-describedby="ss-hint" data-services-search-input>
+                    <button class="ss-button" type="button" data-services-search-button>بحث</button>
+                </form>
+                <p class="ss-hint" id="ss-hint">اكتب حرفين على الأقل</p>
+                <p class="ss-status" role="status" aria-live="polite" data-services-search-status></p>
+                <div class="ss-panel" data-services-search-panel></div>
+                <noscript>
+                    <p class="sg-noscript">البحث الفوري يحتاج JavaScript. يمكنك تصفح الدليل كاملًا من الروابط أدناه.</p>
+                </noscript>
+            </div>
+
 
             <nav class="sg-letters" aria-label="فهرس الحروف">
                 <span>فهرس الحروف:</span>
                 <a href="#h-ا">ا</a>
             <a href="#h-ت">ت</a>
-            <a href="#h-ح">ح</a>
             <a href="#h-خ">خ</a>
             <a href="#h-ر">ر</a>
             <a href="#h-ش">ش</a>
-            <a href="#h-ص">ص</a>
             <a href="#h-ض">ض</a>
             <a href="#h-ع">ع</a>
             <a href="#h-غ">غ</a>
@@ -124,7 +139,6 @@
             <a href="#h-ق">ق</a>
             <a href="#h-م">م</a>
             <a href="#h-ن">ن</a>
-            <a href="#h-و">و</a>
             </nav>
 
             <h2 class="sg-cat" id="cat-طوارئ-وإسعاف">طوارئ وإسعاف</h2>
@@ -173,26 +187,11 @@
             </ul>
             <h2 class="sg-cat" id="cat-رقود-وخدمات-تمريضية">رقود وخدمات تمريضية</h2>
             <ul class="sg-list">
-                    <li id="svc-0363">أجور تغسيل الموتى فقط<span class="sg-id" aria-hidden="true">SVC-0363</span></li>
-                    <li id="svc-0365">أجور تغسيل وتكفين ودفن جزء مبتور<span class="sg-id" aria-hidden="true">SVC-0365</span></li>
-                    <li id="svc-0364">أجور تكفين الموتى فقط<span class="sg-id" aria-hidden="true">SVC-0364</span></li>
-                    <li id="svc-0366">أجور ثلاجة الموتى لكل يوم<span class="sg-id" aria-hidden="true">SVC-0366</span></li>
-                    <li id="svc-0362">أجور سرير إضافي<span class="sg-id" aria-hidden="true">SVC-0362</span></li>
-                    <li id="svc-0394">استخدام العلاج الضوئي للمولود الفردي والمزدوج لكل ساعة (فوتوثيرابي)<span class="sg-id" aria-hidden="true">SVC-0394</span></li>
-                    <li id="svc-0383">استخدام جهاز أشعة C-ARM<span class="sg-id" aria-hidden="true">SVC-0383</span></li>
                     <li id="svc-0377">تركيب أنبوب الرغامي ETT<span class="sg-id" aria-hidden="true">SVC-0377</span></li>
                     <li id="svc-0378">تركيب أنبوب أنفي معدي NGT<span class="sg-id" aria-hidden="true">SVC-0378</span></li>
                     <li id="svc-0385">تركيب قسطرة المحاليل عبر السرة<span class="sg-id" aria-hidden="true">SVC-0385</span></li>
                     <li id="svc-0380">تضميد حروق (صغير، متوسط، كبير)<span class="sg-id" aria-hidden="true">SVC-0380</span></li>
-                    <li id="svc-0387">حلاقة موضع العملية<span class="sg-id" aria-hidden="true">SVC-0387</span></li>
-                    <li id="svc-0392">خدمات تمريضية عمليات اليوم الواحد<span class="sg-id" aria-hidden="true">SVC-0392</span></li>
                     <li id="svc-0367">خدمات تمريضية يومية (الرقود الخاص، رقود جناح، الرقود العام، الحضانة، العناية المركزة)<span class="sg-id" aria-hidden="true">SVC-0367</span></li>
-                    <li id="svc-0373">خدمة أخذ عينة من إفرازات القصبة الهوائية لغرض زراعتها<span class="sg-id" aria-hidden="true">SVC-0373</span></li>
-                    <li id="svc-0374">خدمة استخدام الفراش الهوائي باليوم<span class="sg-id" aria-hidden="true">SVC-0374</span></li>
-                    <li id="svc-0395">خدمة استعارة تدفئة حضانات إلى الساعة<span class="sg-id" aria-hidden="true">SVC-0395</span></li>
-                    <li id="svc-0370">خدمة تركيب جهاز التبخير باليوم<span class="sg-id" aria-hidden="true">SVC-0370</span></li>
-                    <li id="svc-0371">خدمة مراقبة جهاز التبخير باليوم<span class="sg-id" aria-hidden="true">SVC-0371</span></li>
-                    <li id="svc-0391">خيمة منظم أوكسجين<span class="sg-id" aria-hidden="true">SVC-0391</span></li>
                     <li id="svc-0353">رقود جناح<span class="sg-id" aria-hidden="true">SVC-0353</span></li>
                     <li id="svc-0355">رقود جناح ملكي<span class="sg-id" aria-hidden="true">SVC-0355</span></li>
                     <li id="svc-0358">رقود حضانة<span class="sg-id" aria-hidden="true">SVC-0358</span></li>
@@ -201,34 +200,9 @@
                     <li id="svc-0352">رقود غرفة خاصة<span class="sg-id" aria-hidden="true">SVC-0352</span></li>
                     <li id="svc-0354">رقود غرفة خاصة عزل<span class="sg-id" aria-hidden="true">SVC-0354</span></li>
                     <li id="svc-0351">رقود غرفة عامة (مشترك)<span class="sg-id" aria-hidden="true">SVC-0351</span></li>
-                    <li id="svc-0388">شد كسر على السرير باليوم<span class="sg-id" aria-hidden="true">SVC-0388</span></li>
                     <li id="svc-0384">شفط سوائل من الصدر<span class="sg-id" aria-hidden="true">SVC-0384</span></li>
                     <li id="svc-0376">شفط سوائل من الصدر (عناية)<span class="sg-id" aria-hidden="true">SVC-0376</span></li>
-                    <li id="svc-0375">صدمات كهربائية (D/S shock)<span class="sg-id" aria-hidden="true">SVC-0375</span></li>
-                    <li id="svc-0398">ضمان إرجاع قربة دم<span class="sg-id" aria-hidden="true">SVC-0398</span></li>
-                    <li id="svc-0396">ضمان سرير متحرك لمريض<span class="sg-id" aria-hidden="true">SVC-0396</span></li>
-                    <li id="svc-0397">ضمان كرسي متحرك لمريض<span class="sg-id" aria-hidden="true">SVC-0397</span></li>
-                    <li id="svc-0389">فحص السكر عن طريق الإصبع<span class="sg-id" aria-hidden="true">SVC-0389</span></li>
-                    <li id="svc-0393">قياس الربو والتحسس بالجهاز (PFT)<span class="sg-id" aria-hidden="true">SVC-0393</span></li>
-                    <li id="svc-0381">مجارحة بعد عملية (صغرى، وسطى، كبرى)<span class="sg-id" aria-hidden="true">SVC-0381</span></li>
-                    <li id="svc-0382">مجارحة تقرحات سريرية (صغرى، وسطى، كبرى)<span class="sg-id" aria-hidden="true">SVC-0382</span></li>
-                    <li id="svc-0372">مجارحة وتغيير قصبة التهوية الحنجرية<span class="sg-id" aria-hidden="true">SVC-0372</span></li>
-                    <li id="svc-0368">مراقبة أخصائي المعالجة التنفسية للحالة في اليوم الواحد<span class="sg-id" aria-hidden="true">SVC-0368</span></li>
-                    <li id="svc-0361">ملف دخول الطوارئ التوليدية<span class="sg-id" aria-hidden="true">SVC-0361</span></li>
-                    <li id="svc-0359">ملف دخول الطوارئ العامة<span class="sg-id" aria-hidden="true">SVC-0359</span></li>
                     <li id="svc-0360">ملف رقود<span class="sg-id" aria-hidden="true">SVC-0360</span></li>
-                    <li id="svc-0379">نقل الدم الكامل<span class="sg-id" aria-hidden="true">SVC-0379</span></li>
-            </ul>
-            <h2 class="sg-cat" id="cat-تجهيزات-وأسرة-وأجهزة">تجهيزات وأسرة وأجهزة</h2>
-            <ul class="sg-list">
-                    <li id="svc-0003">16 حاضنة أطفال في وحدة العناية بحديثي الولادة ورعاية الخدج (NICU)<span class="sg-id" aria-hidden="true">SVC-0003</span></li>
-                    <li id="svc-0002">8 أسرة عناية مركزة للأطفال (PICU)<span class="sg-id" aria-hidden="true">SVC-0002</span></li>
-                    <li id="svc-0001">أكثر من 13 سرير عناية مركزة للكبار (ICU)<span class="sg-id" aria-hidden="true">SVC-0001</span></li>
-                    <li id="svc-0008">أكثر من 35 جهاز مراقبة للعلامات الحيوية (Patient Monitors)<span class="sg-id" aria-hidden="true">SVC-0008</span></li>
-                    <li id="svc-0004">أكثر من 40 سرير رقود خاص<span class="sg-id" aria-hidden="true">SVC-0004</span></li>
-                    <li id="svc-0007">الأجهزة الطبية: أكثر من 12 جهاز تنفس صناعي<span class="sg-id" aria-hidden="true">SVC-0007</span></li>
-                    <li id="svc-0006">خدمات جراحة متعددة التخصصات<span class="sg-id" aria-hidden="true">SVC-0006</span></li>
-                    <li id="svc-0005">وحدة متخصصة لجراحة الأطفال<span class="sg-id" aria-hidden="true">SVC-0005</span></li>
             </ul>
             <h2 class="sg-cat" id="cat-وحدات-وأقسام">وحدات وأقسام</h2>
             <ul class="sg-list">
@@ -241,7 +215,7 @@
                     <li id="svc-0449">الوحدات الحرجة<span class="sg-id" aria-hidden="true">SVC-0449</span></li>
             </ul>
 
-            <p class="sg-back"><a href="/services/">العودة إلى دليل الخدمات</a></p>
+            <p class="sg-back"><a href="./">العودة إلى دليل الخدمات</a></p>
         </div>
     </main>
 
@@ -264,5 +238,7 @@
             </div>
         </div>
     </footer>
+    <script src="../ext/data/services-index.js?v=3"></script>
+    <script src="../ext/services-search.js?v=3" defer></script>
 </body>
 </html>

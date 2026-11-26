@@ -1,0 +1,9 @@
+{
+  "name": "al-anhar-search-tests",
+  "private": true,
+  "description": "Test-only headless browser tooling; never loaded by the website.",
+  "devDependencies": {
+    "@sparticuz/chromium": "141.0.0",
+    "puppeteer-core": "24.26.1"
+  }
+}

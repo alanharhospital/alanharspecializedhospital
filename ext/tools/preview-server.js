@@ -12,6 +12,9 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..', '..');
 const PORT = Number(process.argv[2] || 8090);
+// اختبارات تثبيت الموقع داخل مسار فرعي، مثل /sub/dir/، دون تغيير الملفات.
+const baseArg = process.env.PREVIEW_BASE_PATH || '/';
+const BASE = '/' + baseArg.split('/').filter(Boolean).join('/') + (baseArg === '/' ? '' : '/');
 
 const TYPES = {
   '.html': 'text/html; charset=utf-8',
@@ -46,7 +49,19 @@ function resolve(urlPath) {
 
 http
   .createServer((req, res) => {
-    const file = resolve(req.url === '/' ? '/index.html' : req.url);
+    const requestPath = req.url.split('?')[0];
+    if (BASE !== '/' && requestPath === BASE.slice(0, -1)) {
+      res.writeHead(308, { Location: BASE + (req.url.includes('?') ? '?' + req.url.split('?').slice(1).join('?') : '') });
+      res.end();
+      return;
+    }
+    if (BASE !== '/' && !requestPath.startsWith(BASE)) {
+      res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+      res.end('404');
+      return;
+    }
+    const localPath = BASE === '/' ? req.url : '/' + req.url.slice(BASE.length);
+    const file = resolve(localPath === '/' ? '/index.html' : localPath);
     if (!file) {
       res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
       res.end('<meta charset="utf-8"><p style="font-family:sans-serif">404 — ' + req.url + '</p>');
