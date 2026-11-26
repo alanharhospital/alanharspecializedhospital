@@ -1,0 +1,317 @@
+[
+  {
+    "name": "دليل التذييل — صفحات الوحدات",
+    "route": "/clinics.html",
+    "selector": "footer .enh-guide-link a",
+    "before": {
+      "fg": "#0a2a5e",
+      "bg": "#0a2a5e",
+      "ratio": 1
+    },
+    "after": {
+      "fg": "#ffffff",
+      "bg": "#0a2a5e",
+      "ratio": 13.95
+    }
+  },
+  {
+    "name": "التنبيه — الرئيسية",
+    "route": "/",
+    "selector": "footer .enh-disclaimer",
+    "before": {
+      "fg": "#0a2a5e",
+      "bg": "#132650",
+      "ratio": 1.06
+    },
+    "after": {
+      "fg": "#0a2a5e",
+      "bg": "#ffffff",
+      "ratio": 13.95
+    }
+  },
+  {
+    "name": "دليل التذييل — الرئيسية",
+    "route": "/",
+    "selector": "footer .enh-guide-link a",
+    "before": {
+      "fg": "#0a2a5e",
+      "bg": "#14264f",
+      "ratio": 1.06
+    },
+    "after": {
+      "fg": "#ffffff",
+      "bg": "#0a2a5e",
+      "ratio": 13.95
+    }
+  },
+  {
+    "name": "التنبيه — الأطباء",
+    "route": "/doctors.html",
+    "selector": "footer .enh-disclaimer",
+    "before": {
+      "fg": "#0a2a5e",
+      "bg": "#132248",
+      "ratio": 1.11
+    },
+    "after": {
+      "fg": "#0a2a5e",
+      "bg": "#ffffff",
+      "ratio": 13.95
+    }
+  },
+  {
+    "name": "دليل التذييل — الأطباء",
+    "route": "/doctors.html",
+    "selector": "footer .enh-guide-link a",
+    "before": {
+      "fg": "#0a2a5e",
+      "bg": "#142247",
+      "ratio": 1.12
+    },
+    "after": {
+      "fg": "#ffffff",
+      "bg": "#0a2a5e",
+      "ratio": 13.95
+    }
+  },
+  {
+    "name": "شارة الخبر",
+    "route": "/news.html",
+    "selector": "article .hero-badge",
+    "before": {
+      "fg": "#2ecc71",
+      "bg": "#d5f5e3",
+      "ratio": 1.8
+    },
+    "after": {
+      "fg": "#0a2a5e",
+      "bg": "#d5f5e3",
+      "ratio": 11.94
+    }
+  },
+  {
+    "name": "زر واتساب الحجز",
+    "route": "/",
+    "selector": "#btnSendWhatsApp",
+    "before": {
+      "fg": "#ffffff",
+      "bg": "#25d366",
+      "ratio": 1.98
+    },
+    "after": {
+      "fg": "#ffffff",
+      "bg": "#14733e",
+      "ratio": 5.91
+    }
+  },
+  {
+    "name": "رمز فئة",
+    "route": "/ancillary.html",
+    "selector": ".category-icon",
+    "before": {
+      "fg": "#2ecc71",
+      "bg": "#f8fafc",
+      "ratio": 2.01
+    },
+    "after": {
+      "fg": "#0a2a5e",
+      "bg": "#f8fafc",
+      "ratio": 13.33
+    }
+  },
+  {
+    "name": "إحصاء العرض",
+    "route": "/offers.html",
+    "selector": ".stat b",
+    "before": {
+      "fg": "#2ecc71",
+      "bg": "#ffffff",
+      "ratio": 2.1
+    },
+    "after": {
+      "fg": "#0a2a5e",
+      "bg": "#ffffff",
+      "ratio": 13.95
+    }
+  },
+  {
+    "name": "عرض التفاصيل",
+    "route": "/ancillary.html",
+    "selector": ".expand-text",
+    "before": {
+      "fg": "#2ecc71",
+      "bg": "#ffffff",
+      "ratio": 2.1
+    },
+    "after": {
+      "fg": "#0a2a5e",
+      "bg": "#ffffff",
+      "ratio": 13.92
+    }
+  },
+  {
+    "name": "زر حجز الرئيسية",
+    "route": "/",
+    "selector": ".hero a.btn-primary",
+    "before": {
+      "fg": "#ffffff",
+      "bg": "#2ecc71",
+      "ratio": 2.1
+    },
+    "after": {
+      "fg": "#ffffff",
+      "bg": "#14733e",
+      "ratio": 5.91
+    }
+  },
+  {
+    "name": "نص الهوية المجاور للشعار",
+    "route": "/doctors.html",
+    "selector": ".brand-name-sub",
+    "before": {
+      "fg": "#40c057",
+      "bg": "#ffffff",
+      "ratio": 2.36
+    },
+    "after": {
+      "fg": "#40c057",
+      "bg": "#ffffff",
+      "ratio": 2.36
+    }
+  },
+  {
+    "name": "زر حجز طبيب",
+    "route": "/doctors.html",
+    "selector": ".btn-book-now",
+    "before": {
+      "fg": "#ffffff",
+      "bg": "#40c057",
+      "ratio": 2.36
+    },
+    "after": {
+      "fg": "#ffffff",
+      "bg": "#14733e",
+      "ratio": 5.91
+    }
+  },
+  {
+    "name": "شارة إعلان",
+    "route": "/",
+    "selector": ".badge-limited",
+    "before": {
+      "fg": "#ffffff",
+      "bg": "#ee7d55",
+      "ratio": 2.73
+    },
+    "after": {
+      "fg": "#ffffff",
+      "bg": "#0a2a5e",
+      "ratio": 13.95
+    }
+  },
+  {
+    "name": "شارة تخصص الطبيب",
+    "route": "/doctors.html",
+    "selector": ".spec-badge",
+    "before": {
+      "fg": "#2f9e44",
+      "bg": "#e8f7eb",
+      "ratio": 3.12
+    },
+    "after": {
+      "fg": "#0a2a5e",
+      "bg": "#e8f7eb",
+      "ratio": 12.61
+    }
+  },
+  {
+    "name": "رمز شريط الطوارئ",
+    "route": "/",
+    "selector": ".quickbar__phone-ico",
+    "before": {
+      "fg": "#ffffff",
+      "bg": "#4c8cda",
+      "ratio": 3.47
+    },
+    "after": {
+      "fg": "#ffffff",
+      "bg": "#0a2a5e",
+      "ratio": 13.95
+    }
+  },
+  {
+    "name": "صلاحية العرض",
+    "route": "/offers.html",
+    "selector": ".status",
+    "before": {
+      "fg": "#1e8e4e",
+      "bg": "#e0f7ea",
+      "ratio": 3.71
+    },
+    "after": {
+      "fg": "#0a2a5e",
+      "bg": "#e0f7ea",
+      "ratio": 12.41
+    }
+  },
+  {
+    "name": "تواصل مباشر",
+    "route": "/pr.html",
+    "selector": ".live-badge",
+    "before": {
+      "fg": "#1a8f4d",
+      "bg": "#e9f9f0",
+      "ratio": 3.79
+    },
+    "after": {
+      "fg": "#0a2a5e",
+      "bg": "#e9f9f0",
+      "ratio": 12.8
+    }
+  },
+  {
+    "name": "زر فيسبوك الخبر",
+    "route": "/news.html",
+    "selector": "a.btn[href*=\"facebook.com\"] span",
+    "before": {
+      "fg": "#ffffff",
+      "bg": "#1877f2",
+      "ratio": 4.23
+    },
+    "after": {
+      "fg": "#ffffff",
+      "bg": "#1e4a8a",
+      "ratio": 8.74
+    }
+  },
+  {
+    "name": "نوع العرض",
+    "route": "/offers.html",
+    "selector": ".cat-tag",
+    "before": {
+      "fg": "#1f6fd1",
+      "bg": "#e9f1fa",
+      "ratio": 4.32
+    },
+    "after": {
+      "fg": "#0a2a5e",
+      "bg": "#e9f1fa",
+      "ratio": 12.2
+    }
+  },
+  {
+    "name": "نجمة الحقل المطلوب",
+    "route": "/",
+    "selector": ".form-group[style*=\"f0f8fc\"] .required",
+    "before": {
+      "fg": "#dc2626",
+      "bg": "#f0f8fc",
+      "ratio": 4.49
+    },
+    "after": {
+      "fg": "#0a2a5e",
+      "bg": "#f0f8fc",
+      "ratio": 12.98
+    }
+  }
+]

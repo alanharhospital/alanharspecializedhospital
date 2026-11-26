@@ -1,0 +1,94 @@
+{
+  "/ .hero .btn-primary": {
+    "normal": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(20, 115, 62)",
+      "outline": "rgb(255, 255, 255) none 0px",
+      "shadow": "rgba(46, 204, 113, 0.3) 0px 6px 20px 0px",
+      "focusVisible": false
+    },
+    "hover": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(10, 42, 94)",
+      "outline": "rgb(255, 255, 255) none 0px",
+      "shadow": "rgba(46, 204, 113, 0.3) 0px 6px 20px 0px",
+      "focusVisible": false
+    },
+    "focus": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(20, 115, 62)",
+      "outline": "rgb(30, 74, 138) solid 3px",
+      "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px",
+      "focusVisible": true
+    }
+  },
+  "/ .hero .btn-outline": {
+    "normal": {
+      "color": "rgb(10, 42, 94)",
+      "background": "rgb(255, 255, 255)",
+      "outline": "rgb(10, 42, 94) none 0px",
+      "shadow": "none",
+      "focusVisible": false
+    },
+    "hover": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(10, 42, 94)",
+      "outline": "rgb(255, 255, 255) none 0px",
+      "shadow": "none",
+      "focusVisible": false
+    },
+    "focus": {
+      "color": "rgb(10, 42, 94)",
+      "background": "rgb(255, 255, 255)",
+      "outline": "rgb(30, 74, 138) solid 3px",
+      "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px",
+      "focusVisible": true
+    }
+  },
+  "/doctors.html .btn-book-now": {
+    "normal": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(20, 115, 62)",
+      "outline": "rgb(255, 255, 255) none 0px",
+      "shadow": "none",
+      "focusVisible": false
+    },
+    "hover": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(10, 42, 94)",
+      "outline": "rgb(255, 255, 255) none 0px",
+      "shadow": "none",
+      "focusVisible": false
+    },
+    "focus": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(20, 115, 62)",
+      "outline": "rgb(30, 74, 138) solid 3px",
+      "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px",
+      "focusVisible": true
+    }
+  },
+  "/news.html a.btn[href*=facebook]": {
+    "normal": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(30, 74, 138)",
+      "outline": "rgb(255, 255, 255) none 0px",
+      "shadow": "none",
+      "focusVisible": false
+    },
+    "hover": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(30, 74, 138)",
+      "outline": "rgb(255, 255, 255) none 0px",
+      "shadow": "none",
+      "focusVisible": false
+    },
+    "focus": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(30, 74, 138)",
+      "outline": "rgb(30, 74, 138) solid 3px",
+      "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px",
+      "focusVisible": true
+    }
+  }
+}

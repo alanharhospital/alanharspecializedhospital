@@ -1,0 +1,79 @@
+/* ENH:START 6-c — reversible brand and accessibility layer.
+   Base palette from ext/data/brand-profile.json. #14733e is a darker,
+   hue-matched variant of existing #2ecc71, needed for white-text contrast. */
+:root {
+  --brand-navy: #0a2a5e;
+  --brand-blue: #1e4a8a;
+  --brand-green: #14733e;
+  --brand-white: #ffffff;
+  --brand-surface: #f8f9fa;
+  --brand-ink: #333333;
+  --brand-border: #e2e8f0;
+  --brand-radius: 12px;
+  --brand-space: 1rem;
+  --brand-shadow: 0 8px 20px rgba(10,42,94,.08);
+  --brand-font: 'Tajawal', 'Cairo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+main { font-family:var(--brand-font); }
+button, input, select, textarea { font-family:inherit; }
+
+/* Two action treatments: primary filled and secondary outlined.
+   The existing .ss-wa colors are intentionally untouched. */
+:is(a.btn,button.btn,.btn-book-now,.btn-sm,.ss-button,.ss-option,.clinical-wa,.clinical-close,.clinical-chip,.sg-share,#enh-main > a) {
+  min-height:44px; min-width:44px; border-radius:var(--brand-radius); font-family:inherit; font-weight:700;
+}
+:is(.btn-primary,.btn-green,.btn-book-now,.btn-whatsapp-submit,.btn-wa,.btn-whatsapp,.btn-call,.btn-nav-highlight,.floating-bot-btn,#enh-main > a) {
+  background:var(--brand-green) !important; color:var(--brand-white) !important; border-color:var(--brand-green) !important;
+}
+:is(.btn-outline,.btn-line,.btn-email-submit,.clinical-close,.ss-option) {
+  background:var(--brand-white) !important; color:var(--brand-navy) !important; border:2px solid var(--brand-navy) !important;
+}
+a.btn[href*="facebook.com"] { background:var(--brand-blue) !important; color:var(--brand-white) !important; }
+:is(.btn-primary,.btn-green,.btn-book-now,.btn-whatsapp-submit,.btn-wa,.btn-whatsapp,.btn-call,.btn-nav-highlight,.floating-bot-btn,#enh-main > a):hover { background:var(--brand-navy) !important; color:var(--brand-white) !important; transform:none; }
+:is(.btn-outline,.btn-line,.btn-email-submit,.clinical-close,.ss-option):hover { background:var(--brand-navy) !important; color:var(--brand-white) !important; transform:none; }
+:is(button,a,input,select,textarea,summary,[role="button"]):not(.ss-wa):focus-visible { outline:3px solid var(--brand-blue) !important; outline-offset:3px; box-shadow:0 0 0 2px var(--brand-white); }
+:is(button,input,select,textarea):disabled, [aria-disabled="true"] { opacity:.65; cursor:not-allowed; }
+
+/* Existing card and heading families, without touching logo/image resources. */
+:is(.feature-card,.portal-card,.facility-card,.doctor-single-card,.unit-item-card,.appointment-form-container,.appointment-info-card,.clinical-card,.sg-cards li,.sg-list li,.offer-card,.contact-card,.category-card) { border-radius:var(--brand-radius); box-shadow:var(--brand-shadow); }
+:is(main,.section-padding) h1 { font-size:clamp(1.75rem,4vw,2.4rem); line-height:1.35; }
+:is(main,.section-padding) h2:not(.enh-letter-heading) { font-size:clamp(1.25rem,2.8vw,1.7rem); line-height:1.5; }
+:is(main,.section-padding) h3:not(.enh-letter-heading) { font-size:1.1rem; line-height:1.5; }
+
+/* The measured failing text pairs: preserve the original text and assets. */
+footer .enh-guide-link a { color:var(--brand-white) !important; background:var(--brand-navy) !important; }
+footer .enh-disclaimer { background:var(--brand-white) !important; color:var(--brand-navy) !important; }
+:is(.spec-badge,.live-badge,.status,.results-badge,.cat-tag,.category-icon,.expand-text,.stat b) { color:var(--brand-navy) !important; }
+article.appointment-form-container .hero-badge { color:var(--brand-navy) !important; }
+article.appointment-form-container > div > span[style*="accent-green"] { color:var(--brand-navy) !important; }
+/* The low-contrast green in the doctors' text logo remains unchanged by request. */
+:is(.badge-limited,.nav-badge,.badge-special,.perks li em,.perks li em.free,.g-f,.quickbar__phone-ico) { background:var(--brand-navy) !important; color:var(--brand-white) !important; }
+.nav-list-menu a.active, .btn-header-contact { color:var(--brand-navy) !important; }
+.btn-header-appointment { background:var(--brand-green) !important; color:var(--brand-white) !important; }
+.required { color:var(--brand-navy) !important; }
+
+/* Independent targets; do not enlarge ordinary inline prose links or the logo. */
+button, [role="button"], input:not([type="hidden"]):not([type="radio"]):not([type="checkbox"]), select, textarea, .sg-letters a { min-width:44px; min-height:44px; }
+:is(footer a[href],.sg-crumbs a[href],.crumbs a[href],.sg-offers a[href],.sg-back a[href],.nav-list-menu a[href],.footer-social a[href],a.btn,a.btn-sm,.btn-book-now,.floating-bot-btn,#enh-main > a,a[href^="tel:"],a[href^="mailto:"],a[href^="https://wa.me/"]:not(.ss-wa),a[href^="https://maps.app.goo.gl/"],.appointment-info-card a[href],.contact-card a[href],.clinical-section details a[href],.map-link,.link-arrow,.chip) { display:inline-flex; align-items:center; min-width:44px; min-height:44px; }
+/* Expand navbar hit areas without changing its flex sizing or the adjacent logo. */
+.nav-links a[href] { position:relative; }
+.nav-links a[href]::before { content:""; position:absolute; left:50%; top:50%; width:max(100%, 44px); height:max(100%, 44px); transform:translate(-50%, -50%); }
+/* The fixed dot navigation keeps a small visual dot inside each 44px target. */
+.dots-nav { gap:0; inset-inline-start:0; top:calc(50% + 80px); }
+.dots-nav a, .dots-nav a.is-active, .dots-nav a:hover { display:grid; place-items:center; width:44px; height:44px; min-width:44px; min-height:44px; background:transparent; border:0; box-shadow:none; transform:none; }
+.dots-nav a::before { content:""; width:11px; height:11px; border-radius:50%; background:var(--brand-blue); border:2px solid var(--brand-white); box-shadow:0 0 0 1px rgba(10,42,94,.2); }
+.dots-nav a.is-active::before, .dots-nav a:hover::before { background:var(--brand-green); }
+@media (min-width:769px) {
+  input[type="radio"] { appearance:none; -webkit-appearance:none; width:44px !important; height:44px !important; min-width:44px; min-height:44px; margin:0; flex:0 0 44px; background:radial-gradient(circle, #fff 0 5px, #767676 5px 6.5px, transparent 7px); cursor:pointer; }
+  input[type="radio"]:checked { background:radial-gradient(circle, #0a2a5e 0 3px, #fff 3px 5px, #767676 5px 6.5px, transparent 7px); }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; scroll-behavior:auto !important; } }
+@media print {
+  header, nav, .floating-bot-btn, .fab, .clinical-trigger, .clinical-dialog, .clinical-toasts, .share-bar, .sh, .ss, .back-to-top, .enh-skip-link, button, .btn, .btn-book-now { display:none !important; }
+  *, *::before, *::after { background:transparent !important; color:#000 !important; text-shadow:none !important; box-shadow:none !important; }
+  body { font-size:11pt; }
+  .reveal { opacity:1 !important; transform:none !important; transition:none !important; animation:none !important; }
+  a[href^="http"]:not([href*="wa.me"])::after { content:" (" attr(href) ")"; font-size:9pt; overflow-wrap:anywhere; }
+  img { max-width:100%; }
+}
+/* ENH:END 6-c */

@@ -1,0 +1,1200 @@
+{
+  "method": "HTMLParser stack heuristic; optional HTML closing tags excluded; not a standards validator. Only localhost is requested.",
+  "files": {
+    "index.html": {
+      "hiddenWordsSrOnlySeo": 2163,
+      "tagClosureHeuristic": []
+    },
+    "doctors.html": {
+      "hiddenWordsSrOnlySeo": 0,
+      "tagClosureHeuristic": []
+    },
+    "offers.html": {
+      "hiddenWordsSrOnlySeo": 0,
+      "tagClosureHeuristic": []
+    },
+    "clinics.html": {
+      "hiddenWordsSrOnlySeo": 0,
+      "tagClosureHeuristic": []
+    },
+    "units.html": {
+      "hiddenWordsSrOnlySeo": 0,
+      "tagClosureHeuristic": []
+    },
+    "ancillary.html": {
+      "hiddenWordsSrOnlySeo": 0,
+      "tagClosureHeuristic": []
+    },
+    "pr.html": {
+      "hiddenWordsSrOnlySeo": 0,
+      "tagClosureHeuristic": []
+    },
+    "news.html": {
+      "hiddenWordsSrOnlySeo": 0,
+      "tagClosureHeuristic": []
+    },
+    "404.html": {
+      "hiddenWordsSrOnlySeo": 0,
+      "tagClosureHeuristic": []
+    },
+    "services/index.html": {
+      "hiddenWordsSrOnlySeo": 0,
+      "tagClosureHeuristic": []
+    },
+    "services/diagnostics.html": {
+      "hiddenWordsSrOnlySeo": 0,
+      "tagClosureHeuristic": []
+    },
+    "services/surgery.html": {
+      "hiddenWordsSrOnlySeo": 0,
+      "tagClosureHeuristic": []
+    },
+    "services/dental.html": {
+      "hiddenWordsSrOnlySeo": 0,
+      "tagClosureHeuristic": []
+    },
+    "services/women.html": {
+      "hiddenWordsSrOnlySeo": 0,
+      "tagClosureHeuristic": []
+    },
+    "services/ent.html": {
+      "hiddenWordsSrOnlySeo": 0,
+      "tagClosureHeuristic": []
+    },
+    "services/physio.html": {
+      "hiddenWordsSrOnlySeo": 0,
+      "tagClosureHeuristic": []
+    },
+    "services/emergency.html": {
+      "hiddenWordsSrOnlySeo": 0,
+      "tagClosureHeuristic": []
+    },
+    "services/clinics-admin.html": {
+      "hiddenWordsSrOnlySeo": 0,
+      "tagClosureHeuristic": []
+    }
+  },
+  "contacts": {
+    "9673235270": [
+      {
+        "file": "index.html",
+        "line": 76,
+        "context": "\"+967-3-235270\","
+      },
+      {
+        "file": "doctors.html",
+        "line": 672,
+        "context": "\"telephone\": \"+9673235270\","
+      },
+      {
+        "file": "offers.html",
+        "line": 60,
+        "context": "\"telephone\": [\"+967-3-235270\", \"+967-3-235271\", \"+967-3-235272\", \"+967-3-235273\", \"+967-735539107\", \"+967-783395352\", \"+967-771422070\"],"
+      },
+      {
+        "file": "pr.html",
+        "line": 1207,
+        "context": "<a href=\"tel:+9673235270\">03-235270</a>"
+      },
+      {
+        "file": "pr.html",
+        "line": 1504,
+        "context": "<a href=\"tel:+9673235270\">اتصال</a>"
+      },
+      {
+        "file": "pr.html",
+        "line": 1901,
+        "context": "<a href=\"tel:+9673235270\">03-235270</a>"
+      },
+      {
+        "file": "pr.html",
+        "line": 2163,
+        "context": "<a href=\"tel:+9673235270\">"
+      }
+    ],
+    "9673235271": [
+      {
+        "file": "index.html",
+        "line": 77,
+        "context": "\"+967-3-235271\","
+      },
+      {
+        "file": "offers.html",
+        "line": 60,
+        "context": "\"telephone\": [\"+967-3-235270\", \"+967-3-235271\", \"+967-3-235272\", \"+967-3-235273\", \"+967-735539107\", \"+967-783395352\", \"+967-771422070\"],"
+      }
+    ],
+    "9673235272": [
+      {
+        "file": "index.html",
+        "line": 78,
+        "context": "\"+967-3-235272\","
+      },
+      {
+        "file": "offers.html",
+        "line": 60,
+        "context": "\"telephone\": [\"+967-3-235270\", \"+967-3-235271\", \"+967-3-235272\", \"+967-3-235273\", \"+967-735539107\", \"+967-783395352\", \"+967-771422070\"],"
+      }
+    ],
+    "9673235273": [
+      {
+        "file": "index.html",
+        "line": 79,
+        "context": "\"+967-3-235273\","
+      },
+      {
+        "file": "offers.html",
+        "line": 60,
+        "context": "\"telephone\": [\"+967-3-235270\", \"+967-3-235271\", \"+967-3-235272\", \"+967-3-235273\", \"+967-735539107\", \"+967-783395352\", \"+967-771422070\"],"
+      }
+    ],
+    "9673226277": [
+      {
+        "file": "index.html",
+        "line": 80,
+        "context": "\"+967-3-226277\","
+      }
+    ],
+    "967735539107": [
+      {
+        "file": "index.html",
+        "line": 81,
+        "context": "\"+967-735539107\","
+      },
+      {
+        "file": "offers.html",
+        "line": 60,
+        "context": "\"telephone\": [\"+967-3-235270\", \"+967-3-235271\", \"+967-3-235272\", \"+967-3-235273\", \"+967-735539107\", \"+967-783395352\", \"+967-771422070\"],"
+      },
+      {
+        "file": "offers.html",
+        "line": 732,
+        "context": "<li><strong>موبايل وواتساب:</strong> <a href=\"https://wa.me/967735539107\" target=\"_blank\" rel=\"noopener\">735539107</a> - <a href=\"https://wa.me/967783395352\" target=\"_blank\" rel=\"noopener\">783395352</a></li>"
+      },
+      {
+        "file": "offers.html",
+        "line": 832,
+        "context": "<a href=\"https://wa.me/967735539107?text=السلام%20عليكم%2C%20أريد%20الاستفسار%20عن%20العروض\" target=\"_blank\" rel=\"noopener\" class=\"fab\" title=\"تواصل عبر واتساب\">"
+      },
+      {
+        "file": "pr.html",
+        "line": 1499,
+        "context": "<a href=\"tel:+967735539107\">اتصال</a>"
+      },
+      {
+        "file": "pr.html",
+        "line": 2312,
+        "context": "var WA_BOT = '967735539107';"
+      }
+    ],
+    "967783395352": [
+      {
+        "file": "index.html",
+        "line": 82,
+        "context": "\"+967-783395352\","
+      },
+      {
+        "file": "offers.html",
+        "line": 60,
+        "context": "\"telephone\": [\"+967-3-235270\", \"+967-3-235271\", \"+967-3-235272\", \"+967-3-235273\", \"+967-735539107\", \"+967-783395352\", \"+967-771422070\"],"
+      },
+      {
+        "file": "offers.html",
+        "line": 732,
+        "context": "<li><strong>موبايل وواتساب:</strong> <a href=\"https://wa.me/967735539107\" target=\"_blank\" rel=\"noopener\">735539107</a> - <a href=\"https://wa.me/967783395352\" target=\"_blank\" rel=\"noopener\">783395352</a></li>"
+      },
+      {
+        "file": "pr.html",
+        "line": 1494,
+        "context": "<a href=\"tel:+967783395352\">اتصال</a>"
+      }
+    ],
+    "967771422070": [
+      {
+        "file": "index.html",
+        "line": 83,
+        "context": "\"+967-771422070\""
+      },
+      {
+        "file": "index.html",
+        "line": 100,
+        "context": "\"https://wa.me/967771422070\""
+      },
+      {
+        "file": "index.html",
+        "line": 2059,
+        "context": "<a class=\"enh-nojs-booking\" href=\"https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF.\" target=\"_blank\" r"
+      },
+      {
+        "file": "index.html",
+        "line": 2069,
+        "context": "<li><strong>💬 واتساب مشرف الحجوزات:</strong> <a href=\"https://wa.me/967771422070\" target=\"_blank\" rel=\"noopener\">00967771422070</a></li>"
+      },
+      {
+        "file": "index.html",
+        "line": 2165,
+        "context": "<a href=\"https://wa.me/967771422070?text=السلام%20عليكم\" target=\"_blank\" rel=\"noopener\" class=\"floating-bot-btn\" title=\"تواصل معنا عبر واتساب\">"
+      },
+      {
+        "file": "index.html",
+        "line": 2300,
+        "context": "window.open(`https://wa.me/967771422070?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');"
+      },
+      {
+        "file": "offers.html",
+        "line": 60,
+        "context": "\"telephone\": [\"+967-3-235270\", \"+967-3-235271\", \"+967-3-235272\", \"+967-3-235273\", \"+967-735539107\", \"+967-783395352\", \"+967-771422070\"],"
+      },
+      {
+        "file": "offers.html",
+        "line": 488,
+        "context": "<a href=\"https://wa.me/967771422070\" target=\"_blank\" rel=\"noopener\" class=\"strip-item\"><span style=\"font-size:1.4rem\">💬</span><div><small>حجز واتساب</small><span dir=\"ltr\">771422070</span></div></a>"
+      },
+      {
+        "file": "offers.html",
+        "line": 530,
+        "context": "<a class=\"btn btn-wa\" href=\"https://wa.me/967771422070\" target=\"_blank\" rel=\"noopener\" data-wa=\"السلام عليكم، أرغب بالحجز في باقة الجراحات (130,000 ريال) مع د. منير الوصابي. الاسم: \">💬 احجز عبر واتساب</a>"
+      },
+      {
+        "file": "offers.html",
+        "line": 564,
+        "context": "<a class=\"btn btn-wa\" href=\"https://wa.me/967771422070\" target=\"_blank\" rel=\"noopener\" data-wa=\"السلام عليكم، أرغب بحجز موعد في عيادة النساء والولادة (العرض المستمر حتى نهاية 2026) مع د. رشا فارع. الاسم: \">💬 احجز عبر واتساب</a>"
+      },
+      {
+        "file": "offers.html",
+        "line": 597,
+        "context": "<a class=\"btn btn-wa\" href=\"https://wa.me/967771422070\" target=\"_blank\" rel=\"noopener\" data-wa=\"السلام عليكم، أرغب بحجز موعد في عيادة الأسنان (عرض خصم 30%) مع د. هنادي الخزرجي. الاسم: \">💬 احجز عبر واتساب</a>"
+      },
+      {
+        "file": "offers.html",
+        "line": 731,
+        "context": "<li><strong>واتساب الحجوزات:</strong> <a href=\"https://wa.me/967771422070\" target=\"_blank\" rel=\"noopener\">771422070</a></li>"
+      },
+      {
+        "file": "offers.html",
+        "line": 814,
+        "context": "<li><a href=\"https://wa.me/967771422070\" target=\"_blank\" rel=\"noopener\">💬 واتساب 771422070</a></li>"
+      },
+      {
+        "file": "offers.html",
+        "line": 847,
+        "context": "var WA_BOOK='967771422070';"
+      },
+      {
+        "file": "units.html",
+        "line": 183,
+        "context": "<a href=\"https://wa.me/967771422070\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display: flex; align-items: center; gap: 0.65rem; text-decoration: none; color: #0a2a5e; font-weight: 700; font-size: 1.02rem; background-color:"
+      },
+      {
+        "file": "ancillary.html",
+        "line": 785,
+        "context": "<a href=\"https://wa.me/967771422070\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"btn btn-whatsapp\">💬 واتساب الحجوزات</a>"
+      },
+      {
+        "file": "pr.html",
+        "line": 1096,
+        "context": "\"telephone\": \"+967771422070\","
+      },
+      {
+        "file": "pr.html",
+        "line": 1470,
+        "context": "href=\"https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D9%86%D8%B3%D9%8A%D9%82%20%D9%85%D8%B9%20%D8%A7%D9%84%D8%B9%D9%84%D8"
+      },
+      {
+        "file": "pr.html",
+        "line": 1477,
+        "context": "<a class=\"btn btn-call\" href=\"tel:+967771422070\">"
+      },
+      {
+        "file": "pr.html",
+        "line": 1532,
+        "context": "<a href=\"tel:+967771422070\">771422070</a>."
+      },
+      {
+        "file": "pr.html",
+        "line": 2170,
+        "context": "href=\"https://wa.me/967771422070\""
+      },
+      {
+        "file": "pr.html",
+        "line": 2208,
+        "context": "href=\"https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85\""
+      },
+      {
+        "file": "pr.html",
+        "line": 2311,
+        "context": "var WA_PR = '967771422070';"
+      },
+      {
+        "file": "script.js",
+        "line": 91,
+        "context": "// أ) الإرسال الفعلي عبر الواتساب إلى الرقم 967771422070"
+      },
+      {
+        "file": "script.js",
+        "line": 98,
+        "context": "const whatsappNumber = '967771422070';"
+      },
+      {
+        "file": "ext/data/contact.json",
+        "line": 3,
+        "context": "\"whatsappNumber\": \"967771422070\","
+      }
+    ],
+    "03235270": [
+      {
+        "file": "index.html",
+        "line": 1303,
+        "context": "<li>☎️ استعلامات وطوارئ 24/7: <a href=\"tel:03235270\"><strong>03-235270</strong></a></li>"
+      },
+      {
+        "file": "index.html",
+        "line": 1303,
+        "context": "<li>☎️ استعلامات وطوارئ 24/7: <a href=\"tel:03235270\"><strong>03-235270</strong></a></li>"
+      },
+      {
+        "file": "index.html",
+        "line": 1365,
+        "context": "<a href=\"tel:03235270\" class=\"quickbar__phone\">"
+      },
+      {
+        "file": "index.html",
+        "line": 1369,
+        "context": "<b dir=\"ltr\">03 235270</b>"
+      },
+      {
+        "file": "index.html",
+        "line": 2067,
+        "context": "<li><strong>📞 الهواتف الثابتة:</strong> <a href=\"tel:03235270\">03 235270</a> – <a href=\"tel:03235271\">235271</a> – <a href=\"tel:03235272\">235272</a> – <a href=\"tel:03235273\">235273</a></li>"
+      },
+      {
+        "file": "index.html",
+        "line": 2067,
+        "context": "<li><strong>📞 الهواتف الثابتة:</strong> <a href=\"tel:03235270\">03 235270</a> – <a href=\"tel:03235271\">235271</a> – <a href=\"tel:03235272\">235272</a> – <a href=\"tel:03235273\">235273</a></li>"
+      },
+      {
+        "file": "index.html",
+        "line": 2094,
+        "context": "<div><h3 class=\"enh-old-h4\">أرقام الاستعلامات والطوارئ</h3><p><a href=\"tel:03235270\">03 235270</a> - <a href=\"tel:03235271\">235271</a> - <a href=\"tel:03235272\">235272</a> - <a href=\"tel:03235273\">235273</a></p></div>"
+      },
+      {
+        "file": "index.html",
+        "line": 2094,
+        "context": "<div><h3 class=\"enh-old-h4\">أرقام الاستعلامات والطوارئ</h3><p><a href=\"tel:03235270\">03 235270</a> - <a href=\"tel:03235271\">235271</a> - <a href=\"tel:03235272\">235272</a> - <a href=\"tel:03235273\">235273</a></p></div>"
+      },
+      {
+        "file": "index.html",
+        "line": 2148,
+        "context": "<a href=\"tel:03235270\">اتصال طوارئ</a>"
+      },
+      {
+        "file": "offers.html",
+        "line": 155,
+        "context": "\"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"اضغط زر الحجز عبر واتساب أسفل العرض، أو اتصل على 03-235270. وحدّد اسمك والعرض المطلوب والفترة الصباحية أو المسائية.\" }"
+      },
+      {
+        "file": "offers.html",
+        "line": 485,
+        "context": "<a href=\"tel:03235270\" class=\"strip-item\"><span style=\"font-size:1.4rem\">🚑</span><div><small>طوارئ واستعلامات 24/7</small><span dir=\"ltr\">03 235270</span></div></a>"
+      },
+      {
+        "file": "offers.html",
+        "line": 485,
+        "context": "<a href=\"tel:03235270\" class=\"strip-item\"><span style=\"font-size:1.4rem\">🚑</span><div><small>طوارئ واستعلامات 24/7</small><span dir=\"ltr\">03 235270</span></div></a>"
+      },
+      {
+        "file": "offers.html",
+        "line": 531,
+        "context": "<a class=\"btn btn-line\" href=\"tel:03235270\">📞 اتصل الآن</a>"
+      },
+      {
+        "file": "offers.html",
+        "line": 565,
+        "context": "<a class=\"btn btn-line\" href=\"tel:03235270\">📞 اتصل الآن</a>"
+      },
+      {
+        "file": "offers.html",
+        "line": 598,
+        "context": "<a class=\"btn btn-line\" href=\"tel:03235270\">📞 اتصل الآن</a>"
+      },
+      {
+        "file": "offers.html",
+        "line": 730,
+        "context": "<li><strong>الهاتف:</strong> <a href=\"tel:03235270\">03-235270</a> - <a href=\"tel:03235271\">235271</a> - <a href=\"tel:03235272\">235272</a> - <a href=\"tel:03235273\">235273</a></li>"
+      },
+      {
+        "file": "offers.html",
+        "line": 730,
+        "context": "<li><strong>الهاتف:</strong> <a href=\"tel:03235270\">03-235270</a> - <a href=\"tel:03235271\">235271</a> - <a href=\"tel:03235272\">235272</a> - <a href=\"tel:03235273\">235273</a></li>"
+      },
+      {
+        "file": "offers.html",
+        "line": 770,
+        "context": "<p>اضغط زر الحجز عبر واتساب أسفل العرض، أو اتصل على 03-235270. وحدّد اسمك والعرض المطلوب والفترة الصباحية أو المسائية.</p>"
+      },
+      {
+        "file": "offers.html",
+        "line": 813,
+        "context": "<li><a href=\"tel:03235270\">☎️ 03-235270</a></li>"
+      },
+      {
+        "file": "offers.html",
+        "line": 813,
+        "context": "<li><a href=\"tel:03235270\">☎️ 03-235270</a></li>"
+      },
+      {
+        "file": "ancillary.html",
+        "line": 786,
+        "context": "<a href=\"tel:03235270\" class=\"btn btn-call\">📞 طوارئ واستعلامات 24/7</a>"
+      },
+      {
+        "file": "pr.html",
+        "line": 1167,
+        "context": "\"text\": \"مدير العلاقات العامة والتسويق: 00967771422070 للاتصال وواتساب. رقم البوت والاستعلامات: 735539107. ومن أرقام المستشفى للاتصال: 783395352 و03-235270.\""
+      },
+      {
+        "file": "pr.html",
+        "line": 1207,
+        "context": "<a href=\"tel:+9673235270\">03-235270</a>"
+      },
+      {
+        "file": "pr.html",
+        "line": 1503,
+        "context": "<span class=\"n\">03-235270</span>"
+      },
+      {
+        "file": "pr.html",
+        "line": 1901,
+        "context": "<a href=\"tel:+9673235270\">03-235270</a>"
+      },
+      {
+        "file": "pr.html",
+        "line": 2073,
+        "context": "و<bdi dir=\"ltr\">03-235270</bdi>."
+      },
+      {
+        "file": "pr.html",
+        "line": 2164,
+        "context": "الطوارئ: 03-235270"
+      }
+    ],
+    "03226277": [
+      {
+        "file": "index.html",
+        "line": 1304,
+        "context": "<li>🔬 المختبر: <a href=\"tel:03226277\"><strong>03-226277</strong></a></li>"
+      },
+      {
+        "file": "index.html",
+        "line": 1304,
+        "context": "<li>🔬 المختبر: <a href=\"tel:03226277\"><strong>03-226277</strong></a></li>"
+      },
+      {
+        "file": "index.html",
+        "line": 1970,
+        "context": "<li>المختبر الطبي المركزي وبنك الدم (03226277): فحص الدم الشامل CBC، الهرمونات الشاملة TSH FT3 FT4 FSH LH Prolactin Testosterone AMH B-HCG، السكري التراكمي HbA1C، وظائف الكلى والكبد، الدهون، المعادن والأملاح، إنزيمات القلب Troponi"
+      },
+      {
+        "file": "index.html",
+        "line": 2070,
+        "context": "<li><strong>🔬 المختبر المركزي:</strong> <a href=\"tel:03226277\">03 226277</a></li>"
+      },
+      {
+        "file": "index.html",
+        "line": 2070,
+        "context": "<li><strong>🔬 المختبر المركزي:</strong> <a href=\"tel:03226277\">03 226277</a></li>"
+      },
+      {
+        "file": "index.html",
+        "line": 2102,
+        "context": "<div><h3 class=\"enh-old-h4\">الإدارة والمختبر</h3><p>الإدارة: <a href=\"tel:03235273\">235273</a> | المختبر: <a href=\"tel:03226277\">226277</a></p></div>"
+      },
+      {
+        "file": "ancillary.html",
+        "line": 787,
+        "context": "<a href=\"tel:03226277\" class=\"btn btn-phone\">🔬 المختبر المركزي</a>"
+      },
+      {
+        "file": "services/diagnostics.html",
+        "line": 157,
+        "context": "<li id=\"svc-0047\">المختبر الطبي المركزي وبنك الدم (03226277)<span class=\"sg-id\" aria-hidden=\"true\">SVC-0047</span><button type=\"button\" class=\"sg-share\" data-clinical-share=\"#svc-0047\" aria-label=\"مشاركة المختبر الطبي المركزي وبنك"
+      },
+      {
+        "file": "services/diagnostics.html",
+        "line": 157,
+        "context": "<li id=\"svc-0047\">المختبر الطبي المركزي وبنك الدم (03226277)<span class=\"sg-id\" aria-hidden=\"true\">SVC-0047</span><button type=\"button\" class=\"sg-share\" data-clinical-share=\"#svc-0047\" aria-label=\"مشاركة المختبر الطبي المركزي وبنك"
+      }
+    ],
+    "771234567": [
+      {
+        "file": "index.html",
+        "line": 2015,
+        "context": "<input type=\"tel\" id=\"phone\" class=\"form-control\" placeholder=\"مثال: 771234567\" required>"
+      }
+    ],
+    "03235271": [
+      {
+        "file": "index.html",
+        "line": 2067,
+        "context": "<li><strong>📞 الهواتف الثابتة:</strong> <a href=\"tel:03235270\">03 235270</a> – <a href=\"tel:03235271\">235271</a> – <a href=\"tel:03235272\">235272</a> – <a href=\"tel:03235273\">235273</a></li>"
+      },
+      {
+        "file": "index.html",
+        "line": 2094,
+        "context": "<div><h3 class=\"enh-old-h4\">أرقام الاستعلامات والطوارئ</h3><p><a href=\"tel:03235270\">03 235270</a> - <a href=\"tel:03235271\">235271</a> - <a href=\"tel:03235272\">235272</a> - <a href=\"tel:03235273\">235273</a></p></div>"
+      },
+      {
+        "file": "offers.html",
+        "line": 730,
+        "context": "<li><strong>الهاتف:</strong> <a href=\"tel:03235270\">03-235270</a> - <a href=\"tel:03235271\">235271</a> - <a href=\"tel:03235272\">235272</a> - <a href=\"tel:03235273\">235273</a></li>"
+      }
+    ],
+    "03235272": [
+      {
+        "file": "index.html",
+        "line": 2067,
+        "context": "<li><strong>📞 الهواتف الثابتة:</strong> <a href=\"tel:03235270\">03 235270</a> – <a href=\"tel:03235271\">235271</a> – <a href=\"tel:03235272\">235272</a> – <a href=\"tel:03235273\">235273</a></li>"
+      },
+      {
+        "file": "index.html",
+        "line": 2094,
+        "context": "<div><h3 class=\"enh-old-h4\">أرقام الاستعلامات والطوارئ</h3><p><a href=\"tel:03235270\">03 235270</a> - <a href=\"tel:03235271\">235271</a> - <a href=\"tel:03235272\">235272</a> - <a href=\"tel:03235273\">235273</a></p></div>"
+      },
+      {
+        "file": "offers.html",
+        "line": 730,
+        "context": "<li><strong>الهاتف:</strong> <a href=\"tel:03235270\">03-235270</a> - <a href=\"tel:03235271\">235271</a> - <a href=\"tel:03235272\">235272</a> - <a href=\"tel:03235273\">235273</a></li>"
+      }
+    ],
+    "03235273": [
+      {
+        "file": "index.html",
+        "line": 2067,
+        "context": "<li><strong>📞 الهواتف الثابتة:</strong> <a href=\"tel:03235270\">03 235270</a> – <a href=\"tel:03235271\">235271</a> – <a href=\"tel:03235272\">235272</a> – <a href=\"tel:03235273\">235273</a></li>"
+      },
+      {
+        "file": "index.html",
+        "line": 2094,
+        "context": "<div><h3 class=\"enh-old-h4\">أرقام الاستعلامات والطوارئ</h3><p><a href=\"tel:03235270\">03 235270</a> - <a href=\"tel:03235271\">235271</a> - <a href=\"tel:03235272\">235272</a> - <a href=\"tel:03235273\">235273</a></p></div>"
+      },
+      {
+        "file": "index.html",
+        "line": 2102,
+        "context": "<div><h3 class=\"enh-old-h4\">الإدارة والمختبر</h3><p>الإدارة: <a href=\"tel:03235273\">235273</a> | المختبر: <a href=\"tel:03226277\">226277</a></p></div>"
+      },
+      {
+        "file": "offers.html",
+        "line": 730,
+        "context": "<li><strong>الهاتف:</strong> <a href=\"tel:03235270\">03-235270</a> - <a href=\"tel:03235271\">235271</a> - <a href=\"tel:03235272\">235272</a> - <a href=\"tel:03235273\">235273</a></li>"
+      }
+    ],
+    "783395352": [
+      {
+        "file": "index.html",
+        "line": 2068,
+        "context": "<li><strong>📱 الموبايل والواتساب:</strong> <a href=\"tel:783395352\">783395352</a> – <a href=\"tel:735539107\">735539107</a></li>"
+      },
+      {
+        "file": "index.html",
+        "line": 2068,
+        "context": "<li><strong>📱 الموبايل والواتساب:</strong> <a href=\"tel:783395352\">783395352</a> – <a href=\"tel:735539107\">735539107</a></li>"
+      },
+      {
+        "file": "index.html",
+        "line": 2098,
+        "context": "<div><h3 class=\"enh-old-h4\">الموبايل والواتساب</h3><p><a href=\"tel:783395352\">783395352</a> | <a href=\"tel:735539107\">735539107</a></p></div>"
+      },
+      {
+        "file": "index.html",
+        "line": 2098,
+        "context": "<div><h3 class=\"enh-old-h4\">الموبايل والواتساب</h3><p><a href=\"tel:783395352\">783395352</a> | <a href=\"tel:735539107\">735539107</a></p></div>"
+      },
+      {
+        "file": "offers.html",
+        "line": 732,
+        "context": "<li><strong>موبايل وواتساب:</strong> <a href=\"https://wa.me/967735539107\" target=\"_blank\" rel=\"noopener\">735539107</a> - <a href=\"https://wa.me/967783395352\" target=\"_blank\" rel=\"noopener\">783395352</a></li>"
+      },
+      {
+        "file": "pr.html",
+        "line": 1167,
+        "context": "\"text\": \"مدير العلاقات العامة والتسويق: 00967771422070 للاتصال وواتساب. رقم البوت والاستعلامات: 735539107. ومن أرقام المستشفى للاتصال: 783395352 و03-235270.\""
+      },
+      {
+        "file": "pr.html",
+        "line": 2072,
+        "context": "<bdi dir=\"ltr\">783395352</bdi>"
+      }
+    ],
+    "735539107": [
+      {
+        "file": "index.html",
+        "line": 2068,
+        "context": "<li><strong>📱 الموبايل والواتساب:</strong> <a href=\"tel:783395352\">783395352</a> – <a href=\"tel:735539107\">735539107</a></li>"
+      },
+      {
+        "file": "index.html",
+        "line": 2068,
+        "context": "<li><strong>📱 الموبايل والواتساب:</strong> <a href=\"tel:783395352\">783395352</a> – <a href=\"tel:735539107\">735539107</a></li>"
+      },
+      {
+        "file": "index.html",
+        "line": 2098,
+        "context": "<div><h3 class=\"enh-old-h4\">الموبايل والواتساب</h3><p><a href=\"tel:783395352\">783395352</a> | <a href=\"tel:735539107\">735539107</a></p></div>"
+      },
+      {
+        "file": "index.html",
+        "line": 2098,
+        "context": "<div><h3 class=\"enh-old-h4\">الموبايل والواتساب</h3><p><a href=\"tel:783395352\">783395352</a> | <a href=\"tel:735539107\">735539107</a></p></div>"
+      },
+      {
+        "file": "offers.html",
+        "line": 658,
+        "context": "<p class=\"res-next\">ترقبوا مخيماتنا القادمة عبر هذه الصفحة، أو تواصلوا معنا على واتساب 735539107.</p>"
+      },
+      {
+        "file": "offers.html",
+        "line": 681,
+        "context": "<div class=\"step reveal\"><h3>تواصل معنا</h3><p>اضغط زر واتساب أسفل العرض أو اتصل على 735539107.</p></div>"
+      },
+      {
+        "file": "offers.html",
+        "line": 732,
+        "context": "<li><strong>موبايل وواتساب:</strong> <a href=\"https://wa.me/967735539107\" target=\"_blank\" rel=\"noopener\">735539107</a> - <a href=\"https://wa.me/967783395352\" target=\"_blank\" rel=\"noopener\">783395352</a></li>"
+      },
+      {
+        "file": "offers.html",
+        "line": 833,
+        "context": "<span>💬</span><span>تواصل معنا: 735539107</span>"
+      },
+      {
+        "file": "pr.html",
+        "line": 1167,
+        "context": "\"text\": \"مدير العلاقات العامة والتسويق: 00967771422070 للاتصال وواتساب. رقم البوت والاستعلامات: 735539107. ومن أرقام المستشفى للاتصال: 783395352 و03-235270.\""
+      },
+      {
+        "file": "pr.html",
+        "line": 2070,
+        "context": "<bdi dir=\"ltr\">735539107</bdi>."
+      }
+    ],
+    "771422070": [
+      {
+        "file": "index.html",
+        "line": 2164,
+        "context": "<!-- زر واتساب العائم (مرة واحدة فقط في زاوية الشاشة) - يوجّه إلى رقم الحجوزات 771422070 -->"
+      },
+      {
+        "file": "index.html",
+        "line": 2167,
+        "context": "<span>واتساب: 771422070</span>"
+      },
+      {
+        "file": "index.html",
+        "line": 2335,
+        "context": "<details><summary>كيف أتواصل للحجز عبر واتساب؟</summary><p>يمكن مراسلة واتساب الحجوزات على 771422070.</p></details>"
+      },
+      {
+        "file": "index.html",
+        "line": 2337,
+        "context": "<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"هل تعمل الطوارئ والعناية المركزة على مدار الساعة؟\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"tex"
+      },
+      {
+        "file": "offers.html",
+        "line": 488,
+        "context": "<a href=\"https://wa.me/967771422070\" target=\"_blank\" rel=\"noopener\" class=\"strip-item\"><span style=\"font-size:1.4rem\">💬</span><div><small>حجز واتساب</small><span dir=\"ltr\">771422070</span></div></a>"
+      },
+      {
+        "file": "offers.html",
+        "line": 731,
+        "context": "<li><strong>واتساب الحجوزات:</strong> <a href=\"https://wa.me/967771422070\" target=\"_blank\" rel=\"noopener\">771422070</a></li>"
+      },
+      {
+        "file": "offers.html",
+        "line": 814,
+        "context": "<li><a href=\"https://wa.me/967771422070\" target=\"_blank\" rel=\"noopener\">💬 واتساب 771422070</a></li>"
+      },
+      {
+        "file": "pr.html",
+        "line": 1532,
+        "context": "<a href=\"tel:+967771422070\">771422070</a>."
+      },
+      {
+        "file": "pr.html",
+        "line": 2174,
+        "context": "واتساب: 771422070"
+      },
+      {
+        "file": "pr.html",
+        "line": 2213,
+        "context": "💬 واتساب: 771422070"
+      },
+      {
+        "file": "ext/data/contact.json",
+        "line": 4,
+        "context": "\"whatsappDisplay\": \"771422070\","
+      }
+    ]
+  },
+  "gmail": [
+    {
+      "address": "ammaralqhwi20@gmail.com",
+      "file": "index.html",
+      "line": 85,
+      "context": "\"email\": \"ammaralqhwi20@gmail.com\","
+    },
+    {
+      "address": "ammaralqhwi20@gmail.com",
+      "file": "index.html",
+      "line": 2071,
+      "context": "<li><strong>📧 البريد:</strong> <a href=\"mailto:ammaralqhwi20@gmail.com\">ammaralqhwi20@gmail.com</a></li>"
+    },
+    {
+      "address": "ammaralqhwi20@gmail.com",
+      "file": "index.html",
+      "line": 2071,
+      "context": "<li><strong>📧 البريد:</strong> <a href=\"mailto:ammaralqhwi20@gmail.com\">ammaralqhwi20@gmail.com</a></li>"
+    },
+    {
+      "address": "ammaralqhwi20@gmail.com",
+      "file": "index.html",
+      "line": 2319,
+      "context": "window.location.href = `mailto:ammaralqhwi20@gmail.com?subject=${subject}&body=${body}`;"
+    },
+    {
+      "address": "ammaralqhwi20@gmail.com",
+      "file": "offers.html",
+      "line": 61,
+      "context": "\"email\": \"ammaralqhwi20@gmail.com\","
+    },
+    {
+      "address": "ammaralqhwi20@gmail.com",
+      "file": "offers.html",
+      "line": 733,
+      "context": "<li><strong>البريد:</strong> <a href=\"mailto:ammaralqhwi20@gmail.com\">ammaralqhwi20@gmail.com</a></li>"
+    },
+    {
+      "address": "ammaralqhwi20@gmail.com",
+      "file": "offers.html",
+      "line": 733,
+      "context": "<li><strong>البريد:</strong> <a href=\"mailto:ammaralqhwi20@gmail.com\">ammaralqhwi20@gmail.com</a></li>"
+    },
+    {
+      "address": "ammaralqhwi20@gmail.com",
+      "file": "pr.html",
+      "line": 1097,
+      "context": "\"email\": \"ammaralqhwi20@gmail.com\","
+    },
+    {
+      "address": "ammaralqhwi20@gmail.com",
+      "file": "pr.html",
+      "line": 1873,
+      "context": "<small>ammaralqhwi20@gmail.com</small>"
+    },
+    {
+      "address": "ammaralqhwi20@gmail.com",
+      "file": "pr.html",
+      "line": 2313,
+      "context": "var EMAIL = 'ammaralqhwi20@gmail.com';"
+    },
+    {
+      "address": "ammaralqhwi20@gmail.com",
+      "file": "script.js",
+      "line": 116,
+      "context": "// ب) الإرسال المباشر عبر تطبيق البريد المعتمد إلى ammaralqhwi20@gmail.com"
+    },
+    {
+      "address": "ammaralqhwi20@gmail.com",
+      "file": "script.js",
+      "line": 123,
+      "context": "const targetEmail = 'ammaralqhwi20@gmail.com';"
+    },
+    {
+      "address": "ammaralqhwi20@gmail.com",
+      "file": "script.js",
+      "line": 137,
+      "context": "alert('سيتم فتح تطبيق البريد الإلكتروني في جهازك لإرسال بيانات الحجز مباشرة إلى ammaralqhwi20@gmail.com. يرجى الضغط على \"إرسال\" داخل تطبيق البريد.');"
+    }
+  ],
+  "offers_expiring": [
+    {
+      "file": "offers.html",
+      "line": 10,
+      "context": "<meta name=\"description\" content=\"عروض مستشفى الأنهار التخصصي بالحديدة: باقة جراحة 130,000 ريال، خصم 40% على الولادة، خصم 30% على الأسنان، ونتائج المخيم الطبي المجاني.\">"
+    },
+    {
+      "file": "offers.html",
+      "line": 29,
+      "context": "<meta property=\"og:description\" content=\"باقة جراحة 130,000 ريال • خصم 40% على الولادة • خصم 30% على الأسنان • نتائج المخيم الطبي المجاني.\">"
+    },
+    {
+      "file": "offers.html",
+      "line": 34,
+      "context": "<meta name=\"twitter:description\" content=\"باقة جراحة 130,000 ريال • خصم 40% على الولادة • خصم 30% على الأسنان.\">"
+    },
+    {
+      "file": "offers.html",
+      "line": 95,
+      "context": "\"validFrom\": \"2026-10-20\","
+    },
+    {
+      "file": "offers.html",
+      "line": 96,
+      "context": "\"validThrough\": \"2026-12-30\","
+    },
+    {
+      "file": "offers.html",
+      "line": 105,
+      "context": "\"description\": \"معاينة مجانية، خصم 50% على السونار، خصم 30% على التحاليل، أدوية مجانية يومي الاثنين والخميس، وخصم 40% على الولادة القيصرية والطبيعية.\","
+    },
+    {
+      "file": "offers.html",
+      "line": 107,
+      "context": "\"validThrough\": \"2026-12-31\","
+    },
+    {
+      "file": "offers.html",
+      "line": 116,
+      "context": "\"description\": \"خصم 50% على المعاينة وخصم 30% على جميع خدمات الأسنان، بفترتين صباحية ومسائية.\","
+    },
+    {
+      "file": "offers.html",
+      "line": 118,
+      "context": "\"validThrough\": \"2026-12-31\","
+    },
+    {
+      "file": "offers.html",
+      "line": 130,
+      "context": "\"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"العروض الحالية: باقة الجراحات مع د. منير الوصابي بسعر 130,000 ريال يمني، وعرض عيادة النساء والولادة مع د. رشا فارع بخصومات تصل إلى 50%، وعرض عيادة الأسنان مع د. هنادي الخزرجي بخصم 30% على جميع الخدمات.\" }"
+    },
+    {
+      "file": "offers.html",
+      "line": 145,
+      "context": "\"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"معاينة مجانية، خصم 50% على السونار، خصم 30% على التحاليل، أدوية مجانية يومي الاثنين والخميس، وخصم 40% على الولادة القيصرية والطبيعية، وذلك حتى نهاية عام  2026.\" }"
+    },
+    {
+      "file": "offers.html",
+      "line": 150,
+      "context": "\"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"خصم 50% على المعاينة وخصم 30% على جميع خدمات الأسنان حتى نهاية 2026، والدوام على فترتين صباحية ومسائية.\" }"
+    },
+    {
+      "file": "offers.html",
+      "line": 187,
+      "context": "img{max-width:100%;display:block}"
+    },
+    {
+      "file": "offers.html",
+      "line": 188,
+      "context": ".container{width:min(100% - 32px,1200px);margin-inline:auto}"
+    },
+    {
+      "file": "offers.html",
+      "line": 200,
+      "context": ".brand img{height:48px;width:48px;border-radius:50%;object-fit:cover;border:2px solid var(--primary)}"
+    },
+    {
+      "file": "offers.html",
+      "line": 214,
+      "context": "background:radial-gradient(circle at 100% 100%,rgba(238,125,85,.35) 0,transparent 45%),"
+    },
+    {
+      "file": "offers.html",
+      "line": 215,
+      "context": "radial-gradient(circle at 0 0,rgba(31,111,209,.65) 0,transparent 55%),"
+    },
+    {
+      "file": "offers.html",
+      "line": 216,
+      "context": "linear-gradient(115deg,#0a2a5e 0%,#14264f 55%,#1f6fd1 100%)}"
+    },
+    {
+      "file": "offers.html",
+      "line": 249,
+      "context": ".sec-head h2::after{content:\"\";position:absolute;bottom:-10px;right:50%;transform:translateX(50%);width:70px;height:3.5px;background:linear-gradient(90deg,var(--primary),var(--green));border-radius:2px}"
+    },
+    {
+      "file": "offers.html",
+      "line": 264,
+      "context": ".poster{position:relative;display:block;width:100%;border:0;background:var(--soft);border-radius:var(--r-md);overflow:hidden;cursor:zoom-in;padding:0}"
+    },
+    {
+      "file": "offers.html",
+      "line": 265,
+      "context": ".poster img{width:100%;height:auto;transition:transform .5s}"
+    },
+    {
+      "file": "offers.html",
+      "line": 276,
+      "context": ".doctor img{width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid var(--primary);background:var(--soft)}"
+    },
+    {
+      "file": "offers.html",
+      "line": 328,
+      "context": ".res-fig button{display:block;width:100%;border:0;background:none;padding:0;cursor:zoom-in}"
+    },
+    {
+      "file": "offers.html",
+      "line": 329,
+      "context": ".res-fig img{width:100%;height:auto}"
+    },
+    {
+      "file": "offers.html",
+      "line": 334,
+      "context": ".steps{background:linear-gradient(135deg,#0a2a5e 0%,#14264f 55%,#1b3a74 100%);color:#fff}"
+    },
+    {
+      "file": "offers.html",
+      "line": 339,
+      "context": ".step::before{content:counter(s);position:absolute;top:-18px;right:50%;transform:translateX(50%);width:38px;height:38px;border-radius:50%;background:var(--green);color:#fff;font-weight:900;display:grid;place-items:center;font-size:1.1rem;box-shadow:0 6px 16px "
+    },
+    {
+      "file": "offers.html",
+      "line": 376,
+      "context": ".footer-brand img{height:55px;border-radius:50%;margin-bottom:.5rem}"
+    },
+    {
+      "file": "offers.html",
+      "line": 385,
+      "context": ".toast{position:fixed;bottom:80px;right:50%;transform:translate(50%,20px);background:var(--navy);color:#fff;padding:10px 22px;border-radius:30px;font-weight:700;opacity:0;pointer-events:none;transition:.3s;z-index:3000}"
+    },
+    {
+      "file": "offers.html",
+      "line": 386,
+      "context": ".toast.show{opacity:1;transform:translate(50%,0)}"
+    },
+    {
+      "file": "offers.html",
+      "line": 389,
+      "context": "dialog#lightbox img{max-height:88vh;width:auto;max-width:100%;margin:auto;border-radius:12px;background:#fff}"
+    },
+    {
+      "file": "offers.html",
+      "line": 390,
+      "context": "dialog#lightbox button{position:absolute;top:-14px;right:-6px;width:40px;height:40px;border-radius:50%;border:none;background:#fff;color:var(--navy);font-size:1.4rem;font-weight:900;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.3)}"
+    },
+    {
+      "file": "offers.html",
+      "line": 395,
+      "context": ".nav-links{position:absolute;top:100%;right:0;left:0;background:#fff;flex-direction:column;align-items:stretch;padding:1.1rem;border-bottom:3px solid var(--primary);display:none;gap:.4rem;box-shadow:0 12px 24px rgba(0,0,0,.12)}"
+    },
+    {
+      "file": "offers.html",
+      "line": 412,
+      "context": ".gender{flex-direction:column}.gender div{width:100%!important}"
+    },
+    {
+      "file": "offers.html",
+      "line": 413,
+      "context": ".btn{width:100%}"
+    },
+    {
+      "file": "offers.html",
+      "line": 414,
+      "context": ".actions .btn{flex:1 1 100%}"
+    },
+    {
+      "file": "offers.html",
+      "line": 471,
+      "context": "<a class=\"chip\" href=\"#offer-women\">🤰 خصم الولادة 40%</a>"
+    },
+    {
+      "file": "offers.html",
+      "line": 472,
+      "context": "<a class=\"chip\" href=\"#offer-teeth\">🦷 خصم الأسنان 30%</a>"
+    },
+    {
+      "file": "offers.html",
+      "line": 509,
+      "context": "<article class=\"offer reveal\" id=\"offer-surgery\" data-cat=\"surgery\" data-offer data-start=\"2026-10-20\" data-end=\"2026-12-30\">"
+    },
+    {
+      "file": "offers.html",
+      "line": 515,
+      "context": "<div class=\"offer-top\"><span class=\"cat-tag\">🩺 الجراحة العامة</span><span class=\"status\" data-state=\"active\">ساري حتى 30 ديسمبر 2026</span></div>"
+    },
+    {
+      "file": "offers.html",
+      "line": 528,
+      "context": "<div class=\"meta\"><span>📅 من 20 أكتوبر إلى 30 ديسمبر 2026</span><span>🏥 الجراحة العامة - الحديدة</span></div>"
+    },
+    {
+      "file": "offers.html",
+      "line": 546,
+      "context": "<article class=\"offer reveal\" id=\"offer-women\" data-cat=\"women\" data-offer data-end=\"2026-12-31\">"
+    },
+    {
+      "file": "offers.html",
+      "line": 547,
+      "context": "<button type=\"button\" class=\"poster\" data-zoom=\"women.jpg?v=2\" data-alt=\"إعلان عروض عيادة النساء والولادة مع الدكتورة رشا فارع - ساري حتى نهاية 2026\" aria-label=\"تكبير إعلان النساء والولادة\">"
+    },
+    {
+      "file": "offers.html",
+      "line": 548,
+      "context": "<img src=\"women.jpg?v=2\" alt=\"إعلان عرض عيادة النساء والولادة مع الدكتورة رشا فارع - خصم 40% على الولادة حتى نهاية 2026 - مستشفى الأنهار التخصصي بالحديدة\" loading=\"lazy\" onerror=\"this.src='logo.jpg'\" decoding=\"async\">"
+    },
+    {
+      "file": "offers.html",
+      "line": 552,
+      "context": "<div class=\"offer-top\"><span class=\"cat-tag\">🤰 النساء والولادة</span><span class=\"status\" data-state=\"active\">ساري حتى نهاية 2026</span></div>"
+    },
+    {
+      "file": "offers.html",
+      "line": 553,
+      "context": "<h3>عرض عيادة النساء والولادة - خصم يصل إلى 50%</h3>"
+    },
+    {
+      "file": "offers.html",
+      "line": 557,
+      "context": "<li>السونار <em>خصم 50%</em></li>"
+    },
+    {
+      "file": "offers.html",
+      "line": 558,
+      "context": "<li>التحاليل <em>خصم 30%</em></li>"
+    },
+    {
+      "file": "offers.html",
+      "line": 560,
+      "context": "<li>الولادة القيصرية والطبيعية <em>خصم 40%</em></li>"
+    },
+    {
+      "file": "offers.html",
+      "line": 562,
+      "context": "<div class=\"meta\"><span>📅 مستمر حتى نهاية عام 2026</span><span>🏥 عيادة النساء والولادة - الحديدة</span></div>"
+    },
+    {
+      "file": "offers.html",
+      "line": 564,
+      "context": "<a class=\"btn btn-wa\" href=\"https://wa.me/967771422070\" target=\"_blank\" rel=\"noopener\" data-wa=\"السلام عليكم، أرغب بحجز موعد في عيادة النساء والولادة (العرض المستمر حتى نهاية 2026) مع د. رشا فارع. الاسم: \">💬 احجز عبر واتساب</a>"
+    },
+    {
+      "file": "offers.html",
+      "line": 569,
+      "context": "<button class=\"sh\" data-share=\"whatsapp\" data-target=\"offer-women\" data-text=\"🤰 عرض عيادة النساء والولادة مستمر حتى نهاية 2026: معاينة مجانية وخصم 40% على الولادة مع د. رشا فارع - مستشفى الأنهار التخصصي بالحديدة\">واتساب</button>"
+    },
+    {
+      "file": "offers.html",
+      "line": 571,
+      "context": "<button class=\"sh\" data-share=\"telegram\" data-target=\"offer-women\" data-text=\"🤰 خصم 40% على الولادة حتى نهاية 2026 - مستشفى الأنهار التخصصي بالحديدة\">تيليجرام</button>"
+    },
+    {
+      "file": "offers.html",
+      "line": 572,
+      "context": "<button class=\"sh\" data-share=\"x\" data-target=\"offer-women\" data-text=\"🤰 خصم 40% على الولادة حتى نهاية 2026 - مستشفى الأنهار التخصصي بالحديدة\">X</button>"
+    },
+    {
+      "file": "offers.html",
+      "line": 574,
+      "context": "<button class=\"sh\" data-share=\"native\" data-target=\"offer-women\" data-text=\"🤰 خصم 40% على الولادة حتى نهاية 2026 - مستشفى الأنهار التخصصي بالحديدة\">📤 مشاركة</button>"
+    },
+    {
+      "file": "offers.html",
+      "line": 580,
+      "context": "<article class=\"offer reveal\" id=\"offer-teeth\" data-cat=\"teeth\" data-offer data-end=\"2026-12-31\">"
+    },
+    {
+      "file": "offers.html",
+      "line": 582,
+      "context": "<img src=\"teeth.jpg\" alt=\"إعلان عرض عيادة الأسنان مع الدكتورة هنادي الخزرجي - خصم 30% على جميع الخدمات - مستشفى الأنهار التخصصي بالحديدة\" loading=\"lazy\" onerror=\"this.src='logo.jpg'\" decoding=\"async\">"
+    },
+    {
+      "file": "offers.html",
+      "line": 586,
+      "context": "<div class=\"offer-top\"><span class=\"cat-tag\">🦷 طب الأسنان</span><span class=\"status\" data-state=\"active\">ساري حتى نهاية 2026</span></div>"
+    },
+    {
+      "file": "offers.html",
+      "line": 587,
+      "context": "<h3>عرض عيادة الأسنان - خصم 30% على جميع الخدمات</h3>"
+    },
+    {
+      "file": "offers.html",
+      "line": 590,
+      "context": "<li>المعاينة <em>خصم 50%</em></li>"
+    },
+    {
+      "file": "offers.html",
+      "line": 591,
+      "context": "<li>جميع خدمات الأسنان <em>خصم 30%</em></li>"
+    },
+    {
+      "file": "offers.html",
+      "line": 595,
+      "context": "<div class=\"meta\"><span>📅 حتى نهاية عام 2026</span><span>🏥 عيادة الأسنان - الحديدة</span></div>"
+    },
+    {
+      "file": "offers.html",
+      "line": 597,
+      "context": "<a class=\"btn btn-wa\" href=\"https://wa.me/967771422070\" target=\"_blank\" rel=\"noopener\" data-wa=\"السلام عليكم، أرغب بحجز موعد في عيادة الأسنان (عرض خصم 30%) مع د. هنادي الخزرجي. الاسم: \">💬 احجز عبر واتساب</a>"
+    },
+    {
+      "file": "offers.html",
+      "line": 602,
+      "context": "<button class=\"sh\" data-share=\"whatsapp\" data-target=\"offer-teeth\" data-text=\"🦷 عرض الأسنان: خصم 50% على المعاينة و30% على جميع الخدمات مع د. هنادي الخزرجي - مستشفى الأنهار التخصصي بالحديدة\">واتساب</button>"
+    },
+    {
+      "file": "offers.html",
+      "line": 604,
+      "context": "<button class=\"sh\" data-share=\"telegram\" data-target=\"offer-teeth\" data-text=\"🦷 خصم 30% على جميع خدمات الأسنان - مستشفى الأنهار التخصصي بالحديدة\">تيليجرام</button>"
+    },
+    {
+      "file": "offers.html",
+      "line": 605,
+      "context": "<button class=\"sh\" data-share=\"x\" data-target=\"offer-teeth\" data-text=\"🦷 خصم 30% على جميع خدمات الأسنان - مستشفى الأنهار التخصصي بالحديدة\">X</button>"
+    },
+    {
+      "file": "offers.html",
+      "line": 607,
+      "context": "<button class=\"sh\" data-share=\"native\" data-target=\"offer-teeth\" data-text=\"🦷 خصم 30% على جميع خدمات الأسنان - مستشفى الأنهار التخصصي بالحديدة\">📤 مشاركة</button>"
+    },
+    {
+      "file": "offers.html",
+      "line": 621,
+      "context": "<strong>1,271 خدمة طبية مجانية</strong>، بالإضافة إلى خصم 50% على الفحوصات والأشعة."
+    },
+    {
+      "file": "offers.html",
+      "line": 633,
+      "context": "<div class=\"gender\" role=\"img\" aria-label=\"توزيع المستفيدين: إناث 58% وذكور 42%\">"
+    },
+    {
+      "file": "offers.html",
+      "line": 634,
+      "context": "<div class=\"g-f\" style=\"width:58%\">إناث 221 (58%)</div>"
+    },
+    {
+      "file": "offers.html",
+      "line": 635,
+      "context": "<div class=\"g-m\" style=\"width:42%\">ذكور 160 (42%)</div>"
+    },
+    {
+      "file": "offers.html",
+      "line": 648,
+      "context": "<p class=\"res-discount\">🎁 إضافةً إلى <strong>خصم 50%</strong> على الفحوصات والأشعة لجميع المشاركين في المخيم.</p>"
+    },
+    {
+      "file": "offers.html",
+      "line": 695,
+      "context": "<button class=\"sh\" data-share=\"whatsapp\" data-text=\"🎁 عروض وخصومات مستشفى الأنهار التخصصي بالحديدة: باقة جراحة 130,000 ريال، خصم 40% على الولادة، خصم 30% على الأسنان\">💬 واتساب</button>"
+    },
+    {
+      "file": "offers.html",
+      "line": 750,
+      "context": "<p>العروض الحالية: باقة الجراحات مع د. منير الوصابي بسعر 130,000 ريال يمني، وعرض عيادة النساء والولادة مع د. رشا فارع بخصومات تصل إلى 50%، وعرض عيادة الأسنان مع د. هنادي الخزرجي بخصم 30% على جميع الخدمات.</p>"
+    },
+    {
+      "file": "offers.html",
+      "line": 762,
+      "context": "<p>معاينة مجانية، خصم 50% على السونار، خصم 30% على التحاليل، أدوية مجانية يومي الاثنين والخميس، وخصم 40% على الولادة القيصرية والطبيعية، وذلك خلال شهر أكتوبر 2026.</p>"
+    },
+    {
+      "file": "offers.html",
+      "line": 766,
+      "context": "<p>خصم 50% على المعاينة وخصم 30% على جميع خدمات الأسنان حتى نهاية 2026، والدوام على فترتين صباحية ومسائية.</p>"
+    },
+    {
+      "file": "offers.html",
+      "line": 820,
+      "context": "<p>© 2026 مستشفى الأنهار التخصصي - جميع الحقوق محفوظة.</p>"
+    }
+  ]
+}

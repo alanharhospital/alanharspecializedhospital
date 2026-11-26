@@ -1,0 +1,566 @@
+{
+  "logos": [
+    {
+      "route": "/",
+      "width": 375,
+      "equal": true,
+      "before": "c219b51fd607d12994455e63f99bf625700088dd20475a4722a20e7682f09f92",
+      "after": "c219b51fd607d12994455e63f99bf625700088dd20475a4722a20e7682f09f92"
+    },
+    {
+      "route": "/",
+      "width": 1280,
+      "equal": false,
+      "before": "8f4f194601572b08e37032664ba1971d9eaa000e09abbdd1c3f6f3bb34baf3c0",
+      "after": "f14c8f2725028eb475642c480d0b2af4480f19665ef43dae8c372b0d4e7ff04e"
+    },
+    {
+      "route": "/doctors.html",
+      "width": 375,
+      "equal": true,
+      "before": "03186badf5d569525168e1d51e080be1fa5ee26ae56ce5dfd4d0b5b0bb4fa615",
+      "after": "03186badf5d569525168e1d51e080be1fa5ee26ae56ce5dfd4d0b5b0bb4fa615"
+    },
+    {
+      "route": "/doctors.html",
+      "width": 1280,
+      "equal": true,
+      "before": "845905bf0d8daf0eccd572dd4a2f024568cc64e5e92b83c478bc48a2781a2ad0",
+      "after": "845905bf0d8daf0eccd572dd4a2f024568cc64e5e92b83c478bc48a2781a2ad0"
+    },
+    {
+      "route": "/offers.html",
+      "width": 375,
+      "equal": true,
+      "before": "c219b51fd607d12994455e63f99bf625700088dd20475a4722a20e7682f09f92",
+      "after": "c219b51fd607d12994455e63f99bf625700088dd20475a4722a20e7682f09f92"
+    },
+    {
+      "route": "/offers.html",
+      "width": 1280,
+      "equal": true,
+      "before": "cc3378f0c8cd26c73928ae89da265fef885a1f21f99ed244b960db4cb8987e7a",
+      "after": "cc3378f0c8cd26c73928ae89da265fef885a1f21f99ed244b960db4cb8987e7a"
+    },
+    {
+      "route": "/clinics.html",
+      "width": 375,
+      "equal": true,
+      "before": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d",
+      "after": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d"
+    },
+    {
+      "route": "/clinics.html",
+      "width": 1280,
+      "equal": true,
+      "before": "f967d04d1c9e994f343210a9723ee16ff13de8a6ac77e6c377a641f576a72b03",
+      "after": "f967d04d1c9e994f343210a9723ee16ff13de8a6ac77e6c377a641f576a72b03"
+    },
+    {
+      "route": "/units.html",
+      "width": 375,
+      "equal": true,
+      "before": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d",
+      "after": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d"
+    },
+    {
+      "route": "/units.html",
+      "width": 1280,
+      "equal": true,
+      "before": "f967d04d1c9e994f343210a9723ee16ff13de8a6ac77e6c377a641f576a72b03",
+      "after": "f967d04d1c9e994f343210a9723ee16ff13de8a6ac77e6c377a641f576a72b03"
+    },
+    {
+      "route": "/ancillary.html",
+      "width": 375,
+      "equal": true,
+      "before": "e6b081bafe8ca261597d26c46706705ed520d690ca7c398cb3e1f99ba92716f1",
+      "after": "e6b081bafe8ca261597d26c46706705ed520d690ca7c398cb3e1f99ba92716f1"
+    },
+    {
+      "route": "/ancillary.html",
+      "width": 1280,
+      "equal": true,
+      "before": "b719e8e1ef9ce387fc97eadaa838b100d4b42fb12fe013fd90384c589e85e243",
+      "after": "b719e8e1ef9ce387fc97eadaa838b100d4b42fb12fe013fd90384c589e85e243"
+    },
+    {
+      "route": "/pr.html",
+      "width": 375,
+      "equal": true,
+      "before": "a3304f7ef042bb5899add28c7dcd9553554289070ab27f5340351ff2fff005c7",
+      "after": "a3304f7ef042bb5899add28c7dcd9553554289070ab27f5340351ff2fff005c7"
+    },
+    {
+      "route": "/pr.html",
+      "width": 1280,
+      "equal": false,
+      "before": "e3b2d61204fcae5ac897fcca2c0d5684ee2e38554f6dcd847ca747e758e10d00",
+      "after": "6a758c12d28aaeaddcccceb353c844c5530bb683d1919f3811b70e32d0fea2fb"
+    },
+    {
+      "route": "/news.html",
+      "width": 375,
+      "equal": false,
+      "before": "15b4e10ccbb99e53fc747e3052153765029f95e88b60f5beaff573e1315f2d1c",
+      "after": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d"
+    },
+    {
+      "route": "/news.html",
+      "width": 1280,
+      "equal": true,
+      "before": "f967d04d1c9e994f343210a9723ee16ff13de8a6ac77e6c377a641f576a72b03",
+      "after": "f967d04d1c9e994f343210a9723ee16ff13de8a6ac77e6c377a641f576a72b03"
+    },
+    {
+      "route": "/services/",
+      "width": 375,
+      "equal": true,
+      "before": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d",
+      "after": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d"
+    },
+    {
+      "route": "/services/",
+      "width": 1280,
+      "equal": true,
+      "before": "88d75c175e3f02f2ef32884da90b5b9ecd1c625c4293f0431103032fb099c8a0",
+      "after": "88d75c175e3f02f2ef32884da90b5b9ecd1c625c4293f0431103032fb099c8a0"
+    },
+    {
+      "route": "/services/diagnostics",
+      "width": 375,
+      "equal": true,
+      "before": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d",
+      "after": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d"
+    },
+    {
+      "route": "/services/diagnostics",
+      "width": 1280,
+      "equal": true,
+      "before": "88d75c175e3f02f2ef32884da90b5b9ecd1c625c4293f0431103032fb099c8a0",
+      "after": "88d75c175e3f02f2ef32884da90b5b9ecd1c625c4293f0431103032fb099c8a0"
+    },
+    {
+      "route": "/services/surgery",
+      "width": 375,
+      "equal": true,
+      "before": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d",
+      "after": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d"
+    },
+    {
+      "route": "/services/surgery",
+      "width": 1280,
+      "equal": true,
+      "before": "88d75c175e3f02f2ef32884da90b5b9ecd1c625c4293f0431103032fb099c8a0",
+      "after": "88d75c175e3f02f2ef32884da90b5b9ecd1c625c4293f0431103032fb099c8a0"
+    },
+    {
+      "route": "/services/dental",
+      "width": 375,
+      "equal": true,
+      "before": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d",
+      "after": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d"
+    },
+    {
+      "route": "/services/dental",
+      "width": 1280,
+      "equal": true,
+      "before": "88d75c175e3f02f2ef32884da90b5b9ecd1c625c4293f0431103032fb099c8a0",
+      "after": "88d75c175e3f02f2ef32884da90b5b9ecd1c625c4293f0431103032fb099c8a0"
+    },
+    {
+      "route": "/services/women",
+      "width": 375,
+      "equal": true,
+      "before": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d",
+      "after": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d"
+    },
+    {
+      "route": "/services/women",
+      "width": 1280,
+      "equal": true,
+      "before": "88d75c175e3f02f2ef32884da90b5b9ecd1c625c4293f0431103032fb099c8a0",
+      "after": "88d75c175e3f02f2ef32884da90b5b9ecd1c625c4293f0431103032fb099c8a0"
+    },
+    {
+      "route": "/services/ent",
+      "width": 375,
+      "equal": true,
+      "before": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d",
+      "after": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d"
+    },
+    {
+      "route": "/services/ent",
+      "width": 1280,
+      "equal": true,
+      "before": "88d75c175e3f02f2ef32884da90b5b9ecd1c625c4293f0431103032fb099c8a0",
+      "after": "88d75c175e3f02f2ef32884da90b5b9ecd1c625c4293f0431103032fb099c8a0"
+    },
+    {
+      "route": "/services/physio",
+      "width": 375,
+      "equal": true,
+      "before": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d",
+      "after": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d"
+    },
+    {
+      "route": "/services/physio",
+      "width": 1280,
+      "equal": false,
+      "before": "d6bf1fce603ed5a6a897c719a85914389bc0d6e2ab864c10ba6d1beb8ed3034d",
+      "after": "88d75c175e3f02f2ef32884da90b5b9ecd1c625c4293f0431103032fb099c8a0"
+    },
+    {
+      "route": "/services/emergency",
+      "width": 375,
+      "equal": true,
+      "before": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d",
+      "after": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d"
+    },
+    {
+      "route": "/services/emergency",
+      "width": 1280,
+      "equal": true,
+      "before": "88d75c175e3f02f2ef32884da90b5b9ecd1c625c4293f0431103032fb099c8a0",
+      "after": "88d75c175e3f02f2ef32884da90b5b9ecd1c625c4293f0431103032fb099c8a0"
+    },
+    {
+      "route": "/services/clinics-admin",
+      "width": 375,
+      "equal": true,
+      "before": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d",
+      "after": "a5326fb736a9f92614305cf8282636ca06ec3360929fcfc5a795b1464565f13d"
+    },
+    {
+      "route": "/services/clinics-admin",
+      "width": 1280,
+      "equal": true,
+      "before": "88d75c175e3f02f2ef32884da90b5b9ecd1c625c4293f0431103032fb099c8a0",
+      "after": "88d75c175e3f02f2ef32884da90b5b9ecd1c625c4293f0431103032fb099c8a0"
+    }
+  ],
+  "reversible": [
+    {
+      "route": "/",
+      "width": 375,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/",
+      "width": 1280,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/doctors.html",
+      "width": 375,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/doctors.html",
+      "width": 1280,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/offers.html",
+      "width": 375,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/offers.html",
+      "width": 1280,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/clinics.html",
+      "width": 375,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/clinics.html",
+      "width": 1280,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/units.html",
+      "width": 375,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/units.html",
+      "width": 1280,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/ancillary.html",
+      "width": 375,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/ancillary.html",
+      "width": 1280,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/pr.html",
+      "width": 375,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/pr.html",
+      "width": 1280,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/news.html",
+      "width": 375,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/news.html",
+      "width": 1280,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/404.html",
+      "width": 375,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/404.html",
+      "width": 1280,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/services/",
+      "width": 375,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/services/",
+      "width": 1280,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/services/diagnostics",
+      "width": 375,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/services/diagnostics",
+      "width": 1280,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/services/surgery",
+      "width": 375,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/services/surgery",
+      "width": 1280,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/services/dental",
+      "width": 375,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/services/dental",
+      "width": 1280,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/services/women",
+      "width": 375,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/services/women",
+      "width": 1280,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/services/ent",
+      "width": 375,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/services/ent",
+      "width": 1280,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/services/physio",
+      "width": 375,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/services/physio",
+      "width": 1280,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/services/emergency",
+      "width": 375,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/services/emergency",
+      "width": 1280,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/services/clinics-admin",
+      "width": 375,
+      "equal": true,
+      "differences": []
+    },
+    {
+      "route": "/services/clinics-admin",
+      "width": 1280,
+      "equal": true,
+      "differences": []
+    }
+  ],
+  "whatsapp": {
+    "8181": {
+      "normal": {
+        "color": "rgb(255, 255, 255)",
+        "bg": "rgb(27, 94, 32)",
+        "border": "2px solid rgb(18, 68, 22)",
+        "radius": "12px",
+        "padding": "11.2px 19.2px",
+        "font": "700 16px / 25.6px Tajawal, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "width": 257.046875,
+        "height": 51.96875,
+        "outline": "rgb(255, 255, 255) none 0px"
+      },
+      "hover": {
+        "color": "rgb(255, 255, 255)",
+        "bg": "rgb(18, 68, 22)",
+        "border": "2px solid rgb(18, 68, 22)",
+        "radius": "12px",
+        "padding": "11.2px 19.2px",
+        "font": "700 16px / 25.6px Tajawal, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "width": 257.046875,
+        "height": 51.96875,
+        "outline": "rgb(255, 255, 255) none 0px"
+      },
+      "focus": {
+        "color": "rgb(255, 255, 255)",
+        "bg": "rgb(18, 68, 22)",
+        "border": "2px solid rgb(18, 68, 22)",
+        "radius": "12px",
+        "padding": "11.2px 19.2px",
+        "font": "700 16px / 25.6px Tajawal, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "width": 257.046875,
+        "height": 51.96875,
+        "outline": "rgb(11, 92, 173) solid 3px"
+      }
+    },
+    "8182": {
+      "normal": {
+        "color": "rgb(255, 255, 255)",
+        "bg": "rgb(27, 94, 32)",
+        "border": "2px solid rgb(18, 68, 22)",
+        "radius": "12px",
+        "padding": "11.2px 19.2px",
+        "font": "700 16px / 25.6px Tajawal, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "width": 257.046875,
+        "height": 51.96875,
+        "outline": "rgb(255, 255, 255) none 0px"
+      },
+      "hover": {
+        "color": "rgb(255, 255, 255)",
+        "bg": "rgb(18, 68, 22)",
+        "border": "2px solid rgb(18, 68, 22)",
+        "radius": "12px",
+        "padding": "11.2px 19.2px",
+        "font": "700 16px / 25.6px Tajawal, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "width": 257.046875,
+        "height": 51.96875,
+        "outline": "rgb(255, 255, 255) none 0px"
+      },
+      "focus": {
+        "color": "rgb(255, 255, 255)",
+        "bg": "rgb(18, 68, 22)",
+        "border": "2px solid rgb(18, 68, 22)",
+        "radius": "12px",
+        "padding": "11.2px 19.2px",
+        "font": "700 16px / 25.6px Tajawal, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "width": 257.046875,
+        "height": 51.96875,
+        "outline": "rgb(11, 92, 173) solid 3px"
+      }
+    }
+  },
+  "print": [
+    {
+      "route": "/doctors.html",
+      "header": "none",
+      "nav": true,
+      "heading": "rgb(0, 0, 0)",
+      "reveals": 0
+    },
+    {
+      "route": "/offers.html",
+      "header": "none",
+      "nav": true,
+      "heading": "rgb(0, 0, 0)",
+      "reveals": 0
+    },
+    {
+      "route": "/services/",
+      "header": "none",
+      "nav": true,
+      "heading": "rgb(0, 0, 0)",
+      "reveals": 0
+    },
+    {
+      "route": "/services/dental",
+      "header": "none",
+      "nav": true,
+      "heading": "rgb(0, 0, 0)",
+      "reveals": 0
+    }
+  ],
+  "motion": {
+    "animation": "1e-05s",
+    "transition": "1e-05s"
+  }
+}

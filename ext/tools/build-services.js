@@ -290,6 +290,9 @@ ${jsonLd(crumbs || [{ name: 'الرئيسية', url: SITE + '/' }, { name: 'دل
     <!-- ENH:START fixes-6b -->
     <link rel="stylesheet" href="../ext/fixes.css?v=2">
     <!-- ENH:END fixes-6b -->
+    <!-- ENH:START 6c-brand -->
+    <link rel="stylesheet" href="../ext/brand.css?v=1">
+    <!-- ENH:END 6c-brand -->
 </head>`;
 }
 
