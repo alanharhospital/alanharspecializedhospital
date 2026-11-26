@@ -4,7 +4,7 @@
     "generatedAt": "2026-11-26T01:51:10.585Z",
     "hospital": "مستشفى الأنهار التخصصي",
     "site": "https://alanharhospital.com",
-    "note": "فهرس بحث ثابت. كل الأسماء من ext/data/services-catalog.json (publish=true فقط)."
+    "note": "فهرس بحث ثابت. كل الأسماء من ext/data/services-catalog.json (publish=true فقط). الفهرس والصفحات لم يعادا بناؤهما بعد قرارات 5-أ3؛ ريثما يعاد البناء قد تظهر عناصر غير منشورة، وقد عُطلت المرادفات السابقة."
   },
   "items": [
     {
@@ -4180,49 +4180,49 @@
       "phrase": "CBC",
       "tier": "specific",
       "targetId": "SVC-0048",
-      "approved": true
+      "approved": false
     },
     {
       "phrase": "فحص الدم الشامل",
       "tier": "specific",
       "targetId": "SVC-0048",
-      "approved": true
+      "approved": false
     },
     {
       "phrase": "تحليل الدم الشامل",
       "tier": "specific",
       "targetId": "SVC-0048",
-      "approved": true
+      "approved": false
     },
     {
       "phrase": "صورة الدم الكاملة",
       "tier": "specific",
       "targetId": "SVC-0048",
-      "approved": true
+      "approved": false
     },
     {
       "phrase": "صورة الدم الكامل",
       "tier": "specific",
       "targetId": "SVC-0048",
-      "approved": true
+      "approved": false
     },
     {
       "phrase": "فحص دم",
       "tier": "generic",
       "targetId": "SVC-0048",
-      "approved": true
+      "approved": false
     },
     {
       "phrase": "تحليل دم",
       "tier": "generic",
       "targetId": "SVC-0048",
-      "approved": true
+      "approved": false
     },
     {
       "phrase": "صورة الدم",
       "tier": "generic",
       "targetId": "SVC-0048",
-      "approved": true
+      "approved": false
     }
   ]
 }

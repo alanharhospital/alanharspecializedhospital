@@ -3,7 +3,7 @@
     "generatedBy": "ext/tools/build-services-catalog.js",
     "generatedAt": "2026-11-26T01:51:10.558Z",
     "site": "https://alanharhospital.com",
-    "note": "الأسماء منقولة حرفيًا من محتوى الموقع. لا ترجمة ولا تصحيح طبي. aliases فارغة بانتظار الموافقة.",
+    "note": "الأسماء منقولة حرفيًا من محتوى الموقع. لا ترجمة ولا تصحيح طبي. aliases فارغة بانتظار الموافقة. قرارات المهمة 5-أ3 مثبتة في catalog-decisions-5a3.md؛ إعادة بناء الكتالوج من السكربت الحالي تستبدلها.",
     "sources": [
       "index.html (sr-only-seo)",
       "clinics.html",
@@ -15,10 +15,10 @@
       "rawExtracted": 477,
       "unique": 477,
       "duplicatesExcluded": 0,
-      "forReview": 12,
+      "forReview": 11,
       "duplicateGroups": 1,
-      "duplicateItems": 2,
-      "publishFalse": 14,
+      "duplicateItems": 0,
+      "publishFalse": 12,
       "linkOnly": 3,
       "responseGroups": {
         "general": 320,
@@ -27,7 +27,9 @@
         "radiology": 9,
         "dental": 97
       },
-      "categories": 21
+      "categories": 21,
+      "internalOnly": 1,
+      "hasNumber": 18
     },
     "categories": {
       "تجهيزات وأسرة وأجهزة": 8,
@@ -37,14 +39,14 @@
       "أشعة": 6,
       "تخدير": 4,
       "أسنان": 96,
-      "للمراجعة": 12,
+      "للمراجعة": 11,
       "عيادات ومعاينات": 24,
       "إجراءات وعمليات صغرى": 29,
       "علاج طبيعي": 37,
       "قلب": 11,
       "أنف وأذن وحنجرة": 30,
       "عظام ومفاصل": 13,
-      "نساء وولادة": 24,
+      "نساء وولادة": 25,
       "خدمات إدارية وتقارير": 15,
       "رقود وخدمات تمريضية": 46,
       "طوارئ وإسعاف": 41,
@@ -63,7 +65,8 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": true,
+      "hasNumber": true
     },
     {
       "id": "SVC-0002",
@@ -74,7 +77,8 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": true,
+      "hasNumber": true
     },
     {
       "id": "SVC-0003",
@@ -85,7 +89,8 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": true,
+      "hasNumber": true
     },
     {
       "id": "SVC-0004",
@@ -96,7 +101,8 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": true,
+      "hasNumber": true
     },
     {
       "id": "SVC-0005",
@@ -129,7 +135,8 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": true,
+      "hasNumber": true
     },
     {
       "id": "SVC-0008",
@@ -140,7 +147,8 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": true,
+      "hasNumber": true
     },
     {
       "id": "SVC-0009",
@@ -569,7 +577,8 @@
       "responseGroup": "lab",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": true,
+      "hasNumber": true
     },
     {
       "id": "SVC-0048",
@@ -591,7 +600,8 @@
       "responseGroup": "lab",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": true,
+      "hasNumber": true
     },
     {
       "id": "SVC-0050",
@@ -602,7 +612,8 @@
       "responseGroup": "lab",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": true,
+      "hasNumber": true
     },
     {
       "id": "SVC-0051",
@@ -778,7 +789,8 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": true,
+      "hasNumber": true
     },
     {
       "id": "SVC-0067",
@@ -1735,7 +1747,8 @@
       "responseGroup": "dental",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": true,
+      "hasNumber": true
     },
     {
       "id": "SVC-0154",
@@ -1746,7 +1759,8 @@
       "responseGroup": "dental",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": true,
+      "hasNumber": true
     },
     {
       "id": "SVC-0155",
@@ -2819,7 +2833,8 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": true,
+      "hasNumber": true
     },
     {
       "id": "SVC-0250",
@@ -2841,7 +2856,8 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": true,
+      "hasNumber": true
     },
     {
       "id": "SVC-0252",
@@ -3480,11 +3496,11 @@
     {
       "id": "SVC-0309",
       "name": "تنظيف يدوي بدون تخدير",
-      "category": "للمراجعة",
+      "category": "نساء وولادة",
       "sourcePage": "index.html",
       "aliases": [],
       "responseGroup": "general",
-      "status": "review",
+      "status": "approved-by-rule",
       "linkOnly": false,
       "reviewContext": {
         "page": "index.html",
@@ -3493,7 +3509,7 @@
         "after": "، خياطة منطقة العجان تخدير موضعي، انحباس مشيمة، تركيب لولب"
       },
       "suggestedCategory": "نساء وولادة",
-      "publish": false
+      "publish": true
     },
     {
       "id": "SVC-0310",
@@ -3822,7 +3838,8 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "internalOnly": true
     },
     {
       "id": "SVC-0338",
@@ -4248,12 +4265,10 @@
       "category": "رقود وخدمات تمريضية",
       "sourcePage": "index.html",
       "aliases": [],
-      "duplicateOf": "SVC-0384",
-      "duplicateNote": "بعد إزالة الأقواس يتطابق الاسم مع شفط سوائل من الصدر — راجع قبل الدمج: الأقواس قد تميّز قسمًا مختلفًا",
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": false
+      "publish": true
     },
     {
       "id": "SVC-0377",
@@ -4648,7 +4663,8 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": true,
+      "hasNumber": true
     },
     {
       "id": "SVC-0411",
@@ -4953,12 +4969,10 @@
       "category": "طوارئ وإسعاف",
       "sourcePage": "index.html",
       "aliases": [],
-      "duplicateOf": "SVC-0384",
-      "duplicateNote": "بعد إزالة الأقواس يتطابق الاسم مع شفط سوائل من الصدر — راجع قبل الدمج: الأقواس قد تميّز قسمًا مختلفًا",
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": false
+      "publish": true
     },
     {
       "id": "SVC-0439",
@@ -4980,7 +4994,8 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": true,
+      "hasNumber": true
     },
     {
       "id": "SVC-0441",
@@ -5376,7 +5391,8 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": true,
-      "publish": true
+      "publish": true,
+      "hasNumber": true
     },
     {
       "id": "SVC-0477",
@@ -5387,7 +5403,8 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": true,
-      "publish": true
+      "publish": true,
+      "hasNumber": true
     }
   ],
   "categories": [
@@ -5481,16 +5498,16 @@
     },
     {
       "name": "للمراجعة",
-      "count": 12,
+      "count": 11,
       "examples": [
         "أخذ عينة صغيرة",
         "إشعاعية كبيرة",
         "دفتر تخسيس",
         "مسند تغذية مريئية",
         "حشوة الأذن",
-        "تنظيف يدوي بدون تخدير",
         "تنظيف تشخيصي",
-        "خدمات لولادة خاصة لطبيبة النساء بالقسم الولادة"
+        "خدمات لولادة خاصة لطبيبة النساء بالقسم الولادة",
+        "خدمات لولادة خاصة لطبيبة النساء والولادة"
       ]
     },
     {
@@ -5579,16 +5596,16 @@
     },
     {
       "name": "نساء وولادة",
-      "count": 24,
+      "count": 25,
       "examples": [
         "كي عنق الرحم في العيادة",
         "موجات فوق صوتية للحوامل في العيادة",
         "تلفزيون عن طريق المهبل",
         "إزالة لولب مفقود أو مختفي",
+        "تنظيف يدوي بدون تخدير",
         "خياطة منطقة العجان تخدير موضعي",
         "انحباس مشيمة",
-        "تركيب لولب بدون تخدير",
-        "إزالة لولب بدون تخدير"
+        "تركيب لولب بدون تخدير"
       ]
     },
     {
@@ -5747,21 +5764,6 @@
       }
     },
     {
-      "id": "SVC-0309",
-      "name": "تنظيف يدوي بدون تخدير",
-      "sourcePage": "index.html",
-      "sourceCategory": "نساء وولادة",
-      "suggestedCategory": "نساء وولادة",
-      "status": "review",
-      "publish": false,
-      "reviewContext": {
-        "page": "index.html",
-        "sourceCategory": "نساء وولادة",
-        "before": "العيادة، تلفزيون عن طريق المهبل، إزالة لولب مفقود أو مختفي،",
-        "after": "، خياطة منطقة العجان تخدير موضعي، انحباس مشيمة، تركيب لولب"
-      }
-    },
-    {
       "id": "SVC-0316",
       "name": "تنظيف تشخيصي",
       "sourcePage": "index.html",
@@ -5855,11 +5857,6 @@
   "duplicateGroups": [
     {
       "normalizedName": "شفط سوائل من الصدر",
-      "canonical": {
-        "id": "SVC-0384",
-        "name": "شفط سوائل من الصدر",
-        "category": "رقود وخدمات تمريضية"
-      },
       "members": [
         {
           "id": "SVC-0376",
@@ -5879,7 +5876,8 @@
           "category": "طوارئ وإسعاف",
           "page": "index.html"
         }
-      ]
+      ],
+      "decision": "الأسماء الأصلية مختلفة؛ ليست مكررات حرفية، وكلها منشورة."
     }
   ],
   "digitsOrPrices": [
@@ -6168,5 +6166,35 @@
       "kind": "aria-label",
       "sourcePage": "news.html"
     }
-  ]
+  ],
+  "decisionHistory5a3": {
+    "note": "سجل تدقيق للحالة قبل القرار، وليس قائمة العناصر الحالية أو صلاحية النشر الحالية.",
+    "previousReview": {
+      "id": "SVC-0309",
+      "name": "تنظيف يدوي بدون تخدير",
+      "sourcePage": "index.html",
+      "sourceCategory": "نساء وولادة",
+      "suggestedCategory": "نساء وولادة",
+      "status": "review",
+      "publish": false,
+      "reviewContext": {
+        "page": "index.html",
+        "sourceCategory": "نساء وولادة",
+        "before": "العيادة، تلفزيون عن طريق المهبل، إزالة لولب مفقود أو مختفي،",
+        "after": "، خياطة منطقة العجان تخدير موضعي، انحباس مشيمة، تركيب لولب"
+      }
+    },
+    "previousNormalizedDuplicateNotes": [
+      {
+        "id": "SVC-0376",
+        "previousTarget": "SVC-0384",
+        "note": "بعد إزالة الأقواس يتطابق الاسم مع شفط سوائل من الصدر — راجع قبل الدمج: الأقواس قد تميّز قسمًا مختلفًا"
+      },
+      {
+        "id": "SVC-0438",
+        "previousTarget": "SVC-0384",
+        "note": "بعد إزالة الأقواس يتطابق الاسم مع شفط سوائل من الصدر — راجع قبل الدمج: الأقواس قد تميّز قسمًا مختلفًا"
+      }
+    ]
+  }
 }
