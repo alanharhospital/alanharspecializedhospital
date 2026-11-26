@@ -66,7 +66,7 @@
   }
 
   /* لعناصر البحث فقط: كلمات مميزة فريدة، دون أدوات أو نص لاتيني. */
-  var SEARCH_ONLY_STOPWORDS = new Set(['اكثر', 'من', 'في', 'مع', 'و', 'على', 'الي', 'عن', 'هل', 'يوجد', 'عندكم', 'لديكم', 'متوفر', 'توفر', 'فحص', 'تحليل', 'اشعه', 'عمليه', 'لكم', 'عندك', 'لو', 'اريد', 'ابحث', 'هو', 'هي'].map(norm));
+  var SEARCH_ONLY_STOPWORDS = new Set(['اكثر', 'من', 'في', 'مع', 'و', 'على', 'الي', 'عن', 'هل', 'يوجد', 'عندكم', 'لديكم', 'متوفر', 'توفر', 'فحص', 'تحليل', 'اشعه', 'عمليه', 'لكم', 'عندك', 'لو', 'اريد', 'ابحث', 'هو', 'هي', 'عام', 'عامة', 'تخصصي', 'مركز', 'عيادة'].map(norm));
   function searchOnlyTokens(text) {
     var seen = new Set();
     norm(text).split(' ').forEach(function (word) {
@@ -111,6 +111,7 @@
   var YES_CONNECTORS = new Set(['من','في','مع','و','او','الي','على','عن'].map(norm));
   var YES_FILLERS = new Set(['هل','يوجد','عندكم','لديكم','متوفر','توفر','لكم','عندك','لو','اريد','ابحث','هو','هي'].map(norm));
   var GENERIC_NO_SINGLE_YES = new Set(['عين','كبد','ولادة','قلب','سن','سرير','جهاز'].map(norm));
+  var OWNER_FILLERS = new Set(['عام', 'عامة', 'تخصصي', 'مركز', 'عيادة'].map(norm));
   function wholeWordTokens(text, isQuery, keepParentheses) {
     var source = keepParentheses ? String(text || '') : String(text || '').replace(/\([^)]*\)|\[[^\]]*\]/g, ' ');
     // الواو قبل همزة القطع كما في «وإيكو» أداة عطف؛ لا نحذفها من «ولادة».
@@ -122,7 +123,13 @@
       if (/^لل/.test(word) && word.length > 3) return word.slice(2);
       if (/^ال/.test(word) && word.length > 3) return word.slice(2);
       return word;
-    }).filter(function (word) {return word && !YES_CONNECTORS.has(word);});
+    }).filter(function (word) {return word && !YES_CONNECTORS.has(word) && !OWNER_FILLERS.has(word);});
+  }
+  function withoutOwnerFillers(text) {
+    return norm(text).split(' ').filter(function (word) {
+      var unprefixed = word.replace(/^(وال|بال|كال|فال)/, '').replace(/^لل/, '').replace(/^ال/, '');
+      return !OWNER_FILLERS.has(unprefixed);
+    }).join(' ').trim();
   }
   function wholeWordMatch(query, name, minCoverage, allowQueryCoverage) {
     var q = wholeWordTokens(query, true), words = wholeWordTokens(name, false);
@@ -180,30 +187,28 @@
    */
   function search(query, data) {
     var raw = String(query == null ? '' : query);
-    var qNorm = norm(raw);
-    var items = (data && data.items) || [];
+    var rawNorm = norm(raw);
+    var matchQuery = withoutOwnerFillers(raw);
+    var qNorm = norm(matchQuery);
+    // OWNER: units/admin excluded from search results (final)
+    var items = ((data && data.items) || []).filter(function (item) {
+      return ![item.category, item.type].some(function (value) {
+        return ['units', 'admin', 'وحدات وأقسام', 'إدارات مساندة'].indexOf(value) !== -1;
+      }) && norm(item.name).indexOf(norm('رسوم')) === -1 && norm(item.name).indexOf(norm('بدل مخاطر')) === -1;
+    });
     var synonyms = (data && data.synonyms) || [];
     var result = { type: 'idle', best: null, options: [], emergency: false, query: raw };
 
     /* سطر الطوارئ — يظهر مع أي رد */
     var emergencyWords = ((data && data.responses && data.responses.emergency) || {}).keywords || [];
     result.emergency = emergencyWords.some(function (kw) {
-      return qNorm.indexOf(norm(kw)) !== -1;
+      return rawNorm.indexOf(norm(kw)) !== -1;
     });
 
-    var hints = (data && data.categoryHints) || {};
-    var hintKey = Object.keys(hints).find(function (key) { return norm(key) === qNorm; });
-    if (hintKey && ['diagnostics', 'surgery'].indexOf(hints[hintKey]) !== -1) {
-      result.type = 'category';
-      result.categoryHint = hints[hintKey];
-      return result;
-    }
-    var tokens = wholeWordTokens(raw, true).filter(function (t) { return !STOPWORDS.has(t); });
-    if (qNorm.length < 2 || tokens.length === 0) {
-      if (!result.emergency) return result;
-      result.type = 'none';
-      return result;
-    }
+    var tokens = wholeWordTokens(matchQuery, true).filter(function (t) { return !STOPWORDS.has(t); });
+    if (!tokens.length && qNorm) tokens = wholeWordTokens(matchQuery, true);
+    if (rawNorm.length < 2) return result;
+    if (!tokens.length) { result.type = 'none'; return result; }
 
     // صياغة شبيهة بالوسوم ليست استعلام خدمة؛ لا تطابق أرقامها خدمات أخرى.
     if (/[<>]/.test(raw)) { result.type = 'none'; return result; }
@@ -222,10 +227,29 @@
     });
     if (blocked || blockedQuery) { result.type = 'none'; return result; }
 
+    // OWNER: exact approved search wording, not a claim of medical equivalence.
+    if (rawNorm === norm('فحص دم عام') || rawNorm === norm('تحليل دم عام')) {
+      var bloodTest = items.find(function (item) {
+        return item.id === 'SVC-0048' && item.name === 'فحص الدم الشامل CBC';
+      });
+      result.type = bloodTest ? 'strong' : 'none';
+      result.best = bloodTest || null;
+      if (bloodTest) result.approvedBloodQuery = true;
+      return result;
+    }
+
     var onlyMatch = searchOnlyBest(raw, items, data && data.searchOnlyMatch);
     if (onlyMatch && wholeWordMatch(raw, onlyMatch.name, data && data.yesMatch && data.yesMatch.coverageMin)) {
       result.type = 'strong';
       result.best = onlyMatch;
+      return result;
+    }
+
+    // A request naming an administrative unit is not a request for a partial
+    // match on an unrelated clinical term. Approved search-only items above
+    // retain their existing strong-match rules.
+    if (/^(?:ال)?(?:اداره|وحده|وحدات|اقسام)(?:\s|$)/.test(qNorm)) {
+      result.type = 'none';
       return result;
     }
 
@@ -281,6 +305,11 @@
       if (!full.length) full = matches.filter(function (m) { return wholeWordMatch(raw, m.item.name, data && data.yesMatch && data.yesMatch.coverageMin, true); });
     }
     if (full.length) {
+      // Prefer a fully matching normalized service name within the already
+      // eligible yes results; this does not relax the yes thresholds.
+      var normalizedQueryWords = wholeWordTokens(raw, true).join(' ');
+      var exactName = full.find(function (m) { return wholeWordTokens(m.item.name, false).join(' ') === normalizedQueryWords; });
+      if (exactName) { full.splice(full.indexOf(exactName), 1); full.unshift(exactName); }
       result.type = 'strong';
       result.best = full[0].item;
       // المطابقات التقريبية الأخرى تبقى خيارات لا تأكيدًا للتوفر.
@@ -359,15 +388,17 @@
       out.lines.push(fill(responses.emergency.text, { whatsappDisplay: display }));
     }
 
-    if (result.type === 'strong' && result.best) {
+    if (result.type === 'strong' && result.best && result.approvedBloodQuery && result.best.id === 'SVC-0048') {
+      out.title = 'نعم، الخدمة متوفرة لدينا';
+      out.lines.push('يتوفر لدينا فحص الدم الشامل CBC في مستشفى الأنهار التخصصي. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا.');
+      out.whatsappLabel = 'تواصل عبر واتساب';
+      out.whatsappText = 'السلام عليكم، أرغب في الحجز أو الاستفسار عن: ' + result.best.name;
+    } else if (result.type === 'strong' && result.best) {
       var group = (responses.groups || {})[result.best.group] || (responses.groups || {}).general || {};
       out.lines.push(fill(group.text, { name: result.best.name, category: result.best.category, whatsappDisplay: display }));
       out.options = result.options || [];
       if (out.options.length && responses.weakMatch && responses.weakMatch.text) out.lines.push(responses.weakMatch.text);
       out.whatsappText = fill(btn.messageWithService, { name: result.best.name });
-    } else if (result.type === 'category') {
-      var labels = {diagnostics:'فحوصات تشخيصية', surgery:'عمليات وجراحة'};
-      out.categoryHint = {slug:result.categoryHint, text:'تصفّح قسم ' + labels[result.categoryHint] + ' في دليل الخدمات'};
     } else if (result.type === 'weak') {
       out.lines.push((responses.weakMatch || {}).text || '');
       out.options = result.options || [];
@@ -449,7 +480,8 @@
 
   // فهرس النتائج يخزن مسارات نسبية إلى جذر نسخة الموقع، لا جذر النطاق.
   function resultLink(item) {
-    if (!item || item.searchOnly || !item.url || !/^(?:services\/|offers\.html(?:[?#]|$))/.test(item.url)) return null;
+    // Only surviving offer links have a detail destination; deleted service pages do not.
+    if (!item || item.searchOnly || !item.url || !/^offers\.html(?:[?#]|$)/.test(item.url)) return null;
     var link = el('a', 'ss-result-link', 'عرض التفاصيل');
     link.href = new URL(item.url, new URL('../', scriptBase)).href;
     link.setAttribute('aria-label', 'عرض تفاصيل ' + item.name);
@@ -556,6 +588,11 @@
     function render(result) {
       clearPanel();
       var reply = buildReply(result, data);
+      if (reply.title) {
+        var heading = el('p', 'ss-reply');
+        heading.appendChild(el('strong', null, reply.title));
+        panel.appendChild(heading);
+      }
       if (reply.lines.length) {
         var p = el('p', 'ss-reply');
         reply.lines.forEach(function (line, i) {
@@ -564,11 +601,6 @@
         });
         panel.appendChild(p);
       }
-      if (reply.categoryHint) {
-        var categoryLink = el('a', 'ss-result-link', reply.categoryHint.text);
-        categoryLink.href = new URL('services/' + reply.categoryHint.slug, new URL('../', scriptBase)).href;
-        panel.appendChild(categoryLink);
-      }
       var bestLink = resultLink(reply.best);
       if (bestLink) {
         panel.appendChild(bestLink);
@@ -576,6 +608,16 @@
         share.type = 'button';
         share.setAttribute('data-clinical-share', bestLink.href);
         share.setAttribute('aria-label', 'مشاركة ' + reply.best.name);
+        // The standalone search page has no second search dialog; keep offer
+        // sharing functional without loading the dialog's global handler.
+        if (document.body.hasAttribute('data-services-standalone')) {
+          share.addEventListener('click', function () {
+            var done = function (message) { if (status) status.textContent = message; };
+            if (navigator.share) navigator.share({title:document.title, url:bestLink.href}).then(function () { done('تمت المشاركة'); }).catch(function (e) { if (e.name !== 'AbortError') done('تعذرت المشاركة'); });
+            else if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(bestLink.href).then(function () { done('تم نسخ الرابط'); }).catch(function () { done('تعذر نسخ الرابط'); });
+            else done('النسخ غير متاح في هذا المتصفح');
+          });
+        }
         panel.appendChild(share);
       }
 
@@ -607,13 +649,13 @@
 
       if (reply.whatsappUrl) {
         var wrap = el('div', 'ss-wa-wrap');
-        wrap.appendChild(whatsappButton(reply.whatsappUrl, data.responses.whatsappButton.label, data.responses.whatsappButton.ariaLabel));
+        wrap.appendChild(whatsappButton(reply.whatsappUrl, reply.whatsappLabel || data.responses.whatsappButton.label, data.responses.whatsappButton.ariaLabel));
         panel.appendChild(wrap);
       }
 
       if (status) {
         var n = (reply.options.length || 0) + (reply.best ? 1 : 0);
-        status.textContent = result.type === 'idle' ? '' : result.type === 'category' ? 'قسم في دليل الخدمات' : n ? 'نتائج: ' + n : 'لا نتائج';
+        status.textContent = result.type === 'idle' ? '' : n ? 'ظهرت نتائج' : 'لا نتائج';
       }
       activeIndex = -1;
     }

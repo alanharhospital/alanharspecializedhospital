@@ -1,0 +1,612 @@
+{
+  "results": [
+    {
+      "query": "فحص دم",
+      "type": "weak",
+      "results": [
+        {
+          "id": "SVC-0048",
+          "name": "فحص الدم الشامل CBC",
+          "category": "مختبر",
+          "group": "lab"
+        },
+        {
+          "id": "SVC-0047",
+          "name": "المختبر الطبي المركزي وبنك الدم (03226277)",
+          "category": "مختبر",
+          "group": "lab"
+        },
+        {
+          "id": "SVC-0412",
+          "name": "قياس ضغط الدم (طوارئ)",
+          "category": "طوارئ وإسعاف",
+          "group": "general"
+        }
+      ],
+      "reply": {
+        "lines": [
+          "هل تقصد أحد هذه الخدمات؟"
+        ],
+        "options": [
+          {
+            "id": "SVC-0048",
+            "name": "فحص الدم الشامل CBC",
+            "category": "مختبر",
+            "group": "lab",
+            "slug": "index",
+            "rank": 0,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          {
+            "id": "SVC-0047",
+            "name": "المختبر الطبي المركزي وبنك الدم (03226277)",
+            "category": "مختبر",
+            "group": "lab",
+            "slug": "index",
+            "rank": 0,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          {
+            "id": "SVC-0412",
+            "name": "قياس ضغط الدم (طوارئ)",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          }
+        ],
+        "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D9%81%D8%AD%D8%B5%20%D8%A7%D9%84%D8%AF%D9%85%20%D8%A7%D9%84%D8%B4%D8%A7%D9%85%D9%84%20CBC",
+        "whatsappText": "السلام عليكم، أستفسر عن: فحص الدم الشامل CBC",
+        "best": null
+      }
+    },
+    {
+      "query": "فحص دم عام",
+      "type": "strong",
+      "results": [
+        {
+          "id": "SVC-0048",
+          "name": "فحص الدم الشامل CBC",
+          "category": "مختبر",
+          "group": "lab"
+        }
+      ],
+      "reply": {
+        "lines": [
+          "يتوفر لدينا فحص الدم الشامل CBC في مستشفى الأنهار التخصصي. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا."
+        ],
+        "options": [],
+        "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AD%D8%AC%D8%B2%20%D8%A3%D9%88%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%3A%20%D9%81%D8%AD%D8%B5%20%D8%A7%D9%84%D8%AF%D9%85%20%D8%A7%D9%84%D8%B4%D8%A7%D9%85%D9%84%20CBC",
+        "whatsappText": "السلام عليكم، أرغب في الحجز أو الاستفسار عن: فحص الدم الشامل CBC",
+        "best": {
+          "id": "SVC-0048",
+          "name": "فحص الدم الشامل CBC",
+          "category": "مختبر",
+          "group": "lab",
+          "slug": "index",
+          "rank": 0,
+          "url": "services/",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": []
+        },
+        "title": "نعم، الخدمة متوفرة لدينا",
+        "whatsappLabel": "تواصل عبر واتساب"
+      }
+    },
+    {
+      "query": "تحليل دم عام",
+      "type": "strong",
+      "results": [
+        {
+          "id": "SVC-0048",
+          "name": "فحص الدم الشامل CBC",
+          "category": "مختبر",
+          "group": "lab"
+        }
+      ],
+      "reply": {
+        "lines": [
+          "يتوفر لدينا فحص الدم الشامل CBC في مستشفى الأنهار التخصصي. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا."
+        ],
+        "options": [],
+        "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AD%D8%AC%D8%B2%20%D8%A3%D9%88%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%3A%20%D9%81%D8%AD%D8%B5%20%D8%A7%D9%84%D8%AF%D9%85%20%D8%A7%D9%84%D8%B4%D8%A7%D9%85%D9%84%20CBC",
+        "whatsappText": "السلام عليكم، أرغب في الحجز أو الاستفسار عن: فحص الدم الشامل CBC",
+        "best": {
+          "id": "SVC-0048",
+          "name": "فحص الدم الشامل CBC",
+          "category": "مختبر",
+          "group": "lab",
+          "slug": "index",
+          "rank": 0,
+          "url": "services/",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": []
+        },
+        "title": "نعم، الخدمة متوفرة لدينا",
+        "whatsappLabel": "تواصل عبر واتساب"
+      }
+    },
+    {
+      "query": "سونار عام",
+      "type": "weak",
+      "results": [
+        {
+          "id": "SVC-0063",
+          "name": "السونار العام وسونار الحمل",
+          "category": "أشعة",
+          "group": "radiology"
+        },
+        {
+          "id": "SVC-0332",
+          "name": "سونار للحمل",
+          "category": "نساء وولادة",
+          "group": "general"
+        },
+        {
+          "id": "SVC-0331",
+          "name": "سونار موجات فوق صوتية للنساء في العيادة",
+          "category": "نساء وولادة",
+          "group": "general"
+        }
+      ],
+      "reply": {
+        "lines": [
+          "هل تقصد أحد هذه الخدمات؟"
+        ],
+        "options": [
+          {
+            "id": "SVC-0063",
+            "name": "السونار العام وسونار الحمل",
+            "category": "أشعة",
+            "group": "radiology",
+            "slug": "index",
+            "rank": 0,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          {
+            "id": "SVC-0332",
+            "name": "سونار للحمل",
+            "category": "نساء وولادة",
+            "group": "general",
+            "slug": "index",
+            "rank": 3,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          {
+            "id": "SVC-0331",
+            "name": "سونار موجات فوق صوتية للنساء في العيادة",
+            "category": "نساء وولادة",
+            "group": "general",
+            "slug": "index",
+            "rank": 3,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          }
+        ],
+        "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%A7%D9%84%D8%B3%D9%88%D9%86%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%20%D9%88%D8%B3%D9%88%D9%86%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AD%D9%85%D9%84",
+        "whatsappText": "السلام عليكم، أستفسر عن: السونار العام وسونار الحمل",
+        "best": null
+      }
+    },
+    {
+      "query": "الإدارة العامة",
+      "type": "none",
+      "results": [],
+      "reply": {
+        "lines": [
+          "نعتذر منكم، ربما لم نتمكن من فهم طلبكم بدقة، وقد تكون الخدمة التي تبحثون عنها متاحة لدينا لكننا لم نستطع التأكد منها. يمكنكم مراسلتنا على واتساب المستشفى (771422070) وسنوافيكم بالجواب في أقرب وقت. شاكرين لكم تفهمكم."
+        ],
+        "options": [],
+        "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%A8%D8%AD%D8%AB%20%D8%B9%D9%86%3A%20%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9",
+        "whatsappText": "السلام عليكم، أبحث عن: الإدارة العامة",
+        "best": null
+      }
+    },
+    {
+      "query": "وحدة العناية",
+      "type": "none",
+      "results": [],
+      "reply": {
+        "lines": [
+          "نعتذر منكم، ربما لم نتمكن من فهم طلبكم بدقة، وقد تكون الخدمة التي تبحثون عنها متاحة لدينا لكننا لم نستطع التأكد منها. يمكنكم مراسلتنا على واتساب المستشفى (771422070) وسنوافيكم بالجواب في أقرب وقت. شاكرين لكم تفهمكم."
+        ],
+        "options": [],
+        "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%A8%D8%AD%D8%AB%20%D8%B9%D9%86%3A%20%D9%88%D8%AD%D8%AF%D8%A9%20%D8%A7%D9%84%D8%B9%D9%86%D8%A7%D9%8A%D8%A9",
+        "whatsappText": "السلام عليكم، أبحث عن: وحدة العناية",
+        "best": null
+      }
+    },
+    {
+      "query": "CBC",
+      "type": "strong",
+      "results": [
+        {
+          "id": "SVC-0048",
+          "name": "فحص الدم الشامل CBC",
+          "category": "مختبر",
+          "group": "lab"
+        }
+      ],
+      "reply": {
+        "lines": [
+          "نعم، يتوفر لدينا فحص الدم الشامل CBC. ولدينا مختبرات طبية متكاملة وبنك دم مجهزة بأحدث التجهيزات الطبية، وتعمل على مدار الساعة. نسعد بخدمتكم ونتمنى لكم دوام الصحة والعافية."
+        ],
+        "options": [],
+        "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D9%81%D8%AD%D8%B5%20%D8%A7%D9%84%D8%AF%D9%85%20%D8%A7%D9%84%D8%B4%D8%A7%D9%85%D9%84%20CBC",
+        "whatsappText": "السلام عليكم، أستفسر عن: فحص الدم الشامل CBC",
+        "best": {
+          "id": "SVC-0048",
+          "name": "فحص الدم الشامل CBC",
+          "category": "مختبر",
+          "group": "lab",
+          "slug": "index",
+          "rank": 0,
+          "url": "services/",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": []
+        }
+      }
+    },
+    {
+      "query": "عملية جراحة مخ واعصاب",
+      "type": "strong",
+      "results": [
+        {
+          "id": "SVC-0009",
+          "name": "جراحة المخ والأعصاب والعمود الفقري مع الدكتور جمال العنسي",
+          "category": "تخصصات جراحية",
+          "group": "surgery"
+        },
+        {
+          "id": "SVC-0442",
+          "name": "عيادة جراحة المخ والأعصاب والعمود الفقري",
+          "category": "عيادات ومعاينات",
+          "group": "general"
+        },
+        {
+          "id": "SVC-0303",
+          "name": "معاينة عيادة جراحة المخ والأعصاب والعمود الفقري",
+          "category": "عيادات ومعاينات",
+          "group": "general"
+        }
+      ],
+      "reply": {
+        "lines": [
+          "نعم، تتوفر لدينا جراحة المخ والأعصاب والعمود الفقري مع الدكتور جمال العنسي. عملياتنا مجهزة بأحدث التجهيزات الطبية ووفق أحدث معايير الجودة والدقة العالية، وهي متاحة على مدار الساعة، مع جاهزية للاستجابة لأي حالة طارئة في أي وقت. نسعد بخدمتكم ونتمنى لكم دوام الصحة والعافية.",
+          "هل تقصد أحد هذه الخدمات؟"
+        ],
+        "options": [
+          {
+            "id": "SVC-0442",
+            "name": "عيادة جراحة المخ والأعصاب والعمود الفقري",
+            "category": "عيادات ومعاينات",
+            "group": "general",
+            "slug": "index",
+            "rank": 7,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          {
+            "id": "SVC-0303",
+            "name": "معاينة عيادة جراحة المخ والأعصاب والعمود الفقري",
+            "category": "عيادات ومعاينات",
+            "group": "general",
+            "slug": "index",
+            "rank": 7,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          }
+        ],
+        "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%AC%D8%B1%D8%A7%D8%AD%D8%A9%20%D8%A7%D9%84%D9%85%D8%AE%20%D9%88%D8%A7%D9%84%D8%A3%D8%B9%D8%B5%D8%A7%D8%A8%20%D9%88%D8%A7%D9%84%D8%B9%D9%85%D9%88%D8%AF%20%D8%A7%D9%84%D9%81%D9%82%D8%B1%D9%8A%20%D9%85%D8%B9%20%D8%A7%D9%84%D8%AF%D9%83%D8%AA%D9%88%D8%B1%20%D8%AC%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%B9%D9%86%D8%B3%D9%8A",
+        "whatsappText": "السلام عليكم، أستفسر عن: جراحة المخ والأعصاب والعمود الفقري مع الدكتور جمال العنسي",
+        "best": {
+          "id": "SVC-0009",
+          "name": "جراحة المخ والأعصاب والعمود الفقري مع الدكتور جمال العنسي",
+          "category": "تخصصات جراحية",
+          "group": "surgery",
+          "slug": "index",
+          "rank": 1,
+          "url": "services/",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": []
+        }
+      }
+    },
+    {
+      "query": "عين",
+      "type": "weak",
+      "results": [
+        {
+          "id": "SVC-0434",
+          "name": "غسيل العين (طوارئ)",
+          "category": "طوارئ وإسعاف",
+          "group": "general"
+        }
+      ],
+      "reply": {
+        "lines": [
+          "هل تقصد أحد هذه الخدمات؟"
+        ],
+        "options": [
+          {
+            "id": "SVC-0434",
+            "name": "غسيل العين (طوارئ)",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          }
+        ],
+        "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%BA%D8%B3%D9%8A%D9%84%20%D8%A7%D9%84%D8%B9%D9%8A%D9%86%20(%D8%B7%D9%88%D8%A7%D8%B1%D8%A6)",
+        "whatsappText": "السلام عليكم، أستفسر عن: غسيل العين (طوارئ)",
+        "best": null
+      }
+    },
+    {
+      "query": "تحليل",
+      "type": "none",
+      "results": [],
+      "reply": {
+        "lines": [
+          "نعتذر منكم، ربما لم نتمكن من فهم طلبكم بدقة، وقد تكون الخدمة التي تبحثون عنها متاحة لدينا لكننا لم نستطع التأكد منها. يمكنكم مراسلتنا على واتساب المستشفى (771422070) وسنوافيكم بالجواب في أقرب وقت. شاكرين لكم تفهمكم."
+        ],
+        "options": [],
+        "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%A8%D8%AD%D8%AB%20%D8%B9%D9%86%3A%20%D8%AA%D8%AD%D9%84%D9%8A%D9%84",
+        "whatsappText": "السلام عليكم، أبحث عن: تحليل",
+        "best": null
+      }
+    },
+    {
+      "query": "نقل الدم",
+      "type": "none",
+      "results": [],
+      "reply": {
+        "lines": [
+          "نعتذر منكم، ربما لم نتمكن من فهم طلبكم بدقة، وقد تكون الخدمة التي تبحثون عنها متاحة لدينا لكننا لم نستطع التأكد منها. يمكنكم مراسلتنا على واتساب المستشفى (771422070) وسنوافيكم بالجواب في أقرب وقت. شاكرين لكم تفهمكم."
+        ],
+        "options": [],
+        "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%A8%D8%AD%D8%AB%20%D8%B9%D9%86%3A%20%D9%86%D9%82%D9%84%20%D8%A7%D9%84%D8%AF%D9%85",
+        "whatsappText": "السلام عليكم، أبحث عن: نقل الدم",
+        "best": null
+      }
+    },
+    {
+      "query": "سرير",
+      "type": "none",
+      "results": [],
+      "reply": {
+        "lines": [
+          "نعتذر منكم، ربما لم نتمكن من فهم طلبكم بدقة، وقد تكون الخدمة التي تبحثون عنها متاحة لدينا لكننا لم نستطع التأكد منها. يمكنكم مراسلتنا على واتساب المستشفى (771422070) وسنوافيكم بالجواب في أقرب وقت. شاكرين لكم تفهمكم."
+        ],
+        "options": [],
+        "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%A8%D8%AD%D8%AB%20%D8%B9%D9%86%3A%20%D8%B3%D8%B1%D9%8A%D8%B1",
+        "whatsappText": "السلام عليكم، أبحث عن: سرير",
+        "best": null
+      }
+    },
+    {
+      "query": "أكثر من 40 سرير رقود خاص",
+      "type": "strong",
+      "results": [
+        {
+          "id": "SVC-0004",
+          "name": "أكثر من 40 سرير رقود خاص",
+          "category": "تجهيزات وأسرة وأجهزة",
+          "group": "listed"
+        }
+      ],
+      "reply": {
+        "lines": [
+          "نعم، مذكور في قائمة خدماتنا: أكثر من 40 سرير رقود خاص. للتأكد من التفاصيل يمكنكم مراسلتنا على واتساب المستشفى (771422070). نسعد بخدمتكم ونتمنى لكم دوام الصحة والعافية."
+        ],
+        "options": [],
+        "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%A3%D9%83%D8%AB%D8%B1%20%D9%85%D9%86%2040%20%D8%B3%D8%B1%D9%8A%D8%B1%20%D8%B1%D9%82%D9%88%D8%AF%20%D8%AE%D8%A7%D8%B5",
+        "whatsappText": "السلام عليكم، أستفسر عن: أكثر من 40 سرير رقود خاص",
+        "best": {
+          "id": "SVC-0004",
+          "name": "أكثر من 40 سرير رقود خاص",
+          "category": "تجهيزات وأسرة وأجهزة",
+          "group": "listed",
+          "slug": "index",
+          "rank": 6,
+          "url": null,
+          "searchOnly": true,
+          "exactMatchOnly": true,
+          "exactMatchMinWords": null,
+          "directoryHidden": true,
+          "matchName": "",
+          "numberRequired": true,
+          "exactPhrases": []
+        }
+      }
+    },
+    {
+      "query": "جهاز التنفس",
+      "type": "strong",
+      "results": [
+        {
+          "id": "SVC-0405",
+          "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+          "category": "طوارئ وإسعاف",
+          "group": "general"
+        },
+        {
+          "id": "SVC-0406",
+          "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+          "category": "طوارئ وإسعاف",
+          "group": "general"
+        }
+      ],
+      "reply": {
+        "lines": [
+          "نعم، يتوفر لدينا خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة ضمن طوارئ وإسعاف. يسعدنا خدمتكم ونتمنى لكم دوام الصحة والعافية.",
+          "هل تقصد أحد هذه الخدمات؟"
+        ],
+        "options": [
+          {
+            "id": "SVC-0406",
+            "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          }
+        ],
+        "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%20%D9%84%D9%85%D8%AF%D8%A9%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%AE%D9%84%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9",
+        "whatsappText": "السلام عليكم، أستفسر عن: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+        "best": {
+          "id": "SVC-0405",
+          "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+          "category": "طوارئ وإسعاف",
+          "group": "general",
+          "slug": "index",
+          "rank": 6,
+          "url": "services/",
+          "searchOnly": false,
+          "exactMatchOnly": false,
+          "exactMatchMinWords": null,
+          "directoryHidden": false,
+          "matchName": "",
+          "numberRequired": false,
+          "exactPhrases": []
+        }
+      }
+    },
+    {
+      "query": "شهادة الوفاة",
+      "type": "none",
+      "results": [],
+      "reply": {
+        "lines": [
+          "نعتذر منكم، ربما لم نتمكن من فهم طلبكم بدقة، وقد تكون الخدمة التي تبحثون عنها متاحة لدينا لكننا لم نستطع التأكد منها. يمكنكم مراسلتنا على واتساب المستشفى (771422070) وسنوافيكم بالجواب في أقرب وقت. شاكرين لكم تفهمكم."
+        ],
+        "options": [],
+        "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%A8%D8%AD%D8%AB%20%D8%B9%D9%86%3A%20%D8%B4%D9%87%D8%A7%D8%AF%D8%A9%20%D8%A7%D9%84%D9%88%D9%81%D8%A7%D8%A9",
+        "whatsappText": "السلام عليكم، أبحث عن: شهادة الوفاة",
+        "best": null
+      }
+    }
+  ],
+  "sonars": [
+    {
+      "id": "SVC-0063",
+      "name": "السونار العام وسونار الحمل",
+      "publish": true,
+      "queryResult": "strong",
+      "selected": [
+        "SVC-0063",
+        "SVC-0332"
+      ]
+    },
+    {
+      "id": "SVC-0331",
+      "name": "سونار موجات فوق صوتية للنساء في العيادة",
+      "publish": true,
+      "queryResult": "strong",
+      "selected": [
+        "SVC-0331"
+      ]
+    },
+    {
+      "id": "SVC-0332",
+      "name": "سونار للحمل",
+      "publish": true,
+      "queryResult": "strong",
+      "selected": [
+        "SVC-0332",
+        "SVC-0063"
+      ]
+    }
+  ],
+  "excludedNamesChecked": 27
+}

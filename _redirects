@@ -1,0 +1,7 @@
+# ENH:START services-simplification
+# Named segment must be nonempty; /services/* would redirect /services/ to itself.
+/services/diagnostics /services/ 301
+/services/surgery /services/ 301
+/services/:path /services/ 301
+/services/:path/* /services/ 301
+# ENH:END services-simplification

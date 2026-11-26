@@ -31,7 +31,7 @@ const TYPES = {
   '.ico': 'image/x-icon',
 };
 
-/** يحوّل /services/dental → services/dental.html أو services/dental/index.html */
+/** يحوّل مسار بلا امتداد إلى الملف المقابل أو index.html */
 function resolve(urlPath) {
   const clean = decodeURIComponent(urlPath.split('?')[0]);
   const target = path.join(ROOT, path.normalize(clean).replace(/^(\.\.[/\\])+/, ''));
@@ -73,5 +73,5 @@ http
     fs.createReadStream(file).pipe(res);
   })
   .listen(PORT, '0.0.0.0', () => {
-    console.log('preview: http://0.0.0.0:' + PORT + '/  (يدعم /services/dental بلا .html)');
+    console.log('preview: http://0.0.0.0:' + PORT + '/  (يدعم مسارات HTML بلا امتداد)');
   });

@@ -47,7 +47,7 @@ async function main() {
         assert.equal(redirect.headers.get('location'), prefix+'/?test=1');
         assert.equal((await fetch(host+'/services/')).status, 404, 'الخادم يسمح بتحميل ملفات خارج البادئة');
       }
-    for (const route of ['/', '/services/', '/services/dental', '/services/dental.html']) {
+    for (const route of ['/', '/services/']) {
       const page = await browser.newPage();
       await page.setViewport({width:375,height:812,isMobile:true,hasTouch:true});
       const failures = [], errors = [], js = [], json = [], fonts = [];
@@ -72,9 +72,7 @@ async function main() {
       const guideLinks = await page.$$eval('a[href]', nodes => nodes.map(a => a.href).filter(x => {try{return new URL(x).pathname.includes('/services/');}catch(e){return false;}}));
       assert(guideLinks.every(href => new URL(href).pathname.startsWith(prefix + '/services/')), route + ' روابط الدليل هربت من المسار الفرعي: ' + guideLinks.join(','));
       if (route === '/services/') {
-        const cards = await page.$$eval('.sg-cards a', nodes => nodes.map(a => a.href));
-        assert.equal(cards.length,8);
-        for (const link of cards) assert.equal((await page.evaluate(u => fetch(u).then(r=>r.status), link)), 200, 'رابط بطاقة مكسور: '+link);
+        assert.equal(await page.$$('.sg-cards a').then(x=>x.length),0, 'لا توجد بطاقات ثابتة في صفحة البحث');
       }
 
       const responses = [];
@@ -94,15 +92,11 @@ async function main() {
         if (q === '16 حاضنة') assert(text.includes('نعتذر') && !text.includes('مذكور في قائمة خدماتنا'), 'يجب الاعتذار عن حاضنة مختصرة');
         if (q === 'سرير') assert(text.includes('نعتذر') && !text.includes('التقييم السريري') && !text.includes('أكثر من 13 سرير') && !text.includes('أكثر من 40 سرير'), 'رد غير صحيح للفظ سرير');
         if (q === 'عين' || q === 'كبد') assert(text.includes('هل تقصد') && !text.includes('نعم،') && !text.includes('أخذ عينة'), 'رد خيارات غير صحيح: '+q);
-        if (q === 'تحليل') { const hint = await page.$eval('[data-services-search-panel] a', a=>({text:a.textContent,href:a.href})); assert(hint.text.includes('تصفّح قسم فحوصات تشخيصية في دليل الخدمات') && new URL(hint.href).pathname === prefix+'/services/diagnostics', 'رابط القسم غير صحيح'); }
+        if (q === 'تحليل') assert(!text.includes('نعم،'), 'الكلمة العامة لا تؤكد التوفر');
         if (q === 'نقل الدم') assert(text.includes('نعتذر') && !text.includes('يتوفر لدينا'), 'نقل الدم يجب أن يعطي اعتذارًا');
         if (q === 'أكثر من 40 سرير رقود خاص') assert(text.includes('مذكور في قائمة خدماتنا') && !text.includes('يتوفر لدينا'), 'رد searchOnly غير صحيح');
 
-        if (q === 'CBC') {
-          const detail = await page.$eval('[data-services-search-panel] a.ss-result-link', a => a.href);
-          assert(new URL(detail).pathname === prefix + '/services/diagnostics' && new URL(detail).hash === '#svc-0048', 'رابط النتيجة خارج المعاينة: '+detail);
-          assert.equal(await page.evaluate(u=>fetch(u).then(r=>r.status), detail.split('#')[0]), 200, 'رابط النتيجة لا يعمل');
-        }
+        if (q === 'CBC') assert.equal(await page.$$eval('[data-services-search-panel] .ss-result-link', nodes=>nodes.length), 0, 'لا تفاصيل لصفحات محذوفة');
 
         if (q === 'أكثر من 40 سرير رقود خاص') {
           const a = await page.$$eval('[data-services-search-panel] a', nodes => nodes.map(n=>n.href));
@@ -129,8 +123,7 @@ async function main() {
         await input.evaluate(el => {el.value='فحص دم';el.dispatchEvent(new Event('input',{bubbles:true}));});
         await page.waitForFunction(() => document.querySelectorAll('[data-services-search-panel] .ss-option').length > 0, {timeout:5000});
         const optionLinks = await page.$$eval('[data-services-search-panel] .ss-options a.ss-result-link', nodes => nodes.map(a=>a.href));
-        assert(optionLinks.length > 0 && optionLinks.every(href=>new URL(href).pathname.startsWith(prefix+'/services/')), 'روابط خيارات البحث خارج المعاينة');
-        for (const href of optionLinks) assert.equal(await page.evaluate(u=>fetch(u).then(r=>r.status),href.split('#')[0]),200);
+        assert(optionLinks.every(href=>new URL(href).pathname.endsWith('/offers.html')), 'لا روابط تفاصيل لصفحات محذوفة');
       }
       await page.close();
     }
@@ -145,7 +138,7 @@ async function main() {
     console.log('✅ زر الرئيسية يفتح الدليل ويحفظ الاستعلام في التجزئة فقط');
     await homePage.close();
     // Static bundle unavailable: JSON fetch should still provide a functioning fallback.
-    for (const fallbackRoute of ['/', '/services/', '/services/dental', '/services/dental.html']) {
+    for (const fallbackRoute of ['/', '/services/']) {
     const fallbackPage = await browser.newPage();
     const fallbackJson = [];
     await fallbackPage.setRequestInterception(true);

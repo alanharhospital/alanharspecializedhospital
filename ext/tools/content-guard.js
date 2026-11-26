@@ -427,7 +427,7 @@ function main() {
         continue;
       }
       const target = filePart || page;
-      /* Cloudflare Pages يحوّل /services/dental → /services/dental.html */
+      /* مطابقة المسارات بلا امتداد على الملفات الموجودة */
       const candidates = [target, target.replace(/\/+$/, '') + '.html', target.replace(/\/+$/, '') + '/index.html'];
       const exists = candidates.some((c) => c && fs.existsSync(path.join(ROOT, c)));
       if (!exists) {

@@ -1,0 +1,8 @@
+Cloudflare Pages local via wrangler 4.168.0 (not live):
+/services/                  HTTP 200 Location=
+/services/diagnostics       HTTP 301 Location=http://127.0.0.1:8788/services/
+/services/surgery           HTTP 301 Location=http://127.0.0.1:8788/services/
+/services/dental            HTTP 301 Location=http://127.0.0.1:8788/services/
+/services/dental.html       HTTP 301 Location=http://127.0.0.1:8788/services/
+/services/other/deep        HTTP 301 Location=http://127.0.0.1:8788/services/
+Literal /services/* previously tested: /services/ returned 301 to itself; rejected to avoid loop.

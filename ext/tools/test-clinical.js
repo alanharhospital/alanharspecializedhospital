@@ -9,7 +9,8 @@ const ROOT=path.resolve(__dirname,'../..'), puppeteer=require('puppeteer-core'),
     await new Promise((resolve,reject)=>{let t=setTimeout(()=>reject(Error('الخادم لم يبدأ')),10000);server.once('exit',()=>reject(Error('الخادم انتهى')));server.stdout.once('data',()=>{clearTimeout(t);resolve()});});
     let env={...process.env};const lib=process.env.NSS_LIB_DIR||'/tmp/arena-nss/dist/Linux6.1_x86_64_cc_glibc_PTH_64_OPT.OBJ/lib';if(fs.existsSync(path.join(lib,'libnss3.so')))env.LD_LIBRARY_PATH=lib+(env.LD_LIBRARY_PATH?':'+env.LD_LIBRARY_PATH:'');
     browser=await puppeteer.launch({executablePath:await chromium.executablePath(),args:chromium.args,headless:true,env});
-    const routes=['/','/doctors.html','/offers.html','/clinics.html','/units.html','/ancillary.html','/pr.html','/news.html','/404.html','/services/','/services/dental','/services/diagnostics','/services/emergency','/services/ent','/services/physio','/services/surgery','/services/women','/services/clinics-admin'];
+    // The removed directory pages and the standalone search page no longer host this dialog.
+    const routes=['/','/doctors.html','/offers.html','/clinics.html','/units.html','/ancillary.html','/pr.html','/news.html','/404.html'];
     for(const route of routes){
       const page=await browser.newPage(), errors=[];
       await page.setViewport({width:375,height:812,isMobile:true,hasTouch:true});
@@ -50,19 +51,7 @@ const ROOT=path.resolve(__dirname,'../..'), puppeteer=require('puppeteer-core'),
         const loaded=await page.evaluate(async()=>{let i=document.querySelector('picture img[src="icu.jpg"]'); i.scrollIntoView(); await i.decode(); return i.currentSrc});assert(loaded.endsWith('/ext/media/icu-700.webp') || loaded.endsWith('/ext/media/icu-optimized.webp'),loaded);
         console.log('✅ العيادات والأسئلة والصورة المحسنة');
       }
-      if(route==='/services/dental'){
-        await page.evaluate(()=>{Object.defineProperty(navigator,'share',{value:undefined,configurable:true});Object.defineProperty(navigator,'clipboard',{value:{writeText:url=>{window.copiedService=url;return Promise.resolve()}},configurable:true});});
-        await page.click('.sg-share');
-        await page.waitForFunction(()=>document.querySelector('.clinical-toast')?.textContent.includes('تم نسخ رابط الخدمة'));
-        assert(await page.evaluate(()=>window.copiedService.includes('/services/dental#svc-')));
-      }
-      if(route==='/services/'){
-        await page.click('.clinical-trigger');await page.$eval('.clinical-dialog input',el=>{el.value='CBC';el.dispatchEvent(new Event('input',{bubbles:true}));});
-        await page.waitForSelector('.clinical-dialog [data-clinical-share]');
-        await page.evaluate(()=>{Object.defineProperty(navigator,'share',{value:undefined,configurable:true});Object.defineProperty(navigator,'clipboard',{value:{writeText:()=>Promise.resolve()},configurable:true});});
-        await page.click('.clinical-dialog [data-clinical-share]'); await page.waitForFunction(()=>document.querySelector('.clinical-toast')?.textContent.includes('تم نسخ رابط الخدمة'));
-        console.log('✅ نسخ رابط الخدمة وإشعار النسخ');
-      }
+      // Removed directory sharing is tested separately against retained offer links.
       await page.close();
     }
   }finally{if(browser)await browser.close();server.kill('SIGTERM');}
