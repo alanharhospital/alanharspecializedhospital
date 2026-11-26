@@ -1,0 +1,491 @@
+{
+  "meta": {
+    "generatedBy": "ext/tools/build-services-catalog.js",
+    "generatedAt": "2026-11-26T01:19:03.094Z",
+    "warning": "كل الاقتراحات approved:false — لا تُفعَّل قبل موافقة المالك.",
+    "counts": {
+      "total": 53,
+      "abbreviation": 36,
+      "nearDuplicate": 17
+    }
+  },
+  "suggestions": [
+    {
+      "id": "ALS-0001",
+      "serviceId": "SVC-0001",
+      "name": "أكثر من 13 سرير عناية مركزة للكبار (ICU)",
+      "alias": "ICU",
+      "type": "abbreviation",
+      "reason": "الاختصار «ICU» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0002",
+      "serviceId": "SVC-0002",
+      "name": "8 أسرة عناية مركزة للأطفال (PICU)",
+      "alias": "PICU",
+      "type": "abbreviation",
+      "reason": "الاختصار «PICU» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0003",
+      "serviceId": "SVC-0003",
+      "name": "16 حاضنة أطفال في وحدة العناية بحديثي الولادة ورعاية الخدج (NICU)",
+      "alias": "NICU",
+      "type": "abbreviation",
+      "reason": "الاختصار «NICU» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0004",
+      "serviceId": "SVC-0048",
+      "name": "فحص الدم الشامل CBC",
+      "alias": "CBC",
+      "type": "abbreviation",
+      "reason": "الاختصار «CBC» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0005",
+      "serviceId": "SVC-0049",
+      "name": "الهرمونات الشاملة TSH FT3 FT4 FSH LH Prolactin Testosterone AMH B-HCG",
+      "alias": "TSH",
+      "type": "abbreviation",
+      "reason": "الاختصار «TSH» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0006",
+      "serviceId": "SVC-0049",
+      "name": "الهرمونات الشاملة TSH FT3 FT4 FSH LH Prolactin Testosterone AMH B-HCG",
+      "alias": "FT3",
+      "type": "abbreviation",
+      "reason": "الاختصار «FT3» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0007",
+      "serviceId": "SVC-0049",
+      "name": "الهرمونات الشاملة TSH FT3 FT4 FSH LH Prolactin Testosterone AMH B-HCG",
+      "alias": "FT4",
+      "type": "abbreviation",
+      "reason": "الاختصار «FT4» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0008",
+      "serviceId": "SVC-0049",
+      "name": "الهرمونات الشاملة TSH FT3 FT4 FSH LH Prolactin Testosterone AMH B-HCG",
+      "alias": "FSH",
+      "type": "abbreviation",
+      "reason": "الاختصار «FSH» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0009",
+      "serviceId": "SVC-0049",
+      "name": "الهرمونات الشاملة TSH FT3 FT4 FSH LH Prolactin Testosterone AMH B-HCG",
+      "alias": "LH",
+      "type": "abbreviation",
+      "reason": "الاختصار «LH» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0010",
+      "serviceId": "SVC-0049",
+      "name": "الهرمونات الشاملة TSH FT3 FT4 FSH LH Prolactin Testosterone AMH B-HCG",
+      "alias": "Prolactin",
+      "type": "abbreviation",
+      "reason": "الاختصار «Prolactin» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0011",
+      "serviceId": "SVC-0049",
+      "name": "الهرمونات الشاملة TSH FT3 FT4 FSH LH Prolactin Testosterone AMH B-HCG",
+      "alias": "Testosterone",
+      "type": "abbreviation",
+      "reason": "الاختصار «Testosterone» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0012",
+      "serviceId": "SVC-0049",
+      "name": "الهرمونات الشاملة TSH FT3 FT4 FSH LH Prolactin Testosterone AMH B-HCG",
+      "alias": "AMH",
+      "type": "abbreviation",
+      "reason": "الاختصار «AMH» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0013",
+      "serviceId": "SVC-0049",
+      "name": "الهرمونات الشاملة TSH FT3 FT4 FSH LH Prolactin Testosterone AMH B-HCG",
+      "alias": "B-HCG",
+      "type": "abbreviation",
+      "reason": "الاختصار «B-HCG» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0014",
+      "serviceId": "SVC-0050",
+      "name": "السكري التراكمي HbA1C",
+      "alias": "HbA1C",
+      "type": "abbreviation",
+      "reason": "الاختصار «HbA1C» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0015",
+      "serviceId": "SVC-0054",
+      "name": "إنزيمات القلب Troponin",
+      "alias": "Troponin",
+      "type": "abbreviation",
+      "reason": "الاختصار «Troponin» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0016",
+      "serviceId": "SVC-0058",
+      "name": "المزارع البكتيرية C/S",
+      "alias": "C/S",
+      "type": "abbreviation",
+      "reason": "الاختصار «C/S» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0017",
+      "serviceId": "SVC-0059",
+      "name": "وفحوصات الـ PCR",
+      "alias": "PCR",
+      "type": "abbreviation",
+      "reason": "الاختصار «PCR» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0018",
+      "serviceId": "SVC-0061",
+      "name": "الأشعة المقطعية CT Scan للرأس والدماغ والجيوب الأنفية والرقبة والصدر والبطن والحوض والفقرات",
+      "alias": "CT Scan",
+      "type": "abbreviation",
+      "reason": "الاختصار «CT Scan» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0019",
+      "serviceId": "SVC-0062",
+      "name": "الأشعة الرقمية الكشافة DR",
+      "alias": "DR",
+      "type": "abbreviation",
+      "reason": "الاختصار «DR» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0020",
+      "serviceId": "SVC-0065",
+      "name": "وإيكو القلب ECHO للكبار والأطفال",
+      "alias": "ECHO",
+      "type": "abbreviation",
+      "reason": "الاختصار «ECHO» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0021",
+      "serviceId": "SVC-0116",
+      "name": "حشوة أطفال خلفي GIC",
+      "alias": "GIC",
+      "type": "abbreviation",
+      "reason": "الاختصار «GIC» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0022",
+      "serviceId": "SVC-0126",
+      "name": "تركيبة خزف فيتا (VITA)",
+      "alias": "VITA",
+      "type": "abbreviation",
+      "reason": "الاختصار «VITA» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0023",
+      "serviceId": "SVC-0152",
+      "name": "إضافة مشبك (CLASP)",
+      "alias": "CLASP",
+      "type": "abbreviation",
+      "reason": "الاختصار «CLASP» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0024",
+      "serviceId": "SVC-0248",
+      "name": "تخطيط القلب ECG",
+      "alias": "ECG",
+      "type": "abbreviation",
+      "reason": "الاختصار «ECG» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0025",
+      "serviceId": "SVC-0322",
+      "name": "تخطيط نبض الجنين CTG",
+      "alias": "CTG",
+      "type": "abbreviation",
+      "reason": "الاختصار «CTG» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0026",
+      "serviceId": "SVC-0336",
+      "name": "سحب السائل الشوكي (C.S.F) تشخيصي",
+      "alias": "C.S.F",
+      "type": "abbreviation",
+      "reason": "الاختصار «C.S.F» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0027",
+      "serviceId": "SVC-0347",
+      "name": "قراءة تقرير أشعة مقطعية (CT) خارجية",
+      "alias": "CT",
+      "type": "abbreviation",
+      "reason": "الاختصار «CT» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0028",
+      "serviceId": "SVC-0348",
+      "name": "قراءة تقرير أشعة رنين مغناطيسي (MRI) خارجية",
+      "alias": "MRI",
+      "type": "abbreviation",
+      "reason": "الاختصار «MRI» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0029",
+      "serviceId": "SVC-0375",
+      "name": "صدمات كهربائية (D/S shock)",
+      "alias": "D/S",
+      "type": "abbreviation",
+      "reason": "الاختصار «D/S» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0030",
+      "serviceId": "SVC-0377",
+      "name": "تركيب أنبوب الرغامي ETT",
+      "alias": "ETT",
+      "type": "abbreviation",
+      "reason": "الاختصار «ETT» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0031",
+      "serviceId": "SVC-0378",
+      "name": "تركيب أنبوب أنفي معدي NGT",
+      "alias": "NGT",
+      "type": "abbreviation",
+      "reason": "الاختصار «NGT» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0032",
+      "serviceId": "SVC-0383",
+      "name": "استخدام جهاز أشعة C-ARM",
+      "alias": "C-ARM",
+      "type": "abbreviation",
+      "reason": "الاختصار «C-ARM» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0033",
+      "serviceId": "SVC-0393",
+      "name": "قياس الربو والتحسس بالجهاز (PFT)",
+      "alias": "PFT",
+      "type": "abbreviation",
+      "reason": "الاختصار «PFT» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0034",
+      "serviceId": "SVC-0409",
+      "name": "ضرب تركيب فراشة (Cannula) طوارئ",
+      "alias": "Cannula",
+      "type": "abbreviation",
+      "reason": "الاختصار «Cannula» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0035",
+      "serviceId": "SVC-0410",
+      "name": "ضرب إعطاء سوائل وريدية (500ML) طوارئ",
+      "alias": "ML",
+      "type": "abbreviation",
+      "reason": "الاختصار «ML» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0036",
+      "serviceId": "SVC-0415",
+      "name": "إنعاش قلبي رئوي (CPR) كبار وأطفال (طوارئ)",
+      "alias": "CPR",
+      "type": "abbreviation",
+      "reason": "الاختصار «CPR» ورد داخل نص الخدمة نفسه",
+      "approved": false
+    },
+    {
+      "id": "ALS-0037",
+      "serviceId": "SVC-0073",
+      "name": "قلع سن أمامي",
+      "alias": "قلع سن أمامي أطفال",
+      "type": "near-duplicate",
+      "reason": "تشابه 75% — يُحتمل أن الاثنين خدمة واحدة",
+      "approved": false
+    },
+    {
+      "id": "ALS-0038",
+      "serviceId": "SVC-0084",
+      "name": "تنظيف اللثة من الرواسب الكلسية درجة أولى",
+      "alias": "تنظيف اللثة من الرواسب الكلسية درجة ثانية",
+      "type": "near-duplicate",
+      "reason": "تشابه 75% — يُحتمل أن الاثنين خدمة واحدة",
+      "approved": false
+    },
+    {
+      "id": "ALS-0039",
+      "serviceId": "SVC-0084",
+      "name": "تنظيف اللثة من الرواسب الكلسية درجة أولى",
+      "alias": "تنظيف اللثة من الرواسب الكلسية درجة ثالثة",
+      "type": "near-duplicate",
+      "reason": "تشابه 75% — يُحتمل أن الاثنين خدمة واحدة",
+      "approved": false
+    },
+    {
+      "id": "ALS-0040",
+      "serviceId": "SVC-0085",
+      "name": "تنظيف اللثة من الرواسب الكلسية درجة ثانية",
+      "alias": "تنظيف اللثة من الرواسب الكلسية درجة ثالثة",
+      "type": "near-duplicate",
+      "reason": "تشابه 75% — يُحتمل أن الاثنين خدمة واحدة",
+      "approved": false
+    },
+    {
+      "id": "ALS-0041",
+      "serviceId": "SVC-0093",
+      "name": "سحب عصب أسنان خلفي مع حشوة فضية",
+      "alias": "سحب عصب خلفي مع حشوة فضية",
+      "type": "near-duplicate",
+      "reason": "تشابه 86% — يُحتمل أن الاثنين خدمة واحدة",
+      "approved": false
+    },
+    {
+      "id": "ALS-0042",
+      "serviceId": "SVC-0096",
+      "name": "سحب عصب أسنان أمامية مع دعامة معدنية",
+      "alias": "سحب عصب أسنان خلفية مع دعامة معدنية",
+      "type": "near-duplicate",
+      "reason": "تشابه 75% — يُحتمل أن الاثنين خدمة واحدة",
+      "approved": false
+    },
+    {
+      "id": "ALS-0043",
+      "serviceId": "SVC-0099",
+      "name": "سحب عصب خلفي مع دعامة معدنية وحشوة ضوئية",
+      "alias": "سحب عصب خلفي مع دعامة معدنية وحشوة فضية",
+      "type": "near-duplicate",
+      "reason": "تشابه 78% — يُحتمل أن الاثنين خدمة واحدة",
+      "approved": false
+    },
+    {
+      "id": "ALS-0044",
+      "serviceId": "SVC-0137",
+      "name": "طقم أسنان كامل للفك الواحد عادي غير مرن",
+      "alias": "طقم أسنان كامل مرن للفك الواحد",
+      "type": "near-duplicate",
+      "reason": "تشابه 75% — يُحتمل أن الاثنين خدمة واحدة",
+      "approved": false
+    },
+    {
+      "id": "ALS-0045",
+      "serviceId": "SVC-0179",
+      "name": "إزالة تضخم غدة دهنية",
+      "alias": "إزالة غدة دهنية",
+      "type": "near-duplicate",
+      "reason": "تشابه 75% — يُحتمل أن الاثنين خدمة واحدة",
+      "approved": false
+    },
+    {
+      "id": "ALS-0046",
+      "serviceId": "SVC-0294",
+      "name": "حقن روماتيزم علاجي مفصل",
+      "alias": "حقن روماتيزم علاجي",
+      "type": "near-duplicate",
+      "reason": "تشابه 75% — يُحتمل أن الاثنين خدمة واحدة",
+      "approved": false
+    },
+    {
+      "id": "ALS-0047",
+      "serviceId": "SVC-0295",
+      "name": "حقن روماتيزم علاجي مفصلين",
+      "alias": "حقن روماتيزم علاجي",
+      "type": "near-duplicate",
+      "reason": "تشابه 75% — يُحتمل أن الاثنين خدمة واحدة",
+      "approved": false
+    },
+    {
+      "id": "ALS-0048",
+      "serviceId": "SVC-0301",
+      "name": "معاينة عيادة جراحة العظام والمفاصل",
+      "alias": "عيادة جراحة العظام والمفاصل",
+      "type": "near-duplicate",
+      "reason": "تشابه 80% — يُحتمل أن الاثنين خدمة واحدة",
+      "approved": false
+    },
+    {
+      "id": "ALS-0049",
+      "serviceId": "SVC-0303",
+      "name": "معاينة عيادة جراحة المخ والأعصاب والعمود الفقري",
+      "alias": "عيادة جراحة المخ والأعصاب والعمود الفقري",
+      "type": "near-duplicate",
+      "reason": "تشابه 86% — يُحتمل أن الاثنين خدمة واحدة",
+      "approved": false
+    },
+    {
+      "id": "ALS-0050",
+      "serviceId": "SVC-0352",
+      "name": "رقود غرفة خاصة",
+      "alias": "رقود غرفة خاصة عزل",
+      "type": "near-duplicate",
+      "reason": "تشابه 75% — يُحتمل أن الاثنين خدمة واحدة",
+      "approved": false
+    },
+    {
+      "id": "ALS-0051",
+      "serviceId": "SVC-0376",
+      "name": "شفط سوائل من الصدر (عناية)",
+      "alias": "شفط سوائل من الصدر",
+      "type": "near-duplicate",
+      "reason": "تشابه 80% — يُحتمل أن الاثنين خدمة واحدة",
+      "approved": false
+    },
+    {
+      "id": "ALS-0052",
+      "serviceId": "SVC-0384",
+      "name": "شفط سوائل من الصدر",
+      "alias": "شفط سوائل من الصدر (طوارئ)",
+      "type": "near-duplicate",
+      "reason": "تشابه 80% — يُحتمل أن الاثنين خدمة واحدة",
+      "approved": false
+    },
+    {
+      "id": "ALS-0053",
+      "serviceId": "SVC-0425",
+      "name": "تركيب قسطرة بولية للمولود (طوارئ)",
+      "alias": "تركيب قسطرة بولية (طوارئ)",
+      "type": "near-duplicate",
+      "reason": "تشابه 80% — يُحتمل أن الاثنين خدمة واحدة",
+      "approved": false
+    }
+  ]
+}
