@@ -1,17 +1,20 @@
 /* ENH:START 6-c — reversible brand and accessibility layer.
-   Base palette from ext/data/brand-profile.json. #14733e is a darker,
-   hue-matched variant of existing #2ecc71, needed for white-text contrast. */
+   Every color token maps directly to style.css and brand-profile.json. */
 :root {
-  --brand-navy: #0a2a5e;
-  --brand-blue: #1e4a8a;
-  --brand-green: #14733e;
-  --brand-white: #ffffff;
-  --brand-surface: #f8f9fa;
-  --brand-ink: #333333;
-  --brand-border: #e2e8f0;
-  --brand-radius: 12px;
-  --brand-space: 1rem;
-  --brand-shadow: 0 8px 20px rgba(10,42,94,.08);
+  --brand-navy: #0a2a5e;    /* --primary-navy */
+  --brand-blue: #1e4a8a;    /* --secondary-blue */
+  --brand-green: #2ecc71;   /* --accent-green */
+  --brand-wa-action: #25d366; /* style.css: .btn-whatsapp-submit */
+  --brand-white: #ffffff;   /* --white */
+  --brand-surface: #f8f9fa; /* --bg-light */
+  --brand-ink: #333333;     /* --text-main */
+  --brand-border: #e2e8f0;  /* --border-color */
+  --brand-radius: 12px;     /* --radius-md */
+  --brand-space-1: .5rem;   /* spacing in style.css */
+  --brand-space-2: 1rem;
+  --brand-space-3: 1.5rem;
+  --brand-space-4: 2rem;
+  --brand-shadow: 0 8px 20px rgba(10,42,94,.08); /* --shadow-md */
   --brand-font: 'Tajawal', 'Cairo', system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 main { font-family:var(--brand-font); }
@@ -23,19 +26,27 @@ button, input, select, textarea { font-family:inherit; }
   min-height:44px; min-width:44px; border-radius:var(--brand-radius); font-family:inherit; font-weight:700;
 }
 :is(.btn-primary,.btn-green,.btn-book-now,.btn-whatsapp-submit,.btn-wa,.btn-whatsapp,.btn-call,.btn-nav-highlight,.floating-bot-btn,#enh-main > a) {
-  background:var(--brand-green) !important; color:var(--brand-white) !important; border-color:var(--brand-green) !important;
+  background:var(--brand-green) !important; color:var(--brand-navy) !important; border-color:var(--brand-green) !important;
 }
+/* Preserve the original green on the booking WhatsApp action; this is not .ss-wa. */
+#enh-main .btn-whatsapp-submit { background:var(--brand-wa-action) !important; border-color:var(--brand-wa-action) !important; }
 :is(.btn-outline,.btn-line,.btn-email-submit,.clinical-close,.ss-option) {
   background:var(--brand-white) !important; color:var(--brand-navy) !important; border:2px solid var(--brand-navy) !important;
 }
 a.btn[href*="facebook.com"] { background:var(--brand-blue) !important; color:var(--brand-white) !important; }
 :is(.btn-primary,.btn-green,.btn-book-now,.btn-whatsapp-submit,.btn-wa,.btn-whatsapp,.btn-call,.btn-nav-highlight,.floating-bot-btn,#enh-main > a):hover { background:var(--brand-navy) !important; color:var(--brand-white) !important; transform:none; }
 :is(.btn-outline,.btn-line,.btn-email-submit,.clinical-close,.ss-option):hover { background:var(--brand-navy) !important; color:var(--brand-white) !important; transform:none; }
-:is(button,a,input,select,textarea,summary,[role="button"]):not(.ss-wa):focus-visible { outline:3px solid var(--brand-blue) !important; outline-offset:3px; box-shadow:0 0 0 2px var(--brand-white); }
-:is(button,input,select,textarea):disabled, [aria-disabled="true"] { opacity:.65; cursor:not-allowed; }
+:is(button,a,input,select,textarea,summary,[role="button"]):not(.ss-wa):focus-visible { outline:3px solid var(--brand-blue) !important; outline-offset:3px; box-shadow:0 0 0 2px var(--brand-white); transition:none !important; }
+:is(button,input,select,textarea):disabled, [aria-disabled="true"] { cursor:not-allowed; }
+:is(#enh-main button.btn,#enh-main a.btn,.btn-book-now,.btn-sm,.ss-button,.ss-option,.clinical-wa,.clinical-close,.clinical-chip,.sg-share):is(:disabled,[aria-disabled="true"]) { opacity:1; background:var(--brand-border) !important; color:var(--brand-ink) !important; border-color:var(--brand-ink) !important; }
 
 /* Existing card and heading families, without touching logo/image resources. */
 :is(.feature-card,.portal-card,.facility-card,.doctor-single-card,.unit-item-card,.appointment-form-container,.appointment-info-card,.clinical-card,.sg-cards li,.sg-list li,.offer-card,.contact-card,.category-card) { border-radius:var(--brand-radius); box-shadow:var(--brand-shadow); }
+:is(.sg-cards,.sg-list,.clinical-cards) { gap:var(--brand-space-2); }
+.sg-list li { padding:var(--brand-space-1) var(--brand-space-2); }
+:is(.sg-cards a,.clinical-card) { padding:var(--brand-space-2); }
+.sg-cards { margin-block-start:var(--brand-space-3); }
+.sg-cat { margin-block-start:var(--brand-space-4); }
 :is(main,.section-padding) h1 { font-size:clamp(1.75rem,4vw,2.4rem); line-height:1.35; }
 :is(main,.section-padding) h2:not(.enh-letter-heading) { font-size:clamp(1.25rem,2.8vw,1.7rem); line-height:1.5; }
 :is(main,.section-padding) h3:not(.enh-letter-heading) { font-size:1.1rem; line-height:1.5; }
@@ -49,7 +60,9 @@ article.appointment-form-container > div > span[style*="accent-green"] { color:v
 /* The low-contrast green in the doctors' text logo remains unchanged by request. */
 :is(.badge-limited,.nav-badge,.badge-special,.perks li em,.perks li em.free,.g-f,.quickbar__phone-ico) { background:var(--brand-navy) !important; color:var(--brand-white) !important; }
 .nav-list-menu a.active, .btn-header-contact { color:var(--brand-navy) !important; }
-.btn-header-appointment { background:var(--brand-green) !important; color:var(--brand-white) !important; }
+/* Doctors already define --anhar-green; keep their original background hue. */
+.btn-header-appointment, #enh-main .btn-book-now { background:var(--anhar-green, var(--brand-green)) !important; color:var(--brand-navy) !important; border-color:var(--anhar-green, var(--brand-green)) !important; }
+.btn-header-appointment:hover, #enh-main .btn-book-now:hover { background:var(--brand-navy) !important; color:var(--brand-white) !important; }
 .required { color:var(--brand-navy) !important; }
 
 /* Independent targets; do not enlarge ordinary inline prose links or the logo. */
@@ -64,16 +77,21 @@ button, [role="button"], input:not([type="hidden"]):not([type="radio"]):not([typ
 .dots-nav a::before { content:""; width:11px; height:11px; border-radius:50%; background:var(--brand-blue); border:2px solid var(--brand-white); box-shadow:0 0 0 1px rgba(10,42,94,.2); }
 .dots-nav a.is-active::before, .dots-nav a:hover::before { background:var(--brand-green); }
 @media (min-width:769px) {
-  input[type="radio"] { appearance:none; -webkit-appearance:none; width:44px !important; height:44px !important; min-width:44px; min-height:44px; margin:0; flex:0 0 44px; background:radial-gradient(circle, #fff 0 5px, #767676 5px 6.5px, transparent 7px); cursor:pointer; }
-  input[type="radio"]:checked { background:radial-gradient(circle, #0a2a5e 0 3px, #fff 3px 5px, #767676 5px 6.5px, transparent 7px); }
+  input[type="radio"] { appearance:none; -webkit-appearance:none; width:44px !important; height:44px !important; min-width:44px; min-height:44px; margin:0; flex:0 0 44px; background:radial-gradient(circle, var(--brand-white) 0 5px, var(--brand-ink) 5px 6.5px, transparent 7px); cursor:pointer; }
+  input[type="radio"]:checked { background:radial-gradient(circle, var(--brand-navy) 0 3px, var(--brand-white) 3px 5px, var(--brand-ink) 5px 6.5px, transparent 7px); }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; scroll-behavior:auto !important; } }
 @media print {
-  header, nav, .floating-bot-btn, .fab, .clinical-trigger, .clinical-dialog, .clinical-toasts, .share-bar, .sh, .ss, .back-to-top, .enh-skip-link, button, .btn, .btn-book-now { display:none !important; }
-  *, *::before, *::after { background:transparent !important; color:#000 !important; text-shadow:none !important; box-shadow:none !important; }
+  nav:not(:has(.brand, .brand-logo-area)), .nav-links, .floating-bot-btn, .fab, .clinical-trigger, .back-to-top, .menu-toggle, .mobile-toggle, .enh-skip-link { display:none !important; }
+  *, *::before, *::after { background:transparent !important; color:var(--brand-ink) !important; text-shadow:none !important; box-shadow:none !important; }
+  html, body { background:var(--brand-white) !important; }
   body { font-size:11pt; }
   .reveal { opacity:1 !important; transform:none !important; transition:none !important; animation:none !important; }
-  a[href^="http"]:not([href*="wa.me"])::after { content:" (" attr(href) ")"; font-size:9pt; overflow-wrap:anywhere; }
+  /* Override the earlier search print rule without exposing intentionally hidden items. */
+  .ss .ss-button:not([hidden]), .ss .ss-wa:not([hidden]) { display:inline-flex !important; }
+  .ss .ss-panel:not([hidden]) { display:block !important; }
+  a[href] { text-decoration:underline !important; }
+  a[href^="http"]::after { content:" (" attr(href) ")"; font-size:9pt; overflow-wrap:anywhere; }
   img { max-width:100%; }
 }
 /* ENH:END 6-c */

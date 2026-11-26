@@ -1,0 +1,183 @@
+{
+  "print": [
+    {
+      "route": "/",
+      "checked": 108,
+      "missing": [],
+      "background": "rgb(255, 255, 255)",
+      "navLinkCount": 0
+    },
+    {
+      "route": "/doctors.html",
+      "checked": 86,
+      "missing": [],
+      "background": "rgb(255, 255, 255)",
+      "navLinkCount": 0
+    },
+    {
+      "route": "/offers.html",
+      "checked": 56,
+      "missing": [],
+      "background": "rgb(255, 255, 255)",
+      "navLinkCount": 0
+    },
+    {
+      "route": "/clinics.html",
+      "checked": 35,
+      "missing": [],
+      "background": "rgb(255, 255, 255)",
+      "navLinkCount": 0
+    },
+    {
+      "route": "/units.html",
+      "checked": 43,
+      "missing": [],
+      "background": "rgb(255, 255, 255)",
+      "navLinkCount": 0
+    },
+    {
+      "route": "/ancillary.html",
+      "checked": 92,
+      "missing": [],
+      "background": "rgb(255, 255, 255)",
+      "navLinkCount": 0
+    },
+    {
+      "route": "/pr.html",
+      "checked": 31,
+      "missing": [],
+      "background": "rgb(255, 255, 255)",
+      "navLinkCount": 0
+    },
+    {
+      "route": "/news.html",
+      "checked": 17,
+      "missing": [],
+      "background": "rgb(255, 255, 255)",
+      "navLinkCount": 0
+    },
+    {
+      "route": "/404.html",
+      "checked": 5,
+      "missing": [],
+      "background": "rgb(255, 255, 255)",
+      "navLinkCount": 0
+    },
+    {
+      "route": "/services/",
+      "checked": 31,
+      "missing": [],
+      "background": "rgb(255, 255, 255)",
+      "navLinkCount": 0
+    },
+    {
+      "route": "/services/diagnostics",
+      "checked": 107,
+      "missing": [],
+      "background": "rgb(255, 255, 255)",
+      "navLinkCount": 0
+    },
+    {
+      "route": "/services/surgery",
+      "checked": 271,
+      "missing": [],
+      "background": "rgb(255, 255, 255)",
+      "navLinkCount": 0
+    },
+    {
+      "route": "/services/dental",
+      "checked": 303,
+      "missing": [],
+      "background": "rgb(255, 255, 255)",
+      "navLinkCount": 0
+    },
+    {
+      "route": "/services/women",
+      "checked": 90,
+      "missing": [],
+      "background": "rgb(255, 255, 255)",
+      "navLinkCount": 0
+    },
+    {
+      "route": "/services/ent",
+      "checked": 105,
+      "missing": [],
+      "background": "rgb(255, 255, 255)",
+      "navLinkCount": 0
+    },
+    {
+      "route": "/services/physio",
+      "checked": 126,
+      "missing": [],
+      "background": "rgb(255, 255, 255)",
+      "navLinkCount": 0
+    },
+    {
+      "route": "/services/emergency",
+      "checked": 209,
+      "missing": [],
+      "background": "rgb(255, 255, 255)",
+      "navLinkCount": 0
+    },
+    {
+      "route": "/services/clinics-admin",
+      "checked": 148,
+      "missing": [],
+      "background": "rgb(255, 255, 255)",
+      "navLinkCount": 0
+    }
+  ],
+  "wa": {
+    "8181": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(27, 94, 32)",
+      "border": "2px solid rgb(18, 68, 22)",
+      "padding": "11.2px 19.2px",
+      "font": "700 16px / 25.6px Tajawal, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "borderRadius": "12px"
+    },
+    "8182": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(27, 94, 32)",
+      "border": "2px solid rgb(18, 68, 22)",
+      "padding": "11.2px 19.2px",
+      "font": "700 16px / 25.6px Tajawal, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "borderRadius": "12px"
+    }
+  },
+  "metadata": {
+    "canonical": false,
+    "ogUrl": false,
+    "robots": "noindex"
+  },
+  "focus": [
+    {
+      "selector": "btn btn-primary",
+      "visible": true,
+      "outline": "rgb(30, 74, 138) solid 3px",
+      "offset": "3px",
+      "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px"
+    },
+    {
+      "selector": "btn btn-outline",
+      "visible": true,
+      "outline": "rgb(30, 74, 138) solid 3px",
+      "offset": "3px",
+      "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px"
+    },
+    {
+      "selector": "btn-book-now",
+      "visible": true,
+      "outline": "rgb(30, 74, 138) solid 3px",
+      "offset": "3px",
+      "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px"
+    },
+    {
+      "selector": "ss-button",
+      "visible": true,
+      "outline": "rgb(30, 74, 138) solid 3px",
+      "offset": "3px",
+      "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px"
+    }
+  ]
+}

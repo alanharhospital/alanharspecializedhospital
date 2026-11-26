@@ -1,0 +1,32 @@
+{
+  "/": [],
+  "/doctors.html": [
+    {
+      "text": "التخصصي",
+      "element": "span.brand-name-sub",
+      "parent": "div.brand-titles",
+      "grandparent": "a.brand-logo-area",
+      "fg": "#40c057",
+      "bg": "#ffffff",
+      "ratio": 2.36,
+      "min": 4.5,
+      "style": null
+    }
+  ],
+  "/offers.html": [],
+  "/clinics.html": [],
+  "/units.html": [],
+  "/ancillary.html": [],
+  "/pr.html": [],
+  "/news.html": [],
+  "/404.html": [],
+  "/services/": [],
+  "/services/diagnostics": [],
+  "/services/surgery": [],
+  "/services/dental": [],
+  "/services/women": [],
+  "/services/ent": [],
+  "/services/physio": [],
+  "/services/emergency": [],
+  "/services/clinics-admin": []
+}
