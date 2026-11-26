@@ -157,11 +157,12 @@ const seen = new Map();
 let duplicates = 0;
 let rawCount = 0;
 
-function add(name, category, sourcePage, group) {
+function add(name, category, sourcePage, group, liText) {
   name = name.replace(/\s+/g, ' ').trim();
   if (name.length < 3) return;
   rawCount++;
 
+  const sourceCategory = category;
   if (isReview(name)) category = 'للمراجعة';
   else if (isConsultation(name) && category !== 'للمراجعة') category = 'عيادات ومعاينات';
 
@@ -177,6 +178,8 @@ function add(name, category, sourcePage, group) {
     sourcePage,
     aliases: [],
   };
+  rec._sourceCategory = sourceCategory;
+  rec._liText = liText || '';
   seen.set(key, rec);
   items.push(rec);
   if (category === 'للمراجعة') notServicesReview.push(rec);
@@ -198,10 +201,10 @@ for (const e of parsed.entries) {
   if (colon > 0 && colon < 90 && e.liIndex >= 8 && e.liIndex <= 13) {
     const header = e.text.slice(0, colon).trim();
     const headerCat = e.liIndex <= 11 ? 'تخصصات جراحية' : cat;
-    add(header, headerCat, 'index.html', e.liIndex);
-    for (const piece of splitItems(e.text.slice(colon + 1))) add(piece, cat, 'index.html', e.liIndex);
+    add(header, headerCat, 'index.html', e.liIndex, e.text);
+    for (const piece of splitItems(e.text.slice(colon + 1))) add(piece, cat, 'index.html', e.liIndex, e.text);
   } else {
-    for (const piece of splitItems(e.text)) add(piece, cat, 'index.html', e.liIndex);
+    for (const piece of splitItems(e.text)) add(piece, cat, 'index.html', e.liIndex, e.text);
   }
 }
 /* عناوين الكتلة المخفية ليست خدمات → قسم منفصل */
@@ -323,6 +326,107 @@ for (let i = 0; i < items.length && pairs < 25; i++) {
   }
 }
 
+
+/* ==================================================================
+   مراجعة الكتالوج (المهمة 5-أ2):
+   تكرار بعد التطبيع القوي + حقول النشر + سياق عناصر المراجعة
+   ================================================================== */
+
+/** تطبيع قوي: تشكيل + همزات + ة/ه + ى/ي + ترقيم + محتوى الأقواس */
+function normStrong(name) {
+  return name
+    .replace(/[\u064B-\u0652\u0670\u0640]/g, '')
+    .replace(/\([^)]*\)/g, ' ')
+    .replace(/[أإآٱ]/g, 'ا')
+    .replace(/ى/g, 'ي')
+    .replace(/ة/g, 'ه')
+    .replace(/[^\p{L}\p{N}\s]/gu, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase();
+}
+
+const dupMap = new Map();
+for (const rec of items) {
+  const k = normStrong(rec.name);
+  if (!dupMap.has(k)) dupMap.set(k, []);
+  dupMap.get(k).push(rec);
+}
+
+const duplicateGroups = [];
+for (const [key, group] of dupMap) {
+  if (group.length < 2) continue;
+  /* الأساس = العنصر بلا أقواس (الاسم العام) وإلا الأول */
+  const canonical = group.find((r) => !/[()]/.test(r.name)) || group[0];
+  const others = group.filter((r) => r !== canonical);
+  for (const r of others) {
+    r.duplicateOf = canonical.id;
+    r.duplicateNote =
+      'بعد إزالة الأقواس يتطابق الاسم مع ' + canonical.name + ' — راجع قبل الدمج: الأقواس قد تميّز قسمًا مختلفًا';
+  }
+  duplicateGroups.push({
+    normalizedName: key,
+    canonical: { id: canonical.id, name: canonical.name, category: canonical.category },
+    members: group.map((r) => ({ id: r.id, name: r.name, category: r.category, page: r.sourcePage })),
+  });
+}
+
+/* --- سياق عناصر المراجعة: 10 كلمات قبل و10 بعد في المصدر --- */
+const SUGGESTED = {
+  'أخذ عينة صغيرة': 'أسنان',
+  'إشعاعية كبيرة': 'أسنان',
+  'دفتر تخسيس': 'علاج طبيعي',
+  'مسند تغذية مريئية': 'رقود وخدمات تمريضية',
+  'حشوة الأذن': 'أنف وأذن وحنجرة',
+  'تنظيف يدوي بدون تخدير': 'نساء وولادة',
+  'تنظيف تشخيصي': 'نساء وولادة',
+  'خدمات لولادة خاصة لطبيبة النساء بالقسم الولادة': 'نساء وولادة',
+  'خدمات لولادة خاصة لطبيبة النساء والولادة': 'نساء وولادة',
+  'تدفئة شريحة جاهزة': 'رقود وخدمات تمريضية',
+  'خيمة ملاية': 'رقود وخدمات تمريضية',
+  'تخريم الأذن': 'أنف وأذن وحنجرة',
+};
+
+function contextOf(rec) {
+  const li = (rec._liText || '').replace(/\s+/g, ' ');
+  const pos = li.indexOf(rec.name);
+  if (pos < 0) return { before: '', after: '' };
+  const before = li.slice(0, pos).split(/\s+/).filter(Boolean).slice(-10).join(' ');
+  const after = li.slice(pos + rec.name.length).split(/\s+/).filter(Boolean).slice(0, 10).join(' ');
+  return { before, after };
+}
+
+for (const rec of items) {
+  rec.status = rec.category === 'للمراجعة' ? 'review' : 'active';
+  rec.linkOnly = rec.category === 'عروض وباقات';
+  if (rec.status === 'review') {
+    const ctx = contextOf(rec);
+    rec.reviewContext = {
+      page: rec.sourcePage,
+      sourceCategory: rec._sourceCategory || '',
+      before: ctx.before,
+      after: ctx.after,
+    };
+    rec.suggestedCategory = SUGGESTED[rec.name] || '';
+  }
+  rec.publish = !(rec.status === 'review' || rec.duplicateOf);
+}
+
+/* --- أسماء تحتوي رقمًا/نسبة/سعرًا (للعرض فقط، بلا تغيير) --- */
+const moneyOrDigits = items
+  .filter((r) => /[0-9٠-٩]|%/.test(r.name))
+  .map((r) => {
+    const hasPhone = /[0-9٠-٩]{7,}/.test(r.name.replace(/\s/g, ''));
+    const hasPercent = /%/.test(r.name);
+    const hasPrice = /(سعر|أجور|خصم|رسوم|تكلفة)/.test(r.name);
+    return {
+      id: r.id,
+      name: r.name,
+      category: r.category,
+      kind: hasPhone ? 'رقم هاتف' : hasPercent ? 'نسبة مئوية' : hasPrice ? 'سعر/أجرة' : 'رقم عددي',
+    };
+  });
+
 /* ------------------------------ الحفظ ------------------------------ */
 
 const byCategory = {};
@@ -340,17 +444,37 @@ const catalog = {
       unique: items.length,
       duplicatesExcluded: duplicates,
       forReview: items.filter((i) => i.category === 'للمراجعة').length,
+      duplicateGroups: duplicateGroups.length,
+      duplicateItems: items.filter((i) => i.duplicateOf).length,
+      publishFalse: items.filter((i) => i.publish === false).length,
+      linkOnly: items.filter((i) => i.linkOnly).length,
       categories: Object.keys(byCategory).length,
     },
     categories: byCategory,
   },
-  items: items.map(({ _group, ...r }) => r),
+  items: items.map((r) => {
+    const { _group, _sourceCategory, _liText, ...clean } = r;
+    return clean;
+  }),
   categories: Object.keys(byCategory).map((c) => ({
     name: c,
     count: byCategory[c],
     examples: items.filter((i) => i.category === c).slice(0, 8).map((i) => i.name),
   })),
-  forReview: items.filter((i) => i.category === 'للمراجعة').map((i) => ({ id: i.id, name: i.name, sourcePage: i.sourcePage })),
+  forReview: items
+    .filter((i) => i.category === 'للمراجعة')
+    .map((i) => ({
+      id: i.id,
+      name: i.name,
+      sourcePage: i.sourcePage,
+      sourceCategory: i._sourceCategory,
+      suggestedCategory: i.suggestedCategory,
+      status: 'review',
+      publish: false,
+      reviewContext: i.reviewContext,
+    })),
+  duplicateGroups,
+  digitsOrPrices: moneyOrDigits,
   notServices: hiddenNotServices,
 };
 
@@ -372,13 +496,62 @@ if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true });
 fs.writeFileSync(path.join(OUT_DIR, 'services-catalog.json'), JSON.stringify(catalog, null, 2), 'utf8');
 fs.writeFileSync(path.join(OUT_DIR, 'aliases-suggested.json'), JSON.stringify(aliasesFile, null, 2), 'utf8');
 
+/* -------------------- ملف المراجعة المقروء -------------------- */
+const md = [];
+md.push('# مراجعة الكتالوج — مستشفى الأنهار التخصصي');
+md.push('');
+md.push('> مولّد آليًا بواسطة `ext/tools/build-services-catalog.js` — لا تعدّل يدويًا.');
+md.push('> لا حذف ولا تصحيح لأي اسم. الحقول المضافة: `status` `publish` `linkOnly` `duplicateOf` `suggestedCategory`.');
+md.push('');
+md.push('## 1) التكرار بعد التطبيع (تشكيل + همزات + ة/ه + ى/ي + ترقيم + محتوى الأقواس)');
+md.push('');
+if (duplicateGroups.length === 0) {
+  md.push('لا توجد مجموعات مكررة.');
+} else {
+  md.push('| # | الاسم بعد التطبيع | العناصر (ID | الاسم | الفئة | الصفحة) | الأساس |');
+  md.push('|---|---|---|---|');
+  duplicateGroups.forEach((g, i) => {
+    const members = g.members.map((m) => `${m.id} | ${m.name} | ${m.category} | ${m.page}`).join('<br>');
+    md.push(`| ${i + 1} | ${g.normalizedName} | ${members} | ${g.canonical.id} — ${g.canonical.name} |`);
+  });
+}
+md.push('');
+md.push('## 2) عناصر «للمراجعة» — السياق في المصدر (10 كلمات قبل/بعد)');
+md.push('');
+md.push('| # | الاسم (كما ورد) | الصفحة | الفئة المصدرية | قبل | بعد | الفئة المقترحة |');
+md.push('|---|---|---|---|---|---|---|');
+catalog.forReview.forEach((r, i) => {
+  md.push(
+    `| ${i + 1} | ${r.name} | ${r.sourcePage} | ${r.sourceCategory} | …${r.reviewContext.before} | ${r.reviewContext.after}… | ${r.suggestedCategory} |`
+  );
+});
+md.push('');
+md.push('## 3) المرادفات المقترحة (غير مفعّلة — approved:false)');
+md.push('');
+md.push('| # | الاقتراح | النوع | الخدمة |');
+md.push('|---|---|---|---|');
+suggestions.forEach((sg, i) => {
+  md.push(`| ${i + 1} | ${sg.alias} | ${sg.type === 'abbreviation' ? 'اختصار' : 'دمج'} | ${sg.name} |`);
+});
+md.push('');
+md.push('## 4) أسماء تحتوي أرقامًا أو نسبًا أو أسعارًا (بلا تغيير)');
+md.push('');
+md.push('| # | الاسم | الفئة | النوع |');
+md.push('|---|---|---|---|');
+moneyOrDigits.forEach((r, i) => md.push(`| ${i + 1} | ${r.name} | ${r.category} | ${r.kind} |`));
+md.push('');
+fs.writeFileSync(path.join(OUT_DIR, 'catalog-review.md'), md.join('\n'), 'utf8');
+
 /* ------------------------------ التقرير ------------------------------ */
 
 console.log('\n  كتالوج الخدمات — مستشفى الأنهار التخصصي');
 console.log('  ' + '-'.repeat(74));
 console.log('  عدد المصطلحات المستخرجة خام       : ' + rawCount);
 console.log('  عدد المصطلحات الفريدة (الكتالوج)   : ' + items.length);
-console.log('  عدد المكرر المستبعد               : ' + duplicates);
+console.log('  عدد المكرر المستبعد (تطابق تام)    : ' + duplicates);
+console.log('  مجموعات تكرار بعد التطبيع القوي    : ' + duplicateGroups.length);
+console.log('  عناصر duplicateOf                 : ' + catalog.meta.counts.duplicateItems);
+console.log('  publish=false                     : ' + catalog.meta.counts.publishFalse);
 console.log('  عدد بنود سجل الأسعار (li)          : ' + parsed.entries.length);
 console.log('  عناصر "للمراجعة"                  : ' + catalog.meta.counts.forReview);
 console.log('  نصوص غير خدمية (قسم منفصل)        : ' + catalog.notServices.length);
@@ -392,4 +565,5 @@ for (const c of catalog.categories) {
 console.log('');
 console.log('  ✅ ext/data/services-catalog.json');
 console.log('  ✅ ext/data/aliases-suggested.json');
+console.log('  ✅ ext/data/catalog-review.md');
 console.log('');
