@@ -396,7 +396,19 @@ function contextOf(rec) {
   return { before, after };
 }
 
+/* --- مجموعة الردود لمحرك البحث (المهمة 5-ب) --- */
+const RADIOLOGY_IN_CARDIOLOGY = /(إيكو|ايكو|ECHO|موجات\s+فوق\s+ال?صوتي)/i;
+function responseGroupOf(rec) {
+  if (rec.category === 'مختبر') return 'lab';
+  if (rec.category === 'عمليات جراحية' || rec.category === 'تخصصات جراحية') return 'surgery';
+  if (rec.category === 'أسنان' || rec.name === 'معاينة عيادة الأسنان') return 'dental';
+  if (rec.category === 'أشعة') return 'radiology';
+  if (rec.category === 'قلب' && RADIOLOGY_IN_CARDIOLOGY.test(rec.name)) return 'radiology';
+  return 'general';
+}
+
 for (const rec of items) {
+  rec.responseGroup = responseGroupOf(rec);
   rec.status = rec.category === 'للمراجعة' ? 'review' : 'active';
   rec.linkOnly = rec.category === 'عروض وباقات';
   if (rec.status === 'review') {
@@ -448,6 +460,7 @@ const catalog = {
       duplicateItems: items.filter((i) => i.duplicateOf).length,
       publishFalse: items.filter((i) => i.publish === false).length,
       linkOnly: items.filter((i) => i.linkOnly).length,
+      responseGroups: items.reduce((a, i) => ((a[i.responseGroup] = (a[i.responseGroup] || 0) + 1), a), {}),
       categories: Object.keys(byCategory).length,
     },
     categories: byCategory,

@@ -427,14 +427,18 @@ function main() {
         continue;
       }
       const target = filePart || page;
-      if (!fs.existsSync(path.join(ROOT, target))) {
+      /* Cloudflare Pages يحوّل /services/dental → /services/dental.html */
+      const candidates = [target, target.replace(/\/+$/, '') + '.html', target.replace(/\/+$/, '') + '/index.html'];
+      const exists = candidates.some((c) => c && fs.existsSync(path.join(ROOT, c)));
+      if (!exists) {
         console.log(`  ❌ ${page}: ${target} (الملف غير موجود)`);
         regressions.push(`${page}: رابط مكسور ${target}`);
         broken++;
         continue;
       }
       if (hash) {
-        const ids = getIds(target);
+        const resolved = candidates.find((c) => c && fs.existsSync(path.join(ROOT, c))) || target;
+        const ids = getIds(resolved);
         if (ids && !ids.includes(hash)) {
           console.log(`  ❌ ${page}: ${target}#${hash} (لا يوجد معرّف مطابق)`);
           regressions.push(`${page}: مرساة مكسورة ${target}#${hash}`);

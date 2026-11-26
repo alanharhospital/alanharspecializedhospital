@@ -1253,6 +1253,9 @@
             .capacity-stat b { font-size: 1.8rem; }
         }
     </style>
+    <!-- ENH:START services-search-css -->
+    <link rel="stylesheet" href="ext/services-search.css?v=1">
+    <!-- ENH:END services-search-css -->
 </head>
 <body>
 
@@ -1368,7 +1371,26 @@
             </div>
         </div>
 
+        <!-- ENH:START services-search-home -->
+        <section class="enh-home-search" aria-labelledby="enh-search-title" style="padding:2rem 0 2.5rem;background:#f4f7fb;border-block:1px solid #e2e8f0">
+            <div class="container">
+                <h2 id="enh-search-title" style="color:#0a2a5e;font-size:1.15rem;margin:0 0 .75rem;text-align:center">ابحث عن فحص أو أشعة أو عملية</h2>
+                <div class="ss ss--compact" data-services-search data-services-search-mode="link">
+                    <form class="ss-form" role="search" onsubmit="return false;">
+                        <label class="ss-label" for="enh-ss-input" style="text-align:start">ابحث في دليل الخدمات</label>
+                        <input class="ss-input" id="enh-ss-input" type="search" autocomplete="off"
+                               placeholder="ابحث عن فحص أو أشعة أو عملية" data-services-search-input>
+                        <button class="ss-button" type="button" data-services-search-button>بحث</button>
+                    </form>
+                    <p class="ss-hint">اكتب حرفين على الأقل، وستنتقل إلى دليل الخدمات.</p>
+                </div>
+            </div>
+        </section>
+        <script src="ext/services-search.js?v=1" defer></script>
+        <!-- ENH:END services-search-home -->
+
         <!-- 4. قسم بوابات وصفحات الموقع المتعددة (إبراز الهوية الاحترافية لصفحات المستشفى) -->
+
         <section class="portal-section" id="portal-pages">
             <div class="container">
                 <div class="section-header text-center reveal">
@@ -2101,7 +2123,12 @@
                 <a href="#top" class="back-to-top">العودة للأعلى ↑</a>
             </div>
         </div>
-    </footer>
+            <!-- ENH:START services-guide-link -->
+        <p class="enh-guide-link" style="text-align:center;margin:1rem 0 0;font-size:0.95rem">
+            <a href="/services/" style="color:#0a2a5e;font-weight:700;text-decoration:underline">دليل الفحوصات والعمليات والأشعة</a>
+        </p>
+        <!-- ENH:END services-guide-link -->
+</footer>
 
     <!-- زر واتساب العائم (مرة واحدة فقط في زاوية الشاشة) - يوجّه إلى رقم الحجوزات 771422070 -->
     <a href="https://wa.me/967771422070?text=السلام%20عليكم" target="_blank" rel="noopener" class="floating-bot-btn" title="تواصل معنا عبر واتساب">
