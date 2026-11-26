@@ -1,0 +1,28 @@
+{
+  "360": {
+    "allowedRect": [
+      110,
+      35,
+      281,
+      63
+    ],
+    "changedInside": 321,
+    "changedOutside": 1220,
+    "changedLogoRegion": 1220,
+    "maxChannelDifferenceOutside": 3,
+    "geometryAndTextUnchanged": true
+  },
+  "1280": {
+    "allowedRect": [
+      1068,
+      53,
+      1201,
+      81
+    ],
+    "changedInside": 321,
+    "changedOutside": 1220,
+    "changedLogoRegion": 1220,
+    "maxChannelDifferenceOutside": 3,
+    "geometryAndTextUnchanged": true
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "360": {
+    "text": "التخصصي",
+    "tag": "SPAN",
+    "selector": ".brand-name-sub",
+    "color": "rgb(64, 192, 87)",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "13.6px",
+    "fontWeight": "700",
+    "fontFamily": "Tajawal, -apple-system, BlinkMacSystemFont, sans-serif",
+    "header": {
+      "x": 0,
+      "y": 48,
+      "width": 360,
+      "height": 77
+    },
+    "textRect": {
+      "x": 113.671875,
+      "y": 38.125,
+      "width": 164.328125,
+      "height": 21.75
+    },
+    "image": {
+      "src": "logo.jpg",
+      "alt": "شعار مستشفى الأنهار التخصصي",
+      "x": 288,
+      "y": 12,
+      "width": 52,
+      "height": 52
+    }
+  },
+  "1280": {
+    "text": "التخصصي",
+    "tag": "SPAN",
+    "selector": ".brand-name-sub",
+    "color": "rgb(64, 192, 87)",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "13.6px",
+    "fontWeight": "700",
+    "fontFamily": "Tajawal, -apple-system, BlinkMacSystemFont, sans-serif",
+    "header": {
+      "x": 0,
+      "y": 48,
+      "width": 1280,
+      "height": 90.75
+    },
+    "textRect": {
+      "x": 1071.9375,
+      "y": 56,
+      "width": 126.0625,
+      "height": 21.75
+    },
+    "image": {
+      "src": "logo.jpg",
+      "alt": "شعار مستشفى الأنهار التخصصي",
+      "x": 1208,
+      "y": 18.875,
+      "width": 52,
+      "height": 52
+    }
+  }
+}

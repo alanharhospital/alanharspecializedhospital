@@ -1,0 +1,22 @@
+1 دليل التذييل — صفحات الوحدات {"fg":"#ffffff","bg":"#0a2a5e","ratio":13.95} → {"fg":"#ffffff","bg":"#0a2a5e","ratio":13.95}
+2 التنبيه — الرئيسية {"fg":"#0a2a5e","bg":"#ffffff","ratio":13.95} → {"fg":"#0a2a5e","bg":"#ffffff","ratio":13.95}
+3 دليل التذييل — الرئيسية {"fg":"#ffffff","bg":"#0a2a5e","ratio":13.95} → {"fg":"#ffffff","bg":"#0a2a5e","ratio":13.95}
+4 التنبيه — الأطباء {"fg":"#0a2a5e","bg":"#ffffff","ratio":13.95} → {"fg":"#0a2a5e","bg":"#ffffff","ratio":13.95}
+5 دليل التذييل — الأطباء {"fg":"#ffffff","bg":"#0a2a5e","ratio":13.95} → {"fg":"#ffffff","bg":"#0a2a5e","ratio":13.95}
+6 شارة الخبر {"fg":"#0a2a5e","bg":"#d5f5e3","ratio":11.94} → {"fg":"#0a2a5e","bg":"#d5f5e3","ratio":11.94}
+7 زر واتساب الحجز {"fg":"#0a2a5e","bg":"#25d366","ratio":7.03} → {"fg":"#0a2a5e","bg":"#25d366","ratio":7.03}
+8 رمز فئة {"fg":"#0a2a5e","bg":"#f8fafc","ratio":13.33} → {"fg":"#0a2a5e","bg":"#f8fafc","ratio":13.33}
+9 إحصاء العرض {"fg":"#0a2a5e","bg":"#ffffff","ratio":13.95} → {"fg":"#0a2a5e","bg":"#ffffff","ratio":13.95}
+10 عرض التفاصيل {"fg":"#0a2a5e","bg":"#ffffff","ratio":13.92} → {"fg":"#0a2a5e","bg":"#ffffff","ratio":13.92}
+11 زر حجز الرئيسية {"fg":"#0a2a5e","bg":"#2ecc71","ratio":6.64} → {"fg":"#0a2a5e","bg":"#2ecc71","ratio":6.64}
+12 نص الهوية المجاور للشعار {"fg":"#40c057","bg":"#ffffff","ratio":2.36} → {"fg":"#2d873d","bg":"#ffffff","ratio":4.52}
+13 زر حجز طبيب {"fg":"#0a2a5e","bg":"#40c057","ratio":5.91} → {"fg":"#0a2a5e","bg":"#40c057","ratio":5.91}
+14 شارة إعلان {"fg":"#ffffff","bg":"#0a2a5e","ratio":13.95} → {"fg":"#ffffff","bg":"#0a2a5e","ratio":13.95}
+15 شارة تخصص الطبيب {"fg":"#0a2a5e","bg":"#e8f7eb","ratio":12.61} → {"fg":"#0a2a5e","bg":"#e8f7eb","ratio":12.61}
+16 رمز شريط الطوارئ {"fg":"#ffffff","bg":"#0a2a5e","ratio":13.95} → {"fg":"#ffffff","bg":"#0a2a5e","ratio":13.95}
+17 صلاحية العرض {"fg":"#0a2a5e","bg":"#e0f7ea","ratio":12.41} → {"fg":"#0a2a5e","bg":"#e0f7ea","ratio":12.41}
+18 تواصل مباشر {"fg":"#0a2a5e","bg":"#e9f9f0","ratio":12.8} → {"fg":"#0a2a5e","bg":"#e9f9f0","ratio":12.8}
+19 زر فيسبوك الخبر {"fg":"#ffffff","bg":"#1e4a8a","ratio":8.74} → {"fg":"#ffffff","bg":"#1e4a8a","ratio":8.74}
+20 نوع العرض {"fg":"#0a2a5e","bg":"#e9f1fa","ratio":12.2} → {"fg":"#0a2a5e","bg":"#e9f1fa","ratio":12.2}
+21 نجمة الحقل المطلوب {"fg":"#0a2a5e","bg":"#f0f8fc","ratio":12.98} → {"fg":"#0a2a5e","bg":"#f0f8fc","ratio":12.98}
+pass 21 / 21 unknown 0

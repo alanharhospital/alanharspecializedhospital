@@ -57,7 +57,9 @@ footer .enh-disclaimer { background:var(--brand-white) !important; color:var(--b
 :is(.spec-badge,.live-badge,.status,.results-badge,.cat-tag,.category-icon,.expand-text,.stat b) { color:var(--brand-navy) !important; }
 article.appointment-form-container .hero-badge { color:var(--brand-navy) !important; }
 article.appointment-form-container > div > span[style*="accent-green"] { color:var(--brand-navy) !important; }
-/* The low-contrast green in the doctors' text logo remains unchanged by request. */
+/* The independent HTML subtitle keeps the original hue: #40c057 scaled
+   to 70.57% per RGB channel and rounded, rather than a new palette color. */
+.brand-name-sub { color:#2d873d !important; }
 :is(.badge-limited,.nav-badge,.badge-special,.perks li em,.perks li em.free,.g-f,.quickbar__phone-ico) { background:var(--brand-navy) !important; color:var(--brand-white) !important; }
 .nav-list-menu a.active, .btn-header-contact { color:var(--brand-navy) !important; }
 /* Doctors already define --anhar-green; keep their original background hue. */
