@@ -2176,79 +2176,88 @@
 
             revealElements.forEach(el => revealObserver.observe(el));
 
-            // عدّاد الأرقام المتحرك (الوحدات الحرجة)
-            const counters = document.querySelectorAll('[data-count]');
-            const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            // --- نموذج الحجز: تقييد التاريخ ومنع اختيار يوم سابق ---
+            const dateField = document.getElementById('booking-date');
+            if (dateField) {
+                const today = new Date();
+                const todayISO = new Date(today.getTime() - today.getTimezoneOffset() * 60000)
+                    .toISOString().split('T')[0];
+                dateField.setAttribute('min', todayISO);
+            }
 
-            const runCounter = (el) => {
-                const target = +el.dataset.count;
-                const suffix = el.dataset.suffix || '';
-                if (reduceMotion) {
-                    el.textContent = target + suffix;
-                    return;
-                }
-                const duration = 1600;
-                const start = performance.now();
-                const tick = (now) => {
-                    const progress = Math.min((now - start) / duration, 1);
-                    const eased = 1 - Math.pow(1 - progress, 3);
-                    el.textContent = Math.round(target * eased) + (progress === 1 ? suffix : '');
-                    if (progress < 1) requestAnimationFrame(tick);
+            // --- دالة موحّدة لقراءة الحجز والتحقق منه ---
+            const readBookingForm = () => {
+                const formData = {
+                    fullname: document.getElementById('fullname')?.value.trim() || '',
+                    phone: document.getElementById('phone')?.value.trim() || '',
+                    email: document.getElementById('email')?.value.trim() || 'غير محدد',
+                    department: document.getElementById('department')?.value || '',
+                    date: document.getElementById('booking-date')?.value || '',
+                    period: document.getElementById('booking-period')?.value || ''
                 };
-                requestAnimationFrame(tick);
+
+                if (!formData.fullname) {
+                    alert('يرجى إدخال الاسم الكامل.');
+                    document.getElementById('fullname')?.focus();
+                    return null;
+                }
+                if (!formData.phone || formData.phone.replace(/\D/g, '').length < 6) {
+                    alert('يرجى إدخال رقم هاتف صحيح للتواصل.');
+                    document.getElementById('phone')?.focus();
+                    return null;
+                }
+                if (!formData.department) {
+                    alert('يرجى اختيار القسم الطبي المطلوب.');
+                    document.getElementById('department')?.focus();
+                    return null;
+                }
+                if (!formData.date) {
+                    alert('يرجى اختيار تاريخ الحجز المطلوب.');
+                    document.getElementById('booking-date')?.focus();
+                    return null;
+                }
+                if (!formData.period) {
+                    alert('يرجى تحديد الفترة (صباحية أو مسائية).');
+                    document.getElementById('booking-period')?.focus();
+                    return null;
+                }
+                return formData;
             };
-
-            const counterObserver = new IntersectionObserver((entries, obs) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        runCounter(entry.target);
-                        obs.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.5 });
-
-            counters.forEach(c => {
-                // القيمة الحقيقية موجودة في HTML للسيو؛ نصفّرها هنا فقط قبل بدء الحركة
-                if (!reduceMotion) c.textContent = '0';
-                counterObserver.observe(c);
-            });
 
             // إرسال الحجز عبر واتساب
             document.getElementById('btnSendWhatsApp')?.addEventListener('click', () => {
-                const fullname = document.getElementById('fullname').value.trim();
-                const phone = document.getElementById('phone').value.trim();
-                const department = document.getElementById('department').value;
-                const date = document.getElementById('booking-date').value;
-                const period = document.getElementById('booking-period').value;
-                if (!fullname || !phone || !department || !date || !period) {
-                    alert('يرجى تعبئة كافة الحقول المطلوبة أولاً (*).');
-                    return;
-                }
-                const msg = `📋 طلب حجز موعد جديد
+                const formData = readBookingForm();
+                if (!formData) return;
+
+                const msg = `🏥 *طلب حجز موعد جديد - مستشفى الأنهار التخصصي*
 ━━━━━━━━━━━━━━━━━━━━
-👤 الاسم: ${fullname}
-📱 الهاتف: ${phone}
-🏥 القسم: ${department}
-📅 التاريخ: ${date}
-⏰ الفترة: ${period}
+👤 *اسم المريض:* ${formData.fullname}
+📱 *رقم الهاتف:* ${formData.phone}
+📧 *البريد الإلكتروني:* ${formData.email}
+🩺 *القسم الطبي:* ${formData.department}
+📅 *التاريخ المطلوب:* ${formData.date}
+⏰ *الفترة:* ${formData.period}
 ━━━━━━━━━━━━━━━━━━━━
-يرجى تأكيد الحجز وشكراً لكم.`;
-                window.open(`https://wa.me/967771422070?text=${encodeURIComponent(msg)}`, '_blank');
+أرجو تأكيد حجز الموعد وتزويدي بالتفاصيل. شكراً لكم.`;
+                window.open(`https://wa.me/967771422070?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
             });
 
             // إرسال بالإيميل
             document.getElementById('btnSendEmail')?.addEventListener('click', () => {
-                const fullname = document.getElementById('fullname').value.trim();
-                const phone = document.getElementById('phone').value.trim();
-                const department = document.getElementById('department').value;
-                const date = document.getElementById('booking-date').value;
-                const period = document.getElementById('booking-period').value;
-                if (!fullname || !phone || !department || !date || !period) {
-                    alert('يرجى تعبئة كافة الحقول المطلوبة أولاً (*).');
-                    return;
-                }
-                const subject = `حجز موعد جديد - ${fullname}`;
-                const body = `الاسم: ${fullname}%0D%0Aالهاتف: ${phone}%0D%0Aالقسم: ${department}%0D%0Aالتاريخ: ${date}%0D%0Aالفترة: ${period}`;
+                const formData = readBookingForm();
+                if (!formData) return;
+
+                const subject = encodeURIComponent(`طلب حجز موعد: ${formData.fullname} - ${formData.department}`);
+                const body = encodeURIComponent(
+                    `طلب حجز موعد جديد في مستشفى الأنهار التخصصي\n\n` +
+                    `الاسم الكامل: ${formData.fullname}\n` +
+                    `رقم الهاتف: ${formData.phone}\n` +
+                    `البريد الإلكتروني: ${formData.email}\n` +
+                    `القسم الطبي: ${formData.department}\n` +
+                    `التاريخ المطلوب: ${formData.date}\n` +
+                    `الفترة: ${formData.period}\n\n` +
+                    `يرجى تأكيد الحجز والتواصل معي.`
+                );
                 window.location.href = `mailto:ammaralqhwi20@gmail.com?subject=${subject}&body=${body}`;
             });
         });

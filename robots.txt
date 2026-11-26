@@ -1,0 +1,16 @@
+# robots.txt — مستشفى الأنهار التخصصي | Al-Anhar Specialized Hospital
+# https://alanharhospital.com
+
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+# لا نريد فهرسة صفحات البحث الداخلي (غير موجودة حالياً، للأمان المستقبلي)
+Disallow: /*?s=
+Disallow: /*?q=
+
+# روابط الصور مفتوحة لمحركات البحث
+User-agent: Googlebot-Image
+Allow: /
+
+Sitemap: https://alanharhospital.com/sitemap.xml
