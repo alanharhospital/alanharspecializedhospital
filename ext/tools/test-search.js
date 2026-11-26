@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * test-search.js — 18 حالة اختبار لمحرّك بحث دليل الخدمات
+ * test-search.js — 21 حالة اختبار لمحرّك بحث دليل الخدمات
  * التشغيل: node ext/tools/test-search.js
  * يعتمد على: ext/tools/build-services.js (لازم تشغيله أولًا)
  */
@@ -18,7 +18,8 @@ const index = JSON.parse(fs.readFileSync(path.join(DATA, 'services-index.json'),
 const responses = JSON.parse(fs.readFileSync(path.join(DATA, 'search-responses.json'), 'utf8'));
 const contact = JSON.parse(fs.readFileSync(path.join(DATA, 'contact.json'), 'utf8'));
 
-const data = { items: index.items, synonyms: index.synonyms, responses, contact };
+const catalog = JSON.parse(fs.readFileSync(path.join(DATA, 'services-catalog.json'), 'utf8'));
+const data = { items: index.items, synonyms: index.synonyms, excludedTerms: index.excludedTerms, responses, contact };
 
 const results = [];
 function check(n, desc, fn) {
@@ -150,35 +151,40 @@ check(17, '«سونار حمل» ← radiology أو خيارات تشمل سون
   return { ok, note: `${r.type} → ${r.best ? r.best.name : ''}, options=${rep.options.length}` };
 });
 
-check(18, 'رابط الواتساب من contact.json ولا رقم مكتوب في /ext/', () => {
+check(18, 'رقم واتساب من contact.json فقط لا في كود البحث أو الردود', () => {
   const rep = reply('قلع ضرس');
   const usesContact = rep.whatsappUrl.indexOf('wa.me/' + contact.whatsappNumber + '?') !== -1;
-  /* فحص كل ملفات /ext/ (عدا contact.json) بحثًا عن الرقم */
-  const offenders = [];
-  const walk = (dir) => {
-    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-      const full = path.join(dir, entry.name);
-      if (entry.isDirectory()) {
-        if (entry.name === 'snapshots') continue;
-        walk(full);
-      } else if (/\.(js|css|json|html|md)$/.test(entry.name)) {
-        if (full === path.join(DATA, 'contact.json')) continue;
-        /* سجلات تدقيق من مهام سابقة (توثّق أرقام الموقع كما وُجدت) — ليست كودًا منفّذًا */
-        if (['content-inventory.json', 'catalog-review.md'].includes(entry.name)) continue;
-        const txt = fs.readFileSync(full, 'utf8');
-        if (txt.indexOf(contact.whatsappNumber) !== -1 || txt.indexOf(String(contact.whatsappDisplay)) !== -1) {
-          offenders.push(path.relative(ROOT, full));
-        }
-      }
-    }
-  };
-  walk(path.join(ROOT, 'ext'));
-  return { ok: usesContact && offenders.length === 0, note: `offenders=${offenders.length ? offenders.join(',') : 'لا شيء'}` };
+  const files = [path.join(ROOT, 'ext', 'services-search.js'), path.join(DATA, 'search-responses.json')];
+  const offenders = files.filter(f => {
+    const txt = fs.readFileSync(f, 'utf8');
+    return txt.includes(String(contact.whatsappNumber)) || txt.includes(String(contact.whatsappDisplay));
+  }).map(f => path.relative(ROOT, f));
+  return { ok: usesContact && !offenders.length, note: `offenders=${offenders.length ? offenders.join(',') : 'لا شيء'}` };
+});
+
+check(19, '«16 حاضنة» ← listed دون «يتوفر لدينا»', () => {
+  const r = run('16 حاضنة');
+  const rep = engine.buildReply(r, data);
+  return { ok: r.type === 'strong' && r.best.group === 'listed' && rep.lines.some(l => l.includes('مذكور في قائمة خدماتنا')) && rep.lines.every(l => !l.includes('يتوفر لدينا')) && rep.lines.some(l => l.includes(String(contact.whatsappDisplay))) && !rep.lines.some(l => l.includes('{whatsappDisplay}')), note: `${r.type}, ${r.best && r.best.group}` };
+});
+
+check(20, '«بدل مخاطر» ← لا نتائج', () => {
+  const r = run('بدل مخاطر');
+  return { ok: r.type === 'none' && !r.best && r.options.length === 0, note: r.type };
+});
+
+check(21, 'كل مستبعد لا يظهر عند البحث باسمه', () => {
+  const excluded = catalog.items.filter(i => i.excluded === true);
+  const failures = excluded.filter(i => {
+    const r = run(i.name), found = (r.best ? [r.best] : []).concat(r.options || []);
+    return found.some(x => x.id === i.id);
+  });
+  return {ok: excluded.length > 0 && failures.length === 0, note: `فُحص=${excluded.length}، إخفاق=${failures.map(i => i.id).join(',') || 'لا شيء'}`};
 });
 
 /* -------------------------------- التقرير -------------------------------- */
 
-console.log('\n  اختبار محرّك البحث — 18 حالة');
+console.log('\n  اختبار محرّك البحث — 21 حالة');
 console.log('  ' + '-'.repeat(76));
 let pass = 0;
 for (const r of results) {

@@ -1,17 +1,17 @@
 {
   "meta": {
     "generatedBy": "ext/tools/build-services.js",
-    "generatedAt": "2026-11-26T01:51:10.585Z",
+    "generatedAt": "2026-11-26T00:00:00.000Z",
     "hospital": "مستشفى الأنهار التخصصي",
     "site": "https://alanharhospital.com",
-    "note": "فهرس بحث ثابت. كل الأسماء من ext/data/services-catalog.json (publish=true فقط). الفهرس والصفحات لم يعادا بناؤهما بعد قرارات 5-أ3؛ ريثما يعاد البناء قد تظهر عناصر غير منشورة، وقد عُطلت المرادفات السابقة."
+    "note": "فهرس بحث ثابت. كل الأسماء من ext/data/services-catalog.json (publish=true فقط)."
   },
   "items": [
     {
       "id": "SVC-0001",
       "name": "أكثر من 13 سرير عناية مركزة للكبار (ICU)",
       "category": "تجهيزات وأسرة وأجهزة",
-      "group": "general",
+      "group": "listed",
       "slug": "emergency",
       "rank": 6,
       "url": "/services/emergency#svc-0001"
@@ -20,7 +20,7 @@
       "id": "SVC-0002",
       "name": "8 أسرة عناية مركزة للأطفال (PICU)",
       "category": "تجهيزات وأسرة وأجهزة",
-      "group": "general",
+      "group": "listed",
       "slug": "emergency",
       "rank": 6,
       "url": "/services/emergency#svc-0002"
@@ -29,7 +29,7 @@
       "id": "SVC-0003",
       "name": "16 حاضنة أطفال في وحدة العناية بحديثي الولادة ورعاية الخدج (NICU)",
       "category": "تجهيزات وأسرة وأجهزة",
-      "group": "general",
+      "group": "listed",
       "slug": "emergency",
       "rank": 6,
       "url": "/services/emergency#svc-0003"
@@ -38,7 +38,7 @@
       "id": "SVC-0004",
       "name": "أكثر من 40 سرير رقود خاص",
       "category": "تجهيزات وأسرة وأجهزة",
-      "group": "general",
+      "group": "listed",
       "slug": "emergency",
       "rank": 6,
       "url": "/services/emergency#svc-0004"
@@ -47,7 +47,7 @@
       "id": "SVC-0005",
       "name": "وحدة متخصصة لجراحة الأطفال",
       "category": "تجهيزات وأسرة وأجهزة",
-      "group": "general",
+      "group": "listed",
       "slug": "emergency",
       "rank": 6,
       "url": "/services/emergency#svc-0005"
@@ -56,7 +56,7 @@
       "id": "SVC-0006",
       "name": "خدمات جراحة متعددة التخصصات",
       "category": "تجهيزات وأسرة وأجهزة",
-      "group": "general",
+      "group": "listed",
       "slug": "emergency",
       "rank": 6,
       "url": "/services/emergency#svc-0006"
@@ -65,7 +65,7 @@
       "id": "SVC-0007",
       "name": "الأجهزة الطبية: أكثر من 12 جهاز تنفس صناعي",
       "category": "تجهيزات وأسرة وأجهزة",
-      "group": "general",
+      "group": "listed",
       "slug": "emergency",
       "rank": 6,
       "url": "/services/emergency#svc-0007"
@@ -74,7 +74,7 @@
       "id": "SVC-0008",
       "name": "أكثر من 35 جهاز مراقبة للعلامات الحيوية (Patient Monitors)",
       "category": "تجهيزات وأسرة وأجهزة",
-      "group": "general",
+      "group": "listed",
       "slug": "emergency",
       "rank": 6,
       "url": "/services/emergency#svc-0008"
@@ -2735,6 +2735,15 @@
       "url": "/services/women#svc-0308"
     },
     {
+      "id": "SVC-0309",
+      "name": "تنظيف يدوي بدون تخدير",
+      "category": "نساء وولادة",
+      "group": "general",
+      "slug": "women",
+      "rank": 3,
+      "url": "/services/women#svc-0309"
+    },
+    {
       "id": "SVC-0310",
       "name": "خياطة منطقة العجان تخدير موضعي",
       "category": "نساء وولادة",
@@ -2936,7 +2945,7 @@
       "id": "SVC-0335",
       "name": "متابعة يومية للمريض من الأخصائي المعالج",
       "category": "خدمات إدارية وتقارير",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0335"
@@ -2945,25 +2954,16 @@
       "id": "SVC-0336",
       "name": "سحب السائل الشوكي (C.S.F) تشخيصي",
       "category": "خدمات إدارية وتقارير",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0336"
     },
     {
-      "id": "SVC-0337",
-      "name": "بدل مخاطر غرف العزل للكادر الطبي لليوم",
-      "category": "خدمات إدارية وتقارير",
-      "group": "general",
-      "slug": "clinics-admin",
-      "rank": 7,
-      "url": "/services/clinics-admin#svc-0337"
-    },
-    {
       "id": "SVC-0338",
       "name": "استدعاء أخصائي (جراحة النساء والولادة، الباطنة العامة والكبد، الباطنة العامة والقلب، أخصائي الأطفال، الجراحة العامة، جراحة العظام والمفاصل، جراحة الأنف والأذن والحنجرة، أمراض الكلى، المسالك البولية، جراحة المخ والأعصاب والعمود الفقري، جراحة العيون، طب الأسنان، الجلدية، العلاج الطبيعي والطب الرياضي، الأشعة التشخيصية، التخدير والعناية المركزة)",
       "category": "خدمات إدارية وتقارير",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0338"
@@ -2972,7 +2972,7 @@
       "id": "SVC-0339",
       "name": "استدعاء أو استشارة طبية أخصائي خارجي أثناء الدوام أو خارج الدوام",
       "category": "خدمات إدارية وتقارير",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0339"
@@ -2990,7 +2990,7 @@
       "id": "SVC-0341",
       "name": "خروج طبيب مقيم للمنزل",
       "category": "خدمات إدارية وتقارير",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0341"
@@ -2999,7 +2999,7 @@
       "id": "SVC-0342",
       "name": "خروج أخصائي للمنازل",
       "category": "خدمات إدارية وتقارير",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0342"
@@ -3008,7 +3008,7 @@
       "id": "SVC-0343",
       "name": "تقرير طبي للمريض (عربي وإنجليزي)",
       "category": "خدمات إدارية وتقارير",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0343"
@@ -3017,7 +3017,7 @@
       "id": "SVC-0344",
       "name": "تقرير جنائي",
       "category": "خدمات إدارية وتقارير",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0344"
@@ -3026,25 +3026,16 @@
       "id": "SVC-0345",
       "name": "إفادة طبية",
       "category": "خدمات إدارية وتقارير",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0345"
     },
     {
-      "id": "SVC-0346",
-      "name": "رسوم شهادة الوفاة",
-      "category": "خدمات إدارية وتقارير",
-      "group": "general",
-      "slug": "clinics-admin",
-      "rank": 7,
-      "url": "/services/clinics-admin#svc-0346"
-    },
-    {
       "id": "SVC-0347",
       "name": "قراءة تقرير أشعة مقطعية (CT) خارجية",
       "category": "خدمات إدارية وتقارير",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0347"
@@ -3053,7 +3044,7 @@
       "id": "SVC-0348",
       "name": "قراءة تقرير أشعة رنين مغناطيسي (MRI) خارجية",
       "category": "خدمات إدارية وتقارير",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0348"
@@ -3062,7 +3053,7 @@
       "id": "SVC-0349",
       "name": "تقرير بدل فاقد لتخطيط الدماغ",
       "category": "خدمات إدارية وتقارير",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0349"
@@ -3071,7 +3062,7 @@
       "id": "SVC-0350",
       "name": "تقرير كشف حساب تفصيلي",
       "category": "خدمات إدارية وتقارير",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0350"
@@ -3239,15 +3230,6 @@
       "url": "/services/emergency#svc-0368"
     },
     {
-      "id": "SVC-0369",
-      "name": "رسوم جهاز التنفس الاصطناعي للساعة الواحدة",
-      "category": "رقود وخدمات تمريضية",
-      "group": "general",
-      "slug": "emergency",
-      "rank": 6,
-      "url": "/services/emergency#svc-0369"
-    },
-    {
       "id": "SVC-0370",
       "name": "خدمة تركيب جهاز التبخير باليوم",
       "category": "رقود وخدمات تمريضية",
@@ -3300,6 +3282,15 @@
       "slug": "emergency",
       "rank": 6,
       "url": "/services/emergency#svc-0375"
+    },
+    {
+      "id": "SVC-0376",
+      "name": "شفط سوائل من الصدر (عناية)",
+      "category": "رقود وخدمات تمريضية",
+      "group": "general",
+      "slug": "emergency",
+      "rank": 6,
+      "url": "/services/emergency#svc-0376"
     },
     {
       "id": "SVC-0377",
@@ -3824,6 +3815,15 @@
       "url": "/services/emergency#svc-0437"
     },
     {
+      "id": "SVC-0438",
+      "name": "شفط سوائل من الصدر (طوارئ)",
+      "category": "طوارئ وإسعاف",
+      "group": "general",
+      "slug": "emergency",
+      "rank": 6,
+      "url": "/services/emergency#svc-0438"
+    },
+    {
       "id": "SVC-0439",
       "name": "إزالة حشوة أنف (طوارئ)",
       "category": "طوارئ وإسعاف",
@@ -3908,7 +3908,7 @@
       "id": "SVC-0448",
       "name": "الوحدات الجراحية",
       "category": "وحدات وأقسام",
-      "group": "general",
+      "group": "listed",
       "slug": "emergency",
       "rank": 6,
       "url": "/services/emergency#svc-0448"
@@ -3917,7 +3917,7 @@
       "id": "SVC-0449",
       "name": "الوحدات الحرجة",
       "category": "وحدات وأقسام",
-      "group": "general",
+      "group": "listed",
       "slug": "emergency",
       "rank": 6,
       "url": "/services/emergency#svc-0449"
@@ -3926,7 +3926,7 @@
       "id": "SVC-0450",
       "name": "أقسام الرقود",
       "category": "وحدات وأقسام",
-      "group": "general",
+      "group": "listed",
       "slug": "emergency",
       "rank": 6,
       "url": "/services/emergency#svc-0450"
@@ -3935,7 +3935,7 @@
       "id": "SVC-0451",
       "name": "أقسام الطوارئ",
       "category": "وحدات وأقسام",
-      "group": "general",
+      "group": "listed",
       "slug": "emergency",
       "rank": 6,
       "url": "/services/emergency#svc-0451"
@@ -3944,7 +3944,7 @@
       "id": "SVC-0452",
       "name": "الوحدات التشخيصية",
       "category": "وحدات وأقسام",
-      "group": "general",
+      "group": "listed",
       "slug": "emergency",
       "rank": 6,
       "url": "/services/emergency#svc-0452"
@@ -3953,7 +3953,7 @@
       "id": "SVC-0453",
       "name": "المختبر وبنك الدم",
       "category": "وحدات وأقسام",
-      "group": "general",
+      "group": "listed",
       "slug": "emergency",
       "rank": 6,
       "url": "/services/emergency#svc-0453"
@@ -3962,7 +3962,7 @@
       "id": "SVC-0454",
       "name": "الصيدلية",
       "category": "وحدات وأقسام",
-      "group": "general",
+      "group": "listed",
       "slug": "emergency",
       "rank": 6,
       "url": "/services/emergency#svc-0454"
@@ -3971,7 +3971,7 @@
       "id": "SVC-0455",
       "name": "إدارة التمريض",
       "category": "إدارات مساندة",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0455"
@@ -3980,7 +3980,7 @@
       "id": "SVC-0456",
       "name": "الرعاية التنفسية",
       "category": "إدارات مساندة",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0456"
@@ -3989,7 +3989,7 @@
       "id": "SVC-0457",
       "name": "وحدة التعقيم المركزي",
       "category": "إدارات مساندة",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0457"
@@ -3998,7 +3998,7 @@
       "id": "SVC-0458",
       "name": "الإسعاف والنقل الطبي",
       "category": "إدارات مساندة",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0458"
@@ -4007,7 +4007,7 @@
       "id": "SVC-0459",
       "name": "إدارة شؤون المرضى",
       "category": "إدارات مساندة",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0459"
@@ -4016,7 +4016,7 @@
       "id": "SVC-0460",
       "name": "التغذية العلاجية",
       "category": "إدارات مساندة",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0460"
@@ -4025,7 +4025,7 @@
       "id": "SVC-0461",
       "name": "إدارة الجودة",
       "category": "إدارات مساندة",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0461"
@@ -4034,7 +4034,7 @@
       "id": "SVC-0462",
       "name": "مكافحة العدوى",
       "category": "إدارات مساندة",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0462"
@@ -4043,7 +4043,7 @@
       "id": "SVC-0463",
       "name": "الأمن والسلامة",
       "category": "إدارات مساندة",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0463"
@@ -4052,7 +4052,7 @@
       "id": "SVC-0464",
       "name": "إدارة النفايات الطبية",
       "category": "إدارات مساندة",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0464"
@@ -4061,7 +4061,7 @@
       "id": "SVC-0465",
       "name": "إدارة التدريب والتأهيل",
       "category": "إدارات مساندة",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0465"
@@ -4070,7 +4070,7 @@
       "id": "SVC-0466",
       "name": "خدمة العملاء",
       "category": "إدارات مساندة",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0466"
@@ -4079,7 +4079,7 @@
       "id": "SVC-0467",
       "name": "الاستقبال",
       "category": "إدارات مساندة",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0467"
@@ -4088,7 +4088,7 @@
       "id": "SVC-0468",
       "name": "إدارة التموين الطبي",
       "category": "إدارات مساندة",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0468"
@@ -4097,7 +4097,7 @@
       "id": "SVC-0469",
       "name": "إدارة المخازن والمشتريات",
       "category": "إدارات مساندة",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0469"
@@ -4106,7 +4106,7 @@
       "id": "SVC-0470",
       "name": "إدارة الموارد البشرية",
       "category": "إدارات مساندة",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0470"
@@ -4115,7 +4115,7 @@
       "id": "SVC-0471",
       "name": "إدارة الشؤون القانونية",
       "category": "إدارات مساندة",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0471"
@@ -4124,7 +4124,7 @@
       "id": "SVC-0472",
       "name": "إدارة الخدمات",
       "category": "إدارات مساندة",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0472"
@@ -4133,7 +4133,7 @@
       "id": "SVC-0473",
       "name": "إدارة الشؤون المالية",
       "category": "إدارات مساندة",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0473"
@@ -4142,7 +4142,7 @@
       "id": "SVC-0474",
       "name": "إدارة الصيانة الطبية",
       "category": "إدارات مساندة",
-      "group": "general",
+      "group": "listed",
       "slug": "clinics-admin",
       "rank": 7,
       "url": "/services/clinics-admin#svc-0474"
@@ -4154,7 +4154,7 @@
       "group": "general",
       "slug": "index",
       "rank": 99,
-      "url": "/services/index#svc-0475"
+      "url": "/offers.html"
     },
     {
       "id": "SVC-0476",
@@ -4163,7 +4163,7 @@
       "group": "general",
       "slug": "index",
       "rank": 99,
-      "url": "/services/index#svc-0476"
+      "url": "/offers.html"
     },
     {
       "id": "SVC-0477",
@@ -4172,8 +4172,12 @@
       "group": "general",
       "slug": "index",
       "rank": 99,
-      "url": "/services/index#svc-0477"
+      "url": "/offers.html"
     }
+  ],
+  "excludedTerms": [
+    "بدل مخاطر",
+    "رسوم"
   ],
   "synonyms": [
     {

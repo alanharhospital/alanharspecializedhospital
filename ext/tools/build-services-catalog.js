@@ -18,6 +18,8 @@
 
 const fs = require('fs');
 const path = require('path');
+const decisionEngine = require('./catalog-decisions');
+const decisions = decisionEngine.load();
 
 const ROOT = path.resolve(__dirname, '..', '..');
 const OUT_DIR = path.join(ROOT, 'ext', 'data');
@@ -424,6 +426,9 @@ for (const rec of items) {
   rec.publish = !(rec.status === 'review' || rec.duplicateOf);
 }
 
+/* تطبق القرارات بعد الاستخراج، ويُوقف البناء عند تغيّر هوية عنصر. */
+decisionEngine.apply(items, decisions);
+
 /* --- أسماء تحتوي رقمًا/نسبة/سعرًا (للعرض فقط، بلا تغيير) --- */
 const moneyOrDigits = items
   .filter((r) => /[0-9٠-٩]|%/.test(r.name))
@@ -447,7 +452,7 @@ for (const rec of items) byCategory[rec.category] = (byCategory[rec.category] ||
 const catalog = {
   meta: {
     generatedBy: 'ext/tools/build-services-catalog.js',
-    generatedAt: new Date().toISOString(),
+    generatedAt: decisions.generatedAt,
     site: 'https://alanharhospital.com',
     note: 'الأسماء منقولة حرفيًا من محتوى الموقع. لا ترجمة ولا تصحيح طبي. aliases فارغة بانتظار الموافقة.',
     sources: ['index.html (sr-only-seo)', 'clinics.html', 'units.html', 'ancillary.html', 'offers.html'],
@@ -460,6 +465,9 @@ const catalog = {
       duplicateItems: items.filter((i) => i.duplicateOf).length,
       publishFalse: items.filter((i) => i.publish === false).length,
       linkOnly: items.filter((i) => i.linkOnly).length,
+      excluded: items.filter((i) => i.excluded).length,
+      internalOnly: items.filter((i) => i.internalOnly).length,
+      hasNumber: items.filter((i) => i.hasNumber).length,
       responseGroups: items.reduce((a, i) => ((a[i.responseGroup] = (a[i.responseGroup] || 0) + 1), a), {}),
       categories: Object.keys(byCategory).length,
     },
@@ -475,7 +483,7 @@ const catalog = {
     examples: items.filter((i) => i.category === c).slice(0, 8).map((i) => i.name),
   })),
   forReview: items
-    .filter((i) => i.category === 'للمراجعة')
+    .filter((i) => i.status === 'review')
     .map((i) => ({
       id: i.id,
       name: i.name,
@@ -486,7 +494,10 @@ const catalog = {
       publish: false,
       reviewContext: i.reviewContext,
     })),
-  duplicateGroups,
+  duplicateGroups: duplicateGroups.map(g => {
+    const remaining = g.members.filter(m => items.find(i => i.id === m.id).duplicateOf);
+    return remaining.length ? g : { normalizedName: g.normalizedName, members: g.members, decision: 'الأسماء مختلفة حرفيًا؛ ليست مكررات منشورة محذوفة.' };
+  }),
   digitsOrPrices: moneyOrDigits,
   notServices: hiddenNotServices,
 };
@@ -494,7 +505,7 @@ const catalog = {
 const aliasesFile = {
   meta: {
     generatedBy: 'ext/tools/build-services-catalog.js',
-    generatedAt: new Date().toISOString(),
+    generatedAt: decisions.generatedAt,
     warning: 'كل الاقتراحات approved:false — لا تُفعَّل قبل موافقة المالك.',
     counts: {
       total: suggestions.length,
@@ -525,7 +536,9 @@ if (duplicateGroups.length === 0) {
   md.push('|---|---|---|---|');
   duplicateGroups.forEach((g, i) => {
     const members = g.members.map((m) => `${m.id} | ${m.name} | ${m.category} | ${m.page}`).join('<br>');
-    md.push(`| ${i + 1} | ${g.normalizedName} | ${members} | ${g.canonical.id} — ${g.canonical.name} |`);
+    const hasDuplicate = g.members.some(m => items.find(item => item.id === m.id).duplicateOf);
+    const result = hasDuplicate ? `${g.canonical.id} — ${g.canonical.name}` : 'الأسماء مختلفة حرفيًا؛ ليست مكررات معتمدة';
+    md.push(`| ${i + 1} | ${g.normalizedName} | ${members} | ${result} |`);
   });
 }
 md.push('');

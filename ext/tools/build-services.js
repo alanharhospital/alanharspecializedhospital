@@ -29,6 +29,8 @@
 const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
+const decisionEngine = require('./catalog-decisions');
+const decisions = decisionEngine.load();
 
 const ROOT = path.resolve(__dirname, '..', '..');
 const EXT = path.join(ROOT, 'ext');
@@ -43,11 +45,13 @@ if (!process.argv.includes('--no-catalog-rebuild')) {
   try {
     execFileSync(process.execPath, [path.join(__dirname, 'build-services-catalog.js')], { stdio: 'ignore' });
   } catch (e) {
-    console.error('⚠ تعذّر إعادة بناء الكتالوج — سيُستخدم الموجود.');
+    console.error('❌ تعذّر بناء الكتالوج؛ إيقاف البناء حفاظًا على قرارات النشر.');
+    process.exit(1);
   }
 }
 
 const catalog = JSON.parse(fs.readFileSync(path.join(DATA, 'services-catalog.json'), 'utf8'));
+decisionEngine.apply(catalog.items, decisions);
 const responses = JSON.parse(fs.readFileSync(path.join(DATA, 'search-responses.json'), 'utf8'));
 const contact = JSON.parse(fs.readFileSync(path.join(DATA, 'contact.json'), 'utf8'));
 
@@ -81,7 +85,7 @@ const PAGES = [
 ];
 
 const published = (catalog.items || []).filter((i) => i.publish === true);
-const linkOnlyItems = (catalog.items || []).filter((i) => i.linkOnly === true);
+const linkOnlyItems = published.filter((i) => i.linkOnly === true);
 
 /* تحقق: كل فئة منشورة يجب أن تكون في صفحة واحدة */
 const assigned = new Map();
@@ -459,7 +463,7 @@ for (const pg of PAGES) for (const c of pg.cats) slugOfCategory.set(c, pg.slug);
 const searchIndex = {
   meta: {
     generatedBy: 'ext/tools/build-services.js',
-    generatedAt: new Date().toISOString(),
+    generatedAt: decisions.generatedAt,
     hospital: HOSPITAL,
     site: SITE,
     note: 'فهرس بحث ثابت. كل الأسماء من ext/data/services-catalog.json (publish=true فقط).',
@@ -474,14 +478,15 @@ const searchIndex = {
       group: i.responseGroup,
       slug,
       rank: rank === -1 ? 99 : rank,
-      url: `/services/${slug}#${i.id.toLowerCase()}`,
+      url: i.linkOnly ? '/offers.html' : `/services/${slug}#${i.id.toLowerCase()}`,
     };
   }),
+  excludedTerms: decisions.excludeRules,
   synonyms: SYNONYM_PHRASES.map(([phrase, tier]) => ({
     phrase,
     tier,
     targetId: CBC_TARGET.id,
-    approved: true,
+    approved: false,
   })),
 };
 
@@ -535,7 +540,7 @@ console.log(`  داخل الصفحات                  : ${totalInPages}`);
 console.log(`  روابط فقط (عروض)              : ${linkOnlyCount}`);
 console.log(`  غير منشور (publish=false)     : ${unpublished.length}`);
 console.log(`  عناصر البحث                   : ${searchIndex.items.length}`);
-console.log(`  مرادفات مفعّلة                : ${searchIndex.synonyms.length} → ${CBC_TARGET.name}`);
+console.log(`  مرادفات مفعّلة                : ${searchIndex.synonyms.filter(s => s.approved).length} → ${CBC_TARGET.name}`);
 
 if (problems.length) {
   console.error('\n❌ مشاكل:');

@@ -116,6 +116,14 @@
       return result;
     }
 
+    /* قواعد استبعاد الاستعلامات: لا نُظهر تطابقات جزئية مضللة لعبارة مستبعدة.
+       الاستثناء اليدوي يعمل إذا أصبح عنصر يحمل العبارة منشورًا. */
+    var blocked = ((data && data.excludedTerms) || []).some(function (term) {
+      var n = norm(term);
+      return n && qNorm.indexOf(n) !== -1 && !items.some(function (it) { return norm(it.name).indexOf(n) !== -1; });
+    });
+    if (blocked) { result.type = 'none'; return result; }
+
     /* --- المرادفات المعتمدة (approved) --- */
     var padded = ' ' + qNorm + ' ';
     var bestSyn = null;
@@ -231,7 +239,7 @@
 
     if (result.type === 'strong' && result.best) {
       var group = (responses.groups || {})[result.best.group] || (responses.groups || {}).general || {};
-      out.lines.push(fill(group.text, { name: result.best.name, category: result.best.category }));
+      out.lines.push(fill(group.text, { name: result.best.name, category: result.best.category, whatsappDisplay: display }));
       out.options = result.options || [];
       out.whatsappText = fill(btn.messageWithService, { name: result.best.name });
     } else if (result.type === 'weak') {
@@ -294,6 +302,7 @@
         cache = {
           items: res[0].items || [],
           synonyms: res[0].synonyms || [],
+          excludedTerms: res[0].excludedTerms || [],
           responses: res[1],
           contact: res[2],
         };

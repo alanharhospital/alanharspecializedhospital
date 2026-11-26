@@ -1,9 +1,9 @@
 {
   "meta": {
     "generatedBy": "ext/tools/build-services-catalog.js",
-    "generatedAt": "2026-11-26T01:51:10.558Z",
+    "generatedAt": "2026-11-26T00:00:00.000Z",
     "site": "https://alanharhospital.com",
-    "note": "الأسماء منقولة حرفيًا من محتوى الموقع. لا ترجمة ولا تصحيح طبي. aliases فارغة بانتظار الموافقة. قرارات المهمة 5-أ3 مثبتة في catalog-decisions-5a3.md؛ إعادة بناء الكتالوج من السكربت الحالي تستبدلها.",
+    "note": "الأسماء منقولة حرفيًا من محتوى الموقع. لا ترجمة ولا تصحيح طبي. aliases فارغة بانتظار الموافقة.",
     "sources": [
       "index.html (sr-only-seo)",
       "clinics.html",
@@ -18,18 +18,20 @@
       "forReview": 11,
       "duplicateGroups": 1,
       "duplicateItems": 0,
-      "publishFalse": 12,
+      "publishFalse": 14,
       "linkOnly": 3,
+      "excluded": 3,
+      "internalOnly": 1,
+      "hasNumber": 18,
       "responseGroups": {
-        "general": 320,
+        "listed": 50,
         "surgery": 38,
         "lab": 13,
         "radiology": 9,
+        "general": 270,
         "dental": 97
       },
-      "categories": 21,
-      "internalOnly": 1,
-      "hasNumber": 18
+      "categories": 21
     },
     "categories": {
       "تجهيزات وأسرة وأجهزة": 8,
@@ -62,7 +64,7 @@
       "category": "تجهيزات وأسرة وأجهزة",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true,
@@ -74,7 +76,7 @@
       "category": "تجهيزات وأسرة وأجهزة",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true,
@@ -86,7 +88,7 @@
       "category": "تجهيزات وأسرة وأجهزة",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true,
@@ -98,7 +100,7 @@
       "category": "تجهيزات وأسرة وأجهزة",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true,
@@ -110,7 +112,7 @@
       "category": "تجهيزات وأسرة وأجهزة",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -121,7 +123,7 @@
       "category": "تجهيزات وأسرة وأجهزة",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -132,7 +134,7 @@
       "category": "تجهيزات وأسرة وأجهزة",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true,
@@ -144,7 +146,7 @@
       "category": "تجهيزات وأسرة وأجهزة",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true,
@@ -3813,7 +3815,7 @@
       "category": "خدمات إدارية وتقارير",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -3824,7 +3826,7 @@
       "category": "خدمات إدارية وتقارير",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -3835,11 +3837,12 @@
       "category": "خدمات إدارية وتقارير",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": false,
-      "internalOnly": true
+      "internalOnly": true,
+      "excluded": true
     },
     {
       "id": "SVC-0338",
@@ -3847,7 +3850,7 @@
       "category": "خدمات إدارية وتقارير",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -3858,7 +3861,7 @@
       "category": "خدمات إدارية وتقارير",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -3880,7 +3883,7 @@
       "category": "خدمات إدارية وتقارير",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -3891,7 +3894,7 @@
       "category": "خدمات إدارية وتقارير",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -3902,7 +3905,7 @@
       "category": "خدمات إدارية وتقارير",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -3913,7 +3916,7 @@
       "category": "خدمات إدارية وتقارير",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -3924,7 +3927,7 @@
       "category": "خدمات إدارية وتقارير",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -3935,10 +3938,12 @@
       "category": "خدمات إدارية وتقارير",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "feeExcluded": true,
+      "excluded": true
     },
     {
       "id": "SVC-0347",
@@ -3946,7 +3951,7 @@
       "category": "خدمات إدارية وتقارير",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -3957,7 +3962,7 @@
       "category": "خدمات إدارية وتقارير",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -3968,7 +3973,7 @@
       "category": "خدمات إدارية وتقارير",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -3979,7 +3984,7 @@
       "category": "خدمات إدارية وتقارير",
       "sourcePage": "index.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -4191,7 +4196,9 @@
       "responseGroup": "general",
       "status": "active",
       "linkOnly": false,
-      "publish": true
+      "publish": false,
+      "feeExcluded": true,
+      "excluded": true
     },
     {
       "id": "SVC-0370",
@@ -5080,7 +5087,7 @@
       "category": "وحدات وأقسام",
       "sourcePage": "units.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5091,7 +5098,7 @@
       "category": "وحدات وأقسام",
       "sourcePage": "units.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5102,7 +5109,7 @@
       "category": "وحدات وأقسام",
       "sourcePage": "units.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5113,7 +5120,7 @@
       "category": "وحدات وأقسام",
       "sourcePage": "units.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5124,7 +5131,7 @@
       "category": "وحدات وأقسام",
       "sourcePage": "units.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5135,7 +5142,7 @@
       "category": "وحدات وأقسام",
       "sourcePage": "units.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5146,7 +5153,7 @@
       "category": "وحدات وأقسام",
       "sourcePage": "units.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5157,7 +5164,7 @@
       "category": "إدارات مساندة",
       "sourcePage": "ancillary.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5168,7 +5175,7 @@
       "category": "إدارات مساندة",
       "sourcePage": "ancillary.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5179,7 +5186,7 @@
       "category": "إدارات مساندة",
       "sourcePage": "ancillary.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5190,7 +5197,7 @@
       "category": "إدارات مساندة",
       "sourcePage": "ancillary.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5201,7 +5208,7 @@
       "category": "إدارات مساندة",
       "sourcePage": "ancillary.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5212,7 +5219,7 @@
       "category": "إدارات مساندة",
       "sourcePage": "ancillary.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5223,7 +5230,7 @@
       "category": "إدارات مساندة",
       "sourcePage": "ancillary.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5234,7 +5241,7 @@
       "category": "إدارات مساندة",
       "sourcePage": "ancillary.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5245,7 +5252,7 @@
       "category": "إدارات مساندة",
       "sourcePage": "ancillary.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5256,7 +5263,7 @@
       "category": "إدارات مساندة",
       "sourcePage": "ancillary.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5267,7 +5274,7 @@
       "category": "إدارات مساندة",
       "sourcePage": "ancillary.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5278,7 +5285,7 @@
       "category": "إدارات مساندة",
       "sourcePage": "ancillary.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5289,7 +5296,7 @@
       "category": "إدارات مساندة",
       "sourcePage": "ancillary.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5300,7 +5307,7 @@
       "category": "إدارات مساندة",
       "sourcePage": "ancillary.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5311,7 +5318,7 @@
       "category": "إدارات مساندة",
       "sourcePage": "ancillary.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5322,7 +5329,7 @@
       "category": "إدارات مساندة",
       "sourcePage": "ancillary.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5333,7 +5340,7 @@
       "category": "إدارات مساندة",
       "sourcePage": "ancillary.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5344,7 +5351,7 @@
       "category": "إدارات مساندة",
       "sourcePage": "ancillary.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5355,7 +5362,7 @@
       "category": "إدارات مساندة",
       "sourcePage": "ancillary.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5366,7 +5373,7 @@
       "category": "إدارات مساندة",
       "sourcePage": "ancillary.html",
       "aliases": [],
-      "responseGroup": "general",
+      "responseGroup": "listed",
       "status": "active",
       "linkOnly": false,
       "publish": true
@@ -5877,7 +5884,7 @@
           "page": "index.html"
         }
       ],
-      "decision": "الأسماء الأصلية مختلفة؛ ليست مكررات حرفية، وكلها منشورة."
+      "decision": "الأسماء مختلفة حرفيًا؛ ليست مكررات منشورة محذوفة."
     }
   ],
   "digitsOrPrices": [
@@ -6166,35 +6173,5 @@
       "kind": "aria-label",
       "sourcePage": "news.html"
     }
-  ],
-  "decisionHistory5a3": {
-    "note": "سجل تدقيق للحالة قبل القرار، وليس قائمة العناصر الحالية أو صلاحية النشر الحالية.",
-    "previousReview": {
-      "id": "SVC-0309",
-      "name": "تنظيف يدوي بدون تخدير",
-      "sourcePage": "index.html",
-      "sourceCategory": "نساء وولادة",
-      "suggestedCategory": "نساء وولادة",
-      "status": "review",
-      "publish": false,
-      "reviewContext": {
-        "page": "index.html",
-        "sourceCategory": "نساء وولادة",
-        "before": "العيادة، تلفزيون عن طريق المهبل، إزالة لولب مفقود أو مختفي،",
-        "after": "، خياطة منطقة العجان تخدير موضعي، انحباس مشيمة، تركيب لولب"
-      }
-    },
-    "previousNormalizedDuplicateNotes": [
-      {
-        "id": "SVC-0376",
-        "previousTarget": "SVC-0384",
-        "note": "بعد إزالة الأقواس يتطابق الاسم مع شفط سوائل من الصدر — راجع قبل الدمج: الأقواس قد تميّز قسمًا مختلفًا"
-      },
-      {
-        "id": "SVC-0438",
-        "previousTarget": "SVC-0384",
-        "note": "بعد إزالة الأقواس يتطابق الاسم مع شفط سوائل من الصدر — راجع قبل الدمج: الأقواس قد تميّز قسمًا مختلفًا"
-      }
-    ]
-  }
+  ]
 }
