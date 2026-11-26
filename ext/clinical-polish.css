@@ -1,0 +1,33 @@
+/* طبقة إضافية لا تستبدل تنسيق الموقع الأصلي. */
+:root { --clinical-navy:#0f3d5e; --clinical-teal:#007a87; --clinical-slate:#f8fafc; --clinical-ink:#0f172a; --clinical-wa:#128c7e; --clinical-emerald:#25d366; }
+.clinical-trigger { display:block; width:100%; min-height:48px; padding:.65rem 1rem; border:0; border-radius:0; background:var(--clinical-navy); color:#fff; font:inherit; font-weight:700; cursor:pointer; }
+.clinical-trigger:hover { background:#12547a; }
+.clinical-dialog { border:1px solid #cbd5e1; border-radius:18px; padding:1.2rem; width:min(42rem,calc(100% - 2rem)); max-height:calc(100% - 2rem); overflow:auto; margin:auto; background:var(--clinical-slate); color:var(--clinical-ink); text-align:right; direction:rtl; }
+.clinical-dialog::backdrop { background:#0f172ab3; }
+.clinical-dialog h2 { color:var(--clinical-navy); margin:0 0 1rem; }
+.clinical-close { min-height:48px; padding:.5rem 1rem; background:#fff; color:var(--clinical-navy); border:1px solid #94a3b8; border-radius:10px; font:inherit; cursor:pointer; }
+.clinical-section { direction:rtl; background:var(--clinical-slate); color:var(--clinical-ink); padding:2.5rem 1rem; }
+.clinical-inner { width:min(100%, 1100px); margin:auto; }
+.clinical-section h2 { color:var(--clinical-navy); margin:0 0 1rem; }
+.clinical-chips { display:flex; flex-wrap:wrap; gap:.6rem; }
+.clinical-chip { min-height:48px; padding:.6rem 1rem; border:1px solid #94a3b8; border-radius:999px; background:#fff; color:var(--clinical-navy); font:inherit; font-weight:700; cursor:pointer; }
+.clinical-chip[aria-pressed="true"] { background:var(--clinical-navy); color:#fff; border-color:var(--clinical-navy); }
+.clinical-card, .clinical-section details { margin-top:1rem; padding:1rem; background:#fff; color:var(--clinical-ink); border:1px solid #cbd5e1; border-radius:14px; }
+.clinical-card p { margin:.5rem 0; } .clinical-card h3 { color:var(--clinical-navy); }
+.clinical-wa { display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:.6rem 1rem; background:#075e54; color:white; border:2px solid var(--clinical-wa); border-radius:10px; font-weight:700; text-decoration:none; }
+.clinical-section summary { cursor:pointer; min-height:48px; display:flex; align-items:center; font-weight:700; color:var(--clinical-navy); }
+.clinical-toasts { position:fixed; z-index:1200; inset-inline-start:1rem; bottom:1rem; display:grid; gap:.5rem; width:min(21rem,calc(100vw - 2rem)); pointer-events:none; }
+.clinical-toast { color:white; background:var(--clinical-navy); padding:.8rem 1rem; border-radius:10px; box-shadow:0 5px 18px #0003; }
+.clinical-trigger:focus-visible,.clinical-chip:focus-visible,.clinical-close:focus-visible,.clinical-wa:focus-visible,.clinical-section summary:focus-visible { outline:3px solid var(--clinical-teal); outline-offset:3px; }
+@media(max-width:600px) { button, [role="button"], input[type="button"], input[type="submit"] { min-height:48px !important; } .clinical-trigger { font-size:.82rem; bottom:5rem; } }
+@media(prefers-reduced-motion:no-preference) { .clinical-trigger,.clinical-chip,.clinical-wa { transition:background-color .18s ease,box-shadow .18s ease; } }
+@supports (background-image: image-set(url("media/above-optimized.webp") type("image/webp") 1x)) { .hero { background-image:image-set(url("media/above-optimized.webp") type("image/webp") 1x); } }
+
+@media (max-width:700px) { @supports (background-image: image-set(url("media/above-900.webp") type("image/webp") 1x)) { .hero { background-image:image-set(url("media/above-900.webp") type("image/webp") 1x); } } }
+/* توحيد محافظ للألوان والبطاقات دون تغيير البنية أو النص. */
+body { background-color:var(--clinical-slate); color:var(--clinical-ink); }
+.portal-card,.facility-card,.doctor-single-card,.sg-cards a { border:1px solid #cbd5e1; border-radius:14px; }
+@media(max-width:600px) { a.btn, a.btn-sm, a.btn-nav-highlight { min-height:48px; } }
+.sg-share { display:inline-flex; align-items:center; min-height:48px; margin-inline-start:.5rem; padding:.35rem .7rem; color:var(--clinical-navy); background:#fff; border:1px solid #94a3b8; border-radius:8px; font:inherit; cursor:pointer; }
+.sg-share[hidden] { display:none; }
+.sg-share:focus-visible { outline:3px solid var(--clinical-teal); outline-offset:3px; }

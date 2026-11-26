@@ -177,7 +177,7 @@ function header(activeSlug) {
   return `    <header class="header" id="top">
         <nav class="navbar container" aria-label="القائمة الرئيسية">
             <a href="../index.html" class="brand">
-                <img src="../logo.jpg" alt="شعار مستشفى الأنهار التخصصي" class="brand-logo" width="48" height="48">
+                <img src="../logo.jpg" alt="شعار مستشفى الأنهار التخصصي" class="brand-logo" width="48" height="48" loading="lazy" decoding="async">
                 <span>
                     <strong>مستشفى الأنهار</strong>
                     <small>التخصصي</small>
@@ -274,6 +274,7 @@ function head({ title, description, canonical, ogTitle, ogDesc, eyebrows, crumbs
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css?v=10">
 ${extraCss}
+    <link rel="stylesheet" href="../ext/clinical-polish.css?v=1">
     <style>
 ${GUIDE_CSS}
     </style>
@@ -286,7 +287,7 @@ ${jsonLd(crumbs || [{ name: 'الرئيسية', url: SITE + '/' }, { name: 'دل
 /* ------------------------------- صفحة فئة ------------------------------- */
 
 function buildCategoryPage(page) {
-  const items = published.filter((i) => !i.searchOnly && page.cats.includes(i.category));
+  const items = published.filter((i) => !i.searchOnly && !i.directoryHidden && page.cats.includes(i.category));
   if (!items.length) throw new Error('صفحة بلا عناصر: ' + page.slug);
 
   const letters = new Set(items.map((i) => firstLetter(i.name)));
@@ -303,7 +304,7 @@ function buildCategoryPage(page) {
       const lis = g.list
         .map(
           (it) =>
-            `                    <li id="${it.id.toLowerCase()}">${esc(it.name)}<span class="sg-id" aria-hidden="true">${it.id}</span></li>`
+            `                    <li id="${it.id.toLowerCase()}">${esc(it.name)}<span class="sg-id" aria-hidden="true">${it.id}</span><button type="button" class="sg-share" data-clinical-share="#${it.id.toLowerCase()}" aria-label="مشاركة ${esc(it.name)}" hidden>مشاركة</button></li>`
         )
         .join('\n');
       return `            <h2 class="sg-cat" id="cat-${g.cat.replace(/\s+/g, '-')}">${esc(g.cat)}</h2>
@@ -323,7 +324,7 @@ ${lis}
     canonical,
     ogTitle: `دليل ${page.h1}`,
     ogDesc: description,
-    extraCss: '    <link rel="stylesheet" href="../ext/services-search.css?v=3">',
+    extraCss: '    <link rel="stylesheet" href="../ext/services-search.css?v=4">',
     crumbs: [
       { name: 'الرئيسية', url: SITE + '/' },
       { name: 'دليل الخدمات', url: SITE + '/services/' },
@@ -353,8 +354,9 @@ ${sections}
     </main>
 
 ${footer()}
-    <script src="../ext/data/services-index.js?v=3"></script>
-    <script src="../ext/services-search.js?v=3" defer></script>
+    <script src="../ext/data/services-index.js?v=4"></script>
+    <script src="../ext/services-search.js?v=4" defer></script>
+    <script src="../ext/clinical-enhancements.js?v=1" defer></script>
 </body>
 </html>
 `;
@@ -404,7 +406,7 @@ function buildIndexPage(stats) {
     canonical,
     ogTitle: 'دليل الخدمات الطبية',
     ogDesc: description,
-    extraCss: '    <link rel="stylesheet" href="../ext/services-search.css?v=3">',
+    extraCss: '    <link rel="stylesheet" href="../ext/services-search.css?v=4">',
   })}
 <body>
 ${header('index')}
@@ -428,8 +430,9 @@ ${cards}
     </main>
 
 ${footer()}
-    <script src="../ext/data/services-index.js?v=3"></script>
-    <script src="../ext/services-search.js?v=3" defer></script>
+    <script src="../ext/data/services-index.js?v=4"></script>
+    <script src="../ext/services-search.js?v=4" defer></script>
+    <script src="../ext/clinical-enhancements.js?v=1" defer></script>
 </body>
 </html>
 `;
@@ -487,6 +490,9 @@ const searchIndex = {
       rank: rank === -1 ? 99 : rank,
       url: i.searchOnly ? null : i.linkOnly ? 'offers.html' : `services/${slug}#${i.id.toLowerCase()}`,
       searchOnly: !!i.searchOnly,
+      exactMatchOnly: !!i.exactMatchOnly,
+      exactMatchMinWords: i.exactMatchMinWords || null,
+      directoryHidden: !!i.directoryHidden,
     };
   }),
   excludedTerms: decisions.excludeRules,

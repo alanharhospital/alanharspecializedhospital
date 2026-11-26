@@ -68,8 +68,11 @@
       "status": "active",
       "linkOnly": false,
       "publish": true,
+      "exactMatchMinWords": 4,
       "hasNumber": true,
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0002",
@@ -82,7 +85,9 @@
       "linkOnly": false,
       "publish": true,
       "hasNumber": true,
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0003",
@@ -95,7 +100,9 @@
       "linkOnly": false,
       "publish": true,
       "hasNumber": true,
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0004",
@@ -108,7 +115,9 @@
       "linkOnly": false,
       "publish": true,
       "hasNumber": true,
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0005",
@@ -120,7 +129,9 @@
       "status": "active",
       "linkOnly": false,
       "publish": true,
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0006",
@@ -132,7 +143,9 @@
       "status": "active",
       "linkOnly": false,
       "publish": true,
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0007",
@@ -145,7 +158,9 @@
       "linkOnly": false,
       "publish": true,
       "hasNumber": true,
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0008",
@@ -158,7 +173,9 @@
       "linkOnly": false,
       "publish": true,
       "hasNumber": true,
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0009",

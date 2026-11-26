@@ -15,7 +15,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": null,
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "exactMatchMinWords": 4,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0002",
@@ -25,7 +28,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": null,
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "exactMatchMinWords": null,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0003",
@@ -35,7 +41,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": null,
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "exactMatchMinWords": null,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0004",
@@ -45,7 +54,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": null,
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "exactMatchMinWords": null,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0005",
@@ -55,7 +67,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": null,
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "exactMatchMinWords": null,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0006",
@@ -65,7 +80,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": null,
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "exactMatchMinWords": null,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0007",
@@ -75,7 +93,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": null,
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "exactMatchMinWords": null,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0008",
@@ -85,7 +106,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": null,
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "exactMatchMinWords": null,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0009",
@@ -95,7 +119,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0009",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0010",
@@ -105,7 +132,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0010",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0011",
@@ -115,7 +145,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0011",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0012",
@@ -125,7 +158,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0012",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0013",
@@ -135,7 +171,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0013",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0014",
@@ -145,7 +184,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0014",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0015",
@@ -155,7 +197,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0015",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0016",
@@ -165,7 +210,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0016",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0017",
@@ -175,7 +223,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0017",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0018",
@@ -185,7 +236,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0018",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0019",
@@ -195,7 +249,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0019",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0020",
@@ -205,7 +262,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0020",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0021",
@@ -215,7 +275,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0021",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0022",
@@ -225,7 +288,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0022",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0023",
@@ -235,7 +301,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0023",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0024",
@@ -245,7 +314,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0024",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0025",
@@ -255,7 +327,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0025",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0026",
@@ -265,7 +340,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0026",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0027",
@@ -275,7 +353,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0027",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0028",
@@ -285,7 +366,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0028",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0029",
@@ -295,7 +379,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0029",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0030",
@@ -305,7 +392,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0030",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0031",
@@ -315,7 +405,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0031",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0032",
@@ -325,7 +418,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0032",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0033",
@@ -335,7 +431,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0033",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0034",
@@ -345,7 +444,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0034",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0035",
@@ -355,7 +457,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0035",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0036",
@@ -365,7 +470,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0036",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0037",
@@ -375,7 +483,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0037",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0038",
@@ -385,7 +496,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0038",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0039",
@@ -395,7 +509,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0039",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0040",
@@ -405,7 +522,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0040",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0041",
@@ -415,7 +535,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0041",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0042",
@@ -425,7 +548,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0042",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0043",
@@ -435,7 +561,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0043",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0044",
@@ -445,7 +574,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0044",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0045",
@@ -455,7 +587,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0045",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0046",
@@ -465,7 +600,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0046",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0047",
@@ -475,7 +613,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0047",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0048",
@@ -485,7 +626,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0048",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0049",
@@ -495,7 +639,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0049",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0050",
@@ -505,7 +652,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0050",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0051",
@@ -515,7 +665,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0051",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0052",
@@ -525,7 +678,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0052",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0053",
@@ -535,7 +691,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0053",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0054",
@@ -545,7 +704,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0054",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0055",
@@ -555,7 +717,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0055",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0056",
@@ -565,7 +730,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0056",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0057",
@@ -575,7 +743,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0057",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0058",
@@ -585,7 +756,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0058",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0059",
@@ -595,7 +769,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0059",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0060",
@@ -605,7 +782,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0060",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0061",
@@ -615,7 +795,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0061",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0062",
@@ -625,7 +808,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0062",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0063",
@@ -635,7 +821,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0063",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0064",
@@ -645,7 +834,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0064",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0065",
@@ -655,7 +847,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0065",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0066",
@@ -665,7 +860,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0066",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0067",
@@ -675,7 +873,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0067",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0068",
@@ -685,7 +886,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0068",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0069",
@@ -695,7 +899,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0069",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0070",
@@ -705,7 +912,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0070",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0071",
@@ -715,7 +925,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0071",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0072",
@@ -725,7 +938,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0072",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0073",
@@ -735,7 +951,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0073",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0074",
@@ -745,7 +964,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0074",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0075",
@@ -755,7 +977,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0075",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0076",
@@ -765,7 +990,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0076",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0077",
@@ -775,7 +1003,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0077",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0078",
@@ -785,7 +1016,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0078",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0079",
@@ -795,7 +1029,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0079",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0080",
@@ -805,7 +1042,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0080",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0081",
@@ -815,7 +1055,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0081",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0082",
@@ -825,7 +1068,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0082",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0083",
@@ -835,7 +1081,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0083",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0084",
@@ -845,7 +1094,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0084",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0085",
@@ -855,7 +1107,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0085",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0086",
@@ -865,7 +1120,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0086",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0087",
@@ -875,7 +1133,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0087",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0088",
@@ -885,7 +1146,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0088",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0089",
@@ -895,7 +1159,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0089",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0090",
@@ -905,7 +1172,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0090",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0091",
@@ -915,7 +1185,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0091",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0092",
@@ -925,7 +1198,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0092",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0093",
@@ -935,7 +1211,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0093",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0094",
@@ -945,7 +1224,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0094",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0095",
@@ -955,7 +1237,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0095",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0096",
@@ -965,7 +1250,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0096",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0097",
@@ -975,7 +1263,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0097",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0098",
@@ -985,7 +1276,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0098",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0099",
@@ -995,7 +1289,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0099",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0100",
@@ -1005,7 +1302,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0100",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0101",
@@ -1015,7 +1315,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0101",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0102",
@@ -1025,7 +1328,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0102",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0103",
@@ -1035,7 +1341,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0103",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0104",
@@ -1045,7 +1354,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0104",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0105",
@@ -1055,7 +1367,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0105",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0106",
@@ -1065,7 +1380,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0106",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0107",
@@ -1075,7 +1393,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0107",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0108",
@@ -1085,7 +1406,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0108",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0109",
@@ -1095,7 +1419,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0109",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0110",
@@ -1105,7 +1432,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0110",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0111",
@@ -1115,7 +1445,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0111",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0112",
@@ -1125,7 +1458,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0112",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0113",
@@ -1135,7 +1471,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0113",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0114",
@@ -1145,7 +1484,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0114",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0115",
@@ -1155,7 +1497,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0115",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0116",
@@ -1165,7 +1510,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0116",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0117",
@@ -1175,7 +1523,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0117",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0118",
@@ -1185,7 +1536,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0118",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0119",
@@ -1195,7 +1549,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0119",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0120",
@@ -1205,7 +1562,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0120",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0121",
@@ -1215,7 +1575,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0121",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0122",
@@ -1225,7 +1588,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0122",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0123",
@@ -1235,7 +1601,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0123",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0124",
@@ -1245,7 +1614,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0124",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0125",
@@ -1255,7 +1627,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0125",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0126",
@@ -1265,7 +1640,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0126",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0127",
@@ -1275,7 +1653,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0127",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0128",
@@ -1285,7 +1666,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0128",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0129",
@@ -1295,7 +1679,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0129",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0130",
@@ -1305,7 +1692,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0130",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0131",
@@ -1315,7 +1705,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0131",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0132",
@@ -1325,7 +1718,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0132",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0133",
@@ -1335,7 +1731,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0133",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0134",
@@ -1345,7 +1744,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0134",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0135",
@@ -1355,7 +1757,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0135",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0136",
@@ -1365,7 +1770,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0136",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0137",
@@ -1375,7 +1783,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0137",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0138",
@@ -1385,7 +1796,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0138",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0139",
@@ -1395,7 +1809,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0139",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0140",
@@ -1405,7 +1822,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0140",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0141",
@@ -1415,7 +1835,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0141",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0142",
@@ -1425,7 +1848,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0142",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0143",
@@ -1435,7 +1861,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0143",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0144",
@@ -1445,7 +1874,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0144",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0145",
@@ -1455,7 +1887,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0145",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0146",
@@ -1465,7 +1900,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0146",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0147",
@@ -1475,7 +1913,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0147",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0148",
@@ -1485,7 +1926,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0148",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0149",
@@ -1495,7 +1939,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0149",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0150",
@@ -1505,7 +1952,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0150",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0151",
@@ -1515,7 +1965,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0151",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0152",
@@ -1525,7 +1978,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0152",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0153",
@@ -1535,7 +1991,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0153",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0154",
@@ -1545,7 +2004,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0154",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0155",
@@ -1555,7 +2017,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0155",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0156",
@@ -1565,7 +2030,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0156",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0157",
@@ -1575,7 +2043,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0157",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0158",
@@ -1585,7 +2056,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0158",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0159",
@@ -1595,7 +2069,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0159",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0160",
@@ -1605,7 +2082,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0160",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0161",
@@ -1615,7 +2095,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0161",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0162",
@@ -1625,7 +2108,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0162",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0163",
@@ -1635,7 +2121,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0163",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0164",
@@ -1645,7 +2134,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0164",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0165",
@@ -1655,7 +2147,10 @@
       "slug": "dental",
       "rank": 2,
       "url": "services/dental#svc-0165",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0168",
@@ -1665,7 +2160,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0168",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0169",
@@ -1675,7 +2173,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0169",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0170",
@@ -1685,7 +2186,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0170",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0171",
@@ -1695,7 +2199,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0171",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0172",
@@ -1705,7 +2212,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0172",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0173",
@@ -1715,7 +2225,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0173",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0174",
@@ -1725,7 +2238,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0174",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0175",
@@ -1735,7 +2251,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0175",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0176",
@@ -1745,7 +2264,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0176",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0177",
@@ -1755,7 +2277,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0177",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0178",
@@ -1765,7 +2290,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0178",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0179",
@@ -1775,7 +2303,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0179",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0180",
@@ -1785,7 +2316,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0180",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0181",
@@ -1795,7 +2329,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0181",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0182",
@@ -1805,7 +2342,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0182",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0183",
@@ -1815,7 +2355,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0183",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0184",
@@ -1825,7 +2368,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0184",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0185",
@@ -1835,7 +2381,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0185",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0186",
@@ -1845,7 +2394,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0186",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0187",
@@ -1855,7 +2407,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0187",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0188",
@@ -1865,7 +2420,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0188",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0189",
@@ -1875,7 +2433,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0189",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0190",
@@ -1885,7 +2446,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0190",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0191",
@@ -1895,7 +2459,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0191",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0192",
@@ -1905,7 +2472,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0192",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0193",
@@ -1915,7 +2485,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0193",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0194",
@@ -1925,7 +2498,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0194",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0195",
@@ -1935,7 +2511,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0195",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0196",
@@ -1945,7 +2524,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0196",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0197",
@@ -1955,7 +2537,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0197",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0198",
@@ -1965,7 +2550,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0198",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0199",
@@ -1975,7 +2563,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0199",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0200",
@@ -1985,7 +2576,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0200",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0201",
@@ -1995,7 +2589,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0201",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0202",
@@ -2005,7 +2602,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0202",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0203",
@@ -2015,7 +2615,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0203",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0204",
@@ -2025,7 +2628,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0204",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0205",
@@ -2035,7 +2641,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0205",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0206",
@@ -2045,7 +2654,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0206",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0207",
@@ -2055,7 +2667,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0207",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0208",
@@ -2065,7 +2680,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0208",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0209",
@@ -2075,7 +2693,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0209",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0210",
@@ -2085,7 +2706,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0210",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0211",
@@ -2095,7 +2719,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0211",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0212",
@@ -2105,7 +2732,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0212",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0213",
@@ -2115,7 +2745,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0213",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0214",
@@ -2125,7 +2758,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0214",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0215",
@@ -2135,7 +2771,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0215",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0216",
@@ -2145,7 +2784,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0216",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0217",
@@ -2155,7 +2797,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0217",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0218",
@@ -2165,7 +2810,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0218",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0219",
@@ -2175,7 +2823,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0219",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0220",
@@ -2185,7 +2836,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0220",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0221",
@@ -2195,7 +2849,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0221",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0222",
@@ -2205,7 +2862,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0222",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0223",
@@ -2215,7 +2875,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0223",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0224",
@@ -2225,7 +2888,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0224",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0225",
@@ -2235,7 +2901,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0225",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0226",
@@ -2245,7 +2914,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0226",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0227",
@@ -2255,7 +2927,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0227",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0228",
@@ -2265,7 +2940,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0228",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0229",
@@ -2275,7 +2953,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0229",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0230",
@@ -2285,7 +2966,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0230",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0231",
@@ -2295,7 +2979,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0231",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0232",
@@ -2305,7 +2992,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0232",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0233",
@@ -2315,7 +3005,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0233",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0234",
@@ -2325,7 +3018,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0234",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0235",
@@ -2335,7 +3031,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0235",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0236",
@@ -2345,7 +3044,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0236",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0237",
@@ -2355,7 +3057,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0237",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0239",
@@ -2365,7 +3070,10 @@
       "slug": "physio",
       "rank": 5,
       "url": "services/physio#svc-0239",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0241",
@@ -2375,7 +3083,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0241",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0242",
@@ -2385,7 +3096,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0242",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0243",
@@ -2395,7 +3109,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0243",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0244",
@@ -2405,7 +3122,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0244",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0245",
@@ -2415,7 +3135,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0245",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0246",
@@ -2425,7 +3148,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0246",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0247",
@@ -2435,7 +3161,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0247",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0248",
@@ -2445,7 +3174,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0248",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0249",
@@ -2455,7 +3187,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0249",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0250",
@@ -2465,7 +3200,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0250",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0251",
@@ -2475,7 +3213,10 @@
       "slug": "diagnostics",
       "rank": 0,
       "url": "services/diagnostics#svc-0251",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0252",
@@ -2485,7 +3226,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0252",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0253",
@@ -2495,7 +3239,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0253",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0254",
@@ -2505,7 +3252,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0254",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0255",
@@ -2515,7 +3265,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0255",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0256",
@@ -2525,7 +3278,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0256",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0257",
@@ -2535,7 +3291,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0257",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0258",
@@ -2545,7 +3304,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0258",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0259",
@@ -2555,7 +3317,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0259",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0260",
@@ -2565,7 +3330,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0260",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0261",
@@ -2575,7 +3343,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0261",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0262",
@@ -2585,7 +3356,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0262",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0263",
@@ -2595,7 +3369,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0263",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0265",
@@ -2605,7 +3382,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0265",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0266",
@@ -2615,7 +3395,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0266",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0267",
@@ -2625,7 +3408,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0267",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0268",
@@ -2635,7 +3421,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0268",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0269",
@@ -2645,7 +3434,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0269",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0270",
@@ -2655,7 +3447,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0270",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0271",
@@ -2665,7 +3460,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0271",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0272",
@@ -2675,7 +3473,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0272",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0273",
@@ -2685,7 +3486,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0273",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0274",
@@ -2695,7 +3499,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0274",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0275",
@@ -2705,7 +3512,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0275",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0276",
@@ -2715,7 +3525,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0276",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0277",
@@ -2725,7 +3538,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0277",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0278",
@@ -2735,7 +3551,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0278",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0279",
@@ -2745,7 +3564,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0279",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0280",
@@ -2755,7 +3577,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0280",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0281",
@@ -2765,7 +3590,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0281",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0282",
@@ -2775,7 +3603,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0282",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0283",
@@ -2785,7 +3616,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0283",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0284",
@@ -2795,7 +3629,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0284",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0285",
@@ -2805,7 +3642,10 @@
       "slug": "ent",
       "rank": 4,
       "url": "services/ent#svc-0285",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0286",
@@ -2815,7 +3655,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0286",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0287",
@@ -2825,7 +3668,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0287",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0288",
@@ -2835,7 +3681,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0288",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0289",
@@ -2845,7 +3694,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0289",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0290",
@@ -2855,7 +3707,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0290",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0291",
@@ -2865,7 +3720,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0291",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0292",
@@ -2875,7 +3733,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0292",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0293",
@@ -2885,7 +3746,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0293",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0294",
@@ -2895,7 +3759,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0294",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0295",
@@ -2905,7 +3772,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0295",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0296",
@@ -2915,7 +3785,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0296",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0297",
@@ -2925,7 +3798,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0297",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0298",
@@ -2935,7 +3811,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0298",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0299",
@@ -2945,7 +3824,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0299",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0300",
@@ -2955,7 +3837,10 @@
       "slug": "surgery",
       "rank": 1,
       "url": "services/surgery#svc-0300",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0301",
@@ -2965,7 +3850,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0301",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0302",
@@ -2975,7 +3863,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0302",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0303",
@@ -2985,7 +3876,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0303",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0304",
@@ -2995,7 +3889,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0304",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0305",
@@ -3005,7 +3902,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0305",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0306",
@@ -3015,7 +3915,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0306",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0307",
@@ -3025,7 +3928,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0307",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0308",
@@ -3035,7 +3941,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0308",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0309",
@@ -3045,7 +3954,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0309",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0310",
@@ -3055,7 +3967,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0310",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0311",
@@ -3065,7 +3980,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0311",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0312",
@@ -3075,7 +3993,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0312",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0313",
@@ -3085,7 +4006,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0313",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0314",
@@ -3095,7 +4019,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0314",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0315",
@@ -3105,7 +4032,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0315",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0317",
@@ -3115,7 +4045,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0317",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0318",
@@ -3125,7 +4058,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0318",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0319",
@@ -3135,7 +4071,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0319",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0320",
@@ -3145,7 +4084,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0320",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0321",
@@ -3155,7 +4097,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0321",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0322",
@@ -3165,7 +4110,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0322",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0323",
@@ -3175,7 +4123,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0323",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0326",
@@ -3185,7 +4136,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0326",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0327",
@@ -3195,7 +4149,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0327",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0328",
@@ -3205,7 +4162,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0328",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0329",
@@ -3215,7 +4175,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0329",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0330",
@@ -3225,7 +4188,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0330",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0331",
@@ -3235,7 +4201,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0331",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0332",
@@ -3245,7 +4214,10 @@
       "slug": "women",
       "rank": 3,
       "url": "services/women#svc-0332",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0333",
@@ -3255,7 +4227,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0333",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0334",
@@ -3265,7 +4240,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0334",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0340",
@@ -3275,7 +4253,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0340",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0351",
@@ -3285,7 +4266,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0351",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0352",
@@ -3295,7 +4279,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0352",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0353",
@@ -3305,7 +4292,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0353",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0354",
@@ -3315,7 +4305,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0354",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0355",
@@ -3325,7 +4318,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0355",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0356",
@@ -3335,7 +4331,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0356",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0357",
@@ -3345,7 +4344,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0357",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0358",
@@ -3355,7 +4357,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0358",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0360",
@@ -3365,7 +4370,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0360",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0367",
@@ -3375,7 +4383,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0367",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0376",
@@ -3385,7 +4396,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0376",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0377",
@@ -3395,7 +4409,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0377",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0378",
@@ -3405,7 +4422,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0378",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0380",
@@ -3415,7 +4435,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0380",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0384",
@@ -3425,7 +4448,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0384",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0385",
@@ -3435,7 +4461,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0385",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0400",
@@ -3445,7 +4474,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0400",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0401",
@@ -3455,7 +4487,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0401",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0402",
@@ -3465,7 +4500,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0402",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0403",
@@ -3475,7 +4513,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0403",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0404",
@@ -3485,7 +4526,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0404",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0405",
@@ -3495,7 +4539,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0405",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0406",
@@ -3505,7 +4552,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0406",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0407",
@@ -3515,7 +4565,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0407",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0408",
@@ -3525,7 +4578,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0408",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0409",
@@ -3535,7 +4591,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0409",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0410",
@@ -3545,7 +4604,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0410",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0411",
@@ -3555,7 +4617,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0411",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0412",
@@ -3565,7 +4630,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0412",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0413",
@@ -3575,7 +4643,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0413",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0414",
@@ -3585,7 +4656,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0414",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0415",
@@ -3595,7 +4669,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0415",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0416",
@@ -3605,7 +4682,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0416",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0417",
@@ -3615,7 +4695,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0417",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0418",
@@ -3625,7 +4708,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0418",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0419",
@@ -3635,7 +4721,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0419",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0420",
@@ -3645,7 +4734,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0420",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0421",
@@ -3655,7 +4747,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0421",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0422",
@@ -3665,7 +4760,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0422",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0423",
@@ -3675,7 +4773,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0423",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0424",
@@ -3685,7 +4786,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0424",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0425",
@@ -3695,7 +4799,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0425",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0426",
@@ -3705,7 +4812,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0426",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0427",
@@ -3715,7 +4825,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0427",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0428",
@@ -3725,7 +4838,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0428",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0429",
@@ -3735,7 +4851,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0429",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0430",
@@ -3745,7 +4864,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0430",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0431",
@@ -3755,7 +4877,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0431",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0432",
@@ -3765,7 +4890,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0432",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0433",
@@ -3775,7 +4903,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0433",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0434",
@@ -3785,7 +4916,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0434",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0435",
@@ -3795,7 +4929,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0435",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0436",
@@ -3805,7 +4942,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0436",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0437",
@@ -3815,7 +4955,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0437",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0438",
@@ -3825,7 +4968,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0438",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0439",
@@ -3835,7 +4981,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0439",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0440",
@@ -3845,7 +4994,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0440",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0441",
@@ -3855,7 +5007,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0441",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0442",
@@ -3865,7 +5020,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0442",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0443",
@@ -3875,7 +5033,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0443",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0444",
@@ -3885,7 +5046,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0444",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0445",
@@ -3895,7 +5059,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0445",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0446",
@@ -3905,7 +5072,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0446",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0447",
@@ -3915,7 +5085,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0447",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0448",
@@ -3925,7 +5098,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0448",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0449",
@@ -3935,7 +5111,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0449",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0450",
@@ -3945,7 +5124,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0450",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0451",
@@ -3955,7 +5137,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0451",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0452",
@@ -3965,7 +5150,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0452",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0453",
@@ -3975,7 +5163,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0453",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0454",
@@ -3985,7 +5176,10 @@
       "slug": "emergency",
       "rank": 6,
       "url": "services/emergency#svc-0454",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0455",
@@ -3995,7 +5189,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0455",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0456",
@@ -4005,7 +5202,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0456",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0457",
@@ -4015,7 +5215,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0457",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0458",
@@ -4025,7 +5228,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0458",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0459",
@@ -4035,7 +5241,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0459",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0460",
@@ -4045,7 +5254,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0460",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0461",
@@ -4055,7 +5267,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0461",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0462",
@@ -4065,7 +5280,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0462",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0463",
@@ -4075,7 +5293,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0463",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0464",
@@ -4085,7 +5306,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0464",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0465",
@@ -4095,7 +5319,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0465",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0466",
@@ -4105,7 +5332,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0466",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0467",
@@ -4115,7 +5345,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0467",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0468",
@@ -4125,7 +5358,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0468",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0469",
@@ -4135,7 +5371,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0469",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0470",
@@ -4145,7 +5384,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0470",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0471",
@@ -4155,7 +5397,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0471",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0472",
@@ -4165,7 +5410,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0472",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0473",
@@ -4175,7 +5423,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0473",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0474",
@@ -4185,7 +5436,10 @@
       "slug": "clinics-admin",
       "rank": 7,
       "url": "services/clinics-admin#svc-0474",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0475",
@@ -4195,7 +5449,10 @@
       "slug": "index",
       "rank": 99,
       "url": "offers.html",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0476",
@@ -4205,7 +5462,10 @@
       "slug": "index",
       "rank": 99,
       "url": "offers.html",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     },
     {
       "id": "SVC-0477",
@@ -4215,7 +5475,10 @@
       "slug": "index",
       "rank": 99,
       "url": "offers.html",
-      "searchOnly": false
+      "searchOnly": false,
+      "exactMatchOnly": false,
+      "exactMatchMinWords": null,
+      "directoryHidden": false
     }
   ],
   "excludedTerms": [

@@ -20,7 +20,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css?v=10">
-    <link rel="stylesheet" href="../ext/services-search.css?v=3">
+    <link rel="stylesheet" href="../ext/services-search.css?v=4">
+    <link rel="stylesheet" href="../ext/clinical-polish.css?v=1">
     <style>
         /* دليل الخدمات — تنسيق خاص بالصفحات المولّدة */
         .sg-main { padding: 2rem 0 3rem; }
@@ -77,7 +78,7 @@
     <header class="header" id="top">
         <nav class="navbar container" aria-label="القائمة الرئيسية">
             <a href="../index.html" class="brand">
-                <img src="../logo.jpg" alt="شعار مستشفى الأنهار التخصصي" class="brand-logo" width="48" height="48">
+                <img src="../logo.jpg" alt="شعار مستشفى الأنهار التخصصي" class="brand-logo" width="48" height="48" loading="lazy" decoding="async">
                 <span>
                     <strong>مستشفى الأنهار</strong>
                     <small>التخصصي</small>
@@ -139,42 +140,42 @@
 
             <h2 class="sg-cat" id="cat-مختبر">مختبر</h2>
             <ul class="sg-list">
-                    <li id="svc-0052">الدهون<span class="sg-id" aria-hidden="true">SVC-0052</span></li>
-                    <li id="svc-0050">السكري التراكمي HbA1C<span class="sg-id" aria-hidden="true">SVC-0050</span></li>
-                    <li id="svc-0056">السيولة والتجلط D-Dimer<span class="sg-id" aria-hidden="true">SVC-0056</span></li>
-                    <li id="svc-0047">المختبر الطبي المركزي وبنك الدم (03226277)<span class="sg-id" aria-hidden="true">SVC-0047</span></li>
-                    <li id="svc-0058">المزارع البكتيرية C/S<span class="sg-id" aria-hidden="true">SVC-0058</span></li>
-                    <li id="svc-0053">المعادن والأملاح<span class="sg-id" aria-hidden="true">SVC-0053</span></li>
-                    <li id="svc-0049">الهرمونات الشاملة TSH FT3 FT4 FSH LH Prolactin Testosterone AMH B-HCG<span class="sg-id" aria-hidden="true">SVC-0049</span></li>
-                    <li id="svc-0054">إنزيمات القلب Troponin<span class="sg-id" aria-hidden="true">SVC-0054</span></li>
-                    <li id="svc-0055">دلالات الأورام<span class="sg-id" aria-hidden="true">SVC-0055</span></li>
-                    <li id="svc-0048">فحص الدم الشامل CBC<span class="sg-id" aria-hidden="true">SVC-0048</span></li>
-                    <li id="svc-0057">فحوصات الفيروسات والحميات (ملاريا، حمى الضنك، تيفوئيد، مالطية، جرثومة المعدة)<span class="sg-id" aria-hidden="true">SVC-0057</span></li>
-                    <li id="svc-0051">وظائف الكلى والكبد<span class="sg-id" aria-hidden="true">SVC-0051</span></li>
-                    <li id="svc-0059">وفحوصات الـ PCR<span class="sg-id" aria-hidden="true">SVC-0059</span></li>
+                    <li id="svc-0052">الدهون<span class="sg-id" aria-hidden="true">SVC-0052</span><button type="button" class="sg-share" data-clinical-share="#svc-0052" aria-label="مشاركة الدهون" hidden>مشاركة</button></li>
+                    <li id="svc-0050">السكري التراكمي HbA1C<span class="sg-id" aria-hidden="true">SVC-0050</span><button type="button" class="sg-share" data-clinical-share="#svc-0050" aria-label="مشاركة السكري التراكمي HbA1C" hidden>مشاركة</button></li>
+                    <li id="svc-0056">السيولة والتجلط D-Dimer<span class="sg-id" aria-hidden="true">SVC-0056</span><button type="button" class="sg-share" data-clinical-share="#svc-0056" aria-label="مشاركة السيولة والتجلط D-Dimer" hidden>مشاركة</button></li>
+                    <li id="svc-0047">المختبر الطبي المركزي وبنك الدم (03226277)<span class="sg-id" aria-hidden="true">SVC-0047</span><button type="button" class="sg-share" data-clinical-share="#svc-0047" aria-label="مشاركة المختبر الطبي المركزي وبنك الدم (03226277)" hidden>مشاركة</button></li>
+                    <li id="svc-0058">المزارع البكتيرية C/S<span class="sg-id" aria-hidden="true">SVC-0058</span><button type="button" class="sg-share" data-clinical-share="#svc-0058" aria-label="مشاركة المزارع البكتيرية C/S" hidden>مشاركة</button></li>
+                    <li id="svc-0053">المعادن والأملاح<span class="sg-id" aria-hidden="true">SVC-0053</span><button type="button" class="sg-share" data-clinical-share="#svc-0053" aria-label="مشاركة المعادن والأملاح" hidden>مشاركة</button></li>
+                    <li id="svc-0049">الهرمونات الشاملة TSH FT3 FT4 FSH LH Prolactin Testosterone AMH B-HCG<span class="sg-id" aria-hidden="true">SVC-0049</span><button type="button" class="sg-share" data-clinical-share="#svc-0049" aria-label="مشاركة الهرمونات الشاملة TSH FT3 FT4 FSH LH Prolactin Testosterone AMH B-HCG" hidden>مشاركة</button></li>
+                    <li id="svc-0054">إنزيمات القلب Troponin<span class="sg-id" aria-hidden="true">SVC-0054</span><button type="button" class="sg-share" data-clinical-share="#svc-0054" aria-label="مشاركة إنزيمات القلب Troponin" hidden>مشاركة</button></li>
+                    <li id="svc-0055">دلالات الأورام<span class="sg-id" aria-hidden="true">SVC-0055</span><button type="button" class="sg-share" data-clinical-share="#svc-0055" aria-label="مشاركة دلالات الأورام" hidden>مشاركة</button></li>
+                    <li id="svc-0048">فحص الدم الشامل CBC<span class="sg-id" aria-hidden="true">SVC-0048</span><button type="button" class="sg-share" data-clinical-share="#svc-0048" aria-label="مشاركة فحص الدم الشامل CBC" hidden>مشاركة</button></li>
+                    <li id="svc-0057">فحوصات الفيروسات والحميات (ملاريا، حمى الضنك، تيفوئيد، مالطية، جرثومة المعدة)<span class="sg-id" aria-hidden="true">SVC-0057</span><button type="button" class="sg-share" data-clinical-share="#svc-0057" aria-label="مشاركة فحوصات الفيروسات والحميات (ملاريا، حمى الضنك، تيفوئيد، مالطية، جرثومة المعدة)" hidden>مشاركة</button></li>
+                    <li id="svc-0051">وظائف الكلى والكبد<span class="sg-id" aria-hidden="true">SVC-0051</span><button type="button" class="sg-share" data-clinical-share="#svc-0051" aria-label="مشاركة وظائف الكلى والكبد" hidden>مشاركة</button></li>
+                    <li id="svc-0059">وفحوصات الـ PCR<span class="sg-id" aria-hidden="true">SVC-0059</span><button type="button" class="sg-share" data-clinical-share="#svc-0059" aria-label="مشاركة وفحوصات الـ PCR" hidden>مشاركة</button></li>
             </ul>
             <h2 class="sg-cat" id="cat-أشعة">أشعة</h2>
             <ul class="sg-list">
-                    <li id="svc-0062">الأشعة الرقمية الكشافة DR<span class="sg-id" aria-hidden="true">SVC-0062</span></li>
-                    <li id="svc-0061">الأشعة المقطعية CT Scan للرأس والدماغ والجيوب الأنفية والرقبة والصدر والبطن والحوض والفقرات<span class="sg-id" aria-hidden="true">SVC-0061</span></li>
-                    <li id="svc-0064">الدوبلر الملون للأوعية الدموية والحوامل<span class="sg-id" aria-hidden="true">SVC-0064</span></li>
-                    <li id="svc-0063">السونار العام وسونار الحمل<span class="sg-id" aria-hidden="true">SVC-0063</span></li>
-                    <li id="svc-0060">مركز الأشعة التشخيصية<span class="sg-id" aria-hidden="true">SVC-0060</span></li>
-                    <li id="svc-0065">وإيكو القلب ECHO للكبار والأطفال<span class="sg-id" aria-hidden="true">SVC-0065</span></li>
+                    <li id="svc-0062">الأشعة الرقمية الكشافة DR<span class="sg-id" aria-hidden="true">SVC-0062</span><button type="button" class="sg-share" data-clinical-share="#svc-0062" aria-label="مشاركة الأشعة الرقمية الكشافة DR" hidden>مشاركة</button></li>
+                    <li id="svc-0061">الأشعة المقطعية CT Scan للرأس والدماغ والجيوب الأنفية والرقبة والصدر والبطن والحوض والفقرات<span class="sg-id" aria-hidden="true">SVC-0061</span><button type="button" class="sg-share" data-clinical-share="#svc-0061" aria-label="مشاركة الأشعة المقطعية CT Scan للرأس والدماغ والجيوب الأنفية والرقبة والصدر والبطن والحوض والفقرات" hidden>مشاركة</button></li>
+                    <li id="svc-0064">الدوبلر الملون للأوعية الدموية والحوامل<span class="sg-id" aria-hidden="true">SVC-0064</span><button type="button" class="sg-share" data-clinical-share="#svc-0064" aria-label="مشاركة الدوبلر الملون للأوعية الدموية والحوامل" hidden>مشاركة</button></li>
+                    <li id="svc-0063">السونار العام وسونار الحمل<span class="sg-id" aria-hidden="true">SVC-0063</span><button type="button" class="sg-share" data-clinical-share="#svc-0063" aria-label="مشاركة السونار العام وسونار الحمل" hidden>مشاركة</button></li>
+                    <li id="svc-0060">مركز الأشعة التشخيصية<span class="sg-id" aria-hidden="true">SVC-0060</span><button type="button" class="sg-share" data-clinical-share="#svc-0060" aria-label="مشاركة مركز الأشعة التشخيصية" hidden>مشاركة</button></li>
+                    <li id="svc-0065">وإيكو القلب ECHO للكبار والأطفال<span class="sg-id" aria-hidden="true">SVC-0065</span><button type="button" class="sg-share" data-clinical-share="#svc-0065" aria-label="مشاركة وإيكو القلب ECHO للكبار والأطفال" hidden>مشاركة</button></li>
             </ul>
             <h2 class="sg-cat" id="cat-قلب">قلب</h2>
             <ul class="sg-list">
-                    <li id="svc-0246">إيكو للقلب<span class="sg-id" aria-hidden="true">SVC-0246</span></li>
-                    <li id="svc-0247">إيكو للقلب تحت التخدير العام<span class="sg-id" aria-hidden="true">SVC-0247</span></li>
-                    <li id="svc-0250">تخطيط القلب تحت التمرين / بذل الجهد<span class="sg-id" aria-hidden="true">SVC-0250</span></li>
-                    <li id="svc-0249">تخطيط القلب لمدة 24 ساعة (هولتر)<span class="sg-id" aria-hidden="true">SVC-0249</span></li>
-                    <li id="svc-0248">تخطيط القلب ECG<span class="sg-id" aria-hidden="true">SVC-0248</span></li>
-                    <li id="svc-0241">تلفزيون للقلب عن طريق المريء<span class="sg-id" aria-hidden="true">SVC-0241</span></li>
-                    <li id="svc-0251">جهاز مراقبة الضغط لمدة 24 ساعة (هولتر)<span class="sg-id" aria-hidden="true">SVC-0251</span></li>
-                    <li id="svc-0245">فحص القلب بالموجات فوق الصوتية (أطفال وعيوب قلب خلقية)<span class="sg-id" aria-hidden="true">SVC-0245</span></li>
-                    <li id="svc-0242">فحص القلب عبر المريء (تخدير موضعي)<span class="sg-id" aria-hidden="true">SVC-0242</span></li>
-                    <li id="svc-0243">فحص منظم القلب<span class="sg-id" aria-hidden="true">SVC-0243</span></li>
-                    <li id="svc-0244">قياس تصلب الشرايين<span class="sg-id" aria-hidden="true">SVC-0244</span></li>
+                    <li id="svc-0246">إيكو للقلب<span class="sg-id" aria-hidden="true">SVC-0246</span><button type="button" class="sg-share" data-clinical-share="#svc-0246" aria-label="مشاركة إيكو للقلب" hidden>مشاركة</button></li>
+                    <li id="svc-0247">إيكو للقلب تحت التخدير العام<span class="sg-id" aria-hidden="true">SVC-0247</span><button type="button" class="sg-share" data-clinical-share="#svc-0247" aria-label="مشاركة إيكو للقلب تحت التخدير العام" hidden>مشاركة</button></li>
+                    <li id="svc-0250">تخطيط القلب تحت التمرين / بذل الجهد<span class="sg-id" aria-hidden="true">SVC-0250</span><button type="button" class="sg-share" data-clinical-share="#svc-0250" aria-label="مشاركة تخطيط القلب تحت التمرين / بذل الجهد" hidden>مشاركة</button></li>
+                    <li id="svc-0249">تخطيط القلب لمدة 24 ساعة (هولتر)<span class="sg-id" aria-hidden="true">SVC-0249</span><button type="button" class="sg-share" data-clinical-share="#svc-0249" aria-label="مشاركة تخطيط القلب لمدة 24 ساعة (هولتر)" hidden>مشاركة</button></li>
+                    <li id="svc-0248">تخطيط القلب ECG<span class="sg-id" aria-hidden="true">SVC-0248</span><button type="button" class="sg-share" data-clinical-share="#svc-0248" aria-label="مشاركة تخطيط القلب ECG" hidden>مشاركة</button></li>
+                    <li id="svc-0241">تلفزيون للقلب عن طريق المريء<span class="sg-id" aria-hidden="true">SVC-0241</span><button type="button" class="sg-share" data-clinical-share="#svc-0241" aria-label="مشاركة تلفزيون للقلب عن طريق المريء" hidden>مشاركة</button></li>
+                    <li id="svc-0251">جهاز مراقبة الضغط لمدة 24 ساعة (هولتر)<span class="sg-id" aria-hidden="true">SVC-0251</span><button type="button" class="sg-share" data-clinical-share="#svc-0251" aria-label="مشاركة جهاز مراقبة الضغط لمدة 24 ساعة (هولتر)" hidden>مشاركة</button></li>
+                    <li id="svc-0245">فحص القلب بالموجات فوق الصوتية (أطفال وعيوب قلب خلقية)<span class="sg-id" aria-hidden="true">SVC-0245</span><button type="button" class="sg-share" data-clinical-share="#svc-0245" aria-label="مشاركة فحص القلب بالموجات فوق الصوتية (أطفال وعيوب قلب خلقية)" hidden>مشاركة</button></li>
+                    <li id="svc-0242">فحص القلب عبر المريء (تخدير موضعي)<span class="sg-id" aria-hidden="true">SVC-0242</span><button type="button" class="sg-share" data-clinical-share="#svc-0242" aria-label="مشاركة فحص القلب عبر المريء (تخدير موضعي)" hidden>مشاركة</button></li>
+                    <li id="svc-0243">فحص منظم القلب<span class="sg-id" aria-hidden="true">SVC-0243</span><button type="button" class="sg-share" data-clinical-share="#svc-0243" aria-label="مشاركة فحص منظم القلب" hidden>مشاركة</button></li>
+                    <li id="svc-0244">قياس تصلب الشرايين<span class="sg-id" aria-hidden="true">SVC-0244</span><button type="button" class="sg-share" data-clinical-share="#svc-0244" aria-label="مشاركة قياس تصلب الشرايين" hidden>مشاركة</button></li>
             </ul>
 
             <p class="sg-back"><a href="./">العودة إلى دليل الخدمات</a></p>
@@ -200,7 +201,8 @@
             </div>
         </div>
     </footer>
-    <script src="../ext/data/services-index.js?v=3"></script>
-    <script src="../ext/services-search.js?v=3" defer></script>
+    <script src="../ext/data/services-index.js?v=4"></script>
+    <script src="../ext/services-search.js?v=4" defer></script>
+    <script src="../ext/clinical-enhancements.js?v=1" defer></script>
 </body>
 </html>

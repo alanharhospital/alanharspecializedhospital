@@ -1180,6 +1180,10 @@
       ]
     }
     </script>
+<!-- ENH:START clinical-polish -->
+<link rel="stylesheet" href="ext/clinical-polish.css?v=1">
+<link rel="stylesheet" href="ext/services-search.css?v=4">
+<!-- ENH:END clinical-polish -->
 </head>
 
 <body id="top">
@@ -1201,7 +1205,7 @@
         <div class="container navbar">
 
             <a href="index.html" class="brand">
-                <img src="logo.jpg" alt="شعار مستشفى الأنهار التخصصي">
+                <img src="logo.jpg" alt="شعار مستشفى الأنهار التخصصي" loading="lazy" decoding="async">
                 <span>مستشفى الأنهار التخصصي</span>
             </a>
 
@@ -1254,10 +1258,10 @@
             <div class="container">
 
                 <div class="pr-logo-badge">
-                    <img
+                    <picture><source type="image/webp" srcset="ext/media/shar3-700.webp 700w, ext/media/shar3-optimized.webp 1400w" sizes="(max-width: 600px) 90vw, 40vw"><img
                         src="shar3.png"
                         alt="شعار العلاقات العامة - مستشفى الأنهار التخصصي"
-                    >
+                     loading="lazy" decoding="async"></picture>
                 </div>
 
                 <h1>بوابة التنسيق الطبي والعلاقات العامة</h1>
@@ -2090,7 +2094,7 @@
                         alt="شعار مستشفى الأنهار التخصصي"
                         class="footer-logo"
                         loading="lazy"
-                    >
+                     decoding="async">
 
                     <div>
                         <h3>مستشفى الأنهار التخصصي</h3>
@@ -2573,5 +2577,10 @@
 <!-- ENH:START medical-disclaimer -->
 <script src="ext/disclaimer/disclaimer.js?v=1" defer></script>
 <!-- ENH:END medical-disclaimer -->
+<!-- ENH:START clinical-enhancements -->
+<script src="ext/data/services-index.js?v=4"></script>
+<script src="ext/services-search.js?v=4" defer></script>
+<script src="ext/clinical-enhancements.js?v=1" defer></script>
+<!-- ENH:END clinical-enhancements -->
 </body>
 </html>

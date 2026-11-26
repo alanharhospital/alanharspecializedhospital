@@ -20,7 +20,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css?v=10">
-    <link rel="stylesheet" href="../ext/services-search.css?v=3">
+    <link rel="stylesheet" href="../ext/services-search.css?v=4">
+    <link rel="stylesheet" href="../ext/clinical-polish.css?v=1">
     <style>
         /* دليل الخدمات — تنسيق خاص بالصفحات المولّدة */
         .sg-main { padding: 2rem 0 3rem; }
@@ -77,7 +78,7 @@
     <header class="header" id="top">
         <nav class="navbar container" aria-label="القائمة الرئيسية">
             <a href="../index.html" class="brand">
-                <img src="../logo.jpg" alt="شعار مستشفى الأنهار التخصصي" class="brand-logo" width="48" height="48">
+                <img src="../logo.jpg" alt="شعار مستشفى الأنهار التخصصي" class="brand-logo" width="48" height="48" loading="lazy" decoding="async">
                 <span>
                     <strong>مستشفى الأنهار</strong>
                     <small>التخصصي</small>
@@ -141,31 +142,31 @@
 
             <h2 class="sg-cat" id="cat-نساء-وولادة">نساء وولادة</h2>
             <ul class="sg-list">
-                    <li id="svc-0321">أخذ عينة من عنق الرحم (بدون تخدير)<span class="sg-id" aria-hidden="true">SVC-0321</span></li>
-                    <li id="svc-0319">إزالة خياطة بعنق الرحم<span class="sg-id" aria-hidden="true">SVC-0319</span></li>
-                    <li id="svc-0323">إزالة زائدة لحمية من منطقة العجان تحت التخدير الموضعي<span class="sg-id" aria-hidden="true">SVC-0323</span></li>
-                    <li id="svc-0315">إزالة غرسة من تحت الجلد<span class="sg-id" aria-hidden="true">SVC-0315</span></li>
-                    <li id="svc-0313">إزالة لولب بدون تخدير<span class="sg-id" aria-hidden="true">SVC-0313</span></li>
-                    <li id="svc-0308">إزالة لولب مفقود أو مختفي<span class="sg-id" aria-hidden="true">SVC-0308</span></li>
-                    <li id="svc-0311">انحباس مشيمة<span class="sg-id" aria-hidden="true">SVC-0311</span></li>
-                    <li id="svc-0320">برنامج متابعة الحمل<span class="sg-id" aria-hidden="true">SVC-0320</span></li>
-                    <li id="svc-0322">تخطيط نبض الجنين CTG<span class="sg-id" aria-hidden="true">SVC-0322</span></li>
-                    <li id="svc-0312">تركيب لولب بدون تخدير<span class="sg-id" aria-hidden="true">SVC-0312</span></li>
-                    <li id="svc-0307">تلفزيون عن طريق المهبل<span class="sg-id" aria-hidden="true">SVC-0307</span></li>
-                    <li id="svc-0309">تنظيف يدوي بدون تخدير<span class="sg-id" aria-hidden="true">SVC-0309</span></li>
-                    <li id="svc-0318">توسيع عنق الرحم التشخيصي<span class="sg-id" aria-hidden="true">SVC-0318</span></li>
-                    <li id="svc-0310">خياطة منطقة العجان تخدير موضعي<span class="sg-id" aria-hidden="true">SVC-0310</span></li>
-                    <li id="svc-0330">دوبلر الجنين<span class="sg-id" aria-hidden="true">SVC-0330</span></li>
-                    <li id="svc-0329">دوبلر للحوامل<span class="sg-id" aria-hidden="true">SVC-0329</span></li>
-                    <li id="svc-0332">سونار للحمل<span class="sg-id" aria-hidden="true">SVC-0332</span></li>
-                    <li id="svc-0331">سونار موجات فوق صوتية للنساء في العيادة<span class="sg-id" aria-hidden="true">SVC-0331</span></li>
-                    <li id="svc-0314">غرسة تحت الجلد<span class="sg-id" aria-hidden="true">SVC-0314</span></li>
-                    <li id="svc-0326">فك التحام الشفر<span class="sg-id" aria-hidden="true">SVC-0326</span></li>
-                    <li id="svc-0317">فك عنق الرحم<span class="sg-id" aria-hidden="true">SVC-0317</span></li>
-                    <li id="svc-0305">كي عنق الرحم في العيادة<span class="sg-id" aria-hidden="true">SVC-0305</span></li>
-                    <li id="svc-0327">مسحة عنق الرحم<span class="sg-id" aria-hidden="true">SVC-0327</span></li>
-                    <li id="svc-0328">مسحة مهبلية<span class="sg-id" aria-hidden="true">SVC-0328</span></li>
-                    <li id="svc-0306">موجات فوق صوتية للحوامل في العيادة<span class="sg-id" aria-hidden="true">SVC-0306</span></li>
+                    <li id="svc-0321">أخذ عينة من عنق الرحم (بدون تخدير)<span class="sg-id" aria-hidden="true">SVC-0321</span><button type="button" class="sg-share" data-clinical-share="#svc-0321" aria-label="مشاركة أخذ عينة من عنق الرحم (بدون تخدير)" hidden>مشاركة</button></li>
+                    <li id="svc-0319">إزالة خياطة بعنق الرحم<span class="sg-id" aria-hidden="true">SVC-0319</span><button type="button" class="sg-share" data-clinical-share="#svc-0319" aria-label="مشاركة إزالة خياطة بعنق الرحم" hidden>مشاركة</button></li>
+                    <li id="svc-0323">إزالة زائدة لحمية من منطقة العجان تحت التخدير الموضعي<span class="sg-id" aria-hidden="true">SVC-0323</span><button type="button" class="sg-share" data-clinical-share="#svc-0323" aria-label="مشاركة إزالة زائدة لحمية من منطقة العجان تحت التخدير الموضعي" hidden>مشاركة</button></li>
+                    <li id="svc-0315">إزالة غرسة من تحت الجلد<span class="sg-id" aria-hidden="true">SVC-0315</span><button type="button" class="sg-share" data-clinical-share="#svc-0315" aria-label="مشاركة إزالة غرسة من تحت الجلد" hidden>مشاركة</button></li>
+                    <li id="svc-0313">إزالة لولب بدون تخدير<span class="sg-id" aria-hidden="true">SVC-0313</span><button type="button" class="sg-share" data-clinical-share="#svc-0313" aria-label="مشاركة إزالة لولب بدون تخدير" hidden>مشاركة</button></li>
+                    <li id="svc-0308">إزالة لولب مفقود أو مختفي<span class="sg-id" aria-hidden="true">SVC-0308</span><button type="button" class="sg-share" data-clinical-share="#svc-0308" aria-label="مشاركة إزالة لولب مفقود أو مختفي" hidden>مشاركة</button></li>
+                    <li id="svc-0311">انحباس مشيمة<span class="sg-id" aria-hidden="true">SVC-0311</span><button type="button" class="sg-share" data-clinical-share="#svc-0311" aria-label="مشاركة انحباس مشيمة" hidden>مشاركة</button></li>
+                    <li id="svc-0320">برنامج متابعة الحمل<span class="sg-id" aria-hidden="true">SVC-0320</span><button type="button" class="sg-share" data-clinical-share="#svc-0320" aria-label="مشاركة برنامج متابعة الحمل" hidden>مشاركة</button></li>
+                    <li id="svc-0322">تخطيط نبض الجنين CTG<span class="sg-id" aria-hidden="true">SVC-0322</span><button type="button" class="sg-share" data-clinical-share="#svc-0322" aria-label="مشاركة تخطيط نبض الجنين CTG" hidden>مشاركة</button></li>
+                    <li id="svc-0312">تركيب لولب بدون تخدير<span class="sg-id" aria-hidden="true">SVC-0312</span><button type="button" class="sg-share" data-clinical-share="#svc-0312" aria-label="مشاركة تركيب لولب بدون تخدير" hidden>مشاركة</button></li>
+                    <li id="svc-0307">تلفزيون عن طريق المهبل<span class="sg-id" aria-hidden="true">SVC-0307</span><button type="button" class="sg-share" data-clinical-share="#svc-0307" aria-label="مشاركة تلفزيون عن طريق المهبل" hidden>مشاركة</button></li>
+                    <li id="svc-0309">تنظيف يدوي بدون تخدير<span class="sg-id" aria-hidden="true">SVC-0309</span><button type="button" class="sg-share" data-clinical-share="#svc-0309" aria-label="مشاركة تنظيف يدوي بدون تخدير" hidden>مشاركة</button></li>
+                    <li id="svc-0318">توسيع عنق الرحم التشخيصي<span class="sg-id" aria-hidden="true">SVC-0318</span><button type="button" class="sg-share" data-clinical-share="#svc-0318" aria-label="مشاركة توسيع عنق الرحم التشخيصي" hidden>مشاركة</button></li>
+                    <li id="svc-0310">خياطة منطقة العجان تخدير موضعي<span class="sg-id" aria-hidden="true">SVC-0310</span><button type="button" class="sg-share" data-clinical-share="#svc-0310" aria-label="مشاركة خياطة منطقة العجان تخدير موضعي" hidden>مشاركة</button></li>
+                    <li id="svc-0330">دوبلر الجنين<span class="sg-id" aria-hidden="true">SVC-0330</span><button type="button" class="sg-share" data-clinical-share="#svc-0330" aria-label="مشاركة دوبلر الجنين" hidden>مشاركة</button></li>
+                    <li id="svc-0329">دوبلر للحوامل<span class="sg-id" aria-hidden="true">SVC-0329</span><button type="button" class="sg-share" data-clinical-share="#svc-0329" aria-label="مشاركة دوبلر للحوامل" hidden>مشاركة</button></li>
+                    <li id="svc-0332">سونار للحمل<span class="sg-id" aria-hidden="true">SVC-0332</span><button type="button" class="sg-share" data-clinical-share="#svc-0332" aria-label="مشاركة سونار للحمل" hidden>مشاركة</button></li>
+                    <li id="svc-0331">سونار موجات فوق صوتية للنساء في العيادة<span class="sg-id" aria-hidden="true">SVC-0331</span><button type="button" class="sg-share" data-clinical-share="#svc-0331" aria-label="مشاركة سونار موجات فوق صوتية للنساء في العيادة" hidden>مشاركة</button></li>
+                    <li id="svc-0314">غرسة تحت الجلد<span class="sg-id" aria-hidden="true">SVC-0314</span><button type="button" class="sg-share" data-clinical-share="#svc-0314" aria-label="مشاركة غرسة تحت الجلد" hidden>مشاركة</button></li>
+                    <li id="svc-0326">فك التحام الشفر<span class="sg-id" aria-hidden="true">SVC-0326</span><button type="button" class="sg-share" data-clinical-share="#svc-0326" aria-label="مشاركة فك التحام الشفر" hidden>مشاركة</button></li>
+                    <li id="svc-0317">فك عنق الرحم<span class="sg-id" aria-hidden="true">SVC-0317</span><button type="button" class="sg-share" data-clinical-share="#svc-0317" aria-label="مشاركة فك عنق الرحم" hidden>مشاركة</button></li>
+                    <li id="svc-0305">كي عنق الرحم في العيادة<span class="sg-id" aria-hidden="true">SVC-0305</span><button type="button" class="sg-share" data-clinical-share="#svc-0305" aria-label="مشاركة كي عنق الرحم في العيادة" hidden>مشاركة</button></li>
+                    <li id="svc-0327">مسحة عنق الرحم<span class="sg-id" aria-hidden="true">SVC-0327</span><button type="button" class="sg-share" data-clinical-share="#svc-0327" aria-label="مشاركة مسحة عنق الرحم" hidden>مشاركة</button></li>
+                    <li id="svc-0328">مسحة مهبلية<span class="sg-id" aria-hidden="true">SVC-0328</span><button type="button" class="sg-share" data-clinical-share="#svc-0328" aria-label="مشاركة مسحة مهبلية" hidden>مشاركة</button></li>
+                    <li id="svc-0306">موجات فوق صوتية للحوامل في العيادة<span class="sg-id" aria-hidden="true">SVC-0306</span><button type="button" class="sg-share" data-clinical-share="#svc-0306" aria-label="مشاركة موجات فوق صوتية للحوامل في العيادة" hidden>مشاركة</button></li>
             </ul>
 
             <p class="sg-back"><a href="./">العودة إلى دليل الخدمات</a></p>
@@ -191,7 +192,8 @@
             </div>
         </div>
     </footer>
-    <script src="../ext/data/services-index.js?v=3"></script>
-    <script src="../ext/services-search.js?v=3" defer></script>
+    <script src="../ext/data/services-index.js?v=4"></script>
+    <script src="../ext/services-search.js?v=4" defer></script>
+    <script src="../ext/clinical-enhancements.js?v=1" defer></script>
 </body>
 </html>

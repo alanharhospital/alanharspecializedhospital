@@ -27,7 +27,10 @@
       "responseGroup": "listed",
       "linkOnly": false,
       "reason": "يظهر في البحث القوي فقط بقرار المالك",
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "directoryHidden": true,
+      "exactMatchMinWords": 4
     },
     {
       "id": "SVC-0002",
@@ -42,7 +45,9 @@
       "responseGroup": "listed",
       "linkOnly": false,
       "reason": "يظهر في البحث القوي فقط بقرار المالك",
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0003",
@@ -57,7 +62,9 @@
       "responseGroup": "listed",
       "linkOnly": false,
       "reason": "يظهر في البحث القوي فقط بقرار المالك",
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0004",
@@ -72,7 +79,9 @@
       "responseGroup": "listed",
       "linkOnly": false,
       "reason": "يظهر في البحث القوي فقط بقرار المالك",
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0007",
@@ -87,7 +96,9 @@
       "responseGroup": "listed",
       "linkOnly": false,
       "reason": "يظهر في البحث القوي فقط بقرار المالك",
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0008",
@@ -102,7 +113,9 @@
       "responseGroup": "listed",
       "linkOnly": false,
       "reason": "يظهر في البحث القوي فقط بقرار المالك",
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0047",
@@ -1182,7 +1195,9 @@
       "responseGroup": "listed",
       "linkOnly": false,
       "reason": "يظهر في البحث القوي فقط بقرار المالك",
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0006",
@@ -1197,7 +1212,9 @@
       "responseGroup": "listed",
       "linkOnly": false,
       "reason": "يظهر في البحث القوي فقط بقرار المالك",
-      "searchOnly": true
+      "searchOnly": true,
+      "exactMatchOnly": true,
+      "directoryHidden": true
     },
     {
       "id": "SVC-0067",

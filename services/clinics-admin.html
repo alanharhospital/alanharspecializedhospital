@@ -20,7 +20,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css?v=10">
-    <link rel="stylesheet" href="../ext/services-search.css?v=3">
+    <link rel="stylesheet" href="../ext/services-search.css?v=4">
+    <link rel="stylesheet" href="../ext/clinical-polish.css?v=1">
     <style>
         /* دليل الخدمات — تنسيق خاص بالصفحات المولّدة */
         .sg-main { padding: 2rem 0 3rem; }
@@ -77,7 +78,7 @@
     <header class="header" id="top">
         <nav class="navbar container" aria-label="القائمة الرئيسية">
             <a href="../index.html" class="brand">
-                <img src="../logo.jpg" alt="شعار مستشفى الأنهار التخصصي" class="brand-logo" width="48" height="48">
+                <img src="../logo.jpg" alt="شعار مستشفى الأنهار التخصصي" class="brand-logo" width="48" height="48" loading="lazy" decoding="async">
                 <span>
                     <strong>مستشفى الأنهار</strong>
                     <small>التخصصي</small>
@@ -136,53 +137,53 @@
 
             <h2 class="sg-cat" id="cat-عيادات-ومعاينات">عيادات ومعاينات</h2>
             <ul class="sg-list">
-                    <li id="svc-0252">استشارة أخصائي القلب موافقة على إجراء العملية الجراحية<span class="sg-id" aria-hidden="true">SVC-0252</span></li>
-                    <li id="svc-0340">استشارة طبية أخصائي داخلي أثناء الدوام<span class="sg-id" aria-hidden="true">SVC-0340</span></li>
-                    <li id="svc-0444">عيادة الباطنية والحميات<span class="sg-id" aria-hidden="true">SVC-0444</span></li>
-                    <li id="svc-0446">عيادة الجراحة العامة والأوعية الدموية<span class="sg-id" aria-hidden="true">SVC-0446</span></li>
-                    <li id="svc-0447">عيادة النساء والولادة<span class="sg-id" aria-hidden="true">SVC-0447</span></li>
-                    <li id="svc-0443">عيادة جراحة العظام والمفاصل<span class="sg-id" aria-hidden="true">SVC-0443</span></li>
-                    <li id="svc-0442">عيادة جراحة المخ والأعصاب والعمود الفقري<span class="sg-id" aria-hidden="true">SVC-0442</span></li>
-                    <li id="svc-0445">عيادة جراحة الوجه والفكين<span class="sg-id" aria-hidden="true">SVC-0445</span></li>
-                    <li id="svc-0441">عيادة طب الأطفال وحديثي الولادة<span class="sg-id" aria-hidden="true">SVC-0441</span></li>
-                    <li id="svc-0168">معاينة عيادة الأسنان<span class="sg-id" aria-hidden="true">SVC-0168</span></li>
-                    <li id="svc-0253">معاينة عيادة الباطنة العامة والقلب<span class="sg-id" aria-hidden="true">SVC-0253</span></li>
-                    <li id="svc-0171">معاينة عيادة الباطنة العامة والكبد<span class="sg-id" aria-hidden="true">SVC-0171</span></li>
-                    <li id="svc-0200">معاينة عيادة الجراحة العامة<span class="sg-id" aria-hidden="true">SVC-0200</span></li>
-                    <li id="svc-0201">معاينة عيادة الجلدية<span class="sg-id" aria-hidden="true">SVC-0201</span></li>
-                    <li id="svc-0254">معاينة عيادة أمراض الكلى<span class="sg-id" aria-hidden="true">SVC-0254</span></li>
-                    <li id="svc-0286">معاينة عيادة جراحة الأنف والأذن والحنجرة<span class="sg-id" aria-hidden="true">SVC-0286</span></li>
-                    <li id="svc-0287">معاينة عيادة جراحة التجميل<span class="sg-id" aria-hidden="true">SVC-0287</span></li>
-                    <li id="svc-0301">معاينة عيادة جراحة العظام والمفاصل<span class="sg-id" aria-hidden="true">SVC-0301</span></li>
-                    <li id="svc-0302">معاينة عيادة جراحة العيون<span class="sg-id" aria-hidden="true">SVC-0302</span></li>
-                    <li id="svc-0303">معاينة عيادة جراحة المخ والأعصاب والعمود الفقري<span class="sg-id" aria-hidden="true">SVC-0303</span></li>
-                    <li id="svc-0304">معاينة عيادة جراحة المسالك البولية والعقم<span class="sg-id" aria-hidden="true">SVC-0304</span></li>
-                    <li id="svc-0333">معاينة عيادة جراحة النساء والولادة<span class="sg-id" aria-hidden="true">SVC-0333</span></li>
-                    <li id="svc-0170">معاينة عيادة طب الأطفال<span class="sg-id" aria-hidden="true">SVC-0170</span></li>
-                    <li id="svc-0334">معاينة عيادة طبيب الطوارئ<span class="sg-id" aria-hidden="true">SVC-0334</span></li>
+                    <li id="svc-0252">استشارة أخصائي القلب موافقة على إجراء العملية الجراحية<span class="sg-id" aria-hidden="true">SVC-0252</span><button type="button" class="sg-share" data-clinical-share="#svc-0252" aria-label="مشاركة استشارة أخصائي القلب موافقة على إجراء العملية الجراحية" hidden>مشاركة</button></li>
+                    <li id="svc-0340">استشارة طبية أخصائي داخلي أثناء الدوام<span class="sg-id" aria-hidden="true">SVC-0340</span><button type="button" class="sg-share" data-clinical-share="#svc-0340" aria-label="مشاركة استشارة طبية أخصائي داخلي أثناء الدوام" hidden>مشاركة</button></li>
+                    <li id="svc-0444">عيادة الباطنية والحميات<span class="sg-id" aria-hidden="true">SVC-0444</span><button type="button" class="sg-share" data-clinical-share="#svc-0444" aria-label="مشاركة عيادة الباطنية والحميات" hidden>مشاركة</button></li>
+                    <li id="svc-0446">عيادة الجراحة العامة والأوعية الدموية<span class="sg-id" aria-hidden="true">SVC-0446</span><button type="button" class="sg-share" data-clinical-share="#svc-0446" aria-label="مشاركة عيادة الجراحة العامة والأوعية الدموية" hidden>مشاركة</button></li>
+                    <li id="svc-0447">عيادة النساء والولادة<span class="sg-id" aria-hidden="true">SVC-0447</span><button type="button" class="sg-share" data-clinical-share="#svc-0447" aria-label="مشاركة عيادة النساء والولادة" hidden>مشاركة</button></li>
+                    <li id="svc-0443">عيادة جراحة العظام والمفاصل<span class="sg-id" aria-hidden="true">SVC-0443</span><button type="button" class="sg-share" data-clinical-share="#svc-0443" aria-label="مشاركة عيادة جراحة العظام والمفاصل" hidden>مشاركة</button></li>
+                    <li id="svc-0442">عيادة جراحة المخ والأعصاب والعمود الفقري<span class="sg-id" aria-hidden="true">SVC-0442</span><button type="button" class="sg-share" data-clinical-share="#svc-0442" aria-label="مشاركة عيادة جراحة المخ والأعصاب والعمود الفقري" hidden>مشاركة</button></li>
+                    <li id="svc-0445">عيادة جراحة الوجه والفكين<span class="sg-id" aria-hidden="true">SVC-0445</span><button type="button" class="sg-share" data-clinical-share="#svc-0445" aria-label="مشاركة عيادة جراحة الوجه والفكين" hidden>مشاركة</button></li>
+                    <li id="svc-0441">عيادة طب الأطفال وحديثي الولادة<span class="sg-id" aria-hidden="true">SVC-0441</span><button type="button" class="sg-share" data-clinical-share="#svc-0441" aria-label="مشاركة عيادة طب الأطفال وحديثي الولادة" hidden>مشاركة</button></li>
+                    <li id="svc-0168">معاينة عيادة الأسنان<span class="sg-id" aria-hidden="true">SVC-0168</span><button type="button" class="sg-share" data-clinical-share="#svc-0168" aria-label="مشاركة معاينة عيادة الأسنان" hidden>مشاركة</button></li>
+                    <li id="svc-0253">معاينة عيادة الباطنة العامة والقلب<span class="sg-id" aria-hidden="true">SVC-0253</span><button type="button" class="sg-share" data-clinical-share="#svc-0253" aria-label="مشاركة معاينة عيادة الباطنة العامة والقلب" hidden>مشاركة</button></li>
+                    <li id="svc-0171">معاينة عيادة الباطنة العامة والكبد<span class="sg-id" aria-hidden="true">SVC-0171</span><button type="button" class="sg-share" data-clinical-share="#svc-0171" aria-label="مشاركة معاينة عيادة الباطنة العامة والكبد" hidden>مشاركة</button></li>
+                    <li id="svc-0200">معاينة عيادة الجراحة العامة<span class="sg-id" aria-hidden="true">SVC-0200</span><button type="button" class="sg-share" data-clinical-share="#svc-0200" aria-label="مشاركة معاينة عيادة الجراحة العامة" hidden>مشاركة</button></li>
+                    <li id="svc-0201">معاينة عيادة الجلدية<span class="sg-id" aria-hidden="true">SVC-0201</span><button type="button" class="sg-share" data-clinical-share="#svc-0201" aria-label="مشاركة معاينة عيادة الجلدية" hidden>مشاركة</button></li>
+                    <li id="svc-0254">معاينة عيادة أمراض الكلى<span class="sg-id" aria-hidden="true">SVC-0254</span><button type="button" class="sg-share" data-clinical-share="#svc-0254" aria-label="مشاركة معاينة عيادة أمراض الكلى" hidden>مشاركة</button></li>
+                    <li id="svc-0286">معاينة عيادة جراحة الأنف والأذن والحنجرة<span class="sg-id" aria-hidden="true">SVC-0286</span><button type="button" class="sg-share" data-clinical-share="#svc-0286" aria-label="مشاركة معاينة عيادة جراحة الأنف والأذن والحنجرة" hidden>مشاركة</button></li>
+                    <li id="svc-0287">معاينة عيادة جراحة التجميل<span class="sg-id" aria-hidden="true">SVC-0287</span><button type="button" class="sg-share" data-clinical-share="#svc-0287" aria-label="مشاركة معاينة عيادة جراحة التجميل" hidden>مشاركة</button></li>
+                    <li id="svc-0301">معاينة عيادة جراحة العظام والمفاصل<span class="sg-id" aria-hidden="true">SVC-0301</span><button type="button" class="sg-share" data-clinical-share="#svc-0301" aria-label="مشاركة معاينة عيادة جراحة العظام والمفاصل" hidden>مشاركة</button></li>
+                    <li id="svc-0302">معاينة عيادة جراحة العيون<span class="sg-id" aria-hidden="true">SVC-0302</span><button type="button" class="sg-share" data-clinical-share="#svc-0302" aria-label="مشاركة معاينة عيادة جراحة العيون" hidden>مشاركة</button></li>
+                    <li id="svc-0303">معاينة عيادة جراحة المخ والأعصاب والعمود الفقري<span class="sg-id" aria-hidden="true">SVC-0303</span><button type="button" class="sg-share" data-clinical-share="#svc-0303" aria-label="مشاركة معاينة عيادة جراحة المخ والأعصاب والعمود الفقري" hidden>مشاركة</button></li>
+                    <li id="svc-0304">معاينة عيادة جراحة المسالك البولية والعقم<span class="sg-id" aria-hidden="true">SVC-0304</span><button type="button" class="sg-share" data-clinical-share="#svc-0304" aria-label="مشاركة معاينة عيادة جراحة المسالك البولية والعقم" hidden>مشاركة</button></li>
+                    <li id="svc-0333">معاينة عيادة جراحة النساء والولادة<span class="sg-id" aria-hidden="true">SVC-0333</span><button type="button" class="sg-share" data-clinical-share="#svc-0333" aria-label="مشاركة معاينة عيادة جراحة النساء والولادة" hidden>مشاركة</button></li>
+                    <li id="svc-0170">معاينة عيادة طب الأطفال<span class="sg-id" aria-hidden="true">SVC-0170</span><button type="button" class="sg-share" data-clinical-share="#svc-0170" aria-label="مشاركة معاينة عيادة طب الأطفال" hidden>مشاركة</button></li>
+                    <li id="svc-0334">معاينة عيادة طبيب الطوارئ<span class="sg-id" aria-hidden="true">SVC-0334</span><button type="button" class="sg-share" data-clinical-share="#svc-0334" aria-label="مشاركة معاينة عيادة طبيب الطوارئ" hidden>مشاركة</button></li>
             </ul>
             <h2 class="sg-cat" id="cat-إدارات-مساندة">إدارات مساندة</h2>
             <ul class="sg-list">
-                    <li id="svc-0465">إدارة التدريب والتأهيل<span class="sg-id" aria-hidden="true">SVC-0465</span></li>
-                    <li id="svc-0455">إدارة التمريض<span class="sg-id" aria-hidden="true">SVC-0455</span></li>
-                    <li id="svc-0468">إدارة التموين الطبي<span class="sg-id" aria-hidden="true">SVC-0468</span></li>
-                    <li id="svc-0461">إدارة الجودة<span class="sg-id" aria-hidden="true">SVC-0461</span></li>
-                    <li id="svc-0472">إدارة الخدمات<span class="sg-id" aria-hidden="true">SVC-0472</span></li>
-                    <li id="svc-0471">إدارة الشؤون القانونية<span class="sg-id" aria-hidden="true">SVC-0471</span></li>
-                    <li id="svc-0473">إدارة الشؤون المالية<span class="sg-id" aria-hidden="true">SVC-0473</span></li>
-                    <li id="svc-0474">إدارة الصيانة الطبية<span class="sg-id" aria-hidden="true">SVC-0474</span></li>
-                    <li id="svc-0469">إدارة المخازن والمشتريات<span class="sg-id" aria-hidden="true">SVC-0469</span></li>
-                    <li id="svc-0470">إدارة الموارد البشرية<span class="sg-id" aria-hidden="true">SVC-0470</span></li>
-                    <li id="svc-0464">إدارة النفايات الطبية<span class="sg-id" aria-hidden="true">SVC-0464</span></li>
-                    <li id="svc-0459">إدارة شؤون المرضى<span class="sg-id" aria-hidden="true">SVC-0459</span></li>
-                    <li id="svc-0467">الاستقبال<span class="sg-id" aria-hidden="true">SVC-0467</span></li>
-                    <li id="svc-0458">الإسعاف والنقل الطبي<span class="sg-id" aria-hidden="true">SVC-0458</span></li>
-                    <li id="svc-0463">الأمن والسلامة<span class="sg-id" aria-hidden="true">SVC-0463</span></li>
-                    <li id="svc-0460">التغذية العلاجية<span class="sg-id" aria-hidden="true">SVC-0460</span></li>
-                    <li id="svc-0456">الرعاية التنفسية<span class="sg-id" aria-hidden="true">SVC-0456</span></li>
-                    <li id="svc-0466">خدمة العملاء<span class="sg-id" aria-hidden="true">SVC-0466</span></li>
-                    <li id="svc-0462">مكافحة العدوى<span class="sg-id" aria-hidden="true">SVC-0462</span></li>
-                    <li id="svc-0457">وحدة التعقيم المركزي<span class="sg-id" aria-hidden="true">SVC-0457</span></li>
+                    <li id="svc-0465">إدارة التدريب والتأهيل<span class="sg-id" aria-hidden="true">SVC-0465</span><button type="button" class="sg-share" data-clinical-share="#svc-0465" aria-label="مشاركة إدارة التدريب والتأهيل" hidden>مشاركة</button></li>
+                    <li id="svc-0455">إدارة التمريض<span class="sg-id" aria-hidden="true">SVC-0455</span><button type="button" class="sg-share" data-clinical-share="#svc-0455" aria-label="مشاركة إدارة التمريض" hidden>مشاركة</button></li>
+                    <li id="svc-0468">إدارة التموين الطبي<span class="sg-id" aria-hidden="true">SVC-0468</span><button type="button" class="sg-share" data-clinical-share="#svc-0468" aria-label="مشاركة إدارة التموين الطبي" hidden>مشاركة</button></li>
+                    <li id="svc-0461">إدارة الجودة<span class="sg-id" aria-hidden="true">SVC-0461</span><button type="button" class="sg-share" data-clinical-share="#svc-0461" aria-label="مشاركة إدارة الجودة" hidden>مشاركة</button></li>
+                    <li id="svc-0472">إدارة الخدمات<span class="sg-id" aria-hidden="true">SVC-0472</span><button type="button" class="sg-share" data-clinical-share="#svc-0472" aria-label="مشاركة إدارة الخدمات" hidden>مشاركة</button></li>
+                    <li id="svc-0471">إدارة الشؤون القانونية<span class="sg-id" aria-hidden="true">SVC-0471</span><button type="button" class="sg-share" data-clinical-share="#svc-0471" aria-label="مشاركة إدارة الشؤون القانونية" hidden>مشاركة</button></li>
+                    <li id="svc-0473">إدارة الشؤون المالية<span class="sg-id" aria-hidden="true">SVC-0473</span><button type="button" class="sg-share" data-clinical-share="#svc-0473" aria-label="مشاركة إدارة الشؤون المالية" hidden>مشاركة</button></li>
+                    <li id="svc-0474">إدارة الصيانة الطبية<span class="sg-id" aria-hidden="true">SVC-0474</span><button type="button" class="sg-share" data-clinical-share="#svc-0474" aria-label="مشاركة إدارة الصيانة الطبية" hidden>مشاركة</button></li>
+                    <li id="svc-0469">إدارة المخازن والمشتريات<span class="sg-id" aria-hidden="true">SVC-0469</span><button type="button" class="sg-share" data-clinical-share="#svc-0469" aria-label="مشاركة إدارة المخازن والمشتريات" hidden>مشاركة</button></li>
+                    <li id="svc-0470">إدارة الموارد البشرية<span class="sg-id" aria-hidden="true">SVC-0470</span><button type="button" class="sg-share" data-clinical-share="#svc-0470" aria-label="مشاركة إدارة الموارد البشرية" hidden>مشاركة</button></li>
+                    <li id="svc-0464">إدارة النفايات الطبية<span class="sg-id" aria-hidden="true">SVC-0464</span><button type="button" class="sg-share" data-clinical-share="#svc-0464" aria-label="مشاركة إدارة النفايات الطبية" hidden>مشاركة</button></li>
+                    <li id="svc-0459">إدارة شؤون المرضى<span class="sg-id" aria-hidden="true">SVC-0459</span><button type="button" class="sg-share" data-clinical-share="#svc-0459" aria-label="مشاركة إدارة شؤون المرضى" hidden>مشاركة</button></li>
+                    <li id="svc-0467">الاستقبال<span class="sg-id" aria-hidden="true">SVC-0467</span><button type="button" class="sg-share" data-clinical-share="#svc-0467" aria-label="مشاركة الاستقبال" hidden>مشاركة</button></li>
+                    <li id="svc-0458">الإسعاف والنقل الطبي<span class="sg-id" aria-hidden="true">SVC-0458</span><button type="button" class="sg-share" data-clinical-share="#svc-0458" aria-label="مشاركة الإسعاف والنقل الطبي" hidden>مشاركة</button></li>
+                    <li id="svc-0463">الأمن والسلامة<span class="sg-id" aria-hidden="true">SVC-0463</span><button type="button" class="sg-share" data-clinical-share="#svc-0463" aria-label="مشاركة الأمن والسلامة" hidden>مشاركة</button></li>
+                    <li id="svc-0460">التغذية العلاجية<span class="sg-id" aria-hidden="true">SVC-0460</span><button type="button" class="sg-share" data-clinical-share="#svc-0460" aria-label="مشاركة التغذية العلاجية" hidden>مشاركة</button></li>
+                    <li id="svc-0456">الرعاية التنفسية<span class="sg-id" aria-hidden="true">SVC-0456</span><button type="button" class="sg-share" data-clinical-share="#svc-0456" aria-label="مشاركة الرعاية التنفسية" hidden>مشاركة</button></li>
+                    <li id="svc-0466">خدمة العملاء<span class="sg-id" aria-hidden="true">SVC-0466</span><button type="button" class="sg-share" data-clinical-share="#svc-0466" aria-label="مشاركة خدمة العملاء" hidden>مشاركة</button></li>
+                    <li id="svc-0462">مكافحة العدوى<span class="sg-id" aria-hidden="true">SVC-0462</span><button type="button" class="sg-share" data-clinical-share="#svc-0462" aria-label="مشاركة مكافحة العدوى" hidden>مشاركة</button></li>
+                    <li id="svc-0457">وحدة التعقيم المركزي<span class="sg-id" aria-hidden="true">SVC-0457</span><button type="button" class="sg-share" data-clinical-share="#svc-0457" aria-label="مشاركة وحدة التعقيم المركزي" hidden>مشاركة</button></li>
             </ul>
 
             <p class="sg-back"><a href="./">العودة إلى دليل الخدمات</a></p>
@@ -208,7 +209,8 @@
             </div>
         </div>
     </footer>
-    <script src="../ext/data/services-index.js?v=3"></script>
-    <script src="../ext/services-search.js?v=3" defer></script>
+    <script src="../ext/data/services-index.js?v=4"></script>
+    <script src="../ext/services-search.js?v=4" defer></script>
+    <script src="../ext/clinical-enhancements.js?v=1" defer></script>
 </body>
 </html>

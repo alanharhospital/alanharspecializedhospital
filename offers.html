@@ -417,6 +417,10 @@ dialog#lightbox button{position:absolute;top:-14px;right:-6px;width:40px;height:
   .fab{padding:13px 15px}
 }
 </style>
+<!-- ENH:START clinical-polish -->
+<link rel="stylesheet" href="ext/clinical-polish.css?v=1">
+<link rel="stylesheet" href="ext/services-search.css?v=4">
+<!-- ENH:END clinical-polish -->
 </head>
 <body>
 
@@ -424,7 +428,7 @@ dialog#lightbox button{position:absolute;top:-14px;right:-6px;width:40px;height:
 <header class="header" id="top">
   <nav class="navbar container" aria-label="التنقل الرئيسي">
     <a href="index.html" class="brand" title="الصفحة الرئيسية - مستشفى الأنهار التخصصي بالحديدة">
-      <img src="logo.jpg" alt="شعار مستشفى الأنهار التخصصي بالحديدة" width="48" height="48">
+      <img src="logo.jpg" alt="شعار مستشفى الأنهار التخصصي بالحديدة" width="48" height="48" loading="lazy" decoding="async">
       <span><strong>مستشفى الأنهار التخصصي</strong><small>أكبر صرح طبي في محافظة الحديدة</small></span>
     </a>
     <button class="menu-toggle" id="menuToggle" aria-label="قائمة التصفح" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -495,13 +499,13 @@ dialog#lightbox button{position:absolute;top:-14px;right:-6px;width:40px;height:
     <!-- 1. الجراحة -->
     <article class="offer reveal" id="offer-surgery" data-cat="surgery" data-offer data-start="2026-10-20" data-end="2026-12-30">
       <button type="button" class="poster" data-zoom="mener.png" data-alt="إعلان باقة الجراحات مع الدكتور منير الوصابي - 130,000 ريال" aria-label="تكبير إعلان باقة الجراحات">
-        <img src="mener.png" alt="إعلان باقة الجراحات مع الدكتور منير الوصابي: الزائدة والفتق والبواسير والشرخ الشرجي بسعر 130,000 ريال - مستشفى الأنهار التخصصي بالحديدة" loading="lazy" onerror="this.src='logo.jpg'">
+        <img src="mener.png" alt="إعلان باقة الجراحات مع الدكتور منير الوصابي: الزائدة والفتق والبواسير والشرخ الشرجي بسعر 130,000 ريال - مستشفى الأنهار التخصصي بالحديدة" loading="lazy" onerror="this.src='logo.jpg'" decoding="async">
         <span class="zoom">🔍 اضغط للتكبير</span>
       </button>
       <div>
         <div class="offer-top"><span class="cat-tag">🩺 الجراحة العامة</span><span class="status" data-state="active">ساري حتى 30 ديسمبر 2026</span></div>
         <h3>باقة عمليات الزائدة والفتق والبواسير والشرخ الشرجي</h3>
-        <div class="doctor"><img src="menerperson.png" alt="د. منير الوصابي" width="46" height="46" loading="lazy" onerror="this.style.display='none'"><span>د. منير الوصابي - استشاري الجراحة العامة والأوعية الدموية</span></div>
+        <div class="doctor"><img src="menerperson.png" alt="د. منير الوصابي" width="46" height="46" loading="lazy" onerror="this.style.display='none'" decoding="async"><span>د. منير الوصابي - استشاري الجراحة العامة والأوعية الدموية</span></div>
         <div class="price-box"><b>130,000</b><span>ريال يمني - باقة شاملة + معاينة مجانية</span></div>
         <ul class="checks">
           <li>إجراء العملية الجراحية</li>
@@ -532,7 +536,7 @@ dialog#lightbox button{position:absolute;top:-14px;right:-6px;width:40px;height:
       <!-- 2. النساء والولادة -->
     <article class="offer reveal" id="offer-women" data-cat="women" data-offer data-end="2026-12-31">
       <button type="button" class="poster" data-zoom="women.jpg?v=2" data-alt="إعلان عروض عيادة النساء والولادة مع الدكتورة رشا فارع - ساري حتى نهاية 2026" aria-label="تكبير إعلان النساء والولادة">
-        <img src="women.jpg?v=2" alt="إعلان عرض عيادة النساء والولادة مع الدكتورة رشا فارع - خصم 40% على الولادة حتى نهاية 2026 - مستشفى الأنهار التخصصي بالحديدة" loading="lazy" onerror="this.src='logo.jpg'">
+        <img src="women.jpg?v=2" alt="إعلان عرض عيادة النساء والولادة مع الدكتورة رشا فارع - خصم 40% على الولادة حتى نهاية 2026 - مستشفى الأنهار التخصصي بالحديدة" loading="lazy" onerror="this.src='logo.jpg'" decoding="async">
         <span class="zoom">🔍 اضغط للتكبير</span>
       </button>
       <div>
@@ -566,7 +570,7 @@ dialog#lightbox button{position:absolute;top:-14px;right:-6px;width:40px;height:
     <!-- 3. الأسنان -->
     <article class="offer reveal" id="offer-teeth" data-cat="teeth" data-offer data-end="2026-12-31">
       <button type="button" class="poster" data-zoom="teeth.jpg" data-alt="إعلان عرض عيادة الأسنان مع الدكتورة هنادي الخزرجي" aria-label="تكبير إعلان الأسنان">
-        <img src="teeth.jpg" alt="إعلان عرض عيادة الأسنان مع الدكتورة هنادي الخزرجي - خصم 30% على جميع الخدمات - مستشفى الأنهار التخصصي بالحديدة" loading="lazy" onerror="this.src='logo.jpg'">
+        <img src="teeth.jpg" alt="إعلان عرض عيادة الأسنان مع الدكتورة هنادي الخزرجي - خصم 30% على جميع الخدمات - مستشفى الأنهار التخصصي بالحديدة" loading="lazy" onerror="this.src='logo.jpg'" decoding="async">
         <span class="zoom">🔍 اضغط للتكبير</span>
       </button>
       <div>
@@ -637,7 +641,7 @@ dialog#lightbox button{position:absolute;top:-14px;right:-6px;width:40px;height:
 
       <figure class="res-fig">
         <button type="button" data-zoom="result.jpg" data-alt="نتائج المخيم الطبي المجاني الرابع" aria-label="تكبير صورة النتائج">
-          <img src="result.jpg" alt="نتائج المخيم الطبي المجاني الرابع: 381 مستفيداً و1271 خدمة مجانية - مستشفى الأنهار التخصصي بالحديدة" loading="lazy" onerror="this.src='logo.jpg'">
+          <img src="result.jpg" alt="نتائج المخيم الطبي المجاني الرابع: 381 مستفيداً و1271 خدمة مجانية - مستشفى الأنهار التخصصي بالحديدة" loading="lazy" onerror="this.src='logo.jpg'" decoding="async">
         </button>
         <figcaption>نتائج المخيم الطبي المجاني الرابع (اضغط على الصورة لتكبيرها)</figcaption>
       </figure>
@@ -770,7 +774,7 @@ dialog#lightbox button{position:absolute;top:-14px;right:-6px;width:40px;height:
   <div class="container">
     <div class="footer-content">
       <div class="footer-brand">
-        <img src="logo.jpg" alt="شعار المستشفى" loading="lazy">
+        <img src="logo.jpg" alt="شعار المستشفى" loading="lazy" decoding="async">
         <h3>مستشفى الأنهار التخصصي</h3>
         <p>أكبر صرح طبي في محافظة الحديدة — صحتكم مسؤوليتنا ❤️</p>
       </div>
@@ -824,7 +828,7 @@ dialog#lightbox button{position:absolute;top:-14px;right:-6px;width:40px;height:
 
 <dialog id="lightbox" aria-label="عرض الصورة بحجم كبير">
   <button type="button" id="lbClose" aria-label="إغلاق">×</button>
-  <img id="lbImg" src="" alt="">
+  <img id="lbImg" src="" alt="" loading="lazy" decoding="async">
 </dialog>
 
 <script>
@@ -929,5 +933,10 @@ dialog#lightbox button{position:absolute;top:-14px;right:-6px;width:40px;height:
 <!-- ENH:START medical-disclaimer -->
 <script src="ext/disclaimer/disclaimer.js?v=1" defer></script>
 <!-- ENH:END medical-disclaimer -->
+<!-- ENH:START clinical-enhancements -->
+<script src="ext/data/services-index.js?v=4"></script>
+<script src="ext/services-search.js?v=4" defer></script>
+<script src="ext/clinical-enhancements.js?v=1" defer></script>
+<!-- ENH:END clinical-enhancements -->
 </body>
 </html>

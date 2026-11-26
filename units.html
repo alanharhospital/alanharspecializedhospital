@@ -14,6 +14,10 @@
     <link rel="icon" type="image/jpeg" href="logo.jpg">
     <!-- استدعاء ملف التنسيقات الموحد -->
     <link rel="stylesheet" href="style.css?v=10">
+<!-- ENH:START clinical-polish -->
+<link rel="stylesheet" href="ext/clinical-polish.css?v=1">
+<link rel="stylesheet" href="ext/services-search.css?v=4">
+<!-- ENH:END clinical-polish -->
 </head>
 <body>
 
@@ -21,7 +25,7 @@
     <header class="header" id="top">
         <nav class="navbar container" aria-label="القائمة الرئيسية">
             <a href="index.html" class="brand">
-                <img src="logo.jpg" alt="شعار مستشفى الأنهار التخصصي" class="brand-logo">
+                <img src="logo.jpg" alt="شعار مستشفى الأنهار التخصصي" class="brand-logo" loading="lazy" decoding="async">
                 <span>
                     <strong>مستشفى الأنهار</strong>
                     <small>التخصصي</small>
@@ -182,7 +186,7 @@
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-brand">
-                <img src="logo.jpg" alt="شعار المستشفى" class="footer-logo">
+                <img src="logo.jpg" alt="شعار المستشفى" class="footer-logo" loading="lazy" decoding="async">
                 <div>
                     <h3>مستشفى الأنهار التخصصي</h3>
                     <p>صحتكم مسؤوليتنا ❤️</p>
@@ -208,5 +212,10 @@
 <!-- ENH:START medical-disclaimer -->
 <script src="ext/disclaimer/disclaimer.js?v=1" defer></script>
 <!-- ENH:END medical-disclaimer -->
+<!-- ENH:START clinical-enhancements -->
+<script src="ext/data/services-index.js?v=4"></script>
+<script src="ext/services-search.js?v=4" defer></script>
+<script src="ext/clinical-enhancements.js?v=1" defer></script>
+<!-- ENH:END clinical-enhancements -->
 </body>
 </html>

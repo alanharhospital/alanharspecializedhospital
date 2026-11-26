@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * test-search.js — 36 حالة اختبار لمحرّك بحث دليل الخدمات
+ * test-search.js — 37 حالة اختبار لمحرّك بحث دليل الخدمات
  * التشغيل: node ext/tools/test-search.js
  * يعتمد على: ext/tools/build-services.js (لازم تشغيله أولًا)
  */
@@ -220,9 +220,9 @@ const describe = q => { const r=run(q); return `${r.type}: ${foundItems(r).map(i
 check(28, '«سرير» ← لا searchOnly', () => ({ok:noOnly('سرير'),note:describe('سرير')}));
 check(29, '«جهاز» و«أجهزة» ← لا searchOnly', () => ({ok:['جهاز','أجهزة'].every(noOnly),note:['جهاز','أجهزة'].map(describe).join('؛ ')}));
 check(30, '«حاضنة» ← لا searchOnly', () => ({ok:noOnly('حاضنة'),note:describe('حاضنة')}));
-check(31, '«عناية مركزة» ← فقط 0356 و0357، بلا 0001 أو 0002', () => {
+check(31, '«عناية مركزة» ← 0356 و0357 وخدمات عادية فقط، بلا 0001 أو 0002', () => {
   const r=run('عناية مركزة'), ids=foundItems(r).map(i=>i.id).sort();
-  return {ok:ids.join(',')==='SVC-0356,SVC-0357',note:describe('عناية مركزة')};
+  return {ok:ids.includes('SVC-0356')&&ids.includes('SVC-0357')&&foundItems(r).every(i=>!i.searchOnly),note:describe('عناية مركزة')};
 });
 check(32, 'الاسم الكامل مع ICU ← 0001 وlisted', () => {
   const r=run('أكثر من 13 سرير عناية مركزة للكبار (ICU)'), rep=engine.buildReply(r,data);
@@ -241,12 +241,23 @@ check(36, '«أكثر من 12 جهاز تنفس صناعي» و«أكثر من 3
   const boundary = q => engine.search(q,{items:boundaryItems,searchOnlyMatch:config});
   const stricter=engine.search('تفاح موز عنب',{items:boundaryItems,searchOnlyMatch:{...config,minCoverage:0.8}});
   const alias=engine.search('خفي',{items:boundaryItems,searchOnlyMatch:config,synonyms:[{phrase:'خفي',tier:'specific',approved:true,targetId:'BOUNDARY'}]});
-  return {ok:config.minCoverage===0.75&&config.minWords===3&&foundItems(r1).every(x=>!x.searchOnly)&&r2.type==='strong'&&r2.best.id==='SVC-0008'&&!r2.options.length&&!foundItems(restrictedResult).some(x=>x.searchOnly)&&tie.best?.id==='TEST-A'&&!tie.options.length&&boundary('تفاح موز عنب').best?.id==='BOUNDARY'&&!boundary('تفاح موز').best&&!stricter.best&&!foundItems(alias).some(x=>x.searchOnly),note:q1+' ← '+describe(q1)+'؛ '+q2+' ← '+describe(q2)};
+  return {ok:config.minCoverage===0.75&&config.minWords===3&&r1.type==='strong'&&r1.best.id==='SVC-0007'&&r2.type==='strong'&&r2.best.id==='SVC-0008'&&!r2.options.length&&!foundItems(restrictedResult).some(x=>x.searchOnly)&&tie.best?.id==='TEST-A'&&!tie.options.length&&boundary('تفاح موز عنب').best?.id==='BOUNDARY'&&!boundary('تفاح موز').best&&!stricter.best&&!foundItems(alias).some(x=>x.searchOnly),note:q1+' ← '+describe(q1)+'؛ '+q2+' ← '+describe(q2)};
+});
+
+check(37, 'التجهيزات: استعلامات عامة لا تظهرها، و«16 حاضنة أطفال» تطابق 0003', () => {
+  const decisions=JSON.parse(fs.readFileSync(path.join(DATA,'catalog-decisions.json'),'utf8'));
+  const only=index.items.filter(x=>x.searchOnly);
+  const r=run('16 حاضنة أطفال');
+  const flags=only.length===8&&only.every(i=>i.exactMatchOnly&&i.directoryHidden&&decisions.decisions.some(d=>d.id===i.id&&d.exactMatchOnly&&d.directoryHidden));
+  const broad=['سرير','جهاز','أجهزة','حواضن','رقود'].every(noOnly);
+  const reverse=noOnly('أطفال حاضنة 16');
+  const incomplete=noOnly('16 أطفال حاضنة');
+  return {ok:flags&&broad&&reverse&&incomplete&&r.type==='strong'&&r.best.id==='SVC-0003'&&!r.options.length,note:`flags=${flags}, broad=${broad}, reversed=${reverse}, 16 حاضنة أطفال=${r.best?.id}`};
 });
 
 /* -------------------------------- التقرير -------------------------------- */
 
-console.log('\n  اختبار محرّك البحث — 36 حالة');
+console.log('\n  اختبار محرّك البحث — 37 حالة');
 console.log('  ' + '-'.repeat(76));
 let pass = 0;
 for (const r of results) {

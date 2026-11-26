@@ -76,6 +76,14 @@
     return Array.from(seen);
   }
 
+  function phraseTokens(text) {
+    return norm(text).split(' ').filter(function (word) {
+      return word && !SEARCH_ONLY_STOPWORDS.has(word) && !/^[a-z]+$/.test(word);
+    }).map(stripPrefix).filter(function (word) {
+      return (word.length >= 2 || /^\d+$/.test(word)) && !SEARCH_ONLY_STOPWORDS.has(word);
+    });
+  }
+
   function searchOnlyBest(raw, items, config) {
     if (!config || !Number.isFinite(config.minCoverage) || config.minCoverage <= 0 || config.minCoverage > 1 || !Number.isInteger(config.minWords) || config.minWords < 1) return null;
     var query = searchOnlyTokens(raw);
@@ -83,6 +91,19 @@
     var querySet = new Set(query), best = null, bestCoverage = -1;
     items.forEach(function (item) {
       if (!item.searchOnly) return;
+      if (item.exactMatchOnly) {
+        var phrase = phraseTokens(raw), name = phraseTokens(item.name);
+        if (phrase.length < Math.max(3, config.minWords, item.exactMatchMinWords || 0) || phrase.length > name.length) return;
+        var numbers = name.filter(function (word) { return /^\d+$/.test(word); });
+        if (numbers.length && !numbers.every(function (number) { return phrase.indexOf(number) !== -1; })) return;
+        var contiguous = false;
+        for (var start = 0; start <= name.length - phrase.length; start++) {
+          if (phrase.every(function (word, n) { return word === name[start + n]; })) { contiguous = true; break; }
+        }
+        var phraseCoverage = phrase.length / name.length;
+        if (contiguous && phraseCoverage > bestCoverage) { best = item; bestCoverage = phraseCoverage; }
+        return;
+      }
       var words = searchOnlyTokens(item.name);
       if (!words.length) return;
       var matched = words.filter(function (word) { return querySet.has(word); }).length;
@@ -337,6 +358,7 @@
     guide: new URL('../services/', scriptBase).href,
   };
   var cache = null;
+  var pending = null;
   function fromBundle(bundle) {
     if (!bundle || !bundle.index || !Array.isArray(bundle.index.items) || !bundle.responses || !bundle.contact) throw new Error('بيانات بحث غير صالحة');
     return { items: bundle.index.items, synonyms: bundle.index.synonyms || [], excludedTerms: bundle.index.excludedTerms || [], blockedQueries: bundle.index.blockedQueries || [], searchOnlyMatch: bundle.index.searchOnlyMatch, responses: bundle.responses, contact: bundle.contact };
@@ -353,8 +375,10 @@
       try { cache = fromBundle(global.ServicesSearchData); return Promise.resolve(cache); }
       catch (e) { /* try fetch fallback */ }
     }
-    return Promise.all([loadJSON(DATA_URLS.index), loadJSON(DATA_URLS.responses), loadJSON(DATA_URLS.contact)])
-      .then(function (res) { cache = fromBundle({index:res[0], responses:res[1], contact:res[2]}); return cache; });
+    if (!pending) pending = Promise.all([loadJSON(DATA_URLS.index), loadJSON(DATA_URLS.responses), loadJSON(DATA_URLS.contact)])
+      .then(function (res) { cache = fromBundle({index:res[0], responses:res[1], contact:res[2]}); return cache; })
+      .catch(function (error) { pending = null; throw error; });
+    return pending;
   }
 
   function el(tag, cls, text) {
@@ -482,7 +506,14 @@
         panel.appendChild(p);
       }
       var bestLink = resultLink(reply.best);
-      if (bestLink) panel.appendChild(bestLink);
+      if (bestLink) {
+        panel.appendChild(bestLink);
+        var share = el('button', 'ss-result-link', 'مشاركة');
+        share.type = 'button';
+        share.setAttribute('data-clinical-share', bestLink.href);
+        share.setAttribute('aria-label', 'مشاركة ' + reply.best.name);
+        panel.appendChild(share);
+      }
 
       if (reply.options.length) {
         var list = el('ul', 'ss-options');
@@ -573,5 +604,6 @@
     }
   }
 
+  Engine.init = init;
   document.querySelectorAll('[data-services-search]').forEach(init);
 })(typeof window !== 'undefined' ? window : globalThis);

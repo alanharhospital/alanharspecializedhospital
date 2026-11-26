@@ -15,10 +15,10 @@ function apply(items, config) {
   for (const d of config.decisions) {
     const item = byId.get(d.id);
     if (!item || item.name !== d.name) throw new Error(`قرار لا يطابق المصدر: ${d.id} ${d.name}`);
-    for (const key of ['publish', 'status', 'responseGroup', 'category', 'linkOnly']) {
+    for (const key of ['publish', 'status', 'responseGroup', 'category', 'linkOnly', 'exactMatchMinWords']) {
       if (d[key] !== undefined && d[key] !== null) item[key] = d[key];
     }
-    for (const key of ['internalOnly', 'feeExcluded', 'excluded', 'hasNumber', 'searchOnly']) {
+    for (const key of ['internalOnly', 'feeExcluded', 'excluded', 'hasNumber', 'searchOnly', 'exactMatchOnly', 'directoryHidden']) {
       if (d[key] === true) item[key] = true;
       else delete item[key];
     }
