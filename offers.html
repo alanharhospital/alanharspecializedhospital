@@ -421,8 +421,14 @@ dialog#lightbox button{position:absolute;top:-14px;right:-6px;width:40px;height:
 <link rel="stylesheet" href="ext/clinical-polish.css?v=1">
 <link rel="stylesheet" href="ext/services-search.css?v=4">
 <!-- ENH:END clinical-polish -->
+<!-- ENH:START fixes-6b -->
+<link rel="stylesheet" href="ext/fixes.css?v=1">
+<!-- ENH:END fixes-6b -->
 </head>
 <body>
+<!-- ENH:START fixes-6b-skip -->
+<a class="enh-skip-link" href="#enh-main">تخطي إلى المحتوى</a>
+<!-- ENH:END fixes-6b-skip -->
 
 <!-- القائمة العلوية -->
 <header class="header" id="top">
@@ -446,7 +452,7 @@ dialog#lightbox button{position:absolute;top:-14px;right:-6px;width:40px;height:
   </nav>
 </header>
 
-<main>
+<main id="enh-main" tabindex="-1">
 <!-- الهيرو -->
 <section class="hero">
   <div class="container">

@@ -195,13 +195,14 @@ ${lis}
     </header>`;
 }
 
-function footer() {
+function footer(isIndex = false) {
+  const footerHeading = isIndex ? `<h2 class="enh-old-h3">${HOSPITAL}</h2>` : `<h3>${HOSPITAL}</h3>`;
   return `    <footer class="footer">
         <div class="container footer-content">
             <div class="footer-brand">
                 <img src="../logo.jpg" alt="شعار المستشفى" class="footer-logo" width="64" height="64" loading="lazy" decoding="async">
                 <div>
-                    <h3>${HOSPITAL}</h3>
+                    ${footerHeading}
                     <p>صحتكم مسؤوليتنا ❤️</p>
                 </div>
             </div>
@@ -212,6 +213,9 @@ function footer() {
                 <p>© 2026 ${HOSPITAL} - جميع الحقوق محفوظة.</p>
                 <p class="designer-credit">Designed by Dr. Ammar Al-Qahwi (د. عمار القحوي)</p>
                 <a href="#top" class="back-to-top">العودة للأعلى ↑</a>
+                <!-- ENH:START fixes-6b-guide -->
+                <a href="./">دليل الفحوصات والعمليات والأشعة</a>
+                <!-- ENH:END fixes-6b-guide -->
             </div>
         </div>
     </footer>`;
@@ -281,6 +285,9 @@ ${GUIDE_CSS}
     <script type="application/ld+json">
 ${jsonLd(crumbs || [{ name: 'الرئيسية', url: SITE + '/' }, { name: 'دليل الخدمات', url: SITE + '/services/' }])}
     </script>
+    <!-- ENH:START fixes-6b -->
+    <link rel="stylesheet" href="../ext/fixes.css?v=1">
+    <!-- ENH:END fixes-6b -->
 </head>`;
 }
 
@@ -299,13 +306,18 @@ function buildCategoryPage(page) {
     .map((cat) => ({ cat, list: sortAr(items.filter((i) => i.category === cat)) }))
     .filter((g) => g.list.length);
 
+  // لكل حرف أول ظهور واحد: عنوان داخل عنصر الخدمة نفسه يحفظ نص الاسم ومرساه الأصلي.
+  const placedLetters = new Set();
   const sections = byCat
     .map((g) => {
       const lis = g.list
-        .map(
-          (it) =>
-            `                    <li id="${it.id.toLowerCase()}">${esc(it.name)}<span class="sg-id" aria-hidden="true">${it.id}</span><button type="button" class="sg-share" data-clinical-share="#${it.id.toLowerCase()}" aria-label="مشاركة ${esc(it.name)}" hidden>مشاركة</button></li>`
-        )
+        .map((it) => {
+          const letter = firstLetter(it.name);
+          const first = !placedLetters.has(letter);
+          placedLetters.add(letter);
+          const name = first ? `<h3 class="enh-letter-heading" id="h-${letter}">${esc(it.name)}</h3>` : esc(it.name);
+          return `                    <li id="${it.id.toLowerCase()}">${name}<span class="sg-id" aria-hidden="true">${it.id}</span><button type="button" class="sg-share" data-clinical-share="#${it.id.toLowerCase()}" aria-label="مشاركة ${esc(it.name)}" hidden>مشاركة</button></li>`;
+        })
         .join('\n');
       return `            <h2 class="sg-cat" id="cat-${g.cat.replace(/\s+/g, '-')}">${esc(g.cat)}</h2>
             <ul class="sg-list">
@@ -332,9 +344,12 @@ ${lis}
     ],
   })}
 <body>
+    <!-- ENH:START fixes-6b-skip -->
+    <a class="enh-skip-link" href="#enh-main">تخطي إلى المحتوى</a>
+    <!-- ENH:END fixes-6b-skip -->
 ${header(page.slug)}
 
-    <main class="sg-main">
+    <main class="sg-main" id="enh-main" tabindex="-1">
         <div class="container">
             <nav aria-label="مسار التصفح" class="sg-crumbs"><a href="../index.html">الرئيسية</a> ← <a href="./">دليل الخدمات</a> ← <span>${esc(page.h1)}</span></nav>
             <h1 class="sg-h1">دليل ${esc(page.h1)} في ${HOSPITAL}</h1>
@@ -409,9 +424,12 @@ function buildIndexPage(stats) {
     extraCss: '    <link rel="stylesheet" href="../ext/services-search.css?v=4">',
   })}
 <body>
+    <!-- ENH:START fixes-6b-skip -->
+    <a class="enh-skip-link" href="#enh-main">تخطي إلى المحتوى</a>
+    <!-- ENH:END fixes-6b-skip -->
 ${header('index')}
 
-    <main class="sg-main">
+    <main class="sg-main" id="enh-main" tabindex="-1">
         <div class="container">
             <nav aria-label="مسار التصفح" class="sg-crumbs"><a href="../index.html">الرئيسية</a> ← <span>دليل الخدمات</span></nav>
             <h1 class="sg-h1">دليل الخدمات الطبية في ${HOSPITAL}</h1>
@@ -429,7 +447,7 @@ ${cards}
         </div>
     </main>
 
-${footer()}
+${footer(true)}
     <script src="../ext/data/services-index.js?v=4"></script>
     <script src="../ext/services-search.js?v=4" defer></script>
     <script src="../ext/clinical-enhancements.js?v=1" defer></script>

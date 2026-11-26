@@ -1,0 +1,398 @@
+{
+  "index.html": {
+    "before": {
+      "words": 3850,
+      "lines": 2320,
+      "links": 73,
+      "images": 15,
+      "services": 0
+    },
+    "after": {
+      "words": 3853,
+      "lines": 2335,
+      "links": 75,
+      "images": 15,
+      "services": 0
+    },
+    "missing": {
+      "words": [],
+      "links": [],
+      "images": [],
+      "services": {}
+    }
+  },
+  "doctors.html": {
+    "before": {
+      "words": 448,
+      "lines": 1591,
+      "links": 23,
+      "images": 10,
+      "services": 0
+    },
+    "after": {
+      "words": 451,
+      "lines": 1597,
+      "links": 24,
+      "images": 10,
+      "services": 0
+    },
+    "missing": {
+      "words": [],
+      "links": [],
+      "images": [],
+      "services": {}
+    }
+  },
+  "offers.html": {
+    "before": {
+      "words": 939,
+      "lines": 942,
+      "links": 50,
+      "images": 8,
+      "services": 0
+    },
+    "after": {
+      "words": 942,
+      "lines": 948,
+      "links": 51,
+      "images": 8,
+      "services": 0
+    },
+    "missing": {
+      "words": [],
+      "links": [],
+      "images": [],
+      "services": {}
+    }
+  },
+  "clinics.html": {
+    "before": {
+      "words": 198,
+      "lines": 163,
+      "links": 15,
+      "images": 2,
+      "services": 0
+    },
+    "after": {
+      "words": 201,
+      "lines": 173,
+      "links": 16,
+      "images": 2,
+      "services": 0
+    },
+    "missing": {
+      "words": [],
+      "links": [],
+      "images": [],
+      "services": {}
+    }
+  },
+  "units.html": {
+    "before": {
+      "words": 216,
+      "lines": 221,
+      "links": 17,
+      "images": 2,
+      "services": 0
+    },
+    "after": {
+      "words": 219,
+      "lines": 231,
+      "links": 18,
+      "images": 2,
+      "services": 0
+    },
+    "missing": {
+      "words": [],
+      "links": [],
+      "images": [],
+      "services": {}
+    }
+  },
+  "ancillary.html": {
+    "before": {
+      "words": 560,
+      "lines": 830,
+      "links": 17,
+      "images": 2,
+      "services": 0
+    },
+    "after": {
+      "words": 563,
+      "lines": 840,
+      "links": 18,
+      "images": 2,
+      "services": 0
+    },
+    "missing": {
+      "words": [],
+      "links": [],
+      "images": [],
+      "services": {}
+    }
+  },
+  "pr.html": {
+    "before": {
+      "words": 704,
+      "lines": 2586,
+      "links": 36,
+      "images": 3,
+      "services": 0
+    },
+    "after": {
+      "words": 707,
+      "lines": 2592,
+      "links": 37,
+      "images": 3,
+      "services": 0
+    },
+    "missing": {
+      "words": [],
+      "links": [],
+      "images": [],
+      "services": {}
+    }
+  },
+  "news.html": {
+    "before": {
+      "words": 154,
+      "lines": 131,
+      "links": 15,
+      "images": 2,
+      "services": 0
+    },
+    "after": {
+      "words": 157,
+      "lines": 141,
+      "links": 16,
+      "images": 2,
+      "services": 0
+    },
+    "missing": {
+      "words": [],
+      "links": [],
+      "images": [],
+      "services": {}
+    }
+  },
+  "404.html": {
+    "before": {
+      "words": 20,
+      "lines": 37,
+      "links": 3,
+      "images": 0,
+      "services": 0
+    },
+    "after": {
+      "words": 23,
+      "lines": 47,
+      "links": 4,
+      "images": 0,
+      "services": 0
+    },
+    "missing": {
+      "words": [],
+      "links": [],
+      "images": [],
+      "services": {}
+    }
+  },
+  "services/index.html": {
+    "before": {
+      "words": 128,
+      "lines": 163,
+      "links": 24,
+      "images": 2,
+      "services": 0
+    },
+    "after": {
+      "words": 135,
+      "lines": 172,
+      "links": 26,
+      "images": 2,
+      "services": 0
+    },
+    "missing": {
+      "words": [],
+      "links": [],
+      "images": [],
+      "services": {}
+    }
+  },
+  "services/diagnostics.html": {
+    "before": {
+      "words": 344,
+      "lines": 208,
+      "links": 25,
+      "images": 2,
+      "services": 30
+    },
+    "after": {
+      "words": 351,
+      "lines": 217,
+      "links": 27,
+      "images": 2,
+      "services": 30
+    },
+    "missing": {
+      "words": [],
+      "links": [],
+      "images": [],
+      "services": {}
+    }
+  },
+  "services/surgery.html": {
+    "before": {
+      "words": 701,
+      "lines": 274,
+      "links": 31,
+      "images": 2,
+      "services": 84
+    },
+    "after": {
+      "words": 708,
+      "lines": 283,
+      "links": 33,
+      "images": 2,
+      "services": 84
+    },
+    "missing": {
+      "words": [],
+      "links": [],
+      "images": [],
+      "services": {}
+    }
+  },
+  "services/dental.html": {
+    "before": {
+      "words": 821,
+      "lines": 273,
+      "links": 30,
+      "images": 2,
+      "services": 96
+    },
+    "after": {
+      "words": 828,
+      "lines": 282,
+      "links": 32,
+      "images": 2,
+      "services": 96
+    },
+    "missing": {
+      "words": [],
+      "links": [],
+      "images": [],
+      "services": {}
+    }
+  },
+  "services/women.html": {
+    "before": {
+      "words": 286,
+      "lines": 199,
+      "links": 27,
+      "images": 2,
+      "services": 25
+    },
+    "after": {
+      "words": 293,
+      "lines": 208,
+      "links": 29,
+      "images": 2,
+      "services": 25
+    },
+    "missing": {
+      "words": [],
+      "links": [],
+      "images": [],
+      "services": {}
+    }
+  },
+  "services/ent.html": {
+    "before": {
+      "words": 364,
+      "lines": 205,
+      "links": 28,
+      "images": 2,
+      "services": 30
+    },
+    "after": {
+      "words": 371,
+      "lines": 214,
+      "links": 30,
+      "images": 2,
+      "services": 30
+    },
+    "missing": {
+      "words": [],
+      "links": [],
+      "images": [],
+      "services": {}
+    }
+  },
+  "services/physio.html": {
+    "before": {
+      "words": 386,
+      "lines": 204,
+      "links": 20,
+      "images": 2,
+      "services": 37
+    },
+    "after": {
+      "words": 393,
+      "lines": 213,
+      "links": 22,
+      "images": 2,
+      "services": 37
+    },
+    "missing": {
+      "words": [],
+      "links": [],
+      "images": [],
+      "services": {}
+    }
+  },
+  "services/emergency.html": {
+    "before": {
+      "words": 610,
+      "lines": 246,
+      "links": 29,
+      "images": 2,
+      "services": 64
+    },
+    "after": {
+      "words": 617,
+      "lines": 255,
+      "links": 31,
+      "images": 2,
+      "services": 64
+    },
+    "missing": {
+      "words": [],
+      "links": [],
+      "images": [],
+      "services": {}
+    }
+  },
+  "services/clinics-admin.html": {
+    "before": {
+      "words": 401,
+      "lines": 216,
+      "links": 22,
+      "images": 2,
+      "services": 44
+    },
+    "after": {
+      "words": 408,
+      "lines": 225,
+      "links": 24,
+      "images": 2,
+      "services": 44
+    },
+    "missing": {
+      "words": [],
+      "links": [],
+      "images": [],
+      "services": {}
+    }
+  }
+}

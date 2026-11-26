@@ -73,8 +73,14 @@
   ]
 }
     </script>
+    <!-- ENH:START fixes-6b -->
+    <link rel="stylesheet" href="../ext/fixes.css?v=1">
+    <!-- ENH:END fixes-6b -->
 </head>
 <body>
+    <!-- ENH:START fixes-6b-skip -->
+    <a class="enh-skip-link" href="#enh-main">تخطي إلى المحتوى</a>
+    <!-- ENH:END fixes-6b-skip -->
     <header class="header" id="top">
         <nav class="navbar container" aria-label="القائمة الرئيسية">
             <a href="../index.html" class="brand">
@@ -103,7 +109,7 @@
         </nav>
     </header>
 
-    <main class="sg-main">
+    <main class="sg-main" id="enh-main" tabindex="-1">
         <div class="container">
             <nav aria-label="مسار التصفح" class="sg-crumbs"><a href="../index.html">الرئيسية</a> ← <a href="./">دليل الخدمات</a> ← <span>علاج طبيعي</span></nav>
             <h1 class="sg-h1">دليل علاج طبيعي في مستشفى الأنهار التخصصي</h1>
@@ -135,11 +141,11 @@
 
             <h2 class="sg-cat" id="cat-علاج-طبيعي">علاج طبيعي</h2>
             <ul class="sg-list">
-                    <li id="svc-0239">اشتراك تخسيس (شهري، نصف شهري، ربع شهري)<span class="sg-id" aria-hidden="true">SVC-0239</span><button type="button" class="sg-share" data-clinical-share="#svc-0239" aria-label="مشاركة اشتراك تخسيس (شهري، نصف شهري، ربع شهري)" hidden>مشاركة</button></li>
-                    <li id="svc-0231">تجمد الكتف أو تجمد المفصل<span class="sg-id" aria-hidden="true">SVC-0231</span><button type="button" class="sg-share" data-clinical-share="#svc-0231" aria-label="مشاركة تجمد الكتف أو تجمد المفصل" hidden>مشاركة</button></li>
+                    <li id="svc-0239"><h3 class="enh-letter-heading" id="h-ا">اشتراك تخسيس (شهري، نصف شهري، ربع شهري)</h3><span class="sg-id" aria-hidden="true">SVC-0239</span><button type="button" class="sg-share" data-clinical-share="#svc-0239" aria-label="مشاركة اشتراك تخسيس (شهري، نصف شهري، ربع شهري)" hidden>مشاركة</button></li>
+                    <li id="svc-0231"><h3 class="enh-letter-heading" id="h-ت">تجمد الكتف أو تجمد المفصل</h3><span class="sg-id" aria-hidden="true">SVC-0231</span><button type="button" class="sg-share" data-clinical-share="#svc-0231" aria-label="مشاركة تجمد الكتف أو تجمد المفصل" hidden>مشاركة</button></li>
                     <li id="svc-0230">تصلب والتهاب وتيبس المفاصل<span class="sg-id" aria-hidden="true">SVC-0230</span><button type="button" class="sg-share" data-clinical-share="#svc-0230" aria-label="مشاركة تصلب والتهاب وتيبس المفاصل" hidden>مشاركة</button></li>
                     <li id="svc-0216">تقوية عضلات الورك والمثانة للنساء<span class="sg-id" aria-hidden="true">SVC-0216</span><button type="button" class="sg-share" data-clinical-share="#svc-0216" aria-label="مشاركة تقوية عضلات الورك والمثانة للنساء" hidden>مشاركة</button></li>
-                    <li id="svc-0209">جلسات الشلل الرباعي<span class="sg-id" aria-hidden="true">SVC-0209</span><button type="button" class="sg-share" data-clinical-share="#svc-0209" aria-label="مشاركة جلسات الشلل الرباعي" hidden>مشاركة</button></li>
+                    <li id="svc-0209"><h3 class="enh-letter-heading" id="h-ج">جلسات الشلل الرباعي</h3><span class="sg-id" aria-hidden="true">SVC-0209</span><button type="button" class="sg-share" data-clinical-share="#svc-0209" aria-label="مشاركة جلسات الشلل الرباعي" hidden>مشاركة</button></li>
                     <li id="svc-0210">جلسات الشلل السفلي<span class="sg-id" aria-hidden="true">SVC-0210</span><button type="button" class="sg-share" data-clinical-share="#svc-0210" aria-label="مشاركة جلسات الشلل السفلي" hidden>مشاركة</button></li>
                     <li id="svc-0208">جلسات الشلل النصفي<span class="sg-id" aria-hidden="true">SVC-0208</span><button type="button" class="sg-share" data-clinical-share="#svc-0208" aria-label="مشاركة جلسات الشلل النصفي" hidden>مشاركة</button></li>
                     <li id="svc-0207">جلسات الشلل الوجهي<span class="sg-id" aria-hidden="true">SVC-0207</span><button type="button" class="sg-share" data-clinical-share="#svc-0207" aria-label="مشاركة جلسات الشلل الوجهي" hidden>مشاركة</button></li>
@@ -194,6 +200,9 @@
                 <p>© 2026 مستشفى الأنهار التخصصي - جميع الحقوق محفوظة.</p>
                 <p class="designer-credit">Designed by Dr. Ammar Al-Qahwi (د. عمار القحوي)</p>
                 <a href="#top" class="back-to-top">العودة للأعلى ↑</a>
+                <!-- ENH:START fixes-6b-guide -->
+                <a href="./">دليل الفحوصات والعمليات والأشعة</a>
+                <!-- ENH:END fixes-6b-guide -->
             </div>
         </div>
     </footer>

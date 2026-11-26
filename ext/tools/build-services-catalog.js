@@ -225,7 +225,7 @@ const push = (file, list, category, kind) => {
 const read = (f) => fs.readFileSync(path.join(ROOT, f), 'utf8');
 
 const clinicsHtml = read('clinics.html');
-push('clinics.html', [...clinicsHtml.matchAll(/<h3[^>]*>(عيادة[^<]+)<\/h3>/g)].map((m) => textOf(m[1])), 'عيادات ومعاينات');
+push('clinics.html', [...clinicsHtml.matchAll(/<h[23][^>]*>(عيادة[^<]+)<\/h[23]>/g)].map((m) => textOf(m[1])), 'عيادات ومعاينات');
 
 const unitsHtml = read('units.html');
 push('units.html', [...unitsHtml.matchAll(/<button[^>]*tab-btn[^>]*>([\s\S]*?)<\/button>/g)].map((m) => textOf(m[1])), 'وحدات وأقسام');

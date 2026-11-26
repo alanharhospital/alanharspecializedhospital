@@ -1261,8 +1261,17 @@
 <link rel="preload" as="image" href="ext/media/above-900.webp" type="image/webp" media="(max-width: 700px)" fetchpriority="high">
 <link rel="preload" as="image" href="ext/media/above-optimized.webp" type="image/webp" media="(min-width: 701px)" fetchpriority="high">
 <!-- ENH:END clinical-polish -->
+<!-- ENH:START fixes-6b -->
+<link rel="stylesheet" href="ext/fixes.css?v=1">
+<!-- ENH:END fixes-6b -->
+<!-- ENH:START fixes-6b-nojs -->
+<noscript><style>.reveal{opacity:1!important;transform:none!important}#btnSendWhatsApp,#btnSendEmail{display:none!important}</style></noscript>
+<!-- ENH:END fixes-6b-nojs -->
 </head>
 <body>
+<!-- ENH:START fixes-6b-skip -->
+<a class="enh-skip-link" href="#enh-main">تخطي إلى المحتوى</a>
+<!-- ENH:END fixes-6b-skip -->
 
     <!-- نقاط التنقل الجانبية الذكية -->
     <nav class="dots-nav" aria-label="تنقل سريع بين الأقسام">
@@ -1319,7 +1328,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="enh-main" tabindex="-1">
         <!-- 2. القسم الرئيسي (Hero) -->
         <section class="hero" id="home">
             <div class="hero-overlay"></div>
@@ -2036,6 +2045,12 @@
                                 <button type="button" id="btnSendEmail" class="btn btn-email-submit">✉️ إرسال بالإيميل</button>
                             </div>
                         </form>
+                        <!-- ENH:START fixes-6b-booking-nojs -->
+                        <noscript>
+                        <p>للحجز دون جافاسكربت تواصل عبر واتساب؛ لا تُرسل بيانات النموذج تلقائيًا.</p>
+                        <a class="enh-nojs-booking" href="https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF." target="_blank" rel="noopener noreferrer">تواصل عبر واتساب للحجز</a>
+                        </noscript>
+                        <!-- ENH:END fixes-6b-booking-nojs -->
                     </div>
                     <div class="appointment-info-card reveal">
                         <h3>معلومات الحجز والاستعلامات</h3>
@@ -2064,19 +2079,19 @@
                     <div class="contact-cards reveal">
                         <div class="contact-card">
                             <div class="contact-card-icon">📍</div>
-                            <div><h4>العنوان الرئيسي</h4><p>الحديدة - شارع صنعاء - أمام كلية الشفاء</p></div>
+                            <div><h3 class="enh-old-h4">العنوان الرئيسي</h3><p>الحديدة - شارع صنعاء - أمام كلية الشفاء</p></div>
                         </div>
                         <div class="contact-card">
                             <div class="contact-card-icon">☎️</div>
-                            <div><h4>أرقام الاستعلامات والطوارئ</h4><p><a href="tel:03235270">03 235270</a> - <a href="tel:03235271">235271</a> - <a href="tel:03235272">235272</a> - <a href="tel:03235273">235273</a></p></div>
+                            <div><h3 class="enh-old-h4">أرقام الاستعلامات والطوارئ</h3><p><a href="tel:03235270">03 235270</a> - <a href="tel:03235271">235271</a> - <a href="tel:03235272">235272</a> - <a href="tel:03235273">235273</a></p></div>
                         </div>
                         <div class="contact-card">
                             <div class="contact-card-icon">📱</div>
-                            <div><h4>الموبايل والواتساب</h4><p><a href="tel:783395352">783395352</a> | <a href="tel:735539107">735539107</a></p></div>
+                            <div><h3 class="enh-old-h4">الموبايل والواتساب</h3><p><a href="tel:783395352">783395352</a> | <a href="tel:735539107">735539107</a></p></div>
                         </div>
                         <div class="contact-card">
                             <div class="contact-card-icon">🏥</div>
-                            <div><h4>الإدارة والمختبر</h4><p>الإدارة: <a href="tel:03235273">235273</a> | المختبر: <a href="tel:03226277">226277</a></p></div>
+                            <div><h3 class="enh-old-h4">الإدارة والمختبر</h3><p>الإدارة: <a href="tel:03235273">235273</a> | المختبر: <a href="tel:03226277">226277</a></p></div>
                         </div>
                     </div>
                     <div class="map-container reveal">

@@ -1,0 +1,50 @@
+{
+  "home": {
+    "tag": "H4",
+    "text": "العنوان الرئيسي",
+    "font": "800 16px / 22.4px Tajawal, Cairo, sans-serif",
+    "fontSize": "16px",
+    "lineHeight": "22.4px",
+    "fontWeight": "800",
+    "color": "rgb(20, 38, 79)",
+    "margin": "0px 0px 4.8px",
+    "width": 255.078125,
+    "height": 22.390625
+  },
+  "clinics": {
+    "tag": "H3",
+    "text": "عيادة طب الأطفال وحديثي الولادة",
+    "font": "700 19.2px / 30.72px Tajawal, -apple-system, BlinkMacSystemFont, sans-serif",
+    "fontSize": "19.2px",
+    "lineHeight": "30.72px",
+    "fontWeight": "700",
+    "color": "rgb(10, 42, 94)",
+    "margin": "0px 0px 8px",
+    "width": 285,
+    "height": 61.4375
+  },
+  "units": {
+    "tag": "H3",
+    "text": "نفخر في مستشفى الأنهار التخصصي بتعاقدنا مع نخبة من الاستشاريين الجراحيين في جميع التخصصات الجراحية.",
+    "font": "800 21.6px / 34.56px Tajawal, -apple-system, BlinkMacSystemFont, sans-serif",
+    "fontSize": "21.6px",
+    "lineHeight": "34.56px",
+    "fontWeight": "800",
+    "color": "rgb(10, 42, 94)",
+    "margin": "0px 0px 13.6px",
+    "width": 267,
+    "height": 172.734375
+  },
+  "guide": {
+    "tag": "H3",
+    "text": "مستشفى الأنهار التخصصي",
+    "font": "700 18.72px / 29.952px Tajawal, -apple-system, BlinkMacSystemFont, sans-serif",
+    "fontSize": "18.72px",
+    "lineHeight": "29.952px",
+    "fontWeight": "700",
+    "color": "rgb(255, 255, 255)",
+    "margin": "0px",
+    "width": 250.515625,
+    "height": 29.9375
+  }
+}

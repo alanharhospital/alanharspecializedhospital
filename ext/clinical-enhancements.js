@@ -9,7 +9,9 @@
   var dialog = document.createElement('dialog');
   dialog.className = 'clinical-dialog'; dialog.setAttribute('aria-labelledby', 'clinical-dialog-title');
   dialog.innerHTML = '<h2 id="clinical-dialog-title">البحث في دليل الخدمات</h2><div class="ss" data-services-search><form class="ss-form" role="search"><label class="ss-label" for="clinical-search-input">ابحث عن فحص، عملية، أو عيادة</label><input class="ss-input" id="clinical-search-input" type="search" autocomplete="off" data-services-search-input><button class="ss-button" type="submit" data-services-search-button>بحث</button></form><p class="ss-status" role="status" aria-live="polite" data-services-search-status></p><div class="ss-panel" data-services-search-panel></div></div><button type="button" class="clinical-close">إغلاق البحث</button>';
-  document.body.prepend(trigger);
+  var skip = document.body.querySelector('.enh-skip-link');
+  if (skip) skip.insertAdjacentElement('afterend', trigger);
+  else document.body.prepend(trigger);
   document.body.appendChild(dialog);
   var searchRoot = dialog.querySelector('[data-services-search]');
   searchRoot.querySelector('form').addEventListener('submit', function (e) { e.preventDefault(); });

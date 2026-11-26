@@ -67,8 +67,14 @@
   ]
 }
     </script>
+    <!-- ENH:START fixes-6b -->
+    <link rel="stylesheet" href="../ext/fixes.css?v=1">
+    <!-- ENH:END fixes-6b -->
 </head>
 <body>
+    <!-- ENH:START fixes-6b-skip -->
+    <a class="enh-skip-link" href="#enh-main">تخطي إلى المحتوى</a>
+    <!-- ENH:END fixes-6b-skip -->
     <header class="header" id="top">
         <nav class="navbar container" aria-label="القائمة الرئيسية">
             <a href="../index.html" class="brand">
@@ -97,7 +103,7 @@
         </nav>
     </header>
 
-    <main class="sg-main">
+    <main class="sg-main" id="enh-main" tabindex="-1">
         <div class="container">
             <nav aria-label="مسار التصفح" class="sg-crumbs"><a href="../index.html">الرئيسية</a> ← <span>دليل الخدمات</span></nav>
             <h1 class="sg-h1">دليل الخدمات الطبية في مستشفى الأنهار التخصصي</h1>
@@ -142,7 +148,7 @@
             <div class="footer-brand">
                 <img src="../logo.jpg" alt="شعار المستشفى" class="footer-logo" width="64" height="64" loading="lazy" decoding="async">
                 <div>
-                    <h3>مستشفى الأنهار التخصصي</h3>
+                    <h2 class="enh-old-h3">مستشفى الأنهار التخصصي</h2>
                     <p>صحتكم مسؤوليتنا ❤️</p>
                 </div>
             </div>
@@ -153,6 +159,9 @@
                 <p>© 2026 مستشفى الأنهار التخصصي - جميع الحقوق محفوظة.</p>
                 <p class="designer-credit">Designed by Dr. Ammar Al-Qahwi (د. عمار القحوي)</p>
                 <a href="#top" class="back-to-top">العودة للأعلى ↑</a>
+                <!-- ENH:START fixes-6b-guide -->
+                <a href="./">دليل الفحوصات والعمليات والأشعة</a>
+                <!-- ENH:END fixes-6b-guide -->
             </div>
         </div>
     </footer>

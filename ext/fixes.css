@@ -1,0 +1,22 @@
+/* ENH:START fixes-6-b — طبقة إصلاح محافظة، دون تغيير نصوص الصفحات */
+.enh-skip-link { position:fixed; z-index:3000; inset-block-start:.5rem; inset-inline-start:.5rem; transform:translateY(-200%); transition:none !important; padding:.7rem 1rem; background:#fff; color:#0a2a5e; border:2px solid #0a2a5e; border-radius:.4rem; font-weight:700; }
+.enh-skip-link:focus { transform:none; outline:3px solid #1e4a8a; outline-offset:2px; }
+#enh-main:focus { outline:none; }
+.contact-card h3.enh-old-h4 { font-size:1em; margin:0 0 .3rem; color:var(--navy); font-weight:800; }
+.feature-card h2.enh-old-h3 { font-size:1.2rem; color:var(--primary-navy); margin-bottom:.5rem; }
+.units-callout h2.enh-old-h3 { color:var(--primary-navy); font-size:1.35rem; margin-bottom:.75rem; font-weight:800; }
+.unit-item-card h3.enh-old-h4 { color:var(--primary-navy); font-size:1.05rem; }
+.footer-brand h2.enh-old-h3 { font-size:1.17em; }
+.enh-letter-heading { display:inline; font:inherit; color:inherit; margin:0; padding:0; }
+.enh-nojs-booking { display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:.7rem 1rem; margin-top:.75rem; border-radius:8px; background:#075e54; color:white; font-weight:700; text-decoration:none; }
+@media (max-width:768px) {
+  button:not(.sg-share[hidden]), [role="button"], input:not([type="hidden"]):not([type="radio"]):not([type="checkbox"]), select, textarea { min-height:44px; min-width:44px; }
+  .menu-toggle, .mobile-toggle, .sh, .fab, .sg-letters a { min-width:44px; min-height:44px; }
+  footer a[href], .sg-crumbs a[href], .crumbs a[href], .sg-back a[href], .sg-offers a[href], body > #enh-main > a[href], a[href^="tel:"], a[href^="mailto:"], .appointment-info-card a[href], .reach-card a[href], .clinical-section details a[href], .btn-sm, .map-link, .chip, .link-arrow { display:inline-flex; align-items:center; min-width:44px; min-height:44px; }
+  .floating-bot-btn { position:static !important; display:inline-flex; margin:1rem; }
+  /* تطويق مرئي لحقل الراديو يحافظ على حجم الدائرة ويزيد مساحة اللمس. */
+  input[type="radio"] { appearance:none; -webkit-appearance:none; width:44px !important; height:44px !important; min-width:44px; min-height:44px; margin:0; flex:0 0 44px; background:radial-gradient(circle, #fff 0 5px, #767676 5px 6.5px, transparent 7px); cursor:pointer; }
+  input[type="radio"]:checked { background:radial-gradient(circle, #0a2a5e 0 3px, #fff 3px 5px, #767676 5px 6.5px, transparent 7px); }
+  input[type="radio"]:focus-visible { outline:2px solid #1e4a8a; outline-offset:1px; }
+}
+/* ENH:END fixes-6-b */
