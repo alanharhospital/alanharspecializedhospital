@@ -21,7 +21,8 @@
   Cross-Origin-Opener-Policy: same-origin
   Cross-Origin-Resource-Policy: same-origin
   X-Permitted-Cross-Domain-Policies: none
-  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; connect-src 'self'; frame-src 'none'; frame-ancestors 'self'; form-action 'self' mailto: https://wa.me; base-uri 'self'; object-src 'none'; manifest-src 'self'; upgrade-insecure-requests
+  Strict-Transport-Security: max-age=86400
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; connect-src 'self'; frame-src https://www.google.com https://maps.google.com; frame-ancestors 'self'; form-action 'self' mailto: https://wa.me; base-uri 'self'; object-src 'none'; manifest-src 'self'; upgrade-insecure-requests
 
 # ---------------------------------------------------------------------
 # 2) الصور — كاش سنة كاملة (أسماء ثابتة لا تتغير)
@@ -102,3 +103,56 @@
   ! Cache-Control
   Cache-Control: public, max-age=300, must-revalidate
 # ENH:END 6b2-cache
+
+# ENH:START security-2026-11-27
+# منع فهرسة معاينات pages.dev فقط — صيغة موثقة من Cloudflare (https://:project.pages.dev/*)
+# alanharhospital.com (النطاق المخصص) لا يشمله هذا النمط فلا يتأثر
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+# HTML وsw.js وmanifest وext/data: no-cache (القواعد تعمل بالترتيب، و! تفصل القيمة الأقدم)
+/*.html
+  ! Cache-Control
+  Cache-Control: no-cache
+
+/
+  ! Cache-Control
+  Cache-Control: no-cache
+
+/sw.js
+  ! Cache-Control
+  Cache-Control: no-cache
+
+/manifest.webmanifest
+  ! Cache-Control
+  Cache-Control: no-cache
+
+/ext/data/*
+  ! Cache-Control
+  Cache-Control: no-cache
+
+# الصور والخطوط بلا بصمة في الاسم: max-age=86400 بلا immutable
+/*.jpg
+  ! Cache-Control
+  Cache-Control: max-age=86400
+
+/*.jpeg
+  ! Cache-Control
+  Cache-Control: max-age=86400
+
+/*.png
+  ! Cache-Control
+  Cache-Control: max-age=86400
+
+/*.webp
+  ! Cache-Control
+  Cache-Control: max-age=86400
+
+/*.svg
+  ! Cache-Control
+  Cache-Control: max-age=86400
+
+/*.ico
+  ! Cache-Control
+  Cache-Control: max-age=86400
+# ENH:END security-2026-11-27
