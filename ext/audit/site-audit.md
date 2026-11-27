@@ -82,14 +82,14 @@
 - **P1 `/clinics.html` — og:url مفقود**؛ دليل: لم يُرصد؛ يمس نصًا ظاهرًا: لا.
 - **P1 `/clinics.html` — لا يوجد رابط تخطي للمحتوى**؛ دليل: لم يُرصد؛ يمس نصًا ظاهرًا: نعم.
 - **P1 `/clinics.html` — أهداف لمس أصغر من 44px**؛ دليل: {"count":4,"examples":[{"tag":"BUTTON","text":"فتح القائمة","href":null,"class":"menu-toggle","w":30,"h":48},{"tag":"A","text":"فيسبوك","href":"https://www.facebook.com/profile.php?id=61565589033008","class":"","w":50.3,"h":24.3},{"tag":"A","text":"العودة للأعلى ↑","href":"#top","class":"back-to-top","w":109.6,"h":22.5},{"tag":"A","text":"دليل الفحوصات والعمليات والأشعة","href":"services/","class"؛ يمس نصًا ظاهرًا: لا.
-- **P1 `/clinics.html` — تباين نصوص أقل من WCAG AA**؛ دليل: {"countPairs":2,"examples":[{"foreground":"#ffffff","background":"#2ecc71","ratio":2.1,"minimum":4.5,"count":1,"examples":["احجز موعدك الآن"]},{"foreground":"#0a2a5e","background":"#0a2a5e","ratio":1,"minimum":4.5,"count":2,"examples":["دليل الفحوصات والعمليات والأشعة","المعلومات للتوعية ولا تغني عن استشارة الطبيب، وفي الطوارئ تواصل مع الطوارئ فورًا."]}]}؛ يمس نصًا ظاهرًا: لا.
+- **P1 `/clinics.html` — تباين نصوص أقل من WCAG AA**؛ دليل: {"countPairs":2,"examples":[{"foreground":"#ffffff","background":"#2ecc71","ratio":2.1,"minimum":4.5,"count":1,"examples":["احجز موعدك الآن"]},{"foreground":"#0a2a5e","background":"#0a2a5e","ratio":1,"minimum":4.5,"count":2,"examples":["دليل الفحوصات والعمليات والأشعة",""]}]}؛ يمس نصًا ظاهرًا: لا.
 - **P2 `/clinics.html` — نص أصغر من 14px**؛ دليل: {"count":2,"examples":[{"text":"🔍 ابحث عن فحص، عملية، أو عيادة / ⌘K","size":13.12,"tag":"BUTTON","class":"clinical-trigger"},{"text":"التخصصي","size":13.6,"tag":"SMALL","class":""}]}؛ يمس نصًا ظاهرًا: لا.
 - **P1 `/units.html` — تجاوز تسلسل العناوين**؛ دليل: [{"before":{"level":1,"text":"الوحدات الطبية والتشخيصية"},"after":{"level":3,"text":"نفخر في مستشفى الأنهار التخصصي بتعاقدنا مع نخبة من الاستشاريين الجراحيين في جميع التخصصات الجراحية."}}]؛ يمس نصًا ظاهرًا: لا.
 - **P1 `/units.html` — canonical مفقود**؛ دليل: لم يُرصد؛ يمس نصًا ظاهرًا: لا.
 - **P1 `/units.html` — og:url مفقود**؛ دليل: لم يُرصد؛ يمس نصًا ظاهرًا: لا.
 - **P1 `/units.html` — لا يوجد رابط تخطي للمحتوى**؛ دليل: لم يُرصد؛ يمس نصًا ظاهرًا: نعم.
 - **P1 `/units.html` — أهداف لمس أصغر من 44px**؛ دليل: {"count":4,"examples":[{"tag":"BUTTON","text":"فتح القائمة","href":null,"class":"menu-toggle","w":30,"h":48},{"tag":"A","text":"فيسبوك","href":"https://www.facebook.com/profile.php?id=61565589033008","class":"","w":50.3,"h":24.3},{"tag":"A","text":"العودة للأعلى ↑","href":"#top","class":"back-to-top","w":109.6,"h":22.5},{"tag":"A","text":"دليل الفحوصات والعمليات والأشعة","href":"services/","class"؛ يمس نصًا ظاهرًا: لا.
-- **P1 `/units.html` — تباين نصوص أقل من WCAG AA**؛ دليل: {"countPairs":2,"examples":[{"foreground":"#ffffff","background":"#2ecc71","ratio":2.1,"minimum":4.5,"count":1,"examples":["للتنسيق والحجز اضغط هنا"]},{"foreground":"#0a2a5e","background":"#0a2a5e","ratio":1,"minimum":4.5,"count":2,"examples":["دليل الفحوصات والعمليات والأشعة","المعلومات للتوعية ولا تغني عن استشارة الطبيب، وفي الطوارئ تواصل مع الطوارئ فورًا."]}]}؛ يمس نصًا ظاهرًا: لا.
+- **P1 `/units.html` — تباين نصوص أقل من WCAG AA**؛ دليل: {"countPairs":2,"examples":[{"foreground":"#ffffff","background":"#2ecc71","ratio":2.1,"minimum":4.5,"count":1,"examples":["للتنسيق والحجز اضغط هنا"]},{"foreground":"#0a2a5e","background":"#0a2a5e","ratio":1,"minimum":4.5,"count":2,"examples":["دليل الفحوصات والعمليات والأشعة",""]}]}؛ يمس نصًا ظاهرًا: لا.
 - **P2 `/units.html` — نص أصغر من 14px**؛ دليل: {"count":2,"examples":[{"text":"🔍 ابحث عن فحص، عملية، أو عيادة / ⌘K","size":13.12,"tag":"BUTTON","class":"clinical-trigger"},{"text":"التخصصي","size":13.6,"tag":"SMALL","class":""}]}؛ يمس نصًا ظاهرًا: لا.
 - **P1 `/ancillary.html` — canonical مفقود**؛ دليل: لم يُرصد؛ يمس نصًا ظاهرًا: لا.
 - **P1 `/ancillary.html` — og:url مفقود**؛ دليل: لم يُرصد؛ يمس نصًا ظاهرًا: لا.
@@ -292,9 +292,9 @@
 | النص | الخلفية | النسبة | الحد | الصفحة/مثال |
 |---|---|---:|---:|---|
 | `#0a2a5e` | `#0a2a5e` | 1.00:1 | 4.5:1 | /clinics.html, /units.html, /ancillary.html, /news.html — دليل الفحوصات والعمليات والأشعة |
-| `#0a2a5e` | `#132650` | 1.06:1 | 4.5:1 | /, /offers.html — المعلومات للتوعية ولا تغني عن استشارة الطبيب، وفي الطوارئ تواصل مع الطوارئ فورًا. |
+| `#0a2a5e` | `#132650` | 1.06:1 | 4.5:1 | /, /offers.html —  |
 | `#0a2a5e` | `#14264f` | 1.06:1 | 4.5:1 | /, /offers.html — دليل الفحوصات والعمليات والأشعة |
-| `#0a2a5e` | `#132248` | 1.11:1 | 4.5:1 | /doctors.html — المعلومات للتوعية ولا تغني عن استشارة الطبيب، وفي الطوارئ تواصل مع الطوارئ فورًا. |
+| `#0a2a5e` | `#132248` | 1.11:1 | 4.5:1 | /doctors.html —  |
 | `#0a2a5e` | `#142247` | 1.12:1 | 4.5:1 | /doctors.html — دليل الفحوصات والعمليات والأشعة |
 | `#2ecc71` | `#d5f5e3` | 1.80:1 | 4.5:1 | /news.html — إنجاز طبي نوعي |
 | `#ffffff` | `#25d366` | 1.98:1 | 4.5:1 | /, /offers.html, /ancillary.html — 💬 إرسال عبر واتساب |
