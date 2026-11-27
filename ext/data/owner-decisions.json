@@ -1,0 +1,36 @@
+{
+  "englishName": {
+    "value": "Alanhar Specialized Hospital",
+    "status": "approved",
+    "applied": false
+  },
+  "address": {
+    "value": "الحديدة، شارع صنعاء، أمام كلية الشفاء",
+    "status": "approved",
+    "applied": false
+  },
+  "hours": {
+    "hospital": "على مدى 24 ساعة",
+    "hospitalStatus": "approved",
+    "clinics": "أوقات الدوام الرسمي فقط",
+    "clinicsStatus": "approved",
+    "clinicsTimes": null,
+    "applied": false
+  },
+  "newsPolicy": {
+    "limit": 12,
+    "oldest": "ينتقل إلى الأرشيف",
+    "images": "ملفات الصور لا تُحذف",
+    "status": "pending-owner-wording-confirmation",
+    "applied": false
+  },
+  "postDates": {
+    "policy": "كما هي مكتوبة في المنشورات، وما بلا تاريخ يبقى خارج الأرشفة الآلية",
+    "applied": false
+  },
+  "expiredOffers": {
+    "policy": "بطاقة محايدة بلا سعر، والأصل يبقى",
+    "applied": false
+  },
+  "deferred": ["worker-cron-after-merge", "unavailable_after"]
+}
