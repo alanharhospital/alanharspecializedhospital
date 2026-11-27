@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/jpeg" href="logo.jpg">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0a2a5e">
 <meta name="robots" content="noindex">
 <title>الصفحة غير موجودة | مستشفى الأنهار التخصصي</title>
 <style>
@@ -48,5 +52,8 @@ a{display:inline-block;background:#2ecc71;color:#fff;padding:12px 30px;border-ra
 <script src="ext/services-search.js?v=8" defer></script>
 <script src="ext/clinical-enhancements.js?v=2" defer></script>
 <!-- ENH:END clinical-enhancements -->
+    <script>
+    if ('serviceWorker' in navigator) { window.addEventListener('load', function () { navigator.serviceWorker.register('/sw.js'); }); }
+    </script>
 </body>
 </html>

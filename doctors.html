@@ -12,7 +12,11 @@
 
     <meta name="google-site-verification" content="YEouU0fdpFGmbZ_tknWZ3tHv-4BfuRHU1VGGbWUgWtw">
 
-    <link rel="canonical" href="https://alanharhospital.com/doctors.html">
+    <link rel="canonical" href="https://alanharhospital.com/doctors.html">
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#0a2a5e">
 
     <!-- بيانات المشاركة -->
     <meta property="og:type" content="website">
@@ -1596,5 +1600,8 @@
 <script src="ext/services-search.js?v=8" defer></script>
 <script src="ext/clinical-enhancements.js?v=2" defer></script>
 <!-- ENH:END clinical-enhancements -->
+    <script>
+    if ('serviceWorker' in navigator) { window.addEventListener('load', function () { navigator.serviceWorker.register('/sw.js'); }); }
+    </script>
 </body>
 </html>

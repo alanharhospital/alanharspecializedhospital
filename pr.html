@@ -41,7 +41,10 @@
     <meta property="og:image" content="https://alanharhospital.com/logo.jpg">
     <meta name="twitter:card" content="summary">
 
-    <link rel="icon" href="logo.jpg">
+    <link rel="icon" href="logo.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#0a2a5e">
 
     <!-- الخطوط -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -2593,5 +2596,8 @@
 <script src="ext/services-search.js?v=8" defer></script>
 <script src="ext/clinical-enhancements.js?v=2" defer></script>
 <!-- ENH:END clinical-enhancements -->
+    <script>
+    if ('serviceWorker' in navigator) { window.addEventListener('load', function () { navigator.serviceWorker.register('/sw.js'); }); }
+    </script>
 </body>
 </html>

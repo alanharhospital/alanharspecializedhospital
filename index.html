@@ -114,6 +114,8 @@
 
     <!-- أيقونة الموقع -->
     <link rel="icon" type="image/jpeg" href="logo.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
 
     <style>
         /* ==================== المتغيرات والهوية البصرية الرسمية ==================== */
@@ -2342,5 +2344,8 @@
 <!-- ENH:START clinical-enhancements -->
 <script src="ext/clinical-enhancements.js?v=2" defer></script>
 <!-- ENH:END clinical-enhancements -->
+    <script>
+    if ('serviceWorker' in navigator) { window.addEventListener('load', function () { navigator.serviceWorker.register('/sw.js'); }); }
+    </script>
 </body>
 </html>

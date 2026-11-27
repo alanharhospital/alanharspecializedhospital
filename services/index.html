@@ -9,6 +9,8 @@
     <meta name="description" content="اكتب اسم الخدمة أو التحليل أو الفحص الذي تبحث عنه، وستظهر لك النتيجة. وإن لم تجد ما تريد، تواصل معنا عبر واتساب وسيساعدك فريقنا.">
     <link rel="canonical" href="https://alanharhospital.com/services/">
     <link rel="icon" type="image/jpeg" href="../logo.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
+    <link rel="manifest" href="../manifest.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
@@ -44,5 +46,8 @@
     <script src="../ext/data/services-index.js?v=8"></script>
     <script src="../ext/services-search.js?v=8" defer></script>
     <!-- ENH:END services-search-scripts -->
+    <script>
+    if ('serviceWorker' in navigator) { window.addEventListener('load', function () { navigator.serviceWorker.register('/sw.js'); }); }
+    </script>
 </body>
 </html>

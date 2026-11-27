@@ -168,7 +168,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-<link rel="icon" type="image/jpeg" href="logo.jpg">
+<link rel="icon" type="image/jpeg" href="logo.jpg">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
 
 <noscript><style>.reveal{opacity:1!important;transform:none!important}.share-bar{display:none}</style></noscript>
 
@@ -947,5 +949,8 @@ dialog#lightbox button{position:absolute;top:-14px;right:-6px;width:40px;height:
 <script src="ext/services-search.js?v=8" defer></script>
 <script src="ext/clinical-enhancements.js?v=2" defer></script>
 <!-- ENH:END clinical-enhancements -->
+    <script>
+    if ('serviceWorker' in navigator) { window.addEventListener('load', function () { navigator.serviceWorker.register('/sw.js'); }); }
+    </script>
 </body>
 </html>
