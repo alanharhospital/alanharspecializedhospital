@@ -371,11 +371,11 @@
             min-height: 75vh;
             display: flex;
             align-items: center;
-            background-image: url("above.png"); background-image: image-set("above-480.webp" 480w, "above-960.webp" 960w, "above-1600.webp" 1600w);
+            background-image: url("above.png");
             background-size: cover;
             background-position: center center;
             overflow: hidden;
-        }
+        } @media (max-width:500px){.hero{background-image:url("above-480.webp")}} @media (max-width:500px) and (min-resolution:2dppx){.hero{background-image:url("above-960.webp")}} @media (max-width:500px) and (min-resolution:3dppx){.hero{background-image:url("above-1600.webp")}} @media (min-width:501px) and (max-width:1000px){.hero{background-image:url("above-960.webp")}} @media (min-width:501px) and (max-width:1000px) and (min-resolution:2dppx){.hero{background-image:url("above-1600.webp")}} @media (min-width:1001px){.hero{background-image:url("above-1600.webp")}}
         .hero-overlay {
             position: absolute;
             inset: 0;
@@ -1594,7 +1594,7 @@
                     <!-- 1. الإسعاف والطوارئ (car.jpg) -->
                     <article class="facility-card reveal">
                         <div class="facility-img-wrapper">
-                            <picture><source type="image/webp" srcset="ext/media/car-700.webp 700w, ext/media/car-optimized.webp 1400w" sizes="(max-width: 600px) 90vw, 40vw"><img src="car.jpg" alt="خدمات الإسعاف والطوارئ 24 ساعة — مستشفى الأنهار التخصصي بالحديدة" loading="lazy" onerror="this.src='logo.jpg'" decoding="async" srcset="car-480.webp 480w, car-960.webp 960w, car-1600.webp 1600w" sizes="(max-width: 600px) 90vw, 40vw" width="5184" height="3456"></picture>
+                            <picture><source type="image/webp" srcset="car-480.webp 480w, car-960.webp 960w, car-1600.webp 1600w" sizes="(max-width: 600px) 90vw, 40vw"><img src="car.jpg" alt="خدمات الإسعاف والطوارئ 24 ساعة — مستشفى الأنهار التخصصي بالحديدة" loading="lazy" onerror="this.src='logo.jpg'" decoding="async" width="5184" height="3456"></picture>
                             <span class="facility-badge-tag">طوارئ واستقبال 24/7</span>
                         </div>
                         <div class="facility-info">
@@ -1606,7 +1606,7 @@
                     <!-- 2. غرف العمليات الكبرى والمناظير (or.jpg) -->
                     <article class="facility-card reveal">
                         <div class="facility-img-wrapper">
-                            <picture><source type="image/webp" srcset="ext/media/or-700.webp 700w, ext/media/or-optimized.webp 1400w" sizes="(max-width: 600px) 90vw, 40vw"><img src="or.jpg" alt="غرف العمليات الجراحية والمناظير — مستشفى الأنهار التخصصي بالحديدة" loading="lazy" onerror="this.src='logo.jpg'" decoding="async" srcset="or-480.webp 480w, or-960.webp 960w, or-1600.webp 1600w" sizes="(max-width: 600px) 90vw, 40vw" width="5184" height="3456"></picture>
+                            <picture><source type="image/webp" srcset="or-480.webp 480w, or-960.webp 960w, or-1600.webp 1600w" sizes="(max-width: 600px) 90vw, 40vw"><img src="or.jpg" alt="غرف العمليات الجراحية والمناظير — مستشفى الأنهار التخصصي بالحديدة" loading="lazy" onerror="this.src='logo.jpg'" decoding="async" width="5184" height="3456"></picture>
                             <span class="facility-badge-tag">جراحة كبرى ومناظير</span>
                         </div>
                         <div class="facility-info">
@@ -1618,7 +1618,7 @@
                     <!-- 3. المختبر الطبي المركزي (lab.jpg) -->
                     <article class="facility-card reveal">
                         <div class="facility-img-wrapper">
-                            <picture><source type="image/webp" srcset="ext/media/lab-700.webp 700w, ext/media/lab-optimized.webp 1400w" sizes="(max-width: 600px) 90vw, 40vw"><img src="lab.jpg" alt="المختبر الطبي المركزي وبنك الدم — مستشفى الأنهار التخصصي بالحديدة" loading="lazy" onerror="this.src='logo.jpg'" decoding="async" srcset="lab-480.webp 480w, lab-960.webp 960w, lab-1600.webp 1600w" sizes="(max-width: 600px) 90vw, 40vw" width="5184" height="3456"></picture>
+                            <picture><source type="image/webp" srcset="lab-480.webp 480w, lab-960.webp 960w, lab-1600.webp 1600w" sizes="(max-width: 600px) 90vw, 40vw"><img src="lab.jpg" alt="المختبر الطبي المركزي وبنك الدم — مستشفى الأنهار التخصصي بالحديدة" loading="lazy" onerror="this.src='logo.jpg'" decoding="async" width="5184" height="3456"></picture>
                             <span class="facility-badge-tag">تحاليل أوتوماتيكية 24/7</span>
                         </div>
                         <div class="facility-info">
@@ -1630,7 +1630,7 @@
                     <!-- 4. وحدات الرعاية المركزة المتعددة (icu.jpg) -->
                     <article class="facility-card reveal">
                         <div class="facility-img-wrapper">
-                            <picture><source type="image/webp" srcset="ext/media/icu-700.webp 700w, ext/media/icu-optimized.webp 1400w" sizes="(max-width: 600px) 90vw, 40vw"><img src="icu.jpg" alt="وحدات الرعاية المركزة والخاصة — مستشفى الأنهار التخصصي بالحديدة" loading="lazy" onerror="this.src='logo.jpg'" decoding="async" srcset="icu-480.webp 480w, icu-960.webp 960w, icu-1600.webp 1600w" sizes="(max-width: 600px) 90vw, 40vw" width="5184" height="3456"></picture>
+                            <picture><source type="image/webp" srcset="icu-480.webp 480w, icu-960.webp 960w, icu-1600.webp 1600w" sizes="(max-width: 600px) 90vw, 40vw"><img src="icu.jpg" alt="وحدات الرعاية المركزة والخاصة — مستشفى الأنهار التخصصي بالحديدة" loading="lazy" onerror="this.src='logo.jpg'" decoding="async" width="5184" height="3456"></picture>
                             <span class="facility-badge-tag">رعاية مركزة متخصصة</span>
                         </div>
                         <div class="facility-info">
@@ -1642,7 +1642,7 @@
                     <!-- 5. مركز الأشعة التشخيصية المتكامل (ct.jpg) -->
                     <article class="facility-card reveal">
                         <div class="facility-img-wrapper">
-                            <picture><source type="image/webp" srcset="ext/media/ct-700.webp 700w, ext/media/ct-optimized.webp 1400w" sizes="(max-width: 600px) 90vw, 40vw"><img src="ct.jpg" alt="مركز الأشعة التشخيصية والأشعة المقطعية CT Scan والكشافة DR — مستشفى الأنهار التخصصي" loading="lazy" onerror="this.src='logo.jpg'" decoding="async" srcset="ct-480.webp 480w, ct-960.webp 960w, ct-1600.webp 1600w" sizes="(max-width: 600px) 90vw, 40vw" width="5184" height="3456"></picture>
+                            <picture><source type="image/webp" srcset="ct-480.webp 480w, ct-960.webp 960w, ct-1600.webp 1600w" sizes="(max-width: 600px) 90vw, 40vw"><img src="ct.jpg" alt="مركز الأشعة التشخيصية والأشعة المقطعية CT Scan والكشافة DR — مستشفى الأنهار التخصصي" loading="lazy" onerror="this.src='logo.jpg'" decoding="async" width="5184" height="3456"></picture>
                             <span class="facility-badge-tag">تشخيص شعاعي متكامل</span>
                         </div>
                         <div class="facility-info">
@@ -1654,7 +1654,7 @@
                     <!-- 6. الصيدلية (ph.jpg) -->
                     <article class="facility-card reveal">
                         <div class="facility-img-wrapper">
-                            <picture><source type="image/webp" srcset="ext/media/ph-700.webp 700w, ext/media/ph-optimized.webp 1400w" sizes="(max-width: 600px) 90vw, 40vw"><img src="ph.jpg" alt="الصيدلية المركزية — مستشفى الأنهار التخصصي بالحديدة" loading="lazy" onerror="this.src='logo.jpg'" decoding="async" srcset="ph-480.webp 480w, ph-960.webp 960w, ph-1600.webp 1600w" sizes="(max-width: 600px) 90vw, 40vw" width="5184" height="3456"></picture>
+                            <picture><source type="image/webp" srcset="ph-480.webp 480w, ph-960.webp 960w, ph-1600.webp 1600w" sizes="(max-width: 600px) 90vw, 40vw"><img src="ph.jpg" alt="الصيدلية المركزية — مستشفى الأنهار التخصصي بالحديدة" loading="lazy" onerror="this.src='logo.jpg'" decoding="async" width="5184" height="3456"></picture>
                             <span class="facility-badge-tag">صيدلية 24/7</span>
                         </div>
                         <div class="facility-info">
