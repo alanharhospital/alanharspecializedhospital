@@ -335,6 +335,24 @@ check(72, 'الاستثناء محدد بالعبارتين؛ سونار وحد�
   return {ok:generic.type==='weak' && ['SVC-0063','SVC-0331','SVC-0332'].every(id=>generic.options.some(i=>i.id===id)) && !extra.approvedAvailability && wrongTarget.type==='none',note:describe('سونار')};
 });
 
+check(73, 'العبارات الثمان لجهاز التنفس ← الرد المعتمد بلا خيارات أو 0007', () => {
+  const queries=['جهاز التنفس','جهاز تنفس','اجهزة التنفس','جهاز تنفس صناعي','هل يوجد جهاز تنفس','يتوفر لديكم جهاز تنفس','عندكم اجهزة تنفس','هل لديكم جهاز تنفس'];
+  const text='يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا.';
+  const message='السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي';
+  const ok=queries.every(q=>{const r=run(q),p=engine.buildReply(r,data);return r.type==='strong'&&r.best?.id==='SVC-0405'&&!r.options.length&&p.title==='نعم، الخدمة متوفرة لدينا'&&p.lines.length===1&&p.lines[0]===text&&!p.options.length&&p.whatsappLabel==='تواصل عبر واتساب'&&p.whatsappText===message&&p.whatsappUrl==='https://wa.me/'+contact.whatsappNumber+'?text='+encodeURIComponent(message)&&!/على مدار الساعة|أحدث التجهيزات|سعر|ريال/.test(p.lines[0]);});
+  return {ok,note:queries.map(describe).join('؛ ')};
+});
+check(74, 'الأسماء الكاملة للخدمتين مفردة و0007 يحتفظ بسلوك searchOnly', () => {
+  const a=run('خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة'),b=run('خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة');
+  const item=index.items.find(x=>x.id==='SVC-0007'),full=run(item.name),short=run('أكثر من 12 جهاز تنفس صناعي');
+  return {ok:a.type==='strong'&&a.best?.id==='SVC-0405'&&!a.options.length&&!a.approvedVentilator&&b.type==='strong'&&b.best?.id==='SVC-0406'&&!b.options.length&&!b.approvedVentilator&&item.searchOnly&&item.group==='listed'&&full.type==='strong'&&full.best?.id===item.id&&short.type==='weak'&&!foundItems(short).some(x=>x.id===item.id),note:[a,b,full,short].map(r=>describe(r.query)).join('؛ ')};
+});
+check(75, 'الاستثناء محدد ويفشل بأمان عند غياب أحد المستهدفين', () => {
+  const q='جهاز التنفس', extra=run(q+' إضافي');
+  const missing=['SVC-0405','SVC-0406'].every(id=>engine.search(q,{...data,items:index.items.filter(i=>i.id!==id)}).type==='none');
+  return {ok:missing&&!extra.approvedVentilator&&run('جهاز').type!=='strong',note:`missing=${missing}, extra=${extra.type}, جهاز=${run('جهاز').type}`};
+});
+
 /* -------------------------------- التقرير -------------------------------- */
 
 console.log('\n  اختبار محرّك البحث — الحالات كاملة');

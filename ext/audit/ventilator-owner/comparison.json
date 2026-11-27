@@ -1,0 +1,2138 @@
+{
+  "baseCommit": "a7f7cfa6e09e5ac3f4edbb1fe45b8245f6eef34c",
+  "sampleCount": 671,
+  "changedCount": 1,
+  "changed": [
+    "جهاز التنفس"
+  ],
+  "unchangedCount": 670,
+  "method": "same 671 queries as approved-sonar comparison; normalized sonar overrides excluded as before; full results and replies compared",
+  "requested": [
+    {
+      "query": "جهاز التنفس",
+      "before": {
+        "result": {
+          "type": "strong",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "options": [
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "emergency": false,
+          "query": "جهاز التنفس"
+        },
+        "reply": {
+          "lines": [
+            "نعم، يتوفر لدينا خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة ضمن طوارئ وإسعاف. يسعدنا خدمتكم ونتمنى لكم دوام الصحة والعافية.",
+            "هل تقصد أحد هذه الخدمات؟"
+          ],
+          "options": [
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%20%D9%84%D9%85%D8%AF%D8%A9%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%AE%D9%84%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9",
+          "whatsappText": "السلام عليكم، أستفسر عن: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          }
+        }
+      },
+      "after": {
+        "result": {
+          "type": "strong",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "options": [],
+          "emergency": false,
+          "query": "جهاز التنفس",
+          "approvedVentilator": {
+            "title": "نعم، الخدمة متوفرة لدينا",
+            "text": "يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا.",
+            "whatsappLabel": "تواصل عبر واتساب",
+            "whatsappText": "السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي"
+          }
+        },
+        "reply": {
+          "lines": [
+            "يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا."
+          ],
+          "options": [],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A",
+          "whatsappText": "السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "title": "نعم، الخدمة متوفرة لدينا",
+          "whatsappLabel": "تواصل عبر واتساب"
+        }
+      }
+    },
+    {
+      "query": "هل يوجد جهاز تنفس",
+      "before": {
+        "result": {
+          "type": "strong",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "options": [
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "emergency": false,
+          "query": "هل يوجد جهاز تنفس"
+        },
+        "reply": {
+          "lines": [
+            "نعم، يتوفر لدينا خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة ضمن طوارئ وإسعاف. يسعدنا خدمتكم ونتمنى لكم دوام الصحة والعافية.",
+            "هل تقصد أحد هذه الخدمات؟"
+          ],
+          "options": [
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%20%D9%84%D9%85%D8%AF%D8%A9%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%AE%D9%84%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9",
+          "whatsappText": "السلام عليكم، أستفسر عن: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          }
+        }
+      },
+      "after": {
+        "result": {
+          "type": "strong",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "options": [],
+          "emergency": false,
+          "query": "هل يوجد جهاز تنفس",
+          "approvedVentilator": {
+            "title": "نعم، الخدمة متوفرة لدينا",
+            "text": "يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا.",
+            "whatsappLabel": "تواصل عبر واتساب",
+            "whatsappText": "السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي"
+          }
+        },
+        "reply": {
+          "lines": [
+            "يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا."
+          ],
+          "options": [],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A",
+          "whatsappText": "السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "title": "نعم، الخدمة متوفرة لدينا",
+          "whatsappLabel": "تواصل عبر واتساب"
+        }
+      }
+    },
+    {
+      "query": "عندكم اجهزة تنفس",
+      "before": {
+        "result": {
+          "type": "weak",
+          "best": null,
+          "options": [
+            {
+              "id": "SVC-0405",
+              "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "emergency": false,
+          "query": "عندكم اجهزة تنفس"
+        },
+        "reply": {
+          "lines": [
+            "هل تقصد أحد هذه الخدمات؟"
+          ],
+          "options": [
+            {
+              "id": "SVC-0405",
+              "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%20%D9%84%D9%85%D8%AF%D8%A9%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%AE%D9%84%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9",
+          "whatsappText": "السلام عليكم، أستفسر عن: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+          "best": null
+        }
+      },
+      "after": {
+        "result": {
+          "type": "strong",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "options": [],
+          "emergency": false,
+          "query": "عندكم اجهزة تنفس",
+          "approvedVentilator": {
+            "title": "نعم، الخدمة متوفرة لدينا",
+            "text": "يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا.",
+            "whatsappLabel": "تواصل عبر واتساب",
+            "whatsappText": "السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي"
+          }
+        },
+        "reply": {
+          "lines": [
+            "يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا."
+          ],
+          "options": [],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A",
+          "whatsappText": "السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "title": "نعم، الخدمة متوفرة لدينا",
+          "whatsappLabel": "تواصل عبر واتساب"
+        }
+      }
+    },
+    {
+      "query": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+      "before": {
+        "result": {
+          "type": "strong",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "options": [],
+          "emergency": false,
+          "query": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة"
+        },
+        "reply": {
+          "lines": [
+            "نعم، يتوفر لدينا خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة ضمن طوارئ وإسعاف. يسعدنا خدمتكم ونتمنى لكم دوام الصحة والعافية."
+          ],
+          "options": [],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%20%D9%84%D9%85%D8%AF%D8%A9%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%AE%D9%84%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9",
+          "whatsappText": "السلام عليكم، أستفسر عن: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          }
+        }
+      },
+      "after": {
+        "result": {
+          "type": "strong",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "options": [],
+          "emergency": false,
+          "query": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة"
+        },
+        "reply": {
+          "lines": [
+            "نعم، يتوفر لدينا خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة ضمن طوارئ وإسعاف. يسعدنا خدمتكم ونتمنى لكم دوام الصحة والعافية."
+          ],
+          "options": [],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%20%D9%84%D9%85%D8%AF%D8%A9%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%AE%D9%84%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9",
+          "whatsappText": "السلام عليكم، أستفسر عن: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          }
+        }
+      }
+    },
+    {
+      "query": "أكثر من 12 جهاز تنفس صناعي",
+      "before": {
+        "result": {
+          "type": "weak",
+          "best": null,
+          "options": [
+            {
+              "id": "SVC-0405",
+              "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0251",
+              "name": "جهاز مراقبة الضغط لمدة 24 ساعة (هولتر)",
+              "category": "قلب",
+              "group": "general",
+              "slug": "index",
+              "rank": 0,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0234",
+              "name": "جلسة جهاز شمع البرافين",
+              "category": "علاج طبيعي",
+              "group": "general",
+              "slug": "index",
+              "rank": 5,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0220",
+              "name": "جلسة جهاز الكمادات باردة",
+              "category": "علاج طبيعي",
+              "group": "general",
+              "slug": "index",
+              "rank": 5,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "emergency": false,
+          "query": "أكثر من 12 جهاز تنفس صناعي"
+        },
+        "reply": {
+          "lines": [
+            "هل تقصد أحد هذه الخدمات؟"
+          ],
+          "options": [
+            {
+              "id": "SVC-0405",
+              "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0251",
+              "name": "جهاز مراقبة الضغط لمدة 24 ساعة (هولتر)",
+              "category": "قلب",
+              "group": "general",
+              "slug": "index",
+              "rank": 0,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0234",
+              "name": "جلسة جهاز شمع البرافين",
+              "category": "علاج طبيعي",
+              "group": "general",
+              "slug": "index",
+              "rank": 5,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0220",
+              "name": "جلسة جهاز الكمادات باردة",
+              "category": "علاج طبيعي",
+              "group": "general",
+              "slug": "index",
+              "rank": 5,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%20%D9%84%D9%85%D8%AF%D8%A9%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%AE%D9%84%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9",
+          "whatsappText": "السلام عليكم، أستفسر عن: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+          "best": null
+        }
+      },
+      "after": {
+        "result": {
+          "type": "weak",
+          "best": null,
+          "options": [
+            {
+              "id": "SVC-0405",
+              "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0251",
+              "name": "جهاز مراقبة الضغط لمدة 24 ساعة (هولتر)",
+              "category": "قلب",
+              "group": "general",
+              "slug": "index",
+              "rank": 0,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0234",
+              "name": "جلسة جهاز شمع البرافين",
+              "category": "علاج طبيعي",
+              "group": "general",
+              "slug": "index",
+              "rank": 5,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0220",
+              "name": "جلسة جهاز الكمادات باردة",
+              "category": "علاج طبيعي",
+              "group": "general",
+              "slug": "index",
+              "rank": 5,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "emergency": false,
+          "query": "أكثر من 12 جهاز تنفس صناعي"
+        },
+        "reply": {
+          "lines": [
+            "هل تقصد أحد هذه الخدمات؟"
+          ],
+          "options": [
+            {
+              "id": "SVC-0405",
+              "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0251",
+              "name": "جهاز مراقبة الضغط لمدة 24 ساعة (هولتر)",
+              "category": "قلب",
+              "group": "general",
+              "slug": "index",
+              "rank": 0,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0234",
+              "name": "جلسة جهاز شمع البرافين",
+              "category": "علاج طبيعي",
+              "group": "general",
+              "slug": "index",
+              "rank": 5,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0220",
+              "name": "جلسة جهاز الكمادات باردة",
+              "category": "علاج طبيعي",
+              "group": "general",
+              "slug": "index",
+              "rank": 5,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%20%D9%84%D9%85%D8%AF%D8%A9%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%AE%D9%84%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9",
+          "whatsappText": "السلام عليكم، أستفسر عن: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+          "best": null
+        }
+      }
+    }
+  ],
+  "allVentilatorPhrases": [
+    {
+      "query": "جهاز التنفس",
+      "before": {
+        "result": {
+          "type": "strong",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "options": [
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "emergency": false,
+          "query": "جهاز التنفس"
+        },
+        "reply": {
+          "lines": [
+            "نعم، يتوفر لدينا خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة ضمن طوارئ وإسعاف. يسعدنا خدمتكم ونتمنى لكم دوام الصحة والعافية.",
+            "هل تقصد أحد هذه الخدمات؟"
+          ],
+          "options": [
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%20%D9%84%D9%85%D8%AF%D8%A9%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%AE%D9%84%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9",
+          "whatsappText": "السلام عليكم، أستفسر عن: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          }
+        }
+      },
+      "after": {
+        "result": {
+          "type": "strong",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "options": [],
+          "emergency": false,
+          "query": "جهاز التنفس",
+          "approvedVentilator": {
+            "title": "نعم، الخدمة متوفرة لدينا",
+            "text": "يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا.",
+            "whatsappLabel": "تواصل عبر واتساب",
+            "whatsappText": "السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي"
+          }
+        },
+        "reply": {
+          "lines": [
+            "يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا."
+          ],
+          "options": [],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A",
+          "whatsappText": "السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "title": "نعم، الخدمة متوفرة لدينا",
+          "whatsappLabel": "تواصل عبر واتساب"
+        }
+      }
+    },
+    {
+      "query": "جهاز تنفس",
+      "before": {
+        "result": {
+          "type": "strong",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "options": [
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "emergency": false,
+          "query": "جهاز تنفس"
+        },
+        "reply": {
+          "lines": [
+            "نعم، يتوفر لدينا خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة ضمن طوارئ وإسعاف. يسعدنا خدمتكم ونتمنى لكم دوام الصحة والعافية.",
+            "هل تقصد أحد هذه الخدمات؟"
+          ],
+          "options": [
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%20%D9%84%D9%85%D8%AF%D8%A9%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%AE%D9%84%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9",
+          "whatsappText": "السلام عليكم، أستفسر عن: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          }
+        }
+      },
+      "after": {
+        "result": {
+          "type": "strong",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "options": [],
+          "emergency": false,
+          "query": "جهاز تنفس",
+          "approvedVentilator": {
+            "title": "نعم، الخدمة متوفرة لدينا",
+            "text": "يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا.",
+            "whatsappLabel": "تواصل عبر واتساب",
+            "whatsappText": "السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي"
+          }
+        },
+        "reply": {
+          "lines": [
+            "يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا."
+          ],
+          "options": [],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A",
+          "whatsappText": "السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "title": "نعم، الخدمة متوفرة لدينا",
+          "whatsappLabel": "تواصل عبر واتساب"
+        }
+      }
+    },
+    {
+      "query": "اجهزة التنفس",
+      "before": {
+        "result": {
+          "type": "weak",
+          "best": null,
+          "options": [
+            {
+              "id": "SVC-0405",
+              "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "emergency": false,
+          "query": "اجهزة التنفس"
+        },
+        "reply": {
+          "lines": [
+            "هل تقصد أحد هذه الخدمات؟"
+          ],
+          "options": [
+            {
+              "id": "SVC-0405",
+              "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%20%D9%84%D9%85%D8%AF%D8%A9%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%AE%D9%84%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9",
+          "whatsappText": "السلام عليكم، أستفسر عن: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+          "best": null
+        }
+      },
+      "after": {
+        "result": {
+          "type": "strong",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "options": [],
+          "emergency": false,
+          "query": "اجهزة التنفس",
+          "approvedVentilator": {
+            "title": "نعم، الخدمة متوفرة لدينا",
+            "text": "يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا.",
+            "whatsappLabel": "تواصل عبر واتساب",
+            "whatsappText": "السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي"
+          }
+        },
+        "reply": {
+          "lines": [
+            "يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا."
+          ],
+          "options": [],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A",
+          "whatsappText": "السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "title": "نعم، الخدمة متوفرة لدينا",
+          "whatsappLabel": "تواصل عبر واتساب"
+        }
+      }
+    },
+    {
+      "query": "جهاز تنفس صناعي",
+      "before": {
+        "result": {
+          "type": "strong",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "options": [
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "emergency": false,
+          "query": "جهاز تنفس صناعي"
+        },
+        "reply": {
+          "lines": [
+            "نعم، يتوفر لدينا خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة ضمن طوارئ وإسعاف. يسعدنا خدمتكم ونتمنى لكم دوام الصحة والعافية.",
+            "هل تقصد أحد هذه الخدمات؟"
+          ],
+          "options": [
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%20%D9%84%D9%85%D8%AF%D8%A9%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%AE%D9%84%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9",
+          "whatsappText": "السلام عليكم، أستفسر عن: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          }
+        }
+      },
+      "after": {
+        "result": {
+          "type": "strong",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "options": [],
+          "emergency": false,
+          "query": "جهاز تنفس صناعي",
+          "approvedVentilator": {
+            "title": "نعم، الخدمة متوفرة لدينا",
+            "text": "يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا.",
+            "whatsappLabel": "تواصل عبر واتساب",
+            "whatsappText": "السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي"
+          }
+        },
+        "reply": {
+          "lines": [
+            "يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا."
+          ],
+          "options": [],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A",
+          "whatsappText": "السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "title": "نعم، الخدمة متوفرة لدينا",
+          "whatsappLabel": "تواصل عبر واتساب"
+        }
+      }
+    },
+    {
+      "query": "هل يوجد جهاز تنفس",
+      "before": {
+        "result": {
+          "type": "strong",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "options": [
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "emergency": false,
+          "query": "هل يوجد جهاز تنفس"
+        },
+        "reply": {
+          "lines": [
+            "نعم، يتوفر لدينا خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة ضمن طوارئ وإسعاف. يسعدنا خدمتكم ونتمنى لكم دوام الصحة والعافية.",
+            "هل تقصد أحد هذه الخدمات؟"
+          ],
+          "options": [
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%20%D9%84%D9%85%D8%AF%D8%A9%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%AE%D9%84%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9",
+          "whatsappText": "السلام عليكم، أستفسر عن: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          }
+        }
+      },
+      "after": {
+        "result": {
+          "type": "strong",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "options": [],
+          "emergency": false,
+          "query": "هل يوجد جهاز تنفس",
+          "approvedVentilator": {
+            "title": "نعم، الخدمة متوفرة لدينا",
+            "text": "يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا.",
+            "whatsappLabel": "تواصل عبر واتساب",
+            "whatsappText": "السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي"
+          }
+        },
+        "reply": {
+          "lines": [
+            "يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا."
+          ],
+          "options": [],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A",
+          "whatsappText": "السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "title": "نعم، الخدمة متوفرة لدينا",
+          "whatsappLabel": "تواصل عبر واتساب"
+        }
+      }
+    },
+    {
+      "query": "يتوفر لديكم جهاز تنفس",
+      "before": {
+        "result": {
+          "type": "weak",
+          "best": null,
+          "options": [
+            {
+              "id": "SVC-0405",
+              "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0251",
+              "name": "جهاز مراقبة الضغط لمدة 24 ساعة (هولتر)",
+              "category": "قلب",
+              "group": "general",
+              "slug": "index",
+              "rank": 0,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0234",
+              "name": "جلسة جهاز شمع البرافين",
+              "category": "علاج طبيعي",
+              "group": "general",
+              "slug": "index",
+              "rank": 5,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0220",
+              "name": "جلسة جهاز الكمادات باردة",
+              "category": "علاج طبيعي",
+              "group": "general",
+              "slug": "index",
+              "rank": 5,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "emergency": false,
+          "query": "يتوفر لديكم جهاز تنفس"
+        },
+        "reply": {
+          "lines": [
+            "هل تقصد أحد هذه الخدمات؟"
+          ],
+          "options": [
+            {
+              "id": "SVC-0405",
+              "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0251",
+              "name": "جهاز مراقبة الضغط لمدة 24 ساعة (هولتر)",
+              "category": "قلب",
+              "group": "general",
+              "slug": "index",
+              "rank": 0,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0234",
+              "name": "جلسة جهاز شمع البرافين",
+              "category": "علاج طبيعي",
+              "group": "general",
+              "slug": "index",
+              "rank": 5,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0220",
+              "name": "جلسة جهاز الكمادات باردة",
+              "category": "علاج طبيعي",
+              "group": "general",
+              "slug": "index",
+              "rank": 5,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%20%D9%84%D9%85%D8%AF%D8%A9%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%AE%D9%84%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9",
+          "whatsappText": "السلام عليكم، أستفسر عن: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+          "best": null
+        }
+      },
+      "after": {
+        "result": {
+          "type": "strong",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "options": [],
+          "emergency": false,
+          "query": "يتوفر لديكم جهاز تنفس",
+          "approvedVentilator": {
+            "title": "نعم، الخدمة متوفرة لدينا",
+            "text": "يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا.",
+            "whatsappLabel": "تواصل عبر واتساب",
+            "whatsappText": "السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي"
+          }
+        },
+        "reply": {
+          "lines": [
+            "يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا."
+          ],
+          "options": [],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A",
+          "whatsappText": "السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "title": "نعم، الخدمة متوفرة لدينا",
+          "whatsappLabel": "تواصل عبر واتساب"
+        }
+      }
+    },
+    {
+      "query": "عندكم اجهزة تنفس",
+      "before": {
+        "result": {
+          "type": "weak",
+          "best": null,
+          "options": [
+            {
+              "id": "SVC-0405",
+              "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "emergency": false,
+          "query": "عندكم اجهزة تنفس"
+        },
+        "reply": {
+          "lines": [
+            "هل تقصد أحد هذه الخدمات؟"
+          ],
+          "options": [
+            {
+              "id": "SVC-0405",
+              "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            },
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%20%D9%84%D9%85%D8%AF%D8%A9%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%AE%D9%84%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9",
+          "whatsappText": "السلام عليكم، أستفسر عن: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+          "best": null
+        }
+      },
+      "after": {
+        "result": {
+          "type": "strong",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "options": [],
+          "emergency": false,
+          "query": "عندكم اجهزة تنفس",
+          "approvedVentilator": {
+            "title": "نعم، الخدمة متوفرة لدينا",
+            "text": "يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا.",
+            "whatsappLabel": "تواصل عبر واتساب",
+            "whatsappText": "السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي"
+          }
+        },
+        "reply": {
+          "lines": [
+            "يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا."
+          ],
+          "options": [],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A",
+          "whatsappText": "السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "title": "نعم، الخدمة متوفرة لدينا",
+          "whatsappLabel": "تواصل عبر واتساب"
+        }
+      }
+    },
+    {
+      "query": "هل لديكم جهاز تنفس",
+      "before": {
+        "result": {
+          "type": "strong",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "options": [
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "emergency": false,
+          "query": "هل لديكم جهاز تنفس"
+        },
+        "reply": {
+          "lines": [
+            "نعم، يتوفر لدينا خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة ضمن طوارئ وإسعاف. يسعدنا خدمتكم ونتمنى لكم دوام الصحة والعافية.",
+            "هل تقصد أحد هذه الخدمات؟"
+          ],
+          "options": [
+            {
+              "id": "SVC-0406",
+              "name": "خروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة",
+              "category": "طوارئ وإسعاف",
+              "group": "general",
+              "slug": "index",
+              "rank": 6,
+              "url": "services/",
+              "searchOnly": false,
+              "exactMatchOnly": false,
+              "exactMatchMinWords": null,
+              "directoryHidden": false,
+              "matchName": "",
+              "numberRequired": false,
+              "exactPhrases": []
+            }
+          ],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%20%D9%84%D9%85%D8%AF%D8%A9%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D8%AF%D8%A7%D8%AE%D9%84%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9",
+          "whatsappText": "السلام عليكم، أستفسر عن: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          }
+        }
+      },
+      "after": {
+        "result": {
+          "type": "strong",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "options": [],
+          "emergency": false,
+          "query": "هل لديكم جهاز تنفس",
+          "approvedVentilator": {
+            "title": "نعم، الخدمة متوفرة لدينا",
+            "text": "يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا.",
+            "whatsappLabel": "تواصل عبر واتساب",
+            "whatsappText": "السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي"
+          }
+        },
+        "reply": {
+          "lines": [
+            "يتوفر لدينا خدمة جهاز التنفس الصناعي: خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة، وخروج جهاز تنفس صناعي لمدة يوم واحد خارج المحافظة. للحجز أو استكمال الإجراءات أو معرفة المزيد من التفاصيل، تواصل معنا عبر واتساب وسيساعدك فريقنا."
+          ],
+          "options": [],
+          "whatsappUrl": "https://wa.me/967771422070?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%3A%20%D8%AE%D8%B1%D9%88%D8%AC%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%AA%D9%86%D9%81%D8%B3%20%D8%B5%D9%86%D8%A7%D8%B9%D9%8A",
+          "whatsappText": "السلام عليكم، أرغب في الاستفسار عن: خروج جهاز تنفس صناعي",
+          "best": {
+            "id": "SVC-0405",
+            "name": "خروج جهاز تنفس صناعي لمدة ساعة داخل المدينة",
+            "category": "طوارئ وإسعاف",
+            "group": "general",
+            "slug": "index",
+            "rank": 6,
+            "url": "services/",
+            "searchOnly": false,
+            "exactMatchOnly": false,
+            "exactMatchMinWords": null,
+            "directoryHidden": false,
+            "matchName": "",
+            "numberRequired": false,
+            "exactPhrases": []
+          },
+          "title": "نعم، الخدمة متوفرة لدينا",
+          "whatsappLabel": "تواصل عبر واتساب"
+        }
+      }
+    }
+  ]
+}

@@ -27,7 +27,8 @@ const published = catalog.items.filter(i => i.publish === true);
 const searchOverrides = decisions.searchOverrides || [];
 for (const override of searchOverrides) {
   const target = published.find(i => i.id === override.targetId && i.name === override.targetName);
-  if (!target || target.searchOnly || !Array.isArray(override.queries) || !override.queries.length || override.queries.some(q => typeof q !== 'string' || !q.trim()) || override.response !== 'approved-availability') throw Error('Invalid search override: ' + override.targetId);
+  const validResponse = override.response === 'approved-availability' || (override.response === 'approved-ventilator-service' && Array.isArray(override.requiredTargets) && override.requiredTargets.length === 1 && override.requiredTargets.every(t => published.some(i => i.id === t.id && i.name === t.name && !i.searchOnly)) && ['title', 'text', 'whatsappLabel', 'whatsappText'].every(k => typeof override[k] === 'string' && override[k].trim()));
+  if (!target || target.searchOnly || !Array.isArray(override.queries) || !override.queries.length || override.queries.some(q => typeof q !== 'string' || !q.trim()) || !validResponse) throw Error('Invalid search override: ' + override.targetId);
 }
 const index = {
   meta: { generatedBy:'ext/tools/build-services.js', generatedAt:decisions.generatedAt, hospital:'مستشفى الأنهار التخصصي', site:'https://alanharhospital.com', note:'فهرس بحث ثابت. كل الأسماء من ext/data/services-catalog.json (publish=true فقط).' },
@@ -86,8 +87,8 @@ ${page.introTitle ? '        <h2>' + esc(page.introTitle) + '</h2>\n' : ''}     
         </div>
     </main>
     <!-- ENH:START services-search-scripts -->
-    <script src="../ext/data/services-index.js?v=7"></script>
-    <script src="../ext/services-search.js?v=7" defer></script>
+    <script src="../ext/data/services-index.js?v=8"></script>
+    <script src="../ext/services-search.js?v=8" defer></script>
     <!-- ENH:END services-search-scripts -->
 </body>
 </html>
